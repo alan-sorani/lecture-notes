@@ -1,3 +1,12 @@
-\contentsline {chapter}{Preface}{iii}{chapter*.3}
-\contentsline {section}{Technicalities}{iii}{section*.4}
-\contentsline {section}{Course Literature}{iii}{section*.5}
+\select@language {hebrew}
+\contentsline {chapter}{הקדמה}{iii}{chapter*.3}
+\contentsline {section}{הבהרה}{iii}{section*.4}
+\contentsline {section}{ספרות מומלצת}{iii}{section*.5}
+\select@language {english}
+\select@language {hebrew}
+\contentsline {section}{\numberline {0.1}תוכן הקורס}{1}{section.0.1}
+\contentsline {section}{\numberline {0.2}דרישות קדם}{2}{section.0.2}
+\contentsline {section}{\numberline {0.3}תרגילי בית}{2}{section.0.3}
+\contentsline {section}{\numberline {0.4}ציון}{2}{section.0.4}
+\contentsline {chapter}{\numberline {1}מבוא}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}הגדרות}{3}{section.1.1}
