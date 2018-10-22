@@ -1,3 +1,7 @@
 \contentsline {chapter}{Preface}{iii}{chapter*.3}
 \contentsline {section}{Technicalities}{iii}{section*.4}
 \contentsline {section}{Course Literature}{iii}{section*.5}
+\contentsline {chapter}{\numberline {1}Motivation}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}What is Algebraic Topology?}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Homotopy groups}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Homology and cohomology of topological spaces}{2}{subsection.1.1.2}
