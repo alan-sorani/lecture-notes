@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.7)  21 OCT 2018 17:13
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  24 OCT 2018 18:31
 entering extended mode
 **"./differentiable manifolds.tex"
 ("differentiable manifolds.tex"
@@ -214,11 +214,11 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 xparse.sty"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
 "
-Package: expl3 2018-09-24 L3 programming layer (loader) 
+Package: expl3 2018-10-17 L3 programming layer (loader) 
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
 e.tex"
-Package: expl3 2018-09-24 L3 programming layer (code)
+Package: expl3 2018-10-17 L3 programming layer (code)
 \c_max_int=\count108
 \l_tmpa_int=\count109
 \l_tmpb_int=\count110
@@ -361,11 +361,11 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdf
 mx.def"
-File: l3xdvidpfmx.def 2018-09-24 v L3 Experimental driver: xdvipdfmx
+File: l3xdvidpfmx.def 2018-10-17 v L3 Experimental driver: xdvipdfmx
 \g__driver_image_int=\count187
 \g__driver_pdf_object_int=\count188
 ))
-Package: xparse 2018-09-24 L3 Experimental document command parser
+Package: xparse 2018-10-17 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count189
 \g__xparse_grabber_int=\count190
 \l__xparse_m_args_int=\count191
@@ -396,11 +396,11 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
-Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
 ty"
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen153
 \captionmargin@=\dimen154
@@ -410,7 +410,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen158
 \caption@hangindent=\dimen159
 )
-\c@ContinuedFloat=\count194
+\c@caption@flags=\count194
+\c@ContinuedFloat=\count195
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
@@ -425,9 +426,9 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
 \Gm@bindingoffset=\dimen160
 \Gm@wd@mp=\dimen161
 \Gm@odd@mp=\dimen162
@@ -461,12 +462,6 @@ e.sty"
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \frontpage with sig. 'ggg' on line 166.
-.................................................
-
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\genmisc\nth.sty"
 Package: nth 2002/02/27
 )
@@ -514,14 +509,14 @@ ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen168
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
+\Hy@linkcounter=\count199
+\Hy@pagecounter=\count266
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count266
+\Hy@SavedSpaceFactor=\count267
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
@@ -535,14 +530,14 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count267
+\c@Hy@tempcnt=\count268
  ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen169
-\Fld@menulength=\count268
+\Fld@menulength=\count269
 \Field@Width=\dimen170
 \Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -554,9 +549,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count269
-\c@Item=\count270
-\c@Hfootnote=\count271
+\Hy@abspage=\count270
+\c@Item=\count271
+\c@Hfootnote=\count272
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -574,10 +569,10 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box43
-\c@Hy@AnnotLevel=\count272
-\HyField@AnnotCount=\count273
-\Fld@listcount=\count274
-\c@bookmark@seq@number=\count275
+\c@Hy@AnnotLevel=\count273
+\HyField@AnnotCount=\count274
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
@@ -595,154 +590,547 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 sty"
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \set with sig. 'mg' on line 432.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \trs with sig. 'mg' on line 438.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \diff with sig. 'g' on line 465.
-.................................................
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
+tikz.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
+cs.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common.tex"
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
 
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common-lists.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-latex.def"
+\pgfutil@abb=\box44
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+frcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+core.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+)
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
+fsys.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\w@pgf@writea=\write5
+\r@pgf@reada=\read2
+\c@pgf@counta=\count277
+\c@pgf@countb=\count278
+\c@pgf@countc=\count279
+\c@pgf@countd=\count280
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-xetex.def"
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-dvipdfmx.def"
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count281
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+calc.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+util.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+parser.code.tex"
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count284
+\pgfmath@box=\box45
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.basic.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.trigonometric.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.random.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.comparison.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.base.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.round.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.misc.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.integerarithmetics.code.tex")))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+float.code.tex"
+\c@pgfmathroundto@lastzeros=\count285
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box46
+\pgf@hbox=\box47
+\pgf@layerbox@main=\box48
+\pgf@picture@serial@count=\count286
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen259
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen263
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count287
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box49
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box50
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
+or.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
+eys.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
+ty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+ffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex")
+\pgffor@iter=\dimen267
+\pgffor@skip=\dimen268
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count288
+\pgfplotmarksize=\dimen269
+)
+\tikz@lastx=\dimen270
+\tikz@lasty=\dimen271
+\tikz@lastxsaved=\dimen272
+\tikz@lastysaved=\dimen273
+\tikzleveldistance=\dimen274
+\tikzsiblingdistance=\dimen275
+\tikz@figbox=\box51
+\tikz@figbox@bg=\box52
+\tikz@tempbox=\box53
+\tikz@tempbox@bg=\box54
+\tikztreelevel=\count289
+\tikznumberofchildren=\count290
+\tikznumberofcurrentchild=\count291
+\tikz@fig@count=\count292
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+odulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count293
+\pgfmatrixcurrentcolumn=\count294
+\pgf@matrix@numberofcolumns=\count295
+)
+\tikz@expandcount=\count296
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikzsymbols\tikzsy
+mbols.sty"
+Package: tikzsymbols 2018/05/16 v4.10a Some symbols created using tikz and LaTe
+X3.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2
+e\l3keys2e.sty"
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen276
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen277
+\pgfdecoratedremainingdistance=\dimen278
+\pgfdecoratedinputsegmentcompleteddistance=\dimen279
+\pgfdecoratedinputsegmentremainingdistance=\dimen280
+\pgf@decorate@distancetomove=\dimen281
+\pgf@decorate@repeatstate=\count297
+\pgfdecorationsegmentamplitude=\dimen282
+\pgfdecorationsegmentlength=\dimen283
+)
+\tikz@lib@dec@box=\box55
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytrees.code.tex"
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
+)
+\l__tikzsymbols_Moai_thickness_dim=\dimen284
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-cd\tikzlibr
+arycd.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryquotes.code.tex"
+File: tikzlibraryquotes.code.tex 2014/03/21 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.meta.code.tex"
+File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count298
+\sf@farskip=\skip67
+\sf@captopadj=\dimen289
+\sf@capskip=\skip68
+\sf@nearskip=\skip69
+\c@subfigure=\count299
+\c@subfigure@save=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@subtable@save=\count303
+\c@lotdepth=\count304
+\sf@top=\skip70
+\sf@bottom=\skip71
+)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count276
+\etb@tempcnta=\count305
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
 sty"
 Style `ntheorem', Version 1.33 <2011/08/15>
 Package: ntheorem 2011/08/15 1.33
-\theorem@style=\toks21
-\theorem@@style=\toks22
-\theorembodyfont=\toks23
-\theoremnumbering=\toks24
-\theorempreskipamount=\skip67
-\theorempostskipamount=\skip68
-\theoremframepreskipamount=\skip69
-\theoremframepostskipamount=\skip70
-\theoreminframepreskipamount=\skip71
-\theoreminframepostskipamount=\skip72
-\theorem@preskip=\toks25
-\theorem@postskip=\toks26
-\theorem@framepreskip=\toks27
-\theorem@framepostskip=\toks28
-\theorem@inframepreskip=\toks29
-\theorem@inframepostskip=\toks30
-\theoremindent=\dimen172
-\theorem@indent=\dimen173
-\theoremrightindent=\dimen174
-\theorem@rightindent=\dimen175
-\theoremheaderfont=\toks31
-\theoremseparator=\toks32
-\theoremprework=\toks33
-\theorempostwork=\toks34
-\theoremsymbol=\toks35
-\qedsymbol=\toks36
-\theoremkeyword=\toks37
-\qedsymbol=\toks38
-\thm@topsep=\skip73
-\thm@topsepadd=\skip74
+\theorem@style=\toks33
+\theorem@@style=\toks34
+\theorembodyfont=\toks35
+\theoremnumbering=\toks36
+\theorempreskipamount=\skip72
+\theorempostskipamount=\skip73
+\theoremframepreskipamount=\skip74
+\theoremframepostskipamount=\skip75
+\theoreminframepreskipamount=\skip76
+\theoreminframepostskipamount=\skip77
+\theorem@preskip=\toks37
+\theorem@postskip=\toks38
+\theorem@framepreskip=\toks39
+\theorem@framepostskip=\toks40
+\theorem@inframepreskip=\toks41
+\theorem@inframepostskip=\toks42
+\theoremindent=\dimen290
+\theorem@indent=\dimen291
+\theoremrightindent=\dimen292
+\theorem@rightindent=\dimen293
+\theoremheaderfont=\toks43
+\theoremseparator=\toks44
+\theoremprework=\toks45
+\theorempostwork=\toks46
+\theoremsymbol=\toks47
+\qedsymbol=\toks48
+\theoremkeyword=\toks49
+\qedsymbol=\toks50
+\thm@topsep=\skip78
+\thm@topsepadd=\skip79
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count277
-\c@currNonectr=\count278
-\mysavskip=\skip75
+\c@endNonectr=\count306
+\c@currNonectr=\count307
+\mysavskip=\skip80
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen176
-\tagwidth=\dimen177
+\thm@amstmpdepth=\dimen294
+\tagwidth=\dimen295
 )
-\c@currproofctr=\count279
-\c@endproofctr=\count280
-\c@proof=\count281
-\c@currtheoremctr=\count282
-\c@endtheoremctr=\count283
-\c@theorem=\count284
-\c@currlemmactr=\count285
-\c@endlemmactr=\count286
-\c@currcorollaryctr=\count287
-\c@endcorollaryctr=\count288
-\c@currpropositionctr=\count289
-\c@endpropositionctr=\count290
-\c@currconjecturectr=\count291
-\c@endconjecturectr=\count292
-\c@currcriterionctr=\count293
-\c@endcriterionctr=\count294
-\c@currassertionctr=\count295
-\c@endassertionctr=\count296
-\c@currfactctr=\count297
-\c@endfactctr=\count298
-\c@currhypothesisctr=\count299
-\c@endhypothesisctr=\count300
-\c@currdefinitionxctr=\count301
-\c@enddefinitionxctr=\count302
-\c@currdefinitionstarredctr=\count303
-\c@enddefinitionstarredctr=\count304
-\c@definitionstarred=\count305
-\c@currconditionctr=\count306
-\c@endconditionctr=\count307
-\c@curraxiomctr=\count308
-\c@endaxiomctr=\count309
-\c@axiom=\count310
-\c@currpostulatectr=\count311
-\c@endpostulatectr=\count312
-\c@currpropertyctr=\count313
-\c@endpropertyctr=\count314
-\c@currproblemctr=\count315
-\c@endproblemctr=\count316
-\c@currexamplectr=\count317
-\c@endexamplectr=\count318
-\c@example=\count319
-\c@currexercisectr=\count320
-\c@endexercisectr=\count321
-\c@exercise=\count322
-\c@curralgorithmxctr=\count323
-\c@endalgorithmxctr=\count324
-\c@curralgorithmstarredctr=\count325
-\c@endalgorithmstarredctr=\count326
-\c@algorithmstarred=\count327
-\c@currquestionctr=\count328
-\c@endquestionctr=\count329
-\c@currassumptionctr=\count330
-\c@endassumptionctr=\count331
-\c@currremarkctr=\count332
-\c@endremarkctr=\count333
-\c@currnotectr=\count334
-\c@endnotectr=\count335
-\c@currnotationctr=\count336
-\c@endnotationctr=\count337
-\c@currclaimctr=\count338
-\c@endclaimctr=\count339
-\c@currsummaryctr=\count340
-\c@endsummaryctr=\count341
-\c@summary=\count342
-\c@curracknowledgementctr=\count343
-\c@endacknowledgementctr=\count344
-\c@currcasectr=\count345
-\c@endcasectr=\count346
-\c@case=\count347
-\c@curroptionctr=\count348
-\c@endoptionctr=\count349
-\c@option=\count350
-\c@currconclusionctr=\count351
-\c@endconclusionctr=\count352
-\c@conclusion=\count353
-\c@currsolutionctr=\count354
-\c@endsolutionctr=\count355
-\c@solution=\count356
-\c@currexms_rawctr=\count357
-\c@endexms_rawctr=\count358
-\c@exms_raw=\count359
-\c@currexrs_rawctr=\count360
-\c@endexrs_rawctr=\count361
-\c@exrs_raw=\count362
+\c@currproofctr=\count308
+\c@endproofctr=\count309
+\c@proof=\count310
+\c@currtheoremctr=\count311
+\c@endtheoremctr=\count312
+\c@theorem=\count313
+\c@currlemmactr=\count314
+\c@endlemmactr=\count315
+\c@currcorollaryctr=\count316
+\c@endcorollaryctr=\count317
+\c@currpropositionctr=\count318
+\c@endpropositionctr=\count319
+\c@currconjecturectr=\count320
+\c@endconjecturectr=\count321
+\c@currcriterionctr=\count322
+\c@endcriterionctr=\count323
+\c@currassertionctr=\count324
+\c@endassertionctr=\count325
+\c@currfactctr=\count326
+\c@endfactctr=\count327
+\c@currhypothesisctr=\count328
+\c@endhypothesisctr=\count329
+\c@currdefinitionxctr=\count330
+\c@enddefinitionxctr=\count331
+\c@currdefinitionstarredctr=\count332
+\c@enddefinitionstarredctr=\count333
+\c@definitionstarred=\count334
+\c@currconditionctr=\count335
+\c@endconditionctr=\count336
+\c@curraxiomctr=\count337
+\c@endaxiomctr=\count338
+\c@axiom=\count339
+\c@currpostulatectr=\count340
+\c@endpostulatectr=\count341
+\c@currpropertyctr=\count342
+\c@endpropertyctr=\count343
+\c@currproblemctr=\count344
+\c@endproblemctr=\count345
+\c@currexamplectr=\count346
+\c@endexamplectr=\count347
+\c@example=\count348
+\c@currexercisectr=\count349
+\c@endexercisectr=\count350
+\c@exercise=\count351
+\c@curralgorithmxctr=\count352
+\c@endalgorithmxctr=\count353
+\c@curralgorithmstarredctr=\count354
+\c@endalgorithmstarredctr=\count355
+\c@algorithmstarred=\count356
+\c@currquestionctr=\count357
+\c@endquestionctr=\count358
+\c@currassumptionctr=\count359
+\c@endassumptionctr=\count360
+\c@currremarkctr=\count361
+\c@endremarkctr=\count362
+\c@currnotectr=\count363
+\c@endnotectr=\count364
+\c@currnotationctr=\count365
+\c@endnotationctr=\count366
+\c@currclaimctr=\count367
+\c@endclaimctr=\count368
+\c@currsummaryctr=\count369
+\c@endsummaryctr=\count370
+\c@summary=\count371
+\c@curracknowledgementctr=\count372
+\c@endacknowledgementctr=\count373
+\c@currcasectr=\count374
+\c@endcasectr=\count375
+\c@case=\count376
+\c@curroptionctr=\count377
+\c@endoptionctr=\count378
+\c@option=\count379
+\c@currconclusionctr=\count380
+\c@endconclusionctr=\count381
+\c@conclusion=\count382
+\c@currsolutionctr=\count383
+\c@endsolutionctr=\count384
+\c@solution=\count385
+\c@currexms_rawctr=\count386
+\c@endexms_rawctr=\count387
+\c@exms_raw=\count388
+\c@currexrs_rawctr=\count389
+\c@endexrs_rawctr=\count390
+\c@exrs_raw=\count391
 ) (C:/localtexmf\tex\latex\hebrewdoc\hebrewdoc.sty
 Package: hebrewdoc 2018/10/05 Hebrew Macros
 
@@ -763,10 +1151,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 tex"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
 .tex"
-\XKV@toks=\toks39
-\XKV@tempa@toks=\toks40
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count363
+\XKV@depth=\count392
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
@@ -777,17 +1165,17 @@ Package: fontspec 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaTeX
 xetex.sty"
 Package: fontspec-xetex 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count364
-\l__fontspec_language_int=\count365
-\l__fontspec_strnum_int=\count366
-\l__fontspec_tmp_int=\count367
-\l__fontspec_em_int=\count368
-\l__fontspec_emdef_int=\count369
-\l__fontspec_strong_int=\count370
-\l__fontspec_strongdef_int=\count371
-\l__fontspec_tmpa_dim=\dimen178
-\l__fontspec_tmpb_dim=\dimen179
-\l__fontspec_tmpc_dim=\dimen180
+\l__fontspec_script_int=\count393
+\l__fontspec_language_int=\count394
+\l__fontspec_strnum_int=\count395
+\l__fontspec_tmp_int=\count396
+\l__fontspec_em_int=\count397
+\l__fontspec_emdef_int=\count398
+\l__fontspec_strong_int=\count399
+\l__fontspec_strongdef_int=\count400
+\l__fontspec_tmpa_dim=\dimen296
+\l__fontspec_tmpb_dim=\dimen297
+\l__fontspec_tmpc_dim=\dimen298
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -796,187 +1184,6 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \fontspec with sig. 'O{}mO{}' on line 561.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmainfont with sig. 'O{}mO{}' on line 566.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setsansfont with sig. 'O{}mO{}' on line 571.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmonofont with sig. 'O{}mO{}' on line 576.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathrm with sig. 'O{}mO{}' on line 580.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 584.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathsf with sig. 'O{}mO{}' on line 588.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathtt with sig. 'O{}mO{}' on line 592.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setromanfont with sig. 'O{}mO{}' on line 596.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 600.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \renewfontfamily with sig. 'mO{}mO{}' on line 604.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setfontfamily with sig. 'mO{}mO{}' on line 608.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontface with sig. 'mO{}mO{}' on line 612.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 619.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addfontfeatures with sig. 'm' on line 623.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addfontfeature with sig. 'm' on line 627.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfeature with sig. 'mm' on line 631.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newAATfeature with sig. 'mmmm' on line 635.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newopentypefeature with sig. 'mmm' on line 639.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newICUfeature with sig. 'mmm' on line 643.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeature with sig. 'mm' on line 647.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 651.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontscript with sig. 'mm' on line 655.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontlanguage with sig. 'mm' on line 659.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareFontExtensions with sig. 'm' on line 663.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 667.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingCommand with sig. 'mO{}m' on line 3655.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingAccent with sig. 'mm' on line 3661.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingSymbol with sig. 'mm' on line 3667.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingComposite with sig. 'mmm' on line 3673.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3679.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3704.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareSymbol with sig. 'm' on line 3710.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareAccent with sig. 'm' on line 3716.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareCommand with sig. 'm' on line 3722.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareComposite with sig. 'mm' on line 3729.
-.................................................
-
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
 cfg")
 LaTeX Info: Redefining \itshape on input line 3910.
@@ -986,21 +1193,11 @@ LaTeX Info: Redefining \upshape on input line 3925.
 LaTeX Info: Redefining \em on input line 3955.
 LaTeX Info: Redefining \emph on input line 3980.
 LaTeX Info: Redefining \- on input line 4034.
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \oldstylenums with sig. 'm' on line 4129.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \liningnums with sig. 'm' on line 4133.
-.................................................
 ))
 \xpg@normalclass=\XeTeXcharclass1
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\bidi.sty"
-Package: bidi 2018/10/01 v34.1 Bidirectional typesetting in plain TeX and LaTeX
+Package: bidi 2018/10/17 v35.0 Bidirectional typesetting in plain TeX and LaTeX
 
 
 ****************************************************
@@ -1015,7 +1212,7 @@ Package: bidi 2018/10/01 v34.1 Bidirectional typesetting in plain TeX and LaTeX
 * 
 * Copyright (c) 2009--2018 Vafa Khalighi
 * 
-* v34.1, 2018/10/01
+* v35.0, 2018/10/17
 * 
 * License: LaTeX Project Public License, version
 * 1.3c or higher (your choice)
@@ -1033,19 +1230,19 @@ and LuaTeX
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\biditools.s
 ty"
-Package: biditools 2018/02/22 v1.4 Programming tools for bidi package
-\@bidi@envbody=\toks41
-\@bidi@emptytoks=\toks42
-\bidi@tempcountb=\count372
-\bidi@temptoksa=\toks43
-\bidi@temptoksb=\toks44
-\bidi@dummies=\count373
-\bidi@are@these@correct=\toks45
-\bidi@toks@lista=\toks46
-\bidi@toks@listb=\toks47
-\bidi@stack@length=\count374
-\bidi@empty@stack=\toks48
-\bidi@looprepeat@depth=\count375
+Package: biditools 2018/10/12 v1.7 Programming tools for bidi package
+\@bidi@envbody=\toks53
+\@bidi@emptytoks=\toks54
+\bidi@tempcountb=\count401
+\bidi@temptoksa=\toks55
+\bidi@temptoksb=\toks56
+\bidi@dummies=\count402
+\bidi@are@these@correct=\toks57
+\bidi@toks@lista=\toks58
+\bidi@toks@listb=\toks59
+\bidi@stack@length=\count403
+\bidi@empty@stack=\toks60
+\bidi@looprepeat@depth=\count404
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-absp
 age.sty"
@@ -1058,49 +1255,29 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count376
+\c@abspage=\count405
 Package zref Info: New property: abspage on input line 62.
 )
 \@bidi@copyins@=\insert252
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\latex-xetex
 -bidi.def"
-File: latex-xetex-bidi.def 2018/09/23 v1.3.5 bidi adaptations for `latex.ltx' f
+File: latex-xetex-bidi.def 2018/10/11 v1.3.6 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks49
-\bidi@column@check@number=\count377
+\bidi@n@everypar=\toks61
+\bidi@column@check@number=\count406
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\footnote-xe
 tex-bidi.def"
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count378
-\footdir@toks=\toks50
+\c@footdir@label=\count407
+\footdir@toks=\toks62
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\book-xetex-
 bidi.def"
 File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
 ass for XeTeX engine
-)
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
-sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
-sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
-ics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: xetex.def on input line 99.
-)
-\Gin@req@height=\dimen181
-\Gin@req@width=\dimen182
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\mathtools-x
 etex-bidi.def"
@@ -1164,13 +1341,18 @@ kage for XeTeX engine
 tex-bidi.def"
 File: fancyhdr-xetex-bidi.def 2018/02/15 v0.7 bidi adaptations for fancyhdr pac
 kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\pgfcorescop
+es.code-xetex-bidi.def"
+File: pgfcorescopes.code-xetex-bidi.def 2015/11/14 v0.1 bidi adaptations for pg
+f package for XeTeX engine
 ))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\loadingorde
 r-xetex-bidi.def"
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count379
+\bidi@digits=\count408
 \bidi@digits@charclass=\XeTeXcharclass2
 \bidi@sepmark@charclass=\XeTeXcharclass3
 )
@@ -1185,17 +1367,17 @@ m hebcal.sty in Babel)
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\cal-ut
 il.def"
-\c@tmpA=\count380
-\c@tmpB=\count381
-\c@tmpC=\count382
-\c@tmpD=\count383
-\c@tmpE=\count384
-\c@tmpF=\count385
+\c@tmpA=\count409
+\c@tmpB=\count410
+\c@tmpC=\count411
+\c@tmpD=\count412
+\c@tmpE=\count413
+\c@tmpF=\count414
 )
-\hebrewday=\count386
-\hebrewmonth=\count387
-\hebrewyear=\count388
-\@common=\count389
+\hebrewday=\count415
+\hebrewmonth=\count416
+\hebrewyear=\count417
+\@common=\count418
 )
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `Hebrew'
@@ -1215,96 +1397,111 @@ Package polyglossia Info: Default language is hebrew.
 english.ldf"
 File: gloss-english.ldf polyglossia: module for english
 )
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TimesNewRoman(0)' created for font 'Times New Roman' with
-. options [Ligatures=TeX].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"Times New
-. Roman/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
-. Roman/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'bold' (bx/n) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'italic' (m/it) with NFSS spec.: <->"Times New
-. Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"Times New
-. Roman/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-. Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Times New
-. Roman/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-.................................................
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-
+text;"
+
 LaTeX Info: Redefining \rmfamily on input line 10.
 LaTeX Info: Redefining \rmfamily on input line 11.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TimesNewRoman(1)' created for font 'Times New Roman' with
-. options [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"Times New
-. Roman/OT:script=latn;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
-. Roman/OT:script=latn;language=DFLT;+smcp;"
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. \tex_hyphenchar:D \font =-1\scan_stop: 
-. - 'bold' (bx/n) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=latn;language=DFLT;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=latn;language=DFLT;+smcp;"
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. \tex_hyphenchar:D \font =-1\scan_stop: 
-. - 'italic' (m/it) with NFSS spec.: <->"Times New
-. Roman/I/OT:script=latn;language=DFLT;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"Times New
-. Roman/I/OT:script=latn;language=DFLT;+smcp;"
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. \tex_hyphenchar:D \font =-1\scan_stop: 
-. - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-. Roman/BI/OT:script=latn;language=DFLT;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Times New
-. Roman/BI/OT:script=latn;language=DFLT;+smcp;"
-. and font adjustment code:
-. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
-. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
-. \tex_hyphenchar:D \font =-1\scan_stop: 
-.................................................
+
+Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
+(fontspec)             New Roman/B/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
 LaTeX Info: Redefining \ttfamily on input line 14.
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TimesNewRoman(2)' created for font 'Times New Roman' with
-. options [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"Times New
-. Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. - 'bold' (bx/n) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. - 'italic' (m/it) with NFSS spec.: <->"Times New
-. Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: 
-. - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-.................................................
+
+Package fontspec Info: Font family 'TimesNewRoman(2)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
+ex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
 LaTeX Info: Redefining \rmfamily on input line 16.
 ) (C:/localtexmf\tex\latex\stylish\stylish.sty
 Package: stylish 2018/10/05 Stylish Book Design
@@ -1312,13 +1509,13 @@ Package: stylish 2018/10/05 Stylish Book Design
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
 sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count390
-\csq@gtype=\count391
-\csq@glevel=\count392
-\csq@qlevel=\count393
-\csq@maxlvl=\count394
-\csq@tshold=\count395
-\csq@ltx@everypar=\toks51
+\csq@reset=\count419
+\csq@gtype=\count420
+\csq@glevel=\count421
+\csq@qlevel=\count422
+\csq@maxlvl=\count423
+\csq@tshold=\count424
+\csq@ltx@everypar=\toks63
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
 def"
@@ -1337,39 +1534,41 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\footnote.
 sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box44
-\fn@width=\dimen183
+\fn@notes=\box56
+\fn@width=\dimen299
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip76
-\enit@outerparindent=\dimen184
-\enit@toks=\toks52
-\enit@inbox=\box45
-\enitdp@description=\count396
+\labelindent=\skip81
+\enit@outerparindent=\dimen300
+\enit@toks=\toks64
+\enit@inbox=\box57
+\enitdp@description=\count425
 )) ("differentiable manifolds.aux"
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TimesNewRoman(3)' created for font 'Times New Roman' with
-. options [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15,Script=Hebrew].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"Times New
-. Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. - 'bold' (bx/n) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: 
-. - 'italic' (m/it) with NFSS spec.: <->"Times New
-. Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: 
-. - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-. Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-.................................................
+
+Package fontspec Info: Font family 'TimesNewRoman(3)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15,Script=
+Hebrew].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
+ex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
 )
 \openout1 = `"differentiable manifolds.aux"'.
 
@@ -1392,6 +1591,7 @@ LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1428,7 +1628,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box46
+\AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring ON on input line 12.
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
@@ -1439,20 +1639,20 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count397
+\c@section@level=\count426
 )
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
  ("differentiable manifolds.out") ("differentiable manifolds.out")
-\@outlinefile=\write5
-\openout5 = `"differentiable manifolds.out"'.
+\@outlinefile=\write6
+\openout6 = `"differentiable manifolds.out"'.
 
-.................................................
-. fontspec info: "setup-math"
-. 
-. Adjusting the maths setup (use [no-math] to avoid this).
-.................................................
+ ABD: EveryShipout initializing macros
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 12.
@@ -1540,10 +1740,10 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ))
-\tf@toc=\write6
-\openout6 = `"differentiable manifolds.toc"'.
+\tf@toc=\write7
+\openout7 = `"differentiable manifolds.toc"'.
 
-\c@lecturenumber=\count398
+\c@lecturenumber=\count427
  [2
 
 ] [3
@@ -1586,26 +1786,36 @@ ut line 408.
 File: sources/figure6.jpg Graphic file (type bmp)
 <sources/figure6.jpg>
  [5] [6]
-\tf@thm=\write7
-\openout7 = `"differentiable manifolds.thm"'.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 645.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 648.
+File: sources/stereographic.png Graphic file (type bmp)
+<sources/stereographic.png>
+ [7]
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 730.
+ [8]
+\tf@thm=\write8
+\openout8 = `"differentiable manifolds.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 757.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 757.
  ("differentiable manifolds.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 478.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 757.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 757.
 Package rerunfilecheck Info: File `"differentiable manifolds".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 757.
  ) 
 Here is how much of TeX's memory you used:
- 27603 strings out of 427796
- 493839 string characters out of 3147800
- 773114 words of memory out of 3000000
- 31288 multiletter control sequences out of 15000+200000
+ 39639 strings out of 427792
+ 770898 string characters out of 3147754
+ 1069024 words of memory out of 3000000
+ 43086 multiletter control sequences out of 15000+200000
  535092 words of font info for 61 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 50i,13n,84p,1300b,644s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,84p,1300b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on differentiable manifolds.pdf (10 pages).
+Output written on differentiable manifolds.pdf (12 pages).

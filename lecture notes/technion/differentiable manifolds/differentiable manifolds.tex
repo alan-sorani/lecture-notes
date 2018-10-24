@@ -139,7 +139,7 @@ $n$
 \begin{remark}
 לעתים יריעה טופולוגית כפי שהגדרנו אותה נקראת
 \stress{מרחב אוקלידית לוקלית}
-\textenglish{locally Euclidean space}.
+\textenglish{(locally Euclidean space)}.
 \end{remark}
 \begin{fact}
 עבור יריעה טופולוגית,
@@ -269,17 +269,17 @@ $\deg{\ell, \ell'} < \eps$.
 $\Uu_{i\in I} \Uu_{\eps_i}\prs{\ell_i}$.
 \item
 נגדיר גם
-$RP^n = \quot{S^n}{\pm 1}$
+$\mrm{RP}^n = \quot{S^n}{\pm 1}$
 כלומר
 $x \sim y$
 אם
 $x = \pm y$.
 נסמן
-$\pi \colon S^n \to RP^n$
+$\pi \colon S^n \to \mrm{RP}^n$
 את ההטלה
 $x \to \set{x, -x}$
 ואז
-$\Uu \subseteq RP^n$
+$\Uu \subseteq \mrm{RP}^n$
 פתוחה אם
 $\pi^{-1}\prs{\Uu}$
 פתוחה ב־%
@@ -288,12 +288,12 @@ $\S^n$.
 \end{example}
 \begin{exercise}
 הראו כי
-$\R P^n$
+$\mrm{RP}^n$
 הומאומורפי ל־%
-$RP^n$.
+$\mrm{RP}^n$.
 \end{exercise}
 \begin{example}
-$\R P^1$
+$\R \mrm{P}^1$
 הומאומורפי ל־%
 $\S^1$.
 לאחר הזיהוי מתקבל קטע המזוהה בקצותיו, וזה הומאומורפי למעגל.
@@ -473,6 +473,285 @@ $\prs{c,d}$.
 \includegraphics[width=0.8\textwidth]{sources/figure6}
 \end{figure}
 \end{enumerate}
+\end{exercise}
+\section{מבנה חלק}
+נרצה להגדיר מתי העתקה
+$f \colon M \to \RR$
+הינה גזירה/חלקה בנקודה
+$p$.
+%TODO add fig 2.1
+ננסה להגדיר גזירות של העתקה
+$f$
+כנ"ל.
+\begin{description}
+\item["הגדרה":]
+\emph{$f$
+גזירה ב־%
+$p \in M$
+אם כל הצגה מקומית
+$\hat{f}$
+גזירה ב־%
+$\phi\prs{p}$.}
+הגדרה זאת איננה טובה כי בהינתן שתי הצגות מקומיות סביב
+$p$
+ופונקציית מעבר
+$\psi$,
+$\hat{f}_1 = \hat{f}_2 \circ \psi$
+איננה בהכרח גזירה.
+
+\item["הגדרה 2":]
+נניח כי
+$M \subseteq \RR^n$
+יריעה. נאמר כי
+$f \colon M \to \RR$
+חלקה אם ניתן להרחיב את
+$f$
+לפונקציה חלקה
+$f \colon \Uu \to \RR$
+כאשר
+$\Uu$
+סביבה פתוחה של
+$M$.
+\\
+גם בהגדרה זו יש בעיות, כפי שנראה מיד בדוגמה.
+\end{description}
+\begin{example}
+ניקח
+$M = \RR \subseteq \RR$.
+נסתכל על שלוש מפות
+$\prs{\Uu_i, \phi_i}, i \in [3]$
+כאשר
+$\Uu_i = \RR$
+והמפות מוגדרות על ידי
+\begin{align*}
+\phi_1(x) &= x \\
+\phi_2(x) &= x^3 \\
+\text{.} \phi_3(x) &= \sqrt[3]{x}
+\end{align*}
+תהי
+$f(x) = \sum_{i=0}^{\infty} a_i x^i$.
+אז
+$\hat{f}_1 = f$
+ונקבל כי מה"הגדרה"
+$\hat{f}_1$
+חלקה אם ורק אם
+$f$
+חלקה במובן של אינפי.
+נקבל
+\[\hat{f}_2(u) = f\circ \phi_2^{-1}(u) = \sum_{i=0}^{\infty} a_i \cdot u^{\frac{i}{3}}\]
+לכן תנאי הכרחי עבור חלקות של
+$\hat{f}_2$
+הוא ש־%
+$a_i = 0$
+לכל
+$i \not\equiv 0 \mod{3}$.
+נקבל באותו אופן
+\[\hat{f}_3\prs{w} = \sum_{i=1}^{\infty} a_i w^{3i}\]
+ונקבל פחות הצגות חלקות מאשר בהצגה המקומית הראשונה.
+\end{example}
+\begin{example}
+נגדיר
+$M_1 = \set{\prs{x,y} \in \RR^2}{y=0}$
+ו־%
+$M_2 = \set{\prs{x,y} \in \RR^2}{y=\abs{x}}$.
+נגדיר העתקה
+$P \colon M_2 \to M_1$
+ע"י
+$\prs{x,\abs{x}} \mapsto \prs{x,0}$.
+זהו הומיאומורפיזם.
+\begin{exercise}
+$f_1 \colon M_1 \to \RR$
+ע"י
+$\prs{x,0} \mapsto \phi\prs{x}$
+חלקה אם ורק אם
+$\phi$
+חלקה כפונקציה
+$\RR \to \RR$.
+\end{exercise}
+\begin{exercise}
+$f_2\prs{x, \abs{x}} = \abs{x}$
+פונקצייה חלקה
+$M_2 \to \RR$.\\
+רמז: ניתן להרחיב אותה לפונקציה
+$f_2\prs{x,y} = y$
+כאשר
+$f_2 \colon \RR^2 \to \RR$.
+\end{exercise}
+כאשר נפעיל את הזיהוי בין
+$M_1$
+ל־%
+$M_2$
+על ידי
+$P$
+נקבל כי
+$f_2$
+פונקצייה חלקה!
+לכן ה"הגדרה" תלויה בשיכון
+$M \rmono \RR^n$
+ולא רק ביריעה עצמה.
+\end{example}
+נתקלנו בבעייה. המבנה של יריעה טופולוגית הינו חלש מידי ונראה שאין סיכוי להגדיר עליו נגזרת. איך נעקוף זאת?
+נרצה לדרוש שההעתקות המעבר יהיו חלקות, ואז
+$\hat{f}_1 = \psi \circ \hat{f}_2 \circ \phi$
+תהיה גזירה אם ורק אם
+$\hat{f}_2$
+גזירה, עבור
+$\psi, \phi$
+העתקות מעבר.\\
+\begin{definition}
+תהי
+$M$
+יריעה. מפות
+$\prs{\Uu, \phi}, \prs{\Vv, \psi}$
+יקראו
+\stress{מתואמות}
+(\textenglish{compatible})
+אם
+$\psi \circ \phi^{-1}, \phi \circ \psi^{-1}$
+חלקות (כלומר, דיפאומורפיזמים).
+\end{definition}
+\begin{exercise}
+תהי
+$f \colon \Uu \cap \Vv \to \RR$.
+אז
+$f \circ \phi^{-1}$
+חלקה אם ורק אם
+$f \circ \psi^{-1}$
+חלקה, כאשר
+$\phi,\psi$
+מתואמות.
+\end{exercise}
+\begin{definition}
+תהי
+$M$
+יריעה.
+\stress{אטלס חלק}
+\textenglish{(smooth atlas / $\CCC^{\infty}$ atlas)}
+על
+$M$
+הוא משפחת מפות מתואמות
+$\set{\prs{\Uu_{\alpha}, \phi_{\alpha}}}_{\alpha \in I}$
+כך שמתקיים
+$M = \bigcup_{\alpha \in I} \Uu_{\alpha}$.
+\end{definition}
+\begin{example}
+ניקח
+$M = S^1$
+ואז
+$\set{\prs{\Uu^{\pm}, \phi^{\pm}}}$
+שהגדרנו קודם הינו אטלס.
+\end{example}
+\begin{claim}
+האטלס הנ"ל הינו חלק.
+\end{claim}
+\begin{proof}
+\begin{figure}[h!]
+\caption{the stereographic map.}
+\label{stereographic}
+\includegraphics[scale=1]{sources/stereographic}
+\end{figure}
+מתקיים
+\[\text{.} \Uu^+ \cap \Uu^- = S^1 \setminus \set{p^+, p^-}\]
+כמובן
+$\phi^{\pm}\prs{\Uu^+ \cap \Uu^-} = \RR \setminus \set{0}$.
+ראו איור
+\ref{stereographic}.
+מתקיים
+$\phi^-\prs{Q} = \tan\prs{\beta}$
+וגם
+$\phi^+\prs{Q} = \frac{1}{\tan\prs{\beta}}$.
+לכן אם
+$x = \phi^+\prs{Q}$
+נקבל
+$\phi^- \circ \prs{\phi^+}^{-1}\prs{x} = \frac{1}{x}$
+פונקציית מעבר חלקה.
+כנ"ל לפונקציית המעבר לכיוון השני, לכן האטלס חלק.
+\end{proof}
+\begin{definition}
+שני אטלסים חלקים נקראים
+\stress{שקולים}
+אם האיחוד שלהם הוא אטלס חלק.
+\end{definition}
+\begin{exercise}
+שקילות זאת הינה אכן יחס שקילות בין אטלסים חלקים על
+$M$.
+\end{exercise}
+\begin{definition}
+\stress{מבנה חלק}
+על
+$M$
+זו מחלקת שקילות של אטלסים.
+\end{definition}
+\begin{example}
+ניקח
+$M = \RR$
+עם
+$\Uu_i = \RR$
+וההעתקות
+$\phi_1 = \id, \phi_2 = x^2, \phi_3 = \sqrt[3]{x}$.
+אז שלושת האטלסים
+$\set{\prs{\Uu_i, \phi_i}}$
+אטלסים לא מתואמים בזוגות ולכן מייצגים שלושה מבנים חלקים שונים.
+\end{example}
+\begin{definition}
+תהי
+$\prs{M,A}$
+יריעה עם אטלס חלק.
+נגדיר
+$f \colon M \to \RR$
+\stress{גזירה}
+בנקודה
+$p \in M$
+אם
+$\hat{f} \colon \phi\prs{\Uu} \to \RR$
+גזירה ב־%
+$\phi\prs{p}$
+עבור
+$\prs{\Uu, \phi}$
+מפה סביבה
+$p$
+מהאטלס
+$A$.
+\end{definition}
+\begin{exercise}
+בדקו כי הנ"ל מוגדר היטב.
+\end{exercise}
+\begin{definition}
+\stress{יריעה חלקה}
+היא יריעה טופולוגית
+$M$
+עם בחירה של אטלס חלק על
+$M$.
+\end{definition}
+\begin{claim}
+בכל מחלקת שקילות של אטלסים קיים אטלס מקסימלי.
+\end{claim}
+\begin{corollary}
+בחירת מבנה חלק שקולה לבחירת אטלס חלק מקסימלי על
+$M$.
+\end{corollary}
+\begin{definition}
+תהיינה
+$\prs{N, A_N}, \prs{M, A_M}$
+שתי יריעות חלקות ותהי
+$f \colon M \to N$.
+אז
+$f$
+תיקרא
+\stress{גזירה}
+ב־%
+$p \in M$
+אם
+$\hat{f} = \psi \circ f \circ \phi^{-1}$
+גזירה ב־%
+$\phi\prs{p}$,
+ההצגה המקומית ביחס למפות
+$\prs{\Uu, \phi} \in A_M, p \in \Uu$
+ו־%
+$\prs{\Vv, \psi} \in A_N, f\prs{p} \in \Vv$.
+\end{definition}
+\begin{exercise}
+בדקו כי הנ"ל מוגדר היטב ביחס למפות מתואמות.
 \end{exercise}
 \backmatter
 \end{document}
