@@ -1,41 +1,727 @@
-\documentclass[10pt,a4paper,twoside,openany,hidelinks]{book}
-\usepackage{maths}
+\documentclass[a4paper,10pt,twoside,openany]{book}
 
-\title{Lecture Notes to an Introduction to Number Theory \\ \large{Winter 2018, Technion IIT}}
-\author{Lectures by Moshe Baruch \\ \large Typed by Elad Tzorani}
-\date{Last updated on \today}
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+
+\title{סיכומי הרצאות ותרגולים במבוא לתורת המספרים \\ \large{חורף 2018, הטכניון}}
+\author{הרצאות ותרגולים של פרופסור משה ברוך \\ \large סוכמו על ידי אלעד צורני}
+\date{\today}
 
 \begin{document}
 \frontmatter
-\frontpage{lehmer_sieve}{0.6\textwidth}{A Lehmer sieve.}
+\frontpage{lehmer_sieve}{0.8\textwidth}{נפת להמר.}
 \tableofcontents
 \countlectures
+\counttutorials
 \newpage
 
-\chapter*{Preface}
-\addcontentsline{toc}{chapter}{Preface} \markboth{Preface}{}
+\chapter*{הקדמה}
 
-\section*{Technicalities}
-\addcontentsline{toc}{section}{Technicalities} %\markboth{Technicalities}{}
+\section*{הבהרה}
 
-These aren't formal notes related to the course and henceforward there is \emph{absolutely no guarantee} that the recorded material is in correspondence with the course expectations, or that these notes lack any mistakes.\\
-In fact, there probably are mistakes in the notes! I would highly appreciate if any comments or corrections were sent to me via email at \href{mailto:tzorani.elad@gmail.com}{tzorani.elad@gmail.com}.\\
-Elad Tzorani.
+סיכומי הרצאות אלו אינם רשמיים ולכן אין
+\emph{כל הבטחה}
+כי החומר המוקלד הינו בהתאמה כלשהי עם דרישות הקורס, או שהינו חסר טעויות.
+\\
+להיפך, ודאי ישנן טעויות בסיכום! אעריך אם הערות ותיקונים ישלחו אלי בכתובת דוא"ל
+\textenglish{\href{mailto:tzorani.elad@gmail.com}{tzorani.elad@gmail.com}}.\\
+אלעד צורני.
 
-\section*{Course Literature}
-\addcontentsline{toc}{section}{Course Literature} %\markboth{Course Literature}{}
+\section*{ספרות מומלצת.}
 
-The recommended course literature is as follows.
+הספרות המומלצת עבור הקורס הינה כדלהלן.
+
+\begin{english}
 \begin{description}
-\item[One:]
-
-\item[Two:]
-
-\item[Three:]
+\item[Ireland and Rosen:] A classical introduction to modern number theory
 \end{description}
+\end{english}
+
+\section*{סילבוס}
+חוגים אוקלידיים, משפט השארית הסיני ושלמים גאוסים. שרשים פרימיטיביים, הדדיות ריבועית, סכומי גאוס, סכומי יעקובי. הדדיות מסדר שלוש, הדדיות מסדר ארבע, מספרים אלגבריים ושדות ריבועיים.\\
+הסילבוס יכלול את הפרקים הבאים מספר הקורס: 1,34,5,6,8,9.
+
+\section*{דרישות קדם}
+דרישת הקורס העיקרית הינה ידע של קורס מבוא בחבורות. נשתמש גם בידע מקורס בסיס בחוגים על חוגים אוקלידיים, ונניח את ההגדרות הבסיסיות. נחזור על נושא זה בתחילת הקורס.
+
+\section*{ציון:}
+
+\begin{enumerate}
+\item בוחן אמצע: 20\% מגן.
+\item שאלת תרגילי בית בבוחן
+5\%
+מגן.
+\item שאלת תרגילי בית במבחן
+5\%
+מגן.
+\item מבחן סופי.
+\end{enumerate}
 
 \mainmatter
 
+\chapter{מבוא}
+\section{רקע היסטורי}
 
+בין שנת 1640 לשנת 1654, מתמטיקאי בשם פרמה%
+\footnote{Pierre de Fermat}
+הסתכל על מספר שאלות בנוגע למספרים.%
+\newlecture{24 באוקטובר}{2018}
+\begin{question}
+אילו ראשונים
+$p$
+הם מהצורה
+\begin{enumerate}
+\item $x^2 + y^2$
+\item $x^2 + 2y^2$
+\item $x^2 + 3y^2$
+\end{enumerate}
+כאשר
+$x,y \in \ZZ$?
+\end{question}
+\begin{solution}
+\begin{enumerate}
+\item פרמה ניסח את המשפט הבא
+\begin{theorem}
+יהא
+$p$
+ראשוני אי־זוגי. קיימים שלמים
+$x,y$
+ש־%
+$p= x^2 + y^2$
+אם ורק אם
+$p \equiv 1 \mod{4}$.
+\end{theorem}
+\item נסו למצוא חוקיות לבד.
+
+\item
+\begin{theorem}[פרמה]
+ יהא
+$p \neq 3$
+ראשוני. קיימים
+$x,y \in \ZZ$
+כך ש־%
+$x^2 + 3y^2 = p$
+אם ורק אם
+$p \equiv 1 \mod{3}$.
+\end{theorem}
+\end{enumerate}
+\end{solution}
+בין השנים 1729 ו־1772 אוילר%
+\footnote{Leonhard Euler}
+את שלושת המשפטים של פרמה.
+אוילר הוכיח את המשפטים בשני שלבים, הורדה
+\textenglish{descent}
+והדדיות
+\textenglish{Reciprocity}.
+אנחנו נשתמש בחוגים אוקלידיים עבור השלב הראשון, על מנת לפשט את ההוכחה.
+
+\section{חוגים וחוגים אוקלידיים}
+
+\subsection{חוגים כלליים}
+
+ניתן מספר דוגמאות לחוגים.
+
+\begin{examples}
+\begin{itemize}
+\item $\ZZ$
+\item $M_n\prs{R}$
+חוג מטריצות
+$n \times n$
+מעל חוג
+$R$.
+\item חוג פולינומים
+$R\brs{X}$
+מעל חוג
+$R$.
+\end{itemize}
+\end{examples}
+בקורס זה נניח כי כל החוגים הינם קומוטטיבים עם יחידה וללא מחלקי אפס (כלומר אם $ab = 0$ אז $a=0$ או $b=0$).
+
+\begin{definition}
+חוג עם התכונות הנ"ל נקרא
+\stress{תחום שלמות}.
+\end{definition}
+יהא
+$R$
+חוג ויהיו
+$a,b \in R$.
+
+\begin{definition}
+נאמר כי
+$a$
+\stress{מחלק את}
+$b$
+אם קיים
+$d \in R$
+עבורו
+$ad = b$.
+אם כן, נסמן
+$a \mid b$.
+\end{definition}
+\begin{definition}
+$a$
+הפיך אם
+$a \mid 1$.
+\end{definition}
+\begin{definition}
+$a\neq 0$
+שאינו הפיך הוא
+\stress{ראשוני}
+ב־%
+$R$
+אם
+$a \mid bc$
+גורר
+$a \mid b$
+או
+$a \mid c$.
+\end{definition}
+\begin{definition}
+$a\neq 0$
+שאינו הפיך נקרא
+\stress{אי־פריק}
+אם
+$a=bc$
+גורר כי
+$b$
+הפיך או
+$c$
+הפיך.
+\end{definition}
+
+\begin{definition}
+$a \equiv b \mod{c}$
+אם
+$c \mid \prs{b-a}$.
+\end{definition}
+\begin{claim}
+אם
+$a$
+ראושני, הוא אי פריק.
+\end{claim}
+\begin{proof}
+יהי
+$a$
+ראשוני ונכתוב
+$a=bc$.
+אז
+$a \mid bc$.
+לכן
+$a \mid b$
+או
+$a \mid c$.
+אם
+$a \mid b$
+קיים
+$d$
+עבורו
+$b = ad$.
+אז
+$a = adc$.
+לכן
+$a\prs{1-dc} = 0$
+ולכן
+$dc = 1$.
+לכן $c$ הפיך.
+אחרת,
+$a \mid c$
+ונקבל באותו אופן כי
+$b$
+הפיך.
+\end{proof}
+
+\subsection{חוגים אוקלידיים}
+
+\begin{definition}
+חוג
+$R$
+יקרא
+\stress{חוג אוקלידי}
+אם קיימת פונקצייה
+$N \colon R \setminus\set{0} \to \NN_{0}$
+כך שמתקיימות שתי התכונות הבאות.
+
+\begin{enumerate}
+\item
+אם
+$a,b \in R$
+שונים מאפס, קיימים
+$q,r \in R$
+כך שמתקיים
+$r = 0$
+או
+$N(r) < N(a)$
+וגם
+$b = qa + r$.
+\item
+אם
+$a \neq 0$
+וגם
+$a=bc$
+כאשר
+$b,c$
+אינם הפיכים, אז
+$N(c),N(b)<N(a)$.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}
+התכונה השנייה בהגדרה איננה הכרחית.
+\end{remark}
+
+\begin{examples}
+\begin{enumerate}
+\item $\ZZ$
+עם
+$N(x) = \abs{x}$.
+\item $k\brs{X}$
+פולינומים מעל שדה, עם
+$N\prs{p(x)} = \deg\prs{p}$.
+\end{enumerate}
+\end{examples}
+\begin{remark}
+חלוקה בחוג אוקלידי איננה יחידה.
+אם נדרוש גם
+$N(0) \leq N(r) < N\prs{a}$
+נקבל כי החלוקה תהיה יחידה.
+\end{remark}
+
+נניח בקורס כי
+$\abs{r} \leq \frac{\abs{a}}{2}$.
+אפשר לדרוש זאת במקרה
+$r \geq 0$
+כי אם
+$b = qa + r$
+נחליף את
+$r$
+ב־%
+$r-a$.
+נקבל
+$b = \prs{q+1}a + \prs{r-a}$
+ואז
+\begin{align*}
+\text{.} \abs{r-a} = \abs{a-r} = \abs{a} - \abs{r} \leq \abs{a} - \abs{\frac{a}{2}} = \abs{\frac{a}{2}}
+\end{align*}
+באופן דומה נוכיח עבור המקרה
+$r < 0$.
+
+\begin{proposition}
+בחוג אוקלידי
+$R$,
+כל אידאל הינו ראשי. כלומר,
+אם
+$I \leq R$
+אידאל, הוא מהצורה
+$I = \prs{d} = dR = \set{dr}{r \in R}$
+עבור
+$d \in R$.
+\end{proposition}
+\begin{proof}
+נמצא ב־%
+$I$
+איבר
+$d$
+עם נורמה מינימלית (כתרגיל) ואז נראה
+$I = \prs{d}$.
+ניקח איבר
+$a \in I$,
+נכתוב
+$a = qd + r$.
+אז
+$r = 0$
+כי לא ייתכן
+$N(r) < N(d)$.
+\end{proof}
+\begin{definition}
+יהא%
+\newlecture{25 באוקטובר}{2018}
+$R$
+חוג ויהיו
+$a,b\in \R \setminus \set{0}$.
+$d$
+נקרא
+\stress{מחלק משותף גדול ביותר של $a$%
+ו־%
+$b$}
+אם מתקיימות התכונות הבאות.
+\begin{enumerate}
+\item $d \mid a,b$
+\item אם
+$d' \in R$
+מקיים
+$d' \mid a,b$
+אז
+$d' \mid d$.
+\end{enumerate}
+\end{definition}
+
+\begin{proposition}
+יהא
+$R$
+חוג אוקלידי ויהיו
+$a,b \in R$
+שונים מאפס אז קיים מחלק משותף גדול ביותר ל־%
+$a$
+ו־%
+$b$.
+\end{proposition}
+\begin{proof}
+יהיו
+$a,b \in R \setminus \set{0}$
+ויהא
+$I = \trs{a,b}$
+האידאל הנוצר על ידי
+$a$
+ו-%
+$b$.
+לפי הטענה, יש ל־%
+$I$
+יוצר
+$d$,
+ונראה כי זהו ממג"ב (מחלק משותף גדול ביותר) של
+$a,b$.
+\begin{description}
+\item[מחלק משותף:]
+ניתן לכתוב
+$a = 1\cdot a \in I$
+לכן
+$d \mid b$.
+גם
+$b = 1\cdot b \in I$
+לכן
+$d \mid b$.
+\item[מקסימליות:]
+אם
+$d' \mid b$
+וגם
+$d' \mid b$.
+קיימים
+$x_1, y_1 \in R$
+עבורם
+$d = x_1a + y_1b$.
+כעת
+$d' \mid a,b$
+ולכן
+$d' \mid d$.
+\end{description}
+\end{proof}
+\begin{definition}
+איברים
+$a,b \in R$
+נקראים
+\stress{חברים}
+אם קיים איבר הפיך
+$u \in R^{\times}$
+עבורו
+$a = bu$.
+\end{definition}
+\begin{note}
+חברות זה יחס שקילות.
+\end{note}
+\begin{proposition}
+יהיו
+$a,b \in \R \setminus \set{0}$
+עם
+$d,d'$
+ממג"ב. אז
+$d,d'$
+חברים.
+\end{proposition}
+\begin{proof}
+מהגדרת ממג"ב מתקיים
+$d' \mid d$
+וגם
+$d \mid d'$.
+לכן יש
+$x,y$
+עבורם
+$d = xd'$
+וגם
+$d' = yd$.
+נציב את השיוויון השני בראשון ונקבל
+$d = xyd$
+לכן
+$xy = 1$
+ונקבל כי
+$x,y$
+הפיכים.
+לכן
+$d,d'$
+חברים.
+\end{proof}
+\begin{corollary}
+יהא
+$d$
+ממג"ב של
+$a,b \in \R$.
+קיימים
+$x,y \in R$
+כך שמתקיים
+$d = xa + yb$.
+\end{corollary}
+\begin{corollary}
+נמצא ממג"ב אחד
+$d'$
+עבורו
+$\prs{d} = \trs{a,b}$.
+$d,d'$
+חברים ולכן יוצרים את אותו האידאל
+$\prs{d'} = \prs{d}$.
+לכן גם
+$d'$
+צירוף לינארי של
+$a,b$
+עם מקדמים ב־%
+$R$.
+\end{corollary}
+\begin{example}[חוג השלמים הגאוסים]
+נגדיר
+$\ZZ\brs{i} = \set{a+bi}{a,b \in \ZZ} \subseteq \CC$.
+\end{example}
+\begin{proposition}
+$\ZZ\brs{i}$
+חוג אוקלידי.
+\end{proposition}
+\begin{proof}
+נזכיר כי בשלמים יש חלוקה עם שארית
+$b = qa + r$
+עם התנאי
+$\abs{r} \leq \frac{\abs{a}}{2}$.
+נגדיר
+$N\prs{a+bi} = a^2 + b^2 = \abs{a+bi}^2$.
+יהיו
+$a+bi, c+di \in R$.
+נעשה חלוקה עם שארית ל־%
+$a+bi, c+di$.
+מתקיים קודם כל
+\begin{equation}\label{gaussian}
+\text{.} \frac{a+bi}{c+di} = \frac{ac + bd}{c^2 + d^2} + \frac{bc - ad}{c^2 + d^2}i
+\end{equation}
+נחפש מספר ב־%
+$\ZZ[i]$
+קרוב ביותר למנה זאת.
+נעשה חלוקה עם שארית ב־%
+$\ZZ$
+במקום המקדמים במנה.
+\begin{align*}
+ac + bd &= x_1\prs{c^2 + d^2} + r_1 \\
+bc - ad &= x_1\prs{c^2 + d^2}+r_2
+\end{align*}
+כאשר
+$\abs{r_i} \leq \frac{c^2 + d^2}{2}$.
+נציב בנוסחה
+\ref{gaussian}
+ונקבל
+\begin{align*}
+\frac{a+bi}{c+di} &= \frac{x_1\prs{c^2 + d^2} + r_1 + \prs{x_2\prs{c^2 + d^2} + r_2}i}{c^2 + d^2}\\
+&= x_1 + x_2i + \frac{r_1 + r_2 i}{c^2 + d^2}
+\end{align*}
+או לאחר כפל שני האגפים
+\begin{align*}
+\text{.} a+bi = \prs{x_1 + x_2i}\prs{c+di}+\frac{r_1 + r_2i}{c^2 + d^2}\prs{c + di}
+\end{align*}
+נטען כי זאת חלוקה עם שארית. יש להראות כי הביטוי
+$\frac{r_1 + r_2 i}{c^2+d^2}\prs{c+di}$
+שלם גאוסי וכי הנורמה שלו קטנה מזאת של
+$c+di$.
+אכן זהו שלם גאוסי כיוון שניתן לכתוב
+\[\text{.} \frac{r_1 + r_2i}{c^2 + d^2} \prs{c+di} = a+bi - \prs{x_1 + x_2i}\prs{c+di} \in \ZZ[i]\]
+נשאיר את סיום ההוכחה כתרגיל.
+\end{proof}
+\begin{exercise}
+הוכיחו את אי־השיוויון הבא כדי לסיים את ההוכחה.
+\[\abs{\frac{\prs{r_1 + r_2}\prs{c+di}}{c^2 + d^2}}^2 < \abs{c+di}^2\]
+\end{exercise}
+\section{האלגוריתם של אוקלידס}
+יהא%
+\newtutorial{25 באוקטובר}{2018}
+$R$
+חוג אוקלידי ויהיו
+$a,b \in \R \setminus \set{0}$.
+האלגוריתם של אוקלידס מוצא ממג"ב של
+$a$
+ו־%
+$b$.
+
+\begin{algorithm}
+\begin{enumerate}
+\item נסמן
+$b = r_0$.
+\item נכתוב
+$a = q_1 b + r_1$.
+\item נחלק את
+$r_{i-1}$
+ב־%
+$r_{i}$
+עם
+$i$
+מקסימלי.
+נכתוב
+$r_{i-1} = q_{i+1}r_i + r_{i+1}$.
+\\ נפסיק כשנקבל
+$r_{n+1} = 0$
+ואז
+$r_n$
+הוא ממג"ב של
+$a,b$.
+\end{enumerate}
+\end{algorithm}
+\begin{exercise}
+מצאו ממג"ב של
+$91$
+ו־%
+$35$.
+\end{exercise}
+\begin{solution}
+\begin{align*}
+91 &= 2\cdot 35 + 21 \\
+35 &= 1 \cdot 21 + 14 \\
+21 &= 1\cdot 14 + 7 \\
+14 &= 2\cdot 7 + 0
+\end{align*}
+לכן
+$\gcd\prs{91,35} = 7$.
+\end{solution}
+\begin{exercise}
+מצאו את
+$\gcd\prs{13 + 13i, -1+18i}$.
+\end{exercise}
+\begin{solution}
+נציג שני פתרונות.
+\begin{enumerate}
+\item נבצע חלוקה עם שארית.
+מתקיים
+\begin{align} \label{gaussian_exercise}
+\text{.}\frac{13 + 13i}{-1+18i} = \frac{17}{25}-\frac{19}{25}i
+\end{align}
+נבצע חלוקה עם שארית בשלמים.
+\begin{align*}
+17 &= 1\cdot 25 + \prs{-8} \\
+-19 &= -1\cdot 25 + 6
+\end{align*}
+נציב ב־%
+\ref{gaussian_exercise}
+ונקבל
+\begin{align*}
+\text{.} \frac{13 + 13i}{-1+18i} &= \frac{28 - 8 - 25i + 6i}{25} = 1-i + \frac{-8 + 6i}{25}
+\end{align*}
+נכפול ונקבל
+\begin{align*}
+13+13i &= \prs{1-i}\prs{-1+18i} + \frac{-8 + 6i}{25}\prs{-1+18i} \\
+\text{.} \phantom{13+13i} &= \prs{1-i}\prs{-1+18i} + \prs{-4 -6i}
+\end{align*}
+כעת נחלק את
+$\prs{-1 + 18i}$
+בשארית
+$-4-6i$.
+יוצא
+\[\text{.} -1 + 18i = \prs{-2-2i}\prs{-4-6i} + 3 - 2i\]
+מחלקים שוב
+$-4+6i = \prs{-2i}\prs{3-2i} + 0$
+ולכן
+$\gcd\prs{13+13i, -1+18i} = 3-2i$.
+\item
+נזכיר טענה.
+\begin{proposition}
+יהא
+$a+bi \in \ZZ[i]$.
+אם
+$N\prs{a+bi} = a^2 + b^2$
+ראשוני ב־%
+$\NN$
+אז
+$a+bi$
+ראשוני ב־%
+$\ZZ[i]$.
+\end{proposition}
+נפרק את
+$13 + 13i$
+ואת
+$-1+18i$
+למכפלות ראשוניים.
+מתקיים
+$13 + 13i = 13\prs{1+i}$
+כאשר
+$N\prs{1+i} = 1^2 + 1^2 = 2$
+ראשוני, לכן
+$1+i$
+ראשוני.
+ניתן לכתוב
+$13 = \prs{2+3i}\prs{2-3i}$
+כאשר מהטענה זה פירוק לראשוניים.
+לכן
+\[13+13i = \prs{2+3i}\prs{2-3i}\prs{1+i}\]
+פירוק לראשוניים.
+\\
+נפרק את
+$-1 + 18i$.
+מתקיים
+\[\text{.} N\prs{-1+18i} = 1^2 + 18^2 = 325 = 5^2 \cdot 13\]
+הנורמה אצלנו כפלית ולכן למחלקים נורמות בקבוצה
+$\set{5, 5^2, 13}$
+(נפרט יותר בהרצאה).
+נחלק את
+$-1 + 18i$
+ב־%
+$2+3i$.
+יוצא
+\[\prs{-1+18i} = \prs{2+3i}\prs{1+2i}\prs{2-i}\]
+נקבל כי $2+3i$
+הוא הגורם המשותף היחיד בפירוק לראשוניים עד־כדי חברות (לחברים יש אותה הנורמה) ולכן
+$\gcd\prs{13+13i, -1+18i} = 2+3i$.
+\end{enumerate}
+\end{solution}
+\begin{theorem}[אוקלידס]
+יש אינסוף ראשוניים ב־%
+$\NN$.
+\end{theorem}
+\begin{proof}
+נניח בשלילה שיש מספר סופי של ראשוניים
+$p_1, \ldots, p_k$
+ונסמן
+$N = \prs{\prod_{i=1}^k p_i} + 1$.
+אם
+$p_i \in N$
+אז
+$p_i \mid 1$
+וזו סתירה לכך שיש ראשוני שמחלק את
+$N$.
+\end{proof}
+\begin{exercise}
+יש
+ב־%
+$\NN$
+אינסוף ראשוניים
+$p$
+שמקיימים
+$p \equiv 3 \mod{4}$.
+\end{exercise}
+\begin{solution}
+נניח שיש מספר סופי של ראשוניים
+$p_1, \ldots, p_k \equiv 3 \mod{4}$.
+ניקח
+$N = 4 \prs{\prod_{i=1}^k p_i} - 1$
+ואז
+$p_i \nmid N$
+לכל
+$i$.
+נפרק את
+$N$
+לראשוניים
+$N = \prod_{i=1}^m q_i$.
+אז קיים
+$q_i \equiv 3 \mod{4}$
+כי אחרת
+\[ N \equiv \prod_{i=1}^m q_i \equiv \prod_{i=1}^m 1 \equiv 1 \mod{4}\]
+בסתירה.
+אבל
+$q_i \neq p_j$
+לכל
+$j \in [k]$,
+בסתירה.
+\end{solution}
 \backmatter
 \end{document}
+

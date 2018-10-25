@@ -1,44 +1,13 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6840 64-bit)  (format=lualatex 2018.10.5)  5 OCT 2018 16:49
- restricted system commands enabled.
-**"intro to number theory"
-("./intro to number theory.tex"
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  25 OCT 2018 10:22
+entering extended mode
+**"./intro to number theory.tex"
+("intro to number theory.tex"
 LaTeX2e <2018-04-01> patch level 5
-Lua module: luaotfload-main 2018/09/24 2.90001 OpenType layout system.
-Lua module: lualibs 2018-09-21 2.6 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2018-09-21 2.6 ConTeXt Lua libraries -- extended co
-llection.
-luaotfload | conf : Root cache directory is C:/Users/EladT/AppData/Local/MiKTeX/
-2.9/luatex-cache/generic/names.
-luaotfload | init : Loading fontloader “fontloader-2018-09-24.lua” from kpse
--resolved path “C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/lu
-aotfload/fontloader-2018-09-24.lua”.
-Lua-only attribute luaotfload@state = 1
-Lua-only attribute luaotfload@noligature = 2
-Lua-only attribute luaotfload@syllabe = 3
-luaotfload | init : Context OpenType loader version “3.104”
-Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is C:/Users/EladT/AppData/Local/MiKTeX/
-2.9/luatex-cache/generic/names.
-Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
-font'.
-Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
-_font'.
-Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
-t_unsafe'.
-Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
-'.
-Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
-.
-luaotfload | main : initialization completed in 0.828 seconds ("C:/Users/EladT/
-AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/book.cls"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/bk10.clo"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk10.clo"
 File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from C:/Users/EladT/AppData/Local/M
-iKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc)
+)
 \c@part=\count80
 \c@chapter=\count81
 \c@section=\count82
@@ -52,32 +21,32 @@ iKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:/localtexmf/tex/latex/maths/maths.sty
+(C:/localtexmf\tex\latex\maths\maths.sty
 Package: maths 2018/06/16 Mathematics Macros
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.st
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
 y"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext.st
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
 y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
 "
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
 "
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 "
 Package: amsopn 2016/03/08 v2.02 operator names
 )
@@ -119,7 +88,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
 sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -127,24 +96,24 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amssymb.s
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
 ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/jknappen/mathrsfs.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.
 sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mathtool
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtool
 s.sty"
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.st
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
 y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) ("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/calc.sty"
+) ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count101
 \calc@Bcount=\count102
@@ -157,7 +126,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count103
 \calc@Cskip=\skip48
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/mathtools/mhsetup.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.
 sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
@@ -175,27 +144,92 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen119
 \l_MT_below_shortintertext_sep=\dimen120
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3packages/xparse/
-xparse.sty"
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3kernel/expl3.sty
-"
-Package: expl3 2018-09-24 L3 programming layer (loader) 
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\comment\comment.st
+y"
+\CommentStream=\write3
+ Excluding comment 'comment')
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count105
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.st
+y"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.
+tex"
+\@xs@message=\write4
+\integerpart=\count106
+\decimalpart=\count107
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3kernel/expl3-cod
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\xparse\
+xparse.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
+"
+Package: expl3 2018-10-17 L3 programming layer (loader) 
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
 e.tex"
-Package: expl3 2018-09-24 L3 programming layer (code)
-\ucharcat@table=\catcodetable5
-\c_max_int=\count105
-\l_tmpa_int=\count106
-\l_tmpb_int=\count107
-\g_tmpa_int=\count108
-\g_tmpb_int=\count109
-\g__kernel_prg_map_int=\count110
-\c_log_iow=\count111
-\l_iow_line_count_int=\count112
-\l__iow_line_target_int=\count113
-\l__iow_one_indent_int=\count114
-\l__iow_indent_int=\count115
+Package: expl3 2018-10-17 L3 programming layer (code)
+\c_max_int=\count108
+\l_tmpa_int=\count109
+\l_tmpb_int=\count110
+\g_tmpa_int=\count111
+\g_tmpb_int=\count112
+\g__kernel_prg_map_int=\count113
+\c_log_iow=\count114
+\l_iow_line_count_int=\count115
+\l__iow_line_target_int=\count116
+\l__iow_one_indent_int=\count117
+\l__iow_indent_int=\count118
 \c_zero_dim=\dimen121
 \c_max_dim=\dimen122
 \l_tmpa_dim=\dimen123
@@ -214,75 +248,75 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count116
-\l__intarray_loop_int=\count117
+\l_keys_choice_int=\count119
+\l__intarray_loop_int=\count120
 \c__intarray_sp_dim=\dimen127
-\g__intarray_font_int=\count118
-\c__fp_leading_shift_int=\count119
-\c__fp_middle_shift_int=\count120
-\c__fp_trailing_shift_int=\count121
-\c__fp_big_leading_shift_int=\count122
-\c__fp_big_middle_shift_int=\count123
-\c__fp_big_trailing_shift_int=\count124
-\c__fp_Bigg_leading_shift_int=\count125
-\c__fp_Bigg_middle_shift_int=\count126
-\c__fp_Bigg_trailing_shift_int=\count127
-\g__fp_array_int=\count128
-\l__fp_array_loop_int=\count129
-\l__sort_length_int=\count130
-\l__sort_min_int=\count131
-\l__sort_top_int=\count132
-\l__sort_max_int=\count133
-\l__sort_true_max_int=\count134
-\l__sort_block_int=\count135
-\l__sort_begin_int=\count136
-\l__sort_end_int=\count137
-\l__sort_A_int=\count138
-\l__sort_B_int=\count139
-\l__sort_C_int=\count140
-\l__tl_analysis_normal_int=\count141
-\l__tl_analysis_index_int=\count142
-\l__tl_analysis_nesting_int=\count143
-\l__tl_analysis_type_int=\count144
-\l__regex_internal_a_int=\count145
-\l__regex_internal_b_int=\count146
-\l__regex_internal_c_int=\count147
-\l__regex_balance_int=\count148
-\l__regex_group_level_int=\count149
-\l__regex_mode_int=\count150
-\c__regex_cs_in_class_mode_int=\count151
-\c__regex_cs_mode_int=\count152
-\l__regex_catcodes_int=\count153
-\l__regex_default_catcodes_int=\count154
-\c__regex_catcode_L_int=\count155
-\c__regex_catcode_O_int=\count156
-\c__regex_catcode_A_int=\count157
-\c__regex_all_catcodes_int=\count158
-\l__regex_show_lines_int=\count159
-\l__regex_min_state_int=\count160
-\l__regex_max_state_int=\count161
-\l__regex_left_state_int=\count162
-\l__regex_right_state_int=\count163
-\l__regex_capturing_group_int=\count164
-\l__regex_min_pos_int=\count165
-\l__regex_max_pos_int=\count166
-\l__regex_curr_pos_int=\count167
-\l__regex_start_pos_int=\count168
-\l__regex_success_pos_int=\count169
-\l__regex_curr_char_int=\count170
-\l__regex_curr_catcode_int=\count171
-\l__regex_last_char_int=\count172
-\l__regex_case_changed_char_int=\count173
-\l__regex_curr_state_int=\count174
-\l__regex_step_int=\count175
-\l__regex_min_active_int=\count176
-\l__regex_max_active_int=\count177
-\l__regex_replacement_csnames_int=\count178
-\l__regex_match_count_int=\count179
-\l__regex_min_submatch_int=\count180
-\l__regex_submatch_int=\count181
-\l__regex_zeroth_submatch_int=\count182
-\g__regex_trace_regex_int=\count183
+\g__intarray_font_int=\count121
+\c__fp_leading_shift_int=\count122
+\c__fp_middle_shift_int=\count123
+\c__fp_trailing_shift_int=\count124
+\c__fp_big_leading_shift_int=\count125
+\c__fp_big_middle_shift_int=\count126
+\c__fp_big_trailing_shift_int=\count127
+\c__fp_Bigg_leading_shift_int=\count128
+\c__fp_Bigg_middle_shift_int=\count129
+\c__fp_Bigg_trailing_shift_int=\count130
+\g__fp_array_int=\count131
+\l__fp_array_loop_int=\count132
+\l__sort_length_int=\count133
+\l__sort_min_int=\count134
+\l__sort_top_int=\count135
+\l__sort_max_int=\count136
+\l__sort_true_max_int=\count137
+\l__sort_block_int=\count138
+\l__sort_begin_int=\count139
+\l__sort_end_int=\count140
+\l__sort_A_int=\count141
+\l__sort_B_int=\count142
+\l__sort_C_int=\count143
+\l__tl_analysis_normal_int=\count144
+\l__tl_analysis_index_int=\count145
+\l__tl_analysis_nesting_int=\count146
+\l__tl_analysis_type_int=\count147
+\l__regex_internal_a_int=\count148
+\l__regex_internal_b_int=\count149
+\l__regex_internal_c_int=\count150
+\l__regex_balance_int=\count151
+\l__regex_group_level_int=\count152
+\l__regex_mode_int=\count153
+\c__regex_cs_in_class_mode_int=\count154
+\c__regex_cs_mode_int=\count155
+\l__regex_catcodes_int=\count156
+\l__regex_default_catcodes_int=\count157
+\c__regex_catcode_L_int=\count158
+\c__regex_catcode_O_int=\count159
+\c__regex_catcode_A_int=\count160
+\c__regex_all_catcodes_int=\count161
+\l__regex_show_lines_int=\count162
+\l__regex_min_state_int=\count163
+\l__regex_max_state_int=\count164
+\l__regex_left_state_int=\count165
+\l__regex_right_state_int=\count166
+\l__regex_capturing_group_int=\count167
+\l__regex_min_pos_int=\count168
+\l__regex_max_pos_int=\count169
+\l__regex_curr_pos_int=\count170
+\l__regex_start_pos_int=\count171
+\l__regex_success_pos_int=\count172
+\l__regex_curr_char_int=\count173
+\l__regex_curr_catcode_int=\count174
+\l__regex_last_char_int=\count175
+\l__regex_case_changed_char_int=\count176
+\l__regex_curr_state_int=\count177
+\l__regex_step_int=\count178
+\l__regex_min_active_int=\count179
+\l__regex_max_active_int=\count180
+\l__regex_replacement_csnames_int=\count181
+\l__regex_match_count_int=\count182
+\l__regex_min_submatch_int=\count183
+\l__regex_submatch_int=\count184
+\l__regex_zeroth_submatch_int=\count185
+\g__regex_trace_regex_int=\count186
 \c_empty_box=\box28
 \l_tmpa_box=\box29
 \l_tmpb_box=\box30
@@ -324,44 +358,34 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen150
 \l__coffin_scaled_total_height_dim=\dimen151
 \l__coffin_scaled_width_dim=\dimen152
-\l__seq_internal_a_int=\count184
-\l__seq_internal_b_int=\count185
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/l3kernel/l3pdfmode
-.def"
-File: l3pdfmode.def 2018-09-24 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count186
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdf
+mx.def"
+File: l3xdvidpfmx.def 2018-10-17 v L3 Experimental driver: xdvipdfmx
+\g__driver_image_int=\count187
+\g__driver_pdf_object_int=\count188
 ))
-Package: xparse 2018-09-24 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count187
-\g__xparse_grabber_int=\count188
-\l__xparse_m_args_int=\count189
-\l__xparse_mandatory_args_int=\count190
-\l__xparse_v_nesting_int=\count191
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count189
+\g__xparse_grabber_int=\count190
+\l__xparse_m_args_int=\count191
+\l__xparse_mandatory_args_int=\count192
+\l__xparse_v_nesting_int=\count193
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/comment/comment.st
-y"
-\CommentStream=\write3
- Excluding comment 'comment')
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/lipsum/lipsum.sty"
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count192
-) ("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.st
-y"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/color
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
 .cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: luatex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/luate
-x.def"
-File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\xetex
+.def"
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -370,13 +394,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption.st
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
-Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption3.s
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
 ty"
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen153
 \captionmargin@=\dimen154
@@ -386,28 +410,25 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen158
 \caption@hangindent=\dimen159
 )
-\c@ContinuedFloat=\count193
+\c@caption@flags=\count194
+\c@ContinuedFloat=\count195
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.s
-ty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
 sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count194
-\Gm@cntv=\count195
-\c@Gm@tempcnt=\count196
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
 \Gm@bindingoffset=\dimen160
 \Gm@wd@mp=\dimen161
 \Gm@odd@mp=\dimen162
@@ -418,12 +439,12 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen167
 \Gm@dimlist=\toks20
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry.
-cfg"))
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\xetexconfig\geom
+etry.cfg"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
-
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
 \f@nch@headwidth=\skip56
 \f@nch@O@elh=\skip57
 \f@nch@O@erh=\skip58
@@ -436,55 +457,40 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 )
 \pageoffset=\skip65
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/emptypage/emptypag
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\emptypage\emptypag
 e.sty"
-Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty p
-ages
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
+pages
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \frontpage with sig. 'ggg' on line 85.
-.................................................
-
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/genmisc/nth.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\genmisc\nth.sty"
 Package: nth 2002/02/27
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperref.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
 sty"
 Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobsub-
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX detected.
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
-
-(C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/scripts/oberdiek/oberdiek.luat
-ex.lua)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO)
-
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks21
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
-
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -498,25 +504,21 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhook.s
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
 ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoptions
-.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
 \@linkdim=\dimen168
-\Hy@linkcounter=\count197
-\Hy@pagecounter=\count198
+\Hy@linkcounter=\count199
+\Hy@pagecounter=\count266
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc.de
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count199
+\Hy@SavedSpaceFactor=\count267
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperref.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -528,14 +530,14 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count266
- ("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
+\c@Hy@tempcnt=\count268
+ ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen169
-\Fld@menulength=\count267
+\Fld@menulength=\count269
 \Field@Width=\dimen170
 \Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -547,249 +549,1055 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count268
-\c@Item=\count269
-\c@Hfootnote=\count270
+\Hy@abspage=\count270
+\c@Item=\count271
+\c@Hfootnote=\count272
 )
-Package hyperref Info: Driver (autodetected): hluatex.
+Package hyperref Info: Driver (autodetected): hxetex.
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hluatex.d
-ef"
-File: hluatex.def 2018/09/30 v6.88a Hyperref driver for luaTeX
-\Fld@listcount=\count271
-\c@bookmark@seq@number=\count272
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hxetex.de
+f"
+File: hxetex.def 2018/09/30 v6.88a Hyperref driver for XeTeX
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunfile
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\puenc.def
+"
+File: puenc.def 2018/09/30 v6.88a Hyperref: PDF Unicode definition (HO)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\stringe
+nc.sty"
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box43
+\c@Hy@AnnotLevel=\count273
+\HyField@AnnotCount=\count274
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
-2.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip66
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/doublestroke/dsfon
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\dsfon
 t.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \set with sig. 'mg' on line 325.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \trs with sig. 'mg' on line 331.
-.................................................
-
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\stackrel.
 sty"
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count273
+Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ntheorem/ntheorem.
-sty"
-Style `ntheorem', Version 1.33 <2011/08/15>
-Package: ntheorem 2011/08/15 1.33
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\theorem@style=\toks22
-\theorem@@style=\toks23
-\theorembodyfont=\toks24
-\theoremnumbering=\toks25
-\theorempreskipamount=\skip67
-\theorempostskipamount=\skip68
-\theoremframepreskipamount=\skip69
-\theoremframepostskipamount=\skip70
-\theoreminframepreskipamount=\skip71
-\theoreminframepostskipamount=\skip72
-\theorem@preskip=\toks26
-\theorem@postskip=\toks27
-\theorem@framepreskip=\toks28
-\theorem@framepostskip=\toks29
-\theorem@inframepreskip=\toks30
-\theorem@inframepostskip=\toks31
-\theoremindent=\dimen172
-\theorem@indent=\dimen173
-\theoremrightindent=\dimen174
-\theorem@rightindent=\dimen175
-\theoremheaderfont=\toks32
-\theoremseparator=\toks33
-\theoremprework=\toks34
-\theorempostwork=\toks35
-\theoremsymbol=\toks36
-\qedsymbol=\toks37
-\theoremkeyword=\toks38
-\qedsymbol=\toks39
-\thm@topsep=\skip73
-\thm@topsepadd=\skip74
-Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count274
-\c@currNonectr=\count275
-\mysavskip=\skip75
-Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input 
-line 1175.
-\thm@amstmpdepth=\dimen176
-\tagwidth=\dimen177
-)
-\c@currproofctr=\count276
-\c@endproofctr=\count277
-\c@proof=\count278
-\c@currtheoremctr=\count279
-\c@endtheoremctr=\count280
-\c@theorem=\count281
-\c@currlemmactr=\count282
-\c@endlemmactr=\count283
-\c@currcorollaryctr=\count284
-\c@endcorollaryctr=\count285
-\c@currpropositionctr=\count286
-\c@endpropositionctr=\count287
-\c@currconjecturectr=\count288
-\c@endconjecturectr=\count289
-\c@currcriterionctr=\count290
-\c@endcriterionctr=\count291
-\c@currassertionctr=\count292
-\c@endassertionctr=\count293
-\c@currfactctr=\count294
-\c@endfactctr=\count295
-\c@currhypothesisctr=\count296
-\c@endhypothesisctr=\count297
-\c@currdefinitionctr=\count298
-\c@enddefinitionctr=\count299
-\c@currconditionctr=\count300
-\c@endconditionctr=\count301
-\c@curraxiomctr=\count302
-\c@endaxiomctr=\count303
-\c@axiom=\count304
-\c@currpostulatectr=\count305
-\c@endpostulatectr=\count306
-\c@currpropertyctr=\count307
-\c@endpropertyctr=\count308
-\c@currproblemctr=\count309
-\c@endproblemctr=\count310
-\c@currexamplectr=\count311
-\c@endexamplectr=\count312
-\c@example=\count313
-\c@currexercisectr=\count314
-\c@endexercisectr=\count315
-\c@exercise=\count316
-\c@curralgorithmctr=\count317
-\c@endalgorithmctr=\count318
-\c@currquestionctr=\count319
-\c@endquestionctr=\count320
-\c@currassumptionctr=\count321
-\c@endassumptionctr=\count322
-\c@currremarkctr=\count323
-\c@endremarkctr=\count324
-\c@currnotectr=\count325
-\c@endnotectr=\count326
-\c@currnotationctr=\count327
-\c@endnotationctr=\count328
-\c@currclaimctr=\count329
-\c@endclaimctr=\count330
-\c@currsummaryctr=\count331
-\c@endsummaryctr=\count332
-\c@summary=\count333
-\c@curracknowledgementctr=\count334
-\c@endacknowledgementctr=\count335
-\c@currcasectr=\count336
-\c@endcasectr=\count337
-\c@case=\count338
-\c@curroptionctr=\count339
-\c@endoptionctr=\count340
-\c@option=\count341
-\c@currconclusionctr=\count342
-\c@endconclusionctr=\count343
-\c@conclusion=\count344
-\c@currsolutionctr=\count345
-\c@endsolutionctr=\count346
-\c@solution=\count347
-Excluding 'comment' comment.
-\c@currexms_rawctr=\count348
-\c@endexms_rawctr=\count349
-\c@exms_raw=\count350
-\c@currexrs_rawctr=\count351
-\c@endexrs_rawctr=\count352
-\c@exrs_raw=\count353
-) ("./intro to number theory.aux")
-\openout1 = intro to number theory.aux
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
+tikz.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfr
+cs.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common.tex"
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-common-lists.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+futil-latex.def"
+\pgfutil@abb=\box44
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+frcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
+core.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
 sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/graph
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
 ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 99.
+Package graphics Info: Driver file: xetex.def on input line 99.
 )
-\Gin@req@height=\dimen178
-\Gin@req@width=\dimen179
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
 )
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.mk
-ii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen180
-\scratchbox=\box43
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen181
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks41
-)
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-
-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
+fsys.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.st
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\w@pgf@writea=\write5
+\r@pgf@reada=\read2
+\c@pgf@counta=\count277
+\c@pgf@countb=\count278
+\c@pgf@countc=\count279
+\c@pgf@countd=\count280
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-xetex.def"
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-dvipdfmx.def"
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count281
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
+pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+calc.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+util.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+parser.code.tex"
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count284
+\pgfmath@box=\box45
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.basic.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.trigonometric.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.random.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.comparison.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.base.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.round.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.misc.code.tex")
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+functions.integerarithmetics.code.tex")))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+float.code.tex"
+\c@pgfmathroundto@lastzeros=\count285
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box46
+\pgf@hbox=\box47
+\pgf@layerbox@main=\box48
+\pgf@picture@serial@count=\count286
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen259
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen263
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count287
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box49
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
+gfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box50
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
+pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgff
+or.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfk
+eys.sty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+fkeys.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.s
+ty"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
+ffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
+.code.tex")
+\pgffor@iter=\dimen267
+\pgffor@skip=\dimen268
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count288
+\pgfplotmarksize=\dimen269
+)
+\tikz@lastx=\dimen270
+\tikz@lasty=\dimen271
+\tikz@lastxsaved=\dimen272
+\tikz@lastysaved=\dimen273
+\tikzleveldistance=\dimen274
+\tikzsiblingdistance=\dimen275
+\tikz@figbox=\box51
+\tikz@figbox@bg=\box52
+\tikz@tempbox=\box53
+\tikz@tempbox@bg=\box54
+\tikztreelevel=\count289
+\tikznumberofchildren=\count290
+\tikznumberofcurrentchild=\count291
+\tikz@fig@count=\count292
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+odulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count293
+\pgfmatrixcurrentcolumn=\count294
+\pgf@matrix@numberofcolumns=\count295
+)
+\tikz@expandcount=\count296
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tikzsymbols\tikzsy
+mbols.sty"
+Package: tikzsymbols 2018/05/16 v4.10a Some symbols created using tikz and LaTe
+X3.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2
+e\l3keys2e.sty"
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen276
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen277
+\pgfdecoratedremainingdistance=\dimen278
+\pgfdecoratedinputsegmentcompleteddistance=\dimen279
+\pgfdecoratedinputsegmentremainingdistance=\dimen280
+\pgf@decorate@distancetomove=\dimen281
+\pgf@decorate@repeatstate=\count297
+\pgfdecorationsegmentamplitude=\dimen282
+\pgfdecorationsegmentlength=\dimen283
+)
+\tikz@lib@dec@box=\box55
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarytrees.code.tex"
+File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
+)
+\l__tikzsymbols_Moai_thickness_dim=\dimen284
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-cd\tikzlibr
+arycd.code.tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarymatrix.code.tex"
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryquotes.code.tex"
+File: tikzlibraryquotes.code.tex 2014/03/21 v3.0.1a (rcs-revision 1.4)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryarrows.meta.code.tex"
+File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
+\pgfarrowinset=\dimen285
+\pgfarrowlength=\dimen286
+\pgfarrowwidth=\dimen287
+\pgfarrowlinewidth=\dimen288
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count298
+\sf@farskip=\skip67
+\sf@captopadj=\dimen289
+\sf@capskip=\skip68
+\sf@nearskip=\skip69
+\c@subfigure=\count299
+\c@subfigure@save=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@subtable@save=\count303
+\c@lotdepth=\count304
+\sf@top=\skip70
+\sf@bottom=\skip71
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count305
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
+sty"
+Style `ntheorem', Version 1.33 <2011/08/15>
+Package: ntheorem 2011/08/15 1.33
+\theorem@style=\toks33
+\theorem@@style=\toks34
+\theorembodyfont=\toks35
+\theoremnumbering=\toks36
+\theorempreskipamount=\skip72
+\theorempostskipamount=\skip73
+\theoremframepreskipamount=\skip74
+\theoremframepostskipamount=\skip75
+\theoreminframepreskipamount=\skip76
+\theoreminframepostskipamount=\skip77
+\theorem@preskip=\toks37
+\theorem@postskip=\toks38
+\theorem@framepreskip=\toks39
+\theorem@framepostskip=\toks40
+\theorem@inframepreskip=\toks41
+\theorem@inframepostskip=\toks42
+\theoremindent=\dimen290
+\theorem@indent=\dimen291
+\theoremrightindent=\dimen292
+\theorem@rightindent=\dimen293
+\theoremheaderfont=\toks43
+\theoremseparator=\toks44
+\theoremprework=\toks45
+\theorempostwork=\toks46
+\theoremsymbol=\toks47
+\qedsymbol=\toks48
+\theoremkeyword=\toks49
+\qedsymbol=\toks50
+\thm@topsep=\skip78
+\thm@topsepadd=\skip79
+Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
+\c@endNonectr=\count306
+\c@currNonectr=\count307
+\mysavskip=\skip80
+Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
+ line 1175.
+\thm@amstmpdepth=\dimen294
+\tagwidth=\dimen295
+)
+\c@currproofctr=\count308
+\c@endproofctr=\count309
+\c@proof=\count310
+\c@currtheoremctr=\count311
+\c@endtheoremctr=\count312
+\c@theorem=\count313
+\c@currlemmactr=\count314
+\c@endlemmactr=\count315
+\c@currcorollaryctr=\count316
+\c@endcorollaryctr=\count317
+\c@currpropositionctr=\count318
+\c@endpropositionctr=\count319
+\c@currconjecturectr=\count320
+\c@endconjecturectr=\count321
+\c@currcriterionctr=\count322
+\c@endcriterionctr=\count323
+\c@currassertionctr=\count324
+\c@endassertionctr=\count325
+\c@currfactctr=\count326
+\c@endfactctr=\count327
+\c@currhypothesisctr=\count328
+\c@endhypothesisctr=\count329
+\c@currdefinitionxctr=\count330
+\c@enddefinitionxctr=\count331
+\c@currdefinitionstarredctr=\count332
+\c@enddefinitionstarredctr=\count333
+\c@definitionstarred=\count334
+\c@currconditionctr=\count335
+\c@endconditionctr=\count336
+\c@curraxiomctr=\count337
+\c@endaxiomctr=\count338
+\c@axiom=\count339
+\c@currpostulatectr=\count340
+\c@endpostulatectr=\count341
+\c@currpropertyctr=\count342
+\c@endpropertyctr=\count343
+\c@currproblemctr=\count344
+\c@endproblemctr=\count345
+\c@currexamplectr=\count346
+\c@endexamplectr=\count347
+\c@example=\count348
+\c@currexercisectr=\count349
+\c@endexercisectr=\count350
+\c@exercise=\count351
+\c@curralgorithmxctr=\count352
+\c@endalgorithmxctr=\count353
+\c@curralgorithmstarredctr=\count354
+\c@endalgorithmstarredctr=\count355
+\c@algorithmstarred=\count356
+\c@currquestionctr=\count357
+\c@endquestionctr=\count358
+\c@currassumptionctr=\count359
+\c@endassumptionctr=\count360
+\c@currremarkctr=\count361
+\c@endremarkctr=\count362
+\c@currnotectr=\count363
+\c@endnotectr=\count364
+\c@currnotationctr=\count365
+\c@endnotationctr=\count366
+\c@currclaimctr=\count367
+\c@endclaimctr=\count368
+\c@currsummaryctr=\count369
+\c@endsummaryctr=\count370
+\c@summary=\count371
+\c@curracknowledgementctr=\count372
+\c@endacknowledgementctr=\count373
+\c@currcasectr=\count374
+\c@endcasectr=\count375
+\c@case=\count376
+\c@curroptionctr=\count377
+\c@endoptionctr=\count378
+\c@option=\count379
+\c@currconclusionctr=\count380
+\c@endconclusionctr=\count381
+\c@conclusion=\count382
+\c@currsolutionctr=\count383
+\c@endsolutionctr=\count384
+\c@solution=\count385
+\c@currexms_rawctr=\count386
+\c@endexms_rawctr=\count387
+\c@exms_raw=\count388
+\c@currexrs_rawctr=\count389
+\c@endexrs_rawctr=\count390
+\c@exrs_raw=\count391
+) (C:/localtexmf\tex\latex\hebrewdoc\hebrewdoc.sty
+Package: hebrewdoc 2018/10/05 Hebrew Macros
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\polygl
+ossia.sty"
+Package: polyglossia 2018/04/07 v1.43 Alternative to Babel for XeLaTeX and LuaL
+aTeX
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecmds\makecmds.
+sty"
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
 y"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
+tex"
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
+.tex"
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
-8.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
-,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+\XKV@depth=\count392
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
+sty"
+Package: fontspec 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaTeX
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec-
+xetex.sty"
+Package: fontspec-xetex 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count393
+\l__fontspec_language_int=\count394
+\l__fontspec_strnum_int=\count395
+\l__fontspec_tmp_int=\count396
+\l__fontspec_em_int=\count397
+\l__fontspec_emdef_int=\count398
+\l__fontspec_strong_int=\count399
+\l__fontspec_strongdef_int=\count400
+\l__fontspec_tmpa_dim=\dimen296
+\l__fontspec_tmpb_dim=\dimen297
+\l__fontspec_tmpc_dim=\dimen298
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\tuenc.def"
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
+cfg")
+LaTeX Info: Redefining \itshape on input line 3910.
+LaTeX Info: Redefining \slshape on input line 3915.
+LaTeX Info: Redefining \scshape on input line 3920.
+LaTeX Info: Redefining \upshape on input line 3925.
+LaTeX Info: Redefining \em on input line 3955.
+LaTeX Info: Redefining \emph on input line 3980.
+LaTeX Info: Redefining \- on input line 4034.
+))
+\xpg@normalclass=\XeTeXcharclass1
 )
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\bidi.sty"
+Package: bidi 2018/10/17 v35.0 Bidirectional typesetting in plain TeX and LaTeX
+
+
+****************************************************
+* 
+* bidi package (Bidirectional typesetting in
+* plain TeX and LaTeX, using XeTeX engine)
+* 
+* Description: A convenient interface for
+* typesetting bidirectional texts in plain TeX
+* and LaTeX. The package includes adaptations
+* for use with many other commonly-used packages.
+* 
+* Copyright (c) 2009--2018 Vafa Khalighi
+* 
+* v35.0, 2018/10/17
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/bidi
+* 
+* Issue tracker: https://sourceforge.net/p/persian-tex-dist/tickets
+* 
+* Support: http://tug.org/mailman/listinfo/persiantex
+* 
+****************************************************
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\iftex\iftex.sty"
+Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
+and LuaTeX
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\biditools.s
+ty"
+Package: biditools 2018/10/12 v1.7 Programming tools for bidi package
+\@bidi@envbody=\toks53
+\@bidi@emptytoks=\toks54
+\bidi@tempcountb=\count401
+\bidi@temptoksa=\toks55
+\bidi@temptoksb=\toks56
+\bidi@dummies=\count402
+\bidi@are@these@correct=\toks57
+\bidi@toks@lista=\toks58
+\bidi@toks@listb=\toks59
+\bidi@stack@length=\count403
+\bidi@empty@stack=\toks60
+\bidi@looprepeat@depth=\count404
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-absp
+age.sty"
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-base
+.sty"
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count405
+Package zref Info: New property: abspage on input line 62.
+)
+\@bidi@copyins@=\insert252
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\latex-xetex
+-bidi.def"
+File: latex-xetex-bidi.def 2018/10/11 v1.3.6 bidi adaptations for `latex.ltx' f
+or XeTeX engine
+\bidi@n@everypar=\toks61
+\bidi@column@check@number=\count406
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\footnote-xe
+tex-bidi.def"
+File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
+gine
+\c@footdir@label=\count407
+\footdir@toks=\toks62
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\book-xetex-
+bidi.def"
+File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
+ass for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\mathtools-x
+etex-bidi.def"
+File: mathtools-xetex-bidi.def 2018/01/07 v0.1 bidi adaptations for mathtools p
+ackage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\amsmath-xet
+ex-bidi.def"
+File: amsmath-xetex-bidi.def 2018/01/08 v1.1 bidi adaptations for amsmath packa
+ge for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\amstext-xet
+ex-bidi.def"
+File: amstext-xetex-bidi.def 2016/09/12 v0.2 bidi adaptations for amstext packa
+ge for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\caption-xet
+ex-bidi.def"
+File: caption-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for caption packa
+ge for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\caption3-xe
+tex-bidi.def"
+File: caption3-xetex-bidi.def 2013/04/01 v0.1 bidi adaptations for caption3 pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\color-xetex
+-bidi.def"
+File: color-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for color package f
+or XeTeX engine
+LaTeX Info: Redefining \color on input line 46.
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\xcolor-xete
+x-bidi.def"
+File: xcolor-xetex-bidi.def 2013/04/08 v0.2 bidi adaptations for xcolor package
+ for XeTeX engine
+LaTeX Info: Redefining \color on input line 45.
+LaTeX Info: Redefining \bidicolor on input line 88.
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\graphicx-xe
+tex-bidi.def"
+File: graphicx-xetex-bidi.def 2017/06/17 v0.5 bidi adaptations for graphicx pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\geometry-xe
+tex-bidi.def"
+File: geometry-xetex-bidi.def 2017/01/14 v0.2 bidi adaptations for geometry pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\ntheorem-xe
+tex-bidi.def"
+File: ntheorem-xetex-bidi.def 2012/05/01 v0.1 bidi adaptations for ntheorem pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\hyperref-xe
+tex-bidi.def"
+File: hyperref-xetex-bidi.def 2017/08/09 v1.0 bidi adaptations for hyperref pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\fancyhdr-xe
+tex-bidi.def"
+File: fancyhdr-xetex-bidi.def 2018/02/15 v0.7 bidi adaptations for fancyhdr pac
+kage for XeTeX engine
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\pgfcorescop
+es.code-xetex-bidi.def"
+File: pgfcorescopes.code-xetex-bidi.def 2015/11/14 v0.1 bidi adaptations for pg
+f package for XeTeX engine
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\loadingorde
+r-xetex-bidi.def"
+File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
+ last package loaded
+)
+\bidi@digits=\count408
+\bidi@digits@charclass=\XeTeXcharclass2
+\bidi@sepmark@charclass=\XeTeXcharclass3
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\gloss-
+hebrew.ldf"
+File: gloss-hebrew.ldf polyglossia: module for hebrew
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\hebrew
+cal.sty"
+Package: hebrewcal 2015/04/17 v2.6 Hebrew calendar for polyglossia (adapted fro
+m hebcal.sty in Babel)
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\cal-ut
+il.def"
+\c@tmpA=\count409
+\c@tmpB=\count410
+\c@tmpC=\count411
+\c@tmpD=\count412
+\c@tmpE=\count413
+\c@tmpF=\count414
+)
+\hebrewday=\count415
+\hebrewmonth=\count416
+\hebrewyear=\count417
+\@common=\count418
+)
+
+Package polyglossia Warning: No hyphenation patterns were loaded for `Hebrew'
+(polyglossia)                I will use \language=\l@nohyphenation instead on i
+nput line 21.
+
+\l@hebrew = a dialect from \language\l@nohyphenation 
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\babel-
+hebrewalph.def"
+File: babel-hebrewalph.def 2010/03/02 Babel definitions for Hebrew numerals
+ Adapted from hebrew.ldf (2005/03/30 v2.3h)
+))
+Package polyglossia Info: Default language is hebrew.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\gloss-
+english.ldf"
+File: gloss-english.ldf polyglossia: module for english
+)
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-
+text;"
+
+LaTeX Info: Redefining \rmfamily on input line 10.
+LaTeX Info: Redefining \rmfamily on input line 11.
+
+Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
+(fontspec)             New Roman/B/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+LaTeX Info: Redefining \ttfamily on input line 14.
+
+Package fontspec Info: Font family 'TimesNewRoman(2)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
+ex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
+LaTeX Info: Redefining \rmfamily on input line 16.
+) (C:/localtexmf\tex\latex\stylish\stylish.sty
+Package: stylish 2018/10/05 Stylish Book Design
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
+sty"
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+\csq@reset=\count419
+\csq@gtype=\count420
+\csq@glevel=\count421
+\csq@qlevel=\count422
+\csq@maxlvl=\count423
+\csq@tshold=\count424
+\csq@ltx@everypar=\toks63
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
+def"
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
+cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Disabling multilingual quotes.
+Package csquotes Info: Redefining alias 'default' -> 'british'.
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\footnote.
+sty"
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box56
+\fn@width=\dimen299
+)
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip81
+\enit@outerparindent=\dimen300
+\enit@toks=\toks64
+\enit@inbox=\box57
+\enitdp@description=\count425
+)) ("intro to number theory.aux"
+
+Package fontspec Info: Font family 'TimesNewRoman(3)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15,Script=
+Hebrew].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
+ex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+
+)
+\openout1 = `"intro to number theory.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: luatex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: luatex
+* driver: pdftex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -820,96 +1628,191 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 8.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring ON on input line 12.
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/nameref.s
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gettitl
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count360
+\c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
- ("./intro to number theory.out") ("./intro to number theory.out")
-\@outlinefile=\write4
-
-\openout4 = intro to number theory.out
-<sources/lehmer_sieve.jpg, id=15, 250.9375pt x 377.41pt>
-File: sources/lehmer_sieve.jpg Graphic file (type jpg)
-<use sources/lehmer_sieve.jpg>
-Package luatex.def Info: sources/lehmer_sieve.jpg  used on input line 10.
-(luatex.def)             Requested size: 290.22107pt x 436.54048pt.
- [1
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
+ ("intro to number theory.out") ("intro to number theory.out")
+\@outlinefile=\write6
+\openout6 = `"intro to number theory.out"'.
 
 
+ABD: EveryShipout initializing macros
 
-{C:/Users/EladT/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./sources/leh
-mer_sieve.jpg>] ("./intro to number theory.toc"
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
 
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd"
+\symlegacymaths=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 12.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 12.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 12.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 12.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 12.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 12.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 12.
+LaTeX Font Info:    Redeclaring math accent \check on input line 12.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 12.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 12.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 12.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 12.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 12.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(2)/m/n on input line 1
+2.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(2)/m/n on input line 
+12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(2)/m/n --> TU/TimesNewRoman(2)/m/n on 
+input line 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(2)/m/it on input line
+ 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(2)/bx/n on input line
+ 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/TimesNewRoman(1)/m/n on input line 
+12.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(2)/m/n --> TU/TimesNewRoman(2)/bx/n on
+ input line 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(2)/bx/it on input li
+ne 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 12.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/TimesNewRoman(1)/bx/n on input line
+ 12.
+ Setting \if@calendar@hebrew
+File: sources/lehmer_sieve.jpg Graphic file (type bmp)
+<sources/lehmer_sieve.jpg>
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\se-asci
+i-print.def"
+File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+
+) [1
+
+
+
+] [2] ("intro to number theory.toc"
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd"
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
-("C:/Users/EladT/AppData/Local/Programs/MiKTeX 2.9/tex/latex/jknappen/ursfs.fd"
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ))
-\tf@toc=\write5
+\tf@toc=\write7
+\openout7 = `"intro to number theory.toc"'.
 
-\openout5 = intro to number theory.toc
-\c@lecturenumber=\count361
- [2
-
-] [3
+\c@lecturenumber=\count427
+\c@tutorialnumber=\count428
+ [3
 
 ] [4
 
 ]
-\tf@thm=\write6
+פרק 1.
+Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
+ut line 72.
+Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
+ut line 84.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 87.
+Package hyperref Info: bookmark level for unknown exms_raw defaults to 0 on inp
+ut line 127.
+Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
+input line 143.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 200.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 205.
+[1
 
-\openout6 = intro to number theory.thm
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
- ("./intro to number theory.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
-Package rerunfilecheck Info: File `"intro to number theory".out' has not changed
-.
-(rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
-)
 
-Here is how much of LuaTeX's memory you used:
- 19796 strings out of 494407
- 100000,552014 words of node,token memory allocated
- 568 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 67 glue_spec,
- 8 attribute_list, 2 write nodes
-   avail lists: 1:1,2:201,3:55,4:18,5:67,6:15,7:668,8:10,9:64,10:7,11:43
- 23541 multiletter control sequences out of 65536+200000
- 57 fonts using 8252183 bytes
- 47i,11n,65p,945b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
-<c:/users/eladt/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmrom
-an10-italic.otf><c:/users/eladt/appdata/local/programs/miktex 2.9/fonts/opentype
-/public/lm/lmroman10-bold.otf><c:/users/eladt/appdata/local/programs/miktex 2.9/
-fonts/opentype/public/lm/lmroman12-regular.otf><c:/users/eladt/appdata/local/pro
-grams/miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/users/eladt/
-appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-italic.otf>
-<c:/users/eladt/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmrom
-an12-bold.otf>
-Output written on intro to number theory.pdf (4 pages, 68386 bytes).
+]
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 271.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 311.
+Package hyperref Info: bookmark level for unknown note defaults to 0 on input l
+ine 421.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 455.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
+t line 479.
+ [2]
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 534.
+Package hyperref Info: bookmark level for unknown algorithmx defaults to 0 on i
+nput line 549.
+ [3]
+Overfull \hbox (8.79456pt too wide) in paragraph at lines 670--674
+[]\TU/TimesNewRoman(3)/m/n/10 נקבל כי $\OT1/cmr/m/n/10 2 + 3\OML/cmm/m/it/10 i$
+ \TU/TimesNewRoman(3)/m/n/10 הוא הגורם המשותף היחיד בפירוק לראשוניים עד־כדי חבר
+ות (לחברים יש אותה הנורמה) ולכן $[] [] \OT1/cmr/m/n/10 =$[]
+ []
 
-PDF statistics: 87 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 131072)
- 25 words of extra memory for PDF output out of 10000 (max. 100000000)
+[4]
+\tf@thm=\write8
+\openout8 = `"intro to number theory.thm"'.
 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 726.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 726.
+ ("intro to number theory.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 726.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 726.
+Package rerunfilecheck Info: File `"intro to number theory".out' has not change
+d.
+(rerunfilecheck)             Checksum: .
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 726.
+ ) 
+Here is how much of TeX's memory you used:
+ 39654 strings out of 427792
+ 771086 string characters out of 3147754
+ 1074031 words of memory out of 3000000
+ 43096 multiletter control sequences out of 15000+200000
+ 538561 words of font info for 80 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 62i,13n,84p,1298b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on intro to number theory.pdf (8 pages).
