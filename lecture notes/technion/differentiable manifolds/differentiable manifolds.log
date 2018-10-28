@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  24 OCT 2018 18:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  28 OCT 2018 19:49
 entering extended mode
 **"./differentiable manifolds.tex"
 ("differentiable manifolds.tex"
@@ -1751,24 +1751,27 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [4
 
 ]
+
+LaTeX Warning: Marginpar on page 1 moved.
+
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 62.
+t line 63.
 File: sources/figure1.jpg Graphic file (type bmp)
 <sources/figure1.jpg>
 Package hyperref Info: bookmark level for unknown exms_raw defaults to 0 on inp
-ut line 95.
- [1
+ut line 96.
+[1
 
 ] [2]
 פרק 1.
 Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
-input line 124.
+input line 125.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 140.
+ line 141.
 Package hyperref Info: bookmark level for unknown fact defaults to 0 on input l
-ine 145.
+ine 146.
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
-ut line 167.
+ut line 168.
 File: sources/figure2.jpg Graphic file (type bmp)
 <sources/figure2.jpg>
 [3
@@ -1781,7 +1784,7 @@ File: sources/figure4.jpg Graphic file (type bmp)
 File: sources/figure5.png Graphic file (type bmp)
 <sources/figure5.png>
 Package hyperref Info: bookmark level for unknown notation defaults to 0 on inp
-ut line 408.
+ut line 409.
  [4]
 File: sources/figure6.jpg Graphic file (type bmp)
 <sources/figure6.jpg>
@@ -1795,27 +1798,56 @@ File: sources/stereographic.png Graphic file (type bmp)
  [7]
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
 put line 730.
- [8]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 820.
+
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\udsro
+m.fd"
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+File: sources/diffeo.jpeg Graphic file (type bmp)
+<sources/diffeo.jpeg>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
+ut line 841.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 967.
+ [9]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 1067.
+ [10] [11] [12] [13] [14]
 \tf@thm=\write8
 \openout8 = `"differentiable manifolds.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 757.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 757.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1581.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1581.
  ("differentiable manifolds.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 757.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 757.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1581.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1581.
+
 Package rerunfilecheck Info: File `"differentiable manifolds".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 757.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1581.
  ) 
 Here is how much of TeX's memory you used:
- 39639 strings out of 427792
- 770898 string characters out of 3147754
- 1069024 words of memory out of 3000000
- 43086 multiletter control sequences out of 15000+200000
- 535092 words of font info for 61 fonts, out of 3000000 for 9000
+ 39809 strings out of 427792
+ 774969 string characters out of 3147754
+ 1077037 words of memory out of 3000000
+ 43248 multiletter control sequences out of 15000+200000
+ 535380 words of font info for 64 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,13n,84p,1300b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,84p,1300b,1101s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on differentiable manifolds.pdf (12 pages).
+Output written on differentiable manifolds.pdf (18 pages).

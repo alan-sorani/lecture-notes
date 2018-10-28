@@ -53,7 +53,8 @@
 
 \chapter*{הקדמה}
 \section{תוכן הקורס}
-\stress{יריעה}
+\stress{יריעה} \newlecture{28 באוקטובר}%
+{2018}
 היא מרחב טופולוגי שלוקלית נראה כמו קבוצה פתוחה ב־%
 $\RR^n$.%
 \newlecture{21 באוקטובר}{2018}
@@ -479,7 +480,6 @@ $\prs{c,d}$.
 $f \colon M \to \RR$
 הינה גזירה/חלקה בנקודה
 $p$.
-%TODO add fig 2.1
 ננסה להגדיר גזירות של העתקה
 $f$
 כנ"ל.
@@ -695,7 +695,7 @@ $\set{\prs{\Uu_i, \phi_i}}$
 \end{example}
 \begin{definition}
 תהי
-$\prs{M,A}$
+$\prs{M,\mcal{A}}$
 יריעה עם אטלס חלק.
 נגדיר
 $f \colon M \to \RR$
@@ -711,7 +711,7 @@ $\prs{\Uu, \phi}$
 מפה סביבה
 $p$
 מהאטלס
-$A$.
+$\mcal{A}$.
 \end{definition}
 \begin{exercise}
 בדקו כי הנ"ל מוגדר היטב.
@@ -732,7 +732,7 @@ $M$.
 \end{corollary}
 \begin{definition}
 תהיינה
-$\prs{N, A_N}, \prs{M, A_M}$
+$\prs{N, \Aa_N}, \prs{M, \Aa_M}$
 שתי יריעות חלקות ותהי
 $f \colon M \to N$.
 אז
@@ -746,13 +746,837 @@ $\hat{f} = \psi \circ f \circ \phi^{-1}$
 גזירה ב־%
 $\phi\prs{p}$,
 ההצגה המקומית ביחס למפות
-$\prs{\Uu, \phi} \in A_M, p \in \Uu$
+$\prs{\Uu, \phi} \in \Aa_M, p \in \Uu$
 ו־%
-$\prs{\Vv, \psi} \in A_N, f\prs{p} \in \Vv$.
+$\prs{\Vv, \psi} \in \Aa_N, f\prs{p} \in \Vv$.
 \end{definition}
 \begin{exercise}
 בדקו כי הנ"ל מוגדר היטב ביחס למפות מתואמות.
 \end{exercise}
+\begin{definition}
+פונקציה
+$f \colon M \to N$
+\stress{חלקה}
+אם כל ההצגות המקומיות של
+$f$
+ביחס למפות מתואמות הן פונקציות חלקות.%
+\newlecture{28 באוקטובר}%
+{2018}
+\end{definition}
+\begin{remark}
+כדי לבדוק חלקות, די לבדוק חלקות של פונקציות מתואמות עם מפות שמכסות את היריעה.
+\end{remark}
+\begin{definition}
+פונקציה הפיכה
+$f$
+כאשר
+$f,f^{-1}$
+חלקות נקראת
+\stress{דיפאומורפיזם}.
+\end{definition}
+\begin{exercise}
+אם
+$f \colon M \to N$
+דיפאומורפיזם, אז
+$\dim M = \dim N$.
+\end{exercise}
+\begin{exercise}
+דיפאומורפיזמים שומרים על פונקציות חלקות.
+אם בדיאגרמה הבאה
+$\phi,\psi$
+איזומורפיזמים, אז
+$h$
+חלקה אם ורק אם
+$h'$
+חלקה.
+\[
+\begin{tikzcd}
+M \arrow[r,"h"] \arrow[d,"\phi"] & N \arrow[d,"\psi"] \\
+M' \arrow[r, dotted, "h'"] & N'
+\end{tikzcd}
+\]
+\end{exercise}
+\begin{definition}
+\stress{יריעה דיפרנציאבילית
+$\CCC^r$}
+היא יריעה טופולוגית עם אטלס בו פונקציות המעבר חלקות
+$\CCC^r$.
+\end{definition}
+\begin{exercise}
+תהי
+$\prs{M,\Aa}$
+יריעה חלקה ותהי
+$\prs{\Uu, \phi}$
+מפה מתואמת עם
+$\Aa$.
+אז
+$\phi \colon \Uu \to \phi\prs{\Uu} \subseteq \RR^m$
+דיפאומורפיזם.
+\end{exercise}
+\begin{example}
+תהי
+$M = \RR$
+עם
+$\Aa_1 = \set{\prs{\RR,\1}}$
+המבנה החלק הסטנדרטי, ועם
+$\Aa_2 = \set{\prs{\RR,x^3}}$.
+אז
+$\prs{M,\Aa_1}, \prs{M,\Aa_2}$
+יריעות חלקות שונות, אך דיפאומורפיות.
+נסמן
+$f(x) = \sqrt[3]{x}$.
+אז
+$\hat{f} = \1_{\RR}$
+ולכן
+$f$
+דיפאומורפיזם.
+\begin{figure}[h!]
+\centering
+\caption{Diffeomorphism.}
+\label{diffeo}
+\includegraphics[scale=0.6]{sources/diffeo}
+\end{figure}
+\end{example}
+\begin{question}
+האם קיימים מבנים שאינם דיפאומורפיים על אותה יריעה טופולוגית?
+עבור
+$\dim M \leq 3$
+התשובה נכונה.
+עבור
+$\dim M = 1$
+נסו
+\textbf{כתרגיל}.
+עבור
+$\dim M \geq 4$
+הדבר תלוי ביריעה.
+\end{question}
+\begin{example}
+בטבלה
+\ref{sphere_diffeo}
+מספר המבנים הדיפאומורפיים של הספירה.
+עבור
+$n=4$
+זאת בעייה פתוחה הנקראת
+\textenglish{smooth Poincaré conjecture}.
+\begin{figure}[h!]
+\caption{מבנים דיפאומורפיים של הספירה.}
+\label{sphere_diffeo}
+\centering
+\begin{tabular}{|c|c|}
+\hline $n$ & מספר מבנים חלקים שונים של $S^n$ עד כדי דיפאומורפיזם \\
+\hline $1$ & $1$ \\
+\hline $2$ & $1$ \\
+\hline $3$ & $1$ \\
+\hline $4$ & ? \\
+\hline $5$ & $1$ \\
+\hline $6$ & $1$ \\
+\hline $7$ & $28$ \\
+\hline $8$ & $2$ \\
+\hline $9$ & $8$ \\
+\hline $10$ & $6$ \\
+\hline $11$ & $992$ \\
+\hline $12$ & $1$ \\
+\hline
+\end{tabular}
+\end{figure}
+\end{example}
+\begin{example}
+ב־%
+$\RR^n$
+יש מבנה דיפאומורפי אחד לכל
+$n \neq 4$,
+ואינסוף עבור
+$n=4$.
+\end{example}
+\section{תתי־יריעות}
+\begin{definition}
+תהי
+$M$
+יריעה טופולוגית
+ממימד
+$m$
+ותהי
+$N \subseteq M$
+עם הטופולוגיה המושרית.
+$N$
+תיקרא
+\stress{תת־יריעה טופולוגית}
+אם לכל
+$x \in N$
+קיימת מפה
+$\prs{\Uu,\phi}$
+של
+$M$
+עם
+$x \in \Uu$
+וגם
+$\phi^{-1}\prs{\RR^n} = \Uu \cap N$.
+(כאן
+$\RR^n = \set{\prs{x_1, \ldots, x_n, 0, \ldots, 0}} \subseteq \RR^m$)
+\end{definition}
+\begin{examples}
+\begin{itemize}
+\item $W \subseteq M$
+קבוצה פתוחה היא תת־יריעה חלקה.
+\item אם
+$F \colon \RR^m \to \RR^n$
+אז הגרף של
+$F$,
+\[\gr\prs{F} = \set{\prs{x,F(x)}}{x \in \RR^m} \subseteq \RR^m \times \RR^n\]
+היא תת־יריעה.
+אם
+$F$
+רציפה זאת רק תת־יריעה טופולוגית, אם
+$F$
+חלקה זאת תת־יריעה חלקה, וכו'.
+תהי
+$\Uu \subseteq \RR^m$
+פתוחה. אז
+$\Uu \times \RR^n$
+פתוחה במרחב
+$\RR^m \times \RR^n$.
+נגדיר
+\begin{align*}
+\phi_{\Uu} \colon \Uu \times \RR^n &\to \Uu \times \RR^n \subseteq \RR^m \times \Rr^n \\
+\prs{x,y} &\mapsto \prs{x,y-F(x)}
+\end{align*}
+ואז
+$\gr\prs{F} \cap \prs{\Uu \cap \RR^n} \stackrel{\sim}{\longleftrightarrow} \Uu \times \set{0}$
+המפה שנדרשת בהגדרה.
+אם
+$F$
+רציפה,
+$\phi_{\Uu}$
+הומאומורפיזם ולכן זאת תת־יריעה טופולוגית.
+אם
+$F$
+חלקה,
+$\phi_{\Uu}$
+חלקה, כלומר מתואמת עם האטלס הסטנדרטי, וזאת תת־יריעה חלקה.
+\end{itemize}
+\end{examples}
+\begin{exercise}
+גרף של
+$\abs{x}$
+הוא תת־יריעה טופולוגית אך לא חלקה.
+\end{exercise}
+\begin{exercise}\label{submanifold}
+תת־יריעה טופולוגית היא יריעה טופולוגית.
+\end{exercise}
+\begin{proposition}
+תהי
+$N^n \subseteq M^m$
+(כלומר
+$N$
+ממימד
+$n$,
+$M$
+ממימד
+$m$)
+תת־יריעה חלקה. אזי
+$M$
+משרה על
+$N$
+מבנה של יריעה חלקה.
+\end{proposition}
+\begin{proof}
+מתרגיל
+\ref{submanifold}
+תת־יריעה היא יריעה טופולוגית. נשאר להראות כי
+$M$
+משרה מבנה חלק.\\
+ניקח
+$\set{\prs{\Uu_x,\phi_x}}_{x \in N}$
+מפות מההגדרה של תת־יריעה חלקה ונגדיר
+\[\mcal{A} = \set{\prs{\Uu_x \cap N, \rest{\phi_x}{\Uu_x \cap N}}}_{x \in N}\]
+אטלס שמכסה את
+$N$.
+נשאר להראות כי המפות מתואמות.
+$\prs{\Uu_x, \phi_x}$
+ו־%
+$\prs{\Uu_y, \phi_y}$
+מתואמות, לכן פונקציות המעבר
+\[\phi_y \circ \phi_x^{-1} \colon \phi_x\prs{\Uu_x \cap \Uu_y} \to \phi_y\prs{\Uu_x \cap \Uu_y}\]
+חלקות.
+לכן הצמצום באטלס
+$\mcal{A}$,
+שהינו
+\[\rest{\phi_y \circ \phi_x^{-1}}{\RR^n \cap \phi_x\prs{\Uu_x \cap \Uu_y}} \colon \RR^n \cap \phi_x\prs{\Uu_x \cap \Uu_y} \to \RR^n \cap \phi_y\prs{\Uu_x \cap \Uu_y}\]
+גם הוא חלק.
+\end{proof}
+\begin{example}
+נתונה מערכת משוואות
+\[\fcases{F_1\prs{x_1, \ldots, x_m} = 0 \\
+\vdots \\
+F_r\prs{x_1, \ldots, x_m} = 0}\]
+כאשר
+$F_i$
+חלקות. נניח שבנקודה
+$\vec{x}$
+כך ש־%
+$\vec{F}\prs{\vec{x}} = 0$
+מתקיים
+$\rank\prs{\frac{\del \vec{F}}{\del \vec{x}}} = r$
+(הדרגה מקסימלית).
+ממשפט הפונקציה הסתומה ניתן לבודד
+$m-r$
+קואורדינטות
+$\vec{x}''$
+כאשר
+$\vec{x}'$
+שאר הקואורדינטות.
+נסמן
+$\vec{x} = \prs{\vec{x}'',\vec{x}'}$
+בה"כ ואז לוקלית ליד
+$\vec{x}$
+קבוצת הפתרונות
+$\vec{F}\prs{\vec{x}} = \vec{0}$
+נראית כמו גרף של פונקצייה
+\begin{align*}
+G \colon \RR^{m-r} &\to \RR^n \\
+\text{.} \phantom{G \colon \RR^{m}} x'' &\mapsto G\prs{x''} \subseteq \RR^r
+\end{align*}
+\end{example}
+\begin{example}
+עבור
+$F\prs{x_1, x_2} = x_1^2 + x_2^1 - 1$,
+מתקיים
+$\frac{\del F}{\del x} = \prs{2x_1, 2x_2}$.
+כאשר
+$x_1, x_2 \neq 0$
+ניתן להציג את
+$x_1$
+כפונקציה של
+$x_2$
+או להיפך.
+לוקלית, ליד
+$x$,
+$M = \set{x}{F(x) = 0}$
+היא יריעה חלקה.
+אם תנאי של משפט הפונקציה הסתומנה מתקיים לכל
+$x \in M$,
+אז
+$M$
+יריעה חלקה (גלובלית).
+\end{example}
+\begin{exercise}
+עבור תת־יריעה כמו בדוגמה, מתקיים
+$\dim M = m-r$.
+\end{exercise}
+\begin{theorem}
+נניח ש־%
+$N \subseteq \RR^m$
+תת־קבוצה כך שלכל
+$x \in N$
+קיימת סביבה
+$\Uu \subseteq \RR^m$
+ו־%
+$r = m-n$
+פונקציות חלקות
+$F_i \colon \Uu \to \RR^m$
+(עם
+$r$
+קבוע עבור
+$N$)
+כך שמתקיימים התנאים הבאים.
+\begin{align*}
+N \cap \Uu = \set{\vec{x} \in \Uu}{\vec{f}\prs{\vec{x}} = \vec{0}} \\
+\rank\prs{\frac{\del \vec{F}}{\del\vec{x}}} = r
+\end{align*}
+אז
+$N \subseteq \RR^m$
+תת־יריעה ממימד
+$n = m-r$.
+\end{theorem}
+\begin{remark}
+הכיוון ההפוך איננו בהכרח נכון.
+אם
+$\set{\vec{x} \in \RR^n}{\vec{F}\prs{\vec{x}} = 0}$
+תת־יריעה של
+$\RR^m$,
+ייתכן ש־%
+$\vec{F}$
+איננה מקיימת את תנאי משפט הפונקציה הסתומה.
+המשפט הינו תנאי מספיק שאינו הכרחי.
+\end{remark}
+\begin{examples}
+\begin{itemize}
+\item $S^n$
+קבוצת הפתרונות של
+\[\text{.} F\prs{x_1, \ldots, x_{n+1}} = \sum_{i=1}^{n+1} x_i^2 - 1\]
+מתקיים
+$\prs{\frac{\del F}{\del x_i}} = \prs{2x_1, 2x_2, \ldots, 2x_{n+1}}$
+ולכן
+לכל
+$\vec{x} \neq \vec{0}$
+הדרגה היא
+$1$.
+$\vec{0}$
+לא ביריעה, לכן זאת יריעה
+$n$%
+־מימדית.
+\item (\textbf{תרגיל})
+תהי
+$B\prs{x}$
+תבנית ריבועית שאיננה מנוונת.
+$N = \set{x}{B(x) = 1}$
+תת־יריעה.
+$\set{x}{B(x) = 0}$
+איננה בהכרח תת־יריעה, לדוגמה עבור
+$x_1^2 + x_2^2 - x_3^2$
+מתקבל חרוט דו־צדדי שאיננו תת־יריעה.
+\item $\mrm{SL}\prs{n,\RR} \subseteq M_{n\times n}\prs{\RR}$
+תת־יריעה כאשר
+$M_{n\times n}\prs{\RR}$
+מזוהה עם
+$\RR^{n^2}$
+עם המבנה החלק הסנדרטי.
+\begin{proof}
+תהי
+\begin{align*}
+F \colon M_{n\times n} &\to \RR \\
+A &\to \det A
+\end{align*}
+ואז
+$\mrm{SL}_n = \set{A}{FA = 1}$.
+תהיינה
+$\prs{x_{i,j}}_{i,j=1}^n$
+קואורדינטות של
+$M_{n\times n}$.
+צריך להוכיח שלכל
+$\vec{x} \in \mrm{SL}_n$
+מתקיים
+$\prs{\frac{\del F}{\del x_{i,j}}} \neq \vec{0}$,
+כלומר שקיים
+$x_{i,j}$
+כך ש־%
+$\frac{\del F}{\del x_{i,j}} \neq 0$.
+נחשב.
+\begin{align*}
+\frac{\del F}{\del x_{i,j}} \prs{A} &= \rest{\frac{\diff}{\diff t}}{t=0} \prs{\det \prs{A + t\cdot T_{i,j}}} \\ &= \rest{\frac{\diff}{\diff t}}{t=0}\prs{\det A \cdot \det\prs{\1 + tA^{-1}T_{i,j}}} \\
+&= \det A \cdot \frac{\diff}{\diff t}\prs{\det \prs{\1 + tA^{-1} T_{i,j}}} \\
+&= \det A \cdot \tr \prs{A^{-1} T_{i,j}}
+\end{align*}
+כאשר
+$\prs{T_{i,j}}_{k,l} = \delta_{k,i} \delta_{j,l}$
+וכאשר
+$\det\prs{1+\eps B} = 1 + \eps \tr B + O\prs{\eps^2}$
+נובע מפיתוח לפי תמורות.
+מתקיים
+$A^{-1} = \prs{\frac{M_{i,j}}{\abs{A}}_{i,j}}$
+מנוסחה עם מינורים.
+מתקיים כי
+$B T_{i,j}$
+שווה למטריצה עם העמודה
+$C_i\prs{B}$
+ה־%
+$i$
+של
+$B$
+בעמודה ה־%
+$j$,
+ואפסים בשאר המקומות.
+לכן
+\[\prs{A^{-1}T_{i,j}}_{l,k} = \frac{M_{k,l}}{\abs{A}}\]
+ולכן
+קיבלנו
+\[\text{.}\frac{\del F}{\del x_{i,j}}\prs{A} = \det A \cdot \frac{M_{j,i}}{\abs{A}} = M_{i,j}\]
+$A$
+הפיכה ולכן לא כל המינורים מתאפסים ונקבל כי
+$\prs{\frac{\del F}{\del x_{i,j}}} \neq \vec{0}$.
+לכן גם
+$\dim \mrm{SL}\prs{n,\RR} = n^2 - 1$.
+\end{proof}
+\item \begin{exercise}
+$O\prs{n} \leq M_{n\times n}$
+תת יריעה.
+\end{exercise}
+\item $\TT^n \subseteq \RR^{2n}$
+כאשר
+$\TT^n \cong \prs{S^1}^n$
+ו־%
+$\RR^{2n} \cong \prs{\RR^2}^n$,
+ניתן להצגה ע"י המשוואות
+$x_{2k-1}^2 + x_{2k}^2 - 1 = 0$
+כאשר
+$k \in \brs{n}$.
+עבור
+$\TT^2$,
+ניתן לכתוב
+\[\text{.} F\prs{x_1, x_2, x_3} = \prs{\sqrt{x_1^2 + x_2^2} - 2}^2 + x_3^2 - 1 = 0\]
+\end{itemize}
+\end{examples}
+\begin{exercise}
+$\nabla F \neq \vec{0}$
+בנקודה
+$x \in \TT^2$.
+\end{exercise}
+\begin{exercise}
+ניקח $\TT^2 = \quot{\RR^2}{\ZZ^2}$
+ונגדיר
+\[\fcases{\phi_1(t) = \phi_1(0) + v_1 t \\
+\phi_2\prs{t} = \phi_2(0) + v_2 t}\]
+תנועה חופשית של חלקיק ב־%
+$\TT^2$.
+לאילו
+$v_i$
+המסלול הוא תת־יריעה של
+$\TT^2$?
+\end{exercise}
+\begin{example}
+תהי
+$f \colon M \to N$
+חלקה.
+אזי
+\[\gr\prs{f} = \set{\prs{x,f(x)}}{x \in M} \subseteq M \times N\]
+תת־יריעה.
+\stress{האלכסון}
+הוא
+$\Delta \subseteq M \times M$
+הגרף של
+$\1_{M}$.
+הכייון ההפוך איננו נכון. אם
+$\gr{f}$
+תת־יריעה, לא מובטח כי
+$f$
+חלקה.
+\end{example}
+\begin{remark}
+ברוב הדוגמאות, יריעות הן תתי־יריעות של
+$\RR^N$.
+\end{remark}
+\begin{theorem}[\textenglish{Whitney}]
+כל יריעה
+$M^m$
+ניתנת לשיכון כת־יריעה חלקה ב־%
+$\RR^N$
+עבור
+$N$
+מסוים.
+\end{theorem}
+\begin{remark}
+המקרה האופטימלי הכללי הוא
+$N=2m$.
+ל־%
+$2m-1$
+אין תמיד שיכון כתת־יריעה חלקה.
+$\RR\mrm{P}^2, K^2$
+לא ניתנים לשיכון ב־%
+$\RR^3$.
+\end{remark}
+\begin{exercise}
+תהי $N \subseteq \RR^m$
+תת־יריעה ויהי
+$x \in N$.
+$f \colon N \to \RR$
+חלקה ליד
+$x$
+אם ורק אם ניתן להרחיב את
+$f$
+לפונקציה
+$F \colon \Uu \subseteq \RR^m \to \RR$
+חלקה, כאשר
+$\Uu$
+סביבה של
+$x$
+ב־%
+$\RR^m$.
+\end{exercise}
+\section{נגזרות}
+\begin{definition}
+תהי
+$M$
+יריעה חלקה.
+\stress{עקומה}
+$\gamma$
+היא העתקה
+$\gamma \colon \prs{a,b} \to M$
+חלקה (ביחס למבנה החלק של
+$M$
+והסטנדרטי ב־%
+$\RR$).
+\end{definition}
+\begin{question}
+מהי
+$\dot{\gamma}(x)$,
+"וקטור המהירות של חלקיק הנע לאורך
+$\gamma$"?
+אם
+$M \subseteq \RR^n$
+\textbf{עם שיכון נתון}
+נוכל להסתכל על
+$\vec{\gamma} = \pmat{\gamma_1\prs{t} \\ \vdots \\ \gamma_n\prs{t}}$
+ואז לגזור
+$\dot{\gamma}(x) = \pmat{\dot{\gamma}_1\prs{t} \\ \vdots \\ \dot{\gamma}_n\prs{t}}$
+וקטור שמשיק ל־%
+$M$
+בנקודה
+$\gamma\prs{x}$.
+\end{question}
+\begin{remark}
+תהי
+$M$
+יריעה חלקה.
+היינו רוצים להגדיר מרחב משיק בנקודה
+$p$
+להיות אוסף וקטורי המהירות של מסילות העוברות דרך
+$p$.
+אין לנו דרך טובה להגדיר וקטורי מהירות באופן כללי, לכן צריך לעקוף זאת.
+\end{remark}
+\begin{definition}
+תהיינה
+$\gamma_i \colon \prs{-\eps, \eps} \to M$
+מסילות עבור
+$i \in [2]$
+וכאשר
+$\gamma_i(0) = p$.
+אזי
+$\gamma_1 \sim \gamma_2$
+אם קיימת מפה
+$\prs{\Uu, \phi}$
+סביב
+$p$
+כך שלהצגות המקומיות
+$\hat{\gamma}_i = \phi \circ \gamma_i$
+אותו וקטור מהירות
+$\dot{\hat{\gamma}}_1(0) = \dot{\hat{\gamma}}_2(0)$.
+\end{definition}
+\begin{definition}
+\stress{וקטור משיק בנקודה
+$p$}
+הוא מחלקת שקילות של עקומות
+$\bar{\gamma}$
+עם
+$\gamma(0) = p$.
+\end{definition}
+\begin{exercise}
+הראו כי שקילות עקומות בהגדרה הנ"ל היא אכן יחס שקילות.
+\end{exercise}
+\begin{remark}
+יחס השקילות
+$\sim$
+אינו תלוי בבחירת המפה סביב
+$p$.
+נסתכל על שתי מפות
+$\phi, \psi$
+ואז
+\[\underset{\hat{\gamma}_i}{\underbrace{\phi \circ \gamma_i}} = \prs{\phi \circ \psi^{-1}} \circ \underset{\hat{\hat{\gamma}}_i}{\underbrace{\psi \circ \gamma_i}}\]
+ומכלל השרשרת
+\[\dot{\prs{\hat{\gamma}_i}}(0) = \rest{D\prs{\phi \circ \psi^{-1}}}{\phi\prs{p}} \cdot \dot{\prs{\hat{\hat{\gamma}}_i}}(0)\] %TODO fix, dot over pars over hats over gamma
+ואז
+%TODO dot over two hats equal iff dot only one hat (i=1,2)
+\end{remark}
+\begin{definition}
+נגדיר
+\[T_p M = \quot{\set{\text{smooth paths $\gamma(0)=p$}}}{\sim}\]
+\stress{המרחב המשיק בנקודה
+$p \in M$}.
+\end{definition}
+
+\begin{remark}
+$\phi \colon M \to \RR^m$
+מגדירה העתקה
+
+\begin{align*}
+D\phi_p \colon T_p M &\to \RR^m \\
+\brs{\gamma\prs{t}} &\to \dot{\prs{\phi \circ \gamma}}(0)
+\end{align*}
+
+\end{remark}
+\begin{exercise}
+\begin{enumerate}
+\item \[D \phi_p \colon T_p M \to \RR^m\]
+חח"ע ועל.
+\item בהינתן שתי מפות
+$\prs{\Uu,\phi}$, $\prs{\Vv,\psi}$
+סביב
+$p$,
+הדיאגרמה הבאה קומוטטיבית.
+\[
+\begin{tikzcd}
+& T_p M \arrow[dl, swap, "D \phi_p"] \arrow[dr, "D \psi_p"] \\
+\RR^m \arrow[rr, swap, dashed, "\rest{D\prs{\psi \circ \phi^{-1}}}{\phi(p)}"] & & \RR^m
+\end{tikzcd}
+\]
+\item
+ל־%
+$T_p M$
+יש מבנה לינארי טבעי, ע"י משיכת המבנה הלינארי מ־%
+$\RR^m$.
+נגדיר
+\begin{align*}
+\fcases{ \sigma + \eta \ceq D\phi_p^{-1} \prs{D \phi_p\prs{\sigma} + D\phi_p\prs{\eta}} \\
+c \cdot \sigma \ceq D\phi_p^{-1} \prs{c \cdot D\phi_p\prs{\sigma}}
+}
+\end{align*}
+ונשאיר כתרגיל בדיקה כי הדבר אינו תלוי בבחירת המפה
+$\phi$.
+(זה נובע מכך שהעתקות המעבר הינן לינאריות)
+\end{enumerate}
+\end{exercise}
+\begin{example}
+תהי
+$\Uu \subseteq \RR^n$
+פתוחה וניקח את המפה
+$\prs{\Uu, \1_{\Uu}}$.
+אז יש איזומורפיזם
+\begin{align*}
+D\1_{\Uu} \colon T_p \Uu &\to \RR^n \\
+\text{.} \phantom{D\1_{\Uu} \colon T}\brs{\gamma} &\to \dot{\gamma}(0)
+\end{align*}
+\end{example}
+\begin{example}
+תהי יריעה
+$M^{n-1} \subseteq \RR^n$
+מוגדרת על ידי
+$\set{\vec{x}}{F\prs{x_1, \ldots, x_n} = 0}$
+עם
+$\nabla F \neq \vec{0}$.
+כעת
+$T_p M \subseteq T_p \RR^n \cong \RR^n$.
+מהו
+$T_p M$
+אחרי הזיהוי של
+$T_p\RR^n$
+עם
+$\RR^n$?
+ניקח
+$\gamma \colon \prs{-\eps, \eps} \to M$
+עם
+$\gamma(0) = p$.
+נכתוב
+$\gamma\prs{t} = \pmat{\gamma_1(t) \\ \vdots \\ \gamma_n(t)} \in \RR^n$.
+כעת
+$\gamma(t) \in M$
+גורר כי לכל
+$t \in \prs{-\eps, \eps}$
+מתקיים
+$F \circ \gamma\prs{t} = 0$.
+נחשב בעזרת כלל השרשרת.
+\begin{align*}
+\rest{\frac{\diff}{\diff t}\prs{F \circ \gamma\prs{t}}}{t=0} &= \rest{\frac{\diff}{\diff t}}{t=0} F\prs{\gamma(t)} \\&=
+\rest{\sum \frac{\del F}{\del x_i}}{\gamma(0)} \dot{\gamma}_i(0) \\&=
+\rest{\nabla F}{\gamma(0)} \cdot \dot{\gamma}(0)
+\end{align*}
+לכן אם
+$\sigma \in T_p M$
+אז
+$\sigma = D \phi_p\prs{\sigma} \perp \nabla F (p)$.
+אם נזהה את
+$T_pM$
+עם
+$D \phi_p \prs{T_p M}$
+אזי
+$T_p M \subseteq \prs{\nabla F}^{\perp}$.
+אלו שני מרחבים וקטוריים ממימד
+$n-1$,
+לכן יש שיוויון
+$T_p M  = \prs{\nabla F}^{\perp}$.
+\end{example}
+\begin{example}
+$S^1 \subseteq \RR^2$
+מוגדר ע"י
+$F\prs{x_1, x_2} = x_1^2 + x_2^2 - 1 =0$
+עם
+$\nabla F = \prs{2x_1, 2x_2}$.
+$T_p M + p$
+הינו ישר המאונך ל־%
+$\nabla F(p)$,
+וזהו בדיוק ישר המשיק ל־%
+$S^1$
+בנקודה
+$p$.
+\end{example}
+\begin{definition}
+\stress{אגד משיק}\textenglish{tangent bundle}
+הינו
+\[\text{.}TM = \coprod_{x \in M} \prs{x,T_x M}\]
+איבר ב־%
+$TM$
+הינו זוג
+$\prs{x, \sigma}$
+כאשר
+$x \in M$
+ו־%
+$\sigma \in T_xM$.
+\end{definition}
+\begin{example}
+אגד משיק למעגל הוא
+$TM = S^1 \times \RR$,
+כלומר גליל.
+\end{example}
+\begin{remark}
+על
+$TM$
+טופולוגיה הניתנת באופן מקומי על ידי אטלסים.
+\end{remark}
+\begin{remark}
+קיים זיהוי קנוני בין
+$T_p \Uu, T_p M$
+עבור
+$\Uu \subseteq M$
+פתוחה.
+\end{remark}
+\begin{example}
+תהי
+$\Uu \subseteq \RR^n$
+פתוחה. אז
+\[T\Uu = \set{\prs{x,\sigma}}{x \in \Uu \,\wedge\, \sigma \in T_x \Uu \cong \RR^n} \cong \Uu \cong \RR^n\]
+או וקטורים עם נקודת התחלה ב־%
+$\Uu$
+וחץ שהוא וקטור ב־%
+$\RR^n$.
+\end{example}
+
+\begin{definition}
+עבור
+$M$
+יריעה כללית, יהי
+$\Aa = \set{\prs{\Uu_{\alpha}, \phi_{\alpha}}}_{\alpha \in I}$
+אטלס חלק על
+$M$.
+נגדיר
+\[\bar{\Uu}_{\alpha} \ceq \coprod_{x \in \Uu_{\alpha}} T_x \Uu_{\alpha}\]
+וגם
+\begin{align*}
+\bar{\phi}_{\alpha} \colon \bar{\Uu}_{\alpha} &\to T\brs{\phi_{\alpha}\prs{\Uu_{\alpha}}} \cong \phi_{\alpha}\prs{\Uu_{\alpha}}\times \RR^n \subseteq \RR^{2n} \\
+\prs{x, \sigma} &\to \prs{\phi_{\alpha}(x), D\phi_{\alpha}(x)(\sigma)} \in T_{\phi_{\alpha}(x)}\phi_{\alpha}\prs{\Uu_{\alpha}}
+\end{align*}
+\end{definition}
+
+\begin{exercise}
+\begin{enumerate}
+\item \[TM = \bigcup_{\alpha \in I} \bar{\Uu}_{\alpha}\]
+\item \[\bar{\phi}_{\alpha} \colon \bar{\Uu}_{\alpha} \to \phi_{\alpha}\prs{\Uu_{\alpha}}\times \RR^n\]
+חח"ע ועל.
+\end{enumerate}
+\end{exercise}
+\begin{definition}
+תת־קבוצה
+$X \subseteq TM$
+נקראת פתוחה אם ורק אם לכל
+$\alpha$,
+$\bar{\phi}_{\alpha}\prs{X \cap \bar{\Uu}_{\alpha}}$
+פתוחה ב־%
+$\RR^{2n}$.
+\end{definition}
+\begin{exercise}
+\begin{enumerate}
+הראו בשלבים הבאים כי יש מבנה חלק על
+$TM$.
+\item ההגדרה מגדירה טופולוגיה על
+$TM$.
+\item $TM$
+יריעה טופולוגית.
+\item $\set{\prs{\bar{\Uu}_{\alpha}, \bar{\phi}}}_{\alpha \in I}$
+אטלס מתואם.
+\end{enumerate}
+\end{exercise}
+\begin{remark}
+$TS^{1} \cong S^1 \times \RR$,
+אבל
+$TS^2 \not\cong S^2 \times \RR^2$.
+\end{remark}
 \backmatter
 \end{document}
 
