@@ -40,7 +40,9 @@ The recommended course literature is as follows.
 \part{Lie Algebras}
 \chapter{Preliminaries}
 
-The course will be entirely algebraic, with possibly few examples from analysis. This will allow us to discuss issues regarding the algebraic properties of Lie algebras.
+The course will be entirely algebraic, with possibly few examples from analysis.%
+\newlecture{October 22}{2018}
+This will allow us to discuss issues regarding the algebraic properties of Lie algebras.
 We might be interested in infinite-dimensional Lie algebras, but in this course we discuss only finite-dimensional algebras.
 In this course one of our main goals is a classification theorem for simple Lie algebras.
 We assume knowledge in linear algebras and specifically bilinear forms.
@@ -243,7 +245,7 @@ We compute the following.
 \end{example}
 \begin{fact}[important]
 There is a very natural collection of derivations of any Lie algebras.
-For each $x \in L$, let us define a linear transformation denoted $\mathrm{ad}(x) \colon L \to L$ via
+For each $x \in L$, let us define a linear transformation denoted $\mathrm{ad}(x) \colon L \to L$ (this stands for "adjoint") via
 $\mathrm{ad}(x)(y) = \brs{x,y}$. (This is linear from the bi-linearity of the bracket)
 In fact, $\mathrm{ad}(x)$ is a derivation of $L$. Namely,
 \[\mathrm{ad}(x)\prs{\brs{y,z}} = \brs{\mathrm{ad}(x)y,z} + \brs{y, \mathrm{ad}(x)(z)}\text{.}\]
@@ -281,7 +283,7 @@ In conclusion, $\mathrm{Der}(L)$ is a Lie sub-algebra of $\mathrm{End}(L)$ under
 \end{proof}
 \begin{example}
 Given $L_0 \subseteq L$ a sub-space. Then
-$N\prs{L_0} = \set{x}{\brs{x,L_0} \subseteq L_0}$ is the set of elements $x$ such that the linear transformation $\mathrm{ad}\prs{x}$ leaves the subspace $L_0$ invariant.
+$N\prs{L_0} = \set{x}{\brs{x,L_0} \subseteq L_0}$ is the set of elements $x$ such that the linear transformation $\mathrm{ad}\prs{x}$ leaves the subspace $L_0$ invariant. $N_L\prs{L_0}$ is a Lie sub-algebra, and if $L_0$ is a Lie sub-algebra, then $L_0$ is an ideal of $N_L\prs{L_0}$.
 \end{example}
 \begin{example}
 The condition $\brs{X,Y} = 0$ means $Y \in \ker\prs{\mathrm{ad}(x)}$ or equivalently $x \in \ker\prs{\mathrm{ad}(y)}$. Therefore
@@ -289,12 +291,154 @@ The condition $\brs{X,Y} = 0$ means $Y \in \ker\prs{\mathrm{ad}(x)}$ or equivale
 Z\prs{L_0} &= \set{x \in L}{\brs{x,L_0} = 0} \\
 &= \set{x \in L}{L_0 \subseteq \ker\prs{\mathrm{ad}(x)}} \text{.}
 \end{align*}
+$Z\prs{L_0}$ is a Lie sub-algebra of $L$, the Lie sub-algebra of elements commuting with every $x \in L_0$.
 \end{example}
 \begin{remark}
-If $L_0 \subseteq L$ is a Lie sub-algebra, the $N\prs{L_0}$ is a sub-algebra and is the largest sub-algebra such that $L_0$ is is an ideal in it.
+If $L_0 \subseteq L$ is a Lie sub-algebra, then $N\prs{L_0}$ is the largest sub-algebra such that $L_0$ is is an ideal in it.
 \end{remark}
 
-\[\endo\prs{A,B}\]
+\begin{remark}
+$Z_L(L)$ is the center of $L$, and an ideal.%
+\newlecture{October 29}{2018}
+Indeed, if $z \in Z\prs{L}$, and $x \in L$, then $\ad\brs{x,z} = \ad x \ad z - \ad z - \ad x$ and $L \subseteq \ker \ad z$, so $L \subseteq \ker \ad \brs{x,z}$, so $\brs{x,z} \in Z\prs{L}$ and $Z(L)$ is an ideal.
+\end{remark}
+\section{Sub-algebras and ideals}
+\begin{remark}
+\begin{enumerate}
+\item If $L_1$ and $L_2$ are Lie sub-algebras, then $L_1 + L_2$ generally \emph{is not}!
+\item Suppose $I = L_1$ is an ideal and $L_2$ a sub-algebra. Then $I + L_2$ is a sub-algebra.
+\item If $L_1 = I$ and $L_2 = J$ are ideals, then the Lie sub-algebra $I+J$ is an ideal.
+Indeed $\brs{x,i} \in I$ and $\brs{x,j} \in J$ for all $j$, so $\brs{x,I+J} \subseteq I+J$.
+\end{enumerate}
+\end{remark}
+\begin{definition}
+The \stress{commutator} of two sub-algebras $L_1,L_2$ is defined to be
+\[\mrm{Span}\set{\brs{X,Y}}{X \in L_1, Y \in L_2} \text{.}\]
+\end{definition}
+\begin{remark}
+The commutator of two sub-algebras \emph{is not} in general a sub-algebra. Generally $\brs{\brs{X,Y},\brs{X',Y'}}$ isn't in $\brs{L_1, L_2}$ if $X,X' \in L_1$ and $Y,Y' \in L_2$.
+Let \[\sum_{i=1}^n \brs{X_i, Y_i} \in \brs{L_1, L_2}\] and \[\sum_{j=1}^m \brs{X_j',Y_j'} \in \brs{L_1, L_2}\text{.}\]
+Then
+\begin{equation}\label{commut_subalgebra}
+\brs{\sum_{i=1}^n \brs{X_i,Y_i} \sum_{j=1}^m \brs{X_j',Y_j'}} = \sum_{\substack{i=1 \\ j=1}}^{\substack{n \\ m}} \brs{\brs{X_i,Y_i},\brs{X_j',Y_j'}}\text{.}
+\end{equation}
+\begin{enumerate}
+\item If $L_1 = I$ is an ideal, then $\brs{I,L_2} \subseteq I$, is a sub-space of $I$.
+\item If $L_1 = I$ and $L_2 = J$ are ideals, then $\brs{I,J} \subseteq I \cap J$, and it is an ideal of $L$.
+Equation \ref{commut_subalgebra} shows that $\brs{I,J}$ is indeed a sub-algebra. Now, let $\brs{i,j} \in \brs{I,J}$, and let $x \in L$. We should show that $\brs{x,\brs{i,j}} \in \brs{I,J}$ which is sufficient for the span.
+Now
+\begin{align*}
+\brs{x,\brs{i,j}} \stackrel{\text{Jacobin identity}}{=} \brs{\brs{x,i},j} + \brs{i,\brs{x,j}} = \brs{i',j} + \brs{i,j'} \in \brs{I,J}
+\end{align*}
+as required.
+\end{enumerate}
+\end{remark}
+\begin{conclusion}
+$I+J$ and $\brs{I,J}$ are ideals if $I$ and $J$ are.
+\end{conclusion}
+\begin{remark}
+In general $\brs{I,J} \subseteq I \cap J$, but the inclusion may be strict.
+\begin{examples}
+\begin{enumerate}
+\item Take $L$ an abelian Lie algebra and $I,J$ any two sub-spaces which are both sub-algebras, and ideals. Then $\brs{I,J} = 0$, but $I \cap J$ may be large.
+\item Take $L$ a Lie algebra of upper-triangular matrices, and $I=J$ the ideal of strict upper-triangular matrices. Then $\brs{I,I}$ contains matrices that have zero entries in the diagonal above the main diagonal, hence $\brs{I,I} \subsetneq I\cap J = I$.
+\end{enumerate}
+\end{examples}
+\end{remark}
+\begin{definition}
+If $\brs{I,J} = 0$, we say that $I$ and $J$ \stress{commute}.
+\end{definition}
+\begin{remark}
+$L$ is an ideal of itself, so $\brs{L,L} = \mrm{Span}\set{\brs{X,Y}}{X,Y \in L}$ is also an ideal, \stress{the commutator ideal of $L$}.
+\end{remark}
+\begin{definition}
+$L$ is \stress{abelian} if $\brs{L,L} = 0$.
+\end{definition}
+\begin{definition}
+$L$ is \stress{perfect} if $\brs{L,L} = L$.
+\end{definition}
+\begin{definition}
+$L$ is called a \stress{simple Lie-algebra} if $\dim L > 1$ and $L$ has no non-trivial ideals.
+\end{definition}
+\begin{exercise}
+A simple Lie algebra is in particular perfect.
+\end{exercise}
+\begin{proposition}
+If $\phi \colon L \to L'$ is a Lie-algebra homomorphism, then $\ker \phi$ is an ideal.
+\end{proposition}
 
+\begin{definition}
+For any ideal $I \triangleleft L$, the factor vector space $\quot{L}{I} = \set{\ell + I}{\ell \in L}$ has a structure of a Lie algebra, given by the following.
+\begin{align*}
+\brs{x+I, y+I}_{\quot{L}{I}} \ceq \brs{x,y}_L + I
+\end{align*}
+\end{definition}
+\begin{remark}
+The above is well defined since
+\[\brs{x+i, y+i'} = \brs{x,y} + \brs{i,y} + \brs{x,i'} + \brs{i,i'} \equiv \brs{x,y} \mod{I}\text{.}\]
+The identities for Lie algebras follow immediately from those on $L$. 
+\end{remark}
+\begin{theorem}[1\textsuperscript{st} homomorphism theorem]
+\begin{align*}
+\pi \colon L &\to \quot{L}{I} \\
+x &\mapsto x+I
+\end{align*}
+is a surjective Lie-algebra homomorphism, and $\ker \pi = I$.
+\end{theorem}
+\begin{theorem}[2\textsuperscript{nd} homomorphism theorem]
+If $I$ and $J$ are ideals of $L$, and $I \subset J$, then the map
+\begin{align*}
+\phi \colon \quot{L}{I} &\to \quot{L}{J} \\
+x+I &\mapsto x+J 
+\end{align*}
+is a well-defined Lie-algebra epimorphism.
+We have from the first homomorphism theorem that
+\[\quot{\quot{L}{I}}{\ker \phi} \cong \quot{L}{J}\]
+and
+\[\ker \phi = \quot{J}{I}\]
+therefore
+\[\quot{\quot{L}{I}}{\quot{J}{I}} \cong \quot{L}{J}\text{.}\]
+\end{theorem}
+\begin{theorem}[3\textsuperscript{rd} homomorphism theorem]
+Given any two ideals $I,J$, their intersection $I \cap J$ is an ideal of $L$ and we have a map
+\begin{align*}
+\psi \colon I &\to \quot{I+J}{J} \\
+i &\mapsto i+J \phantom{\quot{}{J}}\text{.}
+\end{align*}
+This is a Lie-algebra homomorphism which is obviously surjective, with kernel $I \cap J$, hence
+\[\quot{I}{I \cap J} \cong \quot{I+J}{J}\]
+with Lie-algebra homomorphism induced by $\psi$.
+\end{theorem}
+\begin{remark}
+If $L_0$ is an arbitrary Lie sub-algebra of $L$, and $J \triangleleft L$, then
+$J \cap L_0 \triangleleft L_0$ and $J \triangleleft L_0 + J$, and the Lie algebras $\quot{L_0 + J}{J}$ and $\quot{L_0}{L_0 \cap J}$ are isomorphic under the canonical map $\psi$.
+\end{remark}
+
+\chapter{Structure of Lie algebras}
+\section{Nilpotent Lie algebras}
+\begin{definition}
+The commutator ideal $\brs{L,L}$ is denoted $L^{\prs{1}}$.
+Similarly we denote $L^{\prs{n}} = \brs{L^{\prs{n-1}},L}$, which is an ideal of $L$.
+\end{definition}
+\begin{remark}
+The above gives a descending chain
+\[L = L^{\prs{0}} \supseteq \supseteq L^{\prs{1}} \supseteq L^{\prs{2}} \supseteq \ldots\]
+and since $\dim L < \infty$, this sequence has to stabilise.
+It is however possible that $\brs{L,L}=0$, if $L$ is abelian, or that $\brs{L,L} = L$, if $L$ is perfect.
+\end{remark}
+\begin{definition}
+If $L^{\prs{n}} = 0$ for some $n$, $L$ is called a \stress{nilpotent Lie algebra}
+.If $L^{\prs{n}} = 0$ and $L^{\prs{n-1}} \neq 0$, we call $n-1$ the \stress{index of nilpotency}.
+\end{definition}
+\begin{note}
+In some books $n$ itself is called the index of nilpotency.
+\end{note}
+\begin{definition}
+The sequence of ideals $L^{\prs{n}}$ is called \stress{the descending central series} of $L$.
+\end{definition}
+\begin{remark}
+$L^{\prs{k}} \triangleleft L$ and hence $L^{\prs{l}} \triangleleft L^{\prs{k-1}}$. Also $\quot{L^{\prs{k-1}}}{L^{\prs{k}}}$ is an \emph{abelian} algebra
+since $L^{\prs{k}} = \brs{L^{\prs{k-1}}, L} \supseteq \brs{L^{\prs{k-1}}, L^{\prs{k-1}}}$ and in general an ideal $I \triangleleft M$ is such that $\quot{M}{I}$ is abelian if and only if $I \supseteq \brs{M,M}$.
+\end{remark}
 \backmatter
 \end{document}
