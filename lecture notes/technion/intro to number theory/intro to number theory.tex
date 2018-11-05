@@ -62,6 +62,8 @@
 \mainmatter
 
 \chapter{מבוא}
+תורת המספרים נחלקת לשני תחומים עיקריים, תורת המספרים האלגברית ותורת המספרים האנליטית.
+אנו עוסקים בהקדמה לתורת המספרים האלגברית, ונדבר בקורס בין השאר על שדות מספרים אלגבריים. את תוצאות הקורס אפשר להכליל בתחום של תורת שדות מחלקה.
 \section{רקע היסטורי}
 
 בין שנת 1640 לשנת 1654, מתמטיקאי בשם פרמה%
@@ -722,6 +724,467 @@ $q_i \neq p_j$
 $j \in [k]$,
 בסתירה.
 \end{solution}
+\begin{definition}
+$a,b$
+\stress{זרים}
+אם
+$\gcd\prs{a,b} = 1$. \newlecture{31 באוקטובר}%
+{2018}
+\end{definition}
+\begin{theorem}
+נניח
+$\gcd\prs{a,b} = 1$
+ויהא
+$c$
+מחלק משותף של
+$a$
+ו־%
+$b$.
+אז
+$c\mid a,b$
+ולכן
+$c \mid 1$,
+כלומר יש
+$e$
+עבורו
+$ce = 1$
+ולכן
+$c$
+הפיך.
+\end{theorem}
+\begin{proposition}
+$\gcd\prs{a,b} = 1$
+אם ורק אם קיימים
+$x,y \in R$
+עבורם
+$xa + yb = 1$.
+\end{proposition}
+\begin{proposition}
+אם
+$\gcd\prs{a,b} = 1$,
+ראינו בהרצאה כי יש
+$x,y$
+כנדרש.
+להיפך, נניח שקיימים
+$x,y \in R$
+כך שמתקיים
+$xa + yb = 1$.
+אם
+$d \mid a,b$
+אז
+$d \mid xa + yb = 1$
+לכן
+$d \mid 1$
+ולכן
+$1$
+ממג"ב.
+\end{proposition}
+\begin{theorem}
+יהא
+$R$
+חוג אוקלידי. אם
+$p \in R$
+הוא אי־פריק, אז
+$p$
+ראשוני.
+\end{theorem}
+\begin{proof}
+נניח ש־%
+$p$
+ראשוני אי־פריק ונוכיח כי הוא ראשוני. נניח ש־%
+$p\mid ab$
+וגם
+$p \nmid a$,
+ונראה
+$p \mid b$.
+נניח בשלילה ש־%
+$a,p$
+אינם זרים
+ויהא
+$d \mid p,a$.
+קיים
+$c \in R$
+עבורו
+$p = cd$.
+$p$
+אי־פריק, לכן $c$ או
+$d$
+הפיכים.
+אם
+$c$
+הפיך, $d$ חבר של
+$p$.
+אז
+$p \mid a$
+בסתירה.
+אחרת,
+$d$
+הפיך ואז בבירור
+$a,p$
+זרים.
+כעת, יש
+$x,y \in R$
+עבורם
+$xa + yp = 1$.
+נכפול ונקבל
+$xab + ypb = b$
+ומתקיים
+$p \mid ypb, xab$
+כי
+$p \mid ab$.
+לכן
+$p \mid b$.
+\end{proof}
+\section{פירוק לראשוניים בחוג אוקלידי}
+\begin{proposition}
+יהא
+$R$
+חוג אוקלידי ויהא
+$u \in R \setminus \set{0}$
+כך ש־%
+$N\prs{u} = 0$.
+אז
+$u \in R^{\times}$.
+\end{proposition}
+\begin{proof}
+נחלק את
+$1$
+ב־%
+$u$.
+מתקיים
+$1 = qu + r$
+כאשר
+$N(r) < 0$
+או
+$r = 0$.
+אבל, לא ייתכן
+$N(r) < 0$
+לכן
+$r=0$
+לכן
+$qr = 1$
+ולכן
+$r \in R^{\perp}$.
+\end{proof}
+\begin{proposition}
+יהי
+$R$
+חוג אוקלידי.
+נניח ש־%
+$N\prs{a} = 1$
+ו־%
+$a \notin R^{\perp}$
+אינו הפיך.
+אז
+$a$
+ראשוני.
+\end{proposition}
+\begin{proof}
+נניח כי
+$a=bc$.
+נניח בשלילה ש־%
+$b,c$
+שניהם אינם הפיכים. אז
+$N(b),N(c) < N(a) = 1$.
+לכן
+$N(b) = N(c) = 0$
+ולכן
+$b,c$
+הפיכים, בסתירה.
+\end{proof}
+\begin{theorem}
+יהא
+$R$
+אוקלידי ויהא
+$a \in R \setminus \set{0}$
+שאינו הפיך.
+אז קיימים ראשוניים (אי־פריקים)
+$p_1, \ldots, p_k \in R$
+עבורם
+$a = p_1 \cdot \ldots \cdot p_k$.
+כמו כן, אם קיימים ראשוניים
+$q_1, \ldots, q_m$
+עבורם
+$a = q_1\cdot\ldots\cdot q_m$
+אז
+$m=k$
+ועד כדי שינוי סדר
+$p_i$
+חבר של
+$q_i$
+לכל
+$i$.
+\end{theorem}
+\begin{example}
+$15 = 3\cdot 5 = \prs{-5}\prs{-3}$
+אבל
+$-5,5$
+חברים וגם
+$-3,3$
+חברים.
+\end{example}
+\begin{proof}[עבור הקיום]
+נוכיח באינדוקציה על
+$N\prs{a}$.
+\begin{description}
+\item[בסיס:]
+אם
+$N(a) = 0$,
+$a$
+הפיך ולכן הטענה נכונה באופן ריק.
+אם
+$N(a) = 1$
+ו־%
+$a$
+אינו הפיך, הוא ראשוני.
+\item[צעד:]
+אם
+$a$
+ראשוני (אי־פריק), סיימנו. אחרת קיימים
+$b,c \in R$
+שאינם הפיכים המקיימים
+$a=bc$.
+אז
+$N(b),N(c) < N(a)$
+ולכן מהנחת האינדוקציה קיימים פירוקים של
+$b$
+ושל
+$c$,
+שמכפלתם היא פירוק של
+$a$.
+\end{description}
+\end{proof}
+\begin{proposition}
+יהיו
+$p_1,p_2 \in R$
+ראשוניים ונניח
+$p_1 \mid p_2$.
+אז
+$p_1,p_2$
+חברים.
+\end{proposition}
+\begin{proof}
+$p_2 = p_1 \cdot b$
+עבור
+$b$
+כלשהו. כעת
+$p_2 = p_1 \cdot b$
+ו־%
+$p_2$
+אי־פריק, לכן
+$b$
+הפיך.
+\end{proof}
+\section{חוג השלמים הגאוסים
+$\ZZ\brs{i}$}
+\begin{remark}
+בחוג
+$\ZZ\brs{i}$
+הנורמה היא כפלית.
+\[N\prs{z_1 z_2} = N\prs{z_1} N\prs{z_2}\]
+כמו כן, אם
+$z = a+bi$
+אז
+$N\prs{z} = \prs{a+bi}\prs{a-bi}=z\cdot\bar{z} = \abs{z}^2$.
+אם
+$z \in \ZZ\brs{i}$
+גם
+$\bar{z} \in \ZZ\brs{i}$.
+\end{remark}
+\begin{proposition}
+$z \in \ZZ\brs{i}$
+הפיך אם ורק אם
+$N\prs{z} = 1$.
+\end{proposition}
+\begin{proof}
+אם
+$z$
+הפיך, יש
+$w \in \ZZ[i]$
+עבורו
+$zw = 1$.
+לכן
+$N(zw) = N(z)N(w) = 1$
+ולכן
+$N(z) = N(w) = 1$
+כי הנורמה מקבלת ערכים שלמים חיוביים.\\
+לכיוון השני,
+$z \in \ZZ[i]$
+מקיים
+$N(z) = 1$
+אם ורק אם
+$a^2 + b^2 = 1$
+עבור
+$z = a+bi$.
+לכן
+$z \in \set{\pm 1, \pm i}$
+וכל אלו הפיכים כי
+$\prs{-1}^2 = i \cdot \prs{-i} = 1$.
+\end{proof}
+\begin{proposition}
+יהא
+$p \in \NN$
+ראשוני ונניח שקיימים
+$x,y \in \ZZ$
+עבורם
+$x^2 + y^2 = p$.
+אז
+$p$
+אינו ראשוני ב־%
+$\ZZ[i]$.
+\end{proposition}
+\begin{proof}
+$p = \prs{x+iy}\prs{x-iy}$
+פרוק ב־%
+$\ZZ[i]$
+שאינו טריוויאלי כי
+\[\text{.} N\prs{x+iy} = N\prs{x-iy} = x^2 + y^2 = p \neq 1\]
+\end{proof}
+\begin{proposition}
+יהא
+$p \in \NN$
+ראשוני.
+אם
+$p \in \ZZ[i]$
+אינו ראשוני, אז קיימים שלמים
+$x,y \in \ZZ$
+עבורם
+$x^2 + y^2 = p$.
+\end{proposition}
+\begin{proof}
+$p$
+אינו ראשוני ב־%
+$\ZZ[i]$
+לכן קיימים
+$z_1,z_2 \in \ZZ[i[$
+שאינם הפיכים עבורם
+$p = z_1 z_2$.
+לכן
+\[p^2 = N(p) = N\prs{z_1 z_2} = N\prs{z_1} N\prs{z_2}\]
+ולכן
+$N\prs{z_i} \in \set{1,p,p^2}$
+כי
+$p$
+ראשוני ב־%
+$\ZZ$.
+אבל
+$z_i$
+אינם הפיכים לכן
+$N\prs{z_i} = p$.
+נכתוב
+$z_1 = x+iy$
+ואז
+$N\prs{z_1} = x^2 + y^2 = p$.
+\end{proof}
+\begin{theorem}[אוילר 1729, הורדה]
+יהי
+$p \in \NN$
+ראשוני.
+אם קיימים
+$x,y,c \in \ZZ$
+כך שמתקיים
+$\gcd\prs{c,p}=1$
+וגם
+$x^2 + y^2 = cp$
+אז קיימים
+$x_1,y_1 \in \ZZ$
+עבורם
+$x_1^2 + y_1^2 = p$.
+\end{theorem}
+\begin{proof}
+נניח ש־%
+$x^2 + y^2 = cp$
+עם
+$\gcd\prs{c,p} = 1$.
+אז
+$\prs{x+iy}\prs{x-iy} = cp$.
+כלומר, מהטענה, צריך להוכיח ש־%
+$p$
+אינו ראשוני ב־%
+$\ZZ[i]$.
+נניח בשלילה שהוא כן ראשוני.
+ב־%
+$\ZZ[i]$
+מתקיים
+$p \mid \prs{x+iy}\prs{x-iy}$.
+לכן
+$p \mid \prs{x+iy}$
+או
+$p \mid \prs{x-iy}$.
+בה"כ נניח
+$p \mid \prs{x+iy}$.
+אז קיימים
+$n,m \in \ZZ$
+עבורם
+$x+iy = p\prs{n+mi} = pn + pmi$.
+אז
+$p \mid x,y$
+ב־%
+$\ZZ$.
+אז
+$p^2 \mid x^2 + y^2 = cp$
+בסתירה לכך ש־%
+$\gcd\prs{c,p} = 1$.
+\end{proof}
+\begin{corollary}
+יהי
+$p \in \NN$
+ראשוני. אז קיימים
+$x_1,y_1 \in \ZZ$
+עבורם
+$x_1^2 + y_1^2 = p$
+אם ורק אם קיימים
+$x,y \in \ZZ$
+עבורם
+$x^2 + y^2 \equiv 0 \mod{p}$
+וגם
+$x,y \not\equiv 0 \mod{p}$.
+\end{corollary}
+\begin{proposition}
+אם
+$p = x_1^2 + y_1^2$,
+נניח בה"כ
+$x_1, y_1 \geq 0$.
+אבל,
+$p$
+ראשוני ולכן
+$x_1, y_1 > 0$.
+כעת
+$0 < x_1,y_1 < p$
+ולכן
+$x_1^2 + y_1^2 \equiv 0 \mod{p}$
+כאשר
+$x_1,y_1 \not\equiv 0 \mod{p}$.\\
+לכיוון השני, אם יש
+$x,y \in \ZZ$
+עבורם
+$x^2 + y^2 \equiv 0 \mod{p}$
+וגם
+$x,y \not\equiv 0 \mod{p}$,
+יש
+$c$
+עבורו
+$x^2 + y^2 = cp$.
+נניח בה"כ כי
+$0<x,y<p$
+ובעצם
+$-\frac{p}{2} < x,y < \frac{p}{2}$
+כי ניתן להזיז ב־%
+$p$.
+בפרט
+$x^2 + y^2 < 2 \cdot \frac{p^2}{4} = \frac{p^2}{2}$.
+כעת
+\[x^2 + y^2 = cp\]
+ולכן
+$1 \leq c < \frac{p}{2}$
+ולכן
+$\gcd\prs{c,p} = 1$.
+לכן מהשקילות יש
+$x_1,y_1 \in \ZZ$
+עבורם
+$x_1^2 + x_2^2 = p$
+כנדרש.
+\end{proposition}
 \backmatter
 \end{document}
 

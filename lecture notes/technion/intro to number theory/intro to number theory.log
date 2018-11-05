@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  25 OCT 2018 10:22
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  1 NOV 2018 09:21
 entering extended mode
 **"./intro to number theory.tex"
 ("intro to number theory.tex"
@@ -590,6 +590,9 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 sty"
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 )
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
 tikz.sty"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
@@ -983,26 +986,10 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count298
-\sf@farskip=\skip67
-\sf@captopadj=\dimen289
-\sf@capskip=\skip68
-\sf@nearskip=\skip69
-\c@subfigure=\count299
-\c@subfigure@save=\count300
-\c@lofdepth=\count301
-\c@subtable=\count302
-\c@subtable@save=\count303
-\c@lotdepth=\count304
-\sf@top=\skip70
-\sf@bottom=\skip71
-)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count305
+\etb@tempcnta=\count298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
 sty"
@@ -1012,22 +999,22 @@ Package: ntheorem 2011/08/15 1.33
 \theorem@@style=\toks34
 \theorembodyfont=\toks35
 \theoremnumbering=\toks36
-\theorempreskipamount=\skip72
-\theorempostskipamount=\skip73
-\theoremframepreskipamount=\skip74
-\theoremframepostskipamount=\skip75
-\theoreminframepreskipamount=\skip76
-\theoreminframepostskipamount=\skip77
+\theorempreskipamount=\skip67
+\theorempostskipamount=\skip68
+\theoremframepreskipamount=\skip69
+\theoremframepostskipamount=\skip70
+\theoreminframepreskipamount=\skip71
+\theoreminframepostskipamount=\skip72
 \theorem@preskip=\toks37
 \theorem@postskip=\toks38
 \theorem@framepreskip=\toks39
 \theorem@framepostskip=\toks40
 \theorem@inframepreskip=\toks41
 \theorem@inframepostskip=\toks42
-\theoremindent=\dimen290
-\theorem@indent=\dimen291
-\theoremrightindent=\dimen292
-\theorem@rightindent=\dimen293
+\theoremindent=\dimen289
+\theorem@indent=\dimen290
+\theoremrightindent=\dimen291
+\theorem@rightindent=\dimen292
 \theoremheaderfont=\toks43
 \theoremseparator=\toks44
 \theoremprework=\toks45
@@ -1036,101 +1023,100 @@ Package: ntheorem 2011/08/15 1.33
 \qedsymbol=\toks48
 \theoremkeyword=\toks49
 \qedsymbol=\toks50
-\thm@topsep=\skip78
-\thm@topsepadd=\skip79
+\thm@topsep=\skip73
+\thm@topsepadd=\skip74
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count306
-\c@currNonectr=\count307
-\mysavskip=\skip80
+\c@endNonectr=\count299
+\c@currNonectr=\count300
+\mysavskip=\skip75
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen294
-\tagwidth=\dimen295
+\thm@amstmpdepth=\dimen293
+\tagwidth=\dimen294
 )
-\c@currproofctr=\count308
-\c@endproofctr=\count309
-\c@proof=\count310
-\c@currtheoremctr=\count311
-\c@endtheoremctr=\count312
-\c@theorem=\count313
-\c@currlemmactr=\count314
-\c@endlemmactr=\count315
-\c@currcorollaryctr=\count316
-\c@endcorollaryctr=\count317
-\c@currpropositionctr=\count318
-\c@endpropositionctr=\count319
-\c@currconjecturectr=\count320
-\c@endconjecturectr=\count321
-\c@currcriterionctr=\count322
-\c@endcriterionctr=\count323
-\c@currassertionctr=\count324
-\c@endassertionctr=\count325
-\c@currfactctr=\count326
-\c@endfactctr=\count327
-\c@currhypothesisctr=\count328
-\c@endhypothesisctr=\count329
-\c@currdefinitionxctr=\count330
-\c@enddefinitionxctr=\count331
-\c@currdefinitionstarredctr=\count332
-\c@enddefinitionstarredctr=\count333
-\c@definitionstarred=\count334
-\c@currconditionctr=\count335
-\c@endconditionctr=\count336
-\c@curraxiomctr=\count337
-\c@endaxiomctr=\count338
-\c@axiom=\count339
-\c@currpostulatectr=\count340
-\c@endpostulatectr=\count341
-\c@currpropertyctr=\count342
-\c@endpropertyctr=\count343
-\c@currproblemctr=\count344
-\c@endproblemctr=\count345
-\c@currexamplectr=\count346
-\c@endexamplectr=\count347
-\c@example=\count348
-\c@currexercisectr=\count349
-\c@endexercisectr=\count350
-\c@exercise=\count351
-\c@curralgorithmxctr=\count352
-\c@endalgorithmxctr=\count353
-\c@curralgorithmstarredctr=\count354
-\c@endalgorithmstarredctr=\count355
-\c@algorithmstarred=\count356
-\c@currquestionctr=\count357
-\c@endquestionctr=\count358
-\c@currassumptionctr=\count359
-\c@endassumptionctr=\count360
-\c@currremarkctr=\count361
-\c@endremarkctr=\count362
-\c@currnotectr=\count363
-\c@endnotectr=\count364
-\c@currnotationctr=\count365
-\c@endnotationctr=\count366
-\c@currclaimctr=\count367
-\c@endclaimctr=\count368
-\c@currsummaryctr=\count369
-\c@endsummaryctr=\count370
-\c@summary=\count371
-\c@curracknowledgementctr=\count372
-\c@endacknowledgementctr=\count373
-\c@currcasectr=\count374
-\c@endcasectr=\count375
-\c@case=\count376
-\c@curroptionctr=\count377
-\c@endoptionctr=\count378
-\c@option=\count379
-\c@currconclusionctr=\count380
-\c@endconclusionctr=\count381
-\c@conclusion=\count382
-\c@currsolutionctr=\count383
-\c@endsolutionctr=\count384
-\c@solution=\count385
-\c@currexms_rawctr=\count386
-\c@endexms_rawctr=\count387
-\c@exms_raw=\count388
-\c@currexrs_rawctr=\count389
-\c@endexrs_rawctr=\count390
-\c@exrs_raw=\count391
+\c@currproofctr=\count301
+\c@endproofctr=\count302
+\c@proof=\count303
+\c@currtheoremctr=\count304
+\c@endtheoremctr=\count305
+\c@theorem=\count306
+\c@currlemmactr=\count307
+\c@endlemmactr=\count308
+\c@currcorollaryctr=\count309
+\c@endcorollaryctr=\count310
+\c@currpropositionctr=\count311
+\c@endpropositionctr=\count312
+\c@currconjecturectr=\count313
+\c@endconjecturectr=\count314
+\c@currcriterionctr=\count315
+\c@endcriterionctr=\count316
+\c@currassertionctr=\count317
+\c@endassertionctr=\count318
+\c@currfactctr=\count319
+\c@endfactctr=\count320
+\c@currhypothesisctr=\count321
+\c@endhypothesisctr=\count322
+\c@currdefinitionxctr=\count323
+\c@enddefinitionxctr=\count324
+\c@currdefinitionstarredctr=\count325
+\c@enddefinitionstarredctr=\count326
+\c@definitionstarred=\count327
+\c@currconditionctr=\count328
+\c@endconditionctr=\count329
+\c@curraxiomctr=\count330
+\c@endaxiomctr=\count331
+\c@axiom=\count332
+\c@currpostulatectr=\count333
+\c@endpostulatectr=\count334
+\c@currpropertyctr=\count335
+\c@endpropertyctr=\count336
+\c@currproblemctr=\count337
+\c@endproblemctr=\count338
+\c@currexamplectr=\count339
+\c@endexamplectr=\count340
+\c@currexercisectr=\count341
+\c@endexercisectr=\count342
+\c@exercise=\count343
+\c@curralgorithmxctr=\count344
+\c@endalgorithmxctr=\count345
+\c@curralgorithmstarredctr=\count346
+\c@endalgorithmstarredctr=\count347
+\c@algorithmstarred=\count348
+\c@currquestionctr=\count349
+\c@endquestionctr=\count350
+\c@currassumptionctr=\count351
+\c@endassumptionctr=\count352
+\c@currremarkctr=\count353
+\c@endremarkctr=\count354
+\c@currnotectr=\count355
+\c@endnotectr=\count356
+\c@currnotationctr=\count357
+\c@endnotationctr=\count358
+\c@currclaimctr=\count359
+\c@endclaimctr=\count360
+\c@currsummaryctr=\count361
+\c@endsummaryctr=\count362
+\c@summary=\count363
+\c@curracknowledgementctr=\count364
+\c@endacknowledgementctr=\count365
+\c@currcasectr=\count366
+\c@endcasectr=\count367
+\c@case=\count368
+\c@curroptionctr=\count369
+\c@endoptionctr=\count370
+\c@option=\count371
+\c@currconclusionctr=\count372
+\c@endconclusionctr=\count373
+\c@conclusion=\count374
+\c@currsolutionctr=\count375
+\c@endsolutionctr=\count376
+\c@solution=\count377
+\c@currexms_rawctr=\count378
+\c@endexms_rawctr=\count379
+\c@exms_raw=\count380
+\c@currexrs_rawctr=\count381
+\c@endexrs_rawctr=\count382
+\c@exrs_raw=\count383
 ) (C:/localtexmf\tex\latex\hebrewdoc\hebrewdoc.sty
 Package: hebrewdoc 2018/10/05 Hebrew Macros
 
@@ -1154,7 +1140,7 @@ tex"
 \XKV@toks=\toks51
 \XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count392
+\XKV@depth=\count384
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
@@ -1165,17 +1151,17 @@ Package: fontspec 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaTeX
 xetex.sty"
 Package: fontspec-xetex 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count393
-\l__fontspec_language_int=\count394
-\l__fontspec_strnum_int=\count395
-\l__fontspec_tmp_int=\count396
-\l__fontspec_em_int=\count397
-\l__fontspec_emdef_int=\count398
-\l__fontspec_strong_int=\count399
-\l__fontspec_strongdef_int=\count400
-\l__fontspec_tmpa_dim=\dimen296
-\l__fontspec_tmpb_dim=\dimen297
-\l__fontspec_tmpc_dim=\dimen298
+\l__fontspec_script_int=\count385
+\l__fontspec_language_int=\count386
+\l__fontspec_strnum_int=\count387
+\l__fontspec_tmp_int=\count388
+\l__fontspec_em_int=\count389
+\l__fontspec_emdef_int=\count390
+\l__fontspec_strong_int=\count391
+\l__fontspec_strongdef_int=\count392
+\l__fontspec_tmpa_dim=\dimen295
+\l__fontspec_tmpb_dim=\dimen296
+\l__fontspec_tmpc_dim=\dimen297
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -1233,16 +1219,16 @@ ty"
 Package: biditools 2018/10/12 v1.7 Programming tools for bidi package
 \@bidi@envbody=\toks53
 \@bidi@emptytoks=\toks54
-\bidi@tempcountb=\count401
+\bidi@tempcountb=\count393
 \bidi@temptoksa=\toks55
 \bidi@temptoksb=\toks56
-\bidi@dummies=\count402
+\bidi@dummies=\count394
 \bidi@are@these@correct=\toks57
 \bidi@toks@lista=\toks58
 \bidi@toks@listb=\toks59
-\bidi@stack@length=\count403
+\bidi@stack@length=\count395
 \bidi@empty@stack=\toks60
-\bidi@looprepeat@depth=\count404
+\bidi@looprepeat@depth=\count396
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\zref-absp
 age.sty"
@@ -1255,7 +1241,7 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count405
+\c@abspage=\count397
 Package zref Info: New property: abspage on input line 62.
 )
 \@bidi@copyins@=\insert252
@@ -1265,13 +1251,13 @@ Package zref Info: New property: abspage on input line 62.
 File: latex-xetex-bidi.def 2018/10/11 v1.3.6 bidi adaptations for `latex.ltx' f
 or XeTeX engine
 \bidi@n@everypar=\toks61
-\bidi@column@check@number=\count406
+\bidi@column@check@number=\count398
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\footnote-xe
 tex-bidi.def"
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count407
+\c@footdir@label=\count399
 \footdir@toks=\toks62
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\xelatex\bidi\book-xetex-
@@ -1352,7 +1338,7 @@ r-xetex-bidi.def"
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count408
+\bidi@digits=\count400
 \bidi@digits@charclass=\XeTeXcharclass2
 \bidi@sepmark@charclass=\XeTeXcharclass3
 )
@@ -1367,17 +1353,17 @@ m hebcal.sty in Babel)
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polyglossia\cal-ut
 il.def"
-\c@tmpA=\count409
-\c@tmpB=\count410
-\c@tmpC=\count411
-\c@tmpD=\count412
-\c@tmpE=\count413
-\c@tmpF=\count414
+\c@tmpA=\count401
+\c@tmpB=\count402
+\c@tmpC=\count403
+\c@tmpD=\count404
+\c@tmpE=\count405
+\c@tmpF=\count406
 )
-\hebrewday=\count415
-\hebrewmonth=\count416
-\hebrewyear=\count417
-\@common=\count418
+\hebrewday=\count407
+\hebrewmonth=\count408
+\hebrewyear=\count409
+\@common=\count410
 )
 
 Package polyglossia Warning: No hyphenation patterns were loaded for `Hebrew'
@@ -1509,12 +1495,12 @@ Package: stylish 2018/10/05 Stylish Book Design
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
 sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count419
-\csq@gtype=\count420
-\csq@glevel=\count421
-\csq@qlevel=\count422
-\csq@maxlvl=\count423
-\csq@tshold=\count424
+\csq@reset=\count411
+\csq@gtype=\count412
+\csq@glevel=\count413
+\csq@qlevel=\count414
+\csq@maxlvl=\count415
+\csq@tshold=\count416
 \csq@ltx@everypar=\toks63
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
@@ -1535,17 +1521,23 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box56
-\fn@width=\dimen299
+\fn@width=\dimen298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip81
-\enit@outerparindent=\dimen300
+\labelindent=\skip76
+\enit@outerparindent=\dimen299
 \enit@toks=\toks64
 \enit@inbox=\box57
-\enitdp@description=\count425
-)) ("intro to number theory.aux"
+\enitdp@description=\count417
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count418
+\c@subtable=\count419
+) ("intro to number theory.aux"
 
 Package fontspec Info: Font family 'TimesNewRoman(3)' created for font 'Times
 (fontspec)             New Roman' with options
@@ -1591,7 +1583,6 @@ LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1639,7 +1630,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count426
+\c@section@level=\count420
 )
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
@@ -1744,8 +1735,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write7
 \openout7 = `"intro to number theory.toc"'.
 
-\c@lecturenumber=\count427
-\c@tutorialnumber=\count428
+\c@lecturenumber=\count421
+\c@tutorialnumber=\count422
  [3
 
 ] [4
@@ -1753,66 +1744,84 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 פרק 1.
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 72.
+ut line 74.
 Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
-ut line 84.
+ut line 86.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 87.
+t line 89.
 Package hyperref Info: bookmark level for unknown exms_raw defaults to 0 on inp
-ut line 127.
+ut line 129.
 Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
-input line 143.
-Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
-line 200.
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 205.
+input line 145.
 [1
 
 
 ]
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 202.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 207.
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 271.
+ line 273.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 311.
+input line 313.
 Package hyperref Info: bookmark level for unknown note defaults to 0 on input l
-ine 421.
+ine 423.
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 455.
+put line 457.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 479.
+t line 481.
  [2]
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
-ut line 534.
+ut line 536.
 Package hyperref Info: bookmark level for unknown algorithmx defaults to 0 on i
-nput line 549.
+nput line 551.
  [3]
-Overfull \hbox (8.79456pt too wide) in paragraph at lines 670--674
+Overfull \hbox (8.79456pt too wide) in paragraph at lines 672--676
 []\TU/TimesNewRoman(3)/m/n/10 נקבל כי $\OT1/cmr/m/n/10 2 + 3\OML/cmm/m/it/10 i$
  \TU/TimesNewRoman(3)/m/n/10 הוא הגורם המשותף היחיד בפירוק לראשוניים עד־כדי חבר
 ות (לחברים יש אותה הנורמה) ולכן $[] [] \OT1/cmr/m/n/10 =$[]
  []
 
 [4]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 979.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 979.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 979.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 979.
+
+[5] [6]
 \tf@thm=\write8
 \openout8 = `"intro to number theory.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 726.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 726.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1189.
  ("intro to number theory.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 726.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 726.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1189.
+
 Package rerunfilecheck Info: File `"intro to number theory".out' has not change
 d.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 726.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1189.
  ) 
 Here is how much of TeX's memory you used:
- 39654 strings out of 427792
- 771086 string characters out of 3147754
- 1074031 words of memory out of 3000000
- 43096 multiletter control sequences out of 15000+200000
- 538561 words of font info for 80 fonts, out of 3000000 for 9000
+ 39597 strings out of 427792
+ 770133 string characters out of 3147754
+ 1071746 words of memory out of 3000000
+ 43035 multiletter control sequences out of 15000+200000
+ 540271 words of font info for 87 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,13n,84p,1298b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on intro to number theory.pdf (8 pages).
+Output written on intro to number theory.pdf (10 pages).
