@@ -1140,7 +1140,7 @@ $x^2 + y^2 \equiv 0 \mod{p}$
 וגם
 $x,y \not\equiv 0 \mod{p}$.
 \end{corollary}
-\begin{proposition}
+\begin{proof}
 אם
 $p = x_1^2 + y_1^2$,
 נניח בה"כ
@@ -1184,7 +1184,226 @@ $x_1,y_1 \in \ZZ$
 עבורם
 $x_1^2 + x_2^2 = p$
 כנדרש.
+\end{proof}
+\begin{theorem}[אוילר]
+יהי%
+\newlecture{7 בנובמבר}%
+{2018}
+$p \in \NN$
+ראשוני.
+אם קיימים
+$x,y,c \in \ZZ$
+כך שמתקיים
+$\gcd\prs{c,p}=1$
+וגם
+$x^2 + 2y^2 = cp$
+אז קיימים
+$x_1,y_1 \in \ZZ$
+עבורם
+$x_1^2 + 2y_1^2 = p$.
+\end{theorem}
+\begin{proof}
+אותה הוכחה עבור משפט ההורדה של אוילר, כאשר נעבוד ב־%
+$\ZZ\brs{\sqrt{2}i}$.
+\end{proof}
+\begin{theorem}[אוילר]
+יהי
+$p \in \NN$
+ראשוני.
+אם קיימים
+$x,y,c \in \ZZ$
+כך שמתקיים
+$\gcd\prs{c,p}=1$
+וגם
+$x^2 + 3y^2 = cp$
+אז קיימים
+$x_1,y_1 \in \ZZ$
+עבורם
+$x_1^2 + 3y_1^2 = p$.
+\end{theorem}
+\begin{corollary}
+עבור
+$k \in \set{1,2,3}$
+יש פתרון למשוואה
+$x^2 + ky^2 \equiv 0 \mod{p}$
+עם
+$x,y \not\equiv 0 \mod{p}$
+אם ורק אם יש פתרון למשוואה
+$x^2 + ky^2 = p$.
+\end{corollary}
+
+עשינו רדוקציה למציאת ראשוניים מהצורות
+\begin{align*}
+x^2 + y^2 \\
+x^2 + 2y^2 \\
+x^2 + 3y^2
+\end{align*}
+למציאת פתרונות
+$\prs{a,b} \neq \prs{0,0}$
+למשוואות
+\begin{align*}
+x^2 + y^2 \equiv 0 \mod{p} \\
+x^2 + 2y^2 \equiv 0 \mod{p} \\
+\text{.} x^2 + 3y^2 \equiv 0 \mod{p}
+\end{align*}
+עבור
+$k \in \set{1,2,3}$
+מתקיים
+$x^2 + ky^2 \equiv 0 \mod{p}$
+אם ורק אם
+$x^2 = -ky^2$
+אם ורק אם
+$\prs{\frac{x}{y}}^2 = -k$.
+לכן הבעיה שקולה לבדיקת קיום שורש של
+$-k$
+בשדה
+$\FF_p$.
+\begin{question}
+עבור אילו
+$p$
+ראשוני ו־%
+$a \in \FF_p$,
+קיים
+$z \in \FF_p$
+עבורו
+$z^2 = a$?
+\end{question}
+
+בחוג
+$\ZZ\brs{i}$
+לקחנו את
+$\ZZ$
+והוספנו שורש יחידה מסדר
+$4$.
+נסתכל על שורשי יחידה מסדר
+$3$.
+יהא
+$\omega = e^{\frac{2\pi i}{3}} = \frac{-1 + \sqrt{3}i}{2}$
+ואז
+$\omega^2 = \bar{\omega} = \frac{-1 - \sqrt{3}i}{2}$.
+$\omega$
+שורש של הפולינום הציקלוטומי
+$\Phi_3\prs{x} \ceq x^2 + x^2 + 1$.
+מכך נובע כי
+$\bar{\omega} = \omega^2 = -1 - \omega$.
+מתקיים
+$\ZZ\brs{\omega} = \prs{a + b\omega}{a,b\in \ZZ}$
+כי הוספנו שורש של פולינום אי־פריק ממעלה
+$2$
+(לחלופין, הדבר נובע מכך ש־%
+$\omega^2 = 1-\omega$).
+
+מתקיים
+\begin{align} \label{omega}
+a+b\omega = a+b\prs{\frac{-1 + \sqrt{3}i}{2}} = a -\frac{b}{2} + \frac{b\sqrt{3}i}{2}
+\end{align}
+
+\begin{proposition}
+יהיו
+$a,b,c,d\in \ZZ$.
+אם
+$a+b\omega = c + d\omega$
+אז
+$a=c, b=d$.
 \end{proposition}
+\begin{proof}
+נובעת מ־%
+\ref{omega}.
+\end{proof}
+\begin{theorem}
+$\ZZ\brs{\omega}$
+חוג אוקלידי.
+\end{theorem}
+\begin{proof}
+נגדיר
+$N\prs{z} \ceq \abs{z}^2$
+ואז מתקיים
+\begin{align*}
+N(z) &= \abs{z}^2 \\
+&= \abs{a+b\omega}^2 \\
+&= \prs{a+b\omega} \prs{a +b\bar{\omega}} \\
+&= \prs{a+b\omega}\prs{a+b\omega^2} \\
+&= a^2 + ab\omega + ab\omega^2 + b^2 \\
+&= a^2 + ab\omega + ab\prs{-1-\omega} + b^2 \\
+\text{.} \phantom{N(z)} &= a^2 -ab + b^2
+\end{align*}
+קיבלנו
+$N\prs{a+b\omega} = a^2 -ab + b^2$.
+נראה קיום של חלוקה עם שארית.
+יהיו
+$z_1, z_2 \in \ZZ\brs{\omega}$
+ונרצה לחלק עם שארית
+$z_1 = qz_2 + r$.
+נסמן
+$\tilde{q} = \frac{z_1}{z_2} \in \CC$
+וניקח
+$q$
+את הנקודה הקרובה ביותר ב־%
+$\ZZ\brs{\omega}$.
+אם
+$r = 0$
+סיימנו. אחרת:
+אם מרחק המרכז של משולש עם צלעות באורך 1 מהקודקוד הוא
+$x$
+אז
+$\prs{\frac{1}{2}}^2 + \prs{1-x}^2 = x^2$
+ולכן
+$x = \frac{5}{8}$.
+אז
+\[N\prs{q-\tilde{q}} \leq \frac{25}{64}\]
+ואז
+\[N\prs{r} = N\prs{z_1 - qz_2} = N\prs{\tilde{q}z_2 - qz_2} = N\prs{\tilde{q} - q} N\prs{z_2} \leq \frac{25}{64}N\prs{z_2} < N\prs{z_2}\]
+כנדרש.
+\end{proof}
+\begin{proposition}
+$z \in \ZZ\brs{\omega}$
+הפיך אם ורק אם
+$N\prs{z} = 1$.
+\end{proposition}
+\begin{proof}
+נניח כי
+$z$
+הפיך. אז יש
+$w$
+עבורו
+$zw = 1$.
+אז
+$N\prs{zw} = N\prs{1} = 1$
+ולכן
+$N\prs{z} N\prs{w} = 1$.
+מתקיים
+$N(z),N(w) \in \NN$
+ולכן
+$N(z) = N(w) = 1$.\\
+להיפך, נניח כי
+$N\prs{z} = 1$.
+נכתוב
+$z = a + b\omega$.
+אז
+\[\text{.} N\prs{z} = N\prs{a+b\omega} = \prs{a+b\omega}\prs{a+b\prs{-1-\omega}} = \prs{a+b\omega}\prs{a-b-b\omega} = 1\]
+\end{proof}
+
+נרצה כעת למצוא את כל ההפיכים בחוג
+$\ZZ\brs{\omega}$,
+כלומר כל האיברים מנורמה 1.
+נניח
+$z = a+b\omega \in \ZZ\brs{\omega}$
+מנורמה 1. אז
+$N\prs{z} = a^2 - ab + b^2 = 1$
+ואז
+\begin{align*}
+\prs{a-\frac{b}{2}}^2 + \frac{3}{4}b^2 &= 1 \\
+4\prs{a-\frac{b}{2}}^2 + 3b^2 &= 4 \\
+\prs{2a-b}^2 + 3b^2 &= 4
+\end{align*}
+ונקבל ע"י מעבר על כל האפשרויות את הפתרונות הבאים.
+\begin{align*}
+\prs{a,b} \in \set{\prs{0,1},\prs{0,-1}, \prs{1,0}, \prs{1,1}, \prs{-1,0}, \prs{-1,-1}}
+\end{align*}
+מתקיים
+$-1-\omega = \omega^2$
+לכן ההפיכים הם
+$\set{\pm 1, \pm \omega, \pm \omega^2}$.
 \backmatter
 \end{document}
 
