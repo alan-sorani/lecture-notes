@@ -13,3 +13,7 @@
 \contentsline {section}{\numberline {1.2}מבנה חלק}{5}{section.1.2}
 \contentsline {section}{\numberline {1.3}תתי־יריעות}{9}{section.1.3}
 \contentsline {section}{\numberline {1.4}נגזרות}{11}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}נגזרות כיווניות}{14}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}דיפרנציאלים}{15}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}שיכונים}{15}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}ערכים קריטיים ורגולריים}{17}{subsection.1.5.1}

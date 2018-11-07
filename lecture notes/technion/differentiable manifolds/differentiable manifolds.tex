@@ -829,10 +829,11 @@ $f(x) = \sqrt[3]{x}$.
 $\hat{f} = \1_{\RR}$
 ולכן
 $f$
-דיפאומורפיזם.
+דיפאומורפיזם. ראה איור
+\ref{diffeo}.
 \begin{figure}[h!]
 \centering
-\caption{Diffeomorphism.}
+\caption{דיפאומורפיזם.}
 \label{diffeo}
 \includegraphics[scale=0.6]{sources/diffeo}
 \end{figure}
@@ -1362,9 +1363,9 @@ $\phi, \psi$
 ואז
 \[\underset{\hat{\gamma}_i}{\underbrace{\phi \circ \gamma_i}} = \prs{\phi \circ \psi^{-1}} \circ \underset{\hat{\hat{\gamma}}_i}{\underbrace{\psi \circ \gamma_i}}\]
 ומכלל השרשרת
-\[\dot{\prs{\hat{\gamma}_i}}(0) = \rest{D\prs{\phi \circ \psi^{-1}}}{\phi\prs{p}} \cdot \dot{\prs{\hat{\hat{\gamma}}_i}}(0)\] %TODO fix, dot over pars over hats over gamma
+\[\dot{{\hat{\gamma}}}_i(0) = \rest{D\prs{\phi \circ \psi^{-1}}}{\phi\prs{p}} \cdot \dot{{\hat{\hat{\gamma}}}}_i(0)\]
 ואז
-%TODO dot over two hats equal iff dot only one hat (i=1,2)
+\[\text{.} \dot{\hat{\hat{\gamma}}}_1 = \dot{\hat{\hat{\gamma}}}_2 \iff \dot{{\hat{\gamma}}}_1 = \dot{\hat{{\gamma}}}_2\]
 \end{remark}
 \begin{definition}
 נגדיר
@@ -1488,7 +1489,7 @@ $S^1$
 $p$.
 \end{example}
 \begin{definition}
-\stress{אגד משיק}\textenglish{tangent bundle}
+\stress{אגד משיק} \textenglish{(tangent bundle)}
 הינו
 \[\text{.}TM = \coprod_{x \in M} \prs{x,T_x M}\]
 איבר ב־%
@@ -1577,6 +1578,652 @@ $TS^{1} \cong S^1 \times \RR$,
 אבל
 $TS^2 \not\cong S^2 \times \RR^2$.
 \end{remark}
+\begin{remark}
+בדרך כלל,
+$TM \not\cong M\times\RR^n$.%
+\newlecture{4 באוקטובר}%
+{2018}
+נראה מבנה לוקלי על האגד המשיק. קיימות ההעתקות
+\begin{align*}
+\phi &\colon \Uu \to \phi\prs{\Uu} \\
+D\phi &\colon \brs{\gamma} \to \phi \circ \gamma \in \RR^n
+\end{align*}
+ואז קיימת ההעתקה הבאה.
+\begin{align*}
+\prs{\phi,D\phi} \colon T\Uu &\to \phi\prs{\Uu} \times \RR^n\\
+\prs{p, \brs{\gamma}} &\to \prs{\phi\prs{p}, \dot{\phi \circ \gamma}}
+\end{align*}
+זאת העתקה השומרת על מבנה חלק, אך הינה תלויה בבחירת קואורדינטות
+$\prs{\Uu, \phi}$.
+\end{remark}
+\subsection{נגזרות כיווניות}
+יהיו
+$p \in M$,
+$f \colon M \to \RR$
+חלקה,
+ו־%
+$\brs{\gamma} = v \in T_p M$.
+נגדיר את
+\stress{הנגזרת הכיוונית של
+$f$
+בכיוון
+$v$}
+להיות
+\begin{align*}
+\text{.}\frac{\del f}{\del v}(p) = \rest{\frac{\diff}{\diff t}}{t=0} f \circ \gamma
+\end{align*}
+
+\begin{exercise}
+אם
+$\brs{\gamma'} = \brs{\gamma}$
+אז
+\begin{align*}
+\text{.} \eval{\frac{\diff}{\diff t}}{0} f\circ \gamma = \eval{\frac{\diff}{\diff t}}{0} f\circ \gamma'
+\end{align*}
+כלומר, הנגזרת מוגדרת היטב.
+\end{exercise}
+
+הנגזרת הכיוונית לינארית ב־%
+$v$,
+וב־%
+$f$.
+היא גם מקיימת את
+\emph{כלל לייבניץ}.
+\begin{align*}
+\frac{\del}{\del v} \prs{f \circ g} = f\frac{\del g}{\del v} + g\frac{\del f}{\del v}
+\end{align*}
+
+הוכיחו את תכונות אלו כ%
+\textbf{תרגיל}.
+
+\begin{definition}
+\stress{דריווציה}
+\textenglish{(derivation)}
+זאת העתקה לינארית
+$D \colon \CCC^{\infty}\prs{M} \to \RR$
+שמקיימת את כלל לייבניץ.
+\end{definition}
+\begin{remark}
+מתקבלת העתקה
+\begin{align*}
+T_p &\to \set{\text{derivations}} \\
+v &\to \frac{\del}{\del v}
+\end{align*}
+שהינה חח"ע ועל, ולמעשה איזומורפיזם של מרחבים וקטוריים.
+\end{remark}
+\begin{remark}
+הגדרה שקולה למרחב משיק, היא ש־%
+$T_p M$
+הוא מרחב הדריווציות בנקודה
+$p$.
+\end{remark}
+\subsection{דיפרנציאלים}
+תהי
+$f \colon M^m \to N^n$
+העתקה חלקה. אם
+$\brs{\gamma} = \brs{\gamma'}$
+ניתן לבדוק כי מתקיים
+$\brs{f\circ \gamma} = \brs{f\circ \gamma'}$
+(\textbf{תרגיל}).
+אז מתקבלת העתקה
+\begin{align*}
+D_p f \colon T_p M &\to \T_{f\prs{p}}N \\
+\text{.} \phantom{D_p f} \brs{\gamma} &\to \brs{f\circ \gamma}
+\end{align*}
+
+\begin{definition}
+ההעתקה
+$D_p f$
+נקראת
+\stress{דיפרנציאל}.
+\end{definition}
+\begin{notation}
+מסמנים את הדיפרנציאל בכמה אופנים.
+\[D_p, \quad D f \prs{p}, \quad {f_{*}}_p\]
+\end{notation}
+\begin{remark}
+הדיפרנציאל הוא פונקטור קווריאנטי.
+\[
+\begin{tikzcd}
+M \arrow[r,"f"] \arrow[d,squiggly] & N \arrow[d,squiggly] \\
+TM \arrow[r,"Df"] & TN 
+\end{tikzcd}
+\]
+מתקיים
+\begin{align*}
+DF \colon TM &\to TN \\
+\text{.} \phantom{DF} \prs{p,v} &\to \prs{f\prs{p}, D_p f\prs{v}}
+\end{align*}
+\end{remark}
+\begin{proposition}[כלל השרשרת]
+מתקיים
+$\dot{f \circ \gamma} = DF \cdot \dot{\gamma}$
+ואז
+\begin{align*}
+\text{.} F\prs{x_0 + \Delta x} = F\prs{x_0} + Df\cdot \Delta x + O\prs{\norm{\Delta x}^2}
+\end{align*}
+$F\prs{x_0} + Df\cdot \Delta x$
+נקראת
+\stress{לינאריזציה של ההעתקה
+$F$}.
+\end{proposition}
+\begin{exercise}
+תהי
+$f \colon M^m \to N^n$
+חלקה.
+נגדיר
+$D \phi \colon \brs{\gamma} \to \dot{\phi \cdot \gamma} \in \RR^m$
+ואז
+\begin{align*}
+D\phi \colon T_p \Uu \xrightarrow{\sim} \RR^m \
+D\psi \colon T_{f\prs{p}}\Vv \xrightarrow{\sim} \RR^n
+\end{align*}
+ונקבל העתקה
+\begin{align*}
+\widehat{D_p f} \colon \RR^m \to \RR^n
+\end{align*}
+לינארית ולכן נתונה ע"י מטריצה.
+זאת מטריצת היעקובי של
+$\hat{f}\prs{\phi\prs{p}}$.
+\end{exercise}
+\begin{exercise}
+\begin{itemize}
+\item $Df \colon TM \to TN$
+חלקה.
+\item $f \colon M \to N$
+דיפאומורפיזם.
+לכן
+$D_x f$
+הפיכה לכל
+$x \in M$.
+\item \textbf{כלל השרשרת:} \[D_x\prs{f \circ g} = D_{g\prs{x}} f \circ D_x g\]
+\end{itemize}
+\end{exercise}
+\section{שיכונים}
+\begin{definition}
+$f \colon M^m \to N^n$
+חלקה נקראת
+\stress{אימרסיה}
+אם לכל
+$x \in M$,
+\[D_x f \colon T_x M \to T_{f\prs{x}} N \]
+חד־חד ערכית, או באופן שקול
+$\ker D_x f = \set{0}$.
+\end{definition}
+\begin{example}
+$f \colon \RR \to \RR^2$
+אימרסיה אם ורק אם
+$D_x f \neq 0$
+אם ורק אם
+$\dot{f} \neq 0$.\\
+באיור
+%TODO DM 4.1
+ההעתקות
+\textenglish{a,b}
+הינן אימרסיות, אך
+\textenglish{c}
+איננה.
+\end{example}
+\begin{definition}
+$f \colon M^m \to N^n$
+חלקה נקראת
+\stress{סובמרסיה}
+אם לכל
+$x \in M$,
+\[D_x f \colon T_x M \to T_{f\prs{x}} N \]
+חד־חד על.
+\end{definition}
+\begin{example}
+$\pi \colon \RR^2 \to \RR$
+ההטלה הינה סובמרסיה.
+\end{example}
+\begin{definition}
+$f \colon M \to N$
+נקראת
+\stress{שיכון}
+אם
+$f$
+אימרסיה וגם הומאומורפיזם.
+\end{definition}
+\begin{example}
+ההעתקות באיור
+%TODO DM 4.2
+אינן שיכונים.
+\end{example}
+\begin{remark}
+תהי
+$f \colon M^n \to N^n$
+אימרסיה.
+אם
+$\ker D_x f = \set{0}$
+בכל
+$x \in M$,
+אז
+$D_x f$
+הפיכה ולכן
+$f$
+דיפאומורפיזם לוקאלי סביב
+$x$
+ו־%
+$f\prs{x}$.
+זה
+\emph{משפט הפונקציה ההפוכה}
+והוא אינו נכון גלובלית.
+\begin{align*}
+f \colon S^1 &\to S^1 \\
+e^{i\theta} &\to e^{2i\theta}
+\end{align*}
+דיפאומורפיזם לוקלי שאינו גלובלי.
+\end{remark}
+\begin{exercise}[קשה]
+יהי
+$f \colon M \to N$
+שיכון. אז
+$f\prs{M}$
+תת־יריעה של
+$N$.
+\end{exercise}
+\begin{example}[מעגל המפלצת]
+נסמן
+$M = S^1 \times \set{0}$
+ו־%
+$N = S^1 \times \set{1}$.
+תהי
+$A \in S^1$
+ונסמן
+$A_1 = \prs{A, 0}, A_2 = \prs{A, 1}$.
+נגדיר
+\begin{align*}
+S^1_{\tiny{\circ \circ}} = \quot{M \amalg N}{\sim}
+\end{align*}
+כאשר
+$\prs{x,0} \sim \prs{x,1}$
+עבור
+$x \neq A$.
+קיבלנו מעגל עם "נקודה שמנה", ומרחב זה אינו האוסדורף.
+הטופולוגיה המושרית היא לפי:
+\begin{itemize}
+\item עבור
+$x \in A_1, A_2$,
+סביבה היא קשת פתוחה בטופולוגיה הרגילה.
+\item סביבה של
+$A_2$
+היא קשת סביב
+$A_2$
+שאינה מכילה את
+$A_1$.
+באותו אופן סביבה של
+$A_1$.
+\end{itemize}
+$S^1_{\tiny{\circ \circ}}$
+כן יריעה, אך לא ניתנת לשיכון ב־%
+$\RR^N$
+)אם כן,
+$f\prs{S^1_{\tiny{\circ \circ}}}$
+תת־יריעה של
+$\RR^N$
+ולכן האוסדורף, בסתירה).
+\end{example}
+
+נניח מעתה כי כל היריעות הינן האוסדורף ובנות מנייה שנייה (כלומר, קיים בסיס בן־מניה).
+
+\begin{exercise}
+יהי
+$X$
+טופולוגי האוסדורף ובן מנייה שנייה.
+מתקיימות התכונות הבאות.
+
+\begin{enumerate}
+\item
+$X$
+ספרבילי.
+\item
+קומפקטיות שקולה לקומפקטיות סדרתית.
+\item אם
+$X$
+הוא
+$T_3$
+אז
+$X$
+מטריזבילי.
+\item
+$X$
+לינדלוף.
+\end{enumerate}
+\end{exercise}
+\begin{exercise}
+יהיו
+$X,Y$
+טופולוגיים,
+$X$
+קומפקטי ו־%
+$Y$
+האוסדורף.
+\begin{enumerate}
+\item אם
+$f \colon X \to Y$
+חח"ע, על ורציפה, אז
+$f^{-1}$
+רציפה ולכן
+$f$
+הומאומורפיזם.
+\item
+$K \subseteq Y$
+קומפקטית היא
+סגורה.
+\end{enumerate}
+\end{exercise}
+\begin{theorem}[\textenglish{Whitney}, גרסה חלשה]
+תהי
+$M$
+יריעה קומפקטית. אזי קיים שיכון
+$M \hookrightarrow \RR^N$
+עם
+$N$
+גדול מספיק.
+\end{theorem}
+\begin{remark}
+הבנייה בהוכחת המשפט תיתן
+$N$
+גדול. נראה אחר־כך איך להקטין את
+$N$
+ל־%
+$2\dim\prs{M} + 1$.
+\end{remark}
+\begin{remark}
+משפט
+\textenglish{Whitney}
+נכון גם עבור יריעות שאינן קומפקטיות.
+\end{remark}
+\begin{notation}
+\begin{align*}
+B^n\prs{r} = \set{x \in \RR^n}{\norm{x} \leq r}
+\end{align*}
+\end{notation}
+\begin{lemma}
+קיימת העתקה חלקה
+$f \colon B^n\prs{3} \to S^n \leq \RR^{n-1}$
+שמקיימת את התכונות הבאות.
+%TODO fig DM 4.3
+\begin{enumerate}
+\item \[\im\prs{\rest{f}{B^{\circ}\prs{2}}} = S^n \setminus \set{p_+}\]
+
+\item $\rest{f}{B^{\circ}\prs{2}}$
+דיפאומורפיזם.
+
+\item \[f\prs{B(3) \setminus B^{\circ}(2)} = p_+\]
+
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+מתקיים
+\[S^n \cong \RR^n \cup \set{\infty} \cong B^{\circ}(2) \cup \set{*}\]
+ולכן קיימת
+$f$
+הומאומורפיזם.
+השלימו את הפרטים ובדקו נגזרות ליד
+$r=2$
+כך שהיא תהיה חלקה.
+\end{proof}
+
+\begin{proof}[משפט \textenglish{Whitney}]
+תהי
+$M$
+יריעה קומפקטית
+ממימד
+$m$.
+לכל
+$p \in M$
+נבחר
+$\prs{\Uu_p, \phi_p}$
+מפה.
+נניח כי
+$\phi_p\prs{p} = 0$
+וגם
+$B\prs{3} \subseteq \phi_p\prs{\Uu_p}$,
+ע"י תיקון של האטלס במידת הצורך. נקבל כי
+\[\set{\phi^{-1}_p \prs{B^{\circ}\prs{2}}}\]
+כיסוי פתוח של
+$M$.\\
+נבחר תת־כיסוי סופי
+\[\set{\phi^{-1}_{p_i} \prs{B^{\circ}\prs{2}}}_{i=1}^d\]
+ונסמן
+$\Uu_i \ceq \Uu_{p_i}$
+ו־%
+$\phi_i \ceq \phi_{p_i}$.
+נגדיר
+\begin{align*}
+g_i \colon M &\to \RR^{m+1} \\
+x &\to \fcases{f\prs{\phi_i\prs{x}} & x \in \phi_i^{-1}\prs{B^{\circ}\prs{2}} \\ p_+ & \text{otherwise}}
+\end{align*}
+כאשר
+$f$
+ההעתקה מהלמה.
+אז
+$g_i$
+חלקה כי הרחבנו את
+$f$
+שהינה חלקה וקבועה בסביבת השפה, לפונקציה קבועה מחוץ לכדור.\\
+נגדיר
+$g \ceq \prs{g_1, \ldots, g_d} \colon M \to \RR^{\prs{n+1}d}$.
+אז
+\begin{itemize}
+\item
+$g$
+חלקה כוקטור של פונקציות חלקות.
+\item \emph{$g$ חח"ע:}
+לכל
+$x \neq y \in M$,
+עבור
+$i$
+מסוים מתקיים
+$x \in \phi^{-1}_i \prs{B^{\circ}(2)}$.
+אם
+$y \in\phi^{-1}_i \prs{B^{\circ}(2)}$
+אז
+$g_i\prs{x} \neq g_i \prs{y}$
+ולכן
+$g(x) \neq g(y)$.
+אחרת,
+$g_i\prs{y} = p_+$
+וגם אז
+$g_i\prs{x} \neq g_i\prs{y}$.
+\item
+$g \colon M \to g\prs{M}$
+חח"ע ועל, ו־%
+$g(M)$
+האוסדורף, לכן
+$g^{-1}$
+רציפה (לפי תרגיל). לכן
+$g$
+הומאומורפיזם.
+\item \emph{$g$ אימרסיה:}
+צריך להוכיח כי
+$D_x g \colon T_x M \to T_{g(x)}\RR^N$
+חח"ע לכל
+$x \in M$.
+קיים
+$i$
+עבורו
+$x \in \phi_i^{-1}\prs{B^{\circ}(2)}$.
+אז
+$g_i = f\circ \phi_i\prs{x}$
+בסביבת
+$x$
+היא דיפאומורפיזם (לוקלי). לכן
+$D_x g_i$
+הפיכה ולכן חח"ע. לכן
+$D_x g$
+גם היא חח"ע.
+\end{itemize}
+$g$
+אימפרסיה על התמונה
+\end{proof}
+\begin{remark}
+כדי שההרחבה
+$g_i$
+של
+$f$
+תהייה חלקה השתמשנו בכך ש־%
+$M$
+האוסדורף.
+\end{remark}
+\subsection{ערכים קריטיים ורגולריים}
+\begin{definition}
+תהי
+$f \colon M \to N$
+חלקה.
+$y \in N$
+\stress{ערך רגולרי של
+$f$}
+אם לכל
+$x \in f^{-1}\prs{y}$
+ההעתקה
+\[D_xf \colon T_x M \to T_y N\]
+היא על.
+אם
+$y \in N$
+אינו רגולרי, הוא
+\stress{ערך קריטי}.
+\end{definition}
+\begin{definition}
+$x \in M$
+\stress{נקודה רגולרית}
+אם
+$D_x f \colon T_x M \to T_y N$
+על.
+אחרת
+$x \in M$
+\stress{נקודה קריטית}.
+\end{definition}
+\begin{example}
+ניקח הטלה
+$\pi \colon \RR^2 \to \RR$
+של שתי תתי־יריעות של
+$\RR^2$
+כמתואר באיור
+%TODO fig 4.4
+\end{example}
+\begin{remark}
+יתכן כי תמונת נקודה רגולרית היא ערך קריטי.
+\end{remark}
+\begin{remark}
+אם
+$f^{-1}(y) = \ns$,
+$y$
+רגולרי.
+\end{remark}
+\begin{remark}
+קריטיות וסינגולריות הם מושגים שונים.
+\end{remark}
+\begin{example}
+תהי
+$f \colon M \to \RR$.
+$x$
+נקודה קריטית אם ורק אם
+$D_x f = 0$.
+\end{example}
+\begin{theorem}
+תהי
+$f \colon M^m \to N^n$
+חלקה עם
+$m \geq n$.
+יהי
+$y \in f\prs{M} \subseteq N$
+ערך רגולרי.
+אזי
+$L \ceq f^{-1}\prs{y}$
+תת־יריעה חלקה ממימד
+$m-n$
+(שאינה בהכרח קשירה).
+בנוסף, לכל
+$x \in L$,
+\[\text{.} T_x L = \ker D_x f \subseteq T_x M\]
+\end{theorem}
+\begin{proof}
+ההגדרה של תת־יריעה הינה לוקלית, לכן די להראות כי
+$L$
+תת־יריעה בסביבת נקודה
+$x$,
+שמקיימת את הדרישות.\\
+נבחר קואורדינטות מקומיות סביב
+$x$
+ו־%
+$y$.\footnote{ניתן להסתכל על קואורדינטות באופן אחר. קיים שריג פונקציות
+$x_1, \ldots, x_m \colon \phi\prs{\Uu} \to \RR$. הדבר מגדיר קואורדינטות מקומיות
+$x^i = x_i \circ \phi \colon \Uu \to \RR$
+שהינן תלויות במפה. ראו איור
+%TODO DM. 4.5
+}
+נסמנן
+$\prs{x^1, \ldots, x^m}$
+ו־%
+$\prs{y^1, \ldots, y^n}$
+בהתאמה.
+באופן מקומי ניתן להציג את
+$f$
+באופן הבא.
+\[f\prs{x^1, \ldots, x^m} = \pmat{f_1\prs{x^1, \ldots, x^m} \\ \vdots \\ f_n\prs{x^1, \ldots, x^m}}\]
+כעת
+\[\text{.} \Uu \cap f^{-1}(Y) = \set{\prs{x^1, \ldots, x^m}}{\fcases{f_1\prs{x^1, \ldots, x^m} = y_1 \\ \vdots \\ f_n\prs{x^1,\ldots, x^m} = y_n}}\]
+$D_x f$
+על
+(כי
+$y$
+על) לכן
+$\RR^m \to \RR^n$
+המוגדרת ע"י מטריצת הנגזרות החלקיות היא על, ולכן
+$\rank \frac{\del f_i}{\del x_j} = n$.
+ממשפט הפונקציה הסתומה,
+$f^{-1}\prs{y}$
+תת־יריעה (לוקלית) ממימד
+$m-n$.\\
+נוכיח כי
+$T_xL = \ker D_x f$.
+תהי
+$\gamma\prs{t}$
+עקומה ב־%
+$L$.
+אז
+$f\prs{\gamma\prs{t}} = y$
+ואז
+\[\brs{\gamma} \xrightarrow{Df} \brs{\text{const}} = 0 \in T_y N\]
+ונקבל כי
+$T_x L \subseteq \ker D_x f$.
+משיקולי מימד, יש שיוויון.
+\end{proof}
+\begin{remark}
+$y$
+הדרישה כי
+$y$
+ערך רגולרי
+הינה מספיקה אך לא הכרחית.
+ייתכן ערך קריטי עם תמונה הפוכה שהיא תת־יריעה, ואפילו ממימד נכון.
+\end{remark}
+\begin{example}
+נסתכל על
+$f \colon M \to \RR$
+פונקציית גובה באיור
+%TODO DM 4.6
+\begin{itemize}
+\item
+$f^{-1}\prs{y_1} = \ns$
+לכן
+$y_1$
+רגולרית אך לא ב־%
+$f(M)$.
+\item
+$f^{-1}\prs{y_2} \cong S^1$
+\item $f^{-1}\prs{y_3} = S^1 \amalg S^1$.
+\item $f^{-1}\prs{y_4} \cong S^1$.
+\item $f^{-1}\prs{c_1} = \set{\text{pt}}$
+תת־יריעה אך המימד אינו 1.
+\item $f^{-1}\prs{c_2} = S^1 \amalg \set{\text{pt}}$
+תת־יריעה עם מימד שאינו קבועה בין מחלקות קשירות.
+\item $f^{-1}\prs{c_3} = \quot{S^1 \amalg S^1}{\set{\text{pt}}}$
+לא תת־יריעה (זה זר עם שתי לולאות).
+\end{itemize}
+\end{example}
 \backmatter
 \end{document}
 
