@@ -4,6 +4,7 @@
 \usepackage{hebrewdoc}
 \usepackage{stylish}
 \usepackage{lipsum}
+\let\bs\blacksquare
 
 \title{סיכומי הרצאות ביריעות דיפרנציאביליות \\ \large{חורף 2018, הטכניון}}
 \author{הרצאותיו של מיכאל חנבסקי \\ \large סוכמו על ידי אלעד צורני}
@@ -53,8 +54,7 @@
 
 \chapter*{הקדמה}
 \section{תוכן הקורס}
-\stress{יריעה} \newlecture{28 באוקטובר}%
-{2018}
+\stress{יריעה}
 היא מרחב טופולוגי שלוקלית נראה כמו קבוצה פתוחה ב־%
 $\RR^n$.%
 \newlecture{21 באוקטובר}{2018}
@@ -1618,7 +1618,7 @@ $v$}
 $\brs{\gamma'} = \brs{\gamma}$
 אז
 \begin{align*}
-\text{.} \eval{\frac{\diff}{\diff t}}{0} f\circ \gamma = \eval{\frac{\diff}{\diff t}}{0} f\circ \gamma'
+\text{.} \eval{\frac{\diff}{\diff t}}{0}{} f\circ \gamma = \eval{\frac{\diff}{\diff t}}{0}{} f\circ \gamma'
 \end{align*}
 כלומר, הנגזרת מוגדרת היטב.
 \end{exercise}
@@ -1668,7 +1668,7 @@ $\brs{f\circ \gamma} = \brs{f\circ \gamma'}$
 אז מתקבלת העתקה
 \begin{align*}
 D_p f \colon T_p M &\to \T_{f\prs{p}}N \\
-\text{.} \phantom{D_p f} \brs{\gamma} &\to \brs{f\circ \gamma}
+\text{.} \phantom{D_p f XX} \brs{\gamma} &\to \brs{f\circ \gamma}
 \end{align*}
 
 \begin{definition}
@@ -1691,7 +1691,7 @@ TM \arrow[r,"Df"] & TN
 \]
 מתקיים
 \begin{align*}
-DF \colon TM &\to TN \\
+Df \colon TM &\to TN \\
 \text{.} \phantom{DF} \prs{p,v} &\to \prs{f\prs{p}, D_p f\prs{v}}
 \end{align*}
 \end{remark}
@@ -1712,7 +1712,7 @@ $F$}.
 $f \colon M^m \to N^n$
 חלקה.
 נגדיר
-$D \phi \colon \brs{\gamma} \to \dot{\phi \cdot \gamma} \in \RR^m$
+$D \phi \colon \brs{\gamma} \to \dot{\phi \circ \gamma} \in \RR^m$
 ואז
 \begin{align*}
 D\phi \colon T_p \Uu \xrightarrow{\sim} \RR^m \
@@ -1771,7 +1771,7 @@ $f \colon M^m \to N^n$
 אם לכל
 $x \in M$,
 \[D_x f \colon T_x M \to T_{f\prs{x}} N \]
-חד־חד על.
+על.
 \end{definition}
 \begin{example}
 $\pi \colon \RR^2 \to \RR$
@@ -1885,7 +1885,15 @@ $X$
 $T_3$
 אז
 $X$
-מטריזבילי.
+מטריזבילי.%
+\footnote{בעצם אין צורך לדרוש כי
+$X$
+$T_2$.
+מתקיים (יש צורך בבדיקה) כי אם
+$X$
+יריעה טופולוגית האוסדורף ובת מנייה שנייה, אז
+$X$
+נורמלית ולכן מטריזבילית.}
 \item
 $X$
 לינדלוף.
@@ -1942,7 +1950,7 @@ B^n\prs{r} = \set{x \in \RR^n}{\norm{x} \leq r}
 \end{notation}
 \begin{lemma}
 קיימת העתקה חלקה
-$f \colon B^n\prs{3} \to S^n \leq \RR^{n-1}$
+$f \colon B^n\prs{3} \to S^n \hookrightarrow \RR^{n+1}$
 שמקיימת את התכונות הבאות.
 %TODO fig DM 4.3
 \begin{enumerate}
@@ -2224,6 +2232,1291 @@ $f^{-1}\prs{y_2} \cong S^1$
 לא תת־יריעה (זה זר עם שתי לולאות).
 \end{itemize}
 \end{example}
+\begin{example}
+נסתכל על ההטלה
+$\pi$
+של הספירה
+$M = S^2 \subseteq \RR^3$
+ל־%
+$\RR^2$.%
+\newlecture{11 באוקטובר}%
+{2018}
+ראו איור
+\ref{project:shpere-plane}.
+\begin{figure}[ht]
+\includegraphics[width=0.8\textwidth]{sources/sphere-on-plane}
+\caption{הטלת ספירה על המישור.}
+\label{project:shpere-plane}
+\end{figure}
+\begin{description}
+\item[חישוב \textenglish{I}:]
+בקואורדינטות מקומיות ניקח
+\begin{align*}
+\Uu_1 = \set{\prs{x,y,z} \in S^1}{z>0}
+\end{align*}
+עם
+\begin{align*}
+\phi_1 \colon \Uu_1 &\to \RR^2 \\
+\text{.} \phantom{\phi_1 \colon} \prs{x,y,z} &\to \prs{x,y}
+\end{align*}
+ראו איור
+\ref{project:shpere-plane-map}
+\begin{figure}[ht]
+\includegraphics[width=0.8\textwidth]{sources/sphere-on-plane-map}
+\caption{}
+\label{project:shpere-plane-map}
+\end{figure}
+נחשב את ההעתקה המקומית.
+\begin{align*}
+\hat{\pi}_1 \colon \prs{x,y} \xrightarrow{\phi_1^{-1}} \prs{x,y,\sqrt{1-x^2-y^2}} \xrightarrow{\pi} \prs{x,y}
+\end{align*}
+לכן
+$\hat{\pi}_1 = \1_{\phi_1\prs{\Uu_1}}$
+ועל כן
+$D\hat{\pi}_1 = I_2$.
+נקבל כי
+$\Uu_1$
+נקודה רגולריות.
+ניקח מפה נוספת
+\begin{align*}
+\Uu_2 &= \set{\prs{x,y,z}\in S^2}{x < 0} \\
+\phi_2\prs{x,y,z} &= \prs{y,z}
+\end{align*}
+ואז
+\[\hat{\pi}_2 \colon \prs{y,z} \xrightarrow{\phi_2^{-1}}\prs{\sqrt{1-y^2-z^2},y,z} \xrightarrow{\pi} \prs{-\sqrt{-y^2-z^2},y}\]
+ולכן
+\[D\hat{\pi}_2\prs{x,z} = \pmat{\frac{y}{\sqrt{\ldots}} & \frac{z}{\sqrt{\ldots}} \\ 1 & 0}\prs{y,z}\]
+לא על אם ורק אם
+$z=0$.
+לכן הנקודות על קו המשווה חיתוך עם
+$\Uu_2$
+הן נקודות קריטיות.
+עם נכסה את
+$S^2$
+במפות קואורדינטות, חישוב דומה יראה שהנקודות הקריטיות הן קו המשווה.
+לכן הערכים הקריטיים יהיו מעגל היחידה.
+\item[חישוב \textenglish{II}:]
+נרחיב את
+$\pi$
+להעתקה
+\begin{align*}
+\pi \colon \RR^3 &\to \RR^2 \\
+\prs{x,y,z} &\to \prs{x,y}
+\end{align*}
+ולכן
+$\pi$
+לינארית ונסמן
+$\pi\prs{x} = Ax$.
+אז
+$D\pi = A$
+ולכן
+$\im D\pi\prs{x} = \RR^3$.
+אז
+$\ker D\pi\prs{x} = \mathrm{span}\prs{0}$.\\
+$M \subseteq \RR^3$
+משטח ולכן
+$T_p M \subseteq T_p \RR^3 \cong \RR^3$
+תת־מרחב דו מימדי.
+נסמן
+$\pi_M = \rest{\pi}{M} \colon M \to \RR^2$.
+אז%
+\footnote{מתקיים \begin{align*}
+D\pi_M \colon TM &\to \RR^2 \\ \prs{p,u} &\to A\cdot u
+\end{align*}
+כאשר
+$u \in T_pM$.}
+\begin{align*}
+\rest{D\pi}{T_p M} = D \pi_M\prs{p} \colon T_p M &\to \RR^2 \\
+u &\to A\cdot u
+\end{align*}
+$D\pi_M\prs{p}$
+לינארית ממרחב ממימד 2 למרחב ממימד 2 ולכן אינה על אם ורק אם
+$\ker D\pi_M\prs{p} \neq \set{0}$.
+נסמן
+$v = \prs{0,0,1} = \ker D\pi$.
+מתקיים
+\begin{align*}
+\ker D\pi_M\prs{p} = \ker \rest{D\pi\prs{p}}{T_pM} = \ker D\pi\prs{p} \cap T_p M = \set{\lambda \vec{v}}\cap T_p M
+\end{align*}
+לא טריוויאלי אם ורק אם
+$\vec{v} \in T_p M$
+אם ורק אם
+$\vec{v}$
+וקטור משיק ל־%
+$M$
+ב־%
+$p$.
+\end{description}
+\end{example}
+\begin{theorem}[\textenglish{Sard}]
+תהי
+$f \colon M^m \to N^n$
+חלקה.
+אז
+$\set{y \in N}{\text{$y$ is a critical value}}$
+קבוצה בעלת מידה אפס. (ביחס למידת לבג)
+\end{theorem}
+\begin{example}
+\[\set{M \in M_{m\times n}\prs{\RR}}{\rank\prs{M} < \min\set{m,n}}\]
+קבוצה בעלת מידה אפס.
+\end{example}
+\begin{proposition}
+תהי
+$C \in \RR^m$
+זניחה ותהי
+$f \colon \RR^m \to \RR^m$
+חלקה. אז
+$f\prs{C}$
+זניחה.
+\end{proposition}
+\begin{corollary}
+תהי
+$M$
+יריעה עם מפות
+$\prs{\Uu, \phi}, \prs{\Vv, \psi}$
+כאשר
+$\Uu \cap \Vv \neq \ns$.
+נקבל העתקה
+\[\psi \circ \phi^{-1} \colon \phi\prs{\Uu} \to \psi\prs{\Vv}\]
+חלקה.
+לכן
+$\phi \prs{C \cap \Uu \cap \Vv}$
+זניחה ב־%
+$\RR^m$
+אם ורק אם
+$\psi\prs{C \cap \Uu \cap \Vv}$
+זניחה ב־%
+$\RR^m$.
+\end{corollary}
+\begin{definition}
+$C \subset M$
+זניחה אם לכל מפה
+$\prs{\Uu, \phi}$
+מהאטלס החלק
+$\phi\prs{C \cap \Uu}$
+זניחה ב־%
+$\RR^m$.
+\end{definition}
+\begin{example}
+אם
+$N^n \subseteq M^m$
+ת־יריעה אז
+$N$
+זניחה ב־%
+$M$.
+\end{example}
+\begin{example}
+בהטלת
+$S^2$
+על
+$\RR^2$
+ראינו כי הערכים הקריטיים הם מעגל היחידה, וזאת קבוצה זניחה.
+\end{example}
+\begin{remark}
+משפט
+\text{Sard}
+מתייחס ל%
+\textbf{ערכים קריטיים}.
+הטענה איננה נכונה עבור נקודות קריטיות.
+עבןר ההעתקה
+\begin{align*}
+f \colon M &\to N \\
+p &\to x_0 \in N
+\end{align*}
+כל נקודה ב־%
+$M$
+היא קריטית, ולכן לא זניחה.
+\end{remark}
+\begin{remark}
+ייתכן כי
+$\im\prs{f}$
+מכילה רק ערכים קריטיים. במקרה זה
+$\im\prs{f}$
+זניחה ב־%
+$N$.
+\end{remark}
+\begin{exercise}
+בנו העתקה
+$f \colon \RR \to \RR$
+כל שקבוצת הערכים הקריטיים של
+$f$
+היא
+$\QQ$.
+\end{exercise}
+\begin{corollary}
+\begin{enumerate}
+\item אם
+$f \colon M \to N$
+ו־%
+$\dim M < \dim N$,
+הערכים הקריטיים של
+$f$
+ב־%
+$N$
+זאת
+$\im\prs{f}$.
+אז
+$\im\prs{f}$
+בעלת מידה אפס.
+\begin{example}
+אין העתקה חלקה מ־%
+$I \to I^2$
+עם
+$\im\prs{f} = I^2$.
+\end{example}
+\item קבוצת הערכים הרגולריים צפופה ב־%
+$N$.
+אם
+$\Uu \subseteq \im\prs{f}$
+פתוחה, קיים ערך רגולרי ב־%
+$\im\prs{f}$.
+\begin{example}
+אם
+$f \colon M \to \RR$
+לא קבועה אז
+$\prs{f\prs{x}, f\prs{y}} \subseteq \im\prs{f}$,
+ויש ערך רגולרי ב־%
+$\im\prs{f}$.
+\end{example}
+\end{enumerate}
+\end{corollary}
+\begin{proof}[\textenglish{Sard}]
+נוכיח עבור המקרה
+$\dim M \leq \dim N$.
+המקרה הכללי בספר של
+\textenglish{Milnor}.\\
+נסמן ב־%
+$C\subseteq M$
+את קבוצת הנקודות הקריטיות של
+$f$.
+קבוצת הערכים הקריטיים היא
+$f\prs{C} \subseteq N$.
+נכסה את
+$M$
+על ידי מספר בן־מניה של מפות
+$\prs{\Vv_i, \psi_i}$.
+את
+$f^{-1}\prs{\Vv_i}$
+נכסה על ידי מספר בן־מניה של מפות
+$\prs{\Uu_{i_j}, \phi_{i_j}}$
+כך ש־%
+$f\prs{\Uu_{i_j}} \subseteq \Vv_i$.
+מתקיים
+\begin{align*}
+f\prs{C} = \bigcup_{i,j} f\prs{C \cap \Uu_{i_j}}
+\end{align*}
+ומספיק להראות כי
+$f \prs{c \cap \Uu_{i_j}}$
+זניחות.
+מספיק להוכיח עבור הצגות מקומיות של
+$f$.
+כלומר, מספיק להוכיח את המשפט עבור
+$f \colon \Uu\subseteq \RR^m \to \RR^n$.
+$\Uu$
+הינה איחוד בן־מניה של כדורים, לכן ניתן להניח ללא הגבלת הכלליות כי
+$\Uu$
+כדור עם סגור בתחום הגדרתה של
+$f$.
+\begin{enumerate}[label = \alph*.]
+\item \textbf{המקרה $m=n$:}
+נבחר
+$\eps > 0$.
+אז
+$\abs{D f} \colon \bar{\Uu} \to \RR$
+רציפה ולכן רציפה במ"ש.
+לכן קיים
+$\delta > 0$
+כך שאם
+$\norm{x-y} < \sqrt{m} \delta$
+אז
+$\abs{\abs{Df\prs{x}} - \abs{Df\prs{y}}} < \eps$.
+יהי
+$\Uu = \bigcup \Uu_i$
+כיסוי על ידי קוביות על צלע
+$\delta$
+עם
+$\sum \mrm{Vol} \Uu_i < 2^m \mrm{Vol}\prs{\Uu}$.
+אם
+$C \cap \Uu_i \neq \ns$,
+קיימת
+$x \in \Uu_i$
+קריטית, כלומר
+$\abs{D f\prs{x}} = 0$.
+אז
+$\abs{Df\prs{y}} < \eps$
+לכל
+$y \in \Uu_i$.
+יהי
+$I = \set{i}{\Uu_i \cap C \neq \ns}$.
+אז
+$\bigcup_{i\in I} f\prs{\Uu_i}$
+כיסוי של
+$f\prs{C}$.
+כעת
+\begin{align*}
+\sum_{i\in I} \mrm{Vol}\prs{f\prs{\Uu_i}} &= \sum_{I} \int_{\Uu_i} \abs{Df\prs{x}} \diff x_1,\ldots,\diff x_m \\&\leq
+\eps \sum_{i \in I} \mrm{Vol}\prs{\Uu_i} \leq \eps \mrm{Vol}\prs{\Uu}
+\end{align*}
+ולכן
+$f\prs{C}$
+זניחה.
+\item \textbf{המקרה
+$m < n$:}
+תהי
+$f \colon M^m \to N^n$
+ונרחיב את
+$f$
+ל־%
+$F \colon M^m \times \RR^{n-m} \to N^n$
+ע"י
+$F\prs{x,s} = f\prs{x}$.
+אז קבוצת הערכים הקריטיים של
+$f$
+היא
+$\im\prs{f}$.
+גם
+$\im\prs{f} = \im\prs{F}$.
+לכן תמונת
+$F$
+היא קבוצת הערכים הקריטיים של
+$f$.
+קבוצה זאת זניחה לפי המקרה הקודם.
+\end{enumerate}
+\end{proof}
+
+ראינו כי אם
+$M^m$
+יריעה קומפקטית, קיים שיכון
+$M \xhookrightarrow{i} \RR^N$
+עבור
+$N$
+גדול. ננסה להקטין את
+$N$
+בעזרת משפט
+\textenglish{Sard}.
+נרצה להטיל את
+$i\prs{M}$
+בכיוון
+$v$
+על
+$v^{\perp}$
+כך ש־%
+$\pi_v \circ i \colon M \to v^{\perp}$
+יהיה שיכון.
+$M$
+קומפקטית ולכן מספיק לבדוק כי זאת אימרסיה חד־חד ערכית.
+\begin{description}
+\item[אימרסיה:]
+מתקיים כי
+\[D\prs{\pi_v \circ i} = D\pi_v \circ D i\]
+לכן
+\[\text{.}\ker\prs{D\pi_v \circ D i} = \set{u}{Di\prs{u} \in \ker D\pi_v}\]
+$Di$
+חד־חד ערכית (כי
+$i$
+אימרסיה) לכן
+$\ker D\pi_v \circ Di = \set{0}$
+אם ורק אם
+$\im D_i \cap \ker D\pi_v = \set{0}$.
+מתקיים
+$\ker D\pi_v = \set{\lambda v}{\lambda \in \RR}$.
+אז
+$\pi_v \circ i$
+אימרסיה אם ורק אם
+לכל
+$x \in M$,
+החיתוך
+$\set{\lambda} \cap I_m Di\prs{x}$
+טריוויאלי. זה שקול לכך שלכל
+$x \in M$,
+$v \notin \im Di\prs{x}$
+($v$
+אינו משיק ל־%
+$i\prs{M}$
+באף נקודה).
+נגדיר העתקה
+\[\text{.} g \colon TM \setminus M \times \set{0} \to \RR\P^{N-1}\]
+גיאומטרית,
+$\RR\P^{N-1}$
+קבוצת הכיוונים האפשריים להטלה ב־%
+$\RR^N$.
+נגדיר
+\[\text{.}\prs{x,u} \mapsto \brs{D i\prs{x}\prs{u}} = \set{\lambda Di\prs{x}\prs{u}}{\lambda \in \RR} \in \RR\P^{N-1}\]
+אם
+$\dim TM = 2m < N-1 = \dim \RR\P^{N-1}$,
+לפי מסקנה ממשפט
+\textenglish{Sard},
+$\im g$
+זניחה.
+\item[חד־חד ערכיות:]
+נגדיר העתקה
+\begin{align*}
+P \colon M\times M \setminus \Delta M &\to \RR\P^{N-1} \\
+\prs{x,y} &\to \set{\lambda\prs{i\prs{x} - i\prs{y}}}{\lambda \in \RR}
+\end{align*}
+ואז כיוון בתמונה הוא בדיוק כיוון שאסור להטלה, כי זהו ישר המקביל לישר דרך
+$i(x), i(y)$.
+זה תנאי לזה ש־%
+$\pi_v \circ i \prs{x} = \pi_v \circ i\prs{y}$
+כלומר
+$\pi_v \circ i$
+לא חד־חד ערכית.
+אם
+$2m = \dim M\times M \setminus \Delta < \dim \RR\P^{N-1} = N-1$
+נקבל כי
+$\im P$
+זניחה.
+אז אם
+$\set{\lambda v} \notin \im P \cup \im g$,
+נקבל שיכון
+$\pi_v \circ i \colon M \to v^{\perp} \cong \RR^{N-1}$.
+זה מתקיים כמעט לכל
+$v$
+כי
+$\im P \cup \im g$
+זניחה.
+התהליך נעצר כאשר
+$2m = N-1$,
+כלומר
+$N = 2m + 1$.
+\end{description}
+
+\begin{remark}
+המקרה האופטימלי הוא
+$N = 2m$.
+עם חישוב קצת יותר זהיר מקבלים ש־%
+$\pi_v \circ i$
+אימרסיה כמעט לכל
+$v$
+גם כאשר
+$N = 2m + 1$,
+כלומר ניתן לבנות אימרסיה
+$M \to \RR^{2m}$.\\
+אין דרך להבטיח חד־חד ערכיות באותו האופן.
+ניתן להיפטר מנקודות חיתוך על ידי דיפורמציות טופולוגיות.
+\end{remark}
+\section{טרנסוורסליות}
+\begin{definition}
+יהי
+$V$
+מרחב וקטורי מעל
+$\RR$
+עם
+$\dim V < \infty$.
+תתי־מרחבים
+$W_1,W_2 \leq V$
+נקראים
+\stress{טרנסוורסליים}
+אם
+$W_1 + W_2 = V$.
+\end{definition}
+\begin{remark}
+$W_1,W_2$
+טרנסוורסליים אם ורק אם
+$\dim V = \dim W_1 + \dim W_2 - \dim\prs{W_1 \cap W_2}$
+אם ורק אם
+$\codim\prs{W_1 \cap W_2} = \codim W_1 + \codim W_2$.
+\end{remark}
+\begin{definition}
+$M_1, M_2 \subseteq N$
+תתי יריעות יקראו
+\stress{טרנסוורסליות}
+ונסמן
+$M \pitchfork M_2$
+אם לכל
+$x \in M_1 \cap M_2$
+מתקיים
+$T_x M_1 + T_x M_2 = T_x N$.
+\end{definition}
+\begin{examples}
+\begin{enumerate}
+\item
+אם
+$\dim M_1 + \dim M_2 < \dim N$
+אז
+$M_1 \pitchfork M_2$
+אם ורק אם
+$M_1 \cap M_2 = \ns$.
+\item
+אם
+$M_1, M_2 \subseteq \RR^2$
+שני מעגלים נחתכים, סכום הישרים המשיקים בנקודות החיתוך הוא כל
+$\RR^2$.
+\item
+אם
+$M_1, M_2 \subseteq \RR^2$
+שני מעגלים משיקים, בנקודת ההשקה סכום המרחבים המשיקים הוא
+$\RR$,
+ולכן המעגלים אינם טרנסוורסליים.
+\end{enumerate}
+\end{examples}
+\begin{definition}
+תהי
+$f \colon M^m \to N^n$
+חלקה ותהי
+$L^l \subseteq N^n$
+תת־יריעה.
+נאמר כי
+\stress{$f$
+טרנסוורסלית ל־%
+$L$}
+ונסמן
+$f \pitchfork L$
+אם לכל
+$p \in M$
+עבורה
+$f\prs{p} \in L$
+מתקיים
+$\im Df\prs{p} \pitchfork T_{f\prs{p}}L$.
+\end{definition}
+\begin{remark}
+אם
+$f$
+שיכון,
+$f \pitchfork L$
+אם ורק אם
+$\im f \pitchfork L$.
+\end{remark}
+
+ראינו כי עבור
+$f \colon M \to N$
+חלקה ו־%
+$y \in N$
+ערך רגולרי בתמונה,
+$f^{-1}\prs{y}$
+תת־יריעה של
+$M$.
+אנו רוצים להכליל זאת.
+
+\begin{theorem}
+תהי
+$f \colon M \to N$
+חלקה ו־%
+$L$
+תת־יריעה כך ש־%
+$f \pitchfork L$
+וגם
+$\ns \neq f^{-1}\prs{L}$.
+אזי
+$f^{-1}\prs{L}$
+תת־יריעה של
+$M$
+ומתקיים
+\[\text{.}\codim_{M}\prs{f^{-1}\prs{L}} = \codim_N\prs{L}\]
+\end{theorem}
+\begin{exercise}
+הוכיחו את המשפט.
+\end{exercise}
+
+\section{יריעות עם שפה}
+\begin{definition}
+תהי
+$\hat{M}^m$
+יריעה ותהי
+$g \colon \hat{M} \to \RR$
+חלקה עם
+$0$
+ערך רגולרי.
+אז
+$\set{g = 0} \subset \hat{M}$
+תת־יריעה ממימד
+$m-1$.
+קבוצת הנקודות
+$\set{x}{g\prs{x} \leq 0} \subseteq \hat{M}$
+נקראת
+\stress{יריעה עם שפה}.
+\stress{השפה של $M$}
+היא
+\[\text{.} \del M \ceq \set{x}{g\prs{x} = 0}\]
+\end{definition}
+\begin{example}
+ניקח
+$\hat{M} = \RR^n$
+ו־%
+$g = \sum x_i^2 - 1$.
+אז
+$0$
+ערך רגולרי ומתקיים
+$\set{g \leq 0} = \overline{D^n}$
+כדור היחידה הסגור.
+מתקיים
+$\del \overline{D^n} = S^{n-1}$.
+\end{example}
+\begin{example}
+אינטרוול סגור, או אינטרוול חצי־פתוח חצי־סגור הם יריעות עם שפה.
+\end{example}
+\begin{remark}
+קיבלנו מרחב שבו סביבת כל נקודה
+$x$
+הומאומורפית לקבוצה פתוחה ב־%
+$\RR^n$
+או לקבוצה פתוחה ב־%
+$\RR^n_+ \ceq \set{\vec{x}}{x_n \geq 0}$.
+ניתן להגדיר דרך סביבות אלה יריעה עם שפה בדומה להגדרת יריעה.
+\end{remark}
+\begin{definition}
+תהיינה
+$M$
+יריעה עם שפה ו־%
+$N$
+יריעה.
+$f \colon M \to N$
+נקראת
+\stress{חלקה}
+אם ניתן להרחיב את
+$f$
+ל־%
+$\hat{f} \colon \hat{M} \to N$
+חלקה.
+\end{definition}
+\begin{definition}
+$f \colon M \to N$
+כאשר
+$M,N$
+יריעות עם שפה נקראת
+\stress{חלקה}
+אם
+$f \colon M \to \hat{N}$
+חלקה.
+\end{definition}
+\begin{exercise}[קשה]
+תהי
+$f \colon M^m \to N^n$
+כאשר
+$\del M \neq \ns$.
+יהי
+$y \in N$
+ערך רגולרי של
+$f$
+ושל
+$\rest{f}{\del M}$.
+אז
+$V = f^{-1}\prs{y}$
+תת־יריעה עם שפה של
+$M$
+ומתקיים
+$\dim V = m-n$
+וגם
+$\del V = V \cap \del M$.
+\end{exercise}
+\begin{definition}
+יריעה
+$M$
+קומפקטית ללא שפה נקראת
+\stress{סגורה}.
+\end{definition}
+\begin{remark}
+תהי
+$M$
+יריעה עם שפה. אז
+$\del M$
+יריעה בלי שפה.%
+\newlecture{18 באוקטובר}%
+{2018}
+כלומר
+$\del \del M = \ns$.
+\end{remark}
+\begin{definition}
+$M$
+נקראת
+\stress{יריעה עם פינות}
+אם לכל
+$x \in M$
+קיימת מפה
+$\prs{\Uu, \phi}$
+עם
+\[\text{,} \phi \colon \set{\vec{x} \in \RR^n}{\forall i \colon x_i \geq 0}\]
+והאטלס מתואם.
+\end{definition}
+\begin{example}
+קובייה
+$I^n$
+היא יריעה עם פינות.
+\end{example}
+\begin{example}
+גופים פלטוניים הם יריעות עם פינות.
+\end{example}
+\begin{remark}
+יריעה טופולוגית עם פינות היא בדיוק יריעה טופולוגית עם שפה.
+אבל, בקטגוריה של יריעות חלקות, יריעה עם פינות איננה בהכרח יריעה עם שפה, אלא רק להפך.
+\end{remark}
+\section{הומוטופיה}
+\section{הגדרות}
+\begin{question}
+תהיינה
+$f,g\colon M \to N$
+העתקות בין יריעות חלקות. מתי קיימת דפורמציה מ־%
+$f$
+ל־%
+$g$?
+\end{question}
+\begin{definition}
+$f$
+\stress{הומוטופית}
+ל־%
+$g$
+אם קיימת העתקה
+$\Phi \colon M \times \brs{0,1} \to N$
+חלקה המקיימת
+\begin{align*}
+\Phi\prs{x,0} &= f(x) \\
+\text{.}\Phi\prs{x,1} &= g(x)
+\end{align*}
+\end{definition}
+\begin{exercise}
+הראו כי הומוטופיה בין העתקות היא יחס שקילות.
+\end{exercise}
+\begin{example}
+כל
+$f \colon M \to \RR^n$
+הומוטופית ל־%
+$g\prs{x} \equiv 0$.
+נגדיר
+$\Phi\prs{x,t} = t\cdot f\prs{x}$.
+ראינו כי הומוטופיה הינה יחס שקילות, לכן כל שתי העתקות כאלו הומוטופיות.
+\end{example}
+\begin{example}
+\label{homotopy: maps on sphere}
+תהיינה
+$M = N = S^n$
+עם ההעתקות
+\begin{align*}
+\phi \colon S^n &\to S^n \\ x &\to x
+\end{align*}
+ו־%
+\begin{align*}
+\text{.}\psi \colon S^n &\to S^n \\ x &\to -x
+\end{align*}
+אז
+$\phi,\psi$
+עבור
+$n$
+זוגי,
+ההעתקות אינן
+הומוטופיות (נראה בהמשך).
+\end{example}
+\begin{definition}
+\begin{align*}
+v \colon M &\to TM \\ x &\to \prs{x,v_x}
+\end{align*}
+(כאשר כל
+$v_x \in T_x M$)
+נקרא
+\stress{שדה וקטורי}.
+הוא יקרא
+\stress{חלק}
+אם הוא חלק כהעתקה
+$M \to TM$.
+\end{definition}
+\begin{example}
+באינפי, הגדרנו שדה וקטורי להיות העתקה
+$v \colon \RR^n \to \RR^n$.
+בהגדרה שלנו
+\begin{align*}
+v \colon \RR^n &\to T\RR^n \\ x &\to \prs{x, v_x \in T_x\RR^n}
+\end{align*}
+כאשר
+$T_x \RR^n \cong \RR^n$.
+ניתן לתאר את
+$v$
+בעזרת העתקה
+$x \to v_x \in \RR^n$.
+\end{example}
+תהיינה
+$M$
+יריעה, ו־%
+$\prs{\Uu,\phi}$
+מפה.
+אז
+\begin{align*}
+D\phi \colon T\Uu &\xrightarrow{\sim} \phi\prs{\Uu}\times \RR^n \\
+\rest{v}{\Uu} &\to \hat{v}
+\end{align*}
+הינו שדה וקטורי על
+$\phi\prs{\Uu}$.
+ההעתקה היא
+\[\prs{x,v_x} \to \prs{\phi\prs{x},D\phi_x \cdot v_x}\]
+ו־%
+$v$
+חלק אם ורק אם כל הצגה
+$\hat{v}$
+חלקה כפונקציה
+$\phi\prs{\Uu} \to \RR^n$.
+
+\begin{definition}
+$v \colon M \to TM$
+\stress{לא מנוון}
+אם
+$v_x \neq 0$
+לכל
+$x$.
+\end{definition}
+\begin{proposition}
+נניח כי על
+$S^n$
+קיים שדה וקטורי לא מנוון. אז
+$\phi, \psi$
+מדוגמה
+\ref{homotopy: maps on sphere}
+הומוטופיות.
+\end{proposition}
+\begin{proof}
+נבחר
+$v$
+לא־מנוון ונניח בה"כ כי
+$\forall x \in S^n \colon \norm{v_x} = 1$.
+נגדיר
+\begin{align*}
+\text{.}\Phi \colon S^n \times \brs{0,\pi} &\to S^n \\ \text{.}\prs{x,\theta} &\to x\cos\theta + v_x\sin\theta
+\end{align*}
+נסתכל על
+$\mrm{Span}\prs{x,v_x} \subseteq \RR^{n+1}$
+כמתואר באיור
+%TODO fig 6.1
+מתקיים
+\begin{align*}
+\trs{\Phi\prs{x,\theta},\Phi\prs{x,\theta}} &= \cancelto{1}{\norm{x}^2} \cos^2\theta + 2\cancelto{0}{\trs{x,v_x}}\cos\theta\sin\theta + \cancelto{1}{\norm{v_x}^2}\sin^2\theta = 1
+\end{align*}
+וגם
+$\Phi\prs{x,0} = x = \phi\prs{x}$
+ו־%
+$\Phi\prs{x,\pi} = -x = \psi\prs{x}$,
+לכן קיבלנו הומוטופיה כנדרש.
+\end{proof}
+\begin{theorem}
+עבור
+$n$
+זוגי,
+$\phi$
+איננה הומוטופית ל־%
+$\psi$.
+\end{theorem}
+\begin{proof}
+\renewcommand{\blacksquare}{}
+בעתיד.
+\end{proof}
+\begin{corollary}
+על
+$S^{2k}$
+לא קיים שדה וקטורי לא מנוון. (אי־אפשר לסרק את הקיפוד)
+\end{corollary}
+\begin{corollary}
+\[S^{2k} \times \RR^{2k} \not\cong TS^{2k}\]
+כי עבור
+$S^{2k} \times \RR^{2k}$
+קיים שדה וקטורי לא מנוון.
+\end{corollary}
+\begin{example}
+לכל
+$n$
+אי־זוגי מתקיים
+$S^{2m+1} \subseteq \RR^{2m + 2} = \CC^{m+1}$.
+לכל
+$x = \prs{z_0, \ldots, z_m} \in S^{2m + 1}$
+נגדיר
+$v_x = \prs{iz_0, \ldots, iz_m} \perp x$
+וקטור משיק. אז
+$v \colon x \to ix$
+שדה וקטורי לא מנוון ולכן
+$\phi \cong \psi$.
+\end{example}
+\begin{theorem}
+תהיינה
+\begin{align*}
+\phi \colon S^n &\to S^n \\ x &\to x
+\end{align*}
+\begin{align*}
+\text{.}\psi \colon S^n &\to S^n \\ x &\to x_0
+\end{align*}
+אז
+$\phi \not\sim\psi$.
+\end{theorem}
+\begin{proof}
+בעתיד.
+\renewcommand{\blacksquare}{}
+\end{proof}
+\begin{corollary}
+תהי
+$f \colon \bar{D}^{n+1} \to S^n$
+חלקה.
+אזי
+$\rest{f}{S^n} \neq \1_{S^n}$.
+כלומר, אין ריטרקציה חלקה מהדיסק לספירה.
+\end{corollary}
+\begin{remark}
+נובע מכך עם אנליזה כי אין ריטרקציה רציפה מהדיסק לספירה.
+\end{remark}
+\begin{proof}
+ניתן שתי הוכחות.
+\begin{enumerate}
+\item נניח בשלילה כי
+$\rest{f}{S^n} = \1_{S^n}$.
+נגדיר הומוטופיה
+\begin{align*}
+\Phi \colon S^n \times I &\to S^n \\
+\prs{x,t} &\to f\prs{t\cdot x}
+\end{align*}
+ונקבל
+$\Phi\prs{x,1} = f\prs{x} = x$
+ו־%
+$\Phi\prs{x,0} = f\prs{0} = \mrm{const}$
+בסתירה למשפט.
+\item
+נניח בשלילה כי
+$\rest{f}{S^n} = \1_{S^n}$.
+יהי
+$y \in S^n$
+ערך רגולרי של
+$f$
+(קיים לפי
+\textenglish{Sard}).
+$y$
+ערך רגולרי גם של
+$\rest{f}{S^n} = \1_{S^n}$
+(כל ערך הוא רגולרי של הזהות).
+מתרגיל,
+$L \ceq f^{-1}\prs{y}$
+תת־יריעה עם שפה ממימד 1 ב־%
+$\bar{D}^{n+1}$.
+לכן, כל רכיב קשירות הוא
+$S^1$
+או
+קטע.
+כיוון ש־%
+$f^{-1}\prs{y}$
+קבוצה סגורה בקבוצה קומפקטית
+$\bar{D}$,
+היא קומפקטית בעצמה, ולכן כל הקטעים אם ישנם הינם סגורים.
+בנוסף,
+$\del L = f^{-1} \prs{y} \cap \del \bar{D}^{n+1} = \set{y}$
+כי
+$\1_{\del D} = \rest{f}{\del D}$.
+זאת סתירה, כי ליריעה קומפקטית עם שפה יש מספר זוגי של נקודות שפה (קצוות של קטעים סגורים).
+\end{enumerate}
+\end{proof}
+\begin{corollary}[משפט
+\textenglish{Brouwer}]
+לכל העתקה (חלקה)
+$f \colon \bar{D}^n \to \bar{D}^n$
+יש נקודות שבת.
+\end{corollary}
+\begin{proof}
+נניח כי לכל
+$x$
+מתקיים
+$f\prs{x} \neq x$.
+נגדיר
+\[\lambda_x = \set{f\prs{x} + t\prs{x - f\prs{x}}}{t > 0}\]
+קרן שמתחילה ב־%
+$f\prs{x}$
+ועוברת דרך
+$x$.
+ראו איור
+\ref{brouwer:map}.
+\begin{figure}
+\includegraphics[scale=0.8]{sources/retraction_lemma}
+\caption{העתקה למשפט בראואר.}
+\label{brouwer:map}
+\end{figure}
+$\lambda_x$
+חותכת את שפת הדיסק בנקודה אחת שנסמנה
+$F(x)$.
+אז
+$F(x) = \lambda_x \cap \del D^n$.
+$F$
+חלקה (\stress{כתרגיל}), ואם
+$x \in \del D^n$
+אז
+$F(x) = x$.
+זאת סתירה למסקנה שאין רטרקציה מהדיסק לספירה.
+\end{proof}
+\begin{remark}
+המשפט נכון גם עבור העתקות רציפות.
+\end{remark}
+\chapter{פיצול היחידה}
+\begin{definition}
+יהי
+$\set{\Uu_{\alpha}}$
+כיסוי של מרחב טופולוגי
+$X$.
+הכיסוי נקרא
+\stress{סופי מקומית}
+אם לכל
+$x \in X$
+קיימת סביבה
+$\Ww$
+כך ש־%
+\[\#\set{\alpha}{\Ww \cap \Uu_{\alpha} \neq \ns}\]
+סופי.
+\end{definition}
+\begin{definition}
+יהי
+$\set{\Vv_{\beta}}_{\beta}$
+כיסוי של מרחב טופולוגי
+$X$.
+כיסוי
+$\set{\Uu_{\alpha}}_{\alpha}$
+\stress{עידון}
+\textenglish{(refinement)}
+של הכיסוי
+$\set{\Vv_{\beta}}_{\beta}$
+אם לכל
+$\alpha$
+קיים
+$\beta$
+עבורו
+$\Uu_{\alpha} \subseteq \Vv_{\beta}$.
+\end{definition}
+\begin{definition}
+מרחב
+$X$
+נקרא
+\stress{פָרַקומפקטי} \textenglish{(paracompact)}
+אם לכל כיסוי פתוח
+$\set{\Uu_{\alpha}}_{\alpha}$
+קיים עידון פתוח סופי מקומית.
+\end{definition}
+\begin{theorem}
+כל יריעה טופולוגית האוסדורף בת־מנייה שנייה היא פָרַקומפקטית.
+\end{theorem}
+\begin{definition}
+תהי
+$M$
+יריעה חלקה ותהי
+$f \colon M \to \RR$
+חלקה.
+\stress{התומך} \textenglish{(support)}
+של
+$f$
+הוא
+\[\text{.} \mrm{supp}\prs{f} = \set{x\in M}{f(x) \neq 0}\]
+\end{definition}
+\begin{definition}
+יהי
+$\set{\Uu_{\alpha}}_{\alpha}$
+כיסוי פתוח של יריעה
+$M$.
+\stress{פיצול יחידה} \textenglish{(partition of unity)}
+הוא אוסף
+$\Lambda$
+של פונקציות חלקות
+$\lambda_{\alpha} \colon M \to \brs{0,1}$
+המקיימות את התנאים הבאים.
+\begin{enumerate}
+\item $\mrm{supp} \lambda_{\alpha} \subseteq \Uu_{\alpha}$
+\item $\set{\mrm{supp} \lambda_{\alpha}}_{\alpha}$
+כיסוי סופי מקומית.
+\item לכל
+$x \in M$
+מתקיים
+$\sum_{\alpha} \lambda_{\alpha}\prs{x} = 1$.\footnote{יש מספר סופי של מחוברים שונים מאפס, לכן הסכום סופי.}
+\end{enumerate}
+\end{definition}
+\begin{remark}
+פיצול היחידה תלוי בבחירת הכיסוי.
+\end{remark}
+\begin{theorem}
+נניח כי
+$M$
+יריעה.
+אז לכל כיסוי פתוח קיים פיצול יחידה.
+\end{theorem}
+\begin{proof}
+נציג רק את רעיון ההוכחה.
+ניקח כיסוי פתוח
+$\set{\Uu_{\alpha}}_{\alpha}$.
+נניח בה"כ כי
+$\set{\Uu_{\alpha}}_{\alpha}$
+סופי־מקומית.%
+\footnote{
+אחרת נחליף בעידון סופי מקומית%
+}
+נבחן כיסוי "קצת יותר עדין"
+$\set{\Vv_{\alpha}}_{\alpha}$\footnote{קיים, אך דורש הוכחה}
+כך ש־%
+$\set{\Vv_{\alpha}}_{\alpha}$
+כיסוי פתוח וגם
+$\overline{V_{\alpha}} \subseteq \Uu_{\alpha}$.
+נגדיר העתקה חלקה המקיימת
+\begin{align*}
+\Psi_{\alpha} \colon M &\to \brs{0,1} \\
+x &\to \fcases{1 & x \in \overline{\Vv_{\alpha}} \\ 0 & \text{$x$ is in a small neighbourhood of $M \setminus \Uu_{\alpha}$}}
+\end{align*}
+זה קירוב של פונקציית האינדיקטור.
+לכל
+$x \in M$
+קיים מספר סופי של
+$\alpha$
+כך ש־%
+$\Psi_{\alpha}\prs{x} \neq 0$.
+לכן
+$\Psi\prs{x} \ceq \sum_{\alpha} \Psi_{\alpha}\prs{x}$.\footnote{מוגדר היטב, חיובית כי
+$V_{\alpha}$
+כיסוי}
+נגדיר
+$\lambda_{\alpha}\prs{x} = \frac{\Psi_{\alpha}\prs{x}}{\Psi\prs{x}}$.
+אז
+\[\mrm{supp}\prs{\lambda_{\alpha}} = \mrm{supp}\prs{\Psi_{\alpha}} \subseteq \Uu_{\alpha}\]
+וגם
+\[\text{.}\sum_{\alpha} \lambda_{\alpha}\prs{x} = \sum_{\alpha} \frac{\Psi_{\alpha}\prs{x}}{\Psi\prs{x}} = 1\]
+$\set{\mrm{supp}\prs{\lambda_{\alpha}}}_{\alpha}$
+כיסוי סופי מקומית כי זה נכון ל־%
+$\set{\Uu_{\alpha}}_{\alpha}$.
+\end{proof}
+
+\section{מטריקה רימנית}
+
+שימוש של
+פיצול היחידה הוא הוכחה לכך שעל כל יריעה קיימת מטריקה רימנית.
+
+\begin{definition}
+\stress{מכפלה פנימית}
+היא תבנית בילינארית סימטרית מוגדרת חיובית
+$\rho \colon V\times V \to \RR$
+כאשר
+$V$
+מרחב קטורי.
+\end{definition}
+\begin{definition}
+תהי
+$\Uu \subseteq \RR$
+פתוחה.
+\stress{מטריקה רימנית}
+על
+$\Uu$
+היא משפחה חלקה של מכפלות פנימיות
+$\rho_x \colon \RR^n \times \RR^n \to \RR$
+שתלויות ב־%
+$x \in \Uu$
+באופן חלק.
+\end{definition}
+\begin{remark}
+נחשוב על ההעתקות כעל העתקות
+$\rho_x \colon T_x \RR^n \times T_x\RR^n \to \RR$.
+\end{remark}
+\begin{definition}
+תהי
+$M$
+יריעה (חלקה).
+\stress{מטריקה רימנית על
+$M$}
+היא בחירה חלקה של מכפלות פנימיות
+$\rho_p \colon T_p M \times T_p M \to \RR$,
+תלויה באופן חלק ב־%
+$p$.
+\end{definition}
+\begin{remark}
+$\rho_p$
+חלקה אם ורק אם בקואורדינטות.
+מתקבל מכפלה פנימית
+\[\phi_{\alpha,*} \rho_p \colon T_{\phi\prs{p}}\RR^n \times T_{\phi\prs{p}}\RR^n \to \RR\]
+ואז
+\begin{align*}
+\text{.} \hat{\rho}_{\alpha} = \phi_{\alpha, *}\rho_p\prs{v,w} = \rho_p \prs{D\phi_{\alpha}^{-1}\prs{p} v, D\phi_{\alpha}^{-1}\prs{p} w}
+\end{align*}
+\end{remark}
+\begin{remark}
+הדבר שקול לכך שלכל שני שדות וקטוריים חלקים
+$v,w \colon M \to TM$,
+$\rho\prs{V,W}$
+פונקצייה חלקה
+$M \to \RR$
+עם ההגדרה
+$\rho\prs{v,w}\prs{p} = \rho_p \prs{v_p, w_p}$.
+\end{remark}
+
+בעזרת מטריקה רימנית ניתן להגדיר אורך של וקטור משיק. אם
+$v \in T_p M$
+נגדיר
+$\norm{v}_p^2 = \rho_p\prs{v,v}$
+\stress{האורך של
+$v$
+ביחס למטריקה הרימנית
+$\rho$}.
+
+ניתן כך להגדיר גם אורך של מסילה
+$\gamma \colon \brs{a,b} \to M$
+על ידי
+\[\text{.} \mrm{len}\prs{\gamma} \ceq \int_a^b \dot{\norm{\gamma}} \diff t\]
+
+ניתן להגדיר זווית בין שני וקטורים משיקים
+$u,v \in T_p M$
+על ידי
+\[\text{.} \rho_p\prs{u,v} = \norm{u} \norm{v} \cos \theta\]
+
+\begin{theorem}
+על כל יריעה יש מטריקה רימנית.
+\end{theorem}
+\begin{proof}
+ב־%
+$\RR^n$
+ישנה מטריקה רימנית אוקלידית
+\[\rho_0\prs{\vec{x},\vec{y}} = \trs{\vec{x},\vec{y}} = \sum_{i=1}^n x_i y_i\]
+לכל נקודה
+$p \in \RR^n$.
+בהינתן מפה
+$\prs{\Uu_{\alpha}, \phi_{\alpha}}$
+נקבל
+\[\rho_{\alpha} \ceq \phi_{\alpha}^* \rho_0 \prs{v, w} \ceq \rho_0 \prs{D \phi_{\alpha} v, D\phi_{\alpha} w}\]
+מטריקה רימנית על
+$\Uu_{\alpha}$.
+
+נבחר כיסוי
+$\set{\Uu_{\alpha}}_{\alpha}$
+על ידי מפות מתואמות.
+יהי
+$\set{\lambda_{\alpha}}_{\alpha}$
+פיצול היחידה המתאים ל־%
+$\set{\Uu_{\alpha}}_{\alpha}$
+ונגדיר
+\[\bar{\rho}_{\alpha}(p) = \fcases{\lambda_{\alpha}\prs{p} \cdot \rho_{\alpha}\prs{p} & p \in \Uu_{\alpha} \\ 0 & p \in \Uu_{\alpha}}\]
+תבנית חלקה.
+אז
+$\bar{\rho}\prs{p} = \sum_{\alpha} \bar{\rho}_{\alpha}\prs{p}$
+תבנית חלקה (הסכום סופי מקומית), בילינארית סימטרית ומוגדרת חיובית כי
+$\sum \lambda_{\alpha}\prs{p} = 1$
+ולכן קיים
+$\alpha$
+עבורו
+$\lambda_{\alpha}\prs{p} \neq 0$
+והסכום אינו מנוון.
+\end{proof}
+
+נתאר הוכחה נוספת.
+
+\begin{proof}
+ממשפט
+\textenglish{Whitney}
+קיים שיכון
+$i \colon M \hookrightarrow \RR^N$.
+נגדיר
+$i^* p \ceq \rho_0 \prs{Di\prs{p}\prs{v},Di\prs{p}\prs{w}}$
+לכל
+$v,w \in T_p M$,
+מטריקה רימנית על
+$M$.
+\end{proof}
+\begin{exercise}
+תהי
+$M \subseteq \RR^n$
+תת־יריעה. ההגדרה של פונקציות חלקות
+$M \to \RR^k$
+בעזרת אטלס חלק שקולה להגדרה הבאה:
+\\
+$f \colon M \to \RR^k$
+חלקה אם ורק אם ניתן למצוא סביבה
+$\Uu$
+של
+$M$
+ב־%
+$\RR^n$
+והרחבה חלקה
+$f \colon \Uu \to \RR^k$.
+\end{exercise}
+\begin{exercise}
+בדקו כי שתי ההגדרות שראינו ליריעה עם שפה שקולות.%
+\footnote{מעבר מההגדרה הראשונה לשנייה מצריך את משפט הפונקציה הסתומה. הכיוון השני מצריך פיצול יחידה.}
+\end{exercise}
 \backmatter
 \end{document}
 

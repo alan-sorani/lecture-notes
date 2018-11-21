@@ -14,6 +14,12 @@
 \contentsline {section}{\numberline {1.3}תתי־יריעות}{9}{section.1.3}
 \contentsline {section}{\numberline {1.4}נגזרות}{11}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}נגזרות כיווניות}{14}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}דיפרנציאלים}{15}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}דיפרנציאלים}{14}{subsection.1.4.2}
 \contentsline {section}{\numberline {1.5}שיכונים}{15}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}ערכים קריטיים ורגולריים}{17}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}טרנסוורסליות}{22}{section.1.6}
+\contentsline {section}{\numberline {1.7}יריעות עם שפה}{22}{section.1.7}
+\contentsline {section}{\numberline {1.8}הומוטופיה}{23}{section.1.8}
+\contentsline {section}{\numberline {1.9}הגדרות}{23}{section.1.9}
+\contentsline {chapter}{\numberline {2}פיצול היחידה}{26}{chapter.2}
+\contentsline {section}{\numberline {2.1}מטריקה רימנית}{27}{section.2.1}
