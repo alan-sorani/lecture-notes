@@ -9,3 +9,12 @@
 \contentsline {section}{\numberline {1.4}Sub-algebras and ideals}{6}{section.1.4}
 \contentsline {chapter}{\numberline {2}Structure of Lie algebras}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Nilpotent Lie algebras}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Flags}{12}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Solvable Lie algebras}{13}{section.2.2}
+\contentsline {chapter}{\numberline {3}Jordan-Chevalley decomposition}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Chinese remainder theorem}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Decomposition of vector spaces}{17}{section.3.2}
+\contentsline {chapter}{\numberline {4}Cartan's criterion for semi-simplicity}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preliminary results}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cartan's criterion}{22}{section.4.2}
+\contentsline {chapter}{\numberline {5}Killing form}{23}{chapter.5}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  29 OCT 2018 12:02
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  26 NOV 2018 14:17
 entering extended mode
 **"./lie algebras.tex"
 ("lie algebras.tex"
@@ -590,6 +590,9 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 sty"
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 )
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
 tikz.sty"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
@@ -983,26 +986,10 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count298
-\sf@farskip=\skip67
-\sf@captopadj=\dimen289
-\sf@capskip=\skip68
-\sf@nearskip=\skip69
-\c@subfigure=\count299
-\c@subfigure@save=\count300
-\c@lofdepth=\count301
-\c@subtable=\count302
-\c@subtable@save=\count303
-\c@lotdepth=\count304
-\sf@top=\skip70
-\sf@bottom=\skip71
-)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count305
+\etb@tempcnta=\count298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
 sty"
@@ -1012,22 +999,22 @@ Package: ntheorem 2011/08/15 1.33
 \theorem@@style=\toks34
 \theorembodyfont=\toks35
 \theoremnumbering=\toks36
-\theorempreskipamount=\skip72
-\theorempostskipamount=\skip73
-\theoremframepreskipamount=\skip74
-\theoremframepostskipamount=\skip75
-\theoreminframepreskipamount=\skip76
-\theoreminframepostskipamount=\skip77
+\theorempreskipamount=\skip67
+\theorempostskipamount=\skip68
+\theoremframepreskipamount=\skip69
+\theoremframepostskipamount=\skip70
+\theoreminframepreskipamount=\skip71
+\theoreminframepostskipamount=\skip72
 \theorem@preskip=\toks37
 \theorem@postskip=\toks38
 \theorem@framepreskip=\toks39
 \theorem@framepostskip=\toks40
 \theorem@inframepreskip=\toks41
 \theorem@inframepostskip=\toks42
-\theoremindent=\dimen290
-\theorem@indent=\dimen291
-\theoremrightindent=\dimen292
-\theorem@rightindent=\dimen293
+\theoremindent=\dimen289
+\theorem@indent=\dimen290
+\theoremrightindent=\dimen291
+\theorem@rightindent=\dimen292
 \theoremheaderfont=\toks43
 \theoremseparator=\toks44
 \theoremprework=\toks45
@@ -1036,101 +1023,101 @@ Package: ntheorem 2011/08/15 1.33
 \qedsymbol=\toks48
 \theoremkeyword=\toks49
 \qedsymbol=\toks50
-\thm@topsep=\skip78
-\thm@topsepadd=\skip79
+\thm@topsep=\skip73
+\thm@topsepadd=\skip74
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count306
-\c@currNonectr=\count307
-\mysavskip=\skip80
+\c@endNonectr=\count299
+\c@currNonectr=\count300
+\mysavskip=\skip75
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen294
-\tagwidth=\dimen295
+\thm@amstmpdepth=\dimen293
+\tagwidth=\dimen294
 )
-\c@currproofctr=\count308
-\c@endproofctr=\count309
-\c@proof=\count310
-\c@currtheoremctr=\count311
-\c@endtheoremctr=\count312
-\c@theorem=\count313
-\c@currlemmactr=\count314
-\c@endlemmactr=\count315
-\c@currcorollaryctr=\count316
-\c@endcorollaryctr=\count317
-\c@currpropositionctr=\count318
-\c@endpropositionctr=\count319
-\c@currconjecturectr=\count320
-\c@endconjecturectr=\count321
-\c@currcriterionctr=\count322
-\c@endcriterionctr=\count323
-\c@currassertionctr=\count324
-\c@endassertionctr=\count325
-\c@currfactctr=\count326
-\c@endfactctr=\count327
-\c@currhypothesisctr=\count328
-\c@endhypothesisctr=\count329
-\c@currdefinitionxctr=\count330
-\c@enddefinitionxctr=\count331
-\c@currdefinitionstarredctr=\count332
-\c@enddefinitionstarredctr=\count333
-\c@definitionstarred=\count334
-\c@currconditionctr=\count335
-\c@endconditionctr=\count336
-\c@curraxiomctr=\count337
-\c@endaxiomctr=\count338
-\c@axiom=\count339
-\c@currpostulatectr=\count340
-\c@endpostulatectr=\count341
-\c@currpropertyctr=\count342
-\c@endpropertyctr=\count343
-\c@currproblemctr=\count344
-\c@endproblemctr=\count345
-\c@currexamplectr=\count346
-\c@endexamplectr=\count347
-\c@example=\count348
-\c@currexercisectr=\count349
-\c@endexercisectr=\count350
-\c@exercise=\count351
-\c@curralgorithmxctr=\count352
-\c@endalgorithmxctr=\count353
-\c@curralgorithmstarredctr=\count354
-\c@endalgorithmstarredctr=\count355
-\c@algorithmstarred=\count356
-\c@currquestionctr=\count357
-\c@endquestionctr=\count358
-\c@currassumptionctr=\count359
-\c@endassumptionctr=\count360
-\c@currremarkctr=\count361
-\c@endremarkctr=\count362
-\c@currnotectr=\count363
-\c@endnotectr=\count364
-\c@currnotationctr=\count365
-\c@endnotationctr=\count366
-\c@currclaimctr=\count367
-\c@endclaimctr=\count368
-\c@currsummaryctr=\count369
-\c@endsummaryctr=\count370
-\c@summary=\count371
-\c@curracknowledgementctr=\count372
-\c@endacknowledgementctr=\count373
-\c@currcasectr=\count374
-\c@endcasectr=\count375
-\c@case=\count376
-\c@curroptionctr=\count377
-\c@endoptionctr=\count378
-\c@option=\count379
-\c@currconclusionctr=\count380
-\c@endconclusionctr=\count381
-\c@conclusion=\count382
-\c@currsolutionctr=\count383
-\c@endsolutionctr=\count384
-\c@solution=\count385
-\c@currexms_rawctr=\count386
-\c@endexms_rawctr=\count387
-\c@exms_raw=\count388
-\c@currexrs_rawctr=\count389
-\c@endexrs_rawctr=\count390
-\c@exrs_raw=\count391
+\c@currproofctr=\count301
+\c@endproofctr=\count302
+\c@proof=\count303
+\c@currtheoremctr=\count304
+\c@endtheoremctr=\count305
+\c@theorem=\count306
+\c@currlemmactr=\count307
+\c@endlemmactr=\count308
+\c@currcorollaryctr=\count309
+\c@endcorollaryctr=\count310
+\c@currpropositionctr=\count311
+\c@endpropositionctr=\count312
+\c@currconjecturectr=\count313
+\c@endconjecturectr=\count314
+\c@currcriterionctr=\count315
+\c@endcriterionctr=\count316
+\c@currassertionctr=\count317
+\c@endassertionctr=\count318
+\c@currfactctr=\count319
+\c@endfactctr=\count320
+\c@currhypothesisctr=\count321
+\c@endhypothesisctr=\count322
+\c@currdefinitionxctr=\count323
+\c@enddefinitionxctr=\count324
+\c@currdefinitionstarredctr=\count325
+\c@enddefinitionstarredctr=\count326
+\c@definitionstarred=\count327
+\c@currconditionctr=\count328
+\c@endconditionctr=\count329
+\c@curraxiomctr=\count330
+\c@endaxiomctr=\count331
+\c@axiom=\count332
+\c@currpostulatectr=\count333
+\c@endpostulatectr=\count334
+\c@currpropertyctr=\count335
+\c@endpropertyctr=\count336
+\c@currproblemctr=\count337
+\c@endproblemctr=\count338
+\c@currexamplectr=\count339
+\c@endexamplectr=\count340
+\c@example=\count341
+\c@currexercisectr=\count342
+\c@endexercisectr=\count343
+\c@exercise=\count344
+\c@curralgorithmxctr=\count345
+\c@endalgorithmxctr=\count346
+\c@curralgorithmstarredctr=\count347
+\c@endalgorithmstarredctr=\count348
+\c@algorithmstarred=\count349
+\c@currquestionctr=\count350
+\c@endquestionctr=\count351
+\c@currassumptionctr=\count352
+\c@endassumptionctr=\count353
+\c@currremarkctr=\count354
+\c@endremarkctr=\count355
+\c@currnotectr=\count356
+\c@endnotectr=\count357
+\c@currnotationctr=\count358
+\c@endnotationctr=\count359
+\c@currclaimctr=\count360
+\c@endclaimctr=\count361
+\c@currsummaryctr=\count362
+\c@endsummaryctr=\count363
+\c@summary=\count364
+\c@curracknowledgementctr=\count365
+\c@endacknowledgementctr=\count366
+\c@currcasectr=\count367
+\c@endcasectr=\count368
+\c@case=\count369
+\c@curroptionctr=\count370
+\c@endoptionctr=\count371
+\c@option=\count372
+\c@currconclusionctr=\count373
+\c@endconclusionctr=\count374
+\c@conclusion=\count375
+\c@currsolutionctr=\count376
+\c@endsolutionctr=\count377
+\c@solution=\count378
+\c@currexms_rawctr=\count379
+\c@endexms_rawctr=\count380
+\c@exms_raw=\count381
+\c@currexrs_rawctr=\count382
+\c@endexrs_rawctr=\count383
+\c@exrs_raw=\count384
 ) (C:/localtexmf\tex\latex\stylish\stylish.sty
 Package: stylish 2018/10/05 Stylish Book Design
 
@@ -1142,17 +1129,17 @@ Package: fontspec 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaTeX
 xetex.sty"
 Package: fontspec-xetex 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count392
-\l__fontspec_language_int=\count393
-\l__fontspec_strnum_int=\count394
-\l__fontspec_tmp_int=\count395
-\l__fontspec_em_int=\count396
-\l__fontspec_emdef_int=\count397
-\l__fontspec_strong_int=\count398
-\l__fontspec_strongdef_int=\count399
-\l__fontspec_tmpa_dim=\dimen296
-\l__fontspec_tmpb_dim=\dimen297
-\l__fontspec_tmpc_dim=\dimen298
+\l__fontspec_script_int=\count385
+\l__fontspec_language_int=\count386
+\l__fontspec_strnum_int=\count387
+\l__fontspec_tmp_int=\count388
+\l__fontspec_em_int=\count389
+\l__fontspec_emdef_int=\count390
+\l__fontspec_strong_int=\count391
+\l__fontspec_strongdef_int=\count392
+\l__fontspec_tmpa_dim=\dimen295
+\l__fontspec_tmpb_dim=\dimen296
+\l__fontspec_tmpc_dim=\dimen297
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -1174,12 +1161,12 @@ LaTeX Info: Redefining \- on input line 4034.
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
 sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count400
-\csq@gtype=\count401
-\csq@glevel=\count402
-\csq@qlevel=\count403
-\csq@maxlvl=\count404
-\csq@tshold=\count405
+\csq@reset=\count393
+\csq@gtype=\count394
+\csq@glevel=\count395
+\csq@qlevel=\count396
+\csq@maxlvl=\count397
+\csq@tshold=\count398
 \csq@ltx@everypar=\toks51
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
@@ -1200,17 +1187,23 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box56
-\fn@width=\dimen299
+\fn@width=\dimen298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip81
-\enit@outerparindent=\dimen300
+\labelindent=\skip76
+\enit@outerparindent=\dimen299
 \enit@toks=\toks52
 \enit@inbox=\box57
-\enitdp@description=\count406
-)) ("lie algebras.aux")
+\enitdp@description=\count399
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count400
+\c@subtable=\count401
+) ("lie algebras.aux")
 \openout1 = `"lie algebras.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -1232,7 +1225,6 @@ LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1280,7 +1272,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count407
+\c@section@level=\count402
 )
 LaTeX Info: Redefining \ref on input line 10.
 LaTeX Info: Redefining \pageref on input line 10.
@@ -1375,7 +1367,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write7
 \openout7 = `"lie algebras.toc"'.
 
-\c@lecturenumber=\count408
+\c@lecturenumber=\count403
  [2
 
 ] [3
@@ -1401,17 +1393,14 @@ ut line 96.
 ]
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 124.
-Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
-ut line 143.
+LaTeX Font Info:    Try loading font information for U+euf on input line 129.
 
-Overfull \hbox (5.1416pt too wide) in paragraph at lines 161--161
-[][] 
- []
-
-LaTeX Font Info:    Try loading font information for U+euf on input line 161.
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [3] [4]
+)
+Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
+ut line 143.
+[3] [4]
 Package hyperref Info: bookmark level for unknown conclusion defaults to 0 on i
 nput line 228.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
@@ -1436,25 +1425,146 @@ ine 434.
 [9
 
 ]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+[]
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 546--546
+\OML/cmm/m/it/5 N[] [][]\OT1/cmr/m/n/5 = []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/lmr/m/n/5 and
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 546--546
+\OML/cmm/m/it/5 N[] [][]\OT1/cmr/m/n/5 = []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/lmr/m/n/5 matrices, but
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 546--546
+[]$ \TU/lmr/m/it/5 is not\TU/lmr/m/n/5 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/lmr/m/n/5 These matrices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/lmr/m/n/5 are a linear
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 546--546
+\TU/lmr/m/n/5 basis of $\U/euf/m/n/5 sl[] [][]\OT1/cmr/m/n/5 =
+ []
+
+
+Overfull \hbox (4.73311pt too wide) in paragraph at lines 546--546
+[]$\TU/lmr/m/n/5 . 
+ []
+
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[11]
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 610.
+ [12]
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 621.
+ [13]
+Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
+ut line 679.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 715.
+ [14] [15]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [16]
+Chapter 3.
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 894--897
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 897--898
+
+ []
+
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[18]
+Overfull \hbox (8.51064pt too wide) in paragraph at lines 909--915
+[]\TU/lmr/m/n/10 Write $\OML/cmm/m/it/10 f[] [] \OT1/cmr/m/n/10 = [][] [][] = [
+][] \OML/cmm/m/it/10 p[] []$\TU/lmr/m/n/10 . $[][]$ has a characteristic polyno
+mial $[][] \OT1/cmr/m/n/10 =
+ []
+
+Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 953--955
+
+ []
+
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[19] [20]
+Chapter 4.
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \vbox (1.20277pt too high) has occurred while \output is active []
+
+
+[21
+
+]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [22]
+Chapter 5.
+
+Overfull \hbox (67.7342pt too wide) in paragraph at lines 1039--1039
+[][] 
+ []
+
+
+Overfull \hbox (96.97421pt too wide) in paragraph at lines 1053--1053
+[][] 
+ []
+
+[23
+
+]
 \tf@thm=\write8
 \openout8 = `"lie algebras.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1065.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1065.
  ("lie algebras.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 444.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1065.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1065.
+
 Package rerunfilecheck Info: File `"lie algebras".out' has not changed.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 444.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1065.
  ) 
 Here is how much of TeX's memory you used:
- 37640 strings out of 427792
- 731473 string characters out of 3147754
- 980093 words of memory out of 3000000
- 41188 multiletter control sequences out of 15000+200000
- 538541 words of font info for 71 fonts, out of 3000000 for 9000
+ 37632 strings out of 427792
+ 731168 string characters out of 3147754
+ 983090 words of memory out of 3000000
+ 41164 multiletter control sequences out of 15000+200000
+ 543157 words of font info for 92 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,15n,84p,962b,619s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,84p,962b,807s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on lie algebras.pdf (13 pages).
+Output written on lie algebras.pdf (27 pages).

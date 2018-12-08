@@ -103,7 +103,7 @@ In these terms we write the Jacobi identity as follows.
 A \stress{Lie algebra} $L$ is a vector space over $\FF$ with a bilinear map $\brs{,} \colon L \times L \to L$, which is anti-symmetric and satisfies the Jacobi identity.
 \end{definition}
 \begin{definition}
-Given a Lie algebra $L$, a vector subspace $L_0 \subseteq L$ is called a sub-Lie-algebra if it is closed under brackets. I.e.
+Given a Lie algebra $L$, a vector subspace $L_0 \subseteq L$ is called a \stress{Lie sub-algebra} if it is closed under brackets. I.e.
 \[X,Y \in L_0 \implies \brs{X,Y} \in L_0 \text{.}\]
 \end{definition}
 \begin{examples}
@@ -126,11 +126,11 @@ This bracket satisfies the Jacobi identity, and is anti-symmetric.
 Given a solution to this exercise, $\prs{A, \brs{,}}$ is a Lie algebra.
 \\
 In particular, $M_n\prs{k}$ is a Lie algebra under the bracket $\brs{A,B} = AB - BA$.
-This algebra is \emph{very important} and is denoted $\Gg \Ll_n \prs{k}$.
+This algebra is \emph{very important} and is denoted $\gg \ll_n \prs{k}$.
 \end{example}
 \begin{exercise}
-Consider the subspace \[\set{A \in \Gg \Ll_n\prs{k}}{\mathrm{tr} A = 0} \subseteq \Gg \Ll_n\prs{k}\text{.}\] Is the subspace a Lie algebra? Yes! Since for any $A,B \in \Gg \Ll_n\prs{k}$ we have that $\mathrm{tr}\prs{AB} = \mathrm{tr}\prs{BA}$, we get that $\mathrm{tr}\brs{A,B} = 0$.
-The sub-Lie-algebra of zero-trace matrices is denoted $\Ss\Ll_n\prs{k}$.
+Consider the subspace \[\set{A \in \gg \ll_n\prs{k}}{\mathrm{tr} A = 0} \subseteq \gg \ll_n\prs{k}\text{.}\] Is the subspace a Lie algebra? Yes! Since for any $A,B \in \gg \ll_n\prs{k}$ we have that $\mathrm{tr}\prs{AB} = \mathrm{tr}\prs{BA}$, we get that $\mathrm{tr}\brs{A,B} = 0$.
+The sub-Lie-algebra of zero-trace matrices is denoted $\ss\ll_n\prs{k}$.
 \end{exercise}
 \begin{exercise}[Lie algebras associated with bilinear forms]
 Let $V$ be a vector space over $\FF$, and $B \colon V \times V \to \FF$ be a bilinear form.
@@ -155,14 +155,14 @@ In conclusion, $L_B$ is a sub-Lie-algebra of $\mathrm{End}\prs{V}$, the Lie alge
 Let $S$ be a symmetric bilinear form, and let \[L_S = \set{X \in \mathrm{End}\prs{V}}{S\prs{Xv, w} = -S\prs{v,Xw}}\text{.}\]
 Then again, $L_S$ is a Lie sub-algebra.
 \end{exercise}
-\begin{examples}[Sub-algebras of $\Gg\Ll_n\prs{\FF}$]
+\begin{examples}[Sub-algebras of $\gg \ll_n\prs{\FF}$]
 \begin{enumerate}
 \item
-\[\tT\prs{n,\FF} = \set{\pmat{a_{11} & & a_{i,j} \\ & \ddots & \\ 0 & & a_{nn}}}{a_{ij} \in \FF}\]
-is closed under the bracket operation, for if $A,B \in \tT\prs{n,\FF}$ then $AB \in \tT\prs{n,\FF}$ and so $AB - BA \in \tT\prs{n,\FF}$.
-\item \[\nN\prs{n,\FF} = \set{\pmat{0 & & a_{i,j} \\ & \ddots & \\ 0 & & 0}}{a_{ij} \in \FF}\]
-is a Lie sub-algebra of $\tT\prs{n,\FF}$.
-\item \[\dD\prs{n,\FF} = \set{\pmat{a_1 & & 0 \\ & \ddots & \\ 0 & & a_n}}{a_i \in \FF}\]
+\[\tt\prs{n,\FF} = \set{\pmat{a_{11} & & a_{i,j} \\ & \ddots & \\ 0 & & a_{nn}}}{a_{ij} \in \FF}\]
+is closed under the bracket operation, for if $A,B \in \tt\prs{n,\FF}$ then $AB \in \tt\prs{n,\FF}$ and so $AB - BA \in \tt\prs{n,\FF}$.
+\item \[\nn\prs{n,\FF} = \set{\pmat{0 & & a_{i,j} \\ & \ddots & \\ 0 & & 0}}{a_{ij} \in \FF}\]
+is a Lie sub-algebra of $\tt\prs{n,\FF}$.
+\item \[\dd\prs{n,\FF} = \set{\pmat{a_1 & & 0 \\ & \ddots & \\ 0 & & a_n}}{a_i \in \FF}\]
 an abelian sub-algebra. 
 \end{enumerate}
 \end{examples}
@@ -172,7 +172,7 @@ Let $L$ be a Lie algebra and let $X_1, \ldots, X_n$ be a basis of $L$, Then the 
 The \stress{structure constants} $c_k^{i,j}$ contain full information on the bracket operation of course. These satisfy two properties associated with anti-symmetry and the Jacobi identity of the brackets.
 The property associated to anti-symmetry is $c_k^{i,j} = -c_k^{j,i}$. The other property (associated to the Jacobi identity) is left as an \textbf{\textrm{Exercise}}.
 \begin{example}
-\[\Gg\Ll_n\prs{\FF} = \mathrm{span}\set{E_{i,j}}{1 \leq i,j\leq n}\]
+\[\gg \ll_n\prs{\FF} = \mathrm{span}\set{E_{i,j}}{1 \leq i,j\leq n}\]
 In the basis $E_{ij}$ the structure constants are very simple. We have the following.
 \[\brs{E_{i,j}, E_{k,l}} = \delta_{j,k}E_{i,l} - \delta_{l,i}E_{k,j}\]
 Hence all the structures constants are $1$ or $-1$.
@@ -204,7 +204,7 @@ Although we have linearity of the bracket, we do need to take the span in the ab
 \end{remark}
 \section{Linear representations}
 \begin{definition}
-A \stress{linear representation} of a Lie algebra $L$ over $\FF$ is a Lie-algebra homomorphism $T \colon L \to \mathrm{End}(V) \cong \Gg\Ll_n\prs{\FF}$ where $V$ is an $n$-dimensional vector space over $\FF$.
+A \stress{linear representation} of a Lie algebra $L$ over $\FF$ is a Lie-algebra homomorphism $T \colon L \to \mathrm{End}(V) \cong \gg \ll_n\prs{\FF}$ where $V$ is an $n$-dimensional vector space over $\FF$.
 \end{definition}
 \begin{remark}
 The bracket operation on $\mathrm{End}(V)$ is the usual one, namely $\brs{A,B} = AB - BA$.
@@ -337,7 +337,7 @@ as required.
 $I+J$ and $\brs{I,J}$ are ideals if $I$ and $J$ are.
 \end{conclusion}
 \begin{remark}
-In general $\brs{I,J} \subseteq I \cap J$, but the inclusion may be strict.
+In general $\brs{I,J} \subseteq I \cap J$, but the inclusion may be strict.\\
 \begin{examples}
 \begin{enumerate}
 \item Take $L$ an abelian Lie algebra and $I,J$ any two sub-spaces which are both sub-algebras, and ideals. Then $\brs{I,J} = 0$, but $I \cap J$ may be large.
@@ -422,7 +422,7 @@ Similarly we denote $L^{\prs{n}} = \brs{L^{\prs{n-1}},L}$, which is an ideal of 
 \end{definition}
 \begin{remark}
 The above gives a descending chain
-\[L = L^{\prs{0}} \supseteq \supseteq L^{\prs{1}} \supseteq L^{\prs{2}} \supseteq \ldots\]
+\[L = L^{\prs{0}} \supseteq L^{\prs{1}} \supseteq L^{\prs{2}} \supseteq \ldots\]
 and since $\dim L < \infty$, this sequence has to stabilise.
 It is however possible that $\brs{L,L}=0$, if $L$ is abelian, or that $\brs{L,L} = L$, if $L$ is perfect.
 \end{remark}
@@ -440,5 +440,626 @@ The sequence of ideals $L^{\prs{n}}$ is called \stress{the descending central se
 $L^{\prs{k}} \triangleleft L$ and hence $L^{\prs{l}} \triangleleft L^{\prs{k-1}}$. Also $\quot{L^{\prs{k-1}}}{L^{\prs{k}}}$ is an \emph{abelian} algebra
 since $L^{\prs{k}} = \brs{L^{\prs{k-1}}, L} \supseteq \brs{L^{\prs{k-1}}, L^{\prs{k-1}}}$ and in general an ideal $I \triangleleft M$ is such that $\quot{M}{I}$ is abelian if and only if $I \supseteq \brs{M,M}$.
 \end{remark}
+\begin{proposition}
+Let $\phi \colon L_1 \to L_2$ be an epimorphism of Lie algebras. Then $\phi\prs{L_1^{\prs{n}}} = L_2^{\prs{n}}$.
+\end{proposition}
+\begin{exercise}
+Prove the above proposition.
+For $n=1$, we have $\phi\prs{\brs{L_1,L_1}} \subseteq \brs{L_2, L_2}$, but in fact equality holds (\textbf{Exercise!}).
+Similarly prove for any $n \in \NN$.
+\end{exercise}
+\begin{proposition}
+Let $L$ be a nilpotent Lie algebra.
+\begin{enumerate}
+\item Every Lie sub-algebra and every factor Lie algebra are also nilpotent.
+\item For $M$ a Lie algebra, if $\quot{M}{Z(M)}$ is nilpotent, so is $M$.
+\item $Z(L) \neq 0$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+\begin{enumerate}
+\item
+\begin{description}
+\item[Sub-algebras:]
+If $L_0 \subset L$ is a Lie sub-algebra, then clearly $L_0^{\prs{k}} \subseteq L^{\prs{k}}$. So if $L^{\prs{n}} = 0$ then $L_0^{\prs{n}} = 0$ and the index of nilpotency of $L_0$ is bounded by that of $L$.
+\item[Factor algebras:]
+Let $\bar{L} = \phi\prs{L} = \quot{L}{I}$ be an epimorphic image of $L$. Then $L^{\prs{k}} = \phi\prs{L^{\prs{k}}}$, so if $L^{\prs{k}} = 0$, then $\bar{L}^{\prs{k}} = 0$. We similarly have a bound on the nilpotency index of the factor algebra.
+\end{description}
+\item Suppose $\bar{L} = \quot{L}{Z}$ is nilpotent. Then $\bar{L}^{\prs{n}} = \bar{0}$ for some $n$. So \[\phi\prs{L^{\prs{n}}} = \bar{L}^{\prs{n}} = \bar{0}\text{.}\] Then \[\phi\prs{L^{\prs{n}}} = \bar{L}^{\prs{n}} = 0\] and therefore $L^{\prs{n}} \subseteq Z\prs{L} = \ker \phi$. Therefore $\brs{L^{\prs{n}},L} \in \brs{Z(L),L} = 0$. So $L^{\prs{n+1}} = 0$, and so the index of nilpotency may increase by $1$.
+\item By definition, \[L^{\prs{0}} \supseteq L^{\prs{1}} \supseteq \ldots \supseteq L^{\prs{n-1}} \supsetneq L^{\prs{n}} = 0\]
+for some $n \in \NN$. Now $\brs{L^{\prs{n-1}}, L} = L^{\prs{n}} = 0$, so certainly $L^{\prs{n-1}} \subseteq Z\prs{L}$ and $Z\prs{L} \neq 0$.
+\end{enumerate}
+\end{proof}
+\begin{exercise}
+\[\nn\prs{n,\FF} = \set{\pmat{0 & & a_{i,j} \\ & \ddots & \\ 0 & & 0}}{a_{ij} \in \FF}\] is a nilpotent Lie sub-algebra of $M_n\prs{\FF}$.
+\end{exercise}
+\begin{example}
+In $\nn\prs{2,\FF}$, the commutator of any two elements is zero.
+\[\brs{\pmat{0 & x \\ 0 & 0}, \pmat{0 & y \\ 0 & 0}} = 0\]
+Therefore $\nn\prs{3,\FF}$ is a one-dimensional abelian algebra.
+For $\nn\prs{3,\FF}$, the commutator of an element $\pmat{0 & 0 & x \\ 0 & 0 & 0 \\ 0 & 0 & 0}$ with any other element is zero. However,
+\[\brs{\pmat{0 & u & w \\ 0 & 0 & v \\ 0 & 0 & 0}, \pmat{0 & x & y & \\ 0 & 0 & z \\ 0 & 0 & 0}} = \pmat{0 & 0 & uz - vx \\ 0 & 0 & 0 \\ 0 & 0 & 0}\text{.}\]
+Then $\brs{L,L} \neq 0$. However, $L^{\prs{2}} = \brs{\brs{L,L},L} = 0$. Hence $\nn\prs{3,\FF}$ is nilpotent of index $1$.\footnote{Similarly once can show that $\nn\prs{n,\FF}$ is nilpotent of index $n-2$.}
+Hence $\quot{L}{\brs{L,L}}$ is abelian of dimension $2$, and $\brs{L,L}$ abelian of dimension $1$, and it is central (contained in the center). Being of dimension $1$, we conclude $\brs{L,L} = Z\prs{L}$.\\
+$\nn\prs{3,\FF}$ is isomorphic to the \stress{first Heisenberg algebra} denoted $\hH_1$.
+\end{example}
+\begin{proposition}
+For every $n \geq 2$ and field $\FF$, $\nn\prs{n,\FF}$ is a nilpotent Lie algebra of nilpotency index $n-2$.
+\end{proposition}
+
+\begin{definition}
+An element $x \in L$ is called \stress{ad-nilpotent} if $\ad x$ is a nilpotent linear transformation on $L$.
+Namely, $\exists k \in \NN \colon \prs{\ad x}^k = 0$.
+\end{definition}
+\begin{remark}
+In general, in a Lie algebra $L$ which is nilpotent of index at most $n-1$, $L^{\prs{n}}=0$, or equivalently
+\[\brs{\brs{\ldots\brs{\brs{\brs{x_1, x_2},x_3},x_4}\ldots,x_n},x_{n+1}} = 0\]
+for all $x_1, \ldots, x_{n+1}$. Equivalently the product (in any order) of the linear transformations $\ad x_2, \ldots, \ad x_{n+1}$ is zero.
+\end{remark}
+\begin{theorem}[Engel]
+Let $L$ be a a Lie algebra such that every element of $L$ is ad-nilpotent. Then $L$ is a nilpotent Lie algebra.
+\end{theorem}
+For the proof we shall develop some properties of nilpotent linear Lie algebras, namely Lie sub-algebras of $\endo\prs{V}$.\\
+\begin{proposition}
+Let $X \in \endo \prs{V}$ be a nilpotent linear transformation on $V$. Then $\ad\prs{X}$ is a nilpotent linear transformation on $\endo\prs{V}$, in particular $\ad\prs{X} \in \endo\prs{\endo\prs{V}}$.
+\end{proposition}
+\begin{proof}
+Define for each $X \in \endo\prs{V}$ two linear maps on $\endo\prs{V}$:
+\begin{align*}
+\lambda_X\prs{Y} = XY \\
+\rho_X\prs{Y} = YX
+\end{align*}
+Clearly if $X^k = 0$ then $\rho_X^k = \lambda_X^k = 0$.
+Furthermore, $\rho_X$ commutes with $\lambda_X$ (as linear maps on $\endo\prs{V}$). I.e. $\brs{\lambda_X,\rho_X} = 0$. This is obvious because $\prs{XY}X = X\prs{YX}$.
+In general, in any associative algebra, (or any ring) the sum or the difference of two commuting nilpotent elements is also a nilpotent element.\\
+We have \[\prs{\lambda_X - \rho_X}\prs{Y} = XY - YX = \brs{X,Y} = \ad\prs{X}\prs{Y}\] so it suffices to prove the last claim, since this implies $\ad X$ is nilpotent.\\
+By the binomial formula,
+\[\prs{a-b}^N = \sum_{j=0}^N \binom{N}{j} a^j \prs{-b}^{N-j}\text{.}\]
+If $a^k = b^k = 0$, then for large $N$ s.t. $\min\set{j,N-j} \geq k$, the sum vanishes.
+\end{proof}
+\begin{remark}
+$\ad X \colon L \to L$ \newlecture{November 5}{2018}
+is a nilpotent linear transformation with index of nilpotency being $n-1$.
+\end{remark}
+\begin{remark}
+We saw that $X \in \endo\prs{V}$ is nilpotent, $\ad X \in \endo\prs{\endo\prs{V}}$ is nilpotent. The converse \emph{is not} true. For example take $X = I + \pmat{0 & 1 \\ 0 & 0}$ which is \emph{not} nilpotent, but is ad-nilpotent.
+\end{remark}
+\begin{theorem}
+Let $L \subseteq \gg \ll_n\prs{V}$ all of whose elements are nilpotent linear transformations. Then there exists $v \neq 0$ such that $\forall X \in L \colon Xv = 0$. Namely, a sub-algebra of $\gg \ll_n\prs{V}$ consisting of nilpotent elements has a non-trivial joint kernel.
+\end{theorem}
+\begin{proof}
+Let us prove the theorem by induction on $\dim L$.
+\begin{description}
+\item[Induction Basis:]
+The theorem is clearly true if $\dim L = 1$. Then $L = \FF x$ and $x$ is nilpotent, so there's $v \neq 0$ such that $xv = 0$.
+\item[Induction Step:]
+\begin{enumerate}[label=(\Roman*)]
+\item
+Assume the statement of the theorem for all linear Lie algebra of dimension less than $n\geq 2$.
+Let $L$ have dimension $n \geq n$ and let $L_0 \subseteq L$ be a sub-algebra of strictly smaller dimension. (e.g. the span of a single matrix)
+Consider the linear maps $\ad x$ where $x \in L_0$.
+We have $L_0 \subseteq L \subseteq \endo\prs{V}$. Now $\ad x$ leaves both the linear sub-spaces $L_0$ and $L$ invariant. In fact $L$ is $\ad y$ invariant for any $y \in L$. (since $L$ is closed under brackets)
+So $\ad x \prs{L} \subseteq L$ and $\ad x \prs{L_0} \subseteq L_0$. Therefore $\ad X$ also acts on $\quot{L}{L_0}$\footnote{This isn't necessarily a Lie algebra.} via
+\[\overline{\ad} x \prs{y + L_0} = \ad x \prs{y} + L_0 \text{.}\]
+Now, \[\dim \set{\ad x}{x \in L_0} \stackrel{\star}{\leq} \dim L_0 < L\]
+where $\star$ is true because $\ad$ is linear on $L_0$, and cannot expand the dimension.
+But, $\overline{\ad}\prs{L_0}$ is in fact a linear Lie algebra consisting of linear transformations of $\Uu \ceq \quot{L}{L_0}$,  because we saw that $\ad$ is in fact a Lie-algebra homomorphism.\marginpar{\tiny{\begin{remark}$N_1 \ceq \pmat{0 & 1 \\ 0 & 0}$ and $N_2 \ceq \pmat{0 & 0 \\ 1 & 0}$ are both nilpotent matrices, but $A \ceq \brs{N_1, N_2} = \pmat{1 & 0 \\ 0 & -1}$ \emph{is not}. These matrices are a linear basis of $\ss\ll_2 \ceq \set{z \in \gg \ll_2}{\tr z = 0}$.\end{remark}}}
+Now, each $\overline{\ad}x$ with $x \in L_0$, is a nilpotent linear transformation on the factor $\quot{L}{L_0}$, since $x$ and hence $\ad x$ are nilpotent linear maps.
+Furthermore, $\dim \overline{\ad}\prs{L_0} < \dim L$, so by the induction hypothesis, $\overline{\ad}\prs{L_0}$ has a non-trivial vector in the joint kernel. I.e. $\exists y + L_0 \neq L_0$ such that $\overline{ad}\prs{x}\prs{y + L_0} = 0 + L_0$ for all $x \in L_0$. Namely, $\brs{x,y}+L_0 = 0 + L_0$ for all $x \in L_0$, or equivalently $\brs{x,y} \in L_0$ for all $x \in L_0$, so $y$ normalises the sub-algebra $L_0$. So, $\mrm{span}\prs{L_0, y}$ is a Lie sub-algebra of $L$\footnote{We know that the normaliser is a sub-algebra.}, containing $L_0$ strictly.\footnote{Since $y \notin L_0$.}
+
+\item
+Let now $L_0$ be a sub-algebra of $L$ such that $L_0 \subsetneq L$ and it's maximal with this property. Applying the previous argument to $L_0$, we have $N_L\prs{L_0} \supsetneq L_0$ and therefore $N_L\prs{L_0} = L$. So such an $L_0$ is an ideal of $L$.
+
+\item
+Consider $\quot{L}{L_0}$, which is a Lie algebra. If $x_0 + L_0 \neq L_0$ then $\FF\prs{x_0+L_0}$ is a Lie sub-algebra of $\quot{L}{L_0}$.
+Its inverse image in $L$ (under the canonical Lie-algebra homomorphism $L \to \quot{L}{L_0}$) is a Lie sub-algebra of $L$, containing $L_0$.
+But, having chosen $L_0$ to be maximal, and because $x_0 \notin L_0$, we have $\FF x_0 + L_0 \supseteq L_0$. So $L = \FF x_0 + L_0$, namely $L_0$ is an ideal of co-dimension $1$.
+So our sub-algebra $L_0$ which has $L_0 \subsetneq L$, and maximal with this property, turns out to be an ideal of co-dimension $1$.
+
+\item Now consider the action of $\ad \prs{L_0}$ on $V$. Now $\dim L_0 < \dim L$ and so by the induction hypothesis there's $v_0 \in V$ such that $v_0 \neq 0$ and $x v_0 = 0$ for all $x \in L_0$.
+We must find $v \neq 0$ such that $xv = 0$ for all $x \in L$. Let now
+\[W = \set{w\in V}{\forall x \in L_0 \colon xw = 0}\]
+be the common kernel of non-zero elements in $L_0$.
+We claim that $W \subseteq V$ is invariant under the transformations in $L$.
+This finishes the proof, because it follows that $x_0$ leaves $W$ invariant, and since $x_0$ is nilpotent, it must have a non-zero vector $v \in W$ such that $x_0 v = 0$. This $v$ satisfies that $x_0v = 0$ and $xv = 0$ for all $x \in L_0$, and therefore $xv = 0$ for all $x \in L$.
+
+\item We have to show that indeed $W$ is invariant under $L$. Let $y \in L$ and let $w \in W$. We should show that $yw \in W$. So, we must show that for all $x \in L_0$, we have that $x\prs{yw} = 0$. We shall prove this. We have
+\[x\prs{yw} = y\prs{xw} + \brs{x,y}\prs{w}\text{.}\]
+Now $xw = 0$ since $x \in L_0$ and $w \in W$, and $\brs{x,y}w = 0$ since $\brs{x,y} \in L_0$ and $w \in W$ (for $L_0$ is an ideal). Therefore
+$x\prs{y w} = 0$ as required.
+\end{enumerate}
+\end{description}
+\end{proof}
+We remind Engel's theorem, for which we proved the above.
+
+\begin{theorem}[Engel]
+Let $L$ be a a Lie algebra such that every element of $L$ is ad-nilpotent. Then $L$ is a nilpotent Lie algebra.
+\end{theorem}
+\begin{proof}
+Consider $\ad \colon L \to \endo\prs{L}$. $\ad\prs{L}$ is a linear Lie algebra consisting of linear maps on $L$. By assumption, $\ad\prs{L}$ consists of nilpotent linear maps and by the previous theorem, there is $z \in L \setminus \set{0}$ which is the common kernel of all $\ad x$ with $x \in L$. Namely, \[\exists z \neq 0 \forall x \in L \colon \brs{x,z} = \ad x \prs{z} = 0\text{.}\]
+So, $z \in Z(L)$ and consider $\quot{L}{Z(L)} = \bar{L}$ which is a Lie algebra of dimension strictly less than $\dim L$. But, $\bar{L}$ is also ad-nilpotent since
+\begin{align*}
+\overline{ad}\prs{x} \colon \bar{L} \to \bar{L}
+\end{align*}
+is a transformation obtained from $\ad x$ by passing to a factor space.
+So by induction on the dimension, $\quot{L}{Z}$ is nilpotent, and so $L$ is nilpotent since we saw that if $\quot{L}{Z}$ is nilpotent ($Z$ the center) then $L$ is nilpotent.\\
+This proves that $L$ is nilpotent.
+\subsection{Flags}
+Let $V$ be a vector space over $\FF$. A \stress{full flag} in $V$ is a sequence of linear subspaces
+\begin{align*}
+V_0 = 0 \subsetneq V_1 \subsetneq V_2 \subsetneq \ldots \subsetneq V_n = V
+\end{align*}
+such that $\dim V_i = i$ for all $0 \leq i \leq n$. \\
+A \stress{partial flag} is any sequence
+\begin{align*}
+W_1 \subsetneq W_2 \subsetneq \ldots \subsetneq W_k
+\end{align*}
+of nested subspaces.
+\end{proof}
+\begin{definition}
+Given a full flag, a linear transformation $T \colon V \to V$ is said to \stress{stabilise the flag} if $TV_i \subseteq V_i$ for $0 \leq i \leq n$.
+\end{definition}
+
+Let us choose $e_1 \in V_1$, $e_1,e_2 \in V_2$ a basis, etc. such that $e_1, \ldots, e_i$ is a basis of $V_i$. The matrix representing $T$ in this basis is upper-triangular (because $T V_i \subseteq V_i$).
+Conversely, a linear transformation $S$ represented in this basis by an upper triangular matrix, stabilises the flag.\\
+Similarly, given for example a partial flag $V_0 \subsetneq W_1 \subsetneq W_2 \subseteq V$, with $\rank{W_i} = k_i$, we can choose a basis of $W_1$, complement it to a basis of $W_2$, then to a basis of $V$. A transformation $U$ stabilises the partial flag if and only if it's represented by a block upper-triangular matrix with blocks of sizes $k_1, k_2-k_1, n-k_2$.
+In our linear theorem we that every linear Lie algebra $L$ consisting of nilpotent linear maps, has a non-zero vector in the common kernel. In follows that $L$ stabilises a full flag, and in a basis adapted to this flag (as we chose before) \emph{all} linear transformations in our algebra have a common upper-triangulation, with zeroes on the main diagonal.\\
+We want to show that indeed $L$ stabilises a full flag.
+
+\begin{claim}
+$L$ stabilises a full flag.
+\end{claim}
+\begin{proof}
+There's $v \in V$ non-zero such that for all $x \in L$, $xv = 0$. Let $V_1 = \FF v$ and consider $\quot{V}{V_1}$. Now $V_1$ is invariant under \emph{all} $x \in L_1$, so $xV_1 \subseteq V$, since $xv = 0$. So $x$ defines a transformation $\bar{x} \colon \quot{V}{V_1} \to \quot{V}{V_1}$. This collection $\set{\bar{x}}{x \in L}$ is a nilpotent linear Lie algebra. Therefore, $\bar{L}$ has a vector $v_2$ such that $x\prs{v_2 + V_1} = 0 + V_1$, and where $v_2 + v_1 \neq 0 + V_1$. So, if $V_2 = \mrm{span}\set{v_1,v_2}$ then $xV_2 \subseteq V_2$. Furthermore, $xV_1 = 0$ and $xv_2 \in V_1$.\\
+More generally, by induction, $\bar{L}$ stabilises a full flag in $\quot{V}{V_!}$, and its inverse image in $V$, together with $V_1$ is a full flag in $V$, which is invariant under all $x \in L$. Also, in the basis associated to this flag, the representing matrix has $0$ on the diagonal. So every linear nilpotent Lie algebra stabilises a flag, with representing matrices as described.\\
+Now, $\nn\prs{n,\FF} \subseteq \tt\prs{n,\FF}$ is a nilpotent Lie algebra.
+\end{proof}
+\begin{conclusion}
+Every linear nilpotent Lie algebra has a basis in which it is represented by a sub-algebra of $\nn\prs{n,\FF}$. 
+\end{conclusion}
+\begin{corollary}
+Let $L$ be a nilpotent algebra. $\ad L$ must have an invariant flag. This flag gives a sequence of ideals
+\[0 = I_0 \lneq I_1 \lneq I_2 \lneq \ldots \lneq I_n\]
+where each $I_j$ is an ideal of $L$ and they have dimension $\dim I_j = j$.
+\end{corollary}
+\section{Solvable Lie algebras}
+\begin{definition}[Derived sequence of ideals]
+Let $L$ be a Lie algebra.\newlecture{November 12}{2018}
+Denote $D_1\prs{L} = L^{\prs{1}} = \brs{L,L}$ and similarly $D_k\prs{L} = \brs{D_{k-1}\prs{L}, D_{k-1}\prs{L}}$ for all $k$.
+$\prs{D_k}_{k\in\NN_+}$ is the \stress{derived sequence of ideals for $L$}.
+\end{definition}
+\begin{definition}
+$L$ is \stress{solvable} if $D_k\prs{L} = 0$ for some $k$.
+\end{definition}
+\begin{remark}
+Every nilpotent Lie algebra is solvable. $L^{\prs{k}} = 0$ implies $D_k\prs{L} = 0$.
+\end{remark}
+\begin{definition}
+If $D_k\prs{L} = 0$ and $D_{k-1}\prs{L} \neq 0$ where $k \in \NN_+$, we say $L$ is \stress{solvable of index $k-1$}.
+\end{definition}
+\begin{example}
+The simplest solvable non-nilpotent algebra is the 2-dimensional algebra of $2\times 2$ matrices generated by
+$X = \pmat{1 & 0 \\ 0 & 0}$ and $Y = \pmat{0 & 1 \\ 0 & 0}$.
+Here $\brs{X,Y} = XY - YX = Y$.
+We have $D_1\prs{L} = \brs{L,L} = \mrm{Span}\prs{Y}$. We have $D_2\prs{L} = 0$ since $\brs{L,L}$ is abelian. But, $\brs{\brs{L,L},L} = \brs{L,L}$, so $L$ is not nilpotent.
+\end{example}
+\begin{example}
+For every $n$ and $\FF$, $\tt\prs{n,\FF}$ is a solvable algebra.
+$D_1\prs{\tt\prs{n,\FF}} \subseteq \nn\prs{n,\FF}$ and $\nn\prs{n,\FF}$ is nilpotent, so $\tt\prs{n,\FF}$ is solvable.
+\end{example}
+\begin{proposition}[properties of solvable algebras]
+\begin{enumerate}
+\item Every sub-algebra and quotient algebra of $L$ is also solvable. \label{quot solvable}
+\item If $I$ is an ideal in $L$ and both $I$ and $\quot{L}{I}$ are solvable, then $L$ is solvable. \label{quot ideal solvable}
+\item If $I$ and $J$ are solvable ideals, then $I + J$ is also solvable. \label{sum solvable}
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+First, if $\phi \colon L \to L'$ is an epimorphism of Lie algebras, then $\phi\prs{\brs{L,L}} = \brs{L',L'}$, and in general \[\phi\prs{D_k\prs{L}} = D_k\prs{\phi\prs{L}} = D_k\prs{L'}\text{.}\]
+\begin{enumerate}
+\item Clearly, if $L_0 \subseteq L$ then $D_k\prs{L_0} \subseteq D_k\prs{L}$, so $D_k\prs{L}$ implies $D_k\prs{L_0}$, and $L_0$ is solvable of index at most that of $L$.\\
+Similarly, if $L' = \quot{L}{I}$ is a quotient algebra, and $\phi \colon L \to \quot{L}{I}$ is the canonical epimorphism, then $D_k\prs{L'} = \phi\prs{D_k\prs{L}}$ and $D_k\prs{L} = 0$ implies $L'$ is solvable of index at most that of $L$.
+\item Suppose that $\bar{L} = \quot{L}{I}$ is solvable. Then $D_k\prs{\bar{L}} = \bar{0}$ and equivalently $D_k\prs{L} \subseteq I$. Now, if $I$ is a solvable ideal, then $D_l\prs{I} = 0$ for some $l$. Then $D_{k+l}\prs{L} \subseteq D_l\prs{I} = 0$. So, $L$ is solvable of index at most $l+k$.
+\item If $I,J$ are solvable ideals, consider $\quot{I+J}{J} \cong \quot{I}{I \cap J}$. Since $I$ is solvable, so is $\quot{I}{I \cap J}$. So then $\quot{I + J}{J}$ is solvable. Since $J$ is solvable, we get by \eqref{quot ideal solvable}.
+\end{enumerate}
+\end{proof}
+\begin{proposition}
+Every Lie algebra $L$ has a unique maximal solvable ideal, containing all other solvable ideals.
+\end{proposition}
+\begin{proof}
+Let $R$ be a solvable ideal, maximal with this property. If $I$ is any solvable ideal, $R+I \supseteq R$ is solvable. Hence from maximality $R+I = R$, and hence $I \subseteq R$.
+\end{proof}
+\begin{remark}
+We obtained that $R$ is the sum of all solvable ideals.
+\end{remark}
+\begin{definition}
+$R$ is called the \stress{solvable radical} of $L$, denoted $\rR = \mrm{Rad}\prs{L}$.
+\end{definition}
+\begin{question}
+We say that if $\quot{L}{I}$ and $I$ are solvable, then $L$ is solvable. IS it true that if $\quot{L}{I}$ and $I$ are nilpotent then $L$ is nilpotent?\\
+The answer is no. Take $L = \set{X = \pmat{1 & 0 \\ 0 & 0}, Y = \pmat{0 & 1 \\ 0 & 0}}$. Then $I = \brs{L,L} \leq L$ is $\mrm{Span}\prs{Y}$. Both $I$ and $\quot{L}{I}$ are abelian, hence nilpotent. However, $L$ is not!
+\end{question}
+\begin{definition}
+A Lie algebra $L$ is called \stress{semi-simple} if its radical vanishes.
+\end{definition}
+\begin{exercise}
+Let $L$ be a Lie algebra. Prove that $\quot{L}{\mrm{Rad}\prs{L}}$ is semi-simple. Namely, $\mrm{Rad}\prs{\quot{L}{\mrm{Rad}\prs{L}}}$.
+\end{exercise}
+\begin{theorem}[Lie's theorem on solvable algebras]
+Let $\FF$ be an algebraically-closed field such that $\mrm{char}\prs{\FF} = 0$.
+Let $L \subseteq \endo\prs{V}$ be a solvable Lie algebra. Let $V$ be a vector space over $F$.
+\begin{enumerate}
+\item There's $v$ non-zero which is a joint eigenvector of all $x \in L$. \label{solvable joint eigenvector}
+\item $L$ stabilises a full flag
+\[0 = V_0 \subseteq V_1 \subseteq V_2 \subseteq \ldots \subseteq V_n = V\text{.}\]
+\item In a basis adaptd to the flag, $e_1, \ldots, e_n$ such that $\mrm{Span}\set{e_1, \ldots, e_i} = V_i$, \emph{all} linear transformations $X \in L$ are represented by upper triangular matrices.
+\end{enumerate}
+\end{theorem}
+\begin{example}
+$\pmat{0 & 1 \\ -1 & 0} \in M_2\prs{\RR}$ has eigenvalues $\pm i$. Take $L = \RR \cdot \pmat{0 & 1 \\ -1 & 0}$, which is abelian and hence solvable. This has no upper-triangulisation because the eigenvalues are in $\RR$.\\
+The conclusion of Lie's theorem doesn't hold for Lie algebras over $\RR$.
+\end{example}
+\begin{proof}
+We prove the theorem by induction on $\dim \prs{L}$. The theorem has a similar conclusion to Engel's theorem and the proof follows similar lines. It suffices to prove \ref{solvable joint eigenvector} as the rest follows by modding out eigenvectors.
+\begin{description}
+\item[Basis:] If $\dim L = 1$, then $L = F\cdot X$ and the theorem holds since every linear transformation is conjugate to an upper-triangular one over an algebraically-closed field.
+\item[Step:] Since $L$ is solvable, $\brs{L,L} \subsetneq L$, but $\quot{L}{\brs{L,L}}$ is abelian, and in an abelian algebra, every sub-space is an ideal. Choose any subspace of codimension $1$ in $\quot{L}{\brs{L,L}}$ and take its pre-image. This is an \emph{ideal} $K$ of $K \leq L$ of codimension $1$.
+By induction, since $K$ is solvable, we have a joint eigenvector $v$ of $K$. For $Y \in K$ denote $\lambda\prs{Y}$ the eigenvalue of $v$ under $Y$. Clearly \[\prs{\alpha Y_1 + \beta Y_2} v = \alpha Y_1 v + \beta Y_2 v = \alpha \lambda\prs{Y_1}v + \beta \lambda\prs{Y_2} v = \lambda\prs{\alpha Y_1 + \beta Y_2}v\] so $\lambda \colon K \to \FF$ is a linear functional.
+Let us define the \stress{$lambda$-characteristic sub-space} $W_{\lambda} \subseteq V$ by
+\[W_{\lambda} = \set{v \in V}{\forall Y \in K \colon Yv = \lambda\prs{Y}v}\]
+This is the sub-space consisting of all joint eigenvectors of $K$ with joint eigenvalue $\lambda$.
+\begin{note}
+If we show that $W_{\lambda}$ is $L$-invariant, the proof is complete, since $L = \FF X + K$ for some $X$, and in particular, $W_{\lambda}$ is $X$-invariant, and $X$ has an eigenvector $u \in W_{\lambda}$ (since $\FF = \bar{\FF}$). So, $u$ is a joint eigenvector of $L$.
+\end{note}
+\begin{lemma}
+$W_{\lambda}$ is $L$-invariant.
+\end{lemma}
+\begin{proof}
+Write $L = K + \FF X_0$ with some $X_0$.
+\begin{enumerate}[label = \Roman*)]
+\item We need to show that for $w \in W_{\lambda}$ and $X \in L$ we have $Xw \in W_{\lambda}$. So we need to show that $Y\prs{Xw} = \lambda\prs{Y} Xw$ for all $Y \in K$, by definition of $W_{\lambda}$.
+Now, $Y\prs{Xw} = XYw - \brs{X,Y}w$. Recalling that $K$ is an ideal in $L$, we have $\brs{X,Y} \in K$ for all $X\in L, Y\in K$. So \begin{align*}
+Y\prs{Xw} &= Xyw - \brs{X,Y}w \\
+&= \lambda\prs{Y} Xw - \lambda\prs{\brs{X,Y}}w
+\end{align*}
+since $w \in W_{\lambda}$ and $\brs{X,Y} \in K$.
+So we have to prove that
+\begin{equation} \label{lie theorem part}
+\forall X \in L \forall Y \in K \colon \lambda\prs{\brs{X,Y}} = 0 \text{.}
+\end{equation}
+for all $X \in L$ and $Y \in K$.
+\item To show \eqref{lie theorem part}, fix $X \in L$ and fix $w \in W$. Consider the sequence \[w, Xw, X^2w, \ldots, X^{n-1}w, X^nw\]
+where $n$ is the least positive integers such that the sequence is linearly dependant.
+So, if we define \[U_i = \mrm{Span}\set{w, Xw, \ldots, X^{i-1}w}\] then $\dim U_i = i$ for $1 \leq i \leq n$. Also $U_n = U_{n+1} =  U_{n+2} = \ldots$.
+\item
+\begin{claim}
+Each $U_i$ for $1 \leq i \leq n$ is invariant under $K$. Namely $Y U_i \subseteq U_i$ for all $Y \in K$.
+\end{claim}
+\begin{proof}
+We prove this claim inductively. First Let's see that $U_1$ is $K$-invariant.
+\begin{enumerate}[label = (\roman*)]
+\item $U_1$ is $K$-invariant for $yw = \lambda\prs{Y} w$ for all $Y \in K$.
+\item $U_2$ is $K$-invariant. Write $U_2 = \FF w + \FF$. We've seen
+\[YXw = \lambda\prs{Y}Xw - \lambda\prs{\brs{X,Y}}w \in \FF Xw + \FF w\text{.}\]
+So, $K$ leaves $U_2$ invariant, but in fact we know more:
+\[YXw \equiv \lambda\prs{Y} Xw \mod{U_1}\]
+since $YXw = \lambda\prs{Y} Xw + cw$. So
+\[YXw - \lambda\prs{Y}Xw \in U_1\text{.}\]
+\item We claim that in general, \begin{equation}\label{star}\forall 1 \leq i \leq n-1 \; \forall Y \in K \colon Y X^i w \equiv \lambda\prs{Y} X^i w \mod{U_i}\text{.}\end{equation}
+To see that, compute again.
+\begin{align*}
+YX^i w &= YX\prs{X^{i-1}w} \\ &= XYX^{i-1}w - \brs{X,Y} X^{i-1} w 
+\end{align*}
+\begin{itemize}
+\item
+By the induction hypothesis, $YX^{i-1}w = \lambda\prs{Y} X^{i-1} + w'$ where $w' \in U_{i-1}$. So \[X\prs{YX^{i-1}w} = \lambda\prs{Y}X^{i} + Xw'\text{.}\]
+But by definition, $X U_{i-1} \subseteq U_i$. Hence
+\[XYX^{i-1} = \lambda\prs{Y}X^i + w''\]
+where $w'' \in U_i$.
+\item The second summand \[\brs{X,Y}X^{i-1}w = \lambda\prs{\brs{X,Y}}X^{i-1}w + w'''\] where $w''' \in U_{i-1}$ by the induction hypothesis.
+This means \[\brs{X,Y} X^{i-1}w \in U_i + U_{i-1} \subseteq U_i\text{.}\]
+\end{itemize}
+The net conclusion is that
+\begin{align*}
+YX^i w = \lambda\prs{Y}X^i w + w''''
+\end{align*}
+with $w'''' \in U_i$.
+So $YX^iw \equiv \lambda\prs{Y}X^i w \mod{U_i}$ for all $1 \leq i \leq n$.
+\end{enumerate}
+\end{proof}
+\item We have proved \eqref{star}. Formulated otherwise is says that in the basis of $U_n = \set{w, Xw, \ldots, X^{n-1}w}$ given by the sequence, the representing matrix of \emph{every} $Y \in K$ is upper triangular (that statement follows immediately from the fact the we proved $KU_i \subseteq U_i$) and in fact, the diagonal has only the entry $\lambda\prs{Y}$.
+So, $\rest{\tr Y}{U_n} = n\lambda\prs{Y}$ for \emph{every} $Y \in K$.
+In particular, this is true for elements $Y \in K$ which are of the form $\brs{X,Y}$ with $Y \in K$.
+So $\rest{\tr \brs{X,Y}}{U_n} = n\lambda\prs{\brs{X,Y}}$. \\
+We expect the trace of $\brs{X,Y}$ to vanish, and that is true here since both $X$ \emph{and} $Y$ preserve $U_n$. The fact that $U_n$ is $X$-invariant is obvious, and we \emph{saw} that $U_n$ is also invariant under \emph{every} $Y \in K$.
+So
+\[\rest{\brs{X,Y}}{U_n} = \brs{\rest{X}{U_n}, \rest{Y}{U_n}}\]
+and it follows that
+\[\rest{\tr\brs{X,Y}}{U_n} = 0 = n\lambda\prs{\brs{X,Y}}\text{.}\]
+Now\footnote{For that we use $\mrm{char}\prs{\FF} = 0$ and the proof wouldn't work otherwise} $\lambda\prs{\brs{X,Y}} = 0$ for all $Y \in K$ and $X \in L$. So we are done.
+\end{enumerate}
+\end{proof}
+\end{description}
+\end{proof}
+\begin{remark}
+For every vector space $V$ over a field $\FF$,%
+\newlecture{November 19}{2018}%
+we can consider the spaces of flags over $V$.
+\end{remark}
+\begin{example}
+Consider the space of all lines in $V$. Namely \[\mrm{Gr}_1\prs{V} \ceq \set{\ell \subseteq V}{\dim \ell = 1}\] (Grasmann 1, also known as the projective space over $V$).
+Similarly we can take
+\[\mrm{Gr}_k = \set{W \subseteq V}{\dim W = k}\] \stress{the Grasmann variety of $k$-vector-spaces in $V$}.
+We can look more generally at any configuration
+\[\mrm{Gr}_{k_1, \ldots, k_m} \ceq \set{\ell_1 \subsetneq \ell_n \subsetneq \ldots \subsetneq \ell_m}{\dim \ell_i = k_i , \ell_i \subseteq V}\text{.}\]
+Preservence of this flag corresponds to an existence of a basis such that the matrices have a certain upper-block-triangular form.
+\end{example}
+\begin{corollary}
+Let $L$ be a solvable algebra over $\FF$, where $\FF =\bar{\FF}$ and $\mrm{char}\FF = 0$. There is a full flag of ideals in $L$, namely
+\[0 \subsetneq L_1 \subsetneq L_2 \subsetneq \ldots \subsetneq L_{n-1} \subsetneq L\]
+where $n = \dim L$.
+\end{corollary}
+\begin{proof}
+Consider $ad \colon L \to \endo\prs{L}$. $\ad\prs{L}$ is a solvable Lie algebra, so it stabilises a full flag by Lie's theorem (2). The corresponding sub-spaces are ideals: they satisfy
+$\ad\prs{L} \prs{L_i} \subseteq L_i$ and $\brs{L,L_i}L_i$, so $L_i \triangleleft L$.
+\end{proof}
+\begin{corollary}
+If $L$ is a solvable Lie algebra (with $\FF$ as above) then the commutator ideal $\brs{L,L}$ is nilpotent.
+\end{corollary}
+\begin{proof}
+Consider again the adjoint representation. We show that every element $X \in \brs{L,L}$ is ad-nilpotent as a linear transformation on $L$.\footnote{It suffices to show it is ad-nilpotent when acting on $\brs{L,L}$.}\\
+So, $\ad\prs{L}$ is a linear Lie algebra, solvable, and has a basis in which all linear transformations in $\ad\prs{L}$ are upper-triangular.
+But, the (usual Lie) commutator of two upper-triangular matrices is a nilpotent matrix (as a strictly upper-triangular matrix). Hence \[\brs{\ad\prs{L},\ad\prs{L}} \subseteq \set{\text{upper triangular matrices with $0$ on the diagonal}}\text{.}\]
+Since we have $\brs{\ad\prs{L},\ad\prs{L}} = \ad\brs{L,L}$, (since ad is a Lie-algebra homomorphism) so every $X \in \brs{L,L}$ is ad-nilpotent.
+\end{proof}
+
+\chapter{Jordan-Chevalley decomposition}
+\section{The Chinese remainder theorem}
+\begin{theorem}[Chinese remainder theorem]
+Let $R$ be a commutative unital ring, and let $I,J$ be two ideals in $R$ such that $I+J = R$. Then, given any $a,b in R$ there exists $X \in R$ such that $X \equiv a\mod{I}$ and $X \equiv b\mod{J}$.
+\end{theorem}
+\begin{proof}
+Consider $\pi \colon R \repi \quot{R}{I}$ the canonical homomorphism.
+Since $R = I+J$ clearly $\pi \colon I \to \quot{R}{J}$ is also surjective. So for all $a \in R$, $\pi \colon I+a \to \quot{R}{J}$ is also surjective. So there is $x \in I+a$ such that $\pi\prs{x} = b+J$. So for any chosen $b \in R$ we have $x$ such that $x \equiv a\mod{I}$ and $x \equiv b \mod{J}$.
+\end{proof}
+\begin{theorem}[Chinese remainder theorem (more general)]
+More generally, let $I_1, \ldots, I_n$ be ideals in $R$ such that $I_i + \cap_{j \neq i} I_j = R$ for any $i \in [n]$. Then, given $a_1, \ldots, a_n$ arbitrary, there is $x \in R$ such that $x \equiv a_i \mod{I_i}$ for all $i \in [n]$.
+\end{theorem}
+\begin{proof}
+By the Chinese remainder theorem\footnote{to which we shall henceforward sometimes refer to as CRT}, for each $i$ we can choose $x_i$ such that $x_i \equiv 1 \mod{I_i}$ and $x_i \equiv 0 \mod{I_j}$ for $j \neq i$.
+Finally $x = \sum_{i=1}^n x_i a_i$ satisfies $x \equiv a_i \mod{I_i}$ for all $i \in [n]$.
+\end{proof}
+\begin{example}
+Look in particular at the polynomial ring $\FF\brs{x}$. That is a Euclidean ring, hence a PID. So, every ideal $I \triangleleft \FF\brs{x}$ is of the form $p \FF\brs{x}$. What does it mean that $I+J = \FF\brs{x}$? It means that if $J = q\FF\brs{x}$, that $p\FF\brs{x} + q\FF\brs{x} = \FF\brs{x}$, so $p$ and $q$ are coprime. I.e. for some $u(x),v(x)$ we have $p(x)u(x) + q(x)v(x) = 1$. \\
+Conversely, if $p,q$ are co-prime polynomials, then there are such $u(x)$ and $v(x)$ such that $p(x)u(x) + q(x)v(x) = 1$. So $p\FF\brs{x} + q\FF\brs{x} = \FF\brs{x}$.
+\end{example}
+\begin{remark}
+If $p_1, \ldots, p_n$ are pairwise co-prime, then
+\[\bigcap_{j\neq i} p_j \FF\brs{x} = \prs{\prod_{j\neq i}p_j}\FF\brs{x}\text{.}\]
+\end{remark}
+\begin{conclusion}
+The Chinese remainder theorem, applied to $\FF\brs{x}$, implies that given pairwise co-prime polynomials $p_1, \ldots, p_n$, and arbitrary $a_1, \ldots, a_n$, there is a polynomial $p$ such that $p \equiv a_i \mod{p_i \FF\brs{x}}$ for all $i \in [n]$.
+\end{conclusion}
+\section{Decomposition of vector spaces}
+\begin{proposition}
+Let $T$ be a linear transformation on a vector space over $\FF$ (arbitrary).
+Let $f_T$ be the characteristic polynomial, and write $f_T = p_1 p_2$ where $p_1,p_2$ are co-prime.
+Then $V$ decomposes to the direct sum of two $T$-invariant subspaces
+$V = V_1 \oplus V_2$, and more precisely $V_1 = \ker p_1\prs{T}$ and $V_2 = \ker p_2\prs{T}$.
+\end{proposition}
+\begin{proof}
+Start by writing $u_1p_1 + u_2p_2 = 1$ for some polynomials $u_i$. Consider the ring homomorphism $\FF\brs{x} \to \FF\brs{T}$ given by $x \mapsto T$ and deduce that \[I = u_1\prs{T}p_1\prs{T} + u_2\prs{T}p_2\prs{T}\text{.}\]
+Writing that again for all $v \in V$, we get
+\begin{equation} \label{jordan-chevalley:linear combination}
+v = u_1\prs{T} p_1\prs{T} v + u_2\prs{T} p_2\prs{T} v \text{.}
+\end{equation}
+\begin{enumerate}[label = (\roman*)]
+\item First, $\ker p_1\prs{T} \cap \ker p_2\prs{T} = 0$, by \eqref{jordan-chevalley:linear combination}.
+\item $\ker p_1\prs{T} + \ker p_2\prs{T} = V$, since $u_1\prs{T} p_1\prs{T}v \in \ker p_2\prs{T}$ and $u_2\prs{T} p_2\prs{T}v \in \ker p_1\prs{T}$ as follows from $f_T = p_1 p_2$ and $f_T\prs{T} = p_1\prs{T} p_2\prs{T} = 0$ by Cayley-Hamilton.
+\end{enumerate}
+So every vector $v \in V$ is a sum of a vector in $\ker p_1 \prs{T}$ and a vector in $\ker p_2 \prs{T}$.
+$v \in \ker p_1\prs{T}$ implies $p_1\prs{T}\prs{Tv} = 0$, so $Tv \in \ker p_1\prs{T}$, and the kernel is an invariant sub-space. Similarly for $\ker p_2\prs{T}$.
+\end{proof}
+\begin{proposition}
+Let $T$ be a linear transformation and assume its different eigenvalues
+$a_1, \ldots, a_n$ are all in $\FF$. Write $f_T\prs{x} = \prod_{i=1}^n \prs{x-a_i}^{m_i}$. Then $V$ decomposes to a direct sum $V = \bigoplus_{i=1}^n V_i$ of $T$-invariant sub-spaces where $V_i = \ker p_i\prs{T}$ and $p_i\prs{T} = \prs{T-a_i}^{m_i}$.
+\end{proposition}
+\begin{proof}
+This follows immediately from the previous proposition, applied to $\prs{x-a_i}^{m_i}$ and $\prod_{j\neq i}\prs{x-a_j}^{m_j}$.
+\end{proof}
+\begin{theorem}[Jordan-Chevalley]
+Let $T$ be a linear transformation over $\FF$ and assume that all of its eigenvalues are in $\FF$. There exist two linear transformations $T_s, T_n$ such that the following hold.
+\begin{enumerate}[label = (\roman*)]
+\item $T = T_s + T_n$
+\item $T_n$ is nilpotent, and $T_s$ is diagonalisable.
+\item $T_s$ and $T_n$ commute.
+\item $T_s$ and $T_n$ commute with $T$ and with any other transformation that commutes with $T$.
+\item $T_s$ and $T_n$ are given as polynomials in $T$ without constant terms.
+\item If $A \subseteq B$ are two sub-spaces and $TB \subseteq A$, then $T_s$ and $T_n$ have the same property. $T_s B, T_n B \subseteq A$.
+\item The first three properties determine the decomposition uniquely.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\begin{enumerate}[label = (\Roman*)]
+\item
+Write $f(x) = \prod_{i=1}^n \prs{x-a_i}^{m_i}$ with $a_i \neq a_j$ for $i \neq j$. Then $V = \bigoplus_{i=1}^n V_i$ with $V_i = \ker p_i\prs{T}$ where $p_i(T) = \prs{T-a_i}^{m_i}$ as we saw. There exists a polynomial $p(x)$ such that $p(x) \equiv a_i \mod{p_i}$ for $i \in [n]$ \emph{and} $p(x) \equiv 0 \mod{x}$. This follows from CRT as follows:
+If some $a_i = 0$, then the condition $p(x) \equiv 0 \mod{x}$ is satisfied, and otherwise $x$ is co-prime to each $p_i$, so that we can solve and find $p(x)$ as stated.
+\item Define $q(x) = x - p(x)$, so $p(x) + q(x) = x$, so $p(T) + q(T) = T$. Define $T_s = p(T)$ and $T_n = q(T)$. Clearly $T_s + T_n = T$, $T_s + T_n$ commute with $T$ and with any other transformation that commute with $T$. In addition, $p,q$ have no constant terms, by construction.
+\item We now restrict $T_s$ and $T_n$ to $V_i$, which is invariant under $T$, hence invariant under $p(T)$ and $q(T)$. Now $p\prs{x} \equiv a_i \mod{p_i}$. That is $p(x) - a_i = u_i\prs{x} \prs{x - a_i}^{m_i}$ for some polynomial $u_i\prs{x}$. Here $p_i\prs{x} = \prs{x-a_i}^{m_i}$.
+But, $V_i = \ker p_i\prs{T} = \ker \prs{T - a_i}^{m_i}$, by definition. So obviously, for $v_i \in V_i$ we have \[\prs{p\prs{T} - a_i}v_i = u_i\prs{T}p_i\prs{T}v_i = 0\text{.}\]
+So $p(T)$ acts as the scalar $a_i$ on $V_i$! So $T_s$ is a diagonalisable transformation with the same eigenvalues as $T$, namely $a_1, \ldots, a_n$, each obtained $\dim V_i$ times.%
+\footnote{{The characteristic polynomial of $p(T)$ restricted to $V_i$ is $p_i\prs{x}$.
+This characteristic polynomial is co-prime to the characteristic polynomial of $p(T)$ on $V_j$. So, $f_{p_i\prs{T}} \mid \prs{x-a_i}^{m_i}$, but the product of all these (partial) characteristic polynomials (on the invariant subspaces $V_i$) is $f_{p(T)}$. This implies that $\dim V_i = m_i$.}}%
+We claim that the restriction of $q(T) = T_n$ to each $V_i$ is nilpotent! Indeed, if $v_i \in V_i$, then \[q(T)v_i = T_n v_i = \prs{T - p(T)}v_i = Tv - a_i v_i = \prs{T - a_i}v_i \text{.}\]
+Since $v_i \in \ker p_i\prs{T}$, it follows that \[T_n^{m_i} v_i = \prs{T - a_i}^{m_i}v_i = 0\text{.}\]
+So, $T_n$ is nilpotent in each $V_i$, hence nilpotent.\\
+So, $T = T_s + T_n$ where $T_s$ is diagonalisable, $T_n$ is nilpotent, and they commute with each other and with every transformation commuting with $T$, and are given by polynomials in $T$ without constant terms.\\
+\item \emph{Action on sub-spaces:} If $A \subseteq B$ and $TB \subseteq A$, then $T^2 B \subseteq TA \subseteq TB \subseteq A$, so it follows that any polynomial in $T$ without constant terms satisfies $f(T)B \subseteq A$.\\
+\item \emph{Uniqueness:} Suppose that $T = Q_s + Q_n$ so that $Q_s$ is diagonalisable, $Q_n$ is nilpotent, and $Q_s = Q_n = Q_n = Q_s$. We show $Q_s = T_s$ and $Q_n = T_n$. But $T = T_s + T_n = Q_s + Q_n$. The fact that $Q_s, Q_n$ commute implies that they commute with $T = Q_s + Q_n$. Hence, $T_s$ and $T_n$ commute with $Q_s$ and $Q_n$, since they commute with every transformations commuting with $T$.\footnote{We constructed $T_n$ and $T_s$, and they satisfy all the properties, $Q_n$ and $Q_s$ are currently more general.}
+Consider $T_s - Q_s = Q_n - T_n$.
+$T_n$ commutes with $Q_n$ and the sum of two \emph{commuting} nilpotent transformations is nilpotent by the binomial theorem.
+We now claim that $T_s - Q_s$ is diagonalisable, and then, since all of its eigenvalues are zero (as a nilpotent transformation) it must be the zero transformation, so $T_s = Q_s$ and $T_n = Q_n$.
+Indeed, $T_s$ and $Q_s$ are commuting diagonalisable transformations, so they have a common diagonalisation (when all the eigenvalues are in the field, because of diagonalisability). So, their sum or difference is also diagonalisable.
+\end{enumerate}
+\end{proof}
+\begin{exercise}
+Let $\Ff \subset \gg\ll\prs{V}$ be any set of commuting diagonalisable matrices. Then there is a basis of common eigenvectors to all transformations in $F$. One can use induction on the dimension.
+\end{exercise}
+\begin{remark}
+Write $f_T\prs{x} = \prod_{i=1}^n\prs{x- a_i}^{m_i} = \prod_{i=1}^n p_i\prs{x}$.
+$\rest{T}{V_i}$ has a characteristic polynomial $\prs{x-a_i}^{m_i} = p_i\prs{x}$. Indeed, $V_i = \ker p_i\prs{T}$ by definition.
+So, $\prs{T - a_i}^{m_i} = p_i\prs{T}$ acts as $0$ on $V_i$.
+So the characteristic polynomial of $\rest{T}{V_i}$ has only $a_i$ as a root. So it is $\prs{x-a_i}^{k_i}$. But, this characteristic polynomial is co-prime to the characteristic polynomial of $T$ on $V_j$ when $j \neq i$. The product of all these partial characteristic polynomials on $V_i$ is simply $f_T$.
+So, $m_i = k_i$ and the characteristic polynomial of $\rest{T}{V_i}$ is $\prs{x-a_i}^{m_i} = p_i\prs{x}$.\\
+Now, $p\prs{T}$ leaves $V_i$ invariant and acts on this $m_i$-dimensional space as a scalar. So, it has characteristic polynomial $\prs{x-a_i}^{m_i}$.
+\end{remark}
+\begin{remark}
+$f_{T_s}(x) = f_T(x)$, but $m_{T_s}(x) = \prod_{i=1}^n \prs{x-\lambda_i}$ where $\lambda_1,\ldots,\lambda_n$ are the distinct eigenvalues of $T$.
+\end{remark}
+\begin{definition}
+A linear transformation is called \stress{semi-simple} if all the roots of its minimal polynomial have multiplicity $1$.
+\end{definition}
+\begin{fact}
+If the roots of $f_{T}(x)$ are in $\FF$, then $T$ is semi-simple if and only if it's diagonalisable.
+\end{fact}
+\begin{proposition}
+Let $T \colon V \to V$ be linear.
+\begin{enumerate}
+\item If $S$ is diagonalisable, then so is $\ad S \colon \endo V \to \endo V$.
+\item If $S$ is nilpotent, then $\ad S$ is nilpotent on $\endo V$.
+\item If $T = T_s + T_n$ is a Jordan-Chevalley decomposition for $T$, then $\ad T = \ad T_s + \ad T_n$ is the Jordan-Chevalley decomposition of $\ad T$. 
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+\begin{enumerate}
+\item
+Let $T$ be diagonalisable over $\FF$ with eigenvectors $v_1, \ldots, v_n$ and eigenvalues $\lambda_1, \ldots, \lambda_n$.
+\begin{comment}
+To show that it is enough to establish that $\ad D$ is diagonalisable for $D$ diagonal, write $P T P^{-1} = D$ for some $P$.
+If $\ad D$ is diagonalisable, so is $\ad \prs{PTP^{-1}}$. But, $\ad\prs{PTP^{-1}}$ is conjugate to $\ad T$ and in fact, $\ad\prs{PTP^{-1}} = J_P\ad\prs{T}J_P^{-1}$ \emph{where we view $P$ as a linear transformation from $\endo V$ to $\endo V$} via $A \mapsto PAP^{-1} \eqqcolon J_P$.
+\end{comment}
+\\
+We first show that if $D = \pmat{\lambda_1 & & \\ & \ddots & \\ & & \lambda_n}$ is diagonal, then $\ad D$ is diagonalisable on $M_n\prs{\FF}$.
+In fact, let $\aa$ be the algebra of diagonal matrices, and let $E_{i,j}$ be the matrices where $\prs{E_{i,j}}_{k,\ell} = \delta_{i,k}\delta_{j,\ell}$.
+Then $\aa \subseteq \ker \ad D$ since $\aa$ is a commutative Lie algebra, and $D \in \aa$. Each $E_{i,j}$ is an eigenvector of $\ad D$ and $\ad D\prs{E_{i,j}} = DE_{i,j} - E_{i,j}D =  \prs{\lambda_i - \lambda_j}E_{i,j}$.
+So, $E_{i,i}$ and $E_{i,j}$ form a basis of eigenvectors of $\ad D$.\footnote{If the eigenvalues are distinct, we obtain that the kernel is generated by the $E_{i,i}$.}\\
+Let $T$ be now a general linear map.
+Write $D = PTP^{-1}$ and then $\ad \prs{PTP^{-1}} E_{i,j} = \prs{\lambda_i - \lambda_j}E_{i,j}$. We write $T = P^{-1}DP$ and so 
+\begin{align*}
+\ad T \prs{P^{-1}E_{i,j}P} &= T P^{-1}E_{i,j}P - P^{-1}E_{i,j}PT \\&= P^{-1}DE_{i,j} P - P^{-1} E_{i,j} D P \\&= P^{-1} \prs{DE_{i,j} - E_{i,j}}P \\&= \prs{\lambda_i - \lambda_j} P^{-1} E_{i,j}P
+\end{align*}
+
+therefore $P^{-1} E_{i,j} P$ is an eigenvector of $\ad T$ with eigenvalue $\lambda_i - \lambda_j$.
+\item Consider $\ad S \prs{X} = SX - XS = \lambda_S(X) - \rho_S(X)$ where $\lambda_S(X) = SX$ and $\rho_S(X) = XS$ and $\lambda_S,\rho_S$ are two \emph{commuting} nilpotent transformations on $\endo V$ and so $\lambda_S - \rho_S$ is also nilpotent by the binomial theorem.\\
+\item
+By our characterisation, $\ad T_s$ is diagonalisable, and $T_n$ is nilpotent. So, $\ad \brs{T_s, T_n} = 0 = \brs{\ad T_s, \ad T_n}$. So $\ad T_s, \ad T_n$ commute, so they are the Jordan-Chevalley decomposition.
+\end{enumerate}
+\end{proof}
+
+\chapter{Cartan's criterion for semi-simplicity}
+\section{Preliminary results}
+\begin{proposition}
+Let $U\subseteq W \subseteq \endo V$ be linear subspaces.
+Define \[M = \set{X \in \endo V}{\brs{X,W} \subseteq U} = \set{X \in \endo V}{\ad X\prs{W} \subseteq U}\text{.}\]
+Assume that $\mrm{char}\FF = 0$ and $\FF = \bar{\FF}$. \\
+Let $X \in M$, if $\tr XY = 0$ for all $Y \in M$ then $X$ is nilpotent.
+\end{proposition}
+\begin{proof}
+$X = X_s + X_n$, so we show that $X_s = 0$. Let $\lambda_1, \ldots, \lambda_n$ be the eigenvalues of $X_s$. Consider the $\QQ$-vector space defined by the linear span of the eigenvalues.
+\begin{align*}
+E \ceq \mrm{span}_{\QQ}\set{\lambda_1, \ldots, \lambda_n}
+\end{align*}
+Then $\dim_{\QQ}E < \infty$.
+We want to show that $\dim_{\QQ}E = 0$ and then $\lambda_i = 0$ for all $i$, and $T_s = 0$.\\
+To show that $E=0$, it is enough to show that $E^* = \hom_{\QQ}\prs{E, \QQ} = 0$.
+Let $f \colon E \to \QQ$ be a $\QQ$-linear functional, we want to show that $f\prs{\lambda_i} = 0$ for all $i \in [n]$.\\
+To do that, let $Y$ be the linear transformation such that in the basis $B$ of eigenvectors of $X_s$, it (Y) is with values $f\prs{\lambda_i}$ on the diagonal. I.e. $Yv_i = f\prs{\lambda_i}v_i$ for all $i\in[n]$.
+So, the eigenvalues of $\ad Y$ are $f\prs{\lambda_i} - f\prs{\lambda_j}$ for $i,j \in [n]$ as we saw.
+The eigenvalues of $\ad X_s$ are $\lambda_i - \lambda_j$ and there exists a polynomial $p$ with no constant term such that $p\prs{\lambda_i - \lambda_j} = f\prs{\lambda_i} - f\prs{\lambda_j}$.\footnote{via Lagrange's polynomial of interpolation}
+Note that because $f$ is linear, where $\lambda_i - \lambda_j = \lambda_k - \lambda_{\ell}$ then $f\prs{\lambda_i} - f\prs{\lambda_j} = f\prs{\lambda_k} - f\prs{\lambda_{\ell}}$.
+We can arrange $p$ to have no constant term. If $\lambda_i - \lambda_j=0$ then $f\prs{\lambda_i} - f\prs{\lambda_j} = 0$ so $p(0) = 0$. Otherwise, $0$ is distinct from $\lambda_i - \lambda_j$ for $i\neq j$. So we can add it in. Given $p$, consider $p\prs{\ad X_s}$.
+It is diagonalisable since $\ad X_s$ is, and its eigenvalues coincide with those of $\ad Y$ with the same multiplicities.
+So, $p\prs{\ad X_s} = \ad Y$.
+Now, $\ad X_s$ is a polynomial \emph{without} constant term in $\ad X$\footnote{since $\ad X_s$ is the semi-simple part of $\ad X$, and the semi-simple part is a polynomial in the transformation}.\\
+We conclude that $\ad Y$ is a polynomial without constant term in $\ad X$. Recall, that our assumptions are that \[M = \set{X \in \endo V}{\brs{X,W} \subseteq U} = \set{X \in \endo V}{\ad X\prs{W} \subseteq U}\text{.}\]
+But, we chose $X \in M$, so we conclude that $Y$ also satisfies that $\ad Y \prs{W} \subseteq U$\footnote{as a polynomial without constant term in $\ad X$, which has this property}. So $Y \in M$.
+Our basic assumption was that $\tr XY = 0$ for all $Y \in M$.\\
+We claim that $\tr XY = \sum_{i \in [n]} \lambda_i f\prs{\lambda_i}$. Let's compute in the basis $B$ of eigenvectors of $X_s$ (\emph{and also $Y$}).
+\begin{align*}
+XYv_i &= f\prs{\lambda_i} Xv_i = f\prs{\lambda_i} \prs{X_s + X_n}v_i = \lambda_i f\prs{\lambda_i}v_i + f\prs{\lambda_i} X_b v_i\text{.}
+\end{align*}
+$X_n$ is nilpotent, and so the claim follows.\\
+So we conclude that $\sum_{i=1}^n \lambda_i f\prs{\lambda_i} = \tr XY = 0$.
+Now, $f\prs{\lambda_i}$ are rational numbers because $f \colon E \to \QQ$ is a $\QQ$-linear functional we obtain
+\begin{align*}
+f\prs{\sum_{i\in[n]} \lambda_i f\prs{\lambda_i}} &= \sum_{i\in[n]} f\prs{\lambda_i f\prs{\lambda_i}} \\&= \sum_{i\in[n]} f\prs{\lambda_i}f\prs{\lambda_i} \\&= \sum_{i\in[n]} f\prs{\lambda_i}^2 \\&= 0\text{.}
+\end{align*}
+Finally $f\prs{\lambda_i} = 0$ for all $i \in [n]$. Then $f = 0$ so $E^* = \set{0}$ so $E = \set{0}$ so $X_s = 0$ so $X = X_n$ is nilpotent.
+\end{proof}
+\begin{theorem}[Lagrange's polynomial of interpolation]
+Let $a_1, \ldots, a_m$ be distinct in any field $\FF$ and let $b_1, \ldots, b_m \in \FF$. There is a unique polynomial $p(x) \in \FF\brs{x}$ such that $p\prs{a_i} = b_i$ for all $i \in [m]$. $p$ is unique among polynomials of degree at most $m-1$.
+\end{theorem}
+\begin{proposition}
+Let $L \subseteq \endo V$ be a Lie algebra. Assume $\FF = \bar{\FF}$ and $\mrm{char}\FF = 0$. If $\tr XY = 0$ for every $X \in \brs{L,L}$ and every $Y \in L$ then $L$ is a solvable Lie algebra.
+\end{proposition}
+\begin{proof}
+We use the previous proposition. First, for all $Y \in L$, $\ad\prs{Y}L \subseteq \brs{L,L}$ by definition. Consider $\brs{L,L} \subseteq \endo V$, $U = \brs{L,L}$, $W = L$ and let $M = \set{Z \in \endo V}{\brs{Z,L} \subseteq \brs{L,L}}$. Then $L \subseteq M$.
+We assume $\tr XY = 0$ for all $Y \in L$, but to use the previous proposition, we need to show that $\tr XZ = 0$ for all $Z \in M$. If we show that, then by the previous proposition, $X$ is nilpotent, so $\brs{L,L}$ consists only of nilpotent linear transformations, and by the result preceding Engel's theorem\footnote{A Lie algebra of nilpotent transformations is nilpotent}, $\brs{L,L}$ is nilpotent and so $L$ is solvable.\\
+To show that $\tr XZ = 0$ write $X = \brs{U,V}$ since $X \in \brs{L,L}$. Now,
+\begin{align*}
+\tr\prs{\brs{U,V},Z} &= \tr \prs{\prs{UV - VU}Z} \\&= \tr \prs{UVZ - VUZ} \\&= \tr\prs{UVZ} - \tr\prs{V\prs{UZ}} \\&= \tr \prs{UVZ} - \tr\prs{UZV} \\
+&= \tr\prs{U\prs{VZ - ZV}} \\
+&= \tr\prs{U \brs{V,Z}}
+\end{align*}
+and $Z \in M$ so $\brs{V,Z} = \brs{Z,V} \in \brs{L,L}$.
+Also, $U \in L$, hence
+\[\tr\prs{U \brs{V,Z}} = \ldots = \tr \prs{U \brs{V,Z}} = \tr \prs{\brs{V,Z} U} = 0\]
+by assumption.
+So, every $X \in \brs{L,L}$ is nilpotent. Then $\brs{L,L}$ is nilpotent, and then $L$ is solvable.
+\end{proof}
+\begin{remark}
+We just saw that for a linear Lie algebra, $L \subseteq \endo V$, $\tr\prs{\brs{L,L}L} = \set{0}$ implies $L$ is solvable.
+\end{remark}
+
+\section{Cartan's criterion}
+\begin{theorem}
+Let $L$ be any Lie algebra over a field $\FF$ as above. If $\tr \ad x \ad y = 0$ for all $x\in \brs{L,L}$ and $y \in L$, then $L$ is solvable. 
+\end{theorem}
+\begin{proof}
+Consider $\ad L \subseteq \endo L$ and $\ad \brs{L,L} = \brs{\ad L, \ad L}$, and so $\ad L$ is solvable by the proposition for the linear case. So $\ad\prs{L} = \quot{L}{\ker \ad} = \quot{L}{Z\prs{L}}$ is solvable, and so $L$ is solvable.\footnote{As an exercise, if $\quot{L}{ZL)}$ is solvable, so is $L$.} 
+\end{proof}
+
+\chapter{Killing form}
+
+Let $L$ be a Lie algebra and define a symmetric bilinear form
+\[B_L\prs{X,Y} \ceq \tr \prs{\ad X \ad Y}\text{.}\]
+This is called the \stress{Killing form}.
+
+\begin{proposition}[invariance of the Killing form]
+\[B\prs{\brs{x,y},z} = B\prs{x,\brs{y,z}}\]
+\end{proposition}
+\begin{proof}
+For any three linear transformations $R,T,S$ ($\ad X$, $\ad Y$, $\ad Z$, respectively) we shall compute $\tr \prs{\brs{T,S} R}$ and $\tr \prs{T \brs{S,R}}$ and show equality.
+\begin{align*}
+\tr \prs{\brs{T,S} R} &= \tr \prs{\prs{TS - ST}R} \\&=
+\tr \prs{TSR} - \tr \prs{RST} \\&=
+\tr\prs{TSR} - \tr\prs{TRS} \\&=
+\tr\prs{T \prs{SR -RS}} = \tr\prs{T \brs{S,R}}
+\end{align*}
+hence
+there's equality.
+\end{proof}
+\begin{proposition}[more invariance of the Killing form]
+\[B\prs{\ad Y\prs{X}, Z} + B\prs{X \ad Y\prs{Z}} = 0\]
+\end{proposition}
+\begin{proof}
+$B\prs{\brs{X,Y},Z} = B\prs{-\ad Y\prs{X} , Z}$ and use the previous proposition.
+\end{proof}
+
+More generally, let $\pi \colon L \to \endo V$ be \emph{any} linear representation of $L$ (namely, a Lie-algebra homomorphism into $\endo V$).
+Define \[B_{\pi}\prs{x,y} = \tr \prs{\pi\prs{x}\pi\prs{y}} \text{.}\]
+The proves of the above propositions stay the same, therefore
+\[B_{\pi} \prs{\brs{x,y},z} = B_{\pi}\prs{x, \brs{y,z}} \text{.}\]
+$B_{\pi}$ is a symmetric bilinear form satisfying the symmetry condition.
 \backmatter
 \end{document}
