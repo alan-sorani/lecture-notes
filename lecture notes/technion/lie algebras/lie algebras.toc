@@ -18,3 +18,5 @@
 \contentsline {section}{\numberline {4.1}Preliminary results}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}Cartan's criterion}{22}{section.4.2}
 \contentsline {chapter}{\numberline {5}Killing form}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Some properties of the Killing form}{23}{section.5.1}
+\contentsline {chapter}{\numberline {6}Derivations of simple algebras}{27}{chapter.6}

@@ -5,13 +5,13 @@
 \usepackage{stylish}
 \usepackage{lipsum}
 
-\title{סיכומי הרצאות ותרגולים במבוא לתורת המספרים \\ \large{חורף 2018, הטכניון}}
-\author{הרצאות ותרגולים של פרופסור משה ברוך \\ \large סוכמו על ידי אלעד צורני}
+\title{סיכומי הרצאות במבוא לתורת המספרים \\ \large{חורף 2018, הטכניון}}
+\author{הרצאותיו של פרופסור משה ברוך \\ \large סוכמו על ידי אלעד צורני}
 \date{\today}
 
 \begin{document}
 \frontmatter
-\frontpage{lehmer_sieve}{0.8\textwidth}{נפת להמר.}
+\frontpage{lehmer_sieve}{0.7\textwidth}{נפת להמר.}
 \tableofcontents
 \countlectures
 \counttutorials
@@ -1404,6 +1404,1773 @@ $N\prs{z} = a^2 - ab + b^2 = 1$
 $-1-\omega = \omega^2$
 לכן ההפיכים הם
 $\set{\pm 1, \pm \omega, \pm \omega^2}$.
+
+\begin{corollary}[האקסיומה השנייה של הנורמה בחוג אוקלידי]
+אם
+$z_1, z_2, z_3 \in \ZZ\brs{\omega}$
+שונים מאפס וגם
+$z_3 = z_1 z_2$
+כאשר
+$z_1, z_2$
+אינם הפיכים, אז
+$N\prs{z_1} < N\prs{z_3}$
+ו־%
+$N\prs{z_2} < N\prs{z_3}$.
+\end{corollary}
+\begin{proposition}
+יהי
+$p \in \NN$
+ראשוני. קיימים
+$a,b \in \ZZ$
+כך ש־%
+$a^2 - ab + b^2 = p$
+אם ורק אם
+$p = p+0\omega$
+אינו ראשוני ב־%
+$\ZZ\brs{\omega}$.
+\end{proposition}
+\begin{remark}
+הטענה מקבילה לטענה המתאימה ב־%
+$\ZZ\brs{i}$.
+ניתן לכתוב
+$p = a^2 + b^2$
+אם ורק אם
+$p$
+אינו ראשוני ב־%
+$\ZZ\brs{i}$.\\
+ב־%
+$\ZZ\brs{2\sqrt{i}}$
+הטענה המקבילה תתקיים עבור
+$p = a^2 + 2b^2$
+עם הוכחה אנלוגית.
+\end{remark}
+\begin{proof}
+\begin{description}
+\item[כיוון ראשון:]
+נניח שקיימים
+$a,b \in \ZZ$
+עבורם
+$a^2 - ab + b^2 = p$.
+אז
+$p=\prs{a+b\omega}\prs{a-b-b\omega}$
+פירוק של
+$p$
+ב־%
+$\ZZ\brs{\omega}$
+כי
+$a+b\omega$
+ו־%
+$a-b-b\omega$
+אינם הפיכים%
+\footnote{כי לכל
+$a,b$
+כך שאחד מהאיברים הנ"ל שווה לאחד ההפיכים בחוג, נקבל כי
+$a^2 - ab + b^2$
+אינו ראשוני ב־%
+$\ZZ$},
+לכן
+$p$
+איננו ראשוני ב־%
+$\ZZ\brs{\omega}$.
+\item[כיוון שני:]
+נניח כי
+$p = p+0\omega$
+אינו ראשוני ב־%
+$\ZZ\brs{\omega}$.
+אז קיימים
+$z_1, z_2 \in \ZZ\brs{\omega}$
+שאינם הפיכים, כך שמתקיים
+$p = z_1 z_2$.
+אז
+$p^2 = N\prs{p} = N\prs{z_1} N\prs{n_2}$
+לכן
+$N\prs{z_1} = N\prs{z_2} = p$.
+אז אם
+$z_1 = a+b\omega$
+נקבל
+$N\prs{z_1} = a^2 - ab + b^2 = p$.
+\end{description}
+\end{proof}
+\begin{theorem}[\textenglish{descent}]
+יהי
+$p \in \NN$
+ראשוני. אם קיימים שלמים
+$a,b,c \neq 0$
+עבורם
+$a^2 - ab + b^2 = cp$
+כאשר
+$\prs{c,p} = 1$
+אז קיימים שלמים
+$x,y\in \ZZ$
+עבורם
+$x^2 - xy + y^2 = p$.
+\end{theorem}
+\begin{proof}
+נניח שקיימים
+$a,b,c \in \ZZ$
+כך שמתקיים
+$a^2 - ab + b^2$
+כאשר
+$\prs{c,p} = 1$.
+אז
+$\prs{a+b\omega}\prs{a-b-b\omega} = cp$.
+נניח בשלילה כי
+$p + 0\omega$
+ראשוני ב־%
+$\ZZ\brs{\omega}$.
+אז
+$p \mid a+b\omega$
+או
+$p \mid a-b-b\omega$.
+נניח כי
+$p \mid a-b-b\omega$
+ואז קיימים
+$c,d\in\ZZ$
+עבורם
+\begin{align*}
+p\prs{c+d\omega} &= a-b-b\omega \\
+\text{.} pc + pd\omega &= a-b-b\omega
+\end{align*}
+מטענה קודמת, יש שיוויון בין החלקים החופשיים ובין המקדמים של
+$\omega$.
+לכן
+\begin{align*}
+pc &= a-b \\
+pd &= -b
+\end{align*}
+ולכן
+$p\mid a-b, b$
+כלומר
+$p \mid a$.
+לכן
+$p^2 \mid a^2 - ab + b^2 = cp$
+כאשר זאת סתירה כי
+$\prs{c,p} = 1$.
+\end{proof}
+
+\begin{corollary}
+יהי
+$o \in \NN$
+ראשוני. קיימים
+$x,y\in \ZZ$
+עבורם
+$x^2 - xy + y^2$,
+אם ורק אם יש פתרון למשוואה
+$a^2 - ab + b^2 \equiv 0 \mod{p}$
+עם
+$a,b \not\equiv 0 \mod{p}$.
+\end{corollary}
+\begin{remark}
+יש מסקנה דומה (עם הוכחה שקולה) עבור
+$p = x^2 + 3y^2$
+אם ורק אם יש פתרון
+$x^2 + 3y^2 \equiv 0 \mod{p}$
+עבור
+$x,y \not\equiv 0 \mod{p}$.
+\end{remark}
+\section{קונגרואנציות ב־%
+$\ZZ$}
+אם רוצים לפתור את אחת המשוואות הבאות%
+\newlecture{13 בנובמבר}%
+{2018}
+\begin{align*}
+x^2 + y^2 &\equiv 0 \mod{p} \\
+x^2 + 2y^2 &\equiv 0 \mod{p} \\
+x^2 + 3y^12 &\equiv 0 \mod{p} \\
+x^2 -xy + y^2 &\equiv 0 \mod{p}
+\end{align*}
+רוצים להסתכל על המשוואות בקונגרואנציה.
+
+\begin{definition}
+יהיו
+$a,b,m\in \ZZ$
+עם
+$m \neq 0$.
+נאמר כי
+$a \equiv b \mod{m}$
+אם
+$m \mid b-a$.
+
+\end{definition}
+
+\begin{proposition}
+$\equiv$
+הוא יחס שקילות.
+\end{proposition}
+\begin{notation}
+אם
+$a \in \ZZ$
+אז
+$\bar{a}$
+מחלקת השקילות של
+$a$.
+מתקיים
+$\bar{a} = a+\ZZ m$.
+\end{notation}
+\begin{proposition}
+יש בדיוק
+$m$
+מחלקות שקילות, והן
+$\bar{0},\bar{1}, \ldots, \overline{m-1}$.
+\end{proposition}
+\begin{notation}
+אוסף מחלקות השקילות יסומן
+$\quot{\ZZ}{m\ZZ}$.
+\end{notation}
+\begin{remark}
+$\quot{\ZZ}{m\ZZ}$
+הוא חוג שנקרא חוג השאריות מוד
+$m$
+ביחס לפעולות חיבור וכפל המוגדרות על ידי
+\begin{align*}
+\bar{a} + \bar{b} &\ceq \overline{a+b} \\
+\text{.} \bar{a} \cdot \bar{b} &\ceq \overline{a\cdot b}
+\end{align*}
+\end{remark}
+\begin{proposition}
+$\quot{\ZZ}{m\ZZ}$
+שדה ם ורק אם
+$m$
+ראשוני.
+\end{proposition}
+\begin{remark}
+אם
+$x \in \ZZ$
+ופותר את המשוואה
+$ax \equiv b \mod{m}$
+אז כל איבר ב־%
+$\bar{x}$
+הוא פתרון.
+ההוכחה ישירה על ידי הצבה. כלומר, אנחנו מחפשים מחלקות שקילות שפותרות את המשוואה.
+באופן דומה, אם נחליף את
+$a$
+באיבר
+$a_1 \in \bar{a}$
+נקבל את אותם הפתרונות למשוואה. כנ"ל עבור
+$b$.
+כלומר, אנו מחפשים פתרונות ב־%
+$\quot{\ZZ}{m\ZZ}$
+למשוואה
+$\bar{a}x = \bar{b}$.
+זה נכון לכל משוואה בקונגרואנציה.
+\end{remark}
+
+\subsection{המשוואה
+$ax \equiv b \mod{m}$}
+\begin{example}
+נסתכל על המשוואה
+$6x \equiv 9 \mod{15}$.\newlecture{14 בנובמבר}%
+{2018}
+נניח ש־%
+$m > 0$
+ונניח ש־%
+$a,b \in \ZZ$
+ו־%
+$a \neq 0$.
+נסמן ב־%
+$0 < d = \prs{a,m}$
+ויהא
+$a' = \frac{a}{d}$
+ו־%
+$0 < m' = \frac{m}{d}$.
+\end{example}
+\begin{proposition}
+למשוואה
+$ax \equiv b \mod{m}$
+יש פתרונות אם ורק אם
+$d \mid b$. \\
+אם
+$d \mid b$
+יש בדיוק
+$d$
+פתרונות.\\
+אם
+$x_0$
+הוא פתרון, אז הפתרונות האחרים הם
+$x_0 + m', x_0 + 2m', \ldots, x_0 + \prs{d-1}m'$.
+\end{proposition}
+\begin{proof}
+\begin{description}
+\item[כיוון ראשון:]
+נניח שיש פתרונות ויהי
+$x_0 \in \ZZ$
+פתרון.
+אז
+$ax_0 \equiv b \mod{m}$
+ולכן קיים
+$y_0 \in \ZZ$
+עבורו
+$ax_0 - b = my_0$.
+אז
+$ax_0 -my_0 = b$.
+נתון
+$d \mid m,a$
+לכן
+$d \mid b$.
+\item[כיוון שני:]
+נניח כי
+$d \mid b$.
+קיימים
+$x_0',y_0' \in \ZZ$
+כך שמתקיים
+$ax_0' - my_0' = d$.
+יהי
+$c = \frac{b}{d}$
+ואז
+$c\cdot d = b$.
+לכן
+$ax_0' - my_0'c = dc$.
+יהי
+$x_0 = x_0'c$
+ואז
+$ax_0 - my_0'c = b$
+ומתקיים
+$ax_0 \equiv b\mod{m}$
+כנדרש.
+\end{description}
+\end{proof}
+\begin{exercise}
+כל שני פתרונות נבדלים בכפולה של
+$m'$.
+\end{exercise}
+
+\begin{example}
+נחזור לדוגמה מלמעלה,
+$6x \equiv 9 \mod{15}$.
+מתקיים
+$\prs{6,15} = 3 \eqqcolon d$.
+כאן
+$b=9$
+ומתקיים
+$3 \mid 9$
+כלומר
+$d \mid b$
+לכן מהטענה יש פתרונות.
+אנו יודעים שיש
+$3$
+פתרונות מודולו
+$15$.
+$m' = \frac{m}{d} = 5$
+לכן
+$x_0 = 4, x_1 = 9, x_2 = 14$
+הם כל הפתרונות.
+\end{example}
+
+\begin{corollary}
+אם
+$a,m$
+זרים, יש בדיוק פתרון אחד למשוואה
+$ax \equiv b\mod{m}$.
+אם
+$m=p$
+ראשוני ו־%
+$a \equiv 0 \mod{p}$,
+למשוואה
+$ax \equiv b\mod{p}$
+יש פתרון יחיד.
+\end{corollary}
+
+\subsection{הפיכים ב־%
+$\quot{\ZZ}{m\ZZ}$}
+$a \in \quot{\ZZ}{m\ZZ}$
+הוא הפיך ב־%
+$\quot{\ZZ}{m\ZZ}$
+אם ורק אם יש
+$b \in \quot{\ZZ}{m\ZZ}$
+כך שמתקיים
+$ab = 1$,
+כלומר יש פתרון למשוואה
+$ax \equiv 1 \mod{m}$.
+לפי הטענה, למשוואה יש פתרון אם ורק אם
+$d = \prs{a,m}$
+מחלק את
+$1$,
+כלומר
+$d=1$,
+ולכן קיבלנו ש־%
+$\bar{a}$
+הפיך.
+לכן
+$\prs{a,m} = 1$.
+לכן, יש לנו בדיוק
+$\phi\prs{m}$
+הפיכים ב־%
+$\quot{\ZZ}{m\ZZ}$,
+כאשר
+$\phi\prs{m}$
+מספר השלמים הזרים ל־%
+$m$
+בין
+$1$
+ל־%
+$m-1$.
+
+\begin{example}
+ב־%
+$\quot{\ZZ}{12\ZZ}$
+ההפיכים הם
+$\set{1,5,7,11}$.
+\end{example}
+\begin{definition}
+יהי
+$R$
+חוג עם יחידה ונסמן ב־%
+$R^*$
+את חבורת ההפיכים. זו חבורה לגבי כפל.
+\end{definition}
+
+\begin{example}
+$\#\prs{\quot{\ZZ}{12\ZZ}}^* = 4$.
+\end{example}
+\begin{theorem}[\textenglish{Euler}]
+אם
+$\prs{a,m} = 1$
+אז
+$a^{\phi\prs{m}} \equiv 1 \mod{m}$.
+\end{theorem}
+\begin{theorem}[פרמה הקטן]
+אם
+$p$
+ראשוני וגם
+$p \nmid a$
+אז
+$a^{p-1} \equiv 1\mod{p}$.
+\end{theorem}
+
+נרצה להבין את
+$\prs{\quot{\ZZ}{m\ZZ}}^*$.
+האם חבורות אלו ציקליות? אם לא, מה המבנה שלהן כמכפלה ישרה של חבורות ציקליות?
+
+\begin{example}
+כל האיברים מסדר
+$2$
+מודולו
+$12$
+הם
+$5,7,11$.
+לכן, החבורה איננה ציקלית (אין איבר מסדר
+$4$)
+ולכן זאת חבורת קליין.
+\end{example}
+
+\begin{example}[משפט השאריות הסיני]
+$\quot{\ZZ}{12\ZZ} \cong \quot{\ZZ}{3\ZZ}\oplus\quot{\ZZ}{4\ZZ}$.
+\end{example}
+
+\begin{example}
+נסתכל על המשוואה
+$x^2 + y^2 \equiv 3 \mod{35}$.
+אם
+$x_0, y_0$
+פתרון אז
+$35 \mid \prs{x_0^2 + y_0^2 - 3}$.
+לכן
+$5 \mid \prs{x_0^2 + y_0^3 - 3}$
+וגם
+$7 \mid \prs{x_0^2 + y_0^3 - 3}$.
+לכן
+$x_0^2 + y_0^2 \equiv 3 \mod{5}, \mod{7}$.
+לכן
+\begin{align*}
+x_0 &\equiv 3 \mod{7} & x_0 &\equiv 2 \mod{5} \\
+y_0 &\equiv 1 \mod{7} & y_0 &\equiv 2 \mod{5}
+\end{align*}
+ולכן
+$x = 17, y = 22$
+יפתרו את המשוואה
+$x^2 + y^2 \equiv 3\mod{35}$.
+\end{example}
+\begin{lemma}
+אם
+$a_1, \ldots, a_k$
+זרים ל־%
+$m$
+אז
+$a_1\cdot\ldots\cdot a_k$
+זר ל־%
+$m$.
+\end{lemma}
+
+\begin{proof}
+נציג שתי הוכחות.
+\begin{enumerate}
+\item
+נראה שאם
+$\prs{a,m} = 1$
+ו־%
+$\prs{b,m} = 1$
+אז
+$\prs{ab,m} = 1$.
+נוכיח בדרך השלילה.
+נניח כי
+$\prs{ab,m}\neq 1$,
+אז יש ראשוני
+$p$
+כך ש־%
+$p \mid m,ab$.
+לכן
+$p \mid a$
+או
+$o \mid b$.
+אבל, זו סתירה לכך ש־%
+$\prs{a,m} = 1$
+ו־%
+$\prs{b,m} = 1$.\footnote{ההוכחה הכללית באינדוקציה}
+\item
+$a_1, \ldots, a_k$
+זרים ל־%
+$m$
+לכן
+הפיכים ב־%
+$\quot{\ZZ}{m\ZZ}$.
+אז
+$\prod_{i=1}^k a_i$
+הפיך ב־%
+$\quot{\ZZ}{m\ZZ}$.
+אבל,
+איבר זה הפיך אם ורק אם הוא זר ל־%
+$m$.
+\end{enumerate}
+\end{proof}
+
+\begin{theorem}[משפט השאריות הסיני]
+יהיו
+$m_1, \ldots, m_k$
+שלמים כך ש־%
+$\prs{m_i, m_j} = 1$
+עבור
+$i \neq j$.
+יהיו
+$b_1,\ldots,b_k \in \ZZ$.
+יהי
+$m = \prod_{i=1}^k m_i$.
+נסתכל על המשוואות
+$x \equiv b_i \mod{m_i}$
+לכל
+$i \in [k]$.
+למשוואות אלו תמיד יש פתרון, וכל שני פתרונות נבדלים בכפולה של
+$m$.
+\end{theorem}
+\begin{proof}
+נוכיח באינדוקציה על
+$k$.
+\begin{description}
+\item[בסיס:]
+אם יש משוואה אחת
+$x \equiv b_1 \mod{m_1}$
+אז
+$x = b_1$
+פתרון.
+\item[צעד:]
+נניח שיש
+$x_1$
+שלם הפותר את
+$x_1 \equiv b_i \mod{m_i}$
+לכל
+$i \in \brs{k-1}$.
+נרצה שגם
+$x_1 \equiv b_k \prs{m_k}$,
+אבל זה לא בטוח. אם לא, נחליף את
+$x_1$.
+יהי
+$m' = \prod_{i=1}^{k-1} m_i$.
+נסתכל על
+$x_1 + ym'$
+כאשר
+$y \in \ZZ$.
+נרצה
+$x_1 + ym' \equiv b_k \mod{m_k}$.
+לכן נחפש את
+$y$
+המתאים, כלומר נפתור
+$m'y = b_k - x_1\prs{m_k}$.
+מתקיים
+$\prs{m_i, m_j} = 1$
+לכל
+$i \neq j$
+ולכן לפי הלמה
+$m'$
+זר ל־%
+$m_k$.
+אז
+$\prs{m',m_k} = 1$
+ולפי הטענה יש פתרון.
+\end{description}
+\end{proof}
+
+\begin{exercise}
+כל שני פתרונות נבדלים בכופלה של
+$m$.
+\end{exercise}
+
+נחזור לדוגמה ממקודם.
+\begin{align*}
+x^2 + y^2 &\equiv 3 \mod{7} & x^2 + y^2 &\equiv 3 \mod{5} & x^2 + y^2 &\equiv 3 \mod{35} 
+\end{align*}
+
+\begin{example}
+ראינו כי
+\begin{align*}
+x_0 &\equiv 3 \mod{7} & x_0 &\equiv 2 \mod{5} \\
+y_0 &\equiv 1 \mod{7} & y_0 &\equiv 2 \mod{5}
+\end{align*}
+ולפי משפט השאריות הסיני, יש פתרון משותף.
+$5,7 \mid x^2 + y^2 - 3$
+ו־%
+$5,7$
+זרים לכן
+$35 \mid x^2 + y^2 - 3$
+ונקבל
+$x^2 + y^2 \equiv 3\mod{35}$.
+\end{example}
+
+\begin{corollary}
+כדי לפתור משוואה בקונגרואנציה מספיק לפתור את המשוואה מודולו חזקות של ראשוניים.
+\end{corollary}
+
+\begin{definition}
+נניח כי
+$R_1, \ldots, R_n$
+חוגים, ונגדיר
+\[\bigoplus_{i=1}^n R_i \ceq \set{\prs{r_1, \ldots, r_n}}{\forall i\colon r_i \in R_i}\]
+עם חיבור וכפל לפי רכיבים.
+זהו חוג ונקרא
+\stress{הסכום הישר של
+$R_i$}.
+\end{definition}
+
+\begin{example}
+נסתכל על
+$\quot{\ZZ}{7\ZZ}$.
+מתקיים
+\begin{align*}
+5^2 = 25 &\equiv 4 \mod{7} & 5^3 = 5\cdot 4 &\equiv 6\mod{7} & 5^4 = 5\cdot 6 &\equiv 2\mod{7} & 5^5 = 5\cdot 2 &\equiv 3\mod{7} & 5^6 &\equiv 1\mod{7}
+\end{align*}
+לכן
+$5$
+יוצר של
+$\quot{\ZZ}{7\ZZ}$.
+\end{example}
+
+\begin{lemma}
+יהי
+$K$
+שדה ויהי
+$p\prs{x} \in K\brs{x}$
+מדרגה
+$n$.
+אז ל־%
+$p$
+לכל היותר
+$n$
+שורשים שונים.
+\end{lemma}
+\begin{proof}
+נניח בשלילה שיש
+$n+1$
+שורשים שונים. באינדוקציה נקבל
+$p(x) = c \prod_{i=1}^n \prs{x-\alpha_i}$
+ואז לאחר הצבת
+$\alpha_{n+1}$
+שום גורם לא מתאפס, בסתירה.
+\end{proof}
+\begin{remark}
+הכיוון השני של משפט פרמה נכון. אם
+$a \mid n$
+לא מתקיים
+$a^{n-1} \equiv 1 \mod{n}$.%
+\newlecture{21 באוקטובר}%
+{2018}
+אבל,
+יש מספרים עבור
+אם
+$\prs{a,n} = 1$
+אז
+$a^{n-1}\equiv 1$.
+מספרים אלו נקראים מספרי
+\textenglish{Carmichael}.
+\end{remark}
+\begin{corollary}
+יהיו
+$p_1,p_2 \in k\brs{x}$
+מתוקנים מדרגה
+$n$.
+אם
+$p_1\prs{\alpha_i} = p_2\prs{\alpha_i}$
+עבור
+$n$
+איברים שונים
+$\alpha_1, \ldots, \alpha_n \in k$
+אז
+$p_1 = p_2$.
+\end{corollary}
+\begin{proof}
+נסתכל על הפולינום
+$p(x) = p_1(x) - p_2(x)$.
+אז ל־%
+$p$
+דרגה לכל היותר
+$n-1$.
+מתקיים
+$p\prs{\alpha_i} = p_1\prs{\alpha_i} - p_2\prs{\alpha_2} = 0$
+לכן יש
+$n$
+שורשים שונים, אבל דרגתו
+$n-1$
+לכן הינו פולינום האפס.
+\end{proof}
+\begin{proposition}
+יהי
+$p$
+ראשוני. אז
+$x^{p-1}-1 \equiv \prs{x-1}\prs{x-2}\ldots\prs{x-\prs{p-1}} \mod{p}$
+\end{proposition}
+\begin{proof}
+יהיו
+$f(x) = x^{p-1}-1$
+ו־%
+$g(x) = \prs{x-1}\prs{x-2}\ldots\prs{x-\prs{p-1}}$.
+אז לכל
+$a \in \ZZ_p^*$
+מתקיים
+$f(a) = 0$
+ממשפט פרמה וגם
+$g(a) = 0$
+ומהמסקה
+$g = f$.
+\end{proof}
+\begin{theorem}[\textenglish{Wilson}]
+$\prs{p-1}! \equiv -1\mod{p}$.
+\end{theorem}
+\begin{proof}
+נציב
+$x=0$
+בטענה.
+\end{proof}
+\begin{exercise}
+אם
+$n>4$
+פריק אז
+$\prs{n-1}! \equiv 0 \mod{n}$.
+\end{exercise}
+\begin{proposition}
+יהי
+$p$
+ראשוני
+ו־%
+$d \in \NN$
+עבורו
+$d \mid p-1$.
+אז לפולינום
+$x^d - 1$
+בדיוק
+$d$
+שורשים שונים מודולו
+$p$.
+\end{proposition}
+\begin{proof}
+יהא
+$m = \frac{p-1}{d}$
+ואז
+$p-1 = dm$.
+נקבל
+\[\text{.}\frac{x^{p-1}-1}{x^d - 1} = \frac{\prs{x^d}^m - 1}{x^d - 1}\]
+יהי
+$y = x^d$.
+אז
+\[\frac{y^m - 1}{y-1} = 1+y+\ldots+y^{m-1}\]
+ולכן
+\begin{align*}
+\frac{prs{x^d}^m - 1}{x^d - 1} = \overset{g(x)}{\overbrace{1 + x^d + \ldots + x^{\prs{m-1}d}}}
+\end{align*}
+ולאחר העברת אגפים
+\[\text{.}x^{p-1} - 1 = \prs{x^d - 1}g(x)\]
+לפי הטענה, לפולינום
+$x^{p-1}-1$
+יש
+$p-1$
+שורשים שונים, לכן לפולינום
+$x^d - 1$
+יש
+$d$
+שורשים שונים.
+\end{proof}
+
+תהי
+$G$
+אבלית מסדר
+$n$.
+נניח שלכל מחלק
+$d \mid n$
+יש בדיוק
+$d$
+איברים ב־%
+$G$
+שמקיימים
+$x^d = e$.
+אז ידוע מחבורות כי
+$G$
+חבורה ציקלית.
+
+\begin{theorem}
+$\ZZ_p$
+ציקלית לכל
+$p$
+ראשוני.
+\end{theorem}
+
+\begin{proof}
+הראינו שלכל
+$d \mid p-1$
+יש בדיוק
+$d$
+פתרונות למשוואה
+$x^d - 1$
+כלומר
+$x^d = 1$.
+\end{proof}
+
+נוכיח שאם
+$p \neq 2$
+ראשוני אז
+$\prs{\quot{\ZZ}{p^k \ZZ}}^*$
+ציקלית לכל
+$k$.
+נתחיל עם המקרה
+$k=2$.
+
+נסתכל על החבורה
+$\prs{\quot{\ZZ}{p\ZZ}}^*$.
+ראינו כי זאת ציקלית, ולכן יש לה יותר
+$g$.
+הסדר של
+$g$
+הוא
+$p-1$.
+מתקיים
+$\#\prs{\quot{\ZZ}{p^2\ZZ}}^* = p^2 - p$.
+לכן אם
+$p \nmid a$
+אז
+$a^{p^2 - p} \equiv 1 \mod{p^2}$.
+גם
+$g$
+מקיים
+$g^{p^2 - p} = 1 \mod{p^2}$.
+יהי
+$d = o(g)$
+הסדר ב־%
+$\prs{\quot{\ZZ}{p^2 \ZZ}}^*$.
+אז
+$p^2 \mid g^d - 1$
+ולכן
+$p \mid g^d - 1$
+כלומר
+$g^d \equiv 1 \mod{p}$.
+לכן
+$p-1 \mid d$.
+גם
+$d \mid \prs{p-1}p$
+ולכן
+$d = p-1$
+או
+$d = \prs{p-1}p$.
+אם
+$d = \prs{p-1}p$
+סיימנו. אחרת נגדיר
+$g_1 = g + p$.
+
+\begin{proposition}
+יהי
+$g$
+יוצר של החבורה
+$\prs{\quot{\ZZ}{p\ZZ}}^*$
+עבורו
+$g^{p-1} \equiv 1 \mod{p^2}$.
+אז
+$g_1 = g + p$
+יוצר של
+$\prs{\quot{\ZZ}{p^2\ZZ}}^*$.
+כלומר,
+$g_1^{p-1} \not\equiv 1 \mod{p^2}$.\footnote{כי ראינו שהסדר של
+$g_1$
+צריך להיות
+$p-1$
+או
+$\prs{p-1}p$}
+\end{proposition}
+\begin{proof}
+\begin{align*}
+g_1^{p-1} &= \prs{g + p}^{p-1} \\ &= \sum_{k=0}^{p-1} \binom{p-1}{k} g^{p-1-k}p^k \\ &\equiv
+g^{p-1} + \prs{p-1}g^{p-2}p \mod{p^2} \\&\equiv 1 + \prs{p-1}g^{p-2}p \mod{p^2} \\&\neq 1 \mod{p^2}
+\end{align*}
+\phantom{י}
+\end{proof}
+
+מהטענה הוכחנו כי
+$\prs{\quot{\ZZ}{p^k\ZZ}}^*$
+ציקלית עבור
+$k=2$.
+נוכיח באופן כללי.
+\\
+ניקח
+$g$
+יוצר של
+$\prs{\quot{\ZZ}{p^2 \ZZ}}^*$
+ונראה שהוא יוצר של
+$\prs{\quot{\ZZ}{p^k\ZZ}}^*$.
+אז
+$g$
+יוצר גם של
+$\prs{\quot{\ZZ}{p\ZZ}}^*$.
+אז
+$g^{p-1} = 1 + ap$
+עם
+$\prs{a,p} = 1$
+(כי
+$o(g) = p^2 - p > p-1$
+מודולו
+$p^2$).
+ניקח איבר מהצורה
+$1 + ap$
+ונמצא את הסדר שלו ב־%
+$\prs{\quot{\ZZ}{p^k \ZZ}}^*$.
+
+\begin{lemma}
+יהי
+$p$
+ראשוני ו־%
+$1 \leq k \leq p-1$
+שלם.
+אז
+$p \mid \binom{p}{k}$.
+\end{lemma}
+\begin{proof}
+\[\binom{p}{k} = \frac{p!}{k! \prs{p-k}!}\]
+כאשר
+$p \nmid k!, \prs{p-k}!$.
+לכן
+$p \mid \binom{p}{k}$.
+\end{proof}
+\begin{lemma}
+אם
+$j \geq 1$
+ואם
+$a \equiv b \mod{p^j}$
+אז
+$a^p \equiv b^p \mod{p^{j+1}}$.
+\end{lemma}
+\begin{proof}
+מתקיים
+\[a = b + cp^j\]
+עבור
+$c \in \ZZ$.
+כעת
+\begin{align*}
+a^p &= \prs{b+cp^j}^p \\
+&= \sum_{k=0}^p \binom{p}{k}b^{p-k} \prs{cp^j}^k \\
+&\equiv b^p + pb^{p-1}cp^j \\
+&\equiv b^p + b^{p-1}cp^{j+1} \\
+&\equiv b^p \mod{p^{j+1}} 
+\end{align*}
+כנדרש.
+\end{proof}
+\begin{corollary}
+אם
+$j \geq 2$
+ו־%
+$p \neq 2$
+ראשוני אז
+$\prs{1+ap}^{p^{j-2}} \equiv 1 + ap^{j-1} \mod{p^j}$.
+\end{corollary}
+
+%TODO fill in lecture
+
+\begin{proposition}
+לכל
+$j \geq 3$
+מתקיים%
+\newlecture{28 בנובמבר}%
+{2018}%
+$5^{2^{j-1}} \equiv 1 + 2^{j-1} \mod{2^j}$.
+\end{proposition}
+\begin{proof}
+תרגיל, באינדוקציה.
+\end{proof}
+\begin{corollary}
+הסדר של
+$5$
+ב־%
+$\prs{\quot{\ZZ}{2\ZZ}}^*$
+הוא
+$2^{j-2}$.
+\end{corollary}
+\begin{proof}
+$5^{2^{j-2}} \equiv 1 + 2^j \mod{2^{j+1}}$
+לכן
+$5^{2^{j-2}} = 1 + 2^j + a2^{j+1}$.
+אז
+$5^{2^{j-2}} \equiv 1 \mod{2^j}$.
+מצד שני,
+$5^{2^{j-3}} \equiv 1 + 2^{j-1} \mod{2^j}$
+ובפרט
+$5^{2^{j-3}} \not\equiv 1 \mod{2^j}$.
+\end{proof}
+
+\begin{theorem}
+אם
+$k \geq 3$
+אז
+\begin{align*}
+\set{\prs{-1}^a 5^b}{\substack{a \in \set{0,1} \\ b \in \set{1,\ldots, 2^{k-2}}}}
+\end{align*}
+היא חתך של
+$\prs{\quot{\ZZ}{2^k \ZZ}}^*$.
+\end{theorem}
+\begin{proof}
+נניח כי
+$\prs{-1}^{a_1} 5^{b_1} \equiv \prs{-1}^{a_2} 5^{b_2} \mod{2^k}$
+כאשר
+$a_1, a_2 \in \set{0,1}$,
+$b_1,b_2 \in \set{1,\ldots, 2^{k-2}}$
+ו־%
+$k \geq 3$.
+אז
+\[\prs{-1}^{a_1} 5^{b_1} \equiv \prs{-1}^{a_2} 5^{b_2} \mod{4}\]
+ולכן
+\[\prs{-1}^{a_1} \equiv \prs{-1}^{a_2} \mod{4}\]
+כלומר
+$a_1 = a_2$.\footnote{כי לקחנו
+$a_1, a_2 \in \set{0,1}$}
+קיבלנו
+$5^{b_1} \equiv 5^{b_2} \mod{2^k}$.
+הסדר של
+$5$
+הוא
+$2^{k-2}$
+לפי המסקנה.
+לכן השיוויון שקיבלנו גורר
+$b_1 = b_2$.
+מתקיים
+$\# \prs{\quot{\ZZ}{2^k \ZZ}} = 2^{k-1}$
+לכן אלו כל האיברים וזה אכן חתך.
+\end{proof}
+
+\begin{corollary}
+תהא
+$C_n$
+חבורה ציקלית מסדר
+$n$.
+קיבלנו שאם
+$k \geq 3$
+אז
+$\prs{\quot{\ZZ}{2^k\ZZ}}^* \cong C_2 \times C_{2^{k-2}}$.
+\end{corollary}
+
+\begin{remark}
+$C_n \times C_m$
+ציקלית אם ורק אם
+$\prs{n,m}$
+זרים.
+\\
+יהי
+$m = \prod_{i=1}^r p_i^{k_i}$
+פירוק לראשוניים של
+$m$,
+אז
+\begin{align*}
+\prs{\quot{\ZZ}{m\ZZ}}^* = \prs{\quot{\ZZ}{\prs{\prod_{i=1}^r p_i^{k_i}} \ZZ}}^* \stackrel[\text{CRT}]{}{\cong} \prod_{i=1}^r \prs{\quot{\ZZ}{p_i^{k_i}}}^*
+\end{align*}
+\end{remark}
+
+\begin{corollary}
+$\prs{\quot{\ZZ}{m\ZZ}}^*$
+ציקלית אם
+$m$
+הוא
+$2$, $4$,
+$p^k$
+או
+$2p^k$
+עבור
+$p \neq 2$.
+\end{corollary}
+
+נזכיר את הניסוח האחרון שלנו לשאלות של פרמה.
+עבור
+$a \in \ZZ$
+המקיים
+$\gcd \prs{a,p} = 1$,
+האם יש פתרון למשוואה
+$z^2 \equiv a \mod{p}$?
+ראינו כי
+$\prs{\quot{\ZZ}{p\ZZ}}^*$
+ציקלית ולכן נסתכל על משוואות מהצורה
+$g^2 = a$
+בחבורות ציקליות.
+
+\begin{theorem}
+תהי
+$G$
+חבורה ציקלית מסדר
+$n$.
+יהי
+$a \in G$.
+\begin{enumerate}
+\item
+אם
+$n$
+אי־זוגי, קיים
+$x$
+יחיד ב־%
+$G$
+עבורו
+$x^2 = a$
+\item
+אם
+$n$
+זוגי, קיים
+$x$
+ב־%
+$G$
+כך ש־%
+$x^2 = a$
+אם ורק אם
+$a^{\frac{n}{2}} = 1$
+ובמקרה זה יש בדיוק
+$2$
+פתרונות.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+נסתכל על ההומומורפיזם
+\begin{align*}
+\Phi \colon G &\to G \\
+x &\to x^2
+\end{align*}
+(זה הומומורפיזם כי
+$G$
+אבלית).
+\begin{enumerate}
+\item
+אם
+$n$
+אי־זוגי, אין איבר מסדר שתיים לכן הגרעין של
+$\Phi$
+טריוואלי, לכן ההעתקה חח"ע ולכן על.
+
+\item
+אם
+$n$
+זוגי אז
+$\# \ker \Phi = 2$.%
+\footnote{ראינו שבחבורה ציקלית למשוואה
+$x^d = 1$
+יש בדיוק
+$d$
+פתרונות לכל
+$d \mid n = \# G$}%
+אז
+$\# \im\Phi = \frac{\# G}{\# \ker \Phi} = \frac{n}{2}$.\\
+אם קיים
+$x$
+עבורו
+$x^2 = a$,
+נעלה את שני האגפים בחזקת
+$\frac{n}{2}$
+ואז
+$a^{\frac{n}{2}} = 1$.
+אם
+$a^{\frac{n}{2}} = 1$
+אז
+$a$
+פתרון של
+$x^{\frac{n}{2}} = 1$
+ויש בדיוק
+$\frac{n}{2}$
+פתרונות כאלה שהם
+$\im\Phi$:
+אם
+$y \in \im \Phi$
+קיים
+$x \in G$
+עבורו
+$x^2 = y$
+ואז
+$y^{\frac{n}{2}} = x^n = 1$.
+לכן
+$a \in \im\Phi$.
+\end{enumerate}
+\end{proof}
+\begin{definition}
+יהי
+$a \in \ZZ$
+ויהי
+$m \in \NN$.
+$a$
+הוא
+\stress{שארית ריבועית}
+מודולו
+$m$
+אם קיים
+$x \in \ZZ$
+עבורו
+$x^2 \equiv a \mod{m}$.
+\end{definition}
+\begin{corollary}
+יהי
+$p\neq 2$
+ראשוני ויהי
+$a \in \ZZ$
+עבורו
+$\gcd\prs{a,p} = 1$.
+אז
+$a$
+הוא שארית ריבועית מודולו
+$p$
+אם ורק אם
+$a^{\frac{p-1}{2}} \equiv 1 \mod{p}$.
+\end{corollary}
+\begin{proof}
+$\# \prs{\quot{\ZZ}{p\ZZ}} = p-1 \eqqcolon n$
+זוגי לכן יש פתרון למשוואה
+$x^2 \equiv a \mod{p}$
+אם ורק אם
+$a^{\frac{n}{2}} = a^{\frac{p-1}{2}} \equiv 1 \mod{p}$.
+\end{proof}
+
+\begin{corollary}
+יהי
+$p \neq 2$
+ראשוני.
+$-1$
+הוא שארית ריבועית מודולו
+$p$
+אם ורק אם
+$p \equiv 1 \mod{4}$.
+\end{corollary}
+\begin{proof}
+$-1$
+שארית ריבועית מודולו
+$p$
+אם ורק אם
+$\prs{-1}^{\frac{p-1}{2}} \equiv 1 \mod{p}$
+אם ורק אם
+$\frac{p-1}{2}$
+זוגי אם ורק אם קיים
+$k \in \ZZ$
+עבורו
+$p-1 = 4k$
+אם ורק אם
+$p \equiv 1 \mod{4}$.
+\end{proof}
+\begin{remark}
+לכל
+$a$,
+$a^{\frac{p-1}{2}}$
+איבר מסדר
+$2$
+מודולו
+$p$
+לכן הינו
+$\pm 1$.
+\end{remark}
+\begin{example}
+\[\prs{-3}^{\frac{4}{2}} = 9 \equiv -1\mod{5}\]
+לכן
+$-3$
+אינו שארית ריבועית מודולו
+$5$.
+\end{example}
+\begin{example}
+\[\prs{-3}^{\frac{6}{2}} = -27 = -28+1 \equiv 1 \mod{7}\]
+לכן
+$-3$
+הינו שארית ריבועית מוולו
+$7$.
+\end{example}
+\begin{example}
+\[\prs{-3}^{\frac{11-1}{2}} = -3^5 \equiv -1 \mod{11}\]
+לכן
+$-3$
+אינו שארית ריבועית מודולו
+$11$.
+\end{example}
+
+\section{המשוואה
+$x^k = a$
+בחבורה ציקלית}
+
+\begin{theorem}
+תהי
+$G$
+חבורה ציקלית מסדר
+$n$
+ויהי
+$a \in G$.
+נסתכל על המשוואה
+$x^k = a$.
+\begin{enumerate}
+\item אם
+$\gcd\prs{k,n} = 1$,
+קיים
+$x \in G$
+יחידה עבורו
+$x^k = a$.
+\item אם
+$k \mid n$
+יהי
+$r = \frac{n}{k}$.
+קיים
+$x$
+ב־%
+$G$
+כך ש־%
+$x^k = a$
+אם ורק אם
+$a^r = 1$.
+אז יש בדיוק
+$k$
+פתרונות.
+\label{x^k=a:iff}
+\end{enumerate}
+\end{theorem}
+
+\begin{remark}
+כדי להוכיח את המשפט מסתכלים על ההומומורפיזם
+\begin{align*}
+\Phi \colon G &\to G
+\text{.} \phantom{\Phi} \colon x &\to x^k
+\end{align*}
+עשינו דבר דומה עבור
+$k=2$.
+\end{remark}
+\begin{proof}
+נציג הוכחה לחלק \ref{x^k=a:iff} של המשפט בלבד.
+
+לכיוון אחד, נניח שקיים
+$x \in a$
+עבורו
+$x^k = a$.
+אז
+\[\text{.}a^r = \prs{x^k}^r = x^{k \frac{n}{d}} = x^{\frac{k}{d}n} = \prs{x^{\frac{k}{d}}}^n = 1\]
+
+להפך, נניח כי
+$a^r = 1$
+ונמצא
+$x \in G$
+עבורו
+$x^k = a$.
+מההנחה,
+ומהסעיף הראשון, קיים
+$x \in G$
+עבורו
+$x^d = a$.
+יש
+$\alpha,\beta \in \ZZ$
+כך שמתקיים
+$\alpha k +\beta n = d$.
+אז
+\[a = x^d = x^{\alpha k + \beta n} = \prs{x^{\alpha}}^k \prs{x^{\beta}}^n = \prs{x^{\alpha}}^k\]
+ולכן
+$a = y^k$
+עבור
+$y = x^{\alpha}$.
+\end{proof}
+
+בהמשך נרצה להסתכל על המשוואות
+$x^3 \equiv a \mod{p}$
+ו־%
+$x^4 \equiv a \mod{p}$
+כאשר
+$\prs{a,p} = 1$.
+
+\begin{example}
+נסתכל על
+$k = 3$
+ועל
+$G = \prs{\quot{\ZZ}{p\ZZ}}^*$.
+\begin{enumerate}
+\item אם
+$3 \nmid p-1$
+מתקיים
+$\prs{3,p-1} = 1$
+לכן
+$p \equiv 2 \mod{3}$
+תמיד יש פתרון יחיד למשוואה
+$x3 \equiv a \mod{p}$.
+\item אם 
+$3 \mid p-1$
+אז
+$p \equiv 1\mod{3}$.
+שליש מהאיברים הם חזקה שלישית כי
+$x^3 \equiv a \mod{p}$
+אם ורק אם
+$a^{\frac{p-1}{3}} \equiv 1 \mod{p}$.
+\end{enumerate}
+\end{example}
+
+\begin{example}
+נסתכל על
+$x^4 \equiv a \mod{p}$.
+נניח כי
+$p \not \equiv 2$
+ואז
+$p-1$
+זוגי. לכן
+$\gcd\prs{4,p-1} \in \set{2,4}$.
+$p \equiv 1 \mod{4}$
+אם ורק אם
+$4 \mid \prs{p-1}$
+ו־%
+$p \equiv 3 \mod{4}$
+אם ורק אם
+$2 \mid \prs{p-1}$
+ו־%
+$4 \nmid \prs{p-1}$.
+לכן לרבע מהאיברים יש שורש רביעי.
+\[a^{\frac{p-1}{4}} \equiv 1 \mod{p} \iff x^4 \equiv a \mod{p}\]
+\end{example}
+
+\section{הרמה של פתרונות ממודולו
+$p$
+למודולו
+$p^k$}
+\begin{proposition}
+יהי
+$p \neq 2$
+ראשוני ויהיו
+$a,k$
+זרים ל־%
+$p$.
+אם יש פתרון למשוואה
+$x^k \equiv a \mod{p}$
+אז יש פתרון למשוואה
+$x^k \equiv a \mod{p^e}$
+לכל
+$e \in \NN_+$.
+\end{proposition}
+\begin{proof}
+באינדוקציה על
+$e$.
+\begin{description}
+\item[בסיס:]
+$e=1$
+טריוויאלי.
+\item[צעד:]
+נניח כי
+$x_0$
+פתרון ל־%
+$x^k \equiv a\mod{p^e}$
+ונמצא פתרון למשוואה
+$x^k \equiv a \mod{p^{e+1}}$.
+ניקח
+$x = x_0 + bp^e$.
+אז
+\[\text{.}x^k = \prs{x_0 + bp^e}^k = \sum_{i=0}^k x_0^i \prs{bp^e}^{k-i} \equiv x_0^k + kx_0^{k-1}bp^e \mod{p^{e+1}}\]
+ידוע מהגדרת
+$x_0$
+כי
+$x_0^k = a + cp$
+לכן
+\begin{align*}
+x^k \equiv a + cp^e + kx_0^{k-1}bp^e \mod{p^{e-1}} \equiv a + p^e \prs{c + kx_0^{k-1}b}\mod{p^{e+1}}
+\end{align*}
+ולכן צריך
+$c + \overset{\alpha}{\overbrace{kx_0^{k-1}}} \cdot \overset{y}{\overbrace{b}} \equiv 0 \mod{p}$.
+כעת
+$\gcd\prs{x_0, p} = 1$
+כי
+$x_0^k \equiv a \mod{p^e}$
+אבל
+$a$
+זר ל־%
+$p$
+ולכן גם
+$x_0$.
+בנוסף,
+$\gcd\prs{k,p} = 1$
+ולכן יש פתרון ל־%
+$c + \alpha y \equiv 0 \mod{p}$.
+כלומר, יש
+$b$
+עבורו
+$x = x_0 + b^e$,
+כנדרש.
+\end{description}
+\end{proof}
+
+\begin{proposition}
+יהי
+$a$
+אי־זוגי ויהי
+$e \geq 3$.
+\newlecture{12 בדצמבר}%
+{2018}
+למשוואה
+$x^n \equiv 2 \mod{2^e}$
+יש פתרון אם ורק אם מתקיים לפחות אחד התנאים הבאים.
+\begin{enumerate}
+\item
+$n$
+אי־זוגי
+\item
+$a \equiv 1 \mod{4}$
+ו־%
+$a^{\frac{2^{e-2}}{d}} \equiv \prs{2^e}$
+כאשר
+$d = \gcd{n, 2^{e-2}}$
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+משתמשים במבנה של החבורה
+\[\text{.}\prs{\quot{\ZZ}{2^e \ZZ}}^* \cong C_2 \times C_{2^{e - 2}}\]
+\end{proof}
+
+\begin{definition}
+אם
+$\gcd\prs{a,m} = 1$
+אז
+$a$
+\stress{שארית ריבועית מודולו
+$m$}
+אם קיים
+$x \in \ZZ$
+עבורו
+$x^2 \equiv a \mod{m}$.
+\end{definition}
+
+\begin{proposition}
+יהי
+$m = 2^e \prod_{i \in [k]} p_i^{e_i}$
+ונניח
+$\gcd\prs{a,m} = 1$.
+אז
+$a$
+שארית ריבועית מודולו
+$m$
+אם ורק אם מתקיימות שתי התכונות הבאות.
+\begin{enumerate}
+\item $a^{\frac{p_i - 1}{2}} \equiv 1 \mod{p_i}$
+לכל
+$i \in [k]$.
+\item אם
+$e = 2$
+אז
+$a \equiv 1 \mod{4}$.
+אם
+$e \geq 3$
+אז
+$a \equiv 1 \mod{8}$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+ממשפט השאריות הסיני, די לפתור
+$x^2 \equiv a \mod{p_i}$.
+וגם
+$x^2 \equiv a\mod{2^e}$.
+\\
+נזכיר כי אם
+$\gcd\prs{a,p} = 1$
+אז
+$a$
+שארית ריבועית מודולו
+$p$
+אם ורק אם
+$a^{\frac{p-1}{2}} \equiv 1$.\\
+על מנת להמשיך את ההוכחה, ניעזר בהגדרה.
+
+נסתכל כעת על
+$p$
+ראשוני אי־זוגי.
+
+\begin{definition}[סימן
+\textenglish{Legendre}]
+יהיי
+$a \in \ZZ$
+ויהי
+$p\neq 2 \in \ZZ$
+ראשוני.
+נסמן
+$\prs{\frac{a}{p}}$
+\stress{סימן \textenglish{Legendre}}
+שערכו
+\begin{itemize}
+\item $1$
+אם
+$a$
+שארית ריבועית מודולו
+$p$
+\item $-1$
+אם
+$\gcd\prs{a,p} = 1$
+ו־%
+$a$
+אינו שארית ריבועית מודולו
+$p$
+\item $0$
+אם
+$p \mid a$
+\end{itemize}
+\end{definition}
+
+\begin{theorem}
+\begin{enumerate}
+\item $a^{\frac{p-1}{2}} \equiv \prs{\frac{a}{p}} \mod{p}$
+\item $\prs{\frac{ab}{p}} = \prs{\frac{a}{p}} \prs{\frac{b}{p}}$
+\item אם
+$a \equiv b \mod{p}$
+אז
+$\prs{\frac{a}{p}} = \prs{\frac{b}{p}}$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\begin{enumerate}
+\item אם
+$a$
+שארית ריבועית מודולו
+$p$
+ראינו
+$a^{\frac{p-1}{2}} \equiv 1 \mod{p}$
+והגדרנו
+$\prs{\frac{a}{p}} = 1$.
+
+אם
+$p \mid a$
+אז
+$a^{\frac{p-1}{2}} \equiv 0 \equiv \prs{\frac{a}{p}} \mod{p}$
+
+אחרת,
+$a$
+אינו שארית ריבועית מודולו
+$p$
+ומהמשפט
+$c \ceq a^{\frac{p-1}{2}} \not\equiv 1 \mod{p}$.
+אז
+$c^2 = a^{p-1} \equiv 1 \mod{p}$
+לכן
+$c = -1$.%
+\footnote{אנו מעל שדה, לכן יש שני פתרונות}
+כלומר,
+$a^{\frac{p-1}{2}} \equiv -1 \equiv \prs{\frac{a}{p}} \mod{p}$.
+
+\item %2
+לפי הסעיף הקודם,
+\[\text{.} \prs{\frac{ab}{p}} \equiv \prs{ab}^{\frac{p-1}{2}} \equiv a^{\frac{p-1}{2}} b^{\frac{p-1}{2}} \equiv \prs{\frac{a}{p}} \prs{\frac{b}{p}} \mod{p}\]
+
+\item %3
+לפי הסעיף הראשון,
+\[\text{.} \prs{\frac{a}{p}} \equiv a^{\frac{p-1}{2}} \equiv b^{\frac{p-1}{2}} \equiv \prs{\frac{b}{p}} \mod{p}\]
+\end{enumerate}
+\end{proof}
+סוף המשפט לא הוכח במהלך ההרצאות (ייתכן כי הינו מופיע ברשימות התרגולים).
+\end{proof}
+
+\chapter{הדדיות ריבועית}
+\begin{theorem}[הדדיות ריבועית]
+יהיו
+$p,q$
+ראשוניים אי־זוגיים שונים.
+\begin{enumerate}
+\item $\prs{\frac{-1}{p}} = \prs{-1}^{\frac{p-1}{2}}$
+\item $\prs{\frac{2}{p}} = \prs{-1}^{\frac{p^2 - 1}{8}}$
+\item $\prs{\frac{p}{q}} \prs{\frac{q}{p}} = \prs{-1}^{{\frac{p-1}{2}}\cdot {\frac{q-1}{2}}}$
+\end{enumerate}
+\end{theorem}
+\begin{corollary}
+\begin{enumerate}
+\item $-1$
+שארית ריבועית מודולו
+$p$
+אם ורק אם
+$p \equiv 1 \mod{4}$.
+\item $2$
+שארית ריבועית מודולו
+$p$
+אם ורק אם
+$p \equiv \pm 1 \mod{8}$.
+\item אם
+$p \equiv 1 \mod{4}$
+או
+$q \equiv 1 \mod{4}$
+אז
+$\prs{\frac{p}{q}} = \prs{\frac{q}{p}}$.\\
+אם
+$p \equiv 3 \mod{4}$
+או
+$q \equiv 3 \mod{4}$
+אז
+$\prs{\frac{p}{q}} = -\prs{\frac{q}{p}}$.
+\end{enumerate}
+\end{corollary}
+\begin{proof}[של המסקנה]
+\begin{enumerate}
+\item אם
+$p \equiv 1 \mod{4}$
+אז
+$p = 4k + 1$
+ואז
+$\frac{p-1}{2} = 2k$
+ואכן
+$\prs{-1}^{2k} = 1$.\\
+אם
+$p \equiv \pm 3 \mod{4}$
+אז
+$p = 8k + 1$
+ואז
+\[\frac{p^2 - 1}{8} = \frac{64 k^2 \pm 16k}{8} = 8k^2 \pm 2k \in \ZZ\]
+אחרת
+$p \equiv \pm 3 \mod{8}$
+ואז
+$\prs{-1}^{\frac{p^2 - 1}{8}} \equiv - 1$
+ואז
+$\prs{-1}^{\frac{p^2 - 1}{8}} \equiv 1$.
+\end{enumerate}
+\end{proof}
+
+ראינו בעצם כי עבור
+$a \in [3]$
+יש פתרוןל ל־%
+$x^2 + ay^2 = p$
+אם ורק אם
+$\prs{\frac{-a}{p}} = 1$.
+
+\begin{theorem}[אוילר]
+יהי
+$p \neq 2$
+ראשוני. קיימים
+$x,y \in \ZZ$
+עבורם
+$x^2 + 2y^2 = p$
+אם ורק אם
+$p \in \set{1,3} \mod{8}$.
+\end{theorem}
+
+
+\begin{theorem}[אוילר]
+יהי
+$p \neq 3$
+ראשוני. קיימים
+$x,y \in \ZZ$
+עבורם
+$x^2 + 3y^2 = p$
+אם ורק אם
+$p \equiv 1\ mod{3}$.
+\end{theorem}
+\begin{proof}
+נכתוב
+\begin{align*}
+\prs{\frac{-3}{p}} &= \prs{\frac{-1}{p}} \prs{\frac{3}{p}} \\
+&= \prs{-1}^{\frac{p-1}{2}} \prs{-1}^{\frac{p-1}{2} \cdot \frac{3-1}{2}} \prs{\frac{p}{3}}
+\\&= \prs{-1}^{\frac{p-1}{2}} \prs{-1}^{\frac{p-1}{2}} \prs{\frac{p}3{}} \\&= \prs{\frac{p}{3}}
+\end{align*}
+\end{proof}
+
+\begin{example}
+\[\prs{\frac{17}{47}} = \pmat{\frac{47}{17}} = \prs{\frac{13}{17}} = \prs{\frac{17}{13}} = \prs{\frac{4}{13}} = 1\]
+\end{example}
+
 \backmatter
 \end{document}
 

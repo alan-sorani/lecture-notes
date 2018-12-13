@@ -1630,7 +1630,7 @@ $f$.
 היא גם מקיימת את
 \emph{כלל לייבניץ}.
 \begin{align*}
-\frac{\del}{\del v} \prs{f \circ g} = f\frac{\del g}{\del v} + g\frac{\del f}{\del v}
+\frac{\del}{\del v} \prs{fg} = f\frac{\del g}{\del v} + g\frac{\del f}{\del v}
 \end{align*}
 
 הוכיחו את תכונות אלו כ%
@@ -2173,12 +2173,12 @@ $f$
 באופן הבא.
 \[f\prs{x^1, \ldots, x^m} = \pmat{f_1\prs{x^1, \ldots, x^m} \\ \vdots \\ f_n\prs{x^1, \ldots, x^m}}\]
 כעת
-\[\text{.} \Uu \cap f^{-1}(Y) = \set{\prs{x^1, \ldots, x^m}}{\fcases{f_1\prs{x^1, \ldots, x^m} = y_1 \\ \vdots \\ f_n\prs{x^1,\ldots, x^m} = y_n}}\]
+\[\text{.} \Uu \cap f^{-1}(y) = \set{\prs{x^1, \ldots, x^m}}{\fcases{f_1\prs{x^1, \ldots, x^m} = y_1 \\ \vdots \\ f_n\prs{x^1,\ldots, x^m} = y_n}}\]
 $D_x f$
 על
 (כי
 $y$
-על) לכן
+ערך רגולרי) לכן
 $\RR^m \to \RR^n$
 המוגדרת ע"י מטריצת הנגזרות החלקיות היא על, ולכן
 $\rank \frac{\del f_i}{\del x_j} = n$.
@@ -2722,7 +2722,7 @@ $M_1, M_2 \subseteq N$
 תתי יריעות יקראו
 \stress{טרנסוורסליות}
 ונסמן
-$M \pitchfork M_2$
+$M_1 \pitchfork M_2$
 אם לכל
 $x \in M_1 \cap M_2$
 מתקיים
@@ -3418,7 +3418,7 @@ $\rho_p$
 \begin{remark}
 הדבר שקול לכך שלכל שני שדות וקטוריים חלקים
 $v,w \colon M \to TM$,
-$\rho\prs{V,W}$
+$\rho\prs{v,w}$
 פונקצייה חלקה
 $M \to \RR$
 עם ההגדרה
@@ -3490,7 +3490,7 @@ $\lambda_{\alpha}\prs{p} \neq 0$
 קיים שיכון
 $i \colon M \hookrightarrow \RR^N$.
 נגדיר
-$i^* p \ceq \rho_0 \prs{Di\prs{p}\prs{v},Di\prs{p}\prs{w}}$
+$i^* \rho_0\prs{p} \ceq \rho_0 \prs{Di\prs{p}\prs{v},Di\prs{p}\prs{w}}$
 לכל
 $v,w \in T_p M$,
 מטריקה רימנית על
@@ -3517,6 +3517,1312 @@ $f \colon \Uu \to \RR^k$.
 בדקו כי שתי ההגדרות שראינו ליריעה עם שפה שקולות.%
 \footnote{מעבר מההגדרה הראשונה לשנייה מצריך את משפט הפונקציה הסתומה. הכיוון השני מצריך פיצול יחידה.}
 \end{exercise}
+\section{יריעות מרוכבות}
+\begin{definition}
+\stress{יריעה מרוכבת}
+זו יריעה טופולוגית
+$X$
+עם אטלס מתואם של מפות%
+\newlecture{25 בנובמבר}%
+{2018}
+$\set{\prs{\Uu_{\alpha} \phi_{\alpha}}}_{\alpha}$
+כאשר
+\[\phi_{\alpha} \colon \Uu_{\alpha} \to \phi_{\alpha}\prs{\Uu_{\alpha}} \subseteq \CC^n\]
+הומאומורפיזם והתמונה פתוחה.
+כאן האטלס
+\stress{מתואם}
+כאשר פונקציות המעבר
+$\phi_{\alpha} \circ \phi_{\beta}^{-1}$
+הולומורפיות.
+\end{definition}
+\begin{remark}
+על יריעות מרוכבות אין פיצול יחידה.
+\end{remark}
+\begin{example}[המישור ההיפרבולי]
+נגדיר
+$\HH \ceq \set{\prs{x,y}}{y >0}$.
+על המישור ההיפרבולי יש מטריקה היפרבולית:
+\begin{align*}
+\rho_{\prs{x,y}} \colon T_{\prs{x,y}}\HH \times T_{\prs{x,y}}\HH &\to \RR \\
+\prs{\pmat{x_1 \\ y_1}, \pmat{x_2 \\ y_2}} &\to \prs{x_1,y_2} \pmat{\frac{1}{y^2} & 0 \\ 0 & \frac{1}{y^2}} \pmat{x_2 \\ y_2}
+\end{align*}
+המטריצה
+$\pmat{\frac{1}{y^2} & 0 \\ 0 & \frac{1}{y^2}}$
+המייצגת את
+$\rho_{\prs{x,y}}$
+תלויה בצורה חלקה ב־%
+$\prs{x,y}$.\\
+אם
+$\gamma \colon \brs{0,1} \to \HH$
+עקומה, האורך שלה הוא
+\[\text{.}\mrm{len}_{\HH}\prs{\gamma} = \int_0^1 \dot{\norm{\gamma}_{\HH}}\diff t = \int_0^1 \frac{\dot{\norm{\gamma}_2}}{\gamma\prs{t}} \diff t\]
+\end{example}
+\begin{example}
+נסתכל על המטריקה האוקלידית ב־%
+$\RR^2$
+ונסמנה
+$\rho_{\text{eucl}}$.
+תהי
+$\phi \colon \prs{x,y} \to \prs{r,\theta}$
+הצגה הפולארית.
+$\rho_{\text{eucl}}$
+בקואורדינטות מקומיות לפי
+$\rho$
+נתונה על ידי
+$\pmat{1 & 0 \\ 0 & r^2}$.
+\end{example}
+\begin{example}
+תהי
+$\prs{M,\rho}$
+יריעה רימנית ותהיינה
+$x,y \in M$.
+אז
+$T_xM, T_yM$
+מרחבים שונים, אבל שניהם מזוהים עם
+$\RR^n$
+על ידי
+$Dp$.
+\[\hat{\rho}_x, \hat{\rho}_y \colon \RR^n \times \RR^n \to \RR\]
+הצגות מקומיות של
+$\rho_x, \rho_y$
+בהתאמה.
+\end{example}
+\chapter{תבניות פולילינאריות}
+\begin{definition}
+יהי
+$V$
+מ"ו סוף מימדי מעל
+$\RR$.
+נסמן
+$n \ceq \dim V$.
+\stress{תבנית פולילינארית אנטיסימטרית ממעלה
+$k\geq 0$}
+היא פונקצייה
+$\lambda \colon V^k \to \RR$
+המקיימת את התכונות הבאות.
+\begin{enumerate}
+\item $\lambda$
+לינארית בכל רכיב.
+\item החלפת שני וקטורים משנה סימן.
+\[\lambda\prs{v_1, \ldots, v_k} = \mrm{sgn}{\sigma} \lambda\prs{v_{\sigma\prs{1}}, \ldots, v_{\sigma\prs{k}}}\]
+\end{enumerate}
+\begin{notation}
+$\Omega^d \prs{V}$
+\stress{מרחב התבניות הפולילינאריות ממעלה
+$d$}.
+\end{notation}
+\begin{example}
+\begin{description}
+\item[$d=0$:]
+$\Omega^0 \prs{V} \cong \RR$
+\item[$d=1$:]
+$\Omega^1\prs{V} = V^* = \hom\prs{V,\RR}$.
+אם
+$V = \RR^n$
+דוגמה לתבנית היא
+$dx_i \pmat{a_1, \ldots, a_n} = a_i$.
+אז
+$V^* = \mrm{span}\set{dx_1, \ldots, dx_n}$
+הבסיס הסטנדרטי של
+$V^* = \prs{\RR^n}^*$.
+\item[מרחב וקטורים כלל:]
+יהי
+$B = \set{v_1, \ldots, v_n}$
+בסיס של
+$V$.
+כל
+$u \in V$
+ניתן להציג באופן יחיד
+$u = \sum_{i=1}^n \alpha_i v_i$
+ומתקיים
+$dv_i\prs{u} = \alpha_i$.
+אז
+$V^* = \mrm{span}\set{dv_1, \ldots, dv_n}$
+\stress{הבסיס הדואלי ל־%
+$B$}.
+הוא מסומן
+$B^*$.
+מתקיים
+$\dim V = \dim V^* = n$
+לכן
+$V\cong V^*$\footnote{
+ אבל אין איזומורפיזם קנוני, אלא אם ישנם מבנים נוספים כמו בחירת בסיס, או מכפלה פנימית}.
+\item[$d=2$:]
+$\Omega^2\prs{V}$
+הוא מרחב התבניות הבילינאריות האנטי־סימטריות.
+תהי
+$\lambda \colon V \times V \to \RR$,
+בהינתן בסיס
+$B$
+של
+$V$
+מתקבל
+\[\lambda\prs{v,w} = \brs{v}_B^T \pmat{0 & \lambda_{1,2} & \ldots & \lambda_{1,n} \\ -\lambda_{1,2} & 0 & \ddots & \vdots \\ \vdots & \ddots & \ddots & \vdots \\ -\lambda_{1,n} & \cdots & \cdots & 0} \brs{w}_B\]
+כאשר המטריצה הינה אנטי־סימטרית.
+מתקיים
+$\dim\Omega^2\prs{V} = \frac{n\prs{n-1}}{2}$.
+\end{description}
+\end{example}
+\end{definition}
+
+נניח
+$T \colon V \to W$
+לינארית. אז
+\begin{align*}
+T^* \colon \Omega^k\prs{W} &\to \Omega^k\prs{V} \\
+\lambda\prs{\cdot, \ldots, \cdot} &\to T^* \lambda
+\end{align*}
+כאשר
+$T^*$
+המשיכה לאחור.
+\\
+אם
+$T$
+איזו אז
+$T^*$
+איזו.
+
+\begin{example}
+$V = \RR^n$.
+אז
+$\det \prs{v_1, \ldots, v_n} = \abs{\mat{\vert & & \vert \\ v_1 & \cdots & v_n \\ \vert & & \vert}}$
+לכן
+$\det \in \Omega^n\prs{\RR^n}$.
+\end{example}
+\begin{proposition}
+$\Omega^m \prs{V} = \set{0}$
+עבור
+$n = \dim V < m$.
+\end{proposition}
+\begin{proof}
+ניקח בסיס
+$B = \set{v_1, \ldots, v_n}$.
+נבחר
+$\set{u_i}_{i\in [m]} \subseteq V$
+ואז
+$u_j = \sum_{i\in [n]} \alpha_{j,i} v_i$.
+תהי
+$\lambda \in \Omega^m \prs{V}$
+ואז
+\[\lambda\prs{u_1, \ldots, u_m} = \sum_{\prs{\ell_1, \ldots, \ell_m}} \alpha_{1,\ell_1} \alpha_{2,\ell_2} \cdots \alpha_{m,\ell_m} \lambda\prs{v_{\ell_1}, \ldots, v_{\ell_m}}\]
+כאשר סוכמים על בחירות של
+$m$
+אינדקסים.
+לכן יש
+$m$
+וקטורים בתוך כל
+$\lambda$,
+ולכן יש חזרות (כי
+$n < m$)
+וכל איבר מתאפס.
+\end{proof}
+\section{מכפלות חיצוניות}
+\begin{definition}
+\stress{מכפלה חיצונית של תבניות
+\textenglish{(exterior product, wedge product)}}\footnote{לא אותה הדבר כמו
+\textenglish{outer product}}
+היא העתקה
+\begin{align*}
+\Lambda \colon \Omega^k\prs{V} \times \Omega^{\ell}\prs{V} &\to \Omega^{k+\ell}\prs{V} \\
+\prs{\alpha, \beta} &\to \alpha \wedge \beta
+\end{align*}
+המוגדרת באופן הבא.
+\begin{align*}
+\prs{\alpha \wedge \beta}\prs{v_1,\ldots, v_{k+\ell}} \ceq  \sum_{i_1 < \ldots < i_k} \mrm{sgn}\prs{\sigma} \alpha\prs{v_{i_1}, \ldots, v_{i_k}} \beta\prs{v_{j_1}, \ldots, v_{i_{\ell}}}
+\end{align*}
+כאשר
+$i_1, \ldots, i_{\ell}$
+בחירת
+$k$
+אינדקסים מתוך
+$[k+\ell]$,
+$j_1 < \ldots < j_{\ell}$
+הם
+$\ell$
+האינדקסים הנותרים, ו־%
+$\sigma = \prs{i_1, \ldots, i_k, j_1, \ldots, j_{\ell}} \in S_{\ell+k}$.
+\end{definition}
+
+\begin{exercise}
+מכפלה חיצונית הינה אסוציאטיבית, מקיימת פילוג מעל חיבור
+($\prs{a \alpha + b\beta} \wedge \gamma = a\alpha \wedge \gamma + b\beta \wedge \gamma$),
+והינה אנטיקומוטטיבית%
+\footnote{\textenglish{anti-commutative / skew-commutative}}
+כלומר
+\[\text{.}\alpha^{\prs{k}} \wedge \beta^{\prs{\ell}} = \prs{-1}^{k \cdot \ell} \beta \wedge \alpha\]
+\end{exercise}
+
+\begin{example}
+תהיינה
+$\set{\lambda_i}_{i\in [k]} \subseteq \Omega^1\prs{V}$.
+אז
+\begin{align*}
+\text{.} \prs{\lambda_1 \wedge \ldots \wedge \lambda_k}\prs{v_1, \ldots, v_k} = \det\prs{\lambda_j\prs{v_i}}_{1 \leq i,j \leq k}
+\end{align*}
+נוכיח זאת באינדוקציה על
+$k$.
+\begin{description}
+\item[בסיס:]
+$k=1$
+ברור.
+\item[צעד:]
+נראה מעבר מ־%
+$k-1$
+ל־%
+$k$.
+נפתח דטרמיננטה לפי עמודה ראשונה.
+\begin{align*}
+\abs{\mat{\lambda_1\prs{v_1} & \cdots & \lambda_k\prs{v_1} \\ \vdots & \ddots & \vdots \\ \lambda_1\prs{v_k} & \cdots & \lambda_k\prs{v_k}}} &= \sum_{i=1}^k \prs{-1}^{i+1}\lambda_1\prs{v_i} \abs{M_{i,1}} \\&\stackrel{\text{induction hypotehsis}}{=}
+\sum_{i=1}^k \overset{\mrm{sgn}\prs{i,1,2,\ldots,i-1,i+1,\ldots,k}}{\overbrace{\prs{-1}^{i+1}}} \overset{\alpha}{\overbrace{\lambda_1\prs{v_i}}} \brs{\overset{\beta}{\overbrace{\prs{\lambda_2 \wedge \ldots \wedge \lambda_k}}} \prs{v_1, \ldots, v_{i-1}, v_{i+1},\ldots, v_k}} \\&
+\stackrel{\text{definition}}{=} \prs{\lambda_1 \wedge \ldots \wedge \lambda_k}\prs{v_1, \ldots, v_k}
+\end{align*}
+\end{description}
+\end{example}
+\begin{theorem}
+יהי
+$V$
+מ"ו עם
+$\set{\lambda_1, \ldots, \lambda_n}$
+בסיס של
+$V^*$.
+אזי
+$\set{\lambda_{i_1} \wedge \ldots \wedge \lambda_{i_k}}_{i_1 < i_2 < \ldots < i_k}$
+בסיס ל־%
+$\Omega^k\prs{V}$.
+\end{theorem}
+\begin{proof}
+ניקח
+$\set{v_1, \ldots, v_n}$
+הבסיס הדואלי ל־%
+$\set{\lambda_1, \ldots, \lambda_n}$
+של
+$V$.\footnote{
+כלומר,
+$\lambda_i\prs{_j} = \delta_{i,j}$
+}
+יהי
+$\alpha \in \Omega^k\prs{V}$.
+נבחר
+$k$
+וקטורים
+$\u_{i} = \sum_{j \in [n]} a_{i,j}v_j$.
+אז
+\begin{align*}
+\alpha\prs{u_1, \ldots, u_k} &= \alpha\prs{\sum a_{i,j} v_j, \ldots, \sum \alpha_{k,j} v_j} \\&=
+\sum_{1 \leq j_1, \ldots, j_k \leq n} a_{1,j_1}, \ldots, a_{k,j_k} \alpha\prs{v_{j_1}, \ldots, v_{j_k}} \\&= \star
+\end{align*}
+ואם
+$j_a = j_b$
+אז
+$\alpha$
+מתאפס.
+ניתן אם כן להניח כי
+$j_t$
+שונים.
+לכן
+\begin{align*}
+\star &= \sum_{\substack{\sigma \colon \prs{j_1, \ldots, j_k} \leftarrow \prs{i_1, \ldots, i_k} \\ i_1, \ldots, i_k}} a_{1,\sigma\prs{i_1}} \cdots a_{k,\sigma\prs{i_k}} \mrm{sgn}\prs{\sigma} \alpha\prs{v_{i,1}, \ldots, v_{i,k}} \\
+&= \sum_{i_1, \ldots, i_k} \prs{\alpha\prs{v_{i_1}, \ldots, v_{i_k}} \sum_{\sigma} \mrm{sgn}\prs{\sigma} \cdot a_{1,\sigma\prs{i_1}} \cdot \ldots \cdot a_{k,\sigma\prs{i_k}}}
+\end{align*}
+נשים ♥ כי
+\[\sum_{\sigma} \mrm{sgn}\prs{\sigma} \cdot a_{1,\sigma\prs{i_1}} \cdot \ldots \cdot a_{k,\sigma\prs{i_k}} = \abs{\mat{a_{1,j_1} & \cdots a_{1,i_k} \\ \vdots & \ddots & \vdots \\ a_{k,i_1} & \cdots a_{k,i_k}}}\]
+עם שורות
+$u_1, \ldots, u_k$
+ועמודות
+$\lambda_{i_1}, \ldots, \lambda_{i_k}$.
+אז
+\[\star = \sum_{i_1< \ldots <i_k} \alpha\prs{v_{i_1}, \ldots, v_{i_k}} \cdot \prs{\lambda_{i_1} \wedge \ldots \wedge \lambda_{i_k}}\prs{u_1, \ldots, u_k}\]
+נסמן
+$c \ceq \alpha\prs{v_{i_1}, \ldots, v_{i_k}}$
+את המקדם ב־%
+$\RR$
+וקיבלנו
+\begin{align*}
+\alpha = \sum_{i < \ldots, i_k} c_{i_1, \ldots, i_k} \cdot \lambda_{i_1} \wedge \ldots \lambda_{i_k}
+\end{align*}
+כלומר
+\[\alpha \in \mrm{span}\set{\lambda_{i_1}, \wedge \ldots \lambda_{i_n}}_{i_1 < \ldots, i_k}\]
+וקיבלנו כי הקבוצה פורשת.
+בדיקת אי־תלות נשארת כתרגיל.
+\end{proof}
+\begin{exercise}
+בדקו אי־תלות של הוקטורים בבסיס.
+\\
+רמז:
+\[\prs{\lambda_{i_1}, \ldots, \lambda_{i_k}} \prs{v_j,1, \ldots, v_{j,k}} = \delta_{\prs{i_1, \ldots, i_k},\prs{j_1, \ldots, j_k}}\]
+\end{exercise}
+\begin{corollary}
+$\dim \Omega^k \prs{V} = \binom{\dim V}{k}$.
+\end{corollary}
+\begin{corollary}
+אם
+$\dim V = n$
+אז
+$\dim \Omega^n \prs{V} = \binom{n}{n} = 1$.
+אז
+$\Omega^n\prs{\RR^n} = \mrm{span}\set{\det}$.
+\end{corollary}
+
+\begin{exercise}
+תהי
+$T \colon V \to W$
+ותהיינה
+$\alpha,\beta \in \Omega^*\prs{W}$.
+אז
+$T^*\prs{\alpha \wedge \beta} = T^*\alpha \wedge T^* \beta$.
+\end{exercise}
+\begin{example}
+תהי
+$T \colon V \to V$
+הטלה ($T^2 = T$).
+אז
+$\alpha \tilde{\wedge} \beta \colon T^* \alpha \wedge T^* \beta$
+מקיים את כל
+$3$
+התכונות של
+$\wedge$.
+התכונות אינן קובעות את פעולת
+$\wedge$.
+\end{example}
+\begin{exercise}
+נסתכל על
+$\RR^{2n}$
+עם קואורדינטות
+$\prs{p_1, q_1, \ldots, p_n,q_n}$.
+נגדיר
+$\omega \ceq dp_1 \wedge dq_1+\ldots+dp_n\wedge dq_n$\footnote{התבנית סימפקטית סטנדרטית של
+$\RR^n$}
+ואז
+\begin{align*}
+\frac{\omega^n}{n!}  = \frac{\omega \wedge \ldots \omega}{n!} dp_1 \wedge dq_1 \wedge \ldots \wedge dp_n \wedge dq_n
+\end{align*}
+\end{exercise}
+
+\section{תבניות דיפרנציאליות}
+\subsection{תיאור מקומי של תבניות דיפרנציאליות}
+\begin{notation}
+תהי
+$\Uu \subseteq \RR^n$
+פתוחה. ראינו
+$T_x \Uu \cong \RR^n$
+לכל
+$x \in \Uu$.
+נסמן
+$\prs{x_1, \ldots, x_n} = x$.
+נסמן ב־%
+$x_i$
+את ההטלה על הרכיב ה־%
+$i$.\\
+$\set{\frac{\del}{\del x^1} , \ldots, \frac{\del}{\del x^n}}$
+הבסיס הסטנדרטי של
+$T_x\Uu \cong \RR^n$.\\
+$\set{\diff x_1, \ldots, \diff x_n}$
+הבסיס הדואלי של
+$T_x^* \Uu = \prs{T_x \Uu}^* = \prs{\RR^n}^*$.
+נקרא ל־%
+$T_x^*$
+\stress{מרחב קו־משיק}.\\
+$\frac{\del}{\del x^i} \colon \Uu \to \RR^n$
+שדה וקטורי חלק.
+\end{notation}
+
+\begin{example}
+תהי
+$\gamma \colon \prs{-\eps,\eps} \to \Uu$
+עם
+$p=\gamma\prs{0}$
+ועם
+$\brs{\gamma} = \cdot{\gamma}\prs{0} \in T_{\gamma(0)}\Uu$.
+אז
+\[\brs{\gamma} = \sum_{i\in[n]} \cdot{\gamma}_i\prs{0} \frac{\del}{\del x^i}\prs{p}\]
+ונקבל
+\[\diff x_i \prs{p} \prs{\brs{\gamma}} = \cdot{\gamma_i} \prs{0}\]
+\end{example}
+\begin{definition}
+\stress{תבנית דיפרנציאלית
+\textenglish{differential form}
+ממעלה
+$k$
+על
+$\Uu$}
+זו משפחה של תבניות ממעלה
+$k$
+על
+$T_x\Uu$
+כך שהמשפחה תלויה באופן חלק ב־%
+$x$.
+\end{definition}
+
+נכתוב
+\[ \lambda\prs{x} = \sum_{i_1 < \ldots < i_k} a_{i_1, \ldots, i_k}\prs{x} \diff x_{i,1} \wedge \ldots \diff x_{i,k}\]
+כאשר
+$a_i$
+פונקציה חלקה
+$\Uu \to \RR$.
+לכל
+$x\in \Uu$,
+מתקיים
+\[\text{.}\lambda\prs{x} \in \Omega^* \prs{T_x \Uu}\]
+בהגדרה הכוונה שהמשפחה תלויה באופן חלק ב־%
+$x$
+היא לכך שהמקדמים בכתיב זה משתנים באופן חלק.
+
+\begin{notation}
+$\Omega^k\prs{\Uu}$
+אוסף התבניות ממעלה
+$k$
+על
+$\Uu$.
+\end{notation}
+\begin{examples}
+\begin{enumerate}
+\item $\Omega^0\prs{\Uu} = \CCC^{\infty} \prs{\Uu}$.
+\item תהי
+$f \in \CCC^{\infty} \prs{\Uu} = \Omega^0\prs{\Uu}$.
+נגדיר
+\[{\diff f}_{\prs{p}} \ceq \sum \frac{\del f}{\del x_i} \prs{p} \cdot \diff x_i\]
+ואז
+$\diff f \in \Omega^1 \prs{\Uu}$. \\
+ניקח
+$\gamma \colon \prs{-\eps, \eps} \to \Uu$
+ואז
+\[\text{.}\brs{\gamma} = \dot{\gamma}\prs{0} = \vec{v} \in \RR^n = T_p \Uu\]
+נסמן
+$v = \pmat{\dot{\gamma_1}(0) \\ \vdots \\ \dot{\gamma_n}\prs{0}}$
+ואז
+\begin{align*}
+{\diff f}_{\prs{p}}\prs{v} &= \sum \brs{\frac{\del f}{\del x_i}\prs{p} \cdot \diff x_i\prs{p}} \pmat{\dot{\gamma_1}(0) \\ \vdots \\ \dot{\gamma_n}\prs{0}} \\
+&= \sum \frac{\del f}{\del x_i}\prs{p} \cdot \diff x_i \prs{p} \pmat{\dot{\gamma_1}(0) \\ \vdots \\ \dot{\gamma_n}\prs{0}} \\
+&= \sum \frac{\del f}{\del x_i}\prs{p} \cdot \dot{\gamma_i}\prs{0} \\
+&\stackrel[\text{infi}]{}{=} \rest{\frac{\diff}{\diff t}}{t=0} f\circ \gamma\prs{t} \eqqcolon \frac{\del f}{\del v}
+\end{align*}
+\end{enumerate}
+\end{examples}
+\begin{definition}
+תהי
+$M$
+יריעה חלקה.
+\stress{תבנית דיפרנציאלית ממעלה
+$k$
+על
+$M$}
+היא משפחה חלקה
+$\alpha$
+של תבניות
+$\alpha_x \in \Omega^k \prs{T_x M}$.
+\end{definition}
+
+בהינתן
+$\alpha$
+$k$%
+־תבנית על
+$M$
+\[\hat{\alpha} \colon \prs{v_1, \ldots, v_k} \to \alpha_x\prs{D\phi^{-1}v_1, \ldots, D\phi^{-1}v_k} \in \RR\]
+\stress{הצגה מקומית של
+$\alpha$
+לפי
+$\phi$}.
+מתקיים
+$\hat{\alpha} \in \Omega^k \prs{\phi\prs{\Uu}}$.
+$\alpha$
+חלקה אם כל הצגה מקומית
+$\hat{\alpha}$
+חלקה על
+$\phi\prs{\Uu}$.
+
+\begin{proposition}
+\begin{itemize}
+\item $\Omega^k\prs{M}$
+מרחב לינארי מעל
+$\RR$.\footnote{בדר"כ המרחב אינסוף מימדי}
+\item $\wedge$
+מוגדר על
+$\Omega^*\prs{M}$. (אוסף התבניות מכל מעלה)
+\item 
+אם
+$f \colon M \to N$
+ו־%
+$\alpha \in \Omega^k \prs{N}$
+אז
+$f^* \alpha \in \Omega^k\prs{M}$.
+מתקיים
+\[f^* \alpha \prs{v_1,\ldots, v_k} = \alpha \prs{Df v_1, \ldots, Df v_k}\]
+זאת העתקה לינארית המקיימת
+$f^*\prs{\alpha \wedge \beta} = f^* \alpha \wedge f^* \beta$.
+\end{itemize}
+\end{proposition}
+
+תהי
+$M$
+יריעה עם מטריקה רימנית
+$g$.%
+\newlecture{נובמבר 12}%
+{2018}%
+אז לכל $x$
+\begin{align*}
+T_x M &\xrightarrow{\sim} T_x^* M \\
+v &\to g_x\prs{v,\cdot}
+\end{align*}
+איזומורפיזם.
+\\
+אז
+\[\begin{tikzcd}
+TM \arrow[rr,"\sim"] \arrow[dr] && T^*M \arrow[dl]\\
+& M &
+\end{tikzcd}
+\]
+איזומורפיזם%
+\footnote{לא קנוני; תלוי בבחירת $g$}
+של אגדים וקטוריים.
+
+\begin{notation}
+תהי
+$M$
+יריעה ו־%
+$\prs{\Uu,\phi}$
+מפה ל־%
+$\RR^n$.
+סימנו
+$x_1, \ldots, x_n \colon \phi\prs{\Uu} \to \RR$
+פונקציות קואורדינטות,
+$\frac{\del}{\del x^1}, \ldots, \frac{\del}{\del x^n}$
+שדות וקטוריים מקבילים לסריג הקואורדינטות ו־%
+$\diff x_1, \ldots, \diff x_n$
+פונקציונלים דואליים ל־%
+$\frac{\del}{\del x^i}$.\\
+ניתן להרים ולהגדיר אובייקטים מקבילים על
+$\Uu \subseteq M$.
+\begin{itemize}
+\item $x_i \colon \Uu \to \RR$
+פונקציות קואורדינטות מקומיות על
+$\Uu$.
+\item $\frac{\del}{\del x_i}$
+שדות וקטוריים מקומיים.
+\item $\diff x_i$
+$1$%
+־תבניות על
+$\Uu$.
+\end{itemize}
+\end{notation}
+
+\section{אוריינטציה על יריעה}
+
+\begin{definition}
+יהי
+$V$
+מ"ו מעל
+$\RR$
+ממימד
+$0 < n < \infty$.
+יהיו
+$B_1, B_2$
+בסיסים של
+$V$.\\
+ל־%
+$B_1, B_2$
+\stress{אותה אוריינטציה}
+אם למטריצת המעבר
+$T_{B_1}^{B_2}$
+דטרמיננטה חיובית. אחרת
+\stress{האוריינטציה הפוכה}.
+\end{definition}
+\begin{exercise}
+שיוויון אוריינטציה הוא יחס שקילות וישנן שתי מחלקות שקילות של בסיסים. אז%
+\footnote{הדבר דורש הוכחה.}
+ יש שתי מחלקות קשירות של בסיסים (עם הטופולוגיה המושרית של
+$V$).
+לכן ל־%
+$\G\L_{\RR}\prs{n}$
+יש שתי מחלקות קשירות.
+\end{exercise}
+\begin{definition}
+עבור
+$V = \RR^n$
+\stress{אוריינטציה חיובית}
+היא האוריינטרציה של הבסיס הסטנדרטי.
+\end{definition}
+\begin{definition}
+תהי
+$M$
+יריעה.
+\stress{
+אוריינטרציה על
+$M$}
+היא בחירה חלקה של אוריינטציה לכל
+$T_xM$.\\
+בחירת אוריינטציה של
+$T_x \Uu$
+היא בחירת אוריינטציה של
+$\RR^n$.
+\end{definition}
+\begin{definition}
+אוריינטציה על
+$M$
+\stress{חלקה}
+אם היא קבועה מקומית על
+$\phi\prs{\Uu}$.\footnote{פלוס או מינוס על כל מחלקת קשירות}
+\end{definition}
+\begin{definition}
+תהי
+$M$
+יריעה.
+אם קיימת אוריינטציה על
+$M$
+היא נקראת
+\stress{אוריינטבילית}.
+אחרת היא אינה
+\stress{אוריינטבילית}.
+\end{definition}
+\begin{proposition}
+אם
+$B_x$
+משפחה חלקה של בסיסים ל־%
+$T_xM$
+כאשר
+$x \in M$,
+מתקבלת אוריינצטיה על
+$M$.
+\end{proposition}
+\begin{remark}
+כדי לקבל משפחה של בסיסים, צריכים
+$\dim M$
+שדות וקטוריים שהינם בלתי־תלויים בכל נקודה.
+\end{remark}
+\begin{example}
+על
+$S^2$
+אין שדה וקטורי שאינו מנוון, לכן אין משפחה של בסיסים.
+\end{example}
+\begin{exercise}
+יהי
+$V$
+מרחב
+$n$%
+־מימדי ותהי
+$A \colon V \to V$.
+אזי
+$A$
+פועלת על
+$\Omega^n \prs{V}$.
+לכל
+$\omega \in \Omega^n\prs{V}$,
+נקבל העתקה
+\begin{align*}
+A^* \omega \colon V^n &\to \RR \\
+\prs{u_1, \ldots, u_n} &\to \omega\prs{A u_1, \ldots, A u_n}
+\end{align*}
+בדקו כי
+\[\text{.} A^* \omega \prs{u_1, \ldots, u_n} = \det A \cdot \omega\prs{u_1, \ldots, u_n}\]
+\end{exercise}
+\begin{example}
+נניח
+$\dim V = 2$
+ויהי
+$\set{e_1, e_2}$
+בסיס ל־%
+$V$.
+נגדיר
+\begin{align*}
+A e_1 &= a e_1 + be_2 \\
+A e_2 &= ce_1 + de_2
+\end{align*}
+ואז
+\begin{align*}
+A^* \omega\prs{e_1, e_2} &= \omega\prs{A e_1, A e_2} \\
+&= \omega\prs{a e_1 + be_2, ce_1 + de_2} \\
+&= ac \cancelto{0}{\omega\prs{e_1, e_1}} + ad \omega\prs{e_1, e_2} + bc\omega\prs{e_2, e_1} + bd\cancelto{0}{\omega\prs{e_2, e_2}} \\
+&= \prs{ad - bc} \omega\prs{e1, e_2} \\
+&= \abs{A} \cdot \omega\prs{e_1, e_2}
+\end{align*}
+\end{example}
+\begin{corollary}
+יהי
+$B = \set{v_1, \ldots, v_n}$
+בסיס למרחב וקטורי
+$V$.
+יהיו
+$u_1, \ldots, u_n \in V$.
+נגדיר
+\begin{align*}
+A \colon V &\to V \\
+v_i &\to u_i
+\end{align*}
+ואז
+\[\abs{A}_B^B = \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert}\]
+ונקבל
+\begin{align*}
+\omega\prs{u_1, \ldots, u_n} &= \omega\prs{A v_1, \ldots, A v_n} \\&= \det A \omega\prs{v_1, \ldots, v_n} \\&= \det \det \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert} \overset{\text{scalar}}{\overbrace{\omega\prs{u_1, \ldots, u_n}}}
+\end{align*}
+ולכן
+$\omega = c \cdot \det\prs{\ldots}$
+כלומר
+$\Omega^n\prs{V}$
+חד־מימדי.%
+\footnote{כפי שכבר ראינו}
+\end{corollary}
+\begin{definition}
+יהי
+$V$
+מ"ו
+$n$%
+־%
+מימדי מעל
+$\RR$
+ותהי
+$\omega \in \Omega^n\prs{V}$.
+אז
+$\omega$
+\stress{תבנית נפח}
+אם
+$\omega \neq 0$.
+\end{definition}
+\begin{definition}
+$\omega_1 \sim \omega_2$
+(תבניות נפח)
+אם
+$\frac{\omega_1}{\omega_2}$.\footnote{זה מוגדר היטב כי המרחב חד־מימדי}
+\end{definition}
+\begin{remark}
+$\sim$
+יחס שקילות על
+$\Omega^n\prs{V}$.
+\end{remark}
+\begin{definition}
+\stress{אוריינטציה של
+$V$}
+היא מחלקת שקילות ב־%
+$\Omega^n\prs{V}$
+תחת היחס
+$\sim$.
+\end{definition}
+
+\begin{definition}
+בהינתן
+$\omega \in \Omega^n\prs{V}$
+תבנית נפח ו־%
+$\brs{\omega}$
+אוריינטציה, עבור
+$B$
+בסיס של
+$V$
+נגיד כי
+\stress{$B$
+חיובי}%
+\footnote{ביחס ל־%
+$\omega$}
+אם
+$\omega\prs{B} > 0$
+וכי
+\stress{$B$
+שלילי}%
+\footnote{ביחס ל־%
+$\omega$}
+אם
+$\omega\prs{B} < 0$.
+\end{definition}
+
+\begin{exercise}
+מקבלים מהנ"ל שתי מחלקות שקילות של בסיסים. אלו בלתי־תלויות בבחירת הנציג
+$\omega$.
+\end{exercise}
+
+\begin{definition}
+בהינתן בסיס
+$B = \set{v_1, \ldots, v_n}$
+נגדיר
+$\omega = \diff v_1 \wedge \ldots \wedge \diff v_n$
+ואז
+$\brs{B}$
+בסיסים חיוביים ביחס ל־%
+$\omega$.
+\end{definition}
+
+\begin{definition}
+$\Omega^n\prs{V}$
+נקרא
+\stress{מרחב הדטרמיננטות של $V$}.
+\end{definition}
+
+\begin{definition}
+$\Omega^n\prs{M}$
+נקרא
+\stress{אגד דטרמיננטות של $M$}.
+\end{definition}
+
+\begin{remark}
+מתקיים
+\[\Omega^n\prs{M} = \set{\prs{x,\omega}}{x\in M, \omega \in \Omega^n\prs{T_x M}}\]
+\end{remark}
+
+\subsection{מבנה חלק על
+$\Omega^n \prs{M}$}
+יהי
+$\set{\prs{\Uu_{\alpha}, \phi_{\alpha}}}$
+אטלס חלק על
+$M$.
+אז אם
+$\phi_{\alpha}\prs{\Uu_{\alpha}} \subseteq \RR^n$.
+מתקיים
+\begin{align*}
+T \phi_{\alpha}\prs{\Uu_{\alpha}} &\cong \phi_{\alpha}\prs{\Uu_{\alpha}} \times \RR^n \\
+\Omega^n \prs{T_x \phi_{\alpha}\prs{\Uu_{\alpha}}} &\cong \Omega^n\prs{\RR^n} \cong \RR
+\end{align*}
+ולכן
+\begin{align*}
+\Omega^n \prs{\phi_{\alpha}\prs{\Uu_{\alpha}}} \cong \phi_{\alpha}\prs{\Uu_{\alpha}} \times \RR \subseteq \RR^{n+1}
+\end{align*}
+
+\begin{definition}
+\begin{align*}
+\bar{\Uu}_{\alpha} \ceq \set{\prs{x,\omega}}{\substack{x \in \Uu_{\alpha} \\ \omega \in \Omega^n \prs{T_x \Uu_{\alpha}}}}
+\end{align*}
+\begin{align*}
+\bar{\phi}_{\alpha} \colon \prs{x,\omega} \to \prs{\phi\prs{x}, \prs{\phi^{-1}_{\alpha}}^* \omega}
+\end{align*}
+\end{definition}
+\begin{remark}
+מתקיים
+\[\prs{\phi_{\alpha}^{-1}}^* \omega\prs{v_1, \ldots, v_n} = \omega\prs{D\phi^{-1}v_1, \ldots, D\phi^{-1}v_n}\]
+לכן
+\[\text{.}\bar{\phi}_{\alpha} \colon \bar{\Uu}_{\alpha} \to \Omega^n \prs{\phi_{\alpha}\prs{\Uu_{\alpha}}} \subseteq \RR^{n-1}\]
+\end{remark}
+\begin{exercise}
+$\set{\prs{\bar{\Uu}_{\alpha}, \bar{\phi}_{\alpha}}}$
+משרה טופולוגיה על
+$\Omega^n\prs{M}$
+ומגדיר מבנה חלק.
+אז
+$\Omega^n\prs{M}$
+יריעה חלקה.
+\end{exercise}
+\begin{definition}
+\stress{תבנית חלקה ממעלה
+$n$
+על
+$M^n$}
+היא העתקה חלקה
+\begin{align*}
+\omega \colon M &\to \Omega^n \prs{M} \\
+x &\to \prs{x,\omega_x}
+\end{align*}
+כאשר
+$\omega_x \in \Omega^n \prs{T_x M}$.
+\end{definition}
+\begin{exercise}
+בדקו כי הגדרה זאת מסכימה עם ההגדרה הקודמת עם קואורדינטות.
+\end{exercise}
+\begin{definition}
+\stress{תבנית נפח}
+על יריעה
+$M^n$
+היא
+$n$%
+־תבנית
+$\omega$
+כך ש־%
+$\forall x \in M \colon \omega_x \neq 0$.
+\end{definition}
+
+\begin{definition}
+יריעה
+$M$
+נקראת
+\stress{אוריינטבילית}
+אם קיימת עליה תבנית נפח.
+\end{definition}
+
+\begin{exercise}
+בהינתן שתי תבניות נפח
+$\omega_{1,2}$
+יש העתקה
+$\phi_x \colon \frac{\omega_1}{\omega_2} \colon M \to \RR$
+\emph{חלקה
+ושאינה מתאפסת.}
+\end{exercise}
+\begin{definition}
+$\omega_1 \sim \omega_2$
+אם
+$\phi_x > 0$
+לכל
+$x \in M$.
+\end{definition}
+\begin{exercise}
+הנ"ל מגדיר יחס שקילות.
+\end{exercise}
+\begin{definition}
+כל מחלקת שקילות נקראת אוריינטציה על
+$M$.
+\end{definition}
+\begin{exercise}
+בחירת מחלקת אוריינטציה של תבניות שקולה לבחירת מחלקת אוריינטציה של בסיסים ל־%
+$T_x M$
+לכל
+$x \in M$.
+\end{exercise}
+
+תהי
+$X \xrightarrow{f} Y$,
+נזכיר כי
+$TX \xrightarrow{f_* = Df} TY$
+וניתן להגדיר גם
+\begin{align*}
+\Omega^k\prs{X} \xleftarrow{f^*} \Omega^k\prs{Y} \\
+\CCC^{\infty}\prs{X} \xleftarrow{f^*} \CCC^{\infty}\prs{Y}
+\end{align*}
+\\
+בהינתן
+$\omega_0$
+תבנית נפח על
+$M$,
+ו־%
+$\omega \in \Omega^n\prs{M}$
+$n$%
+־תבנית כלשהי, מתקיים
+$\omega = \phi\prs{x} \cdot \omega_0$
+ו־%
+$\phi_x \colon M \to \RR$
+פונקציה חלקה.
+\\
+\begin{exercise}
+בהינתן
+\begin{align*}
+f \colon M &\to N \\
+g \colon N &\to L
+\end{align*}
+מתקיים
+\begin{align*}
+f^* \circ g^* = \prs{g \circ f}^* \\
+f^* \prs{\phi \omega} = f^* \phi \cdot f^* \omega
+\end{align*}
+כאשר
+$\phi$
+פונקצייה ו־%
+$\omega$
+תבנית.
+\end{exercise}
+
+\begin{example}
+תהי
+$M = \RR^n$
+ואז
+$T_x \RR^n \cong \RR^n$.
+נגדיר
+$w_{0,x} = \det\pmat{\vert & & \vert \\ v_1 && v_n \\ \vert && \vert}$
+\stress{תבנית נפח אוקלידית}.
+\end{example}
+\begin{example}
+תהי
+$M = \TT^n = \quot{\RR^n}{\ZZ^n}$.
+תהי
+$\pi \colon \RR^n \to \TT^n$
+ההטלה.
+תהי
+$x \in \TT^n$,
+ו־%
+$y \in \pi^{-1}\prs{x} \in \RR^n$.
+אז
+\begin{align*}
+\text{.} D\pi_y = \pi_* \colon T_y \RR^n \to T_x \TT^n
+\end{align*}
+איזו.
+\\
+נגדיר
+$\omega$
+תבנית נפח על
+$\TT^n$
+על ידי
+\[\text{.} \omega_x \prs{v_1, \ldots, v_n} \ceq \omega_{0,y} \prs{\pi_*^{-1} v_1, \ldots, \pi_*^{-1} v_n}\]
+\end{example}
+\begin{exercise}
+בדקו כי
+$\omega$
+אינה תלויה בבחירת
+$y \in \pi^{-1}\prs{x}$.
+\end{exercise}
+\begin{solution}
+נבחר
+$y' \in \pi^{-1}\prs{x}$
+נקודה אחרת. נגדיר הזזה
+$S \colon \RR^n \to \RR^n$
+על ידי
+$S(y) = y'$.
+אז
+$DS = \1$
+ולכן
+$S^* \omega_0 = \omega_0$.\\
+אז
+\begin{align*}
+\omega_0\prs{u_1, \ldots, u_n} &= w_0\prs{DS u_1, \ldots, DS u_n} \\ &= S^* \omega_0 \prs{u_1, \ldots, u_n}
+\end{align*}
+ואז
+$\prs{\pi^{-1}}^* \omega_{0,y} = \prs{\pi^{-1}}^* \omega_{0,y'}$
+ואז
+$\omega_x$
+בלתי־תלויה בבחירת הנציג.
+\end{solution}
+
+\begin{example}
+תהי
+$M = \SS^n \subseteq \RR^{n+1}$.
+כדי להגדיר תבנית נפח, נשתמש בתבנית נפח על
+$\RR^{n+1}$.\\
+נסמן
+$\nu \prs{x} \ceq x$
+לכל
+$x \in S^n$
+להיות נורמל יחידה חיצוני.
+נסמן
+\[\Omega_0\prs{x} \prs{v_1, \ldots, v_n} \ceq \omega_0\prs{\nu\prs{x}, v_1, \ldots, v_n}\]
+כאשר
+$\omega_0$
+תבנית הנפח האוקלידית.
+\end{example}
+\begin{exercise}
+בדקו כי
+$\Omega_0$
+תבנית נפח.
+\end{exercise}
+\begin{theorem}
+תהי
+$M = \RR\P^n = \quot{S^n}{\pm 1}$.
+אז
+$M$
+אוריינטבילית אם ורק אם
+$n$
+אי־זוגי.
+\end{theorem}
+\begin{proof}
+\begin{itemize}
+\item אם
+$n$
+אי־זוגי ו־%
+$\pi$
+ההטלה, אז
+$\pi^{-1}\prs{x} = \set{\pm y} \subseteq S^n$.
+\begin{exercise}
+קיימת
+$\omega \in T_x \RR\P^n$
+כך שמתקיים
+\[\text{.}\pi_y^*\omega = \Omega_0\prs{y}, \qquad \pi_{-y}^* \omega = \Omega_0\prs{-y}\]
+אז
+$\omega$
+תבנית שלא מתאפסת לכל
+$x \in \RR\P^n$.
+
+\item
+אם
+$n$
+זוגי, ו־%
+$\pi$
+ההטלה, נגדיר
+\begin{align*}
+f \colon S^n &\to S^n \\
+x &\to -x
+\end{align*}
+ואז הדיאגרמה
+\[
+\begin{tikzcd}
+S^n \arrow[rr,"f"] \arrow[dr, "\pi"] && S^n \arrow[dl,"\pi"] \\
+& \RR\P^n
+\end{tikzcd}
+\]
+קומוטטיבית.
+\\
+נניח בשלילה כי קיימת
+$\omega$
+תבנית נפח על
+$\RR\P^n$.
+תהי
+$\Omega_0$
+תבנית הנפח הסטנדרטית על
+$S^n$.
+אז
+\begin{align*}
+f^* \Omega_0\prs{p}\prs{\eta_1, \ldots, \eta_n} &= \Omega_0\prs{f\prs{p}}\prs{f_* \eta_1, \ldots, f_* \eta_n} \\
+&= \omega_{0,f(p)} \prs{\nu\prs{f\prs{p}}, f_* \eta_1, \ldots, f_*\eta_n} \\
+&\stackrel[\omega_{0,p} = \omega_{0,f(p)}]{}{=} w_{0,p} \prs{ -\nu\prs{p}, -\eta_1, \ldots, -\eta_n} \\
+&= \prs{-1}^{n+1} \omega_0\prs{\nu\prs{p}, \eta_1, \ldots, \eta_n} \\
+&= \prs{-1}^{n+1} \Omega_{0,p}\prs{\eta_1, \ldots, \eta_n}
+\end{align*}
+כאשר
+$\omega_{0,q}$
+תבנית נפח סטנדרטית ב־%
+$\RR^{n+1}$,
+ואינה תלויה ב־%
+$q$.\\
+נסמן
+$\Omega = \pi^* \omega$
+תבנית נפח על
+$S^n$.
+לכן
+$\Omega = H \cdot \Omega_0$
+כאשר
+$H \colon S^n \to \RR$
+פונקציה שלא מתאפסת.
+מקומוטטיביות הדיאגרמה,
+$\pi \circ f = \pi$
+ואז
+$f^* \circ \pi^* = \prs{\pi \circ f}^* = \pi^*$
+לכן
+$f^* \pi^* \omega = \pi^* \omega$
+כלומר
+$f^* \Omega = \Omega$.
+אז
+\begin{align*}
+\text{.} H \Omega_0 = f^*\prs{H \Omega_0} = f^* H \cdot f^* \Omega_0 = f^* \circ H \cdot \prs{-1}^{n+1} \Omega_0 = f^*\prs{H} \Omega_0
+\end{align*}
+בנק'
+$p$
+נקבל
+\begin{align*}
+H\prs{p} \cdot \Omega_0 \prs{p} = f^* H\prs{p} \Omega_0 \prs{p} = H\prs{f\prs{p}} \cdot \Omega_0 \prs{p}
+\end{align*}
+אך
+$H$
+אינה מתאפסת, לכן
+$H\prs{p}$
+ו־%
+$H\prs{f\prs{p}}$
+בעלי אותו סימן. אז
+\[\Omega_0\prs{p} = \overset{< 0}{\overbrace{-\frac{H\prs{f\prs{p}}}{H\prs{p}}}} \Omega_0\prs{\phi}\]
+בסתירה.
+\end{exercise}
+\end{itemize}
+\end{proof}
+\begin{example}
+תהי
+\begin{align*}
+T \colon \RR^2 &\to \RR^2 \\
+\prs{x,y} &\to \prs{x+1, -y}
+\end{align*}
+אז
+$z_1 \sim z_2$
+אם ורק אם
+$T^k z_1 = z_2$
+עבור
+$k \in \ZZ$
+כלשהו.
+אם מחלקות שקילות הן מסלולים של
+$T$
+אז:
+\begin{exercise}
+\begin{enumerate}
+\item $\quot{T}{\sim}$
+יריעה חלקה הומאומורפית לסרט
+\textenglish{Möbius}.
+\item היריעה אינה אוריינטבילית.
+\end{enumerate}
+\end{exercise}
+\end{example}
+\begin{exercise}
+תהי
+$M$
+אוריינטבילית וקשירה. אז ישנן
+$2$
+אוריינטציות על
+$M$.
+\end{exercise}
+\begin{definition}
+תהי
+$f \colon M^n \to N^n$
+ותהיינה
+$\omega, \Omega$
+תבניות נפח על
+$M, N$
+בהתאמה.
+$f$
+\stress{שומרת אוריינטציה}
+אם
+$\frac{f^* \Omega}{\omega} > 0$.
+אחרת היא
+\stress{הופכת אוריינטציה}.
+\end{definition}
+\begin{remark}
+נסתכל
+על הנ"ל
+בקואורדינטות מקומיות.
+נניח
+$\phi\prs{\Uu}, \psi\prs{\Vv} \subseteq \RR^n$
+כאשר ההצגות המקומיות
+$\hat{\omega}, \hat{\Omega}$
+חיובית ביחס לאוריינטציה הסטנדרטית.
+אז
+$f$
+שומרת אוריינטציה אם ורק אם
+$\det \prs{\frac{\del \hat{f_i}}{\del x_i}} > 0$.
+\end{remark}
+
+\begin{definition}
+אטלס חלק
+$\set{\prs{\Uu_{\alpha}, \phi_{\alpha}}}$
+נקרא
+\stress{אוריינטבילי}
+אם פונקציות המעבר
+$\phi_{\alpha} \circ \phi_{\beta}^{-1}$
+שומרות אוריינטציה.
+\end{definition}
+
+\begin{theorem}
+יריעה
+$M$
+אוריינטבילית אם ורק אם קיים עליה אטלס אוריינטבילי.
+\end{theorem}
+\begin{proof}
+תרגיל.
+\end{proof}
+
+\begin{example}[יריעות מרוכבות]
+תהי
+$M$
+יריעה עם אטלס מרוכב ל־%
+$\CC^n$
+ועם פונקציות מעבר ביהולומורפיות.
+\begin{exercise}
+אם נזהה
+$\CC^n \cong \RR^{2n}$
+וניקח
+$A \colon \CC^n \to \CC^n$
+העתקה
+$\CC$%
+־לינארית, אז
+$\det\prs{A_{\RR}} > 0$
+כאשר
+$A_{\RR} \colon \RR^{2n} \to \RR^{2n}$
+ההעתקה המתאימה.
+לכן העתקות
+$\CC$%
+־לינאריות שומרות אוריינטציה של
+$\RR^{2n}$.
+לכן%
+\footnote{}
+ כל העתקה הולומופית שומרת אוריינטציה.
+לכן אטלס מרוכב הינו אוריינטבילי.
+\end{exercise}
+\end{example}
+\begin{example}
+אם
+$V$
+מ"ו מעל
+$\CC$,
+יש עליו אוריינטציה סטנדרטית.
+בהינתן בסיס מרוכב
+$B = \set{v_1, \ldots, v_n}$
+ניתן להגדיר בסיס ממשי
+$B_{\RR} = \set{v_1, iv_1, v_2, iv_2, \ldots, v_n, iv_n}$.
+\begin{exercise}
+$B_{1, \RR}, B_{2,\RR}$
+בעלי אותה אוריינטציה לכל
+$B_1, B_2$
+בסיסים מעל
+$\CC$.
+\end{exercise}
+לכן לכל מרחב וקטורי מרוכב יש אוריינטציה טבעית.
+\\
+ליריעה מרוכבת יש מבנה מרוכב לכל מרחב משיק
+$T_x M$,
+לכן יש אוריינטציה טבעית.
+\end{example}
+
 \backmatter
 \end{document}
 

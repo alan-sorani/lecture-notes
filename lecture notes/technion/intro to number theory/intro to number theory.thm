@@ -65,4 +65,117 @@
 \contentsline {theorem}{{משפט}{1.5.{5}}{אוילר 1729, הורדה}}{6}{theorem.1.5.5}
 \contentsline {proof}{{הוכחה}{15}{}}{6}{proof.15}
 \contentsline {corollary}{{מסקנה}{1.5.{6}}{}}{6}{theorem.1.5.6}
-\contentsline {proposition}{{טענה}{1.5.{7}}{}}{6}{theorem.1.5.7}
+\contentsline {proof}{{הוכחה}{16}{}}{6}{proof.16}
+\contentsline {theorem}{{משפט}{1.5.{7}}{אוילר}}{6}{theorem.1.5.7}
+\contentsline {proof}{{הוכחה}{17}{}}{6}{proof.17}
+\contentsline {theorem}{{משפט}{1.5.{8}}{אוילר}}{6}{theorem.1.5.8}
+\contentsline {corollary}{{מסקנה}{1.5.{9}}{}}{6}{theorem.1.5.9}
+\contentsline {question}{{שאלה}{1.5.{10}}{}}{6}{theorem.1.5.10}
+\contentsline {proposition}{{טענה}{1.5.{11}}{}}{7}{theorem.1.5.11}
+\contentsline {proof}{{הוכחה}{18}{}}{7}{proof.18}
+\contentsline {theorem}{{משפט}{1.5.{12}}{}}{7}{theorem.1.5.12}
+\contentsline {proof}{{הוכחה}{19}{}}{7}{proof.19}
+\contentsline {proposition}{{טענה}{1.5.{13}}{}}{7}{theorem.1.5.13}
+\contentsline {proof}{{הוכחה}{20}{}}{7}{proof.20}
+\contentsline {corollary}{{מסקנה}{1.5.{14}}{האקסיומה השנייה של הנורמה בחוג אוקלידי}}{7}{theorem.1.5.14}
+\contentsline {proposition}{{טענה}{1.5.{15}}{}}{7}{theorem.1.5.15}
+\contentsline {remark}{{הערה}{1.5.{16}}{}}{7}{theorem.1.5.16}
+\contentsline {proof}{{הוכחה}{21}{}}{7}{proof.21}
+\contentsline {theorem}{{משפט}{1.5.{17}}{\textenglish {descent}}}{8}{theorem.1.5.17}
+\contentsline {proof}{{הוכחה}{22}{}}{8}{proof.22}
+\contentsline {corollary}{{מסקנה}{1.5.{18}}{}}{8}{theorem.1.5.18}
+\contentsline {remark}{{הערה}{1.5.{19}}{}}{8}{theorem.1.5.19}
+\contentsline {definitionx}{{הגדרה}{1.6.{1}}{}}{8}{theorem.1.6.1}
+\contentsline {proposition}{{טענה}{1.6.{2}}{}}{8}{theorem.1.6.2}
+\contentsline {notation}{{סימון}{1.6.{3}}{}}{8}{theorem.1.6.3}
+\contentsline {proposition}{{טענה}{1.6.{4}}{}}{8}{theorem.1.6.4}
+\contentsline {notation}{{סימון}{1.6.{5}}{}}{8}{theorem.1.6.5}
+\contentsline {remark}{{הערה}{1.6.{6}}{}}{8}{theorem.1.6.6}
+\contentsline {proposition}{{טענה}{1.6.{7}}{}}{8}{theorem.1.6.7}
+\contentsline {remark}{{הערה}{1.6.{8}}{}}{8}{theorem.1.6.8}
+\contentsline {example}{{דוגמה}{1.6.{9}}{}}{9}{theorem.1.6.9}
+\contentsline {proposition}{{טענה}{1.6.{10}}{}}{9}{theorem.1.6.10}
+\contentsline {proof}{{הוכחה}{23}{}}{9}{proof.23}
+\contentsline {exercise}{{תרגיל}{5}{}}{9}{exercise.5}
+\contentsline {example}{{דוגמה}{1.6.{11}}{}}{9}{theorem.1.6.11}
+\contentsline {corollary}{{מסקנה}{1.6.{12}}{}}{9}{theorem.1.6.12}
+\contentsline {example}{{דוגמה}{1.6.{13}}{}}{9}{theorem.1.6.13}
+\contentsline {definitionx}{{הגדרה}{1.6.{14}}{}}{9}{theorem.1.6.14}
+\contentsline {example}{{דוגמה}{1.6.{15}}{}}{9}{theorem.1.6.15}
+\contentsline {theorem}{{משפט}{1.6.{16}}{\textenglish {Euler}}}{9}{theorem.1.6.16}
+\contentsline {theorem}{{משפט}{1.6.{17}}{פרמה הקטן}}{9}{theorem.1.6.17}
+\contentsline {example}{{דוגמה}{1.6.{18}}{}}{9}{theorem.1.6.18}
+\contentsline {example}{{דוגמה}{1.6.{19}}{משפט השאריות הסיני}}{9}{theorem.1.6.19}
+\contentsline {example}{{דוגמה}{1.6.{20}}{}}{9}{theorem.1.6.20}
+\contentsline {lemma}{{למה}{1.6.{21}}{}}{9}{theorem.1.6.21}
+\contentsline {proof}{{הוכחה}{24}{}}{9}{proof.24}
+\contentsline {theorem}{{משפט}{1.6.{22}}{משפט השאריות הסיני}}{10}{theorem.1.6.22}
+\contentsline {proof}{{הוכחה}{25}{}}{10}{proof.25}
+\contentsline {exercise}{{תרגיל}{6}{}}{10}{exercise.6}
+\contentsline {example}{{דוגמה}{1.6.{23}}{}}{10}{theorem.1.6.23}
+\contentsline {corollary}{{מסקנה}{1.6.{24}}{}}{10}{theorem.1.6.24}
+\contentsline {definitionx}{{הגדרה}{1.6.{25}}{}}{10}{theorem.1.6.25}
+\contentsline {example}{{דוגמה}{1.6.{26}}{}}{10}{theorem.1.6.26}
+\contentsline {lemma}{{למה}{1.6.{27}}{}}{10}{theorem.1.6.27}
+\contentsline {proof}{{הוכחה}{26}{}}{10}{proof.26}
+\contentsline {remark}{{הערה}{1.6.{28}}{}}{10}{theorem.1.6.28}
+\contentsline {corollary}{{מסקנה}{1.6.{29}}{}}{10}{theorem.1.6.29}
+\contentsline {proof}{{הוכחה}{27}{}}{10}{proof.27}
+\contentsline {proposition}{{טענה}{1.6.{30}}{}}{10}{theorem.1.6.30}
+\contentsline {proof}{{הוכחה}{28}{}}{10}{proof.28}
+\contentsline {theorem}{{משפט}{1.6.{31}}{\textenglish {Wilson}}}{10}{theorem.1.6.31}
+\contentsline {proof}{{הוכחה}{29}{}}{10}{proof.29}
+\contentsline {exercise}{{תרגיל}{7}{}}{10}{exercise.7}
+\contentsline {proposition}{{טענה}{1.6.{32}}{}}{10}{theorem.1.6.32}
+\contentsline {proof}{{הוכחה}{30}{}}{11}{proof.30}
+\contentsline {theorem}{{משפט}{1.6.{33}}{}}{11}{theorem.1.6.33}
+\contentsline {proof}{{הוכחה}{31}{}}{11}{proof.31}
+\contentsline {proposition}{{טענה}{1.6.{34}}{}}{11}{theorem.1.6.34}
+\contentsline {proof}{{הוכחה}{32}{}}{11}{proof.32}
+\contentsline {lemma}{{למה}{1.6.{35}}{}}{11}{theorem.1.6.35}
+\contentsline {proof}{{הוכחה}{33}{}}{11}{proof.33}
+\contentsline {lemma}{{למה}{1.6.{36}}{}}{11}{theorem.1.6.36}
+\contentsline {proof}{{הוכחה}{34}{}}{12}{proof.34}
+\contentsline {corollary}{{מסקנה}{1.6.{37}}{}}{12}{theorem.1.6.37}
+\contentsline {proposition}{{טענה}{1.6.{38}}{}}{12}{theorem.1.6.38}
+\contentsline {proof}{{הוכחה}{35}{}}{12}{proof.35}
+\contentsline {corollary}{{מסקנה}{1.6.{39}}{}}{12}{theorem.1.6.39}
+\contentsline {proof}{{הוכחה}{36}{}}{12}{proof.36}
+\contentsline {theorem}{{משפט}{1.6.{40}}{}}{12}{theorem.1.6.40}
+\contentsline {proof}{{הוכחה}{37}{}}{12}{proof.37}
+\contentsline {corollary}{{מסקנה}{1.6.{41}}{}}{12}{theorem.1.6.41}
+\contentsline {remark}{{הערה}{1.6.{42}}{}}{12}{theorem.1.6.42}
+\contentsline {corollary}{{מסקנה}{1.6.{43}}{}}{12}{theorem.1.6.43}
+\contentsline {theorem}{{משפט}{1.6.{44}}{}}{12}{theorem.1.6.44}
+\contentsline {proof}{{הוכחה}{38}{}}{13}{proof.38}
+\contentsline {definitionx}{{הגדרה}{1.6.{45}}{}}{13}{theorem.1.6.45}
+\contentsline {corollary}{{מסקנה}{1.6.{46}}{}}{13}{theorem.1.6.46}
+\contentsline {proof}{{הוכחה}{39}{}}{13}{proof.39}
+\contentsline {corollary}{{מסקנה}{1.6.{47}}{}}{13}{theorem.1.6.47}
+\contentsline {proof}{{הוכחה}{40}{}}{13}{proof.40}
+\contentsline {remark}{{הערה}{1.6.{48}}{}}{13}{theorem.1.6.48}
+\contentsline {example}{{דוגמה}{1.6.{49}}{}}{13}{theorem.1.6.49}
+\contentsline {example}{{דוגמה}{1.6.{50}}{}}{13}{theorem.1.6.50}
+\contentsline {example}{{דוגמה}{1.6.{51}}{}}{13}{theorem.1.6.51}
+\contentsline {theorem}{{משפט}{1.7.{1}}{}}{13}{theorem.1.7.1}
+\contentsline {remark}{{הערה}{1.7.{2}}{}}{13}{theorem.1.7.2}
+\contentsline {proof}{{הוכחה}{41}{}}{13}{proof.41}
+\contentsline {example}{{דוגמה}{1.7.{3}}{}}{14}{theorem.1.7.3}
+\contentsline {example}{{דוגמה}{1.7.{4}}{}}{14}{theorem.1.7.4}
+\contentsline {proposition}{{טענה}{1.8.{1}}{}}{14}{theorem.1.8.1}
+\contentsline {proof}{{הוכחה}{42}{}}{14}{proof.42}
+\contentsline {proposition}{{טענה}{1.8.{2}}{}}{14}{theorem.1.8.2}
+\contentsline {proof}{{הוכחה}{43}{}}{14}{proof.43}
+\contentsline {definitionx}{{הגדרה}{1.8.{3}}{}}{14}{theorem.1.8.3}
+\contentsline {proposition}{{טענה}{1.8.{4}}{}}{14}{theorem.1.8.4}
+\contentsline {proof}{{הוכחה}{44}{}}{14}{proof.44}
+\contentsline {definitionx}{{הגדרה}{1.8.{5}}{סימן \textenglish {Legendre}}}{14}{theorem.1.8.5}
+\contentsline {theorem}{{משפט}{1.8.{6}}{}}{15}{theorem.1.8.6}
+\contentsline {proof}{{הוכחה}{45}{}}{15}{proof.45}
+\contentsline {theorem}{{משפט}{2.0.{1}}{הדדיות ריבועית}}{16}{theorem.2.0.1}
+\contentsline {corollary}{{מסקנה}{2.0.{2}}{}}{16}{theorem.2.0.2}
+\contentsline {proof}{{הוכחה}{46}{של המסקנה}}{16}{proof.46}
+\contentsline {theorem}{{משפט}{2.0.{3}}{אוילר}}{16}{theorem.2.0.3}
+\contentsline {theorem}{{משפט}{2.0.{4}}{אוילר}}{16}{theorem.2.0.4}
+\contentsline {proof}{{הוכחה}{47}{}}{16}{proof.47}
+\contentsline {example}{{דוגמה}{2.0.{5}}{}}{16}{theorem.2.0.5}

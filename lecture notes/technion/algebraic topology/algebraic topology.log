@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.7)  22 OCT 2018 22:57
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  10 DEC 2018 21:26
 entering extended mode
 **"./algebraic topology.tex"
 ("algebraic topology.tex"
@@ -214,11 +214,11 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 xparse.sty"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
 "
-Package: expl3 2018-09-24 L3 programming layer (loader) 
+Package: expl3 2018-10-17 L3 programming layer (loader) 
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\expl3-cod
 e.tex"
-Package: expl3 2018-09-24 L3 programming layer (code)
+Package: expl3 2018-10-17 L3 programming layer (code)
 \c_max_int=\count108
 \l_tmpa_int=\count109
 \l_tmpb_int=\count110
@@ -361,11 +361,11 @@ Package: expl3 2018-09-24 L3 programming layer (code)
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdf
 mx.def"
-File: l3xdvidpfmx.def 2018-09-24 v L3 Experimental driver: xdvipdfmx
+File: l3xdvidpfmx.def 2018-10-17 v L3 Experimental driver: xdvipdfmx
 \g__driver_image_int=\count187
 \g__driver_pdf_object_int=\count188
 ))
-Package: xparse 2018-09-24 L3 Experimental document command parser
+Package: xparse 2018-10-17 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count189
 \g__xparse_grabber_int=\count190
 \l__xparse_m_args_int=\count191
@@ -396,11 +396,11 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
-Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
 ty"
-Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen153
 \captionmargin@=\dimen154
@@ -410,7 +410,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen158
 \caption@hangindent=\dimen159
 )
-\c@ContinuedFloat=\count194
+\c@caption@flags=\count194
+\c@ContinuedFloat=\count195
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
@@ -425,9 +426,9 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
 \Gm@bindingoffset=\dimen160
 \Gm@wd@mp=\dimen161
 \Gm@odd@mp=\dimen162
@@ -461,12 +462,6 @@ e.sty"
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \frontpage with sig. 'ggg' on line 169.
-.................................................
-
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\genmisc\nth.sty"
 Package: nth 2002/02/27
 )
@@ -514,14 +509,14 @@ ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen168
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
+\Hy@linkcounter=\count199
+\Hy@pagecounter=\count266
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count266
+\Hy@SavedSpaceFactor=\count267
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
@@ -535,14 +530,14 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count267
+\c@Hy@tempcnt=\count268
  ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen169
-\Fld@menulength=\count268
+\Fld@menulength=\count269
 \Field@Width=\dimen170
 \Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6396.
@@ -554,9 +549,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count269
-\c@Item=\count270
-\c@Hfootnote=\count271
+\Hy@abspage=\count270
+\c@Item=\count271
+\c@Hfootnote=\count272
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -574,10 +569,10 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box43
-\c@Hy@AnnotLevel=\count272
-\HyField@AnnotCount=\count273
-\Fld@listcount=\count274
-\c@bookmark@seq@number=\count275
+\c@Hy@AnnotLevel=\count273
+\HyField@AnnotCount=\count274
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
@@ -595,22 +590,9 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 sty"
 Package: stackrel 2016/05/16 v1.3 Adding subscript option to stackrel (HO)
 )
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \set with sig. 'mg' on line 440.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \trs with sig. 'mg' on line 446.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \diff with sig. 'g' on line 473.
-.................................................
-
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
 tikz.sty"
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
@@ -685,10 +667,10 @@ fkeysfiltered.code.tex"
 \pgf@yc=\dimen183
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count276
-\c@pgf@countb=\count277
-\c@pgf@countc=\count278
-\c@pgf@countd=\count279
+\c@pgf@counta=\count277
+\c@pgf@countb=\count278
+\c@pgf@countc=\count279
+\c@pgf@countd=\count280
 \t@pgf@toka=\toks25
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
@@ -711,13 +693,13 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count280
+\pgfsys@objnum=\count281
 )))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count281
-\pgfsyssoftpath@bigbuffer@items=\count282
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsysprotocol.code.tex"
@@ -736,7 +718,7 @@ util.code.tex")
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 parser.code.tex"
 \pgfmath@dimen=\dimen184
-\pgfmath@count=\count283
+\pgfmath@count=\count284
 \pgfmath@box=\box45
 \pgfmath@toks=\toks28
 \pgfmath@stack@operand=\toks29
@@ -762,7 +744,7 @@ functions.misc.code.tex")
 functions.integerarithmetics.code.tex")))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 float.code.tex"
-\c@pgfmathroundto@lastzeros=\count284
+\c@pgfmathroundto@lastzeros=\count285
 ))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepoints.code.tex"
@@ -800,7 +782,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box46
 \pgf@hbox=\box47
 \pgf@layerbox@main=\box48
-\pgf@picture@serial@count=\count285
+\pgf@picture@serial@count=\count286
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoregraphicstate.code.tex"
@@ -835,7 +817,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 gfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen264
-\pgf@sys@shading@range@num=\count286
+\pgf@sys@shading@range@num=\count287
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreimage.code.tex"
@@ -905,7 +887,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count287
+\pgf@plot@mark@count=\count288
 \pgfplotmarksize=\dimen269
 )
 \tikz@lastx=\dimen270
@@ -918,19 +900,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box52
 \tikz@tempbox=\box53
 \tikz@tempbox@bg=\box54
-\tikztreelevel=\count288
-\tikznumberofchildren=\count289
-\tikznumberofcurrentchild=\count290
-\tikz@fig@count=\count291
+\tikztreelevel=\count289
+\tikznumberofchildren=\count290
+\tikznumberofcurrentchild=\count291
+\tikz@fig@count=\count292
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 odulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count292
-\pgfmatrixcurrentcolumn=\count293
-\pgf@matrix@numberofcolumns=\count294
+\pgfmatrixcurrentrow=\count293
+\pgfmatrixcurrentcolumn=\count294
+\pgf@matrix@numberofcolumns=\count295
 )
-\tikz@expandcount=\count295
+\tikz@expandcount=\count296
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarytopaths.code.tex"
@@ -946,7 +928,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\l3keys2
 e\l3keys2e.sty"
-Package: l3keys2e 2018-09-24 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibraryarrows.code.tex"
@@ -968,7 +950,7 @@ oduledecorations.code.tex"
 \pgfdecoratedinputsegmentcompleteddistance=\dimen279
 \pgfdecoratedinputsegmentremainingdistance=\dimen280
 \pgf@decorate@distancetomove=\dimen281
-\pgf@decorate@repeatstate=\count296
+\pgf@decorate@repeatstate=\count297
 \pgfdecorationsegmentamplitude=\dimen282
 \pgfdecorationsegmentlength=\dimen283
 )
@@ -981,534 +963,6 @@ r\tikz\libraries\tikzlibrarytrees.code.tex"
 File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
 )
 \l__tikzsymbols_Moai_thickness_dim=\dimen284
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Kochtopf with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Kochtopf}{1}}O{1}' on line 572.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Bratpfanne with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Bratpfanne}{1}}O{1}' on line 605.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Schneebesen with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Schneebesen}{1}}O{1}' on line 634.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Sieb with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Sieb}{1}}O{1}' on line 663.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Purierstab with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Purierstab}{1}}O{1}' on line 688.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Dreizack with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Dreizack}{1}}O{1}' on line 713.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Backblech with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Backblech}{1}}O{1}' on line 740.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Ofen with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Ofen}{1}}O{1}' on line 766.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Pfanne with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Pfanne}{1}}O{1}' on line 800.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Herd with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Herd}{1}}O{1}' on line 826.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Saftpresse with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Saftpresse}{1}}O{1}' on line 861.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Schussel with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Schussel}{1}}O{1}' on line 885.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Schaler with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Schaler}{1}}O{1}' on line 910.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Reibe with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Reibe}{1}}O{1}' on line 935.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Flasche with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Flasche}{1}}O{1}' on line 959.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Nudelholz with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Nudelholz}{1}}O{1}' on line 989.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Knoblauchpresse with sig.
-. '>{\__tikzsymbols_scale_if_empty:nTn {Knoblauchpresse}{1}}O{1}' on line
-. 1018.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Sadey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Sadey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1040.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dSadey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dSadey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1062.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Changey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Changey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {white}}O{white}m' on line
-. 1092.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dChangey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dChangey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}m' on line
-. 1122.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \cChangey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {cChangey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {red}}O{red}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn {green}}O{green}m' on line
-. 1176.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dcChangey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dcChangey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {red}}O{red}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn {green}}O{green}m' on line
-. 1230.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Annoey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Annoey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1252.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dAnnoey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dAnnoey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1274.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Smiley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Smiley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1299.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dSmiley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dSmiley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1321.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Laughey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Laughey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1345.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dLaughey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dLaughey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn {red}}O{red}' on line 1373.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Neutrey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Neutrey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1395.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dNeutrey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dNeutrey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1417.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Winkey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Winkey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1439.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \oldWinkey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {oldWinkey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line
-. 1461.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dWinkey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dWinkey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1483.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \olddWinkey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {olddWinkey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1505.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Sey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Sey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1527.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dSey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dSey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line 1549.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Xey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Xey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1571.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dXey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dXey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line 1595.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Innocey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Innocey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line 1628.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \wInnocey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {wInnocey}{1}}O{1}' on line 1635.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dInnocey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dInnocey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1666.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Cooley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Cooley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1692.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dCooley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dCooley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 1718.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Tongey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Tongey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1747.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dTongey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dTongey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn {red}}O{red}' on line 1776.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Nursey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Nursey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {}}O{}' on line 1807.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dNursey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dNursey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn
-. {white}}O{white}>{\__tikzsymbols_if_empty:Tn {red}}O{red}' on line 1843.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Vomey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Vomey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {opacity=0}}O{opacity=0}' on line
-. 1880.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dVomey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dVomey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn
-. {brown!10!olive}}O{brown!10!olive}' on line 1919.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Walley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Walley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1960.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \rWalley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {rWalley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {none}}O{none}' on line 1993.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dWalley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dWalley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 2030.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \drWalley with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {drWalley}{1}}O{1}>{\__tikzsymbols_if_empty:Tn {yellow}}O{yellow}' on line
-. 2063.
-.................................................
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \Cat with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Cat}{1}}O{1}' on line 2169.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \SchrodingersCat with sig.
-. '>{\__tikzsymbols_scale_if_empty:nTn {SchrodingersCat}{1}}O{1}m' on line
-. 2196.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Ninja with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Ninja}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {black}}O{black}>{\__tikzsymbols_if_empty:Tn
-. {red}}O{red}>{\__tikzsymbols_if_empty:Tn {white}}O{white}' on line 2251.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dNinja with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dNinja}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {black}}O{black}>{\__tikzsymbols_if_empty:Tn
-. {red}}O{red}>{\__tikzsymbols_if_empty:Tn {white}}O{white}' on line 2303.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Sleepey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Sleepey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn
-. {none}}O{none}>{\__tikzsymbols_if_empty:Tn {black}}O{black}' on line 2352.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \dSleepey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {dSleepey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {yellow}}O{yellow}>{\__tikzsymbols_if_empty:Tn
-. {blue}}O{blue}>{\__tikzsymbols_if_empty:Tn {black}}O{black}' on line 2401.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \NiceReapey with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {NiceReapey}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {black!20!white}}O{black!20!white}' on line 2435.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Strichmaxerl with sig.
-. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Strichmaxerl}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {-22}}O{-22}>{\__tikzsymbols_if_empty:Tn
-. {22}}O{22}>{\__tikzsymbols_if_empty:Tn
-. {27}}O{27}>{\__tikzsymbols_if_empty:Tn {-27}}O{-27}' on line 2536.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Person with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Person}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {-22}}O{-22}>{\__tikzsymbols_if_empty:Tn
-. {22}}O{22}>{\__tikzsymbols_if_empty:Tn
-. {27}}O{27}>{\__tikzsymbols_if_empty:Tn {-27}}O{-27}' on line 2545.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Candle with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Candle}{1}}O{1}' on line 2571.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Fire with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Fire}{1}}O{1}' on line 2616.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Coffeecup with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Coffeecup}{1}}O{1}' on line 2651.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Chair with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Chair}{1}}O{1}' on line 2680.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Bed with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Bed}{1}}O{1}' on line 2706.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Tribar with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Tribar}{1}}O{1}>{\__tikzsymbols_if_empty:Tn
-. {opacity=0}}O{opacity=0}>{\__tikzsymbols_if_empty:Tn
-. {opacity=0}}O{opacity=0}>{\__tikzsymbols_if_empty:Tn
-. {opacity=0}}O{opacity=0}' on line 2741.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Moai with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Moai}{1}}O{1}' on line 2791.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Snowman with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Snowman}{1}}O{1}' on line 2843.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \BasicTree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {BasicTree}{1}}O{1}mmmm' on line 2860.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \WorstTree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {WorstTree}{1}}O{1}' on line 2896.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Springtree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Springtree}{1}}O{1}' on line 2905.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Summertree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Summertree}{1}}O{1}' on line 2914.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Autumntree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Autumntree}{1}}O{1}' on line 2923.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \Wintertree with sig. '>{\__tikzsymbols_scale_if_empty:nTn
-. {Wintertree}{1}}O{1}' on line 2932.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tikzsymbolsuse with sig. 'm' on line 2953.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \tikzsymbolsset with sig. 'm' on line 2964.
-.................................................
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tikz-cd\tikzlibr
 arycd.code.tex"
@@ -1532,26 +986,10 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count297
-\sf@farskip=\skip67
-\sf@captopadj=\dimen289
-\sf@capskip=\skip68
-\sf@nearskip=\skip69
-\c@subfigure=\count298
-\c@subfigure@save=\count299
-\c@lofdepth=\count300
-\c@subtable=\count301
-\c@subtable@save=\count302
-\c@lotdepth=\count303
-\sf@top=\skip70
-\sf@bottom=\skip71
-)
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count304
+\etb@tempcnta=\count298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
 sty"
@@ -1561,22 +999,22 @@ Package: ntheorem 2011/08/15 1.33
 \theorem@@style=\toks34
 \theorembodyfont=\toks35
 \theoremnumbering=\toks36
-\theorempreskipamount=\skip72
-\theorempostskipamount=\skip73
-\theoremframepreskipamount=\skip74
-\theoremframepostskipamount=\skip75
-\theoreminframepreskipamount=\skip76
-\theoreminframepostskipamount=\skip77
+\theorempreskipamount=\skip67
+\theorempostskipamount=\skip68
+\theoremframepreskipamount=\skip69
+\theoremframepostskipamount=\skip70
+\theoreminframepreskipamount=\skip71
+\theoreminframepostskipamount=\skip72
 \theorem@preskip=\toks37
 \theorem@postskip=\toks38
 \theorem@framepreskip=\toks39
 \theorem@framepostskip=\toks40
 \theorem@inframepreskip=\toks41
 \theorem@inframepostskip=\toks42
-\theoremindent=\dimen290
-\theorem@indent=\dimen291
-\theoremrightindent=\dimen292
-\theorem@rightindent=\dimen293
+\theoremindent=\dimen289
+\theorem@indent=\dimen290
+\theoremrightindent=\dimen291
+\theorem@rightindent=\dimen292
 \theoremheaderfont=\toks43
 \theoremseparator=\toks44
 \theoremprework=\toks45
@@ -1585,101 +1023,101 @@ Package: ntheorem 2011/08/15 1.33
 \qedsymbol=\toks48
 \theoremkeyword=\toks49
 \qedsymbol=\toks50
-\thm@topsep=\skip78
-\thm@topsepadd=\skip79
+\thm@topsep=\skip73
+\thm@topsepadd=\skip74
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count305
-\c@currNonectr=\count306
-\mysavskip=\skip80
+\c@endNonectr=\count299
+\c@currNonectr=\count300
+\mysavskip=\skip75
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
-\thm@amstmpdepth=\dimen294
-\tagwidth=\dimen295
+\thm@amstmpdepth=\dimen293
+\tagwidth=\dimen294
 )
-\c@currproofctr=\count307
-\c@endproofctr=\count308
-\c@proof=\count309
-\c@currtheoremctr=\count310
-\c@endtheoremctr=\count311
-\c@theorem=\count312
-\c@currlemmactr=\count313
-\c@endlemmactr=\count314
-\c@currcorollaryctr=\count315
-\c@endcorollaryctr=\count316
-\c@currpropositionctr=\count317
-\c@endpropositionctr=\count318
-\c@currconjecturectr=\count319
-\c@endconjecturectr=\count320
-\c@currcriterionctr=\count321
-\c@endcriterionctr=\count322
-\c@currassertionctr=\count323
-\c@endassertionctr=\count324
-\c@currfactctr=\count325
-\c@endfactctr=\count326
-\c@currhypothesisctr=\count327
-\c@endhypothesisctr=\count328
-\c@currdefinitionxctr=\count329
-\c@enddefinitionxctr=\count330
-\c@currdefinitionstarredctr=\count331
-\c@enddefinitionstarredctr=\count332
-\c@definitionstarred=\count333
-\c@currconditionctr=\count334
-\c@endconditionctr=\count335
-\c@curraxiomctr=\count336
-\c@endaxiomctr=\count337
-\c@axiom=\count338
-\c@currpostulatectr=\count339
-\c@endpostulatectr=\count340
-\c@currpropertyctr=\count341
-\c@endpropertyctr=\count342
-\c@currproblemctr=\count343
-\c@endproblemctr=\count344
-\c@currexamplectr=\count345
-\c@endexamplectr=\count346
-\c@example=\count347
-\c@currexercisectr=\count348
-\c@endexercisectr=\count349
-\c@exercise=\count350
-\c@curralgorithmxctr=\count351
-\c@endalgorithmxctr=\count352
-\c@curralgorithmstarredctr=\count353
-\c@endalgorithmstarredctr=\count354
-\c@algorithmstarred=\count355
-\c@currquestionctr=\count356
-\c@endquestionctr=\count357
-\c@currassumptionctr=\count358
-\c@endassumptionctr=\count359
-\c@currremarkctr=\count360
-\c@endremarkctr=\count361
-\c@currnotectr=\count362
-\c@endnotectr=\count363
-\c@currnotationctr=\count364
-\c@endnotationctr=\count365
-\c@currclaimctr=\count366
-\c@endclaimctr=\count367
-\c@currsummaryctr=\count368
-\c@endsummaryctr=\count369
-\c@summary=\count370
-\c@curracknowledgementctr=\count371
-\c@endacknowledgementctr=\count372
-\c@currcasectr=\count373
-\c@endcasectr=\count374
-\c@case=\count375
-\c@curroptionctr=\count376
-\c@endoptionctr=\count377
-\c@option=\count378
-\c@currconclusionctr=\count379
-\c@endconclusionctr=\count380
-\c@conclusion=\count381
-\c@currsolutionctr=\count382
-\c@endsolutionctr=\count383
-\c@solution=\count384
-\c@currexms_rawctr=\count385
-\c@endexms_rawctr=\count386
-\c@exms_raw=\count387
-\c@currexrs_rawctr=\count388
-\c@endexrs_rawctr=\count389
-\c@exrs_raw=\count390
+\c@currproofctr=\count301
+\c@endproofctr=\count302
+\c@proof=\count303
+\c@currtheoremctr=\count304
+\c@endtheoremctr=\count305
+\c@theorem=\count306
+\c@currlemmactr=\count307
+\c@endlemmactr=\count308
+\c@currcorollaryctr=\count309
+\c@endcorollaryctr=\count310
+\c@currpropositionctr=\count311
+\c@endpropositionctr=\count312
+\c@currconjecturectr=\count313
+\c@endconjecturectr=\count314
+\c@currcriterionctr=\count315
+\c@endcriterionctr=\count316
+\c@currassertionctr=\count317
+\c@endassertionctr=\count318
+\c@currfactctr=\count319
+\c@endfactctr=\count320
+\c@currhypothesisctr=\count321
+\c@endhypothesisctr=\count322
+\c@currdefinitionxctr=\count323
+\c@enddefinitionxctr=\count324
+\c@currdefinitionstarredctr=\count325
+\c@enddefinitionstarredctr=\count326
+\c@definitionstarred=\count327
+\c@currconditionctr=\count328
+\c@endconditionctr=\count329
+\c@curraxiomctr=\count330
+\c@endaxiomctr=\count331
+\c@axiom=\count332
+\c@currpostulatectr=\count333
+\c@endpostulatectr=\count334
+\c@currpropertyctr=\count335
+\c@endpropertyctr=\count336
+\c@currproblemctr=\count337
+\c@endproblemctr=\count338
+\c@currexamplectr=\count339
+\c@endexamplectr=\count340
+\c@example=\count341
+\c@currexercisectr=\count342
+\c@endexercisectr=\count343
+\c@exercise=\count344
+\c@curralgorithmxctr=\count345
+\c@endalgorithmxctr=\count346
+\c@curralgorithmstarredctr=\count347
+\c@endalgorithmstarredctr=\count348
+\c@algorithmstarred=\count349
+\c@currquestionctr=\count350
+\c@endquestionctr=\count351
+\c@currassumptionctr=\count352
+\c@endassumptionctr=\count353
+\c@currremarkctr=\count354
+\c@endremarkctr=\count355
+\c@currnotectr=\count356
+\c@endnotectr=\count357
+\c@currnotationctr=\count358
+\c@endnotationctr=\count359
+\c@currclaimctr=\count360
+\c@endclaimctr=\count361
+\c@currsummaryctr=\count362
+\c@endsummaryctr=\count363
+\c@summary=\count364
+\c@curracknowledgementctr=\count365
+\c@endacknowledgementctr=\count366
+\c@currcasectr=\count367
+\c@endcasectr=\count368
+\c@case=\count369
+\c@curroptionctr=\count370
+\c@endoptionctr=\count371
+\c@option=\count372
+\c@currconclusionctr=\count373
+\c@endconclusionctr=\count374
+\c@conclusion=\count375
+\c@currsolutionctr=\count376
+\c@endsolutionctr=\count377
+\c@solution=\count378
+\c@currexms_rawctr=\count379
+\c@endexms_rawctr=\count380
+\c@exms_raw=\count381
+\c@currexrs_rawctr=\count382
+\c@endexrs_rawctr=\count383
+\c@exrs_raw=\count384
 ) (C:/localtexmf\tex\latex\stylish\stylish.sty
 Package: stylish 2018/10/05 Stylish Book Design
 
@@ -1691,17 +1129,17 @@ Package: fontspec 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaTeX
 xetex.sty"
 Package: fontspec-xetex 2018/07/30 vv2.6h Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count391
-\l__fontspec_language_int=\count392
-\l__fontspec_strnum_int=\count393
-\l__fontspec_tmp_int=\count394
-\l__fontspec_em_int=\count395
-\l__fontspec_emdef_int=\count396
-\l__fontspec_strong_int=\count397
-\l__fontspec_strongdef_int=\count398
-\l__fontspec_tmpa_dim=\dimen296
-\l__fontspec_tmpb_dim=\dimen297
-\l__fontspec_tmpc_dim=\dimen298
+\l__fontspec_script_int=\count385
+\l__fontspec_language_int=\count386
+\l__fontspec_strnum_int=\count387
+\l__fontspec_tmp_int=\count388
+\l__fontspec_em_int=\count389
+\l__fontspec_emdef_int=\count390
+\l__fontspec_strong_int=\count391
+\l__fontspec_strongdef_int=\count392
+\l__fontspec_tmpa_dim=\dimen295
+\l__fontspec_tmpb_dim=\dimen296
+\l__fontspec_tmpc_dim=\dimen297
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -1710,187 +1148,6 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \fontspec with sig. 'O{}mO{}' on line 561.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmainfont with sig. 'O{}mO{}' on line 566.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setsansfont with sig. 'O{}mO{}' on line 571.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmonofont with sig. 'O{}mO{}' on line 576.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathrm with sig. 'O{}mO{}' on line 580.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 584.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathsf with sig. 'O{}mO{}' on line 588.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathtt with sig. 'O{}mO{}' on line 592.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setromanfont with sig. 'O{}mO{}' on line 596.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 600.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \renewfontfamily with sig. 'mO{}mO{}' on line 604.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setfontfamily with sig. 'mO{}mO{}' on line 608.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontface with sig. 'mO{}mO{}' on line 612.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 619.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addfontfeatures with sig. 'm' on line 623.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addfontfeature with sig. 'm' on line 627.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontfeature with sig. 'mm' on line 631.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newAATfeature with sig. 'mmmm' on line 635.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newopentypefeature with sig. 'mmm' on line 639.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newICUfeature with sig. 'mmm' on line 643.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeature with sig. 'mm' on line 647.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 651.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontscript with sig. 'mm' on line 655.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \newfontlanguage with sig. 'mm' on line 659.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareFontExtensions with sig. 'm' on line 663.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 667.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingCommand with sig. 'mO{}m' on line 3655.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingAccent with sig. 'mm' on line 3661.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingSymbol with sig. 'mm' on line 3667.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingComposite with sig. 'mmm' on line 3673.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3679.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3704.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareSymbol with sig. 'm' on line 3710.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareAccent with sig. 'm' on line 3716.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareCommand with sig. 'm' on line 3722.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \UndeclareComposite with sig. 'mm' on line 3729.
-.................................................
-
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontspec\fontspec.
 cfg")
 LaTeX Info: Redefining \itshape on input line 3910.
@@ -1900,26 +1157,16 @@ LaTeX Info: Redefining \upshape on input line 3925.
 LaTeX Info: Redefining \em on input line 3955.
 LaTeX Info: Redefining \emph on input line 3980.
 LaTeX Info: Redefining \- on input line 4034.
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \oldstylenums with sig. 'm' on line 4129.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \liningnums with sig. 'm' on line 4133.
-.................................................
 ))
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
 sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count399
-\csq@gtype=\count400
-\csq@glevel=\count401
-\csq@qlevel=\count402
-\csq@maxlvl=\count403
-\csq@tshold=\count404
+\csq@reset=\count393
+\csq@gtype=\count394
+\csq@glevel=\count395
+\csq@qlevel=\count396
+\csq@maxlvl=\count397
+\csq@tshold=\count398
 \csq@ltx@everypar=\toks51
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes.
@@ -1940,39 +1187,44 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box56
-\fn@width=\dimen299
+\fn@width=\dimen298
 )
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
 sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip81
-\enit@outerparindent=\dimen300
+\labelindent=\skip76
+\enit@outerparindent=\dimen299
 \enit@toks=\toks52
 \enit@inbox=\box57
-\enitdp@description=\count405
-)) ("algebraic topology.aux")
+\enitdp@description=\count399
+))
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count400
+\c@subtable=\count401
+) ("algebraic topology.aux")
 \openout1 = `"algebraic topology.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -2010,7 +1262,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 16.
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -2020,74 +1272,73 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count406
+\c@section@level=\count402
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
  ("algebraic topology.out") ("algebraic topology.out")
 \@outlinefile=\write6
 \openout6 = `"algebraic topology.out"'.
 
 
 ABD: EveryShipout initializing macros
-.................................................
-. fontspec info: "setup-math"
-. 
-. Adjusting the maths setup (use [no-math] to avoid this).
-.................................................
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 9.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 9.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 9.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 9.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 9.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 9.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 9.
-LaTeX Font Info:    Redeclaring math accent \check on input line 9.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 9.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 9.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 9.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 9.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 16.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 16.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 16.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 16.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 16.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 16.
+LaTeX Font Info:    Redeclaring math accent \check on input line 16.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 16.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 9.
+(Font)              `operators' in the math version `normal' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 9.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 9.
+(Font)              `operators' in the math version `bold' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 9.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 9.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 9.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 9.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 9.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 9.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 9.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 9.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 9.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 9.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 16.
 File: sources/simplicial_complex.png Graphic file (type bmp)
 <sources/simplicial_complex.png>
 
@@ -2116,7 +1367,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write7
 \openout7 = `"algebraic topology.toc"'.
 
-\c@lecturenumber=\count407
+\c@lecturenumber=\count403
  [2
 
 ] [3
@@ -2126,42 +1377,132 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ]
 Chapter 1.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 49.
+t line 60.
 
-Overfull \hbox (41.4433pt too wide) in paragraph at lines 50--53
+Overfull \hbox (41.4433pt too wide) in paragraph at lines 61--64
 []\TU/lmr/m/n/10 Let $\U/msb/m/n/10 D[] \OT1/cmr/m/n/10 = []$\TU/lmr/m/n/10 .
  []
 
 Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
-input line 55.
+input line 66.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 64.
+line 75.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 68.
+line 79.
 File: sources/retraction_lemma.png Graphic file (type bmp)
 <sources/retraction_lemma.png>
 [1
 
 ] [2]
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
+ line 185.
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[3
+
+]
+Package hyperref Info: bookmark level for unknown note defaults to 0 on input l
+ine 259.
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [4]
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 283.
+ [5] [6]
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 433.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 443.
+ [7]
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
+input line 479.
+File: sources/prism1.png Graphic file (type bmp)
+<sources/prism1.png>
+File: sources/prism2.png Graphic file (type bmp)
+<sources/prism2.png>
+File: sources/prism3.png Graphic file (type bmp)
+<sources/prism3.png>
+ [8] [9]
+File: sources/4_1a.png Graphic file (type bmp)
+<sources/4_1a.png>
+File: sources/4_1b.png Graphic file (type bmp)
+<sources/4_1b.png>
+File: sources/4_2a.png Graphic file (type bmp)
+<sources/4_2a.png>
+File: sources/4_2b.png Graphic file (type bmp)
+<sources/4_2b.png>
+ [10] [11]
+File: sources/4_3.png Graphic file (type bmp)
+<sources/4_3.png>
+ [12]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 683.
+ [13] [14] [15] [16]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [17] [18]
+[19]
+Chapter 3.
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[20
+
+]
+Overfull \hbox (40.47897pt too wide) detected at line 1116
+[]
+ []
+
+[21] [22]
+Chapter 4.
+Package hyperref Info: bookmark level for unknown exms_raw defaults to 0 on inp
+ut line 1180.
+Package hyperref Info: bookmark level for unknown notation defaults to 0 on inp
+ut line 1194.
+Package hyperref Info: bookmark level for unknown fact defaults to 0 on input l
+ine 1197.
+[23
+
+]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 1249
+.
+
+("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\doublestroke\udsro
+m.fd"
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Missing character: There is no ⁘ in font [lmroman10-italic]:mapping=tex-text;!
+ [24]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [25]
 \tf@thm=\write8
 \openout8 = `"algebraic topology.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1293.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1293.
  ("algebraic topology.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1293.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1293.
+
 Package rerunfilecheck Info: File `"algebraic topology".out' has not changed.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1293.
  ) 
 Here is how much of TeX's memory you used:
- 37768 strings out of 427796
- 735860 string characters out of 3147800
- 977048 words of memory out of 3000000
- 41334 multiletter control sequences out of 15000+200000
- 535036 words of font info for 54 fonts, out of 3000000 for 9000
+ 39023 strings out of 427792
+ 766005 string characters out of 3147754
+ 1021431 words of memory out of 3000000
+ 42536 multiletter control sequences out of 15000+200000
+ 545341 words of font info for 105 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,25n,84p,968b,1169s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,25n,84p,968b,1266s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on algebraic topology.pdf (6 pages).
+Output written on algebraic topology.pdf (29 pages).

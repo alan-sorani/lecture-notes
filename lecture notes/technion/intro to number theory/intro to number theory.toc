@@ -9,3 +9,9 @@
 \contentsline {section}{\numberline {1.3}האלגוריתם של אוקלידס}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}פירוק לראשוניים בחוג אוקלידי}{5}{section.1.4}
 \contentsline {section}{\numberline {1.5}חוג השלמים הגאוסים $\mathbb {Z}\left [ i \right ]$}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}קונגרואנציות ב־$\mathbb {Z}$}{8}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}המשוואה $ax \equiv b \left ( \modx \tmspace +\thinmuskip {.1667em} m \right )$}{9}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}הפיכים ב־${\left .\raisebox {.2em}{$\mathbb {Z}$}\middle /\raisebox {-.2em}{$m\mathbb {Z}$}\right .}$}{9}{subsection.1.6.2}
+\contentsline {section}{\numberline {1.7}המשוואה $x^k = a$ בחבורה ציקלית}{13}{section.1.7}
+\contentsline {section}{\numberline {1.8}הרמה של פתרונות ממודולו $p$ למודולו $p^k$}{14}{section.1.8}
+\contentsline {chapter}{\numberline {2}הדדיות ריבועית}{16}{chapter.2}

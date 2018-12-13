@@ -5,3 +5,15 @@
 \contentsline {section}{\numberline {1.1}What is Algebraic Topology?}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Homotopy groups}{1}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Homology and cohomology of topological spaces}{2}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}Simplicial Homology}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}$\Delta $-complexes}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Singular Homology}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Exact sequences}{12}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Barycentric subdivision (for Euclidean simplices)}{16}{subsection.2.3.1}
+\contentsline {chapter}{\numberline {3}Mayer-Vietories sequences}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Geometric interpretation}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}Naturality}{21}{section.3.2}
+\contentsline {section}{\numberline {3.3}Equivalence of simplicial and singular homologies}{21}{section.3.3}
+\contentsline {chapter}{\numberline {4}Cellular homology}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}CW complexes}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cellular homology}{24}{section.4.2}

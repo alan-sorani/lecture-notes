@@ -5,3 +5,15 @@
 \BOOKMARK [1][-]{section.1.1}{What\040is\040Algebraic\040Topology?}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.1}{Homotopy\040groups}{section.1.1}% 6
 \BOOKMARK [2][-]{subsection.1.1.2}{Homology\040and\040cohomology\040of\040topological\040spaces}{section.1.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Simplicial\040Homology}{}% 8
+\BOOKMARK [1][-]{section.2.1}{-complexes}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Singular\040Homology}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Exact\040sequences}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Barycentric\040subdivision\040\(for\040Euclidean\040simplices\)}{section.2.3}% 12
+\BOOKMARK [0][-]{chapter.3}{Mayer-Vietories\040sequences}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Geometric\040interpretation}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{Naturality}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Equivalence\040of\040simplicial\040and\040singular\040homologies}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Cellular\040homology}{}% 17
+\BOOKMARK [1][-]{section.4.1}{CW\040complexes}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Cellular\040homology}{chapter.4}% 19

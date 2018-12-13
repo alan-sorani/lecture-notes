@@ -41,7 +41,7 @@ The recommended course literature is as follows.
 \chapter{Preliminaries}
 
 The course will be entirely algebraic, with possibly few examples from analysis.%
-\newlecture{October 22}{2018}
+
 This will allow us to discuss issues regarding the algebraic properties of Lie algebras.
 We might be interested in infinite-dimensional Lie algebras, but in this course we discuss only finite-dimensional algebras.
 In this course one of our main goals is a classification theorem for simple Lie algebras.
@@ -299,7 +299,6 @@ If $L_0 \subseteq L$ is a Lie sub-algebra, then $N\prs{L_0}$ is the largest sub-
 
 \begin{remark}
 $Z_L(L)$ is the center of $L$, and an ideal.%
-\newlecture{October 29}{2018}
 Indeed, if $z \in Z\prs{L}$, and $x \in L$, then $\ad\brs{x,z} = \ad x \ad z - \ad z - \ad x$ and $L \subseteq \ker \ad z$, so $L \subseteq \ker \ad \brs{x,z}$, so $\brs{x,z} \in Z\prs{L}$ and $Z(L)$ is an ideal.
 \end{remark}
 \section{Sub-algebras and ideals}
@@ -518,7 +517,7 @@ By the binomial formula,
 If $a^k = b^k = 0$, then for large $N$ s.t. $\min\set{j,N-j} \geq k$, the sum vanishes.
 \end{proof}
 \begin{remark}
-$\ad X \colon L \to L$ \newlecture{November 5}{2018}
+$\ad X \colon L \to L$
 is a nilpotent linear transformation with index of nilpotency being $n-1$.
 \end{remark}
 \begin{remark}
@@ -624,7 +623,7 @@ where each $I_j$ is an ideal of $L$ and they have dimension $\dim I_j = j$.
 \end{corollary}
 \section{Solvable Lie algebras}
 \begin{definition}[Derived sequence of ideals]
-Let $L$ be a Lie algebra.\newlecture{November 12}{2018}
+Let $L$ be a Lie algebra.
 Denote $D_1\prs{L} = L^{\prs{1}} = \brs{L,L}$ and similarly $D_k\prs{L} = \brs{D_{k-1}\prs{L}, D_{k-1}\prs{L}}$ for all $k$.
 $\prs{D_k}_{k\in\NN_+}$ is the \stress{derived sequence of ideals for $L$}.
 \end{definition}
@@ -783,7 +782,6 @@ Now\footnote{For that we use $\mrm{char}\prs{\FF} = 0$ and the proof wouldn't wo
 \end{proof}
 \begin{remark}
 For every vector space $V$ over a field $\FF$,%
-\newlecture{November 19}{2018}%
 we can consider the spaces of flags over $V$.
 \end{remark}
 \begin{example}
@@ -1061,5 +1059,183 @@ Define \[B_{\pi}\prs{x,y} = \tr \prs{\pi\prs{x}\pi\prs{y}} \text{.}\]
 The proves of the above propositions stay the same, therefore
 \[B_{\pi} \prs{\brs{x,y},z} = B_{\pi}\prs{x, \brs{y,z}} \text{.}\]
 $B_{\pi}$ is a symmetric bilinear form satisfying the symmetry condition.
+
+\begin{conclusion}
+The Cartan criterion can be formulated to say that $B_{\pi}\prs{L,\brs{L,L}} = 0$, thus $L$ is solvable.
+\end{conclusion}
+
+\section{Some properties of the Killing form}
+
+\begin{proposition}
+Let $I \triangleleft L$ be an ideal of $L$. Then the Killing form $K_I$ of $I$, as a Lie algebra on its own is $\rest{K_L}{I \times I}$, namely the restriction of the Killing form of $L$ to $I \times I$.
+\end{proposition}
+\begin{proof}
+\begin{lemma}
+Let $T \colon V \to V$ be a linear transformation. Assume that $TV \subseteq W$. We have a linear transformation $\rest{T}{W} \colon W \to W$. Then $\tr T = \tr \rest{T}{W}$.
+\end{lemma}
+\begin{proof}
+Indeed, if $w_1, \ldots, w_k$ is a basis of $W$, and $w_{k+1}, \ldots, w_n$ is a completion to a basis of $V$, then Then $T$ is of the form $\pmat{\rest{T}{W} & * \\ 0 & 0}$.
+\end{proof}
+Now, let $x \in I$ and $y \in L$, and consider the linear transformation $\ad x \ad y \colon L \to L \to I$. So by the lemma, $\tr \ad x \ad y$ on $L$ is equal to $\rest{\tr \ad x \ad y}{I}$. So, $K_L\prs{x,y} = \tr \prs{\rest{\ad \ad y}{I}}$. But now take $x \in I$ and \emph{also} $y \in I$.
+Then \[K_I\prs{x,y} = \tr\rest{\prs{\ad x}}{I} \cdot \rest{\prs{\ad y}}{I} = \tr\prs{\rest{\prs{\ad x \ad y}}{I}} \text{.}\]
+$K_L\prs{x,y} = K_I\prs{x,y}$ if $x,y \in I$.
+\end{proof}
+
+\begin{definition}
+The \stress{radical} of a symmetric bilinear form $B$ is defined by the following.
+\[\mrm{Rad}\prs{B} = \set{y \in V}{B\prs{x,y} = 0 \forall x \in V}\]
+\end{definition}
+
+\begin{remark}
+$\mrm{Rad}\prs{B} \neq 0$ if and only if the form is degenerate.
+\end{remark}
+
+\begin{proposition}
+The radical of the killing form is an ideal. In fact, this is true for \emph{any} symmetric bilinear form which satisfies the symmetry condition, namely $B\prs{\brs{x,y},z} = B\prs{x,\brs{y,z}}$.
+\end{proposition}
+
+\begin{proof}
+Let $x \in \mrm{Rad}\prs{B}$ and $y \in L$. We should show that $\brs{x,y} \in \mrm{Rad}\prs{L}$. But, for all $z \in L$, $B\prs{\brs{x,y},z} = B\prs{x,\brs{y,z}} = 0$ since $x \in \mrm{Rad}\prs{B}$.\\
+Hence $\brs{x,y}$ is $B$-orthogonal to all $z \in L$, hence $\brs{x,y} \in \mrm{Rad}\prs{B}$.
+\end{proof}
+
+\begin{conclusion}
+Consider the ideal $I = \mrm{Rad}\prs{K_L}$. Then $K_I = \rest{K_L}{I \times I}$ as we proved. This restriction is obviously identically zero.\\
+So, $I = \mrm{Rad}\prs{L}$ has $K_I \prs{I, \brs{I,I}} = 0$ and hence by the Cartan criterion is solvable.\\
+Namely, the radical of the Killing form is a solvable ideal.
+\end{conclusion}
+
+\begin{conclusion}
+We defined $\mrm{Rad}\prs{L}$ as the unique maximal solvable ideal\footnote{which contains every other solvable ideal} and so we conclude from the above that $\mrm{Rad}\prs{K_L} \subseteq \mrm{Rad}\prs{L}$.
+\end{conclusion}
+
+\begin{conclusion}
+If $L$ is a semi-simple Lie algebra, then by definition $\mrm{Rad}\prs{L} = 0$ and so $\mrm{Rad}\prs{K_L} = 0$, so the Killing form is non-degenerate.
+\end{conclusion}
+
+\begin{theorem}
+A Lie algebra $L$ is a semi-simple if and only if the Killing form $K_L$ is non-degenerate.\\
+Namely, $\mrm{Rad}\prs{L} = 0$ if and only if $\mrm{Rad}\prs{K_L} = 0$.
+\end{theorem}
+
+\begin{proof}
+We already saw that $\mrm{Rad}\prs{K_L} \subseteq \mrm{Rad}\prs{L}$, so we know that $\mrm{Rad}\prs{L} = 0$ implies $\mrm{Rad}\prs{K_L}$.\\
+Now assume that $K_L$ is a non-degenerate form, and we have to show that $L$ has  no non-trivial solvable ideals.
+To do this, we start with a lemma.
+
+\begin{lemma}
+If $L$ has a non-trivial solvable ideal, then $L$ has a non-trivial abelian ideal.
+\end{lemma}
+\begin{proof}
+First, if $M$ is any solvable algebra, then for some $k$, $D_k\prs{M} = \brs{D_{k-1}\prs{M}, D_{k-1}\prs{M}} = 0$ with $D_{k-1}\prs{M} \neq 0$. So, by definition, $D_{k-1}\prs{M}$ is a non-trivial abelian ideal of $M$.
+\\
+Now, let $L$ be a general Lie algebra, and $I$ a general ideal of $L$. Then $D_{k}\prs{I}$ are obviously ideals of $I$. In fact, they are also ideals of $L$!
+
+\begin{claim}
+$D_k\prs{I} \triangleleft L$.
+\end{claim}
+
+\begin{remark}
+\emph{Not} every ideal of $I$ is an ideal of $L$!
+\end{remark}
+
+\begin{proof}%claim
+To show that $D_k\prs{I}$ is an ideal of $L$, it is necessary and sufficient to show that is an invariant sub-space under each of the linear transformations $\ad x \colon L \to L$ for all $x \in L$.\\
+Now, $\ad x$ leaves $I$ invariant, since $I$ is an ideal, and $\rest{\ad x}{I}$ is a derivation of $I$. It satisfies for all $y,z \in L$ that
+\[\ad x\brs{y,z} = \brs{\ad x\prs{y}, z} + \brs{y, \ad x\prs{z}}\]
+by the Jacobi identity. So, $\ad x \colon L \to L$ is a derivation, it is a map $\delta \colon L \to L$ satisfying \[\delta \brs{y,z} = \brs{\delta\prs{y}, z} + \brs{y, \delta\prs{z}}\text{.}\]
+Hence $\rest{\ad x}{I} \colon I \to I$ is a derivation of $I$.\\
+We conclude the proof\footnote{of the claim} by saying that $D_1\prs{I} = \brs{I,I}$ is invariant under \emph{all} derivations of $I$:
+\[\delta\prs{\brs{I,I}} \subseteq \brs{\delta\prs{I},I} \subseteq \brs{I,I}\]
+Similarly, $D_k\prs{I}$ are invariant under \emph{all} derivations (proof by induction). So, each $D_k\prs{I}$ is  invariant under all $\ad x$ for $x \in L$.
+\end{proof}%claim
+
+This claim proves the lemma, since if $I$ is a solvable ideal, then $D_{k-1}\prs{I} \neq 0$ and $D_k\prs{I} = 0$ for some $k$, so $D_{k-1}\prs{I}$ is an abelian ideal of $I$ which is an ideal of $L$.
+\end{proof}%lemma
+
+Going back to the proof of the theorem, we have $L$ which has a non-degenerate Killing form and we show it has no non-trivial abelian ideals. By the lemma, it has then a trivial solvable radical.
+\\
+Let $I \triangleleft L$ be abelian, namely $\brs{I,I} = 0$. Let $x \in I$ and $y \in L$. Then $\ad x \ad y \colon L \to I$.
+We claim that $\prs{\ad x \ad y}^2 \colon L \to \brs{I,I} = 0$. If we prove this, $\ad x \ad y$ is a nilpotent linear transformation. So $\tr \ad x \ad y = K_L\prs{x,y} = 0$ for all $y \in L$. Because $K_L$, is non-degenerate, this gives $x = 0$, hence $I = 0$.
+\\
+To finish the proof, let $z \in L$ and let $w = \ad x \ad y \prs{z} \in I$. Now,
+\begin{align*}
+\ad x \ad y\prs{w} &= \prs{\ad x \ad y}^2 \prs{z} = \brs{x, \brs{y,w}} \in \brs{I, I} = 0
+\end{align*}
+since $\brs{y,w} \in I$ (because $w \in I$).
+\end{proof}%theorem
+
+\begin{theorem}[The decomposition of semi-simple algebras to simple ideals]
+Let $L$ be a semi-simple Lie algebra. Then there are simple ideals $I_i \triangleleft L$, for $i \in [k]$, such that $L = \bigoplus_{i\in[k]}I_i$. $I_i$ are uniquely determined up to order, and every simple ideal of $L$ coincides with one of them.
+\end{theorem}
+
+We remind that if $A,B$ are Lie algebras, then \[A \oplus B \ceq \set{\prs{a,b}}{a\in A, b\in B}\] is a Lie algebra under \[\brs{\prs{a,b},\prs{a',b'}} = \prs{\brs{a,a'},\brs{b,b'}}\]
+and then $\brs{\prs{A,0},\prs{0,B}} = 0$ so the ideals $\prs{A,0}$ and $\prs{0,B}$ commute. 
+
+\begin{remark}
+For a semi-simple Lie algebra $L$, then $K_{I_i} = \prs{K_L}_{I_i \times I_i}$.
+\end{remark}
+
+\begin{proof}
+If $L$ is simple, the statement is obvious, so assume $L$ is not simple.\\
+Let $J$ be an ideal of $L$, and assume that $J$ is proper, and a minimal ideal. So $\dim J < \dim L$ and $J$ does not contain a non-trivial ideal of $L$.
+Consider now \[J^{\perp} \ceq \set{y \in L}{K\prs{J,y} = 0} = \set{y \in L}{K\prs{x,y} = 0 \forall x \in J} \text{.}\]
+We claim that $J^{\perp}$ is also an ideal.
+If $x \in J$, $y\in L$ and $z \in J^{\perp}$ then $\brs{y,z} \in J^{\perp}$ since
+\begin{align*}
+K\prs{\brs{z,y},x} = K\prs{z, \brs{y,x}} = 0
+\end{align*}
+for $z \in J^{\perp}$ and $\brs{y,x} \in J$ as $x \in J$. Therefore $\brs{z,y} \in J^{\perp}$. So, $I \ceq J \cap J^{\perp}$ is also an ideal. So, $J \cap J^{\perp}$ is also an ideal, but $K_I = \prs{K_l}_{I \times I}$ is zero identically by definition.\\
+So, $I$ is a solvable ideal by the Cartan criterion. Since we assumed that $\mrm{Rad}\prs{L} = 0$, we get $I = 0$ so $J \cap J^{\perp} = 0$.
+Therefore $L = J \oplus J^{\perp}$.\\
+Now both $J$ and $J^{\perp}$ have trivial radical because $L$ has trivial radical by the following sentence. $\brs{J,J^{\perp}} \subseteq J \cap J^{\perp} = 0$ and $\brs{J,J^{\perp}} commute$ which means an ideal of $J$ or $J^{\perp}$ is an ideal of $L$.\\
+In fact, we have shown that when the Killing form is non-degenerate, every ideal $J$ has a direct complement $J^{\perp}$ which is also an ideal.
+Both of these also have non-degenerate Killing forms, since they have trivial radicals.
+By induction on the dimension, both $J$ and $J^{\perp}$ are a direct sum of simple ideals, which are also ideals of $L$. Therefore $L$ is a direct sum of simple ideals
+\[L = \bigoplus_{i \in [k]} I_i\]
+and $\brs{I_i, I_j} = 0$ for $i \neq j$.
+\\
+Now, let $J$ be a simple ideal of $L$, we need to show $J = I_{i_0}$ for some $i_0$. Clearly
+\begin{align*}
+brs{J,L} = \brs{J, \bigoplus_{i \in [k]} I_i} = \bigoplus_{i\in[k]} \brs{J, I_i} \text{.}
+\end{align*}
+$\brs{J,I_i}$ is an ideal of $J$\footnote{$\brs{J,\brs{J,I_i}} \subseteq \brs{J,I_i}$ since $\brs{J,I_i} \subseteq I_i$.}, so $\brs{J,I_i} = 0$ or $\brs{J,I_i} = J$.\\
+$\brs{J,L} \neq 0$ for otherwise $Z\prs{L} \supseteq J$, but $Z\prs{L}$ is an abelian ideal. So, $\brs{J,I_{i_0}} = J$ for precisely one $i_0$.\footnote{Otherwise, $J$ has non-trivial ideals.}\\
+We want to show $J = I_{i_0}$. We already know $J \subseteq I_{i_0}$ because $J = \brs{J, I_{i_0}} \subseteq I_{i_0}$. $I_{i_0}$ is simple, and $J$ is an ideal, so $J = I_{i_0}$.
+\end{proof}
+
+\begin{conclusion}
+Let $L$ e a semi-simple algebra. So $L = \bigoplus_{i\in\brs{k}} I_i$ for uniquely determined simple ideals. Then
+\begin{enumerate}
+\item Every ideal $I \triangleleft L$ is a direct sum of some of the $I_i$. This is true since $I$ itself is a semi-simple algebra, and every simple ideal of $I$ is a simple ideal of $L$.\\ \label{semi simple decomp: conclusion: ideals}
+\begin{proof}
+$K_L$ is non-degenerate, so $I \oplus I^{\perp} = L$, again $I \cap I^{\perp} 0$ so $\brs{I,I^{\perp}} \subseteq I \cap I^{\perp} = 0$, $I, I^{\perp}$ commute. So every ideal of $I$ is an ideal of $L$. So, every simple ideal of $I$ is a simple ideal of $L$.
+\end{proof}
+
+\item Every factor $\quot{L}{I}$, where $I \triangleleft L$ is also isomorphic to a direct sum of simple ideals isomorphic to some of the $I_i$.\\
+This is an immediate consequence of \ref{semi simple decomp: conclusion: ideals}.
+
+\end{enumerate}
+\end{conclusion}
+
+\chapter{Derivations of simple algebras}
+
+\begin{lemma}
+Let $L$ be a Lie algebra and let $\delta \colon L \to L$ be a derivation. Remind that each $x \in L$ defines a linear map $\ad x$ which is also a derivation.\\
+Then $\brs{\delta, \ad x} = \ad \delta\prs{x}$.
+\end{lemma}
+\begin{proof}
+In the exercise sheets.
+\end{proof}
+
+\begin{conclusion}
+$\ad\prs{L} \subseteq \mrm{Der}\prs{L}$ is an ideal of the algebra of derivations.
+\end{conclusion}
+
+\begin{theorem}
+Let $L$ be a semi-simple algebra. Then $\ad \prs{L} = \mrm{Der}\prs{L}$.\\
+Equivalently, the derivations of a semi-simple algebra are \stress{inner derivations}, namely, given by $y \mapsto \brs{x,y} = \ad x \prs{y}$. 
+\end{theorem}
+
 \backmatter
 \end{document}

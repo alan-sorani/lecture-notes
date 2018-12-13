@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  1 NOV 2018 09:21
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  12 DEC 2018 16:21
 entering extended mode
 **"./intro to number theory.tex"
 ("intro to number theory.tex"
@@ -1384,44 +1384,34 @@ english.ldf"
 File: gloss-english.ldf polyglossia: module for english
 )
 
+Package fontspec Warning: Language 'Hebrew' not available for font 'Times New
+(fontspec)                Roman' with script 'Hebrew'.
+(fontspec)                 'Default' language used instead.
+
+
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
-(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)             New Roman' with options
+(fontspec)             [Language=Hebrew,Script=Hebrew].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=latn;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;mapping=tex-tex
-t;"
+(fontspec)             Roman/OT:script=hebr;language=DFLT;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
-(fontspec)             New
-(fontspec)             Roman/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
-ext;"
+(fontspec)             Roman/B/OT:script=hebr;language=DFLT;"
+(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
-(fontspec)             <->"Times New
-(fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-t
-ext;"
+(fontspec)             Roman/I/OT:script=hebr;language=DFLT;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             Roman/BI/OT:script=hebr;language=DFLT;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
-(fontspec)             <->"Times New
-(fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-
-text;"
-
-LaTeX Info: Redefining \rmfamily on input line 10.
-LaTeX Info: Redefining \rmfamily on input line 11.
 
 Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
-(fontspec)             New Roman' with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
-Space].
+(fontspec)             New Roman' with options [].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -1430,65 +1420,21 @@ Space].
 (fontspec)             Roman/OT:script=latn;language=DFLT;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
 (fontspec)             Roman/OT:script=latn;language=DFLT;+smcp;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
 (fontspec)             Roman/B/OT:script=latn;language=DFLT;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Times
 (fontspec)             New Roman/B/OT:script=latn;language=DFLT;+smcp;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
 (fontspec)             Roman/I/OT:script=latn;language=DFLT;"
 (fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
 (fontspec)             <->"Times New
 (fontspec)             Roman/I/OT:script=latn;language=DFLT;+smcp;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
 (fontspec)             Roman/BI/OT:script=latn;language=DFLT;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
 (fontspec)             <->"Times New
 (fontspec)             Roman/BI/OT:script=latn;language=DFLT;+smcp;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-LaTeX Info: Redefining \ttfamily on input line 14.
-
-Package fontspec Info: Font family 'TimesNewRoman(2)' created for font 'Times
-(fontspec)             New Roman' with options
-(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
-ex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-
-LaTeX Info: Redefining \rmfamily on input line 16.
 ) (C:/localtexmf\tex\latex\stylish\stylish.sty
 Package: stylish 2018/10/05 Stylish Book Design
 
@@ -1537,31 +1483,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 \c@subfigure=\count418
 \c@subtable=\count419
-) ("intro to number theory.aux"
-
-Package fontspec Info: Font family 'TimesNewRoman(3)' created for font 'Times
-(fontspec)             New Roman' with options
-(fontspec)             [Ligatures=TeX,Script=Hebrew,AutoFakeSlant=-0.15,Script=
-Hebrew].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/OT:script=hebr;language=DFLT;slant=-0.15;mapping=t
-ex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (bx/it) with NFSS spec.: <->"Times New
-(fontspec)             Roman/B/OT:script=hebr;language=DFLT;mapping=tex-text;"
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-
-)
+) ("intro to number theory.aux")
 \openout1 = `"intro to number theory.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1674,38 +1596,29 @@ LaTeX Font Info:    Redeclaring symbol font `operators' on input line 12.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(2)/m/n on input line 1
-2.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 12.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `bold' on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(2)/m/n on input line 
-12.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TimesNewRoman(2)/m/n --> TU/TimesNewRoman(2)/m/n on 
-input line 12.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(2)/m/it on input line
- 12.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(2)/bx/n on input line
- 12.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/TimesNewRoman(1)/m/n on input line 
-12.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 12.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TimesNewRoman(2)/m/n --> TU/TimesNewRoman(2)/bx/n on
- input line 12.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(2)/bx/it on input li
-ne 12.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 12.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/TimesNewRoman(1)/bx/n on input line
- 12.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 12.
  Setting \if@calendar@hebrew
 File: sources/lehmer_sieve.jpg Graphic file (type bmp)
 <sources/lehmer_sieve.jpg>
@@ -1718,7 +1631,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 
 
-] [2] ("intro to number theory.toc"
+] ("intro to number theory.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -1737,7 +1650,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 \c@lecturenumber=\count421
 \c@tutorialnumber=\count422
- [3
+ [2
+
+] [3
 
 ] [4
 
@@ -1749,12 +1664,19 @@ Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
 ut line 86.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 89.
+
+Overfull \hbox (3.27167pt too wide) in paragraph at lines 113--121
+[]\TU/TimesNewRoman(0)/m/n/10 בין השנים 1729 ו־1772 אוילר[][][][][][][][][][][]
+[] את שלושת המשפטים של פרמה. אוילר הוכיח את המשפטים בשני שלבים, הורדה [][]\TU/l
+mr/m/n/10 descent[] []\TU/TimesNewRoman(0)/m/n/10 והדדיות [][]\TU/lmr/m/n/10 Re
+ciprocity[][]\TU/TimesNewRoman(0)/m/n/10 .[]
+ []
+
 Package hyperref Info: bookmark level for unknown exms_raw defaults to 0 on inp
 ut line 129.
 Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
 input line 145.
 [1
-
 
 ]
 Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
@@ -1777,9 +1699,9 @@ ut line 536.
 Package hyperref Info: bookmark level for unknown algorithmx defaults to 0 on i
 nput line 551.
  [3]
-Overfull \hbox (8.79456pt too wide) in paragraph at lines 672--676
-[]\TU/TimesNewRoman(3)/m/n/10 נקבל כי $\OT1/cmr/m/n/10 2 + 3\OML/cmm/m/it/10 i$
- \TU/TimesNewRoman(3)/m/n/10 הוא הגורם המשותף היחיד בפירוק לראשוניים עד־כדי חבר
+Overfull \hbox (9.35608pt too wide) in paragraph at lines 672--676
+[]\TU/TimesNewRoman(0)/m/n/10 נקבל כי $\OT1/cmr/m/n/10 2 + 3\OML/cmm/m/it/10 i$
+ \TU/TimesNewRoman(0)/m/n/10 הוא הגורם המשותף היחיד בפירוק לראשוניים עד־כדי חבר
 ות (לחברים יש אותה הנורמה) ולכן $[] [] \OT1/cmr/m/n/10 =$[]
  []
 
@@ -1800,28 +1722,212 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 979.
 
-[5] [6]
+[5] [6] [7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1572.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1572.
+
+Package hyperref Info: bookmark level for unknown notation defaults to 0 on inp
+ut line 1601.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\equiv' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathop' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcharnumdef' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\std@minus' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Umathcodenum' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathcode' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.22198pt
+(hyperref)                removed on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathgroup' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symoperators' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.66702pt
+(hyperref)                removed on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 1659.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1659.
+
+[8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\middle' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 1774.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1774.
+
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 1884.
+[9] [10] [11] [12]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2703.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2703.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2703.
+
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2839.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2839.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2839.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 2839.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2839.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.09006pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14] [15]
+פרק 2.
+[16
+
+]
 \tf@thm=\write8
 \openout8 = `"intro to number theory.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1189.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3175.
  ("intro to number theory.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1189.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3175.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3175.
 
 Package rerunfilecheck Info: File `"intro to number theory".out' has not change
 d.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3175.
  ) 
 Here is how much of TeX's memory you used:
- 39597 strings out of 427792
- 770133 string characters out of 3147754
- 1071746 words of memory out of 3000000
- 43035 multiletter control sequences out of 15000+200000
- 540271 words of font info for 87 fonts, out of 3000000 for 9000
+ 39635 strings out of 427792
+ 769766 string characters out of 3147754
+ 1073787 words of memory out of 3000000
+ 43062 multiletter control sequences out of 15000+200000
+ 542045 words of font info for 102 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,13n,84p,1298b,611s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,84p,1298b,679s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on intro to number theory.pdf (10 pages).
+Output written on intro to number theory.pdf (20 pages).

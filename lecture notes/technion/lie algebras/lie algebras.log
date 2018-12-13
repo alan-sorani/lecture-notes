@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  26 NOV 2018 14:17
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  10 DEC 2018 14:17
 entering extended mode
 **"./lie algebras.tex"
 ("lie algebras.tex"
@@ -1410,84 +1410,84 @@ ine 246.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
 input line 269.
  [5]
-Overfull \hbox (0.36641pt too wide) in paragraph at lines 319--320
+Overfull \hbox (0.36641pt too wide) in paragraph at lines 318--319
 []\TU/lmr/m/n/10 The commutator of two sub-algebras \TU/lmr/m/it/10 is not \TU/
 lmr/m/n/10 in general a sub-algebra. Generally $[]$
  []
 
 [6]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 381.
+t line 380.
  [7] [8]
 Chapter 2.
 Package hyperref Info: bookmark level for unknown note defaults to 0 on input l
-ine 434.
+ine 433.
 [9
 
 ]
 Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
 []
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 546--546
+Underfull \hbox (badness 1484) in paragraph at lines 545--545
 \OML/cmm/m/it/5 N[] [][]\OT1/cmr/m/n/5 = []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
 \TU/lmr/m/n/5 and
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 546--546
+Underfull \hbox (badness 1484) in paragraph at lines 545--545
 \OML/cmm/m/it/5 N[] [][]\OT1/cmr/m/n/5 = []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
 \TU/lmr/m/n/5 matrices, but
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 546--546
+Underfull \hbox (badness 1527) in paragraph at lines 545--545
 []$ \TU/lmr/m/it/5 is not\TU/lmr/m/n/5 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
 \TU/lmr/m/n/5 These matrices
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
 \TU/lmr/m/n/5 are a linear
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 546--546
+Underfull \hbox (badness 2600) in paragraph at lines 545--545
 \TU/lmr/m/n/5 basis of $\U/euf/m/n/5 sl[] [][]\OT1/cmr/m/n/5 =
  []
 
 
-Overfull \hbox (4.73311pt too wide) in paragraph at lines 546--546
+Overfull \hbox (4.73311pt too wide) in paragraph at lines 545--545
 []$\TU/lmr/m/n/5 . 
  []
 
 Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
 [11]
 Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
-line 610.
+line 609.
  [12]
 Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 621.
+put line 620.
  [13]
 Package hyperref Info: bookmark level for unknown question defaults to 0 on inp
-ut line 679.
+ut line 678.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 715.
+line 714.
  [14] [15]
 Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
  [16]
@@ -1496,25 +1496,25 @@ Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;
 [17
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 894--897
+Underfull \hbox (badness 10000) in paragraph at lines 892--895
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--898
+Underfull \hbox (badness 10000) in paragraph at lines 895--896
 
  []
 
 Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
 [18]
-Overfull \hbox (8.51064pt too wide) in paragraph at lines 909--915
+Overfull \hbox (8.51064pt too wide) in paragraph at lines 907--913
 []\TU/lmr/m/n/10 Write $\OML/cmm/m/it/10 f[] [] \OT1/cmr/m/n/10 = [][] [][] = [
 ][] \OML/cmm/m/it/10 p[] []$\TU/lmr/m/n/10 . $[][]$ has a characteristic polyno
 mial $[][] \OT1/cmr/m/n/10 =
  []
 
 Excluding 'comment' comment.
-Underfull \hbox (badness 10000) in paragraph at lines 953--955
+Underfull \hbox (badness 10000) in paragraph at lines 951--953
 
  []
 
@@ -1533,38 +1533,50 @@ Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;
  [22]
 Chapter 5.
 
-Overfull \hbox (67.7342pt too wide) in paragraph at lines 1039--1039
+Overfull \hbox (67.7342pt too wide) in paragraph at lines 1037--1037
 [][] 
  []
 
 
-Overfull \hbox (96.97421pt too wide) in paragraph at lines 1053--1053
+Overfull \hbox (96.97421pt too wide) in paragraph at lines 1051--1051
 [][] 
  []
 
 [23
 
 ]
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+ [24]
+Overfull \hbox (9.53542pt too wide) in paragraph at lines 1169--1170
+[]\TU/lmr/m/it/10 Let $\OML/cmm/m/it/10 L$ \TU/lmr/m/it/10 be a semi-simple
+ []
+
+Missing character: There is no ⁘ in font [lmroman10-regular]:mapping=tex-text;!
+[25] [26]
+Chapter 6.
+[27
+
+]
 \tf@thm=\write8
 \openout8 = `"lie algebras.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1065.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1065.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1241.
  ("lie algebras.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1065.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1065.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1241.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1241.
 
 Package rerunfilecheck Info: File `"lie algebras".out' has not changed.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1065.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1241.
  ) 
 Here is how much of TeX's memory you used:
- 37632 strings out of 427792
- 731168 string characters out of 3147754
- 983090 words of memory out of 3000000
- 41164 multiletter control sequences out of 15000+200000
+ 37634 strings out of 427792
+ 731219 string characters out of 3147754
+ 982090 words of memory out of 3000000
+ 41166 multiletter control sequences out of 15000+200000
  543157 words of font info for 92 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,15n,84p,962b,807s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on lie algebras.pdf (27 pages).
+Output written on lie algebras.pdf (31 pages).
