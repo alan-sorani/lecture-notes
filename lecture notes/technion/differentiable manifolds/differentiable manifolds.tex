@@ -938,7 +938,7 @@ $\Uu \times \RR^n$
 $\RR^m \times \RR^n$.
 נגדיר
 \begin{align*}
-\phi_{\Uu} \colon \Uu \times \RR^n &\to \Uu \times \RR^n \subseteq \RR^m \times \Rr^n \\
+\phi_{\Uu} \colon \Uu \times \RR^n &\to \Uu \times \RR^n \subseteq \RR^m \times \RR^n \\
 \prs{x,y} &\mapsto \prs{x,y-F(x)}
 \end{align*}
 ואז
@@ -2201,7 +2201,6 @@ $T_x L \subseteq \ker D_x f$.
 משיקולי מימד, יש שיוויון.
 \end{proof}
 \begin{remark}
-$y$
 הדרישה כי
 $y$
 ערך רגולרי
@@ -2283,7 +2282,7 @@ $\Uu_1$
 \phi_2\prs{x,y,z} &= \prs{y,z}
 \end{align*}
 ואז
-\[\hat{\pi}_2 \colon \prs{y,z} \xrightarrow{\phi_2^{-1}}\prs{\sqrt{1-y^2-z^2},y,z} \xrightarrow{\pi} \prs{-\sqrt{-y^2-z^2},y}\]
+\[\hat{\pi}_2 \colon \prs{y,z} \xrightarrow{\phi_2^{-1}}\prs{-\sqrt{1-y^2-z^2},y,z} \xrightarrow{\pi} \prs{-\sqrt{1-y^2-z^2},y}\]
 ולכן
 \[D\hat{\pi}_2\prs{x,z} = \pmat{\frac{y}{\sqrt{\ldots}} & \frac{z}{\sqrt{\ldots}} \\ 1 & 0}\prs{y,z}\]
 לא על אם ורק אם
@@ -4822,6 +4821,1833 @@ $\CC$.
 $T_x M$,
 לכן יש אוריינטציה טבעית.
 \end{example}
+\begin{example}
+תהי
+$f \colon W \subseteq \CC \to \CC$
+הולומורפית ונכתוב
+\begin{align*}
+f\prs{x+iy} = \prs{u+iv}\prs{x+iy}
+\end{align*}
+כאשר
+$u = \rR\prs{f}$
+ו־%
+$v = \iI\prs{f}$.
+אז
+\[Df = \pmat{u_x & u_y \\ v_x & v_y}\]
+ומתקיים
+מקושי רימן
+\[\text{.} \abs{Df} = u_x v_y - u_y v_x = u_x^2 + u_y^2 \geq 0\]
+אם
+$Df$
+הפיכה אז
+$\abs{Df} > 0$
+וההעתקה שומרת אוריינטציה.
+\end{example}
+\begin{example}[העתקות
+$\CC$%
+־לינאריות]
+תהי
+\begin{align*}
+\lambda \colon \CC &\to \CC \\
+z &\to \prs{a+bi}z \\
+\text{.} \prs{x+iy} &\to \prs{xa - by} + i\prs{xb + ya}
+\end{align*}
+זו מגדירה העתקה
+\begin{align*}
+\lambda_{\RR} \colon \RR^2 &\to \RR^2 \\
+\pmat{x \\ y} &\to \pmat{a & -b \\ b & a}\pmat{x\\y}
+\end{align*}
+ואז
+$\abs{\lambda_{\RR}} = a^2 + b^2 \geq 0$.
+
+תהי
+$A \colon V \to V$
+כאשר
+$V$
+מ"ו מעל
+$\CC$.
+ניקח בסיס
+$B=\set{v_1, v_n}$
+מעל
+$\CC$
+של
+$V$
+עבורו
+$\brs{A}_B$
+משולשת עליונה.
+אז
+$B_{\RR} = \set{v_1, iv_1, \ldots, v_n, iv_n}$
+בסיס של
+$V$
+מעל
+$\RR$
+ונקבל מטריצה
+\[\brs{A}_{B_{\RR}} = \pmat{a_1 & -b_1 &  \ldots & * & * \\ b_1 & a_1 &  \ldots & * & * \\ & & \ddots & & \\ 0 & 0 & & a_n & -b_n \\ 0 & 0 & & b_n & a_b}\]
+עם דטרמיננטה
+\[\text{.} \prs{a_1^2 + b_1^2} \cdot \ldots \cdot \prs{a_n^2 + b_n^2} \geq 0\]
+אם
+$A$
+הפיכה אז
+$\det A > 0$.
+\end{example}
+
+\begin{corollary}
+אם
+$B,C$
+שני בסיסים של
+$V$
+מעל
+$\CC$,
+$A$
+העתקת מעבר מ־%
+$\brs{\cdot}_B$
+ל־%
+$\brs{\cdot}_C$
+אז היא שומרת אוריינטציה.
+אם
+$A_{\RR}$
+העתקת מעבר מ־%
+$B_{\RR}$
+ל־%
+$C_{\RR}$,
+ל־%
+$B_{\RR},C_{\RR}$
+יש אותה אוריינטציה.
+לכן יש אוריינטציה קנונית על מ"ו מרוכב.
+\end{corollary}
+
+\begin{example}
+תהי
+$F \colon \Uu \subseteq \CC^n \to \CC^n$
+גזירה בנקודה
+$z_0$.
+אז
+\[F\prs{z_0 + \delta z} = F\prs{z_0} + A\Delta z + O\prs{\abs{\Delta z}}\]
+ואז
+\[\text{.} \abs{DF_{z_0}} = \abs{A_{\RR}} \geq 0\]
+
+בפרט, אם יש אטלס הולומורפי, העתקות המעבר שומרות אוריינטציה, ואז האטלס אוריינטבילי עם אוריינטציה קנונית.
+\end{example}
+
+\begin{theorem}
+תהי
+$M$
+יריעה עם שפה ועם אוריינטציה.
+אז ל־%
+$\del M$
+יש אוריינטציה קנונית.
+\end{theorem}
+\begin{proof}
+נבנה אוריינטציה בעזרת מטריקה רימנית. ניקח
+\begin{align*}
+f &\colon \hat{M} \to \RR \\
+M &= \set{p}{f\prs{p} \leq 0} \\
+\del M &= \set{p}{f\prs{p} = 0}
+\end{align*}
+ו־%
+$\omega_0$
+תבנית נפח על
+$M$.
+
+נבחר מטריקה רימנית
+$\rho$
+על
+$\hat{M}$.
+נגדיר נורמל חיצוני
+\begin{align*}
+\nu_x \in T_x\hat{M} = T_x M
+\end{align*}
+על ידי
+\begin{align*}
+\nu_x \perp T_x \del M \\
+\rho_x\prs{\nu_x, \nu_x} = 1 \\
+\text{.} \phantom{\rho} D f_x\prs{\nu_x} > 0
+\end{align*}
+
+$\nu_x$
+תלוי באופן חלק בנקודה
+$x \in \del M$. (\stress{\# תרגיל})
+
+קיבלנו תבנית נפח
+\[\omega_x \prs{\cdot, \ldots, \cdot} = w_{0,x}\prs{\nu_x, \cdot, \ldots, \cdot}\]
+והאוריינטציה של
+$\omega_x$
+בלתי־תלויה בבחירת
+$\rho$. (\stress{\# תרגיל})
+\end{proof}
+
+\section{מעלה של העתקה}
+
+נסתכל על העקומות באיורים
+%TODO add fig 9.1, 9.2
+אם נספור נקודות לפי באוריינטציה ביחס להטלה, נוכל להגדיר דרגה של ההעתקה.
+
+\begin{definition}
+תהיינה
+$M^n, N^n$
+יריעות קשירות עם אוריינטציה.
+תהי
+$f \colon M \to N$
+חלקה עם
+$y \in N$
+ערך רגולרי.
+אז
+$D f_X$
+איזומורפיזם לכל
+$x \in f^{-1}\prs{y}$.
+
+$M$
+קומפקטית ללא שפה לכן (\stress{\# תרגיל})
+\[\deg \prs{f,y} \ceq \sum \eps \prs{x}\]
+סכום סופי כאשר
+$\eps \prs{x} = 1$
+אם
+$D f_x$
+שומרת אוריינטציה ו־%
+$\eps \prs{x} = -1$
+אם
+$D f_x$
+הופכת אוריינטציה.
+\end{definition}
+
+\begin{remark}
+אם
+$f^{-1}\prs{y} = \ns$
+אז
+$\deg\prs{f,y} = 0$.
+\end{remark}
+
+\begin{theorem} \label{map degree: theorem}
+\begin{enumerate}
+\item $\deg\prs{f,y}$
+אינו תלוי בבחירת
+$y$.
+
+\begin{definition}
+$\deg \prs{f} = \deg\prs{f,y}$
+עבור
+$y$
+רגולרי כלשהו.
+\end{definition}
+
+\item אם
+$f$
+הומוטופית ל־%
+$g$
+אז
+$\deg f = \deg g$.
+\end{enumerate}
+\end{theorem}
+
+\begin{lemma}\label{map degree: lemma 1}
+נניח כי
+$M^n = \del X^{n+1}$ (לא בהכרח קשירה)
+כאשר
+$X,M$
+יריעות קומפקטיות, ל־%
+$X$
+יש אוריינטציה ול־%
+$M$
+אוריינטציה מהשפה של
+$X$.
+נניח כי
+$F \colon X \to N^n$
+חלקה ו־%
+$y$
+ערך רגולרי של
+$F$
+ושל
+$f \colon \rest{F}{M}$.
+אז
+$\deg\prs{f,y} = 0$.
+\end{lemma}
+\begin{proof}
+נסמן
+$\Gamma = F^{-1}\prs{y}$
+תת־יריעה עם שפה של
+$X$.
+ממשפט הפונקציה הסתומנה ידוע
+\begin{align*}
+\dim \Gamma = \prs{n+1} - n = 1 \\
+\del \Gamma \subseteq \del X = M \\
+\text{.} \Gamma \cap \del x = \del \Gamma
+\end{align*}
+כל הנקודות של
+$\del \gamma = f^{-1}\prs{y}$
+מסודרות בזוגות
+$x^+, x^-$
+המתאימים לנקודות קצה של הקשתות ב־%
+$\Gamma$.
+נראה ש־%
+$\eps\prs{x^{-}} = -\eps\prs{x^+}$
+ואז מתקיים
+\[\deg\prs{f,y} = \sum_x \eps\prs{x^{+}} + \eps\prs{x^{-}} = 0\]
+כנדרש.
+
+נבחר פרמטריזציה חלקה על אחת הקשתות של
+$\Gamma$,
+\[\Gamma = \Gamma\prs{t} \colon \fcases{ \Gamma\prs{0} = x^{-} \\ \Gamma\prs{1} = x^{+} \\ \dot{\Gamma}\prs{t} \neq 0 }\]
+ואז לכל
+$t$
+מתקיים
+\[F\prs{\Gamma\prs{t}} = y\]
+ולכן
+\[\text{.} DF_{\Gamma\prs{t}} \prs{\dot{\Gamma}\prs{t}} = 0\]
+מתקיים
+$\neq \dot{\Gamma}\prs{0}, \dot{\Gamma}\prs{1} \notin T_{x^{\pm}} M$
+כי אחרת נקבל
+$\rest{DF}{T_{x^{\pm}}} = Df$
+בעל גרעין לא טריוויאלי, כלומר
+$Df$
+לא על
+ואז
+$y$
+אינו רגולרי.
+
+נבחר מטריקה רימנית על
+$X$
+כך ש־%
+$\dot{\Gamma}\prs{1} \perp T_{x^+}M$
+וגם
+$\dot{\Gamma}\prs{0} \perp T_{x^{-}}M$.
+נגדיר
+\[\text{.} E\prs{t} = \dot{\Gamma\prs{t}}^{\perp} \subseteq T_{\Gamma\prs{t}}X\]
+%TODO add fig from doc 39 in Notebloc
+נטען כי
+\[\rest{DF_{\Gamma\prs{t}}}{E\prs{t}} \colon E\prs{t} \colon \to T_y N\]
+איזומורפיזם.
+
+\begin{description}
+\item[על:]
+מתקיים כי
+$DF_{\Gamma\prs{t}} \colon T_{\Gamma\prs{t}} X \to T_y N$
+על עם גרעין
+$DF\prs{\dot{\Gamma}\prs{t}} = 0$
+אז
+$\rest{DF}{\dot{\Gamma}\prs{t}^{\perp}}$
+על.
+\item[חח"ע:]
+מכך שלקחנו
+$y$
+ערך רגולרי.
+\end{description}
+
+כעת נבחר
+$\set{e_1, \ldots, e_n}$
+בסיס חיובי של
+$T_y N$.
+נגדיר
+\[\bar{e}_j \prs{t} = \prs{\rest{DF_{\Gamma\prs{t}}}{E\prs{t}}}^{-1}\prs{e_j}\]
+וכעת
+$B_t \ceq \set{\dot{\Gamma}\prs{t}, \bar{e}_1\prs{t}, \ldots, \bar{e}_n\prs{t}}$
+בסיס ל־%
+$T_{\Gamma\prs{t}}X$.
+
+ניקח
+$\Omega$
+תבנית נפח על
+$X$
+שמגדירה אוריינטציה.
+אז
+\[\mrm{sgn}\prs{\Omega_{\Gamma\prs{t}}\prs{B_t}} = \pm 1\]
+קבוע לאורך על
+$\Gamma_t$.
+נניח בה"כ
+$\mrm{sgn}\prs{\Omega\prs{B_t}} = 1$.\footnote{אחרת נהפוך כיוון של
+$\Gamma$.}
+
+%TODO fix below
+\begin{comment}
+מאופן בחירת המטריקה הרימנית, הנורמל החיצוני ב־%
+$x^{+}$
+הוא
+$\dot{\Gamma}\prs{1}$. (עד כדי קבוע חיובי)
+נורמל חיצוני ב־%
+$x^{-}$
+הוא
+$-\dot{\Gamma}\prs{0}$.
+(עד כדי קבוע חיובי)
+\end{comment}
+
+כעת
+\[\Omega\prs{B\prs{1}} = \Omega\prs{c \nu_{x^+}, \bar{e}_1\prs{1}, \ldots, \bar{e}_n\prs{1}} > 0\]
+כאשר
+הוקטור הראשון בסיס של
+$\dot{\Gamma}\prs{1}$
+והשאר בסיס של
+$T_{x^+}M$.
+בסיס חיובי עובר לבסיס חיובי על ידי
+$Df_{x^+}$
+ולכן
+$\set{\bar{e}_1\prs{1}, \ldots, \bar{e}_n\prs{1}}$
+בסיס חיובי של
+$T_{x^+}M$
+ביחס לאוריינטציית השפה, ולכן
+$\eps\prs{x^+} = 1$.
+
+גם
+$\Omega\prs{B\prs{0}} > 0$
+כי 
+\begin{align*}
+\Omega\prs{B\prs{0}} &= \Omega\prs{\dot{\Gamma}\prs{0},\bar{e}_1\prs{0},\ldots, \bar{e}_n\prs{0}} \\
+&= \Omega\prs{-c \nu_{x^-}, \bar{e}_1\prs{0},\ldots,\bar{e}_n\prs{0}}
+\end{align*}
+כאשר
+\[\Omega\prs{\nu_{x^-}, \ldots, \bar{e}_1\prs{0},\ldots,\bar{e}_n\prs{0}} < 0\]
+כי
+$\nu_{x^-}$
+נורמל חיצוני.
+אז
+\[\set{\bar{e}_1\prs{0} , \ldots, \bar{e}_n\prs{0}}\]
+שלילי של
+$T_{x^{-}} M$
+ביחס לאוריינטציית שפה.
+לכן
+$Df_{x^{-}}$
+מעביר בסיס שלילי ולבסיס שלילי ולכן
+$\eps\prs{x^{-}} = -1$.
+\end{proof}
+\begin{lemma}\label{map degree: lemma 2}
+\ref{map degree: lemma 1}
+נכונה גם ללא ההנחה ש־%
+$y$
+רגולרי עבור
+$F$.
+\end{lemma}
+\begin{proof}
+נציין מספר עובדות.
+\begin{enumerate}
+\item ממשפט הפונקציה ההפכוה נובע כי קבוצת הערכים הרגולריים של
+$f$
+היא קבוצה פתוחה ב־%
+$N$.
+\item
+(\stress{\# תרגיל})
+אם
+$y$
+ערך רגולרי של
+$f$,
+קיימת סביבה
+$\Uu$
+של
+$y$
+כך שלכל
+$y' \in \Uu$
+מתקיים
+$\deg\prs{f,y'} = \deg\prs{f,y}$.
+\item
+(משפט
+\textenglish{Sard})
+הערכים הרגולריים של
+$F$
+צפופים ב־%
+$N$
+ולכן יש ערך רגולרי
+$y'$
+שמספיק קרוב ל־%
+$y$.
+אז
+$y'$
+רגולרי של
+$F,f$
+ואז
+$\deg\prs{f,y} = \deg\prs{f,y'}$.
+\end{enumerate}
+
+כעת נסמן
+$f^{-1}\prs{y} = \set{x_1, \ldots, x_k}$.
+מתקיים
+$\eps\prs{x_i'}$
+ולכן
+$\deg\prs{f, y'} = \deg\prs{f,y}$,
+כי
+$f$
+דיפאומורפיזם לוקלי.
+\end{proof}
+
+\begin{lemma}\label{map degree: lemma 3}
+נניח כי
+$F \colon M \times I \to N$
+הומוטופיה חלקה וכי
+\begin{align*}
+f &= \rest{F}{M \times \set{0}} \colon M \to N \\
+g &= \rest{F}{M \times \set{1}} \colon M \to N
+\end{align*}
+עם
+$y$
+ערך רגולרי של
+$f,g$.
+אז
+$\deg\prs{f,y} = \deg\prs{g,y}$.
+\end{lemma}
+\begin{proof}
+תהי
+$\Omega$
+תבנית נפח על
+$M$
+אשר מגדירה אוריינטציה.
+נגדיר
+\begin{align*}
+X &= M \times I \\
+\del X &= M \times \set{0} \cup M \times \set{1}
+\end{align*}
+ו־%
+$\omega = \det \wedge \Omega$
+תבנית נפח על
+$X$.\\
+$M \times \set{1}$
+עם אוריינטציית שפה זהה לזו של
+$M$,
+ו־%
+$M \times \set{0}$
+עם אוריינטציה הפוכה לה.
+\\
+לכן
+\begin{align*}
+\eps\prs{\rest{F}{M \times \set{1}}} = \eps\prs{g} \\
+\eps\prs{\rest{F}{M \times \set{0}}} =- \eps\prs{f}
+\end{align*}
+לכן
+\begin{align*}
+0 \stackrel{\ref{map degree: lemma 2}} \deg\prs{\rest{F}{\del X}, y} = \deg\prs{g,y} - \deg\prs{f,y}
+\end{align*}
+ולכן
+$\deg\prs{f,y} = \deg\prs{g,y}$.
+\end{proof}
+
+\begin{lemma}\label{map degree: lemma 4}
+תהי
+$f \colon M \to N$
+כמו בניסוח המשפט.
+יהיו
+$y,z \in N$
+רגולריים.
+אז
+$\deg \prs{f,y} = \deg\prs{f,z}$.
+\end{lemma}
+
+\begin{proof}[המשפט, בהינתן למה
+\ref{map degree: lemma 4}]
+נוכיח עבור
+$f$
+הומוטופית ל־%
+$g$
+כי
+$\deg\prs{f} = \deg{g}$.
+יהי
+$y$
+ערך רגולרי של
+$f$
+ו־%
+$z$
+ערך רגולרי של
+$g$.
+צריך להוכיח
+$\deg\prs{f,y} = \deg\prs{g,z}$.
+
+קבוצת הערכים הקריטיים של
+$f,g$
+הן קבוצות בעלות מידה
+$0$
+לכן קיים ערך רגולרי משותף
+$w$
+ואז
+\[\text{.} \deg\prs{f,y} \stackrel{\ref{map degree: lemma 4}}{=} \deg\prs{f,w} \stackrel{\ref{map degree: lemma 3}}{=} \deg\prs{g,w} \stackrel{\ref{map degree: lemma 4}}{=} \deg\prs{g,z}\]
+\end{proof}
+
+נדגים מספר שימושים לפני הוכחת למה
+\ref{map degree: lemma 4}.
+
+\subsection{שימושים}
+\begin{enumerate}
+\item תהי
+$f \colon M \to M$
+דיפאומורפיזם. אז לכל
+$y \in M$
+רגולרי מתקיים
+$\# f^{-1}\prs{y} = 1$.
+לכן
+$\deg f = \pm 1$
+בהתאם לאם
+$f$
+שומרת או הופכת אוריינטציה.
+למשל
+אם
+$f = \1_M$
+אז
+$\deg f = 1$
+ואם
+\begin{align*}
+g \colon S^n &\to S^n \\
+x &\to -x
+\end{align*}
+אז
+$\deg g = \prs{-1}^{n+1}$.
+
+\begin{corollary}
+$f = \1_{S^n}$
+ו־%
+$g$
+הנ"ל לא הומוטופיות עבור
+$n$
+זוגי.
+\\
+זה גורר שלא קיים שדה וקטורי שאינו מנוון על
+$S^n$.
+\end{corollary}
+
+\item
+תהי
+$f \colon M \to M$
+העתקה קבועה עם תמונה
+$x_0$.
+אם
+$\dim M \geq 1$
+אז 
+$\deg f = 0$.
+לכן
+$\1_M$
+לא הומוטופית ל־%
+$f$.
+זה גורר את משפט
+\textenglish{Brouwer}.
+\end{enumerate}
+
+\begin{exercise}
+נגדיר
+$\TT^n = \quot{\RR}{\ZZ^n}$
+ותהי
+$A \in \ZZ^{n\times n}$.
+נגדיר
+$f_A \prs{\vec{x}} = A \cdot \vec{x}$.
+עבור
+$\vec{v} \in \ZZ^n$
+מתקיים
+\[f_A\prs{\vec{x} + \vec{v}} = A\vec{x} + A\vec{v} \in A\vec{x} + \ZZ^n = \brs{A \vec{x}}\]
+ולכן
+\begin{align*}
+f_A \colon \TT^n &\to \TT^n \\
+\brs{\vec{x}} &\to \brs{A\vec{x}}
+\end{align*}
+מוגדרת היטב.
+\end{exercise}
+
+\begin{definition}
+תהי
+$M$
+יריעה ותהי
+$h \colon M \times I \to M$
+הומוטופיה חלקה.
+אז
+$h$
+\stress{איזוטופיה}
+אם לכל
+$t$,
+$h_t \colon M \to M$
+הינה דיפאומורפיזם, וגם
+$h_0 = \1_M$.
+\end{definition}
+\begin{proposition} \label{map degree: isotopy between points}
+תהי
+$N$
+יריעה קשירה, ותהיינה
+$x,y \in N$.
+קיימת איזוטופיה
+$h$
+ב־%
+$N$
+עבורה
+$h_1\prs{x} = y$.
+\end{proposition}
+
+\begin{proof}[למה \ref{map degree: lemma 4}]
+בוחרים איזוטופיה
+$h_t$
+של
+$N$
+עבורה
+$h_1\prs{y} = z$.
+$y$
+ערך רגולרי של
+$f$
+אם ורק אם
+$h_t\circ prs{y}$
+ערך רגולרי של
+$h_t\circ f$.
+
+כעת
+\begin{itemize}
+\item $h_1 \circ f$
+הומוטופית ל־%
+$h_0 \circ f$.
+\item $z = h_1\prs{y}$
+ערך רגולרי גם ל־%
+$f$
+וגם ל־%
+$h_1 \circ f$.
+\end{itemize}
+ומשתי עובדות אלו ניתן להשתמש בלמה
+\ref{map degree: lemma 3}.
+אז
+$\deg\prs{h_1 \circ f, z} = \deg\prs{f,z}$.
+
+נבחין כי
+$\deg\prs{h_t\circ f, h_t\prs{y}}$
+קבועה.%
+\footnote{זה נכון כי יש אותם מקורות, ואותם סימנים
+$\eps\prs{x_i}$.}
+אז
+\[\deg\prs{f,y} = \deg\prs{h_0 \circ f, h_0\prs{y}} = \deg\prs{h_1 \circ f, z} = \deg\prs{f,z}\]
+כנדרש.
+\end{proof}
+
+\subsubsection{משוואות דיפרנציאליות}
+נרצה להוכיח את טענה
+\ref{map degree: isotopy between points}.
+כדי לעשות זאת ניעזר במד"ר.
+
+נחפש
+$x\prs{t} \in \RR^n$
+מסילה עם תנאי התחלה
+$x\prs{0} = x_0$
+ועם הדרישה
+$\dot{x}\prs{t} = v\prs{x\prs{t}, t} \in \RR^n$.
+אם
+$v$
+עם תומך קומפקטי, קיימת מסילה
+$x$
+כזו.
+
+יהי
+$v_t\prs{\cdot} = v\prs{\cdot,t} \colon \RR^n \to \RR^n$
+שדה וקטורי ב־%
+$\RR^n$
+לכל
+$t$.
+אז
+$v_t\prs{x} \in T_x\RR^n \cong \RR^n$.
+
+\begin{itemize}
+\item 
+לכל תנאי התחלה
+$x\prs{0}$
+קיים ויחיד פתרון
+$x\prs{t}$.
+העתקה
+$h_t\colon \RR^n \to \RR^n$
+ע"י
+$x\prs{0} \to x\prs{t}$
+הינה איזוטופיה כי
+\[\text{.} h\prs{0} = \1_{\RR^n}, \qquad h_t \colon \RR^n \to \RR^n \text{ diffeo}\]
+
+\item
+נקבל באופן זה האתאמה חד־חד ערכית בין
+מד"ר מסדר 1, שדות וקטוריים ב־%
+$\RR^n$,
+ואיזוטופיות
+$h \colon \RR^n \times I \to \RR^n$.
+
+כאן
+$v\prs{x,t} = \frac{\del h\prs{x,t}}{\del t}$.
+\end{itemize}
+
+\begin{remark}
+בנייה זו נשארת בתוקף ליריעות (לפחות באופן לוקלי).
+
+\begin{itemize}
+\item
+כאשר
+$M$
+סגורה, קיימים פתרונות ל־%
+$t$
+כלשהו.
+
+\item
+כאשר
+$\del M \neq \ns$
+ייתכן שנגיע לשפה בזמן מסוים.
+
+\item כאשר
+$M$
+אינה קומפקטית ייתכן שנגיע ל־%
+$\infty$
+בזמן סופי.
+\end{itemize}
+\end{remark}
+
+\begin{proof}[טענה \ref{map degree: isotopy between points}]
+
+\begin{enumerate}[label = שלב \Roman*:]
+\item
+ניקח
+$M = D^n \subseteq \RR^n$
+כדור.
+אז קיימת איזוטופיה
+$h_t$
+עם תומך קומפקטי כך ש־%
+$h_1\prs{y} = z$.
+
+ניקח שדה וקטורי
+$v\prs{x,t} = z - y$
+ב־%
+$\RR^n \cong T_x \RR^n$.
+פתרון למד"ר עם תנאי התחלה
+$x\prs{0} = y$
+הוא
+$x\prs{t} = y + t\prs{z-y}$
+כאשר
+$x\prs{1} = z$.
+נכפיל את
+$v$
+בפונקציה
+$f \colon D \to \RR^n$
+כך ש־%
+$\mrm{supp}\prs{f} \subseteq D$
+ו־%
+$f \equiv 1$
+בסביבה של הקטע
+$\brs{y,z}$.
+אז
+$f \cdot v$
+שדה וקטורי עם תומך קומפקטי, ולכן קיימת איזוטופיה
+$h_t$
+שהיא פתרון של מד"ר המודרת ע"י
+$fv$.
+המסילה עם תנאי ההתלה
+$x\prs{0}  = y$
+לא משתנה אחרי הכפל ב־%
+$f$.
+\item
+ניקח
+$M$
+יריעה קשירה.
+נגיד כי
+$x \sim y$
+אם קיימת איזוטופיה המעבירה את
+$x$
+ל־%
+$y$.
+מחלקות השקילות זרות ומכסות את
+$M$.
+לכל נקודה
+$x$
+יש סביבה דיפאומורפית לכדור
+$D$.
+לכל
+$y \in D$
+קיימת מהשלב הקודם איזוטופיה
+$h_t \colon D \to D$
+עם תומך קומפקטי. נגדיר
+\begin{align*}
+\tilde{h}_t \colon M &\to M \\
+z &\to \fcases{h_t\prs{z} & z \in D \\ z & z \notin D}
+\end{align*}
+ונקבל כי מחלקות השקילות פתוחות.
+
+נקבל מהנ"ל כי כל מחלקת שקילות היא רכיב קשירות של
+$M$,
+לכן קיימת מחלקה יחידה.
+\end{enumerate}
+
+\end{proof}
+
+\begin{remark}
+תהי
+$F \colon X^{n+1} \to \del X$
+חלקה.
+אז מלמות
+\ref{map degree: lemma 1}, \ref{map degree: lemma 2}
+$\deg\prs{\rest{F}{\del X} \colon \del X \to \del X} = 0$.
+אז אין רטרקציה
+$X \to \del X$.\footnote{אם קיימת
+$r \colon X \to \del X$
+אז
+$\1_{\del X} = \rest{r}{\del X} \colon \del X \to \del X$
+ואז
+$\deg\prs{r} = \deg\prs{\1} = 1$}
+\end{remark}
+
+\begin{remark}
+תהי
+$f \colon M \to N$
+כאשר
+$M,N$
+קשירות.
+החלפת אוריינטציה  של
+$M$
+או של
+$N$
+משנה את הסימן של
+$\deg\prs{f}$.
+\end{remark}
+
+\begin{remark}
+יהי
+$y$
+ערך רגולרי.
+אז
+$\deg\prs{f} = \sum_{x \in f^{-1}\prs{y}} \eps\prs{x}$.
+
+ניתן להגדיר
+\[\text{.} \deg_2\prs{f} \ceq \prs{\deg f} \mod{2} \equiv \sum_{x \in f^{-1} y} \eps\prs{x} \mod{2} \equiv \# f^{-1}\prs{y} \mod{2}\]
+\end{remark}
+
+\begin{exercise}
+עברו על הוכחת משפט
+\ref{map degree: theorem}
+ובדקו שהוא נכון עבור
+$\deg_2$
+גם ליריעות שאינן אוריינטביליות.
+\end{exercise}
+
+\begin{remark}
+תהי
+$f \colon M \to N$
+רציפה. ניתן לקרב את
+$f$
+על ידי
+$\hat{f} \colon M \to N$
+חלקה אשר הומוטופית ל־%
+$f$,
+ולהגדיר
+$\deg f \ceq \deg \prs{\hat{f}}$.
+
+ניתן להרחיב את ההגדרה של מעלה למרחבים כלליים יותר
+(זה מופיע בטופולוגיה אלגברית כשמדובר על קוהומולוגיה, בורדיזמים וכו').
+\end{remark}
+
+\begin{remark}
+תהי
+$\gamma \colon S^1 \to \CC$
+כאשר
+$0 \notin \im \gamma$.
+
+אז
+$\mrm{Arg}\prs{\gamma} \colon S^1 \to S^1$,
+ו־%
+$\omega\prs{\gamma,0} \ceq \deg\mrm{Arg}\prs{\gamma}$
+נקרא מספר סיבוב של
+$\gamma$
+סביב
+$0$.
+
+אם
+$e^{i0}$
+ערך רגולרי של
+$\mrm{Arg}\circ \gamma$
+אז
+\[\text{.}\deg\prs{\mrm{Arg}\circ \gamma} = \sum_{x \in \prs{\mrm{Arg} \circ \gamma}^{-1}\prs{e^{i0}}} \eps\prs{x}\]
+\end{remark}
+\begin{remark}
+ידוע כי
+$\pi_1\prs{S^1, *} \cong \ZZ$,
+ומתקיים כי
+$\deg \colon \pi_1\prs{S^1, *} \xrightarrow{\sim} \ZZ$
+איזומורפיזם.
+\end{remark}
+
+\begin{remark}
+יהי
+$f \in \RR\brs{x}$
+פולינום.
+ניקח
+$y$
+גדול מערכי כל נקודות הקיצון.
+אז
+$f^{-1}\prs{y}$
+שווה
+$0$
+אם
+$n$
+זוגי, ו־%
+$1$
+אם
+$n$
+אי־זוגי.
+לכן
+\[\text{.} \deg f = \fcases{ 0 & \text{$n$ is even} \\ 1 & \text{$n$ is odd}}\]
+אבל, כל שני פולינומים
+$p,q$
+הומוטופיים אחד לשני על ידי
+$t \cdot p + \prs{1-t}q$.
+אין כאן סתירה למשפט כיוון ש־%
+$\RR$
+אינה יריעה סגורה (כי אינה קומפקטית).
+\end{remark}
+\begin{exercise}
+עברו על הוכחת המשפט ומצאו איכן ההוכה משתבשת במקרה הנ"ל של פולינומים.
+\end{exercise}
+
+\begin{theorem}[המשפט היסודי של האלגברה] \label{fundamental theorem}
+יהי
+$p \in \CC\brs{z}$
+לא קבוע. אז ל־%
+$p$
+יש שורש.
+\end{theorem}
+
+\begin{definition}
+$\CC\P^1$
+\stress{המרחב הפרויקטיבי המרוכב ממימעד
+$1$}
+הוא
+\[\CC\P^1 \ceq \quot{\set{\prs{z_0,z_1} \in \CC^2 \setminus \set{\prs{0,0}}}}{\sim}\]
+כאשר
+$\prs{z_0, z_1} \sim \prs{z_0', z_1'}$
+אם
+$\prs{z_0, z_1} = \lambda\prs{z_0', z_1'}$
+עבור
+$\lambda \in \CC \setminus \set{0}$.
+\end{definition}
+
+\begin{remark}
+ניקח
+$\prs{z_0, z_1}$
+בקואורדינטות הומוגניות.
+אם
+$z_0 = 0$
+ננרמל
+$\prs{z_0, z_1} \sim \prs{0,1}$.
+אחרת
+$\prs{z_0, z_1} \sim \prs{1, \frac{z_1}{z_0}}$,
+עם
+$\frac{z_1}{z_0}$
+משתנה חופשי ב־%
+$\CC$.
+לכן
+\[\CC\P^1 \cong \CC \amalg \set{\prs{0,1}} \cong \text{Riemann Sphere}\]
+יריעה חלקה עם האטלס הבא.
+\begin{align*}
+\Uu_1 = \CC\P^1 \setminus \set{\prs{0,1}} \\
+\phi_1 \colon \prs{z0, z_1} \to \frac{z_1}{z_0} \in \CC \\
+\Uu_2 = \CC\P^1 \setminus \set{\prs{1,0}} \\
+\phi_2 \colon \prs{z_0, z_1} \to \frac{z_0}{z_1} \in \CC
+\end{align*}
+
+\begin{enumerate}
+\item
+פונקציית המעבר
+$z \to \frac{1}{z}$
+חלקה, לכן זהו אטלס חלק.
+
+\item $z \to \frac{1}{z}$
+הולומורפית, לכן
+$\CC\P^1$
+יריעה מרוכבת (עם אוריינטציה סטנדרטית).
+\end{enumerate}
+\end{remark}
+
+\begin{exercise}
+$\CC\P^1$
+דיפאומורפית ל־%
+$S^2$.
+\end{exercise}
+
+\begin{proof}[המשפט היסודי של האלגברה]
+נסתכל על
+$p$
+כעל פונקציה
+$\hat{f}_p \colon \CC \to \CC$,
+$z \to \sum_{i \in [n]} a_i z^i$.
+נרחיב את
+$\hat{f}_p$
+להעתקה
+\begin{align*}
+f_p \colon \CC\P^1 &\to \CC\P^1 \\
+\prs{z_0, z_1} &\to \prs{z_0^n, z_1^n + a_{n-1}z_1^{n-1}z_0 + \ldots + a_0 z_0^n}
+\end{align*}
+מוגדרת היטב כי
+\[f_p\prs{\lambda z_0, \lambda z_1} = \lambda^n \prs{z_0^n, z_1^n + \ldots + a_0 z_0^n} \stackrel[\CC\P^1]{}{=} f_p\prs{z_0, z_1}\]
+
+\begin{exercise}
+$f_p$
+חלקה.
+\end{exercise}
+
+נסתכל על הצגה מקומית
+$\tilde{f}_p$
+של
+$f_p$
+עם מפות
+$\phi_1, \phi'$.
+\[\tilde{f}_p \colon \prs{1,z_1} \to z_1 \in \CC\]
+מתקיים
+\[f_p \prs{1,z_1} = \prs{1, z_1^n + a_{n-1}z_1^{n-1} + \ldots + a_0} = \prs{1,p\prs{z_1}}\]
+לכן
+\[\phi_1\prs{f_p\prs{1,z_1}} = p\prs{z_1}\]
+כלומר
+$\tilde{f}_p = \hat{f}_p$.
+
+\begin{proposition}
+$f_p$
+על.%
+\footnote{מה שגורר את סיום המשפט, כי אז
+$\hat{f}_p$
+על}
+\end{proposition}
+\begin{proof}
+נראה כי
+$\deg f_p = n$
+ביחס לאוריינטציה הסטנדרטית.
+נגדיר
+$q\prs{z} \ceq z^n$.
+אז
+$f_p, f_q$
+הומוטופיות ע"י
+$p_t \ceq tp + \prs{1-t}q$.
+נקבל כי
+$f_{p_t} \colon \CC\P^1 \to \CC\P^1$
+הומוטופיה.%
+\footnote{חשוב ש־%
+$p,q$
+מתוקנים מאותה מעלה. אז
+$p_t$
+ממעלה
+$n$
+ו־%
+$f_{p_t}$
+מוגדר היטב.}
+לפי משפט המעלה
+$\deg f_p = \deg f_q$.
+נחשב את
+$\deg f_q$.
+$f_q\prs{z_0, z_1} = \prs{1,1}$
+אם ורק אם
+$q\prs{z}  = 1$
+בקואורדינטות לפי
+$\prs{\Uu, \phi_1}$.
+הפתרונות הם שורשי היחידה
+$\sqrt[n]{1}$.
+$q'\prs{z} = n z^{n-1}$
+לא מתאפסת על שורשי היחידה.
+
+כעת
+$q$
+"הולומורפית" לכן שומרת אוריינטציה, לכן
+$D_q$
+הפיך, ו־%
+$1$
+ערך רגולרי.
+לכן
+\[\text{.} \deg q = \sum_{x \in \sqrt{1}} \eps\prs{x} = n\]
+\end{proof}
+\end{proof}
+
+\section{בחזרה לתבניות דיפרנציאליות}
+
+נזכיר כי תבנית
+$\alpha$
+ממעלה
+$k$
+על יריעה
+$M$
+היא בחירה חלקה של
+$k$%
+־תבנית על
+$T_x M$.
+
+\begin{definition}
+תהי
+$\Uu \subseteq \RR^n$
+פתוחה.
+\stress{נגזרת חיצונית
+\textenglish{exterior derivative}}
+היא העתקה
+\begin{align*}
+\diff \colon \Omega^k\prs{\Uu} &\to \Omega^{k+1}\prs{\Uu}
+\end{align*}
+כאשר
+\begin{itemize}
+\item
+עבור
+$k=0$
+נגדיר
+\[\diff \colon f \to \sum_{i=1}^n \frac{\del f}{\del x_i} \diff x_i\]
+\item
+עבור
+$k \geq 1$
+ו־%
+\[\alpha = a\prs{x} \diff x_{i_1} \wedge \cdot \wedge \diff x_{i_k}\]
+נגדיר
+\[\diff \alpha \ceq \diff a \wedge \diff x_{i_1} \wedge \ldots \wedge \diff x_{i_k}\]
+ונרחיב באופן לינארי ל־%
+$\Omega^k\prs{\Uu}$.
+\begin{align*}
+d\prs{\sum_{i_1, \ldots, i_k} a_{i_1, \ldots, i_k} \diff x_{i_1} \wedge \ldots \wedge \diff x_{i_k}} = \sum_{i_1, \ldots, i_k, j} \frac{\del a_{i_1, \ldots, i_k}}{\del x_j} \diff x_j \wedge \diff x_{i_1} \wedge \ldots \wedge \diff x_{i_k}
+\end{align*}
+\end{itemize}
+\end{definition}
+\begin{remark}
+תהי
+$x_i \colon \Uu \to \RR$
+פונקציית קואורדינטות. אז
+\[\diff \prs{x_i} = \diff x_i\]
+(כאשר
+$\diff x_i$
+הפונקציונל מהבסיס הדואלי, שהגדרנו קודם) ולכן הסימנים מסכימים.
+\end{remark}
+
+\begin{proposition}
+\begin{enumerate}
+\item $\diff$
+לינארית לחיבור וכפל בסקלר.
+
+\item \emph{חוק לייבניץ:}
+\[\diff\prs{\alpha \wedge \beta} = \diff \alpha\wedge \beta + \prs{-1}^{\deg \alpha} \alpha \wedge \diff \beta\]
+
+\item \[\diff \circ \diff = 0\]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+נתחיל עם מקרה פרטי של (2), כאשר
+$\deg \alpha = \deg \beta = 0$.
+אז
+$\alpha,\beta \colon \Uu \to \RR$.
+מאינפי
+\[\frac{\del \prs{f \cdot g}}{\del x_i} = \frac{\del f}{\del x_i} \cdot g + f\cdot \frac{\del g}{\del x_i}\]
+לכן
+\[\text{.} \diff\prs{f \cdot g} = \diff f \cdot g + f \cdot \diff g\]
+במקרה הכללי, מספיק להראות למונומים
+\[\alpha = f\prs{x} \diff x_i \wedge \ldots \wedge \diff x_{i_k} = f\prs{x} \diff x_I\]
+ו־%
+\[\text{.} \beta = g\prs{x} \diff x_{j_1} \wedge \ldots \wedge \diff x_{j_k} = g\prs{x} \diff x_J\]
+מתקיים
+\[\alpha \wedge \beta = f\prs{x} g\prs{x} \diff x_I \wedge \diff x_J\]
+ואז
+\begin{align*}
+\diff \alpha = \sum_r \frac{\del f}{\del x^r} \diff x_r \wedge \diff x_{i_1} \wedge \ldots \wedge \diff x_{i_k} = \diff f \wedge \diff x_I 
+\end{align*}
+וגם
+$\diff \beta = \diff g \wedge \diff x_J$
+באותו האופן.
+לכן
+\begin{align*}
+\diff\prs{\alpha \wedge \beta} &= \diff \prs{fg} \wedge \diff x_I \wedge \diff x_J \\
+&= \prs{\diff f \cdot g + f \cdot \diff g} \wedge \diff x_I \wedge \diff x_J \\
+&= \prs{\diff f \wedge \diff x_i} \wedge \diff g \diff x_J + \prs{-1}^k \prs{f \diff x_I} \wedge \prs{\diff g \wedge \diff x_J} \\&=
+\diff \alpha \wedge \beta + \prs{-1}^{\deg \alpha} \alpha \wedge \diff \beta 
+\end{align*}
+
+נראה גם את (3), כלומר
+$d^2 = 0$.
+מספיק לבדוק זאת למונומים.
+\begin{align*}
+\diff\prs{\diff \prs{f \diff x_I}} &= \diff\prs{\diff f \wedge \diff x_I} \\&=
+\diff \diff f\wedge \diff x_I \pm \diff f \wedge \diff\underset{= 1 \cdot \diff x_{i_1} \wedge \ldots \wedge \diff x_{i_k}}{\prs{\underbrace{\cancelto{0}{\diff x_I}}}}
+\end{align*}
+לכן
+\begin{align*}
+\diff\prs{\diff f} &= \diff\prs{\sum_i \frac{\del f}{\del x_i} \diff x_i} \\&=
+\sum_{i,j} \frac{\del^2 f}{\del x_i \del x_j} \diff x_j \wedge \diff x_i \\&=
+\sum_{i < j} \pm \diff x_i \wedge \diff x_j \underset{=0}{\underbrace{\frac{\del^2 f}{\del x_i \del x_j} - \frac{\del^2 f}{\del x_j \del x_i}}} \\&= 0
+\end{align*}
+כנדרש.
+\end{proof}
+
+\begin{proposition}
+תהי
+$f \colon \Uu \to \Vv$
+חלקה
+כאשר
+$\Uu \subseteq \RR^m, \Vv \subseteq \RR^n$
+פתוחות.
+נזכיר
+\begin{align*}
+f^* &\colon \Omega^k \prs{V} \to \Omega^k \prs{\Uu} \\
+\prs{f^* \alpha}\prs{\eta_1, \ldots, \eta_k} &\ceq \alpha\prs{f_* \eta_1, \ldots, f_* \eta_k}
+\end{align*}
+ונטען כי
+\[\text{.}\diff \prs{f^* \alpha} = f^* \prs{\diff \alpha}\]
+\end{proposition}
+
+\begin{proof}
+\begin{itemize}
+\item נניח כי
+$\deg \alpha = 0$.
+אז
+$\alpha \colon V \to \RR$
+פונקציה חלקה.
+מתקיים
+\begin{align*}
+\diff\prs{f^* \alpha}_p \prs{\frac{\del}{\del x_i}} &= \diff \prs{\alpha \circ f}_p \prs{\frac{\del}{\del x_i}} \\& \stackrel{\text{directional derivative}}{=} \frac{\del}{\del x_i} \prs{\alpha \circ f}_p \\&= \sum_{j=1}^n \frac{\del \alpha}{\del x_j} \prs{f\prs{p}}' \frac{\del f_j}{\del x_j} \prs{p}
+\end{align*}
+ומצד שני
+\begin{align*}
+\prs{f^* \diff \alpha}_p \prs{\frac{\del}{\del x_i}} &= \rest{\diff \alpha}{f\prs{p}} \prs{D f_p \cdot \frac{\del}{\del x_i}} \\ &= \prs{\sum_{j=1}^n \frac{\del \alpha}{\del x_j} \diff x_j} \prs{\sum_{j=1}^n \frac{\del f_j}{\del x_i} \frac{\del}{\del x^j}} \&= \sum_{j=1}^n \frac{\del \alpha}{\del x_j} \cdot \frac{\del f_j}{\del x_i} \\&= \diff \prs{f^* \alpha}\prs{\frac{\del}{\del x_i}} 
+\end{align*}
+לכן יש שיוויון.
+\item נסתכל על
+$\alpha$
+ממעלה כללית. מספיק לבדוק עבור מונומים ונניח בלי הגבלת הכלליות
+\[\text{.} \alpha = a\prs{x} \diff x_1 \wedge \ldots \wedge \diff x_k\]
+אז
+\[\text{.} f^* \alpha = f^* a\prs{x} \cdot f^* \diff x_1 \wedge \ldots \wedge f^* \diff x_k\]
+ראינו כי
+$\diff x_i = \diff \prs{x_i}$.
+כל
+$x_i$
+ממעלה
+$0$
+לכן קיבלנו
+\[\text{.} f^* \alpha = f^* a\prs{x} \cdot \diff\prs{f^* x_1} \wedge \ldots \wedge \diff\prs{f^* x_k}\]
+נשתמש בכלל לייבניץ.
+\begin{align*}
+\diff\prs{f^*  \alpha} &= \diff f^* a \wedge \diff\prs{f^* x_1} \wedge \ldots \wedge \diff f^* x_k +\\&+
+f^* a \cdot \cancelto{0}{\diff \diff \prs{f^* x_1}} \wedge \diff f^* x_2 \wedge \ldots \wedge \diff f^* x_k \\&\vdots \\&\pm
+f^* a \cdot \diff f^* x_1 \wedge \ldots \wedge \cancelto{0}{\diff \diff f^* x_k} \\&=
+\diff f^* a \wedge \diff f^* x_1 \wedge \ldots \wedge \diff f^* x_k
+\end{align*}
+מתקיים
+\[\diff \alpha = d a \wedge \diff x_1 \wedge \ldots \wedge \diff d_k\]
+ולכן קיבלנו
+\[\text{.} f^* \diff \alpha = f^* \diff a \wedge f^* \diff x_1 \wedge \ldots \wedge f^* \diff x_k = \diff f^* a \wedge \ldots \wedge \diff f^* x_k\]
+\end{itemize}
+\end{proof}
+
+\begin{remark}
+תהי
+$M$
+יריעה חלקה ותהיינה
+\[\prs{\Uu, \phi}, \qquad \prs{\Vv, \psi}\]
+מפות באטלס.
+תהיינה
+$\alpha_{\Uu} \in \Omega^k\prs{\phi\prs{\Uu}}$
+ו־%
+$\alpha_{\Vv} \in \Omega^k\prs{\psi\prs{\Vv}}$.
+נסמן
+$f = \psi \circ \phi^{-1}$
+פונקציית המעבר בתחום הגדרתה.
+אז מהטענה
+\[\diff \alpha_{\Uu} = \diff\prs{f^* \alpha_{\Vv}} = f^* \prs{\diff \alpha_{\Vv}}\]
+מתקיים
+$\alpha_{\Uu} = f^* \alpha_{\Vv}$
+וגם
+$f^* = \prs{\phi^{-1}}^* \circ \psi^*$,
+לכן
+\begin{align*}
+\phi^* \diff \alpha_{\Uu} &= \prs{\phi^* \prs{\prs{\phi^{-1}}^* \psi^*}}\prs{\diff \alpha_{\Vv}} \\&=
+\psi^* \diff \alpha_{\Vv}
+\end{align*}
+ולכן פונקציית המעבר אינה תלויה בבחירת קואורדינטות.
+\end{remark}
+\begin{corollary}
+תהי
+$N$
+יריעה אז
+$\diff \alpha \in \Omega^{k+1}\prs{N}$
+כאשר
+$\alpha \in \Omega^k\prs{N}$
+מוגדרת היטב ע"י גזירה של הצגות מקומיות.
+זה נובע מכך ש־%
+$\diff$
+מתנהגת יפה ביחס להחלפת קואורדינטות.
+\end{corollary}
+\begin{corollary}
+$f\colon M \to N$
+אז
+$f^* \diff \alpha = \diff\prs{f^* \alpha}$
+לכל
+$\alpha \in \Omega^N\prs{N}$.
+\end{corollary}
+\subsubsection{שימושים}
+קיבלנו סדרה
+\[\ldots \xrightarrow{\diff_{k-1}} \Omega^{k-1}\prs{M} \xrightarrow{\diff_k} \Omega^k \prs{M} \xrightarrow{\diff_{k+1}} \Omega^{k+1}\prs{M}\]
+כאשר
+$d_{k+1} d_k = 0$.
+אז
+$\im \diff_k \subseteq \ker \diff_{k+1}$
+וניתן להגדיר את
+\stress{קוהומולוגיית
+\textenglish{de Rham}
+ה־%
+$k$%
+־ית}
+\[\text{.} \H_{\mrm{dR}}^k \prs{M ; \RR} \ceq \quot{\ker \diff_{k+1}}{\im \diff_k}\]
+זה אינווריאנט של יריעה
+$M$
+שנשמר תחת דיפאומורפיזמים.
+עבור
+$M = \TT^2$
+נקבל כי
+\[\dim \H_{\mrm{dR}}^k \prs{M ; \RR} = \fcases{1 & k=0 \\ 2 & k=1 \\ 1 & k=2 \\ 3 & k=3 \\ \vdots}\]
+ועבור
+$M = S^2$
+נקבל כי
+\[\dim \H_{\mrm{dR}}^k \prs{M ; \RR} = \fcases{1 & k=0 \\ 0 & k=1 \\ 1 & k=2 \\ 3 & k=3 \\ \vdots}\]
+ולכן
+$S^2$
+אינה דיפאומורפית ל־%
+$\TT^2$.
+עבור
+$M$
+סגורה מתקיים
+\[\pi_1^{\mrm{ab}} \stackrel[\ZZ]{}{\otimes} \RR \cong \H^1_{\mrm{dR}} \prs{M ; \RR}\]
+ובאופן כללי הומולוגיית דה־ראם היא טנזור של הומולוגייה סינגולרית/סימפליציאלית עם
+$\RR$
+מעל
+$\ZZ$.
+
+\begin{definition}
+\stress{מכפלה פנימית
+\textenglish{interior product}}
+בהינתן שדה וקטורי
+$v \colon M \to TM$
+היא העתקה
+\begin{align*}
+i_v \colon \Omega^k \prs{M} &\to \Omega^{k-1}\prs{M} \\
+\alpha &\to \alpha\prs{v, \cdot, \ldots, \cdot}
+\end{align*}
+ובנקודה
+$x \in M$
+כאשר
+$\eta_i \in T_x M$
+נקבל כי היא מוגדרת על ידי
+\[\prs{i_v \alpha}_{\prs{x}} \prs{\eta_1, \ldots, \eta_{k-1}} = \alpha_{\prs{x}} \prs{v_{\prs{x}}, \eta_1, \ldots, \eta_{k-1}}\]
+\end{definition}
+
+\begin{example}
+יהי
+$V$
+מ"ו. עבור
+$\alpha \in \Omega^k\prs{V}$
+מתקיים
+$i_v \alpha \in \Omega^{k-1}\prs{V}$.
+\end{example}
+
+\begin{remark}
+$\diff$
+מגדילה מעלה ב־%
+$1$.
+$i_v$
+מקטינה מעלה ב־%
+$1$.
+\end{remark}
+
+\begin{example}
+$v \colon M^m \to TM$
+שדה וקטורי.
+$\Omega \in \Omega^m \prs{M}$.
+אז
+\[\div \prs{v} \ceq \frac{\diff i_v \Omega}{\Omega} \colon M \to \RR\]
+דיוורגנציה של שדה וקטורי.\\
+כאשר
+$M = \RR^3$,
+$\Omega = \diff x_1 \wedge \diff_2 x_2 \wedge \diff x_3$
+נפח אוקלידי
+ו־%
+$v\prs{x} = \pmat{v_1 \prs{x} \\ v_2\prs{x} \\ v_3\prs{x}} \in \RR^3$
+שדה וקטורי, נקבל כי
+\begin{align*}
+i_v \Omega \prs{\sigma, \eta} &= \Omega\prs{v,\sigma,\eta} \\&=
+\det{\mat{v_1 & v_2 & v_3 \\ \sigma_1 & \sigma_2 & \sigma_3 \\ \eta_1 & \eta_2 & \eta_3}} \\&= v_1 \abs{\mat{\sigma_2 & \sigma_3 \\ \eta_2 & \eta_3}} -v_2 \abs{\mat{\sigma_1 & \sigma_3 \\ \eta_1 & \eta_3}} + v_3 \abs{\mat{\sigma_1 & \sigma_2 \\ \eta_1 & \eta_2}} \\&= v_1 \diff x_2 \wedge \diff x_3 \prs{\sigma,\eta} - v_2 \diff x_1 \wedge \diff x_3 \prs{\sigma, \eta} + v_3\diff x_1 \wedge \diff x_2 \prs{\sigma, \eta}
+\end{align*}
+ולכן
+\begin{align*}
+\text{.} i_v \Omega = v_1 \diff x_2 \wedge \diff x_3 - v_2 \diff x_1 \wedge \diff x_3 + v_3 \diff x_1 \wedge \diff x_2
+\end{align*}
+נחשב את
+$\div\prs{v}$.
+מתקיים
+\begin{align*}
+\diff i_v \Omega &= \frac{\del v_1}{\del x_1} \diff x_1 \wedge \diff x_2 \wedge x_3 - \frac{\del v_2}{\del x_2} \diff x_2 \wedge \diff x_1 \wedge \diff x_3 + \frac{\del v_3}{\del x_3} \diff x_3 \wedge \diff x_1 \wedge \diff x_3 \\&= \frac{\del v_1}{\del x_1} \Omega + \frac{\del v_2}{\del x_2} \Omega  + \frac{\del v_3}{\del x_3} \Omega
+\end{align*}
+ולכן
+\[\text{.} \frac{\diff i_v \Omega}{\Omega} = \frac{\del v_1}{\del x_1} + \frac{\del v_2}{\del x_2} + \frac{\del v_3}{\del x_3}\]
+\end{example}
+
+\begin{example}[עקמומיות גאוס]
+יהי
+$M \subseteq \RR^3$
+משטח עם מטריקה רימנית אוקלידית מורשית מ־%
+$\RR^3$.
+נרצה לדעת האם קיימת איזומטריה (באופן מקומי) מ־%
+$M$
+ל־%
+$\RR^2$.
+\stress{עקמומיות גאוס}
+היא אינווריאנט של מטריקה רימנית, ול־%
+$\prs{\RR^2, \trs{\,}}$
+עקמומיות
+$0$.
+לכן אם העקמומיות של
+$M$
+שונה מאפס, אין איזומטריה כנ"ל.
+
+\begin{definition}[העתקת גאוס]
+תהי
+$G \colon M \to S^2$.
+תהי
+$\nu\prs{x}$
+בחירת נורמל היחידה ל־%
+$x \in M$.\footnote{ניתן לעשות זאת באופן מקומי}
+נגדיר
+$G\prs{x} = \nu\prs{x}$.
+\end{definition}
+\begin{definition}[אופרטור צורה \textenglish{Weingarten map}]
+\[DG \colon T_x M \to T_{\nu\prs{x}}S^2 \cong T_x M\]
+כאשר נשים לב כי
+$T_x M, T_{\nu\prs{x}}S^2 = \nu\prs{x}^{\perp}$
+נקרא
+\stress{אופרטור צורה}.
+\end{definition}
+
+\begin{definition}[עקמומיות גאוס]
+\[K\prs{x} \ceq \det\prs{DG_{\prs{x}}}\]
+\stress{עקמומיות גאוס.}
+\end{definition}
+
+\begin{theorem}[Eggregium]
+ניתן לחשב את
+$K$
+במונחים של מטריקה רימנית על
+$M$.
+(בלי להשתמש בשיכון)
+\end{theorem}
+\end{example}
+
+נגדיר
+$\Omega = \diff x_1 \wedge \diff x_2 \wedge \diff x_3$.
+על
+$S^2$
+יש תבנית נפח
+$\sigma = i_n \Omega$
+כאשר
+$n\prs{x}$
+נורמל ל־%
+$x$.
+על
+$M$
+יש באותו אופן תבנית נפח
+\[\Sigma = i_N\Omega\]
+כאשר
+$N(x)$
+נורמל יחידה ל־%
+$M$
+ב־%
+$x$.
+תבניות אלו תלויות בשיכון.
+
+\begin{proposition}
+$K \cdot \Sigma = G^* \sigma$.
+\end{proposition}
+\begin{proof}
+\begin{align*}
+\prs{G^* \sigma}_X \prs{\eta, \tau} \\&= \sigma_{G\prs{x}} \prs{DG \eta, DG\tau} \\&= \Omega\prs{n\prs{G\prs{x}}, DG\eta, DG\tau}
+\end{align*}
+מתקיים
+\begin{align*}
+n\prs{G\prs{x}} &= G\prs{x} = N\prs{x} \\
+DG\eta &\in T_{G\prs{x}}S^2 \cong T_x M
+\end{align*}
+לכן
+\begin{align*}
+\Omega\prs{n\prs{G\prs{x}}, DG\eta, DG\tau} &= \Omega\prs{N\prs{x}, DG\eta, DG\tau} \\&= \Sigma\prs{DG\eta, DG\tau} \\&= \det\prs{DG} \cdot \Sigma\prs{\eta,\tau}
+\end{align*}
+ולכן
+\[G^* \sigma = \det\prs{DG} \cdot \Sigma\]
+כנדרש.
+\end{proof}
+
+\begin{example}
+ניקח
+\begin{align*}
+\RR^2 &\hookrightarrow \RR^3 \\
+\prs{x,y} &\to \prs{x,y,0}
+\end{align*}
+ואז
+\begin{align*}
+G \colon \RR^2 &\to S^2 \\
+\prs{x,y} &\to \prs{0,0,1}
+\end{align*}
+קבועה
+ונקבל
+\[G^* \sigma = \sigma\prs{DG \cdot, DG \cdot} = 0 = 0 \cdot \Sigma\]
+כי
+$DG = 0$.
+לכן
+$K \equiv 0$.
+\end{example}
+
+\begin{example}
+$M = S^2 \subseteq \RR^3$.
+אז
+$G = \1_{S^2}$.
+אם
+$\sigma = \Sigma$
+נפח אוקלידי על
+$S^1$
+אז
+\[G^* \sigma = \1^* \sigma = \sigma = \Sigma\]
+ולכן
+$K\equiv 1$
+ואין איזומטריה לוקאלית בין
+$S^2$
+ל־%
+$\RR^2$.
+\end{example}
+
+\section{אופרטורים על שדות וקטוריים / פונקציות}
+
+תהי
+$M^m$
+יריעה חלקה ותהיינה
+$\Omega \in \Omega^m \prs{M}$
+תבנית נפח,
+$\rho$
+מטריקה רימנית על
+$M$,
+ו־%
+$g \colon M \to \RR$
+חלקה.
+יהי
+$X \colon M \to \RR^m$
+שדה וקטורי.
+הגדרנו
+\begin{align*}
+\nabla x = \div \prs{x} = \frac{\diff i_v \Omega}{\Omega}
+\end{align*}
+ונרצה להגדיר העתקה
+$\mrm{grad}g = \nabla g$
+שתיקח כל
+$g$
+לשדה וקטורי.
+
+כעת
+\begin{align*}
+T_x m &\xrightarrow{\sim} T_x^* M \\
+v &\to i_v \rho_x = \rho_x\prs{v, \cdot}
+\end{align*}
+איזומורפיזם אם ורק אם
+$\rho_x$
+איננה מנוונת. מתקיים
+$\rho_x\prs{v,v} > 0$
+לכל
+$v$,
+ולכן
+$\rho_x\prs{v, \cdot} \neq 0$
+לכל
+$v \neq 0$.\\
+$\rho$
+מגדירה העתקה
+\[TM \cong T^* M\].
+יש שדה וקטורי יחיד
+$X$
+עבורו
+\[i_X \rho = \diff g\]
+ושדה זה נקרא גרדיאנט
+\[\text{.} X \ceq \nabla g = \mrm{grad} g\]
+
+\begin{example}
+נניח
+$\dim M = 3$
+ונקבל את הדיאגרמה הקומוטטיבית באיור
+\ref{rot1}.
+
+\begin{figure}[h!t]
+\centering
+\caption{דיאגרמה עבור נגזרת חיצונית.}
+\label{rot1}
+\includegraphics[width=0.8\textwidth]{sources/rot1}
+\end{figure}
+
+בקואורדינטות לוקליות נקבל
+\[X = x_1 \frac{\del}{\del x_1} + x_2 \frac{\del}{\del x_2} + x_3 \frac{\del}{\del x_3}\]
+ו־%
+\[\Omega = a\prs{x} \diff x_1 \wedge \diff x_2 \wedge \diff x_3 \neq 0\]
+לכן
+\begin{align*}
+i_X \Omega = a x_1 \diff x_2 \wedge \diff x_3 - ax_2 \diff x_1 \wedge \diff x_3 + a x_3 \diff x_1 \wedge \diff x_2 \in \Omega^2\prs{M}
+\end{align*}
+נקבל את הדיאגרמה הקומוטטיבית באיור
+\ref{rot2}.
+%TODO add fig 2 from notebloc 42
+\begin{figure}[h!t]
+\centering
+\caption{דיאגרמה עבור נגזרת חיצונית.}
+\label{rot2}
+\includegraphics[width=0.8\textwidth]{sources/rot2}
+\end{figure}
+נרצה להשלים את החץ הנותר.
+נרצה
+$\rho$
+מתואמת עם תבנית נפח
+$\Omega$.
+כלומר
+\[\Omega_x\prs{B} = \pm\]
+לכל
+$B$
+בסיס אורתונורמלי של
+$T_x M$
+לכל
+$x$.
+
+בקואורדינטות לוקליות זה שקול לכך שמתקיים
+\[\text{.}\Omega = \pm \prs{\det \prs{\rho_x}_{i,j}}^{\frac{1}{2}} \diff x_1 \wedge \ldots \wedge \diff x_n\]
+
+\begin{exercise}
+$v_1, \ldots, v_m \in T_x M$.
+נרצה
+\begin{align*}
+\text{.}\Omega \prs{v_1, \ldots, v_m} = \sqrt{\abs{\rho_x\prs{v_i, v_j}}}\prs{\pm 1}
+\end{align*}
+המטריצה
+$\rho_x\prs{v_i, v_j}$
+נקראת
+\stress{מט' גרם}.
+לכל
+$\rho$
+קיימת
+$\Omega$
+יחידה (עד כדי סימן) שמתואמת עם
+$\rho$.
+\end{exercise}
+
+נגדיר
+$\rot = \curl = \nabla \times X$
+על ידי השלמת הדיאגרמה.
+ראו איור
+\ref{rot3}.
+\begin{figure}[h!t]
+\centering
+\caption{דיאגרמה עבור נגזרת חיצונית.}
+\label{rot3}
+\includegraphics[width=0.8\textwidth]{sources/rot3}
+\end{figure}
+\end{example}
+
+\begin{exercise}
+עבור
+$M = \RR^3$,
+$\rho, \Omega$
+אוקלידיים,
+$\rot$
+מסכים עם הנוסחאות מאינפי.
+\end{exercise}
+\begin{corollary}
+לכל שדה וקטורי
+$X$,
+$\div \prs{\rot X} = 0$
+(כי
+$\diff^2 = 0$.)
+לכל
+$g \colon M \to \RR$
+מתקיים
+$\rot\prs{\nabla g} = 0$
+(כי
+$\diff^2 = 0$).
+\end{corollary}
+\begin{remark}
+אפשר להתאים את ההגדרה הנ"ל עבור
+$M$
+ממימד כללי כאשר
+$\Omega$
+מתואמת עם
+$\rho$.
+במקום
+$\rot$
+ניקח למטה את השיוויון, ועל ידי השלמת הדיאגמה נקבל העתקה
+$\pm \mrm{Hodge } *$.
+ראו איור
+\ref{hodge_star}.
+\begin{figure}[h!t]
+\centering
+\caption{דיאגרמה עבור נגזרת חיצונית.}
+\label{hodge_star}
+\includegraphics[width=0.8\textwidth]{sources/hodge_star}
+\end{figure}
+נגדיר גם
+\[\Delta g \ceq \mp \div\prs{\grad\prs{g}}\]
+\stress{אופרטור \textenglish{Laplace-Beltrami}}.
+\end{remark}
+
+\chapter{נגזרות לי}
+
+\begin{definition}
+תהי
+$M$
+יריעה עם
+$x$
+שדה וקטורי ו־%
+$f \colon M \to \RR$.
+נגדיר את
+\stress{נגזרת לי לכיוון
+$x$
+של
+$f$}
+על ידי
+\[L_x f \ceq \diff f\prs{x} \colon M \to \RR\]
+\end{definition}
+\begin{remark}
+בקואורדינטות מקומיות נקבל
+\[L_x \colon \CCC^{\infty}\prs{M} \to \CCC^{\infty}\prs{M}\]
+אופרטור דיפרנציאלי מסדר
+$1$.
+על ידי
+\[\text{.} L_x f_{\prs{p}} = \sum_{i=1}^m \frac{\del f}{\del x_i}_{\prs{p}} x_i \prs{p}\]
+\end{remark}
+
+\begin{definition}
+יהיו
+$x,y$
+שני שדות וקטוריים על
+$M$.
+נגדיר
+\stress{קומוטטור}
+\[\text{.} \brs{L_x, L_y} = L_x L_y - L_y L_x\]
+\end{definition}
+\begin{exercise}
+בפועל, הקומומטטור הינו אופרטור דיפרנציאלי מסדר 1. (מספיק לבדוק בקואורדינטות מקומיות)
+\end{exercise}
+\begin{exercise}
+קיים ויחיד שדה וקטורי
+$z$
+עבורו
+$L_z = \brs{L_x, L_y}$.
+$z$
+נקרא
+\stress{הקומוטטור של השדות
+$x,y$}
+ונסמן
+\[\text{.} z = \brs{x,y}\]
+\end{exercise}
+\begin{remark}
+נסתכל בקואורדינטות מקומיות
+$\prs{q_1, \ldots, q_n}$
+של
+$\RR^n$.
+נכתוב
+$xx = \pmat{x^1 \\ \vdots \\ x^n}, y = \pmat{y^1 \\ \vdots \\ y^n}$.
+ניתן לבדוק כי מתקיים
+\[\text{.} \brs{x,y} = \sum_{j=1}^n x^j \prs{\frac{\del y}{\del q^j} - y^j \frac{\del x}{\del q^j}}\]
+\end{remark}
+
+נזכיר כי יש התאמה בין שדות וקטוריים
+$x$,
+לבין מד"ר
+\[\dot{q}\prs{t} = x_t\prs{q\prs{t}}\]
+לבין זרימות
+$f^t_x \colon M \to M$
+שהינן דיפאו' ושולחות
+$q\prs{0} \to q\prs{t}$.
+
+כאשר
+$x_t$
+בלתי־תלוי בזמן
+$t$ (כלומר, שדה וקטורי קבוע ב־%
+$t$)
+אז
+\[\text{.} f_x^{t+s} = f_x^t \circ f_x^s\]
+במקרה זה קיבלנו מבנה של חבורה.
+
+\begin{exercise}
+אם
+$\brs{x,y} = 0$
+אז
+\[f_x^t \circ f_y^s = f_y^s \circ f_x^t\]
+(זרימות של
+$x,y$ מתחלפות.)
+\end{exercise}
 
 \backmatter
 \end{document}

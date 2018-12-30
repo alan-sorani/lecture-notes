@@ -15,3 +15,4 @@
 \contentsline {section}{\numberline {1.7}המשוואה $x^k = a$ בחבורה ציקלית}{13}{section.1.7}
 \contentsline {section}{\numberline {1.8}הרמה של פתרונות ממודולו $p$ למודולו $p^k$}{14}{section.1.8}
 \contentsline {chapter}{\numberline {2}הדדיות ריבועית}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}אלגוריתם מילר־רבין לבדיקת ראשוניות}{20}{section.2.1}

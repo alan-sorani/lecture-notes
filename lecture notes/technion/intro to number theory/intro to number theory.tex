@@ -3171,6 +3171,838 @@ $p \equiv 1\ mod{3}$.
 \[\prs{\frac{17}{47}} = \pmat{\frac{47}{17}} = \prs{\frac{13}{17}} = \prs{\frac{17}{13}} = \prs{\frac{4}{13}} = 1\]
 \end{example}
 
+\begin{example}
+
+אם
+$x^2 + 5y^2 = p$
+אז
+$\prs{\frac{-5}{p}} = 1$
+כאשר
+$p \neq 5$. \newlecture{13 בדצמבר}%
+{2018}
+באותו אופן עבור
+$n$
+כללי
+\[x^2 + ny^2 = p\]
+ולכן
+$\prs{\frac{-n}{p}} = 1$.
+נרצה לדעת מתי
+$\prs{\frac{-5}{p}} = 1$.
+מתקיים מהדדיות
+\[\text{.} \prs{\frac{-5}{p}} = \prs{\frac{-1}{p}} \cdot \prs{\frac{5}{p}} = \prs{-1}^{\frac{p-1}{2}} \cdot \prs{\frac{p}{5}}\]
+לכן
+$1,4$
+ריבועים מודולו
+$5$
+ו־%
+$2,3$
+אינם ריבועים מודולו
+$5$.
+עתה
+$\prs{\frac{-5}{p}} = 1$
+אם ורק אם
+מתקיים אחד המשפטים הבאים.
+\begin{enumerate}
+\item  גם
+$p \equiv 1 \mod{4}$
+וגם
+$p \equiv \pm 1 \mod{5}$.
+\item 
+$p \equiv 3 \mod{4}$
+וגם
+$p \equiv \pm 2 \mod{5}$.
+\end{enumerate}
+לכן, לפי משפט השאריות הסיני,
+$p \equiv 1,3,7,9 \mod {20}$
+ולכן קיבלנו כי
+$\prs{\frac{-5}{p}} = 1$
+אם ורק אם
+$p = 1,3,7,9$.
+\end{example}
+
+\begin{theorem}[לגרנג']
+יהי
+$p$
+ראשוני שונה מ־%
+$5$.
+קיימים
+$x,y \in \ZZ$
+כך ש־%
+$x^2 + 5y^2 = p$,
+אם ורק אם
+$p \equiv 1,9 \mod{20}$.
+\end{theorem}
+\begin{remark}
+מהמשפט, אם
+$5$
+שארית ריבועית מודולו
+$5$,
+לא בהכרח פתרון מהצורה
+$x^2 + 5y^2 = p$.
+\\
+עבור
+$p \equiv 3,7 \mod{20}$,
+לא ניתן להציג את
+$p$
+באמצעות
+$x^2 + 5y^2$.\\
+נחשוב מה הסיבה לכך.
+עבור
+$x^2 + ay^2 = p$
+עבדנו עם
+$\ZZ\brs{\sqrt{-a}}$
+אבל כאשר
+$a = 5$
+החוג אינו אוקלידי ואפילו אינו
+\textenglish{PID}.
+\end{remark}
+
+\begin{definition}
+יהי
+$b$
+אי־זוגי חיובי ויהי
+$a \in \ZZ$.
+נניח כי
+$b = p_1 \cdot \ldots \cdot p_k$
+פירוק לראשוניים, ונגדיר את
+\stress{סימן יעקובי}
+\begin{align*}
+\text{.} \prs{\frac{a}{b}} = \prs{\frac{a}{p_1}} \prs{\frac{a}{p_2}} \cdot \ldots \cdot \prs{\frac{a}{p_k}}
+\end{align*}
+\end{definition}
+\begin{remark}
+אם
+$b$
+ראשוני, סימן יעקובי וסימן לז'נדר מזדהים.
+\end{remark}
+\begin{remark}
+\begin{itemize}
+\item סימן יעקובי מוגדר היטב, כי בפירוק של
+$b$
+לא מופיע
+$2$,
+וסימן לז'נדר מוגדר עבור
+$p \neq 2$.
+\item אם
+$b$
+אינו ראשוני,
+$\prs{\frac{a}{b}}$
+אינו בהכרח בודק אם
+$a$
+שארית ריבועית מודולו
+$b$.
+\end{itemize}
+\end{remark}
+
+\begin{example}
+מתקיים
+\[\prs{\frac{2}{15}} = \prs{\frac{2}{3}}\prs{\frac{2}{5}} = 1\]
+$2$
+אינו שארית ריבועית מודולו
+$3$
+או מודולו
+$5$
+לכן
+$\prs{\frac{2}{3}}\cdot\prs{\frac{2}{5}} = 1$,
+אבל
+$2$
+אינו שארית ריבועית מודולו
+$5$
+כי אינו שארית ריבועית מודולו
+$3,5$.
+\end{example}
+
+\begin{remark}
+מה שטוב בסימן יעקובי הוא שלא צריך לפרק את המספרים כפי שראינו בדוגמה עם
+$\prs{\frac{17}{47}}$.
+נרצה להראות שלסימן יעקובי אותן תכונות של סימן לג'נדר, ובפרט הדדיות.
+\end{remark}
+
+\begin{proposition}
+\begin{enumerate}
+\item \[\prs{\frac{a_1 a_2}{b}} = \prs{\frac{a_1}{b}} \cdot \prs{\frac{a_2}{b}}\]
+\item \[\prs{\frac{a}{b_1 b_2}} = \prs{\frac{a}{b_1}} \cdot\prs{\frac{a}{b_2}}\]
+\item אם
+$a_1 \equiv a_2 \mod{b}$
+אז
+\[\prs{\frac{a_1}{b}} = \prs{\frac{a_2}{b}}\]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+\item %1
+\begin{align*}
+\prs{\frac{a_1 a_2}{b}} &= \prs{\frac{a_1 a_2}{p_1 \cdot \ldots \cdot p_k}} \\&=
+\prs{\frac{a_1 a_2}{p_1}} \cdot \ldots \cdot \prs{\frac{a_1 a_2}{p_k}} \\&=
+\prs{\frac{a_1}{p_1}}\prs{\frac{a_2}{p_1}} \cdot \ldots \cdot  \prs{\frac{a_1}{p_k}}\prs{\frac{a_2}{p_k}} \\&=
+\prs{\frac{a_1}{p_1 \cdot \ldots \cdot p_k}} \cdot \prs{\frac{a_2}{p_1 \cdot \ldots \cdot p_k}} \\&= \prs{\frac{a_1}{b}} \cdot \prs{\frac{a_2}{b}}
+\end{align*}
+
+\item %2
+מיידי מההגדרה.
+
+\item %3
+אם
+\end{enumerate}
+\end{proof}
+
+%TODO fill in lecture
+
+\begin{lemma} \label{jacobi-lemma}
+יהיו
+$r,s$
+אי־זוגיים. אז
+\begin{enumerate}
+\item \[\frac{rs - 1}{2} = \frac{r-1}{2} + \frac{s-1}{2} \mod{2}\] \label{jacobi-lemma:formula}
+\item \[\frac{r^2 s^2 - 1}{8} = \frac{r^2 - 1}{8} + \frac{s^2 - 1}{8} \mod{2}\] \label{jacobi-lemma:square-formula}
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+\begin{enumerate}
+\item \begin{align*}
+\prs{r-1}\prs{s-1}&\equiv 0 \mod{4} \\
+rs - r - s + 1 &\equiv 0 \mod{4} \\
+rs - 1 &\equiv r - 1 + s - 1 \mod{4} \\
+\frac{rs - 1}{2} &\equiv \frac{r-1}{2} + \frac{s-1}{2} \mod{2}
+\end{align*}
+\item
+\begin{align*}
+\prs{r^2 - 1}\prs{s^2 - 1} &\equiv 0 \mod{16} \\
+r^2 s^2 - 1 &\equiv r^2 - 1 + s^2 - 1 \mod{16} \\
+\frac{r^2 s^2 - 1}{8} &\equiv \frac{r^2 - 1}{8} + \frac{s^2 - 1}{8} \mod{2}
+\end{align*}
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}
+יהיו
+$r_!, \ldots, r_k$
+אי־זוגיים. אז
+\begin{enumerate}
+\item
+\begin{align*}
+\sum_{i \in [k]} \frac{r_i - 1}{2} \equiv \frac{r_1 \cdot \ldots r_k - 1}{2} \mod{2}
+\end{align*}
+\item 
+\begin{align*}
+\sum_{i \in [k]} \frac{r_i^2 - 1}{8} \equiv \frac{r_1^2 \cdot \ldots r_k^2 - 1}{8} \mod{2}
+\end{align*}
+\end{enumerate}
+\end{corollary}
+\begin{proof}
+נוכיח את הסעיף הראשון באינדוקציה.
+\begin{align*}
+\sum_{i \in [k-1]} \frac{r_i - 1}{2} &\equiv \frac{r_1 \cdot \ldots r_{k-1} - 1}{2} \mod{2}
+\end{align*}
+נגדיר
+$a = r_1 \cdot \ldots \cdot r_{k-1}$
+ואז מלמה
+\ref{jacobi-lemma}
+סעיף
+\ref{jacobi-lemma:formula}
+נקבל
+\[\frac{a-1}{2} + \frac{r_k - 1}{2} \equiv \frac{a r_k - 1}{2} \equiv \frac{r_1 \cdot \ldots r_k - 1}{2} \mod{2}\]
+כנדרש.
+
+את הסעיף השני נוכיח באותו אופן.
+\end{proof}
+
+\begin{theorem}
+יהי
+$b$
+שלם חיובי ואי־זוגי.
+\begin{enumerate}
+\item
+\[\prs{\frac{-1}{b}} = \prs{-1}^{\frac{b-1}{2}}\]
+\item
+\[\prs{\frac{2}{b}} = \prs{-1}^{\frac{b^2 - 1}{8}}\]
+\item
+אם
+$a\neq 1$
+אי זוגי ו־%
+$\prs{a,b} = 1$
+אז
+\[\prs{\frac{a}{b}} = \prs{\frac{b}{a}} = \prs{-1}^{\frac{a-1}{2} \cdot \frac{b-1}{2}}\]
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\begin{enumerate}
+\item %1
+\begin{align*}
+\prs{\frac{-1}{b}} &= \prs{\frac{-1}{p_1}} \cdot \ldots \prs{\frac{-1}{p_k}} \\&=
+\prs{-1}^{\frac{p_1 - 1}{2} + \ldots + \frac{p_k - 1}{2}} \\ &\stackrel[\text{previous lemma}]{}{=} \prs{-1}^{\frac{p_1 \cdot \ldots \cdot p_k - 1}{2}} \\&= \prs{-1}^{\frac{b-1}{2}}
+\end{align*}
+\item %2
+באותה דרך כמו הסעיף הקודם.
+
+\item %3
+נכתוב
+$a = q_1 \cdot \ldots \cdot q_m$.
+מתקיים
+\begin{align*}
+\prs{\frac{a}{b}} \prs{\frac{b}{a}} &= \prod_{i,j} \prs{\frac{p_i}{q_j}} \prs{\frac{q_j}{p_i}} \\&= \prod_{i,j} \prs{-1}^{\frac{p_i - 1}{2} \cdot \frac{q_j - 1}{2}} \\&=
+\prs{-1}^{\sum_{i,j} \frac{p_i - 1}{2} \cdot \frac{q_j - 1}{2}} \\&=
+\prs{-1}^{\prs{\sum_{i \in [k]} \frac{p_i - 1}{2}}\prs{\sum_{j \in [m]} \frac{q_j - 1}{2}}} \\&\stackrel[\text{from corollary}]{}{=}
+\prs{-1}^{\frac{p_1 \cdot \ldots \cdot p_k - 1}{2} \cdot \frac{q_1 \cdot \ldots \cdot q_m - 1}{2}} \\&=
+\prs{-1}^{\frac{b-1}{2} \cdot \frac{a-1}{2}}
+\end{align*}
+\end{enumerate}
+\end{proof}
+
+\begin{example}
+נרצה לחשב את
+$\prs{\frac{1001}{9907}}$.\\
+דרך אחת היא פירוק
+$1001 = 7 \cdot 11 \cdot 13$
+ואז חישוב כמכפלת סימני לג'נדר.
+\\
+דרך נוספת היא עם סימן יעקובי.
+\begin{align*}
+\prs{\frac{1001}{9907}} &= \prs{\frac{9907}{1001}} \\&= \prs{\frac{898}{1001}} =
+\prs{\frac{2}{1001}}\prs{\frac{449}{1001}} \\&=
+\prs{-1}^{\frac{1001^2 - 1}{8}} \prs{\frac{449}{1001}} =
+\prs{\frac{1001}{449}} \\&=
+\prs{\frac{103}{449}} =
+\prs{\frac{449}{103}} \\&=
+\prs{\frac{37}{103}} =
+\prs{\frac{103}{37}} \\&=
+\prs{\frac{29}{37}} =
+\prs{\frac{37}{29}} \\&=
+\prs{\frac{8}{29}} = \prs{\frac{4}{29}} \cdot \prs{\frac{2}{29}}\\&=
+\prs{\frac{2}{29}} &= - 1
+\end{align*}
+\end{example}
+
+\section{אלגוריתם מילר־רבין לבדיקת ראשוניות}
+
+יהי
+$n$
+שלם אי־זוגי. נרצה לדעת האם
+$n$
+ראשוני.\\
+בעזרת אלגוריתם מילר־רבין ניתן לבדוק בהסתברות גבוהה האם מספר הינו ראשוני.
+
+הרעיון הראשון הוא להשתמש במשפט פרמה.
+נגריל
+$1 < a < n-1$.
+אם
+$a^{n-1} \not\equiv 1 \mod{n}$
+אז
+$n$
+לא ראשוני.
+אז
+$a$
+נקרא "עד" לכך ש־%
+$n$
+אינו ראשוני.
+אחרת,
+$a$
+איננו עד, אבל ייתכן עדיין כי
+$n$
+אינו ראשוני.
+ניקח
+$b \neq a$
+ונבדוק האם
+$b^{n-1} \equiv 1$.\\
+לרעיון זה יש בעיה, כי אם
+$n$
+מספר
+\textenglish{Carmichael}
+אז אינו ראשוני אבל
+$a^{n-1} \equiv 1 \mod{n}$
+לכל
+$a$
+עבורו
+$\gcd\prs{a,n} = 1$.
+
+כדי לתקן זה, נוסיף עוד עדים. אם
+$x^2 \equiv 1 \mod{n}$
+כאשר
+$x \not\equiv \pm 1 \mod{n}$
+אז
+$n$
+אינו ראשוני.
+כדי לבדוק זאת, אם
+$n$
+אי־זוגי ניתן לכתוב
+$n-1 = 2^d m$
+כאשר
+$m$
+אי־זוגי. אז נכתוב
+$a^{n-1} = \prs{\prs{\prs{a^m}^2}^{\iddots}}^2$.
+אם קיבלנו בשלב מסוים
+$1$
+ובשלב לפניו לא קיבלנו
+$\pm 1$,
+אז
+$a$
+הוא עד.
+
+\begin{algorithm}
+נתון
+$n$
+אי־זוגי.
+\begin{enumerate}
+\item נפרק
+$n-1 = 2^d m$
+עבור
+$m$
+אי־זוגי.
+\item נבחר
+$a$
+בין
+$2$
+ל־%
+$n-1$
+באופן אקראי.
+\item נחשב
+$a^m \mod {n}$.
+אם
+$a^m \equiv \pm 1 \mod{n}$
+נסיים ונחזיר כי
+$n$
+חשוד להיות ראשוני.
+\item אם
+$a^m \not\equiv \pm 1 \mod{n}$,
+נרשום
+$a^m \equiv b_0 \mod{n}$
+ונסתכל על הסדרה
+\[\text{.} b_0, b_1 = b_0^2 , \ldots , b_{d-1} = b_{d-2}^2\]
+אם בשלב ה־
+$j$
+כלשהו
+$b_j \equiv -11 \mod{n}$,
+נחזיר כי
+$n$
+ראשוני. אחרת הוא בוודאות אינו ראשוני.
+\end{enumerate}
+\end{algorithm}
+
+\begin{remark}
+נרצה לחשב את
+$a^m$
+בצורה יעילה.
+נכתוב
+$2^{\ell} \leq m < 2^{\ell + 1}$
+ונחשב
+$a^2, \ldots, a^{2^{\ell}}$
+מודולו
+$n$.
+אז נכתוב את
+$a^m$
+כמכפלה של החזקות מלמעלה.
+\end{remark}
+
+\begin{theorem}
+אם
+$n > 9$
+וקיבלנו בתהליך מילר־רבין ש־%
+$n$
+ראשוני אז יש סיכוי של פחות מ־
+$\frac{1}{2}$
+ש־%
+$n$
+אינו ראשוני.
+\end{theorem}
+\begin{remark}
+סיבוכיות האלגוריתם היא
+$\Theta\prs{\prs{\log n}^3}$.
+\end{remark}
+\begin{remark}
+אם נחזור על התהליך עשר פעמים, נקבל שהסיכוי ש־%
+$n$
+אינו ראשוני הוא
+$\prs{\frac{1}{4}}^{10} \sim \frac{1}{1000000}$.
+\end{remark}
+
+\begin{theorem}
+יהי
+$a \in \NN$
+שלם שאינו ריבוע.
+יש אינסוף ראשוניים
+$p$
+עבורם
+$a$
+אינו שארית ריבועית.
+\end{theorem}
+
+\begin{lemma}
+נכתוב
+$a = b^2 a'$.
+אם יש אינסוף ראשוניים
+$p$
+עבורם
+$a'$
+אינו שארית ריבועית, אז יש אינסוף ראשוניים עבורם
+$a$
+אינו שארית ריבועית.
+\end{lemma}
+
+\begin{proof}
+כתרגיל.
+\end{proof}
+
+\begin{proof}[משפט]
+נכתוב
+$a' = 2^{\alpha} \prod_{i \in [n]} q_i$
+כאשר
+$\alpha \in \set{0,1}$
+ו־%
+$q_i$
+ראשוניים.
+
+\begin{description}
+\item[מקרה א':]
+$n \geq 1$.
+יהיו
+$\set{\ell_i}_{i \in [k]}$
+ראשוניים אי־זוגיים ושונים מכל ה־%
+$q_i$.
+נמצא פתרון למשוואות
+\begin{align*}
+\forall i \in [k] \colon x \equiv 1 \mod{\ell_i} \\
+\forall i \in [n-1] \colon x \equiv 1 \mod{q_j} \\
+x \equiv s \mod{q_n} \\
+x \equiv 1 \mod{8}
+\end{align*}
+ולפי משפט השארייות הסיני, יש פתרון
+$b$.
+נחשב את
+$\prs{\frac{a'}{b}}$.
+נכתוב
+$b = \prod_{i \in [m]} p_i$.
+אז
+\[\text{.}\prs{\frac{a'}{b}} = \prs{\frac{2^\alpha}{b}} \prod_{i\in[n]} \prs{\frac{a_i}{b}} = \prod_{i\in[m]} \prs{\frac{a'}{p_i}}\]
+נחשב את
+$\prs{\frac{a'}{b}}$
+לפי הביטוי השמאלי.
+כיוון ש־%
+$b \equiv 1 \mod{8}$,
+לפי משפט
+$\prs{\frac{2}{b}} = 1$.
+לכן לפי משפט
+$\prs{\frac{q_1}{b}} = \prs{\frac{b}{q_1}}$.
+אבל,
+$b$
+פתרון של
+$x \equiv 1 \mod{q_1}$,
+לכן
+$\prs{\frac{q_1}{b}} = \prs{\frac{b}{q_1}} = \prs{\frac{1}{q_1}} = 1$.
+באותו אופן לכל
+$i \in [n-1]$,
+ועבור
+$n$
+נקבל
+\[\prs{\frac{q_n}{b}} = \prs{\frac{b}{q_n}} = \prs{\frac{s}{q_n}} = -1\]
+\end{description}
+אם נבחר
+$s$
+שאינו שארית ריבועית מודולו
+$q_n$.
+לכן קיבלנו
+\[-1 = \prs{\frac{a'}{b}} = \prod_{i \in [m]} \prs{\frac{a'}{p_i}}\]
+ולכן קיים
+$p_i$
+עבורו
+$\prs{\frac{a'}{p_i}} = -1$.
+כלומר,
+$a'$
+אינו שארית ריבועית מודולו
+$p_i$.
+נניח בשלילה שיש מספר סופי של ראשוניים
+$\set{\ell_i}_{i \in [k]}$
+שבהם
+$a'$
+אינו שארית ריבועית, ומקבלים ראשוני חדש
+$p_i$
+שאינו שארית ריבועית, בסתירה.
+לכן יש אינסוף ראשוניים שבהם
+$a'$
+אינו שארית ריבועית.
+\end{proof}
+
+%TODO fill in
+
+\begin{definition}
+$\alpha \in \CC$
+נקרא מספר אלגברי אם קיים פולינום
+$q\prs{x} \in \QQ\brs{x}$
+שונה מאפס עבורו
+$q\prs{\alpha} = 0$.
+\end{definition}
+\begin{definition}
+$\alpha \in \CC$
+נקרא שלם אלגברי אם קיים פולינום מתוקן
+$q\prs{x} \in \ZZ\brs{x}$
+עבורו
+$q \prs{\alpha} = 0$.
+\end{definition}
+\begin{proposition}
+יהי
+$\alpha \in \CC$
+ויהי
+$p\prs{x} \in \QQ\brs{x}$
+פולינום אי־פריק.
+נניח כי
+$p\prs{\alpha} = 0$.
+יהי
+$m \prs{x} \in \QQ\brs{x}$
+פולינום עבורו
+$m\prs{\alpha} = 0$.
+אז
+$\prs{x} \mid m\prs{x}$.
+\end{proposition}
+\begin{proposition}
+אם
+$r \in \QQ$
+שלם אלגברי אז
+$r \in \ZZ$.
+\end{proposition}
+\begin{proposition}
+יהי
+$\alpha \in CC$
+מספר אלגברי.
+אז יש פולינום אי־פריק מתוקן
+\stress{יחיד}
+$p\prs{x} \in \QQ\brs{x}$
+עבורו
+$p\prs{\alpha} = 0$.
+\end{proposition}
+\begin{definition}
+הפולינום היחיד מהמסקנה הנ"ל נקרא הפולינום המינימלי של
+$\alpha$.
+\end{definition}
+\begin{lemma}[גאוס]
+יהי
+$p\prs{x} \in \ZZ\brs{x}$
+פולינום מתוקן ונניח כי
+$p\prs{x} = q_1\prs{x} q_2\prs{x}$
+כאשר
+$q_1\prs{x}, q_2\prs{x} \in \QQ\brs{x}$
+פולינומים מתוקנים.
+אז
+$q_1\prs{x}, q_2\prs{x} \in \ZZ\brs{x}$.
+\end{lemma}
+\begin{proposition}
+יהי
+$\alpha \in \CC$
+מספר אלגברי.
+אז
+$\alpha$
+שלם אלגברי אם ורק אם הפולינום המינימלי
+$p_{\alpha}\prs{x}$
+שלו ב־%
+$\ZZ\brs{x}$.
+\end{proposition}
+
+\begin{proof}
+אם הפולינום המינימלי עם מקדמים שלמים, ברור כי
+$\alpha$
+שלם אלגברי.
+
+נניח ש־%
+$\alpha$
+שלם אלגברי, ונוכיח שהפולינום המינימלי שלו עם מקדמים שלמים.
+
+אם
+$\alpha$
+שלם אלגברי, קיים
+$m\prs{x} \in \ZZ\brs{x}$
+מתוקן עבורו
+$m\prs{\alpha} = 0$.
+לפי הטענה,
+$p_{\alpha}\prs{x} \mid m\prs{x}$,
+כלומר
+$m\prs{x} = p_{\alpha}\prs{x} q\prs{x} \in \ZZ\brs{x}$
+ולפי הלמה של גאוס
+$p_{\alpha}\prs{x} \in \ZZ\brs{x}$.
+\end{proof}
+
+\begin{example}
+$\QQ\brs{i}$
+שדה בו כל המספרים אלגבריים.
+זה נובע מהלמה הבאה.
+\end{example}
+\begin{lemma}
+יהיו
+$r_1,r_1 \in \QQ$,
+אז
+$x = r_1 + r_2 i$
+מספר אלגברי.
+\end{lemma}
+\begin{proof}
+מתקיים
+\[x^2 = r_1^2 - r_2^2 + 2r_1 r_2 i\]
+וגם
+\begin{align*}
+x^2 -2r_1 x &= r_1^2 - r_2^2 + 2r_1r_2 i - 2r_1^2 - 2r_1r_2 i \\&= -r_1^2 - r_2^2
+\end{align*}
+וקיבלנו שהפולינום
+\[x^2 - 2r_1 x + r_1^2 + r_2^2\]
+ב־%
+$\QQ\brs{x}$
+מאפס את
+$r_1 + r_2 i$.
+\end{proof}
+
+\begin{example}
+נרצה למצוא את השלמים האלגבריים ב־%
+$\QQ\brs{i}$.
+אם
+$r_2 = 0$
+אז
+$x \in \QQ$
+שלם אלגברי.
+אחרת,
+$r_1 + r_2 i \notin \QQ$
+לכן הפולינום המינימלי שלו אינו מדרגה
+$1$.
+\[p_1\prs{x} = x^2 - 2r_1 x + r_1^2 + r_2^2\]
+לפי המשפט,
+$r_1 + r_2 i$
+שלם אלגברי אם ורק אם
+$p_1\prs{x} \in \ZZ\brs{x}$.
+לכן הדרישה היא
+$-2 r_1 \in \ZZ$
+וגם
+$r_1^2 + r_2^2 \in \ZZ$.
+אז ניתן לכתוב
+$r_1 = \frac{m}{2}$
+כאשר
+$m \in \ZZ$.
+נכתוב
+$r_2 = \frac{c}{d}$
+שבר מצומצמם.
+אז
+\[r_1^2 + r_2^2 = \frac{m^2}{4} + \frac{c^2}{d^2} = \frac{d^2 m^2 + 4c^2}{4d^2} \in \ZZ\]
+ואז
+\[\text{.}4d^2 \mid d^2 m^2 + 4c^2\]
+כלומר
+\[d^2 \mid d^2 m^2 + 4c^2\]
+ואז
+\[d^2 \mid 4c^2\]
+ואז
+$d^2 \mid 4$
+ונקבל
+$d \in \set{\pm 1, \pm 2}$.
+לכן נכתוב
+$r_2 = \frac{c_1}{2}$
+כאשר
+$c_1$
+יכול להיות זוגי.
+נכתוב
+\[r_1^2 + r_2^2 = \frac{m^2 + c_1^2}{4} \in \ZZ\]
+כלומר
+$4 \mid m^2 + c_1^2$.
+אם
+$m,c_1$
+אי–זוגיים, אז
+$m^2 + c_1^2 \equiv 2\mod{4}$
+בסתירה!
+אחרת
+$m,c_1$
+זוגיים ולכן
+$r_1,r_2 \in \ZZ$.
+\end{example}
+
+\begin{proposition}
+$\QQ\brs{\omega}$
+הוא שדה בו כל האיברים הם מספרים אלגבריים.
+השלמים האלגבריים בתוך
+$\QQ\brs{\omega}$
+הם
+$\ZZ\brs{\omega}$.
+\end{proposition}
+\begin{proof}
+נכתוב
+$\alpha = r_1 + r_2 \omega$.
+נחשב.
+\begin{align*}
+\prs{x-\alpha}\prs{x-\bar{\alpha}} &=
+\prs{x-\prs{r_1 + r_2 \omega}} \prs{x-\prs{r_1 + r_2\bar{\omega}}} \\&=
+\prs{x - \prs{r_1 + r_2 \omega}} \prs{x-\prs{r_1 + r_2 \omega^2}} \\&=
+x^2 + \prs{-2r_1 - r_2 \omega - r_2 \omega^2} x + r_1^2 - r_1 r_2 + r_2^2 \\&=
+x^2 + \prs{-2r_1 - r_2\prs{\omega + \omega^2}} x + r_1^2 - r_1 r_2 + r_2^2 \\
+&= x^2 + \prs{-2r_1 + r_2} x + r_1^2 - r_1 r_2 + r_2^2 \in \QQ\brs{x}
+\end{align*}
+לכן
+$\alpha$
+מספר אלגברי.
+אז
+$r_1 + r_2\omega$
+שלם אלגברי אם ורק אם
+$r_1^2 - r_1 r_2 + r_2^2 \in \ZZ$
+וגם
+$-2r_1 + r_2 \in \ZZ$.
+במקרה זה
+\[\prs{r_2 - 2 r_1}^2 + 3r_2^2 = 4\prs{r_1^2 + r_1r_2 + r_2^2} \in \ZZ\]
+ואז
+$3r_2^2 \in \ZZ$
+ולכן
+$r_2 \in \ZZ$.
+נתון
+$-2r_1 + r_2 \in \ZZ$
+לכן
+$-2r_1 \in \ZZ$
+ונכתוב
+$r_1 = \frac{m}{2}$.
+אז
+\[r_1 \prs{r_1 - r_2} = \frac{m^2}{4} - \frac{m r_2}{2} \in \ZZ\]
+ואפשר לקבל מכאן כי
+$r_1 \in \ZZ$.
+\end{proof}
+\begin{proposition}
+יהי
+$\alpha$
+מספר אלגברי.
+אז
+$\QQ\brs{\alpha} = \QQ\prs{\alpha}$.
+\end{proposition}
+\begin{proof}
+יהי
+$p\prs{x} \in \QQ\brs{x}$
+שאינו מתאפס ב־%
+$\alpha$,
+ונראה כי
+$\frac{1}{p\prs{\alpha}} \in \QQ\brs{\alpha}$.\\
+$p_{\alpha}\prs{x}$
+איננו פריק.
+מתקיים
+\[\text{.} \gcd\prs{p\prs{x}, p_{\alpha}\prs{x}} = 1\]
+אז קיימים פולינומים
+$a\prs{x},b\prs{x} \in \QQ\brs{x}$
+עבורם
+\[a\prs{x} p\prs{x}  b\prs{x} p_{\alpha}\prs{x} = 1\]
+ולאחר הצבה נקבל
+$a\prs{\alpha} p\prs{\alpha} = 1$
+כלומר
+$b\prs{\alpha} = \frac{1}{p\prs{\alpha}}$.
+\end{proof}
+
+\begin{proposition}
+יהי
+$\alpha$
+אלגברי עם פולינום מינימלי מדרגה
+$n$.
+אז
+\[\brs{\QQ\brs{\alpha} : \QQ} = n\]
+ובסיס ההרחבה הוא
+$1,\alpha,\ldots, \alpha^{n-1}$.
+\end{proposition}
+
+\begin{proof}
+אם הוקטורים תלויים לינארית, נקבל פולינום שונה מאפס ממעלה קטנה מ־%
+$n$
+המאפס את
+$\alpha$.
+ע"י בידוד
+$\alpha^n$
+מהמשוואה מקבלים כי
+$\alpha^n$
+בשדה, ובאופן דומה אפשר להראות שהקבוצה פורשת.
+\end{proof}
+
 \backmatter
 \end{document}
 
