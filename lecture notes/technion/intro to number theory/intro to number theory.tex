@@ -607,7 +607,7 @@ $\gcd\prs{13 + 13i, -1+18i}$.
 \ref{gaussian_exercise}
 ונקבל
 \begin{align*}
-\text{.} \frac{13 + 13i}{-1+18i} &= \frac{28 - 8 - 25i + 6i}{25} = 1-i + \frac{-8 + 6i}{25}
+\text{.} \frac{13 + 13i}{-1+18i} &= \frac{25 - 8 - 25i + 6i}{25} = 1-i + \frac{-8 + 6i}{25}
 \end{align*}
 נכפול ונקבל
 \begin{align*}
@@ -864,7 +864,7 @@ $r=0$
 לכן
 $qr = 1$
 ולכן
-$r \in R^{\perp}$.
+$u \in R^{\times}$.
 \end{proof}
 \begin{proposition}
 יהי
@@ -873,7 +873,7 @@ $R$
 נניח ש־%
 $N\prs{a} = 1$
 ו־%
-$a \notin R^{\perp}$
+$a \notin R^{\times}$
 אינו הפיך.
 אז
 $a$
@@ -1043,7 +1043,9 @@ $\ZZ[i]$
 \begin{proposition}
 יהא
 $p \in \NN$
-ראשוני.
+ראשוני.%
+\newlecture{1 בנובמבר}%
+{2018}
 אם
 $p \in \ZZ[i]$
 אינו ראשוני, אז קיימים שלמים
@@ -1408,7 +1410,9 @@ $\set{\pm 1, \pm \omega, \pm \omega^2}$.
 \begin{corollary}[האקסיומה השנייה של הנורמה בחוג אוקלידי]
 אם
 $z_1, z_2, z_3 \in \ZZ\brs{\omega}$
-שונים מאפס וגם
+שונים מאפס וגם%
+\newlecture{8 בנובמבר}%
+{2018}
 $z_3 = z_1 z_2$
 כאשר
 $z_1, z_2$
@@ -1571,7 +1575,7 @@ $x,y \not\equiv 0 \mod{p}$.
 \section{קונגרואנציות ב־%
 $\ZZ$}
 אם רוצים לפתור את אחת המשוואות הבאות%
-\newlecture{13 בנובמבר}%
+\newlecture{14 בנובמבר}%
 {2018}
 \begin{align*}
 x^2 + y^2 &\equiv 0 \mod{p} \\
@@ -1659,7 +1663,7 @@ $\bar{a}x = \bar{b}$.
 $ax \equiv b \mod{m}$}
 \begin{example}
 נסתכל על המשוואה
-$6x \equiv 9 \mod{15}$.\newlecture{14 בנובמבר}%
+$6x \equiv 9 \mod{15}$.\newlecture{15 בנובמבר}%
 {2018}
 נניח ש־%
 $m > 0$
@@ -2384,7 +2388,167 @@ $p \neq 2$
 $\prs{1+ap}^{p^{j-2}} \equiv 1 + ap^{j-1} \mod{p^j}$.
 \end{corollary}
 
-%TODO fill in lecture
+\newlecture{22 בנובמבר}%
+{2018}
+
+\begin{proof}
+נוכיח באינדוקציה על
+$j$.
+
+\begin{description}
+\item[בסיס $j=2$:]
+
+נקבל כי צריך להראות
+\[1 + ap \equiv 1 + ap \mod{p^2}\]
+וזה ברור.
+
+\item[צעד:]
+נניח שהטענה נכונה לכל
+$j \leq k$
+ונוכיח עבור
+$j = k+1$.
+צריך להוכיח
+\[\text{.} \prs{a+ ap}^{p^{j-1}} \equiv 1 + ap^j \mod{p^{j+1}}\]
+מתקיים מהלמה ומהנחת האינדוקציה
+\[\text{.} \prs{1+ap}^{p^{j-1}} = \prs{\prs{1+ap}^{p^{j-2}}}^p \equiv \prs{1+ap^{j-1}}^p \mod{p^{j+1}}\]
+
+לכן, כיוון ש־%
+$j\geq 2$
+גורר
+$2\prs{j-1} \geq j$
+נקבל כי
+\begin{align*}
+\prs{\prs{1+ap}^{j-1}}^p &\equiv 1 + p \cdot 1^{p-1} \cdot a \cdot p^{j-1} + \binom{p}{2} \cdot 1^{p-2} \cdot a^2 \cdot p^{2\prs{j-1}} + \ldots + a^p \cdot p^{p \prs{j-1}} \\&\equiv 1 + ap^j \mod{p^{j+1}}
+\end{align*}
+
+\end{description}
+\end{proof}
+
+\begin{definition}
+יהיו
+$a \in \ZZ, m \in \NN$
+כך שמתקיים
+$\gcd \prs{a,m} = 1$.
+$a$
+נקרא
+\stress{שורש פרימיטיבי מוד
+$m$}
+אם
+$\bar{a}$
+יוצר את החבורה
+$\prs{\quot{\ZZ}{m\ZZ}}^*$.
+\end{definition}
+\begin{example}
+במקרה הקודם, הסדר של
+$5$
+מוד
+$7$
+הוא
+$6$.
+\end{example}
+
+\begin{corollary}
+אם
+$\gcd\prs{a,p} = 1$
+אז הסדר של
+$1+ap$
+מוד
+$p^j$
+עבור
+$j\geq 2$
+הוא
+$p^{j-1}$.
+\end{corollary}
+\begin{proof}
+נציב
+$j+1$
+בלמה ונקבל
+\[\text{.}\prs{1+ap}^{p^{j-1}} \equiv 1 + ap^j \mod{p^{j+1}}\]
+לכן
+$p^{j+1}$
+מחלק את ההפרש , ולכן גם
+$p^j$
+מחלק את ההפרש ונקבל
+\[\text{.} \prs{1+ap}^{p^{j-1}} \equiv 1 \mod{p^j}\]
+לכן הסדר של
+$1+ap$
+מוד
+$p^j$
+מחלק את זה מוד
+$p^{j-1}$.
+לכן הסדר בקבוצה
+$\prs{1,p,\ldots, p^{j-1}}$.
+מוד
+$p^{j-2}$
+נקבל
+\[\prs{1+ap}^{p^{j-2}} \equiv 1 + ap^{j-1} \not\equiv 1 \mod{p^j}\]
+ולכן הסדר הוא
+$p^{j-1}$.
+\end{proof}
+
+\begin{theorem}
+יהי
+$k \geq 3$
+ויהי
+$p \neq 2$
+ראשוני.
+אז
+$\prs{\quot{\ZZ}{p^k \ZZ}}^*$
+ציקלית.
+\end{theorem}
+
+\begin{proof}
+יהי
+$g$
+שורש פרימיטיב מוד
+$p^2$
+ונראה כי
+$g$
+שורש פרימיטיב מוד
+$p^k$.
+לפי פרמה הקטן,
+$g^{p-1} \equiv 1 \mod{p}$
+לכן
+$g^{p-1} = 1 + ap$.
+מצד שני
+$g^{p-1} \neq 1 \mod{p^2}$
+לכן
+$\gcd\prs{a,p} = 1$.
+יהי
+$m$
+הסדר של
+$g$
+מוד
+$p^k$
+ונרצה להוכיח
+$m = p^k - p^{k-1}$.
+כלומר
+$m = p^{k-1}\prs{p-1}$.
+נקבל
+$g^m \equiv 1 \mod{p^k}$
+ואז
+$g^m \equiv 1 \mod{p}$
+כלומר
+$\prs{p-1} \mid m$,
+כי
+$g$
+יוצר.
+כעת
+$g^m \equiv 1 \mod{p^k}$
+גורר
+$\prs{g^m}^{p-1} \equiv 1 \mod{p^k}$
+לכן
+$\prs{g^{p-1}}^{m} \equiv 1 \mod{p^k}$
+לכן
+$\prs{1+ap}^m \equiv 1 \mod{p^k}$
+לכן
+$p^{k-1} \mid m$
+לכן
+$p^{k-1} \cdot \prs{p-1} \mid m$
+ולכן
+$m = \prs{p-1}p^{k-1}$
+כי זה הסדר של החבורה.
+\end{proof}
 
 \begin{proposition}
 לכל
@@ -2513,7 +2677,9 @@ $g^2 = a$
 תהי
 $G$
 חבורה ציקלית מסדר
-$n$.
+$n$.%
+\newlecture{29 בנובמבר}%
+{2018}%
 יהי
 $a \in G$.
 \begin{enumerate}
@@ -3344,10 +3510,16 @@ $a_1 \equiv a_2 \mod{b}$
 
 \item %3
 אם
+$a_1 \equiv a_2 \mod{b}$
+אז בפרט
+$a_1 \equiv a_2 \mod{p_i}$
+לכל
+$p_i$
+בפירוק של
+$b$,
+ומכאן ממשיכים עם התכונות של סימן לז'נדר.
 \end{enumerate}
 \end{proof}
-
-%TODO fill in lecture
 
 \begin{lemma} \label{jacobi-lemma}
 יהיו
@@ -3358,6 +3530,20 @@ $r,s$
 \item \[\frac{r^2 s^2 - 1}{8} = \frac{r^2 - 1}{8} + \frac{s^2 - 1}{8} \mod{2}\] \label{jacobi-lemma:square-formula}
 \end{enumerate}
 \end{lemma}
+
+\begin{remark}
+אם
+$a$
+אי־זוגי אז
+$a^2 \equiv 1\mod{8}$
+כי
+$a^2 - 1 = \prs{a-1} \prs{a+1}$
+ואז
+$\prs{a+1},\prs{a-1}$
+זוגיים ולכן המכפלה מתחלקת ב־%
+$4$.
+\end{remark}
+
 \begin{proof}
 \begin{enumerate}
 \item \begin{align*}
@@ -3470,7 +3656,7 @@ $1001 = 7 \cdot 11 \cdot 13$
 \prs{\frac{29}{37}} =
 \prs{\frac{37}{29}} \\&=
 \prs{\frac{8}{29}} = \prs{\frac{4}{29}} \cdot \prs{\frac{2}{29}}\\&=
-\prs{\frac{2}{29}} &= - 1
+\prs{\frac{2}{29}} = - 1
 \end{align*}
 \end{example}
 
@@ -3617,6 +3803,8 @@ $\prs{\frac{1}{4}}^{10} \sim \frac{1}{1000000}$.
 \end{remark}
 
 \begin{theorem}
+\newlecture{20 בדצמבר}%
+{2018}
 יהי
 $a \in \NN$
 שלם שאינו ריבוע.
@@ -3695,7 +3883,7 @@ $i \in [n-1]$,
 $n$
 נקבל
 \[\prs{\frac{q_n}{b}} = \prs{\frac{b}{q_n}} = \prs{\frac{s}{q_n}} = -1\]
-\end{description}
+
 אם נבחר
 $s$
 שאינו שארית ריבועית מודולו
@@ -3720,9 +3908,40 @@ $p_i$
 לכן יש אינסוף ראשוניים שבהם
 $a'$
 אינו שארית ריבועית.
-\end{proof}
 
-%TODO fill in
+\item[מקרה ב':]
+יהי
+$a' \neq 2$
+ונניח בשלילה שיש מספר סופי של ראשוניים
+$\ell_1, \ldots, \ell_k$
+כך ש־%
+$\ell_i \neq 3$
+לכל
+$i \in [k]$
+וגם
+$\prs{\frac{2}{\ell_i}} = -1$.
+יהי
+$b = 8 \prod_{i \in [k]} \ell_i + 3$.
+אז
+$b$
+לא מתחלק ב־%
+$3$
+וב־%
+$\ell_i$.
+אז
+\[\prs{\frac{2}{b}} = \prs{-1}^{\frac{b^2 - 1}{8}} = 1\]
+ולכן
+\[\prs{\frac{2}{b}} = \prod_{i \in [m]} \prs{\frac{2}{p_i}} = 1\]
+ולכן יש
+$i$
+כך ש־%
+$\prs{\frac{2}{p_i}} = -1$
+כאשר
+$b = \prod_{i\in[m]} p_i$.
+לכן מצאנו ראשוני חדש שאינו שארית ריבועית מוד
+$2$.
+\end{description}
+\end{proof}
 
 \begin{definition}
 $\alpha \in \CC$
@@ -3759,9 +3978,48 @@ $r \in \QQ$
 שלם אלגברי אז
 $r \in \ZZ$.
 \end{proposition}
+
 \begin{proposition}
 יהי
-$\alpha \in CC$
+$\alpha \in \CC$
+ויהי
+$p\prs{x} \in \QQ\brs{x}$
+פולינום אי־פריק כך ש־%
+$p\prs{\alpha} = 0$.
+יהי
+$m\prs{x} \in \QQ\brs{x}$
+פולינום כך ש־%
+$m\prs{\alpha} = 0$.
+אז
+$p\prs{x} \mid m\prs{x}$.
+\end{proposition}
+
+\begin{proof}
+נניח בשלילה כי
+$p\prs{x} \nmid m\prs{x}$.
+לכן
+$p,m$
+זרים
+\footnote{
+כי
+$p$
+ראשוני ולכן אי־פריק בחוג
+$\QQ\brs{x}$
+שהינו אוקלידי}
+ולכן קיימים פולנומים
+$a,b$
+עבורם
+$ap + bm = 1$.
+נציב
+$\alpha$
+ונקבל
+$0 = a\prs{\alpha} p\prs{\alpha} + b\prs{\alpha} m\prs{\alpha} = 1$
+בסתירה.
+\end{proof}
+
+\begin{proposition}
+יהי
+$\alpha \in \CC$
 מספר אלגברי.
 אז יש פולינום אי־פריק מתוקן
 \stress{יחיד}
@@ -3769,13 +4027,52 @@ $p\prs{x} \in \QQ\brs{x}$
 עבורו
 $p\prs{\alpha} = 0$.
 \end{proposition}
+\begin{proof}
+\begin{description}
+\item[קיום:]
+קיים פולינום
+$q\prs{x} \neq 0$
+כך ש־%
+$q\prs{\alpha} = 0$,
+לפי הגדרת
+$\alpha$.
+נכתוב
+$q\prs{x} = \prod_{i \in [k]} q_i\prs{x}$
+כאשר
+$q_i$
+אי־פריקים.
+אבל,
+$q\prs{\alpha} = 0$
+לכן קיים
+$i$
+עבורו
+$q_i\prs{\alpha} = 0$.
+
+\item[יחידות:]
+אם
+$p_1,p_2$
+אי־פריקים שמתאפסים ב־%
+$\alpha$
+אז
+$p_1\prs{x} \mid p_2\prs{x}$
+וגם
+$p_2 \prs{x} \mid p_1\prs{x}$
+לפי הטענה. אם
+$p_1,p_2$
+מתוקנים זה גורר
+$p_1 = p_2$.
+\end{description}
+\end{proof}
+
 \begin{definition}
 הפולינום היחיד מהמסקנה הנ"ל נקרא הפולינום המינימלי של
 $\alpha$.
 \end{definition}
 \begin{lemma}[גאוס]
 יהי
-$p\prs{x} \in \ZZ\brs{x}$
+$p\prs{x} \in \ZZ\brs{x}$%
+\newlecture{26 בדצמבר}%
+{2018}
 פולינום מתוקן ונניח כי
 $p\prs{x} = q_1\prs{x} q_2\prs{x}$
 כאשר
@@ -4001,6 +4298,454 @@ $\alpha^n$
 מהמשוואה מקבלים כי
 $\alpha^n$
 בשדה, ובאופן דומה אפשר להראות שהקבוצה פורשת.
+\end{proof}
+
+\begin{theorem}
+אוסף המספרים האלגבריים הוא שדה.
+\end{theorem}
+
+\begin{proof}
+נציג את רעיון ההוכחה.
+
+\begin{description}
+
+\item[הופכי:]
+אם
+$\alpha$
+אלגברי או שלם אלגברי, אז
+$\bar{\alpha}$
+גם כזה.
+\begin{align*}
+\alpha^n + b_{n-1}\alpha^{n-1} + \ldots + b_1 \alpha + b_0 =0
+\end{align*}
+לכן
+\begin{align*}
+\prs{-1}^n \prs{-\alpha}^n + \prs{-1}^{n-1} b_{n-1}\prs{-\alpha}^{n-1} + \ldots \pm b_1 \prs{-\alpha} + b_0 = 0
+\end{align*}
+לכן
+\[b_n' \prs{-\alpha}^n + b_{n-1}' \prs{-\alpha}^{n-1} + \ldots + b_1'\prs{-\alpha} + b_0 = 0\]
+מאפס את
+$-\alpha$.
+אם
+$\alpha \neq 0$
+מספר אלגברי אז גם
+$\frac{1}{\alpha}$
+כזה.
+אז
+\[1 + \sum_{k\in[n]} \frac{b_{n-k}}{\alpha^{n-k}} = 0\]
+לכן
+\[1+ \sum_{k \in [n]} b_{n-k} \prs{\frac{1}{\alpha}}^k = 0\]
+לכן
+$\frac{1}{\alpha}$
+מספר אלגברי.
+\item[סגירות:]
+אם
+$\alpha$
+מספר אלגברי, ראינו כי השדה
+$\QQ\prs{\alpha} = \QQ\brs{\alpha}$
+מ"ו ממימד
+$n$
+מעל
+$\QQ$
+כאשר
+$n = \deg p_{\alpha}$.
+\end{description}
+\end{proof}
+
+\begin{theorem}
+אוסף השלמים האלגבריים הוא חוג. נסמן אותו
+$\Omega$.
+\end{theorem}
+
+\begin{corollary}
+ב־%
+$K \ceq \QQ\brs{\alpha}$
+כל איבר הוא מספר אלגברי.
+חוג השלמים של
+$K$
+הוא
+$O_K \ceq \Omega \cap K$.
+\end{corollary}
+\begin{example}
+הראינו שב־%
+$\QQ\brs{i}$
+חוג השלמים הוא
+$\ZZ\brs{i}$
+וב־%
+$\QQ\brs{\omega}$
+חוג השלמים הוא
+$\ZZ\brs{\omega}$.
+באופן כללי, כל שדה
+$K$
+שהוא הרחבה סופית של
+$\QQ$
+הוא שדה מספרים אלגבריים.
+\end{example}
+
+\begin{definition}
+$a,b,c \in \Omega$.
+נאמר כי
+$a \equiv b \mod{c}$
+ב־%
+$\omega$
+אם
+$c \mid \prs{b-a}$.
+\end{definition}
+\begin{proposition}
+יהיו
+$a,b,c \in \ZZ$.
+אם
+$a \equiv b \mod{c}$
+ב־%
+$\Omega$
+אז
+$a \equiv b \mod{c}$
+ב־%
+$\ZZ$.
+\end{proposition}
+
+\begin{proof}
+$c \mid b - a$
+לכן קיים
+$\alpha \in \Omega$
+עבורו
+$c\alpha = b - a$
+לכן
+$\alpha = \frac{b-a}{c} \in \QQ$.
+קיבלנו כי
+$\alpha$
+שלם אלגסרי ורציונלי לכן
+$\alpha$
+שלם, ולכן
+$a \equiv b \mod{c}$
+גם ב־
+$\ZZ$.
+\end{proof}
+\begin{proposition}
+יהיו
+$a,b \in \Omega$
+ו־%
+$p \in \NN$
+ראשוני. אז
+$\prs{a+b}^p \equiv a^p + b^p$
+ב־%
+$\Omega$.
+\end{proposition}
+\begin{proof}
+ראינו כי
+$p \mid \binom{p}{k}$
+לכל
+$1 \leq k \leq p-1$
+ומכאן נובעת הטענה.
+\end{proof}
+\begin{example}
+נשאל מתי
+$2$
+שארית ריבועית מוד
+$p$.
+מהדדיות
+\[\text{.} \prs{\frac{2}{p}} = \prs{-1}^{\frac{p^2 - 1}{8}}\]
+$2$
+יהי
+$\zeta = e^{\frac{2 \pi i}{8}} = \frac{1 + i}{\sqrt{2}}$
+וידוע
+$\zeta^8 = 1$.
+לכן
+\[\text{.}\prs{\zeta^4 - 1}\prs{\zeta^4 + 1} = 0\]
+קל לראות
+$\zeta^4 +נסמן 1 = 0$
+ולכן
+$\zeta^2 + \zeta^{-2} = 0$.
+כעת
+\[\text{.} \prs{\zeta + \zeta^{-1}}^2 = \zeta^2 + 2 + \zeta^{-2} = 2\]
+נסמן
+$\tau = \zeta + \zeta^{-1}$
+והראנו
+$\tau^2 = 2$.
+$\tau$
+שלם אלגברי כסכום של שני שלמים אלגבריים. אפשר לראות את זה גם מכיוון שהוא שורש של
+$x^2 - 2$.
+אנו יודעים ש־%
+$2^{\frac{p-1}{2}} \equiv \prs{\frac{p}{2}} \mod{p}$.
+נציב את
+$\tau$
+ואז
+\begin{align*}
+\prs{\tau^2}^{\frac{p-1}{2}} &\equiv \prs{\frac{2}{p}} \mod{p} \\
+\tau^{p-1} &\equiv \prs{\frac{2}{p}} \mod{p} \\
+\tau^p &\equiv \tau\prs{\frac{2}{p}} \mod{p}
+\end{align*}
+ב־%
+$\Omega$.
+\end{example}
+
+\begin{proposition}
+\newlecture{2 בינואר}%
+{2019}
+יהיו
+$a,b,c \in \ZZ$
+עם
+$c \neq 0$.
+אם
+$a \equiv b \mod{c}$
+ב־%
+$\Omega$
+אז
+$a \equiv b \mod{c}$
+ב־%
+$\ZZ$.
+\end{proposition}
+
+נוכיח כעת הדדיות ריבועית עבור
+$2$,
+כלומר
+\[\text{.}\prs{\frac{2}{p}} = \prs{-1}^{\frac{p^2 - 1}{8}}\]
+\begin{proof}
+יהי
+$\zeta = e^{\frac{2\pi i}{8}}$
+שלם אלגברי, אז
+$\zeta^8 = 2$
+כלומר
+$\zeta^8 - 1 = 0$
+כלומר
+\[\text{.} \prs{\zeta^4 + 1}\prs{\zeta^4 - 1} = 0\]
+יהי
+$\tau = \zeta + \zeta^{-1}$
+ואז
+$\tau^2 = \zeta^2 + 2 + \zeta^{-2} = 2$
+כי
+$\zeta^2 + \zeta^{-2} = 0$.
+כתבנו את
+$\sqrt{2}$
+כסכום שורשי יחידה.
+\\
+יהי
+$p\neq 2$
+ראשוני, אז
+\[\tau^{p-1} = \prs{\tau^2}^{\frac{p-1}{2}} = 2^{\frac{p-1}{2}} \equiv \prs{\frac{2}{p}} \mod{p}\]
+ב־%
+$\Omega$.
+לכן
+\[\text{.} \tau^p \equiv \tau \prs{\frac{2}{p}} \mod{p}\]
+\\
+מצד שני מתקיים
+\[\text{.} \tau^p = \prs{\zeta + \zeta^{-1}}^p \equiv \prs{\zeta^p + \zeta^{-p}} \mod{p}\]
+נניח
+$p \equiv 1 \mod{8}$
+כלומר
+$p = 8k + 1$
+ואז
+\[\zeta^p = \zeta^{8k+1} = \zeta^{8k}\zeta = \zeta\]
+לכן גם
+$\zeta^{-p} = \zeta^{-1}$
+ולכן
+\[\text{.} \zeta^p + \zeta^{-p} = \zeta + \zeta^{-1}\]
+אם
+$p \equiv -1 \mod{8}$
+נקבל באותו אופן
+$\zeta^p = \zeta^{-1}$
+לכן
+$\zeta^{-p} = \zeta$
+ולכן שוב
+\[\text{.} \zeta^p + \zeta^{-p} = \zeta + \zeta^{-1}\]
+קיבלנו
+\[\text{.} \tau^p \equiv \zeta^p + \zeta^{-p} \equiv \tau \mod{p}\]
+ראינו
+$\tau^p \equiv \tau \prs{\frac{2}{p}} \mod{p}$
+לכן
+\[\text{.} \tau \equiv \tau \mod{\frac{2}{p}} \mod{p}\]
+נכפול ב־%
+$\tau$
+ואז
+\[\tau^2 \equiv \tau^2 \prs{\frac{2}{p}} \mod{p}\]
+כלומר
+\[2 \equiv 2\prs{\frac{2}{p}} \mod{p}\]
+ב־%
+$\Omega$.
+לפי הטענה, זה גורר כי
+\[2 \equiv 2 \prs{\frac{2}{p}} \mod{p}\]
+ב־%
+$\ZZ$.
+לכן
+\[\prs{\frac{2}{p}} \equiv 1 \mod{p}\]
+ונקבל
+\[\prs{\frac{2}{p}} \equiv 1\]
+כנדרש.
+
+אם
+$p \equiv 3 \mod{8}$
+נקבל
+\[\zeta^p = \zeta^3 \equiv -\zeta^{-1}\]
+אז
+\[\zeta^p = -\zeta\]
+ולבסוף
+\[\text{.} \zeta^p + \zeta^{-p} = -\zeta -\zeta^{-1} = -\tau\]
+אם
+$p \equiv \pm 3 \mod{8}$
+אז
+\begin{align*}
+\tau^p &\equiv -\tau \mod{p} \\
+\tau \prs{\frac{2}{p}} &\equiv -\tau \mod{p} \\
+2 \prs{\frac{2}{p}} &\equiv -2 \mod{p}
+\end{align*}
+כאשר השקילות האחרונה
+ב־%
+$\Omega$
+ולכן ב־%
+$\ZZ$.
+כעת
+\[\prs{\frac{2}{p}} \equiv -1 \mod{p}\]
+ולכן
+$\prs{\frac{2}{p}} = -1$.
+
+עבור
+$p \equiv - 3 \mod{8}$
+הטיעון דומה.
+\end{proof}
+
+\chapter{סכומי גאוס}
+
+\section{סכומי גאוס ריבועיים}
+
+יהי
+$p$
+ראשוני אי־זוגי ונסמן
+$\zeta \ceq e^{\frac{2 \pi i}{p}}$.
+
+\begin{lemma}
+\[\sum_{t = 0}^{p-1} \zeta^{at} = \fcases{p & a \equiv 0 \mod{p} \\ 0 & a \not\equiv 0 \mod{p}}\]
+\end{lemma}
+\begin{proof}
+אם
+$a \equiv 0 \mod{p}$
+אז
+$\zeta^p = 1$
+לכן הסכום הוא
+\[ \text{.} 1 + \ldots + 1 \prs{\text{p times}} = p\]
+\\
+אחרת,
+$\gcd \prs{a,p} = 1$
+ואז
+\[\zeta^a \sum_{t=0}^{p-1} \zeta^{at} = \sum_{t=0}^{p-1} \zeta^{at}\]
+אבל
+$\zeta^a \neq 0$
+ולכן
+\[\text{.} \sum_{t=0}^{p-1} \zeta^{at} = 0\]
+
+ניתן לראות זאת בדרך נוספת. הסכום הנדסי ושווה
+\begin{align*}
+\text{.} \frac{\prs{\zeta^a}^p -1}{\zeta^a - 1} = \frac{0}{\zeta^a - 1} = 0
+\end{align*}
+\end{proof}
+
+\begin{corollary}
+\[\frac{1}{p} \sum_{t=0}^{p-1} \zeta^{t\prs{x-y}} = \delta\prs{x,y}\]
+לכל
+$x,y \in \ZZ$
+וכאשר
+$\delta\prs{x,y} = 1$
+אם
+$x \equiv y \mod {p}$
+ואחרת
+$\delta\prs{x,y} = 0$.
+\end{corollary}
+\begin{proof}
+נבחר
+$a = x-y$.
+\end{proof}
+\begin{lemma}
+\[\sum_{t=0}^{p-1} \prs{\frac{t}{p}} = 0\]
+\end{lemma}
+\begin{proof}
+מתרגיל הבית.
+\end{proof}
+
+\begin{definition}
+יהי
+$a\in \ZZ$.
+נגדיר
+\stress{סכום גאוס ריבועי}
+להיות
+\[\text{.} g_a \ceq \sum_{t=0}^{p-1} \prs{\frac{t}{p}} \zeta^{at}\]
+\end{definition}
+
+\begin{proposition}
+\[g_a = \prs{\frac{a}{p}} g_1\]
+\end{proposition}
+\begin{proof}
+אם
+$a \equiv 0 \mod{p}$
+אז
+$\zeta^{at} = 1$
+כי
+$\zeta^a = 1$.
+אז
+\[g_a = \sum_{t=0}^{p-1}\prs{\frac{t}{p}} = 0\]
+לפי הלמה.
+\\
+אם
+$a \not\equiv 0 \mod{p}$,
+נחשב
+\begin{align*}
+\prs{\frac{a}{p}} g_a &= \prs{\frac{a}{p}} \sum_{t=0}^{p-1} \prs{\frac{t}{p}} \zeta^{at} \\&=
+\sum_{t=0}^{p-1}\prs{\frac{at}{p}} \zeta^{at}
+\end{align*}
+כאשר
+$t$
+עובר מ־%
+$0$
+עד
+$p-1$,
+המספרים
+$at$
+נותנים את כל עהערכים השונים מוד
+$p$.
+מתקיים
+$at \equiv k \mod{p}$
+וגם
+$t \equiv $
+\end{proof}
+
+\begin{notation}
+$g = g_1$.
+\end{notation}
+
+\begin{theorem}
+\[g^2 = \prs{-1}^{\frac{p-1}{2}} p\]
+\end{theorem}
+\begin{proof}
+נחשב את
+\[\sum_{a=0}^{p-1} g_a g_{-a}\]
+בשתי דרכים.
+
+\begin{enumerate}
+\item \begin{align*}
+\sum_{a=0}^{p-1} g_a g_{-a} &= \sum_{a=0}^{p-1} \prs{\frac{a}{p}} g \prs{\frac{-a}{p}} g \\&= \sum_{a=0}^{p-1} \prs{\frac{-a^2}{p}} g^2 \\&=
+\sum_{a=1}^{p-1} \prs{\frac{-1}{p}}g^2 \\&= -\prs{p-2}g^2 \\
+&= \prs{-1}^{\frac{p-1}{2}} \prs{p-1} g^2
+\end{align*}
+\item
+\begin{align*}
+\sum_{a=0}^{p-1} g_a g_{-a} &= \sum_{a=0}^{p-1} \prs{\sum_{t=0}^{p-1} \prs{\frac{t}{p}} \zeta^{at}} \prs{\sum_{s=0}^{p-1} \prs{\frac{s}{p}} \zeta^{-sa}} \\&=
+\sum_{a=0}^{p-1} \sum_{t=0}^{p-1} \sum_{s=0}^{p-1} \prs{\frac{ts}{p}} \zeta^{a\prs{t-s}} \\&=
+\sum_{t=0}^{p-1} \sum_{s=0}^{p-1} \sum_{a=0}^{p-1} \prs{\frac{ts}{p}} \zeta^{a\prs{t-s}} \\&=
+\sum_{t=0}^{p-1} \sum_{s=0}^{p-1} \prs{\frac{ts}{p}} \sum_{a=0}^{p-1} \zeta^{a\prs{t-s}}
+\end{align*}
+הסכום הימני שונה מאפס רק אם
+$t\equiv s \mod{p}$
+מלמה קודמת, וזה נכון אם ורק אם
+$t=s$.
+לכן
+\begin{align*}
+\sum_{t=0}^{p-1} \sum_{s=0}^{p-1} \prs{\frac{ts}{p}} \sum_{a=0}^{p-1} \zeta^{a\prs{t-s}} &=
+\sum_{t=0}^{p-1} \prs{\frac{t^2}{p}} \sum_{a=0}^{p-1} 1 \\&=
+\sum_{t=0}^{p-1} \prs{\frac{t^2}{p}}p \\&= \prs{p-1}{p}
+\end{align*}
+נשווה את הביטויים ונקבל
+\[g^2 = \prs{-1}{^\frac{p-1}{2}} p\]
+כנדרש.
+\end{enumerate}
+
 \end{proof}
 
 \backmatter

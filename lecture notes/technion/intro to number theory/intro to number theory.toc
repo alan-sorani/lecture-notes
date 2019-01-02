@@ -12,7 +12,9 @@
 \contentsline {section}{\numberline {1.6}קונגרואנציות ב־$\mathbb {Z}$}{8}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}המשוואה $ax \equiv b \left ( \modx \tmspace +\thinmuskip {.1667em} m \right )$}{9}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}הפיכים ב־${\left .\raisebox {.2em}{$\mathbb {Z}$}\middle /\raisebox {-.2em}{$m\mathbb {Z}$}\right .}$}{9}{subsection.1.6.2}
-\contentsline {section}{\numberline {1.7}המשוואה $x^k = a$ בחבורה ציקלית}{13}{section.1.7}
-\contentsline {section}{\numberline {1.8}הרמה של פתרונות ממודולו $p$ למודולו $p^k$}{14}{section.1.8}
-\contentsline {chapter}{\numberline {2}הדדיות ריבועית}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}אלגוריתם מילר־רבין לבדיקת ראשוניות}{20}{section.2.1}
+\contentsline {section}{\numberline {1.7}המשוואה $x^k = a$ בחבורה ציקלית}{14}{section.1.7}
+\contentsline {section}{\numberline {1.8}הרמה של פתרונות ממודולו $p$ למודולו $p^k$}{15}{section.1.8}
+\contentsline {chapter}{\numberline {2}הדדיות ריבועית}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}אלגוריתם מילר־רבין לבדיקת ראשוניות}{21}{section.2.1}
+\contentsline {chapter}{\numberline {3}סכומי גאוס}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}סכומי גאוס ריבועיים}{27}{section.3.1}
