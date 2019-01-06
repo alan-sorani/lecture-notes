@@ -3619,9 +3619,9 @@ $\Omega^1\prs{V} = V^* = \hom\prs{V,\RR}$.
 אם
 $V = \RR^n$
 דוגמה לתבנית היא
-$dx_i \pmat{a_1, \ldots, a_n} = a_i$.
+$\diff x_i \pmat{a_1, \ldots, a_n} = a_i$.
 אז
-$V^* = \mrm{span}\set{dx_1, \ldots, dx_n}$
+$V^* = \mrm{span}\set{\diff x_1, \ldots, \diff x_n}$
 הבסיס הסטנדרטי של
 $V^* = \prs{\RR^n}^*$.
 \item[מרחב וקטורים כלל:]
@@ -3634,9 +3634,9 @@ $u \in V$
 ניתן להציג באופן יחיד
 $u = \sum_{i=1}^n \alpha_i v_i$
 ומתקיים
-$dv_i\prs{u} = \alpha_i$.
+$\diff v_i\prs{u} = \alpha_i$.
 אז
-$V^* = \mrm{span}\set{dv_1, \ldots, dv_n}$
+$V^* = \mrm{span}\set{\diff v_1, \ldots, \diff v_n}$
 \stress{הבסיס הדואלי ל־%
 $B$}.
 הוא מסומן
@@ -3727,10 +3727,10 @@ $n < m$)
 \end{align*}
 המוגדרת באופן הבא.
 \begin{align*}
-\prs{\alpha \wedge \beta}\prs{v_1,\ldots, v_{k+\ell}} \ceq  \sum_{i_1 < \ldots < i_k} \mrm{sgn}\prs{\sigma} \alpha\prs{v_{i_1}, \ldots, v_{i_k}} \beta\prs{v_{j_1}, \ldots, v_{i_{\ell}}}
+\prs{\alpha \wedge \beta}\prs{v_1,\ldots, v_{k+\ell}} \ceq  \sum_{i_1 < \ldots < i_k} \mrm{sgn}\prs{\sigma} \alpha\prs{v_{i_1}, \ldots, v_{i_k}} \beta\prs{v_{j_1}, \ldots, v_{j_{\ell}}}
 \end{align*}
 כאשר
-$i_1, \ldots, i_{\ell}$
+$i_1 < \ldots < i_{\ell}$
 בחירת
 $k$
 אינדקסים מתוך
@@ -3804,7 +3804,7 @@ $\alpha \in \Omega^k\prs{V}$.
 נבחר
 $k$
 וקטורים
-$\u_{i} = \sum_{j \in [n]} a_{i,j}v_j$.
+$u_{i} = \sum_{j \in [n]} a_{i,j}v_j$.
 אז
 \begin{align*}
 \alpha\prs{u_1, \ldots, u_k} &= \alpha\prs{\sum a_{i,j} v_j, \ldots, \sum \alpha_{k,j} v_j} \\&=
@@ -3824,7 +3824,7 @@ $j_t$
 &= \sum_{i_1, \ldots, i_k} \prs{\alpha\prs{v_{i_1}, \ldots, v_{i_k}} \sum_{\sigma} \mrm{sgn}\prs{\sigma} \cdot a_{1,\sigma\prs{i_1}} \cdot \ldots \cdot a_{k,\sigma\prs{i_k}}}
 \end{align*}
 נשים ♥ כי
-\[\sum_{\sigma} \mrm{sgn}\prs{\sigma} \cdot a_{1,\sigma\prs{i_1}} \cdot \ldots \cdot a_{k,\sigma\prs{i_k}} = \abs{\mat{a_{1,j_1} & \cdots a_{1,i_k} \\ \vdots & \ddots & \vdots \\ a_{k,i_1} & \cdots a_{k,i_k}}}\]
+\[\sum_{\sigma} \mrm{sgn}\prs{\sigma} \cdot a_{1,\sigma\prs{i_1}} \cdot \ldots \cdot a_{k,\sigma\prs{i_k}} = \abs{\mat{a_{1,j_1} & \cdots & a_{1,i_k} \\ \vdots & \ddots & \vdots \\ a_{k,i_1} & \cdots & a_{k,i_k}}}\]
 עם שורות
 $u_1, \ldots, u_k$
 ועמודות
@@ -3889,11 +3889,11 @@ $\RR^{2n}$
 עם קואורדינטות
 $\prs{p_1, q_1, \ldots, p_n,q_n}$.
 נגדיר
-$\omega \ceq dp_1 \wedge dq_1+\ldots+dp_n\wedge dq_n$\footnote{התבנית סימפקטית סטנדרטית של
+$\omega \ceq \diff p_1 \wedge \diff q_1+\ldots+ \diff p_n\wedge \diff q_n$\footnote{התבנית סימפקטית סטנדרטית של
 $\RR^n$}
 ואז
 \begin{align*}
-\frac{\omega^n}{n!}  = \frac{\omega \wedge \ldots \omega}{n!} dp_1 \wedge dq_1 \wedge \ldots \wedge dp_n \wedge dq_n
+\frac{\omega^n}{n!}  = \frac{\omega \wedge \ldots \wedge \omega}{n!} = \diff p_1 \wedge \diff q_1 \wedge \ldots \wedge \diff p_n \wedge \diff q_n
 \end{align*}
 \end{exercise}
 
@@ -3931,11 +3931,11 @@ $\gamma \colon \prs{-\eps,\eps} \to \Uu$
 עם
 $p=\gamma\prs{0}$
 ועם
-$\brs{\gamma} = \cdot{\gamma}\prs{0} \in T_{\gamma(0)}\Uu$.
+$\brs{\gamma} = \dot{\gamma}\prs{0} \in T_{\gamma(0)}\Uu$.
 אז
-\[\brs{\gamma} = \sum_{i\in[n]} \cdot{\gamma}_i\prs{0} \frac{\del}{\del x^i}\prs{p}\]
+\[\brs{\gamma} = \sum_{i\in[n]} \dot{\gamma}_i\prs{0} \frac{\del}{\del x^i}\prs{p}\]
 ונקבל
-\[\diff x_i \prs{p} \prs{\brs{\gamma}} = \cdot{\gamma_i} \prs{0}\]
+\[\diff x_i \prs{p} \prs{\brs{\gamma}} = \dot{\gamma_i} \prs{0}\]
 \end{example}
 \begin{definition}
 \stress{תבנית דיפרנציאלית
@@ -3953,7 +3953,7 @@ $x$.
 \end{definition}
 
 נכתוב
-\[ \lambda\prs{x} = \sum_{i_1 < \ldots < i_k} a_{i_1, \ldots, i_k}\prs{x} \diff x_{i,1} \wedge \ldots \diff x_{i,k}\]
+\[ \lambda\prs{x} = \sum_{i_1 < \ldots < i_k} a_{i_1, \ldots, i_k}\prs{x} \diff x_{i,1} \wedge \ldots \wedge \diff x_{i,k}\]
 כאשר
 $a_i$
 פונקציה חלקה
@@ -4247,10 +4247,10 @@ A \colon V &\to V \\
 v_i &\to u_i
 \end{align*}
 ואז
-\[\abs{A}_B^B = \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert}\]
+\[\brs{A}_B^B = \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert}\]
 ונקבל
 \begin{align*}
-\omega\prs{u_1, \ldots, u_n} &= \omega\prs{A v_1, \ldots, A v_n} \\&= \det A \omega\prs{v_1, \ldots, v_n} \\&= \det \det \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert} \overset{\text{scalar}}{\overbrace{\omega\prs{u_1, \ldots, u_n}}}
+\omega\prs{u_1, \ldots, u_n} &= \omega\prs{A v_1, \ldots, A v_n} \\&= \det A \omega\prs{v_1, \ldots, v_n} \\&= \det \pmat{\vert & & \vert \\ \brs{u_1}_B & \cdots & \brs{u_n}_B \\ \vert & & \vert} \overset{\text{scalar}}{\overbrace{\omega\prs{u_1, \ldots, u_n}}}
 \end{align*}
 ולכן
 $\omega = c \cdot \det\prs{\ldots}$
@@ -4279,7 +4279,7 @@ $\omega \neq 0$.
 $\omega_1 \sim \omega_2$
 (תבניות נפח)
 אם
-$\frac{\omega_1}{\omega_2}$.\footnote{זה מוגדר היטב כי המרחב חד־מימדי}
+$\frac{\omega_1}{\omega_2} > 0$.\footnote{זה מוגדר היטב כי המרחב חד־מימדי}
 \end{definition}
 \begin{remark}
 $\sim$
@@ -6648,6 +6648,424 @@ $\brs{x,y} = 0$
 (זרימות של
 $x,y$ מתחלפות.)
 \end{exercise}
+
+\begin{proposition}
+יהי
+$\lambda \in \Omega^1 \prs{M}$
+ויהיו
+$x,y$
+שדות וקטוריים. אז
+\[\text{.} \diff \lambda \prs{x,y} = L_x\prs{\lambda\prs{y}} - L_y\prs{\lambda\prs{x}} - \lambda\prs{\brs{x,y}}\]
+\end{proposition}
+
+\begin{proof}
+ניקח
+$\prs{q_i}_{i\in[n]} \colon \Uu \subseteq M \to \RR$
+פונקציות קואורדינטות.
+נסמן
+\[x = \sum_{i\in[n]} x^i \frac{\del}{\del \delta^i}, \qquad y = \sum_{i\in[n]} y^i \frac{\del}{\del \delta^i}\]
+וגם
+\[\text{.} \lambda = \sum_{i\in[n]} a_i\prs{\vec{q}} \diff q_i\]
+אז
+\begin{align*}
+\lambda\prs{\brs{x,y}} &= \sum_{i\in[n]} a_i \prs{q} \diff q_i \prs{\sum_{j \in [n]} x^j \frac{\del y}{\del q^j} - y^j \frac{\del x}{\del q^j}} \\
+&= \sum_{i \in [n]} a_i\prs{q} \prs{\sum_{j\in[n]} \prs{x^j \frac{\del y^i}{\del q^j} - y^j \frac{\del x^i}{\del q^j}}} \\&=
+\text{.} \phantom{\lambda\prs{x,y}} \sum_{i,j} a_i\prs{q}\prs{x^j \frac{\del y^i}{\del q^j} - y^j \frac{\del x^i}{\del q^j}}
+\end{align*}
+מתקיים
+\[\lambda\prs{x} = \sum_{i \in [n]} a_i x^i\]
+ולכן
+\begin{align*}
+L_y \lambda\prs{x} &= \sum_{i,h=1}^n y^j \frac{\del}{\del q^j}\prs{a_i x^i} \\&=
+\sum_{i,j = 1}^n y^j \prs{\frac{\del a_i}{\del q_j} x^i + a_i \frac{\del x^i}{\del q_j}}
+\end{align*}
+ובאותו אופן
+\[\text{.} L_x \lambda\prs{y} = \sum_{i,j =1}^n x^j\prs{\frac{\del a_i}{\del q_j} y^i + a_i \frac{\del y^i}{\del q_j}}\]
+נקבל
+\[L_y \lambda\prs{x} - L_x\lambda\prs{y} = \sum_{i,j} \frac{\del a_i}{\del q_j} \prs{x^i y^j - x^j y^i} - \lambda\prs{\brs{x,y}}\]
+ואז
+\begin{align*}
+\diff \lambda\prs{y,x} &= \sum_{i,j} \frac{\del a_i}{\del q_j} \diff q_j \wedge \diff q_i \prs{y,x} \\&= \sum_{i,j} \frac{\del a_i}{\del q_j} \abs{\mat{y^j & y^i \\ x^j & x^i}} \\&= \text{.} \phantom{\diff \lambda\prs{x,y}} \sum_{i,j = 1}^n \frac{\del a_i}{\del q_j} \prs{x^i y^j - x^j y^i}
+\end{align*}
+בסך הכל
+\[L_y \lambda\prs{x} - L_x \lambda\prs{y} = \diff \lambda\prs{y,x} - \lambda\prs{\brs{x,y}}\]
+כנדרש.
+\end{proof}
+\begin{definition}
+יהי
+$v$
+שדה וקטורי.
+תהי
+$g_t \colon M \to M$
+זרימה המוגדרת על ידי
+$v$\footnote{על ידי המד"ר
+$\dot{x} = v\prs{x}$}
+ונסמן
+$g_t\prs{x\prs{0}} = x\prs{t}$.
+תהי
+$\lambda \in \Omega^k\prs{M}$
+תבנית.%
+\footnote{
+נזכיר כי
+\[\text{.} g_t^* \prs{x_1, \ldots, x_k} \ceq \lambda_{g_t}\prs{\prs{g_t}_* x_1, \ldots, \prs{g_t}_* x_k}\]
+}
+נגדיר
+\stress{נגזרת לי של
+$\lambda$
+בכיוון
+$v$}
+להיות
+\begin{align*}
+\text{.} L_v \lambda \prs{x} \ceq \rest{\frac{\diff}{\diff t}}{t=0} g_t^* \lambda\prs{x} = \lim_{t\to 0} \frac{\prs{g_t^* \lambda}\prs{x} - \lambda\prs{x}}{t}
+\end{align*}
+\end{definition}
+
+\begin{remark}
+תהי
+$f \colon M \to \RR$
+פונקצייה%
+\footnote{כלומר, תבנית ממעלה
+$0$}.
+ההגדרות השונות של נגזרת לי על
+$f$
+מזדהות.
+אכן
+\begin{align*}
+L_v f &= \rest{\frac{\diff}{\diff t}}{t=0} \prs{g_t^* f} \\&= \rest{\frac{\diff}{\diff t}}{t=0} \prs{f \circ g_t} \\&= \diff f \cdot \dot{g}_t\prs{0} \\&= \diff f\prs{v} \\ \text{.} \phantom{L_v f} &=  \frac{\del f}{\del v}
+\end{align*}
+\end{remark}
+
+\begin{theorem}[\textenglish{Cartan}]
+\[L_v \lambda = i_v \diff \lambda + \diff i_v \lambda\]
+\end{theorem}
+
+\begin{lemma}
+יהי
+$v$
+שדה וקטורי שמגדיר זרימה על ידי
+$\dot{x} = v\prs{x}$.
+הי
+$u \in T_{x\prs{0}} M$
+וקטור משיק ונגדיר גם
+$u\prs{t} = \prs{g_t}_* u$.
+אזי
+\begin{align*}
+\text{.}\dot{u}\prs{t} = \prs{\frac{\del v_i}{\del x_j}}_{i,j} \prs{g_t\prs{x}} u\prs{t} = Dv\prs{g_t\prs{x}} u\prs{t}
+\end{align*}
+\end{lemma}
+
+\begin{proof}
+הדיפרנציאל של
+$g_t$
+נתון על ידי מטריצת יקובי, לכן
+\[\text{.} u\prs{t} = Dg_t\prs{x} \cdot u = \pmat{\frac{\del g_{t,i}}{\del x_j}\prs{x}}_{i,j} u\]
+לכן
+\begin{align*}
+\dot{u}\prs{t} &= \frac{\del}{\del t}\prs{D g_t\prs{x} u} \\&= \prs{D \frac{\del g_t}{\del t}} \prs{x} \cdot u \\&= D\prs{v \cdot g_t}\prs{x} u \\&= Dv\prs{g_t\prs{x}} \underset{u\prs{t}}{\underbrace{Dg_t\prs{x} u}}
+\end{align*}
+ולכן
+\[\text{.} \dot{u}\prs{t} = Dv\prs{g_t\prs{x}} u\prs{t}\]
+\end{proof}
+
+\begin{proof}[משפט \textenglish{Cartan}]
+נוכיח עבור
+$\deg \lambda = 1$.
+מתקיים
+\[\text{.} \lambda = \sum a_i \prs{x} \diff x_i\]
+כעת
+\begin{align*}
+\prs{g_t^* \lambda}_{\prs{x}}\prs{u} &= \lambda_{\prs{g_t\prs{x}}}\prs{u\prs{t}} \\&=
+\sum_{i\in[n]} a_i\prs{x\prs{t}} \cdot u_i\prs{t}
+\end{align*}
+ואז
+\begin{align*}
+\prs{L_v \lambda}_{\prs{x}} \prs{u} &= \rest{\frac{\diff}{\diff t}}{t=0} \prs{g_t^* \lambda}_{\prs{x}} u \\
+\text{.} \phantom{\prs{L_v \lambda}_{\prs{x}} \prs{u}} &= \rest{\sum_{i,j=1}^n \frac{\del a_i}{\del x_j}_{\prs{x\prs{t}}} v^j \cdot u_i\prs{t} + \sum_{i,j = 1}^n a_i\prs{x\prs{t}} \cdot \dot{u}_{i} \prs{t}}{t=0}
+\end{align*}
+מתקיים מההגדרות
+\[i_v\prs{\lambda} = \lambda\prs{v} = \sum_{i \in [n]} a_i v_i\]
+ולכן
+\begin{align*}
+\prs{\diff i_v \lambda}_{\prs{x}} \prs{u} &= \sum_{i,j} a_i \frac{\del v_i}{\del x_j} u_j + \sum_{i,j}\frac{\del a_i}{\del x_j} v_i u_j
+\end{align*}
+וגם
+\begin{align*}
+\prs{i_v \diff \lambda}_{\prs{x}}\prs{u} &= \diff \lambda\prs{v,u} \\&= \underset{\diff \lambda}{\underbrace{ \sum \frac{\del a_i}{\del x_j} \diff x_j \wedge \diff x_i}} \prs{v,u} \\&= \sum \frac{\del a_i}{\del x_j} \abs{\mat{v_j & v_i \\ u_j & u_i}} \\ \text{.} \phantom{\prs{i_v \diff \lambda}_{\prs{x}}\prs{u}}&= \sum \frac{\del a_i}{\del x_j} \prs{v_j u_i - v_i u_j}
+\end{align*}
+
+נסכום ונקבל
+\[\text{.} \diff i_v \lambda\prs{u} + i_v \diff \lambda\prs{u} = \sum_{i,j} a_i \frac{\del v_i}{\del x_j} u_j \prs{0} + \sum_{i,j} \frac{\del a_i}{\del x_j} v_j u_i = L_v \lambda\prs{u}\]
+\end{proof}
+
+\begin{exercise}
+הוכיחו את המקרה הכללי של המשפט בעזרת התכונות מהתרגיל הבא.
+\end{exercise}
+
+\begin{exercise}
+יהיו
+$x,y,z$
+שדות,
+$\omega,\alpha,\beta$
+תבניות ו־%
+$f$
+פונקציה.
+\begin{enumerate}
+\item \[i_{f x} \omega = f i_x \omega\]
+\item \[i_x f\omega = f i_x \omega\]
+\item \[L_{f\prs{x}} \omega = f L_x \omega + \diff f \wedge i_x \omega\]
+\item \[L_x \prs{f \omega} = f L_x \omega + \prs{L_x f} \wedge \omega\]
+\item \[L_x\prs{\alpha \wedge \beta} = \prs{L_x \alpha} \wedge \beta + \alpha\wedge \prs{L_x \beta}\]
+\item \[\diff \prs{L_x \omega} = L_x d\omega\]
+\item \[\brs{x,\brs{y,z}} + \brs{z,\brs{x,y}} + \brs{y,\brs{z,x}} = 0\]
+\item \[\brs{x, f\cdot y} = \prs{L_x f} \cdot y + f \brs{x,y}\]
+\end{enumerate}
+\end{exercise}
+
+\begin{definition}
+זרימה
+$g_t$
+\stress{שומרת על תבנית נפח}
+$\Omega \in \Omega^n \prs{M}$
+אם
+\[\text{.} L_v \Omega = 0\]
+\end{definition}
+\begin{corollary}
+$g_t$
+שומרת על
+$\Omega$
+אם ורק אם
+$\cancelto{0}{i_v \diff \Omega} + \diff i_v \Omega = 0$
+אם ורק אם
+$\diff i_v \Omega = 0$
+אם ורק אם
+$\div \prs{v} = 0$.
+\end{corollary}
+
+\chapter{אינטגרציה על יריעות}
+
+\section{נפח רימני}
+
+תהי
+$g$
+מטריקה רימנית, ובקואורדינטות נכתוב
+\begin{align*}
+g &= \sum g_{i,j} \diff x_i \diff x_j \\
+g_{i,j} &= g\prs{\frac{\del}{\del x_i}, \frac{\del}{\del x_j}}
+\end{align*}
+ונסתכל ראשית על המקרה בו
+$x$
+מקבילון%
+\footnote{כלומר, עם צלעות
+$e_i$
+מקבילות ל־%
+$\frac{\del}{\del x_i}$
+ומאורך
+$\Delta x_i$}.
+נפח התיבה הוא בערך%
+\footnote{כי אנו מסתכלים על הצפיפות בנקודה ספיצית}
+\begin{align*}
+\text{.} \sqrt{\det\prs{g{i,j}} \prs{x}} \cdot \prod_{i\in[n]} \Delta x_i = \sqrt{\det \prs{g_{i,j}}} \prs{\diff x_1 \wedge \ldots \wedge \diff x_n}\prs{e_1, \ldots, e_n}
+\end{align*}
+
+\begin{exercise}
+בדקו כי הנפח הרימני אינו תלוי בבחירת קואורדינטות עם אותה האוריינטציה.
+\end{exercise}
+
+
+תהי
+$M$
+יריעה קומפקטית עם תבנית נפח
+$\Omega$.
+נרצה להגדיר
+{נפח של
+$M$
+ביחס ל־%
+$\Omega$}
+\[\text{.} \mrm{Vol}\prs{M,\Omega} \ceq \int_M \Omega\]
+
+\section{אינטגרציה בעזרת תבניות חיצוניות}
+\begin{definition}
+תהי
+$M^n$
+יריעה עם אוריינטציה ותהי
+$\omega \in \Omega^n \prs{M}$\footnote{לאו דווקא תבנית נפח}.
+נגדיר את
+\stress{התומך של
+$\omega$
+ב־%
+$M$}:
+\[\text{.} \supp\prs{\omega} \ceq \mrm{closure}\set{x \in M}{\omega_x \neq 0}\]
+\end{definition}
+
+נתיר באינטגרציה יריעה
+$M$
+שאינה קומפקטית, עם תומך קומפקטי של
+$\omega$
+ב־%
+$M$.
+נתיר
+$\del M \neq \ns$.
+
+\begin{definition}[הגדרה מקומית]
+$\RR^n$
+עם האוריינטציה הסטנדרטית,
+$\Uu$
+פתוחה ב־%
+$\RR^n$
+או ב־%
+$\RR^n_-$.
+אם נכתוב
+\[\omega = f\prs{x} \diff x_1 \wedge \ldots \wedge \diff x_n\]
+אז
+$\supp\prs{\omega} = \supp\prs{f}$
+קומפקטי ב־%
+$\RR^n$
+או ב־%
+$\RR^n_-$.
+אז נגדיר בעזרת ההגדרה מאינפי
+\[\text{.} \int_{\Uu} \omega \ceq \int_U f \diff x_1, \ldots, \diff x_n\]
+\end{definition}
+
+\begin{proposition}
+יהי
+$F \colon \Uu \to \Vv$
+דיפאו' כאשר
+$\Uu$
+קשירה,
+$\Uu, \Vv$
+פתוחות ב־%
+$\RR^n$
+או
+ ב־%
+$\RR^n_-$.
+ו־%
+$\omega \in \Omega^n \prs{\Vv}$.
+אז
+\[\text{.} \int_U F^* \omega = \fcases{\int_\Vv \omega & \text{$F$ is orientation preserving} \\ -\int_{\Vv} \omega & \text{$F$ is orientation reversing}}\]
+\end{proposition}
+
+\begin{proof}
+נכתוב
+\begin{align*}
+\omega &= f\prs{x} \diff x_1 \wedge \ldots \wedge \diff x_n \\
+F^* \omega\prs{\sigma_1, \ldots, \sigma_n} &= f\prs{F\prs{x}} \cdot \prs{\diff x_1 \wedge \ldots \wedge \diff x_n} \prs{F_* \sigma_1, \ldots, F_* \sigma_n} \\ \text{.} \phantom{F^* \omega\prs{\sigma_1, \ldots, \sigma_n}} &=
+f\prs{F\prs{x}} \cdot \underset{\det \frac{\del F_i}{\del x_j}}{\underbrace{\det \prs{F_*}}} \prs{\diff x_1 \wedge \ldots \wedge \diff x_n}\prs{\sigma_1, \ldots, \sigma_n}
+\end{align*}
+נחשב%
+\footnote{כאשר אינטגרציה מאינפי מתאימה לאינטגרציה לפי התבנית
+$\diff x_1 \cdot \ldots \cdot \diff x_n$}.
+\begin{align*}
+\int_{\Uu}F^* \omega &= \int_{\Uu} f\prs{F\prs{x}} \cdot \det \frac{\del F}{\del x} \cdot \diff x_1 \cdot \ldots \cdot \diff x_n \\& = \int_{\Uu} \sgn\prs{\det F_*} \cdot f\prs{F\prs{x}} \cdot \abs{\det \frac{\del F}{\del x}} \diff x_1 \cdot \ldots \cdot \diff x_n \\&\stackrel{\text{infi}}{=}
+\sgn\prs{\det F_*} \cdot \int_{F\prs{\Uu} = \Vv} f\prs{x} \diff x_1, \ldots \diff x_n \\ &= \int_{\Vv} \omega
+\end{align*}
+\end{proof}
+
+\begin{definition}
+תהי
+$M$
+יריעה עם שפה ובעלת אוריינטציה.
+ניקח אטלס סופי מקומית
+$\prs{\Uu_{\alpha},\phi_{\alpha}}$
+כאשר כל
+$\phi_{\alpha} \colon \Uu_{\alpha} \to \RR^n$
+שומרת אוריינטציה.
+נבחר פיצול יחידה
+$\set{\rho_{\alpha}}_{\alpha}$
+שמתואם עם האטלס%
+\footnote{כלומר,
+$\rho_{\alpha} \colon M \to \brs{0,1}$,
+$\sum_{\alpha} \rho_{\alpha} \equiv 1$,
+והתומך של
+$\rho_{\alpha}$
+ב־
+$\Uu_{\alpha}$}.
+תהי
+$\omega \in \Omega^n\prs{M}$
+עם
+$\supp\omega$
+קומפקטי, ונגדיר
+\[\text{.} \int_M \omega \ceq \sum_{\alpha} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \prs{\phi_{\alpha}^{-1}}^* \rho_{\alpha} \cdot \omega\]
+\end{definition}
+\begin{remark}
+הסכום הנ"ל סופי כי
+$\supp\omega$
+קומפקטי.
+ניתן להכליל את ההגדרה למקרה בו אין דרישה לתומך קומפקטי, אך לא נעשה זאת.
+\end{remark}
+
+\begin{proposition}
+$\int_M \omega$
+אינו תלוי בבחירת האטלס
+$\set{\prs{\Uu_{\alpha},\phi_{\alpha}}}_{\alpha}$
+ובפיצול היחידה.
+\end{proposition}
+
+\begin{proof}
+ניקח
+$\set{\prs{\Vv_{\beta},\psi_{\beta}}}_{\beta}$
+אטלס אחר עם
+$\chi_{\beta}$
+פיצול יחידה מתאים.
+אז
+\begin{align*}
+\sum_{\alpha} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \prs{\phi_{\alpha}^{-1}}^* \prs{\rho_{\alpha} \omega} &= \sum_{\alpha} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \underset{1}{\underbrace{\prs{\sum_{\beta} \chi_\beta}}}\cdot \prs{\phi_{\alpha}^{-1}}^* \rho_{\alpha} \cdot \prs{\phi_{\alpha}^{-1}}^* \omega \\&= \sum_{\alpha} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \underset{\rest{1}{\phi_{\alpha}\prs{\Uu_{\alpha}}}}{\underbrace{\prs{\sum_{\beta} \prs{\phi_{\alpha}^{-1}}^* \chi_{\beta}}}} \prs{\phi_{\alpha}^{-1}}^* \rho_{\alpha} \prs{\phi_{\alpha}^{-1}}^* \omega \\&\stackrel{\text{the sum is finite}}{=}
+\sum_{\alpha,\beta} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \prs{\phi_{\alpha}^{-1}}^* \prs{\rho_{\alpha} \chi_{\beta}}\prs{\phi_{\alpha}^{-1}}^* \omega \\ \text{.} \phantom{\sum_{\alpha} \int_{\phi_{\alpha}\prs{\Uu_{\alpha}}} \prs{\phi_{\alpha}^{-1}}^* \prs{\rho_{\alpha} \omega}} &= \sum_{\alpha, \beta} \int_{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} \prs{\phi_{\alpha}^{-1}}^* \prs{\rho_{\alpha} \chi_{\beta} \omega} \eqqcolon \I
+\end{align*}
+כעת
+\[\phi_{\alpha} \circ \psi_{\beta}^{-1} \colon \psi_{\beta} \prs{\Uu_{\alpha} \cap \Vv_{\beta}} \to \phi_{\alpha} \prs{\Uu_{\alpha} \cap \Vv_{\beta}}\]
+שומרת אוריינטציה.
+מתקיים
+\begin{align*}
+\int_{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} \prs{\phi_{\alpha}^{-1}}^* \prs{\rho_{\alpha} \chi_{\beta} \omega} &=
+\int_{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} \prs{\phi_{\alpha}^{-1}}^* \psi_{\beta}^* \prs{\psi_{\beta}^{-1}}^* \prs{\chi_{\beta} \rho_{\alpha} \omega} \\&= \int_{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} \underset{F^*}{\underbrace{\prs{\psi_{\beta} \circ \phi_{\alpha}^{-1}}^*}} \cdot \prs{\psi_{\beta}^{-1}}^* \prs{\chi_{\beta} \rho_{\alpha} \omega} \\&\stackrel{\text{infi coordinate change}}{=}
+\int_{F\prs{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}}} \prs{\psi_{\beta}^{-1}}^* \prs{\chi_{\beta} \rho_{\alpha} \omega}
+\end{align*}
+כאשר
+\[prs{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} = \prs{\psi_{\beta} \circ \phi_{\alpha}^{-1}}\prs{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} = \psi_{\beta}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}\]
+
+ולכן
+\begin{align*}
+\int_{F\prs{\phi_{\alpha}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}}} \prs{\psi_{\beta}^{-1}}^* \prs{\chi_{\beta} \rho_{\alpha} \omega} &= \int_{ \psi_{\beta}\prs{\Uu_{\alpha} \cap \Vv_{\beta}}} \prs{\psi_{\beta}^{-1}}^* \prs{\rho_{\alpha} \chi_{\beta} \omega}
+\end{align*}
+נציב ב־%
+$\I$
+ונקבל לאחר גלגול החישוב לאחור
+\[\text{.} \I = \sum_{\beta} \int_{\psi_{\beta}\prs{\Vv_{\beta}}} \prs{\psi_{\beta}^{-1}}^* \prs{\chi_{\beta}\omega}\]
+\end{proof}
+
+\begin{definition}
+$\Omega^n_{\mrm{comp}}\prs{M}$
+\stress{מרחב התבניות עם תומך קומפקטי}.
+\end{definition}
+
+\begin{proposition}
+\begin{enumerate}
+\item \[\int \colon \Omega^n_{\mrm{comp}}\prs{M} \to \RR\]
+העתקה לינארית.
+\item תהיינה
+$M = M'$
+עם אוריינטציה הפוכה. אז
+\[\text{.} \int_{M'} \omega = -\int_M \omega\]
+\item אם
+$M = M_1 \amalg M_2 \amalg \del M_1$
+כאשר
+$\del M_1 = \del M_2$
+אז
+\[\text{.} \int_M \omega = \int_{M_1} \omega + \int_{M_2} \omega\]
+\item אם
+$M,N$
+קשירות,
+$F \colon M \to N$
+דיפאומורפיזם ו־%
+$\omega \in \Omega_{\mrm{comp}}^n \prs{N}$
+אז
+\[\int_M F^* \omega = \eps \cdot \int_N \omega\]
+כאשר
+$\eps = \pm 1$
+בהתאם לשינוי אוריינטציה על ידי
+$F$.
+\end{enumerate}
+\end{proposition}
 
 \backmatter
 \end{document}
