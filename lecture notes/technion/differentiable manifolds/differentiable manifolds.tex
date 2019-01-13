@@ -3933,7 +3933,7 @@ $p=\gamma\prs{0}$
 ועם
 $\brs{\gamma} = \dot{\gamma}\prs{0} \in T_{\gamma(0)}\Uu$.
 אז
-\[\brs{\gamma} = \sum_{i\in[n]} \dot{\gamma}_i\prs{0} \frac{\del}{\del x^i}\prs{p}\]
+\[\brs{\gamma} = \sum_{i\in[n]} \dot{\gamma}_i\prs{0} {\frac{\del}{\del x^i}}_{\prs{p}}\]
 ונקבל
 \[\diff x_i \prs{p} \prs{\brs{\gamma}} = \dot{\gamma_i} \prs{0}\]
 \end{example}
@@ -4383,7 +4383,7 @@ T \phi_{\alpha}\prs{\Uu_{\alpha}} &\cong \phi_{\alpha}\prs{\Uu_{\alpha}} \times 
 מתקיים
 \[\prs{\phi_{\alpha}^{-1}}^* \omega\prs{v_1, \ldots, v_n} = \omega\prs{D\phi^{-1}v_1, \ldots, D\phi^{-1}v_n}\]
 לכן
-\[\text{.}\bar{\phi}_{\alpha} \colon \bar{\Uu}_{\alpha} \to \Omega^n \prs{\phi_{\alpha}\prs{\Uu_{\alpha}}} \subseteq \RR^{n-1}\]
+\[\text{.}\bar{\phi}_{\alpha} \colon \bar{\Uu}_{\alpha} \to \Omega^n \prs{\phi_{\alpha}\prs{\Uu_{\alpha}}} \subseteq \RR^{n+1}\]
 \end{remark}
 \begin{exercise}
 $\set{\prs{\bar{\Uu}_{\alpha}, \bar{\phi}_{\alpha}}}$
@@ -4600,7 +4600,7 @@ $\pi$
 $\pi^{-1}\prs{x} = \set{\pm y} \subseteq S^n$.
 \begin{exercise}
 קיימת
-$\omega \in T_x \RR\P^n$
+$\omega \in \Omega^n\prs{T_x \RR\P^n}$
 כך שמתקיים
 \[\text{.}\pi_y^*\omega = \Omega_0\prs{y}, \qquad \pi_{-y}^* \omega = \Omega_0\prs{-y}\]
 אז
@@ -4706,7 +4706,7 @@ $T$
 אז:
 \begin{exercise}
 \begin{enumerate}
-\item $\quot{T}{\sim}$
+\item $\quot{\RR^2}{\sim}$
 יריעה חלקה הומאומורפית לסרט
 \textenglish{Möbius}.
 \item היריעה אינה אוריינטבילית.
@@ -4793,7 +4793,6 @@ $\CC$%
 ־לינאריות שומרות אוריינטציה של
 $\RR^{2n}$.
 לכן%
-\footnote{}
  כל העתקה הולומופית שומרת אוריינטציה.
 לכן אטלס מרוכב הינו אוריינטבילי.
 \end{exercise}
@@ -4992,7 +4991,7 @@ $f \colon M \to N$
 $y \in N$
 ערך רגולרי.
 אז
-$D f_X$
+$D f_x$
 איזומורפיזם לכל
 $x \in f^{-1}\prs{y}$.
 
@@ -6474,7 +6473,7 @@ $\rho$
 מתואמת עם תבנית נפח
 $\Omega$.
 כלומר
-\[\Omega_x\prs{B} = \pm\]
+\[\Omega_x\prs{B} = \pm 1\]
 לכל
 $B$
 בסיס אורתונורמלי של
@@ -7066,6 +7065,598 @@ $\eps = \pm 1$
 $F$.
 \end{enumerate}
 \end{proposition}
+
+\begin{theorem}[\textenglish{Stokes}]
+תהי
+$M^n$
+יריעה עם שפה (אולי ריקה) בעלת אוריינטציה כאשר
+$\del M$
+עם אוריינטציית שפה.
+תהי
+$\omega \in \Omega^{n-1}_{\mrm{comp}}\prs{M}$
+תבנית. מתקיים
+\[\text{.} \int_{\del M} \omega = \int_M \diff \omega\]
+\end{theorem}
+\begin{remark}
+עם ההגדרות הנכונות,
+$\del$
+אופרטור צמוד של
+$\diff$.
+\end{remark}
+\begin{remark}
+ניתן להגדיר אינטגרציה על יריעות בעזרת מידה, או מטריקה רימנית.
+יתרון של אינטגרציה עם תבניות הוא במגוון עשיר של פעולות, המקשרות תוצאות עבור יריעות ממימדים שונים ותבניות ממעלות שונות.
+\end{remark}
+
+\begin{proof}
+נפריד למקרים.
+\begin{enumerate}[label = מקרה \Roman* :]
+\item
+נניח
+$M = \RR^n, \omega \in \Omega^{n-1}_{\mrm{comp}}\prs{\RR^n}$.
+אז
+$\del M = \ns$
+ונראה כי
+\[\text{.} \int_{\RR^n} d\omega = 0\]
+בגלל לינאריות, די לבדוק עבור מונומים, ובה"כ
+\[\text{.}\omega = f\prs{x} \diff x_2 \wedge \ldots \wedge \diff x_n\]
+(כאן
+$\diff x_1$
+חסר).
+אז
+\[\text{.} \diff \omega = \frac{\del f}{\del x_1} \prs{x} \diff x_1 \wedge \ldots \wedge \diff x_n\]
+מאינפי נקבל
+\[\int_{\RR^n} \diff \omega  =\int_{\RR^n} \frac{\del f}{\del x_1} \diff x_1 \ldots \diff x_n\]
+ומפוביני
+\begin{align*}
+\int_{\RR^n} \frac{\del f}{\del x_1} \diff x_1 \ldots \diff x_n &= \int_{\RR^{n-1}} \diff x_2 \ldots \diff x_n \int_{\RR} \frac{\del f}{\del x_1} \prs{x} \diff x_1
+\end{align*}
+כאשר
+\[\int_{\RR} \frac{\del f}{\del x_1} \prs{x} \diff x_1 = 0\]
+מתאפס כי
+$f$
+עם תומך קומפקטי.
+\item
+נניח
+$M = \RR^n_- = \set{x_1 \leq 0}$.
+צריך להוכיח
+\[\text{.} \int_{\del M = \RR^{n-1}} \omega = \int_{\RR^n} \diff \omega\]
+שוב, די להוכיח עבור מונומים.
+נפריד לתתי־מקרים בהם חסר
+$x_1$
+או
+$x_i$
+עם
+$i \neq 1$.
+\begin{enumerate}[label = (\arabic*)]
+\item \[\omega = f \diff x_2 \wedge \ldots \wedge \diff x_n\]
+נחשב בעזרת פוביני.
+\begin{align*}
+\int_{\RR^n_{-}} \diff \omega &= \int{\RR^{n-1}} \diff x_2 \ldots \diff x_n \int_{-\infty}^0 \frac{\del f}{\del x_1} \diff x_1 \\&\stackrel{\text{Newton-Leibniz}}{=} \int_{\RR^{n-1}} f\prs{0,x_2, \ldots, x_n} \diff x_2 \ldots \diff x_n \\&= \int_{\RR^{n-1}} \omega
+\end{align*}
+\item
+נניח
+\[ \text{.} \omega = f\diff x_1 \wedge \ldots \wedge \diff x_{n-1}\]
+נחשב ונקבל
+\begin{align*}
+\int_{\RR^n_-} \diff \omega &= \prs{-1}^{n-1} \int_{\RR^n_-} \frac{\del f}{\del x_n} \diff x_1 \ldots \diff x_n \\&= \pm \int_{\RR^{n-1}} \diff x_1 \ldots \diff x_{n-1} \int_{-\infty}^{\infty} \cancelto{0}{\frac{\del f}{\del x_n}} \diff x_n \\&= 0
+\end{align*}
+מתקיים גם
+\[\rest{\diff x_1}{\set{x_1 = 0}} = 0\]
+לכן
+\[\int_{\RR^{n-1}} \omega = \int_{\set{x_1 = 0}} f \diff x_1 \wedge \ldots \wedge \diff x_{n-1} = \int 0 = 0\]
+ואז יש שיוויון, כנדרש.
+\end{enumerate}
+\item
+$\Uu \subseteq \RR^n$
+קבוצה פתוחה ו־%
+$M = \UU$
+או
+$M = \Uu \cap \RR^n_-$.
+$\omega$
+עם תומך קומפקטי ב־%
+$\Uu$.\\
+במקרה זה ניתן להרחיב את
+$\omega$
+לכל
+$\RR^n$
+על ידי אפסים, ואז מהמקרים הקודמים נקבל כי הנוסחה נכונה.\\
+כנ"ל אם
+$M$
+דיפאומורפית (תחת העתקה השומרת אוריינטציה) לקבוצה
+$\Uu$
+כזו.
+\item
+תהי
+$M$
+בעלת אוריינטציה ועם
+$\set{\prs{\Uu_{\alpha}, \phi_{\alpha}, \rho_{\alpha}}}$
+אטלס שומר אוריינטציה, עם פיצול יחידה מתאים. אז
+\begin{align*}
+\int_M \diff \omega &\stackrel{\text{$\supp \omega$ is compact}}{=} \sum_{\alpha} \int_M \diff \prs{\rho \omega} \\&\stackrel{\supp \rho_{\alpha} \subseteq \Uu_{\alpha}}{=} \sum_{\alpha} \int_{\Uu_{\alpha}} \diff\prs{\rho_{\alpha} \omega} \\&\stackrel{\text{Case III}}{=} \sum_{\alpha} \int_{\Uu_{\alpha} \cap \del M} \rho_{\alpha} \omega \\&= \sum_{\alpha} \int_{\del M} \rho_{\alpha} \omega \\&= \int_{\del M}{\omega}
+\end{align*}
+כנדרש.
+\end{enumerate}
+\end{proof}
+
+\subsection{שימושים של משפט
+\textenglish{Stokes}}
+\begin{enumerate}
+\item כאשר
+$N = \set{\mrm{pt}}$,
+מתקיים
+$T_{\mrm{pt}}N = \set{\vec{0}}$
+עם בסיס
+$\ns$.
+אוריינטציה זו בחירה האם
+$\ns$
+היא בסיס חיובי או שלילי.
+ניקח
+$M = \brs{0,1}$
+עם האוריינטציה הסטנדרטית.
+אז
+$\del M = \set{0,1}$
+כאשר
+$\set{0}$
+עם אוריינטציה שלילית ו־%
+$\set{1}$
+עם אוריינטציה חיובית.
+תהי
+$f \colon I \to \RR$
+חלקה, ואז
+\[\text{.} \int_{0}^{1} f' \diff x = \int_{\brs{0,1}} \frac{\del f}{\del x} \diff x = \int_M \diff f = \int_{\del M} f = f(1) - f(0)\]
+
+\item \stress{נוסחת גרין}:
+יהי
+$W \subseteq \RR^n$
+תחום קומפקטי ונניח (לצורך נוחות) כי
+$\del M$
+קשירה.
+תהי
+$\alpha \in \Omega^1 \prs{W}$
+ונכתוב
+\[\text{.} \alpha = f\prs{x,y} \diff x + g\prs{x,y} \diff y\]
+אז
+\begin{align*}
+\text{.} \diff \alpha &= \frac{\del f}{\del y} \diff y \wedge \diff x + \frac{\del g}{\del x } \diff x \wedge \diff y \\&= \prs{\frac{\del g}{\del x} - \frac{\del f}{\del y}} \diff x \wedge \diff y
+\end{align*}
+ניקח
+$\gamma = \del W$
+עם אוריינטציה חיובית, ומסטוקס
+\[\text{.} \int_W \diff \alpha = \int_{\del W = \gamma} \alpha\]
+לכן
+\begin{align*}
+\int_W \prs{\frac{\del g}{\del x} - \frac{\del f}{\del y}} \diff x \diff y = \int_{\gamma} f\diff x + g\diff y
+\end{align*}
+שזו נוסחת גרין מאינפי.
+\item \stress{משפט גאוס:}
+תהי
+$M$
+יריעה עם שפה,
+$\omega$
+תבנית נפח ו־%
+$v$
+שדה וקטורי.
+הגדרנו
+$\div\prs{v} = \frac{\diff i_v \omega}{\omega}$.
+אז
+\begin{align*}
+\int_{\del M} i_v \omega \stackrel{\text{Stokes}}{=} \int_M \diff i_v \omega = \int_M \div \prs{v} \cdot \omega
+\end{align*}
+כאשר אגף שמאל מוגדר להיות
+\stress{השטף של
+$v$
+דרך
+$\del M$}.
+\begin{example}
+תהי
+$M^n \subseteq \RR^n$
+עם
+$\omega$
+תבנית אוקלידית. נסמן ב־%
+$N$
+את נורמל היחידה (לפי המטריקה האוקלידית) החיצוני לשפה.
+אז
+\[\rest{u_v \omega}{\del M} = \trs{N,v} \rest{i_N \omega}{\del M}\]
+כאשר
+$i_N \omega$
+הינה תבנית הנפח הסטנדרטית על
+$\del M$
+ו־%
+$\brs{N,v}$
+הרכיב המאונך של
+$v$.\\
+כעת
+עבור
+$x \in \del M$
+מתקיים
+\[v\prs{x} = N\prs{x} \cdot \trs{N,v} + v'\]
+כאשר
+$v\prs{x} \in T_x \RR^n$,
+$N\prs{x} \cdot \trs{N,v}$
+ההטלה על
+$\prs{T_x \del M}^{\perp}$
+ו־%
+$v' \in T_x \del M$.
+מתקיים
+\begin{align*}
+i_v \omega &= u_{N \trs{N,v}} \omega + i_{v'} \rest{\omega}{\del M} \\&= \trs{N,v} i_N \omega + \rest{\omega\prs{v_1', \cdot, \ldots, \cdot}}{\del M}
+\end{align*}
+כאשר
+\[\rest{\omega\prs{v_1', \cdot, \ldots, \cdot}}{\del M}\]
+תבנית ב־%
+$\Omega^n\prs{\del M}$
+ולכן תבנית האפס.
+בסך הכל נקבל
+\begin{align*}
+\int_{\del M} \trs{N,V} \diff \vol\prs{\del M} = \int_M \sum \frac{\del v_i}{\del x^i} \diff x_1 \ldots \diff x_n
+\end{align*}
+כלומר
+\[\text{.} \int_M \mrm{flux} = \int_M \div\]
+\end{example}
+\item עבור
+$M = \CC = \RR^2$
+ופונקציות הולומורפיות, נסמן
+$z = x+iy$
+ו־%
+\[f\prs{z} = u\prs{x,y} + iv\prs{x,y}\]
+ואז
+\[\text{.} f\prs{z} \diff z = \prs{u \diff x - v\diff y} + i\prs{v \diff x + u\diff y}\]
+כאן נעשה אינטגרציה בנפרד לחלק המרוכב והממשי של תבניות ב־%
+$\RR^2$.
+\begin{proposition}
+$f$
+הולומורפית אם ורק אם
+$\diff\prs{f \diff z} = 0$.
+\end{proposition}
+\begin{proof}
+\[\diff \prs{f \diff z} = 0\]
+אם ורק אם
+\begin{align*}
+\fcases{\diff \prs{u \diff x - v\diff y} = 0 \\
+\diff \prs{v \diff x + u\diff y} = 0}
+\end{align*}
+אם ורק אם
+\begin{align*}
+\fcases{
+-u_y \diff x \wedge \diff y - v_x \diff x \wedge \diff y = 0
+\\
+-v_y \diff x \wedge \diff y + u_x \diff x \wedge \diff y = 0
+}
+\end{align*}
+אם ורק אם
+\begin{align*}
+\fcases{
+v_x = u_y
+\\
+v_y = u_x
+}
+\end{align*}
+כאשר אלו בדיוק משוואות קושי־רימן.
+\end{proof}
+
+נניח כעת כי
+$f$
+הולומורפית ב־%
+$\Uu \setminus \set{a}$
+כאשר
+$\Uu$
+סביבה פתוחה של
+$a$.
+נסמן
+$\gamma = \del U$
+עם האוריינטציה המתאימה וגם
+\[\text{.} = \delta = \set{a + \eps \cdot e^{it}}{t \in \brs{0,2\pi}}\]
+נסמן
+\[\Uu_{\eps} = \Uu \setminus \delta\]
+ואז
+\begin{align*}
+\cancelto{0}{\int_{\Uu_{\eps}} \diff \prs{f \diff z}} = \int_{\del \Uu_{\eps}} f\diff z = \int_{\gamma} f\diff z - \int_{\delta} f\diff z
+\end{align*}
+
+\begin{theorem}[השארית]
+יהי
+$\Uu$
+תחום קומפקטי ותהי
+$f$
+הולומורפית ב־%
+$\Uu \setminus \set{p_1, \ldots, p_k}$.
+אז
+\begin{align*}
+\text{.} \int_{\del U} f\diff z = \sum_{i \in [k]} \int_{\delta_i} f\diff z \stackrel{\text{direct computation}}{=} \sum_{i\in[k]} \mrm{res}_f \prs{p_i}
+\end{align*}
+\end{theorem}
+\end{enumerate}
+
+\begin{theorem}[משפט המעלה] \label{map-degree-2}
+תהיינה
+$X,Y$
+יריעות סגורות ממימד
+$k$
+עם אוריינטציה, ותהיינה
+$f \colon X \to Y$
+ו־%
+$\omega \in \Omega^k\prs{Y}$.
+אז
+\begin{align*}
+\text{.} \int_X f^* \omega = \deg f \int_Y \omega
+\end{align*}
+\end{theorem}
+
+\begin{example}
+תהי
+\begin{align*}
+f \colon \quot{\RR^n}{\ZZ^n} &\to \quot{\RR^n}{\ZZ^n} \\
+\brs{x} &\to \brs{A \cdot x}
+\end{align*}
+וניקח
+$\omega = \diff x_1 \wedge \ldots \wedge \diff x_n$
+תבנית נפח על
+$\TT^n$.
+מתקיים
+\begin{align*}
+\deg f \underset{=1}{\underbrace{\int_Y \omega}} = \int_X f^* \omega = \int_X \omega \prs{D f \cdot , \ldots, D f \cdot} = \int_X \omega\prs{A \cdot , \ldots, A \cdot} = \int_X \det\prs{A} \omega\prs{\cdot,\ldots,\cdot} = \det\prs{A} c\dot \int_Y \omega
+\end{align*}
+\end{example}
+
+\begin{corollary}
+\[\deg g\circ f = \deg f \cdot \deg f\]
+\end{corollary}
+\begin{proof}
+נסמן
+$f \colon X \to Y$, $g \colon Y \to Z$
+ותהי
+$\omega$
+תבנית נפח על
+$Z$.
+אז מהמשפט
+\begin{align*}
+\deg\prs{g\circ f} \int_Z \omega = \int_X \prs{g\circ f}^* \omega = \int_X f^* \prs{g^* \omega} = \deg f \int_Y g^* \omega = \deg f \cdot \deg g \cdot \int_Z \omega
+\end{align*}
+והדבר נובע מכך ש־%
+$\int_Z \omega > 0$.
+\end{proof}
+
+\begin{lemma}\label{map-degree-2:lemma1}
+נניח
+$X^k = \del W^{k+1}$
+כאשר
+$W$
+קומפקטית עם אוריינטציה.
+תהיינה
+\begin{align*}
+F \colon W &\to Y^k \\
+f = \rest{F}{\del W} \colon X & \to Y
+\end{align*}
+ואזי
+\[\text{.} \forall \omega \in \Omega^k\prs{Y} \int_X f^* \omega = 0\]
+\end{lemma}
+\begin{proof}
+\begin{align*}
+\int_X f^* \omega &= \int_X F^* \omega \\&= \int_{\del W} F^* \omega \\&\stackrel{\text{Stokes}}{=} \int_W \diff F^* \omega \\&= \int_W F^* \underset{\in \Omega^{k+1}\prs{Y} = \set{0}}{\underbrace{\diff \omega}} \\&= 0
+\end{align*}
+\end{proof}
+
+\begin{lemma}\label{map-degree-2:lemma2}
+תהיינה
+\[f_0, f_1 \colon X \to Y\]
+העתקות הומוטופיות. אזי
+\begin{align*}
+\text{.} \forall \omega \in \Omega^k\prs{Y} \colon \int_X f^*_0 \omega = \int_X f_1^* \omega
+\end{align*}
+\end{lemma}
+\begin{proof}
+תהי
+\[F \colon \brs{0,1}\times X \to Y\]
+הומוטופיה חלקה בין
+$f_0, f_1$.
+אז
+\begin{align*}
+0 \stackrel{\ref{map-degree-2:lemma1}}{=} \int_{\del \prs{X \times I}} F^* \omega = \int_X f_1^* \omega - \int_X f_0^* \omega
+\end{align*}
+כאשר האינטגרל האחרון
+עם סימן שלילי כי
+$X \times \set{0}$
+בא עם אוריינטציה הפוכה לפי בחירת נורמל חיצוני ב־%
+$X \times I$.
+\end{proof}
+\begin{lemma}\label{map-degree-2:lemma3}
+יהי
+$y$
+ערך רגולרי של
+$f \colon X \to Y$.
+אז קיימת סביבה פתוחה
+$\Uu$
+של
+$y$
+עבורה
+\[\int_X \forall f^* \omega = \deg f \int_Y \omega\]
+לכל
+$\omega$
+עם תומך קומפקטי ב־%
+$\Uu$.
+\end{lemma}
+
+\begin{proof}
+נניח ש־%
+$f^{-1}\prs{y} = \set{x_i}_{i \in [d]}$.
+אזי קיימת סביבה
+$\Uu$
+של
+$y$
+כך ש־%
+\[f^{-1}\prs{U} = \coprod_{i \in [d]} \Vv_i\]
+עם
+$\Vv_i$
+סביבות של
+$x_i$
+דיפאומורפיות ל־%
+$\Uu$.
+כעת
+$\rest{f}{\Vv_j} \colon \Vv_j \to \Uu$
+דיפאומורפיזם ולכן
+\begin{align*}
+\int_X f^* \omega &= \sum_{i\in [d]} \int_{\Vv_i} f^* \omega = \sum_{i\in[d]} \eps_i \int_{\Uu} \omega = \deg f \int_{\Uu} \omega
+\end{align*}
+כנדרש.
+\end{proof}
+
+\begin{proof}\ref{map-degree-2}
+נבחר
+$y$
+ערך רגולרי של
+$f$
+ו־%
+$\Uu$
+סביבה של
+$y$
+מלמה
+\ref{map-degree-2:lemma3}.
+לכל
+$z \in Y$
+קיימת איזוטופיה
+\[h_z^t \colon Y \to Y\]
+כך ש־%
+$h_z^0 = \1_Y$
+ו־%
+$h_z\prs{y} = z$.\\
+כעת
+$\set{h^1_z\prs{\Uu}}_{z \in Y}$
+כיסוי פתוח של
+$Y$
+ולכן%
+\footnote{כל היריעות אצלנו סגורות}
+יש תת־כיסוי סופי
+$\prs{h_i\prs{\Uu}}_{i\in[N}$.
+ניקח פיצול יחידה מתאים
+$\set{\rho_i}_{i\in[N]}$
+ואז
+\begin{align*}
+\text{.} \int_X f^* \omega = \int_X f^* \sum_{i \in [N]} \rho_i \omega = \sum_{i \in \brs{N}} \int_X f^* \underset{\Omega_i}{\underbrace{\rho_i \omega}} = \sum_{i \in \brs{N}} \int_X f^* \Omega_i \eqqcolon \star
+\end{align*}
+אז
+\begin{itemize}
+\item $\supp \Omega_i \subseteq h_i\prs{\Uu}$
+\item $h_i \circ f$
+הומוטופית ל־%
+$f$.
+\item $h_i\prs{\Uu}$
+סביבה של
+$h_i\prs{y}$
+כמו שבנינו בלמה
+\ref{map-degree-2:lemma3}
+לגבי העתקה
+$h_i \circ f$.\footnote{
+אם
+$y$
+רגולרי של
+$f$
+אז
+$h_i\prs{y}$
+רגולרי של
+$h_i \circ f$
+ו־%
+$\prs{h_i \circ f}^{-1} \prs{h_i \prs{\Uu}}$
+אוסף קבוצות דיפאומורפיות.
+}
+\end{itemize}
+לכן
+\begin{align*}
+\int_X f^* \Omega_i &\stackrel{\text{homotopic maps}}{=} \int_X \prs{h_i \circ f}^* \Omega_i \\&\stackrel{\ref{map-degree-2:lemma3}}{=}
+\deg \prs{h_i \circ f} \int_Y \Omega_i \\&\stackrel{\ref{map degree: theorem}}{=}
+\deg f \int_Y \Omega_i
+\end{align*}
+ואז
+\begin{align*}
+\star = \sum_{i \in \brs{N}} \deg f \int_Y \Omega_i = \deg f \int_Y \sum_{i\in\brs{N}} \Omega_i = \deg f \int_Y \sum_{i\in\brs{N}} \rho_i \omega = \deg f \int_Y \omega
+\end{align*}
+כנדרש.
+\end{proof}
+
+\chapter{מאפיין אוילר}
+
+\begin{example}
+נסתכל על
+$M = \TT^n = \quot{\RR^n}{\ZZ^n}$.
+קיים שדה וקטורי שאינו מנוון,
+$\frac{\del}{\del x_1}$
+על
+$\TT^n$.\\
+על
+$S^n \subseteq \RR^{n+1}$
+לא ניתן להגדיר שדה־וקטורי שאינו מנוון בכל מימד.
+תהי
+$x_{n+1} \colon S^n \to \RR$
+פונקציית גובה ואז
+$- \nabla x_{n+1}$
+שדה וקטורי עם שני אפסים, שנמצאים בקטבים.%
+\footnote{ביחס למטריקה האוקלידית}
+\end{example}
+
+\begin{definition}
+יהי
+$\Uu \subseteq \RR^n$
+קבוצה פתוחה ויהי
+$v$
+שדה וקטורי על
+$\Uu$.
+$x_0 \in \Uu$
+נקרא
+\stress{אפס בלתי־מנוון \textenglish{(non-degenerate zero)} של
+$v$}
+אם
+\begin{align*}
+v\prs{x_0} &= 0 \\
+\text{.} \rest{\det\prs{\frac{\del v}{\del x}}}{x_0} &\neq 0
+\end{align*}
+\end{definition}
+\begin{proposition}
+ההגדרה הנ"ל אינה תלויה בבחירת קואורדינטות על
+$\Uu$.
+\end{proposition}
+\begin{proof}
+נראה שהתנאי
+$\det \neq 0$
+נשמר תחת הפעלת דיפאומורפיזם
+$f \colon \Vv \to \Uu$.
+נסמן
+$v' = Df \cdot v$
+שדה וקטורי על
+$\Uu$.
+מתקיים
+\begin{align*}
+v_i' \prs{f\prs{x}} &= \prs{Df_{\prs{x}} \cdot v_{\prs{x}}}_i \\&=
+\sum_{j \in \brs{n}} \frac{\del f_i}{\del x_j}_{\prs{x}} \cdot v_j\prs{x}
+\end{align*}
+ומגזירה לפי
+$x_r$
+וכלל השרשרת
+\begin{align*}
+\text{.} \sum_{k \in [n]} \frac{\del v_i'}{\del x_k}_{\prs{f\prs{x_0}}} \cdot \frac{\del f_k}{\del x_r}_{\prs{x_0}} = \sum_{j\in[n]} \frac{\del f_i}{\del x_j}_{\prs{x_0}} \cdot \frac{\del v_j}{\del x_r}_{\prs{x_0}} + \sum_{j\in[n]} \cancelto{0}{v_j \prs{x_0} \frac{\del^2 f_i}{\del x_i \del x_r}_{\prs{x_0}}} 
+\end{align*}
+אז
+\begin{align*}
+\pmat{\frac{\del v_i'}{\del x_1} & \ldots & \frac{\del v_i'}{\del x_n}} \pmat{\frac{\del f_1}{\del x_r} \\ \vdots \\ \frac{\del f_n}{\del x_r}} &=
+D f_i\prs{x_0} \cdot \pmat{\frac{\del v_1}{\del x_r} \\ \vdots \\ \frac{\del v_n}{\del x_r}}
+\end{align*}
+ולכן באופן כללי
+\begin{align*}
+\text{.} \prs{\frac{\del v_i'}{\del x_j}}_{i,j} \cdot \pmat{\frac{\del f_1}{\del x_r} \\ \vdots \frac{\del f_n}{\del x_r}} = D f\prs{x_0} \cdot \pmat{\frac{\del v_1}{\del x_r} \\ \vdots \\ \frac{\del v_n}{\del x_r}}
+\end{align*}
+לכן
+\begin{align*}
+\text{.}\prs{\frac{\del v_i'}{\del x_j}}_{i,j} \cdot \underset{D f\prs{x_0}}{\underbrace{\pmat{\frac{\del f_i}{\del x_j}}}} = Df\prs{x_0} \cdot \pmat{\frac{\del v_i}{\del x_j}}
+\end{align*}
+אז
+\[\prs{\frac{\del v'}{\del x}}_{i,j} \prs{f\prs{x_0}} = Df\prs{x_0} \pmat{\frac{v_i}{x_j}} Df^{-1}\prs{x_0}\]
+ולכן
+\[\rest{\det \mat{\frac{\del v'}{\del x}}}{f\prs{x_0}} = \rest{\det \pmat{\frac{\del v}{\del x}}}{x_0}\]
+כנדרש.
+\end{proof}
+
+\begin{corollary}
+ניתן להגדיר אפס שאינו מנוון לשדה וקטורי על יריעה.
+\end{corollary}
 
 \backmatter
 \end{document}

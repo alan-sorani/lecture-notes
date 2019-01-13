@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  30 DEC 2018 16:28
+This is XeTeX, Version 3.14159265-2.6-0.99999 (MiKTeX 2.9.6840 64-bit) (preloaded format=xelatex 2018.10.23)  13 JAN 2019 14:24
 entering extended mode
 **"./differentiable manifolds.tex"
 ("differentiable manifolds.tex"
@@ -1774,10 +1774,6 @@ Overfull \hbox (30.36778pt too wide) detected at line 3777
 []
  []
 
-
-LaTeX Warning: Command \u invalid in math mode on input line 3807.
-
-Missing character: There is no ̆ in font cmmi7!
 [30] [31] [32] [33]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1807,13 +1803,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
 ut line 4542.
  [35] [36]
-LaTeX Font Info:    Try loading font information for U+euf on input line 4832.
+LaTeX Font Info:    Try loading font information for U+euf on input line 4831.
 
 ("C:\Users\EladT\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [37] [38] Excluding 'comment' comment. [39] [40] [41] [42] [43] [44] [45]
 [46]
-Overfull \hbox (10.52432pt too wide) in paragraph at lines 6288--6288
+Overfull \hbox (10.52432pt too wide) in paragraph at lines 6287--6287
 [][][] []
  []
 
@@ -1831,28 +1827,41 @@ File: sources/hodge_star.png Graphic file (type bmp)
 פרק 4.
 [51
 
-]
+] [52] [53] [54]
+פרק 5.
+[55
+
+] [56] [57]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textenglish' on input line 7183.
+
+[58] [59] [60] [61] [62]
+פרק 6.
+[63
+
+] [64]
 \tf@thm=\write8
 \openout8 = `"differentiable manifolds.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6653.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6653.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7662.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7662.
  ("differentiable manifolds.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6653.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6653.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7662.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7662.
 
 Package rerunfilecheck Info: File `"differentiable manifolds".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: .
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6653.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7662.
  ) 
 Here is how much of TeX's memory you used:
- 40139 strings out of 427792
- 780528 string characters out of 3147754
- 1073326 words of memory out of 3000000
- 43521 multiletter control sequences out of 15000+200000
- 544864 words of font info for 117 fonts, out of 3000000 for 9000
+ 40189 strings out of 427792
+ 781199 string characters out of 3147754
+ 1073383 words of memory out of 3000000
+ 43569 multiletter control sequences out of 15000+200000
+ 544872 words of font info for 118 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,29n,84p,1300b,1173s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on differentiable manifolds.pdf (55 pages).
+Output written on differentiable manifolds.pdf (68 pages).

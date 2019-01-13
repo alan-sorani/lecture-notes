@@ -174,7 +174,45 @@
 \contentsline {proof}{{Proof}{33}{}}{25}{proof.33}
 \contentsline {conclusion}{{Conclusion}{10}{}}{26}{conclusion.10}
 \contentsline {proof}{{Proof}{34}{}}{26}{proof.34}
-\contentsline {lemma}{{Lemma}{6.0.{1}}{}}{27}{theorem.6.0.1}
+\contentsline {theorem}{{Theorem}{6.0.{1}}{}}{27}{theorem.6.0.1}
+\contentsline {proposition}{{Proposition}{6.0.{2}}{}}{27}{theorem.6.0.2}
 \contentsline {proof}{{Proof}{35}{}}{27}{proof.35}
-\contentsline {conclusion}{{Conclusion}{11}{}}{27}{conclusion.11}
-\contentsline {theorem}{{Theorem}{6.0.{2}}{}}{27}{theorem.6.0.2}
+\contentsline {definitionx}{{Definition}{6.0.{3}}{}}{27}{theorem.6.0.3}
+\contentsline {remark}{{Remark}{6.0.{4}}{}}{27}{theorem.6.0.4}
+\contentsline {lemma}{{Lemma}{6.0.{5}}{}}{27}{theorem.6.0.5}
+\contentsline {proof}{{Proof}{36}{}}{27}{proof.36}
+\contentsline {proof}{{Proof}{37}{theorem \ref {F_algebra_jordan_chevalley_components}}}{27}{proof.37}
+\contentsline {theorem}{{Theorem}{6.0.{6}}{}}{28}{theorem.6.0.6}
+\contentsline {lemma}{{Lemma}{6.0.{7}}{}}{28}{theorem.6.0.7}
+\contentsline {proof}{{Proof}{38}{}}{28}{proof.38}
+\contentsline {corollary}{{Corollary}{6.0.{8}}{}}{28}{theorem.6.0.8}
+\contentsline {proof}{{Proof}{39}{theorem \ref {inner_derivations_theorem}}}{28}{proof.39}
+\contentsline {theorem}{{Theorem}{6.0.{9}}{Abstract Jordan Chevalley decomposition of semi-simple Lie algebras}}{28}{theorem.6.0.9}
+\contentsline {proof}{{Proof}{40}{}}{28}{proof.40}
+\contentsline {exercise}{{Exercise}{10}{}}{28}{exercise.10}
+\contentsline {theorem}{{Theorem}{7.0.{1}}{}}{29}{theorem.7.0.1}
+\contentsline {proof}{{Proof}{41}{}}{29}{proof.41}
+\contentsline {proof}{{Proof}{42}{}}{30}{proof.42}
+\contentsline {proof}{{Proof}{43}{}}{30}{proof.43}
+\contentsline {proposition}{{Proposition}{7.0.{2}}{}}{30}{theorem.7.0.2}
+\contentsline {remark}{{Remark}{7.0.{3}}{}}{30}{theorem.7.0.3}
+\contentsline {proof}{{Proof}{44}{}}{30}{proof.44}
+\contentsline {theorem}{{Theorem}{7.0.{4}}{}}{30}{theorem.7.0.4}
+\contentsline {proof}{{Proof}{45}{}}{30}{proof.45}
+\contentsline {exercise}{{Exercise}{11}{}}{31}{exercise.11}
+\contentsline {corollary}{{Corollary}{7.0.{5}}{}}{31}{theorem.7.0.5}
+\contentsline {theorem}{{Theorem}{7.1.{1}}{orthogonality properties of root systems}}{31}{theorem.7.1.1}
+\contentsline {proof}{{Proof}{46}{}}{32}{proof.46}
+\contentsline {proposition}{{Proposition}{7.2.{1}}{}}{34}{theorem.7.2.1}
+\contentsline {proof}{{Proof}{47}{}}{34}{proof.47}
+\contentsline {proposition}{{Proposition}{7.2.{2}}{}}{34}{theorem.7.2.2}
+\contentsline {proof}{{Proof}{48}{}}{34}{proof.48}
+\contentsline {corollary}{{Corollary}{7.2.{3}}{}}{35}{theorem.7.2.3}
+\contentsline {proposition}{{Proposition}{7.2.{4}}{}}{35}{theorem.7.2.4}
+\contentsline {proof}{{Proof}{49}{}}{35}{proof.49}
+\contentsline {definitionx}{{Definition}{7.2.{5}}{}}{35}{theorem.7.2.5}
+\contentsline {theorem}{{Theorem}{7.2.{6}}{}}{36}{theorem.7.2.6}
+\contentsline {proof}{{Proof}{50}{}}{36}{proof.50}
+\contentsline {theorem}{{Theorem}{7.2.{7}}{}}{37}{theorem.7.2.7}
+\contentsline {remark}{{Remark}{7.2.{8}}{}}{37}{theorem.7.2.8}
+\contentsline {proof}{{Proof}{51}{}}{37}{proof.51}

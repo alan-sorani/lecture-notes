@@ -37,3 +37,8 @@
 \contentsline {subsubsection}{שימושים}{46}{section*.20}
 \contentsline {section}{\numberline {3.6}אופרטורים על שדות וקטוריים / פונקציות}{48}{section.3.6}
 \contentsline {chapter}{\numberline {4}נגזרות לי}{51}{chapter.4}
+\contentsline {chapter}{\numberline {5}אינטגרציה על יריעות}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}נפח רימני}{55}{section.5.1}
+\contentsline {section}{\numberline {5.2}אינטגרציה בעזרת תבניות חיצוניות}{55}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}שימושים של משפט \textenglish {Stokes}}{59}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}מאפיין אוילר}{63}{chapter.6}

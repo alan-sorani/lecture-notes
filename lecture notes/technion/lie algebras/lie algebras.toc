@@ -20,3 +20,6 @@
 \contentsline {chapter}{\numberline {5}Killing form}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Some properties of the Killing form}{23}{section.5.1}
 \contentsline {chapter}{\numberline {6}Derivations of simple algebras}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}Toral subalgebras}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}Orthogonality of root systems}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}Rationality properties of the root system}{34}{section.7.2}

@@ -1220,6 +1220,63 @@ This is an immediate consequence of \ref{semi simple decomp: conclusion: ideals}
 
 \chapter{Derivations of simple algebras}
 
+Remind our assumptions $\mrm{char}\prs{\FF} = 0$ and $\FF = \bar{\FF}$.
+
+\begin{theorem}
+\label{F_algebra_jordan_chevalley_components}
+For every $\delta \in \der\prs{L}$, $\der\prs{L}$ contains also $\delta_n, \delta_s$.
+In fact, this is true for every $\FF$-algebra $L$:
+The Lie algebra $\der \prs{L}$ contains the diagonalizable and nilpotent Jordan-Chevalley components of its elements.
+\end{theorem}
+
+\begin{proposition}
+Define \[U_i = \set{v \in V}{\exists k \in \NN \colon \prs{T-a_i}^{k} v = 0}\text{.}\]
+Then $U_i = W_i$.
+\end{proposition}
+\begin{proof}
+$U_i$ is a $T$-invariant subspace. So, $\rest{T}{U_i}$ has a characteristic polynomial, and a minimal polynomial.\\
+Obviously, for some large $N$, $\prs{T-a_i}^N \equiv 0$ on $U_i$.
+The minimal polynomial of $\rest{T}{U_i}$ divides $\prs{x-a_i}^N$. On the other hand, $f_T\prs{x} \ceq \prod_{i\in[r]} \prs{x-a_i}^{m_i}$ acts as zero of $V$ and on $U_i$. So, the minimal polynomial of $\rest{T}{U_i}$ divides $f_T$. So that minimal polynomial is a power of $\prs{x-a_i}$, and the power is bounded by $m_i$.
+In particular, $\prs{x-a_i}^{m_i}v = 0$ for all $v \in U_i$.
+\end{proof}
+
+\begin{definition}
+Let $\delta \colon L \to L$ be a derivation of an arbitrary $\FF$-algebra, we define
+\[L_a \ceq \set{x \in L}{\exists k \colon \prs{\delta - a}^k\prs{x} = 0}\text{.}\]
+\end{definition}
+\begin{remark}
+$L_a$ is a sub-space of $L$, which is non-zero when $a = a_i$ for the transformation $T = \delta$.
+\end{remark}
+\begin{lemma} \label{derivation_composition_subspace}
+For every $a$ and $b$, we have
+\[L_a \cdot L_b \subseteq L_{a+b} \text{.}\]
+\end{lemma}
+\begin{proof}
+This follows from the generalised Leibniz formula.\footnote{The proof for the formula is done by induction, although it is surprisingly long.}
+\[\prs{\delta - \prs{a+b}I}^n\prs{x \circ y} = \sum_{j=0}^n \binom{n}{j} \prs{\delta - aI}^{n-j}\prs{x}\prs{\delta - bI}^j\prs{y}\]
+For sufficiently large $n$, at least one of $\prs{\delta - a_I}^{n-j}\prs{x}$ or $\prs{\delta - bI}^j \prs{y}$ vanishes for $x \in L_a, y \in L_b$, for every $j$. Then
+\[\prs{\delta - \prs{a+b}I}^n \prs{x \circ y} = 0\]
+and so $x \circ y \in L_{a+b}$.
+\end{proof}
+\begin{proof}[theorem \ref{F_algebra_jordan_chevalley_components}]
+Let $\delta \in \der L$ and write $\delta = \delta_s + \delta_n$ in $\endo\prs{L}$.
+To show $\delta_n, \delta_s \in \der L$, it is enough to show that $\delta_s \in \der L$.\\
+To show that, we use that fact that it acts as a scalar in each of the subspaces $L_{a} \neq 0$. Namely, the scalar $a$.\\
+We use lemma \ref{derivation_composition_subspace} as follows.
+Fix $x \in L_a$ and $y \in L_b$ and compute
+\[\delta_s\prs{x \circ y} = \prs{a+b}\prs{x \circ y}\]
+since $x\circ y \in L_{a+b}$.
+But, \[\delta_s\prs{x} \circ y + x \circ \delta_s\prs{y} = ax \circ y + x \circ by = \prs{a+b}\prs{x \circ y}\text{.}\]
+So,
+\[\delta_s\prs{x \circ y} = \delta_s\prs{x} \circ y + x \circ \delta_s\prs{y} \text{,}\]
+and $\delta_s$ is a derivation.
+\end{proof}
+
+\begin{theorem} \label{inner_derivations_theorem}
+Let $L$ be a semi-simple algebra. Then $\ad \prs{L} = \mrm{Der}\prs{L}$.\\
+Equivalently, the derivations of a semi-simple algebra are \stress{inner derivations}, namely, given by $y \mapsto \brs{x,y} = \ad x \prs{y}$. 
+\end{theorem}
+
 \begin{lemma}
 Let $L$ be a Lie algebra and let $\delta \colon L \to L$ be a derivation. Remind that each $x \in L$ defines a linear map $\ad x$ which is also a derivation.\\
 Then $\brs{\delta, \ad x} = \ad \delta\prs{x}$.
@@ -1228,14 +1285,470 @@ Then $\brs{\delta, \ad x} = \ad \delta\prs{x}$.
 In the exercise sheets.
 \end{proof}
 
-\begin{conclusion}
+\begin{corollary}
 $\ad\prs{L} \subseteq \mrm{Der}\prs{L}$ is an ideal of the algebra of derivations.
-\end{conclusion}
+\end{corollary}
+
+\begin{proof}[theorem \ref{inner_derivations_theorem}]
+Let $M \ceq \ad L$, be an ideal of $\der L$. Furthermore, $L \cong \ad L = M$, since $\ker \ad$ is the center $Z\prs{L}$ and a semi-simple algebra has a trivial center. So the Killing form of $L$ is non-degenerate. So the Killing form of $M$, being its restriction, is non-degenerate.\footnote{We've seen that the restriction of the Killing form to an ideal, is the Killing form of the ideal.} \\
+Now consider $I = M^{\perp}$ the orthogonal of the Killing form of $\der L$. Now $I \cap M = \set{0}$ since the Killing form of $M$ (which is the restriction from $\der L$) is non-degenerate. In addition, the orthogonal of an ideal under the Killing form is also an ideal, as we saw. So $I$ is an ideal, and $\der L = I \oplus M$. \\
+Finally, \[\brs{I,M} \subseteq I \cap M = 0\] since they are ideals. Hence $I$ and $M$ commute, so $\brs{\delta, \ad x} = 0$ if $\delta \in I$, and \[\brs{\delta, \ad x} = 0 = \ad \delta \prs{x}\] as we saw.
+Now, $\ad$ is injective on $L$, so $\delta\prs{x} = 0$ for all $x \in L$, and so $\delta = 0$. Hence $I = 0$ and hence $M = \der L$.
+\end{proof}
+
+\begin{theorem}[Abstract Jordan Chevalley decomposition of semi-simple Lie algebras]
+For $x \in L$ we can write $x = x_s + x_n$, with the properties
+\[\brs{x_s , x_n} = \brs{x, x_s} = \brs{x, x_n} = 0\] and $\ad x_s$ is diagonalisable on $L$, $\ad x_n$ is nilpotent on $L$, and the decomposition is \emph{unique}.
+\end{theorem}
+\begin{proof}
+Write $\ad x = T_n + T_s$ a Jordan-Chevalley decomposition in $\endo L$. From $\der L = \ad L \cong L$ so $T_n, T_s$ come from elements $x_n, x_s$ with $x = x_s + x_n$. The properties follow from those on $\endo L$.
+\end{proof}
+
+\begin{exercise}
+Assume $L \subseteq \gg \ll \prs{V}$ is semi-simple.\\
+Show that the abstract Jordan-Chevalley decomposition of $L$ agree with that of $L$ viewed as linear transformations on $V$.
+\end{exercise}
+
+\chapter{Toral subalgebras}
+Assume $S$ is semi-simple, $\mrm{char}\prs{\FF} = 0$ and $\FF =\bar{\FF}$.
+If every $x \in L$ is $\ad$-nilpotent, then $L$ is a nilpotent Lie algebra. So for some $x \in L$, we have $x_s \neq 0$\footnote{$L$ is semi-simple, so it isn't nilpotent.} where $x = x_s + x_n$ and $\ad x_s$ is diagonalisable. So, $x_n$ is $\ad$-nilpotent and $x_s$ is $\ad$-diagonalisable.
+$\FF \cdot x_s$ is a Lie sub-algebra consisting of ad-diagonalisable elements, and any such a sub-algebra is called a \stress{toral} sub-algebra.
 
 \begin{theorem}
-Let $L$ be a semi-simple algebra. Then $\ad \prs{L} = \mrm{Der}\prs{L}$.\\
-Equivalently, the derivations of a semi-simple algebra are \stress{inner derivations}, namely, given by $y \mapsto \brs{x,y} = \ad x \prs{y}$. 
+A toral sub-algebra is abelian.
 \end{theorem}
+\begin{proof}
+Let $T$ be toral, and $x \in T$. We want to show that $\ad_T\prs{x} = 0$, i.e. $\ad x \colon T \to T$ is the zero map. So we want to show $\brs{x,y} = 0$ for all $y \in T$.\\
+Assume towards a contradiction that this isn't the case. Then since $\ad x$ is diagonalisable, there's $y \in T$ non-zero which is an eigenvector of $\ad_T\prs{x}$ with non-zero eigenvalue.\\
+$\ad x$ is diagonalisable on $L$, hence on the invariant subspace $T$, and if all its eigenvalues are $0$ it is the zero map. So
+\[\brs{x,y} = ay \neq y\]
+with $a \neq 0$.
+We should derive a contradiction.\\
+Consider \[\ad_T\prs{y,x} = \brs{y,x} = -ay\text{.}\]
+Then $\ad_T\prs{y}\prs{x}$ is a vector which is an eigenvector of $\ad_T\prs{y}$ with eigenvalue $0$.\\
+But, $\ad_T\prs{y}$ is diagonalisable in $T$, so \emph{every} element of $T$ is a linear combination of eigenvectors of $\ad_T\prs{y}$. So \[x = \sum_{i} f_i x_i\] with $x_i$ being eigenvectors of $\ad_T\prs{y}$ and $f_i \neq 0$.\\
+Apply $\ad_T\prs{y}$ to this equation, we get
+\[-ay = \ad_T\prs{y} \prs{x} = \sum_j f_j x_j\]
+where the sum is ranging of $j$ such that $x_j$ is an eigenvector of $\ad_T\prs{y}$ with non-zero eigenvalue and $f_j' \neq 0$.\\
+But, we have this way a representation of the non-zero vector $-ay$ as a linear combination of eigenvectors of $\ad_{T}\prs{y}$ with non-zero eigenvalue. Because $y$ itself is an eigenvector with eigenvalue $0$ of $\ad_T y$, this is a contradiction.
+\end{proof}
+
+Let $L$ be a semi-simple Lie algebra and let $0 \neq H \leq L$ be a maximal toral sub-algebra. Then each $h \in H$ has the property that $\ad h \colon L \to L$ is diagonalisable, and since $H$ is abelian, $L$ can be decomposed to joint eigen-spaces of all $h \in H$.
+\[L_{\alpha} = \set{x \in L}{\brs{h,x} = \alpha\prs{h}x}\]
+Here, $\alpha \colon H \to \FF$ is a linear functional.
+If $x$ is a joint eigenvector, we get the following where $h_1,h_2 \in H$.
+\begin{align*}
+\brs{h_1, x} = \alpha\prs{h_1}x, \qquad \brs{h_2,x} = \alpha\prs{h_2}x, \qquad \brs{h_1 + h_2, x} = \alpha\prs{h_1 + h_2}x
+\end{align*}
+We can write
+\begin{align*}
+L = C_L\prs{H} \oplus \bigoplus_{\alpha \in \Phi} L_{\alpha}
+\end{align*}
+where
+\[C_L\prs{H} = L_0 = \set{x \in L}{\forall h \in H \colon \brs{h,x} = 0}\]
+is the \stress{centraliser of $H$ in $L$} and where
+\[\Phi = \set{\alpha \in H^* = \hom{H,\FF}}{L_{\alpha} \neq 0} \setminus \set{0}\]
+is the set of roots of $L$ under the toral sub-algebra $H$, \stress{the root system of $H$ with respect to $L$}. We also write
+\[\Phi = \Phi\prs{L,H}\text{.}\]
+
+We list a few properties of the root system $\Phi\prs{L,H}$ in general.
+
+\begin{enumerate}[label = Property \arabic*.]
+\item
+\[\brs{L_{\alpha}, L_{\beta}} \subseteq L_{\alpha + \beta}\]
+\begin{proof}
+Let $x \in L_{\alpha}, y \in L_{\beta}$. To see $\brs{x,y} \in L_{\alpha + \beta}$, compute using the Jacobi identity:
+\begin{align*}
+\ad h \brs{x,y} &= \brs{\ad h\prs{x}, y} + \brs{x, \ad h \prs{y}} \\&=
+\alpha\prs{h}\brs{x,y} + \beta\prs{h}\brs{x,y} \\&= \prs{\alpha + \beta}\prs{h} \brs{x,y}
+\end{align*}
+Hence $\brs{x,y} \in L_{\alpha + \beta}$.
+\end{proof}
+\item
+If $\alpha + \beta \neq 0$, then $L_{\alpha} \perp L_{\beta}$ under the Killing form on $L$.
+\begin{proof}
+By the symmetry property of $K$,
+\[K\prs{\brs{h,x},y} = \alpha\prs{h} K\prs{x,y} = -K\prs{x,\brs{x,y}} = -\beta\prs{h} K\prs{x,y} \text{.}\]
+Therefore \[\prs{\alpha + \beta}\prs{h} K\prs{x,y} = 0 \text{,}\]
+but if $\alpha + \beta\prs{h} \neq 0$ for some $h \in H$, then $K\prs{x,y} = 0$, so $L_{\alpha} \perp L_{\beta}$.
+\end{proof}
+\end{enumerate}
+
+\begin{proposition}
+If $L$ is a semi-simple algebra, then the restriction of $K$ to $C_L\prs{H}$ is non-degenerate.
+\end{proposition}
+\begin{remark}
+$C_L\prs{H}$ is \emph{not} an ideal of $L$.
+\end{remark}
+\begin{proof}
+Let $x \in C_L\prs{H}$. Then since for $\alpha \neq 0$, $\alpha + 0 \neq 0$, $L_0 \perp L_{\alpha}$ for all $\alpha \in \Phi$.\\
+So, if $x \in L_0$ is orthogonal to $L_0$ under $K$, $K\prs{x,L_0} = 0$, then $K\prs{x,L} = 0$ by linearity.\\
+But in a semi-simple algebra, $K$ is non-degenerate, so $x = 0$. Hence $\rest{K}{L_0}$ is non-degenerate.
+\end{proof}
+
+\begin{theorem}
+If $L$ is a semi-simple Lie algebra and $H$ is a maximal toral sub-algebra, then $C_L\prs{H} = H$.
+\end{theorem}
+\begin{proof}
+Let $C = C_L\prs{H}$.
+\begin{enumerate}[label = Step \arabic*.]
+\item $C$ contains the Jordan-Chevalley components of its elements.
+This follows since the Jordan-Chevalley components are polynomials without constant term in the underlying element. Now, an element of $C$ maps (under $\ad$) $H$ to $0$, and hence the same is true for the Jordan-Chevalley components.
+So the Jordan Chevalley components are in $C_L\prs{H} = C$.
+
+\item Every $\ad$-diagonalisable element $w \in C$ is in fact already in $H$. Indeed, $H+F\cdot w$ is also toral, since $w$ commutes with every $h \in H$, and so by maximality of $H$, $w \in H$.
+
+\item The restriction of $K$ to $H$ is non-degenerate (not just that of $K$ to $C$).
+Suppose $K\prs{h,H} = 0$ for some $h$. Now let $n \in C$ be $\ad$-nilpotent. Then, $\ad h \ad n$ is nilpotent since \[\brs{\ad h, \ad n} = \ad \brs{h,n} = 0\] and $\ad n$ is nilpotent. Therefore $\tr\prs{\ad h \ad n} = 0$, so $K\prs{h,n} = 0$. Therefore, $h$ is $K$-orthogonal to every diagonalisable element in $C$\footnote{since such an element is already in $H$ as we saw, and we assume $K\prs{h,H} = 0$}, and to every $\ad$-nilpotent element in $C$, and so $K\prs{h,C} = 0$.\\
+$K$ is non-degenerate on $C$, so $h = 0$. Hence $K$ is non-degenerate on $H$.
+
+\item $C$ is a nilpotent algebra, since every element in $C$ is $\ad$-nilpotent and by Engel's theorem. Indeed if $x \in C$ then $x = x_n + x_s$, and $\ad x = \ad x_n + \ad x_s$, where $\ad x_s$ is diagonalisable, hence $x_s \in H$. Now
+\[\ad x = \rest{\ad x_n + \ad x_s}{C}\]
+and since $x_s \in H$, $\ad x_s$ is the zero operator on $C$.\\
+So, on $C$ $\ad x$ is equal to an $\ad$-nilpotent operator, so $x$ is $\ad$-nilpotent on $C$.
+
+\item $H \cap \brs{C,C} = 0$ since by the symmetry property of the Killing form
+\begin{align*}
+K\prs{H,\brs{C,C}} = K\prs{\brs{H,C},C} = K\prs{0,C}
+\end{align*}
+which is in turn true for $C = C_L\prs{H}$ means $\brs{C,H} = 0$. \\
+Since $K$ is non-degenerate on $H$, $H \cap \brs{C,C} = 0$\footnote{otherwise a non-zero vector in it is the radical of the form on $H$. $h \in H \cap \brs{C,C}$ implies $K\prs{h,H} = 0$ and this implies $h = 0$.}.
+
+\item Assume towards a contradiction $\brs{C,C} \neq 0$.
+
+\begin{exercise}
+In a nilpotent Lie algebra, every non-zero ideal intersects the center non-trivially.
+\end{exercise}
+
+Let $z \in Z\prs {C} \cap \brs{C,C} \setminus \set{0}$.
+$z$ is \emph{not} $\ad$-diagonalisable, because in that case it would be in $H$, and as wee just saw $H\cap \brs{C,C} = 0$. \\
+So, $z$ has a non-trivial $\ad$-nilpotent part, denoted
+$z_n$. Since $z$ takes $C$ to $0$ under $\ad$, so do $z_s,z_n$\footnote{by the Jordan-Chevalley properties}.
+So, $z_n$ is itself in $Z\prs{C}$. But then $\brs{z_n, c} = 0$ for all $c$, and \[\tr \ad z_n \ad c = 0\] since $\ad z_n$ is nilpotent, and commutes with  $\ad C$. So, $K\prs{z_n, c} = 0$ for all $c$, and so $K$ is degenerate on $C$, unless $z_n$ is zero. This contradiction implies $\brs{C,C} = 0$ and $C$ is abelian.
+
+\item We should show $C_L\prs{H} = C = H$. Do this as an exercise.
+
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}
+The killing form of $L$ restricted to $H$ is a non-degenerate symmetric form.
+\end{corollary}
+
+\section{Orthogonality of root systems}
+
+Assume $L$ is semi-simple over an algebraically-closed field $\FF$ of zero characteristic.
+As we saw, $K$ is non-degenerate on $H$, and so we can transfer to $H^* = \hom\prs{H,\FF}$ by duality:
+For each $\alpha \in H^*$ there is a unique $h_{\alpha}$ such that $K\prs{h, h_{\alpha}} = \alpha\prs{h}$.\footnote{$w \mapsto K\prs{\cdot, w}$ for $w \in H$ is a linear isomorphism $H \to H^*$}
+We can define \[K\prs{\alpha,\beta} \ceq K\prs{h_{\alpha}, h_{\beta}}\]
+and obtain also $K\prs{\alpha,\beta} = \alpha\prs{h_{\beta}} = \beta\prs{h_{\alpha}}$.
+
+\begin{theorem}[orthogonality properties of root systems]
+\begin{enumerate}
+\item $\Phi$ spans $H^*$.
+\item $-\Phi = \Phi$
+\item If $\alpha \in \Phi$ and $x \in L_{\alpha}, y \in L_{-\alpha}$ then \[\brs{x,y} = K\prs{x,y}h_{\alpha}\text{.}\]
+\item \[\dim\brs{L_{\alpha}, L_{-\alpha}} = 1\] and this is spanned by $h_{\alpha}$ for $\alpha \in \Phi$.
+\item \[\alpha\prs{h_{\alpha}} = K\prs{\alpha,\alpha}\]
+and in particular this is non-zero.
+\item If $x \in L_{\alpha} \setminus \set{0}$, there exists $y \in L_{-\alpha} \setminus \set{0}$ such that $x,y,\hat{h}_{\alpha} \ceq \brs{x,y}$ span a three-dimensional  Lie sub-algebra of $L$, which is isomorphism to $\ss\ll_2\prs{\FF}$ under the following isomorphism.
+\begin{align*}
+x &\mapsto \pmat{0 & 1 \\ 0 & 0} \\
+y &\to \pmat{0 & 0 \\ 1 & 0 } \\
+\hat{h}_{\alpha} &\mapsto \pmat{1 & 0 \\ 0 & -1}
+\end{align*}
+\item $\hat{h}_{\alpha}$ is given by \[\hat{h}_{\alpha} = \frac{2 h_{\alpha}}{K\prs{\alpha,\alpha}}\]
+and
+\[\hat{h}_{-\alpha} = -\hat{h}_{\alpha} \text{.}\]
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+\begin{enumerate}
+\item Let \[H_0 \ceq \mrm{span}\set{h_{\alpha}}{\alpha \in \Phi}\text{.}\]
+By duality, $\Phi$ spans $H^*$ iff $H_0$ spans $H$.\\
+If $H_0$ does not span $H$, there is a functional
+\[\gamma \colon H \to \FF\]
+non-zero and such that $\gamma\prs{H_0} = 0$.
+So, $\gamma\prs{h_{\alpha}} = 0$ for all $\alpha \in \Phi$, so $K\prs{\gamma,\alpha} = 0$ for all $\alpha \in \Phi$, and equivalently, $\alpha\prs{h_{\gamma}}$ for all $\alpha \in \Phi$.\\
+So, \[\brs{h_{\gamma}, x_{\alpha}} = \alpha\prs{h_{\gamma}} x_{\alpha} = 0\] if $x_{\alpha} \in L_{\alpha}$.
+Hence, $h_{\gamma}$ commutes with every $L_{\alpha}$ for $\alpha \in \Phi$, and with $H$.
+So $h_{\gamma} \in Z\prs{L} = \set{0}$, in contradiction.
+
+\item If $\alpha \in \Phi$ and $-\alpha \notin \Phi$, then, as we saw, $L_{\alpha} \perp L_{\beta}$ if $\alpha + \beta \neq 0$.
+But if $-\alpha \notin \Phi$ then $\alpha + \beta \neq 0$ for all $\beta \in \Phi$. So, $L_{\alpha} \perp L_{\beta}$ for all $\beta \in \Phi$.
+Also, $L_{\alpha} \perp H$ since $\alpha + 0 \neq 0$, and therefore $L_{\alpha} \perp L$\footnote{by the decomposition of $L$ to a direct sum}.
+This is a contradiction, since by assumption on $\alpha$, $L_{\alpha} \neq \set{0}$, and because $K$ is non-degenerate.
+
+\item
+Notice firstly that $K\prs{h,h_{\alpha}} = \alpha\prs{h}$ implies
+\begin{equation} \label{functional:negative}
+h_{-\alpha} = -h_{\alpha}\text{.}
+\end{equation}
+Let $\alpha \in \Phi$, $x_{\alpha} \in L_{\alpha}$ and $y_{\alpha} \in L_{-\alpha}$. Let $\brs{x_{\alpha},y_{\alpha}} \in H = L_0$.
+By $\ad$-symmetry of $K$, one obtains
+\begin{align*}
+K\prs{\brs{\brs{h, x_{\alpha}}, y_{\alpha}}} &= \alpha\prs{h} K\prs{x_{\alpha},y_{\alpha}} \\&= K\prs{h,\brs{x_{\alpha},y_{\alpha}}} \\&= K\prs{h,h_{\alpha}} K\prs{x_{\alpha},y_{\alpha}} \\&= K\prs{h,K\prs{x_{\alpha},y_{\alpha}}h_{\alpha}}
+\end{align*}
+By non-degeneracy of $K$,
+\[\brs{x_{\alpha},y_{\alpha}} = K\prs{x_{\alpha}, y_{\alpha}} h_{\alpha}\text{,}\]
+since they both define the same linear functional $K\prs{h,\cdot}$ on $H$.\\
+\item
+We conclude from the above that for \emph{all} $x \in L_{\alpha}$ and $y \in L_{-\alpha}$, \[\brs{x,y} = K\prs{x,y}h_{\alpha}\]
+and so $\dim\brs{L_{\alpha}, L_{-\alpha}} = 1$ and it's spanned by $h_{\alpha}$, provided we show that for $x \neq 0$ in $L_{\alpha}$ there is some $y \in L_{-\alpha} \setminus \set{0}$ such that $K\prs{x,y} \neq 0$. But, if $L_{\alpha} \perp L_{-\alpha}$ then we claim that $L_{\alpha} \perp L$. Since $L_{\alpha} \perp L_{\beta}$ for $\beta \neq -\alpha$, and so if $L_{\alpha} \perp L_{-\alpha}$ in addition, then $L_{\alpha} \perp L$ and this contradicts non-degeneracy.
+\item
+Assume towards a contradiction that
+\[K\prs{\alpha,\alpha} = \alpha\prs{h_{\alpha}} = 0\]
+and consider the three-dimensional algebra generated by $x \in L_{\alpha} \setminus \set{0}$, $y \in L_{-\alpha} \setminus \set{0}$ and $\brs{x,y} = c\cdot h_{\alpha}$ with $c \neq 0$.%
+\footnote{This is indeed an algebra, since $x,y$ are eigenvectors of each $\ad h$, and in particular $\ad h_{\alpha}$.}
+Now,
+\begin{align*}
+\brs{h_{\alpha}, x} &= \alpha\prs{h_{\alpha}} x = 0 \\
+\brs{h_{\alpha}, y} &= -\alpha\prs{h_{\alpha}}y = 0
+\end{align*}
+since we assume $\alpha\prs{h_{\alpha}} = 0$.\\
+Let $M$ be the sub-algebra and we see that $h_{\alpha}$ is in its center. But $\dim \quot{M}{Z\prs{M}} \leq 2$ and $\quot{M}{Z\prs{M}}$ is solvable, and hence so is $M$. So $\brs{M,M}$ is a nilpotent Lie algebra.\footnote{Deduce this from Lie's theorem.}
+Consider \[\ad_L \colon M \to \endo L \text{.}\]
+$\ad_L\brs{M,M}$ is a nilpotent Lie algebra of linear transformations, so $\ad_L w$ is a nilpotent linear transformation for all $w \in \brs{M,M}$. But $ch_{\alpha} = \brs{x,y} \neq 0$ is in $\brs{M,M}$ and $\ad_L h_{\alpha}$ is then both diagonalisable and nilpotent. Hence $h_{\alpha}$, in contradiction.
+\item
+Let $x \neq 0$ in $L_{\alpha}$, by part 4 there is $y \in L_{-\alpha}$ such that $K\prs{x,y} \neq 0$.
+We can choose $x_{\alpha},y_{\alpha}$ such that $K\prs{x_{\alpha}, y_{\alpha}} = \frac{2}{K\prs{\alpha,\alpha}}$ by 5 and by multiplying $y$ by a non-zero scalar.
+Now compute:
+\begin{align*}
+\brs{x_{\alpha}, y_{\alpha}} &= K\prs{K\prs{x_{\alpha}, y_{\alpha}}} h_{\alpha} \\&=
+\frac{2 h_\alpha}{K\prs{\alpha,\alpha}} \eqqcolon \hat{h}_{\alpha}
+\end{align*}
+and
+\begin{align*}
+\brs{\hat{h}_{\alpha}, x_{\alpha}} &= \alpha\prs{\hat{h}_{\alpha}} x_{\alpha} = \frac{2 \alpha\prs{h_{\alpha}}}{K\prs{\alpha,\alpha}} x_{\alpha} = 2 x_{\alpha} \\
+\brs{\hat{h}_{\alpha}, y_{\alpha}} &= \frac{-2\alpha\prs{h_{\alpha}}}{K\prs{\alpha,\alpha}} y_{\alpha} \text{.}
+\end{align*}
+So, the multiplication table of $\trs{x_{\alpha}, y_{\alpha}, \hat{h}_{\alpha}} = M$ is
+\begin{align*}
+\brs{\hat{h}_{\alpha}, x_{\alpha}} &= 2 x_{\alpha} \\
+\brs{\hat{h}_{\alpha}, y_{\alpha}} &= -2y_{\alpha} \\
+\brs{x_{\alpha}, y_{\alpha}} &= \hat{h}_{\alpha} \text{.}
+\end{align*}
+This is exactly the multiplication table of another three-dimensional algebra we know, named $\ss\ll_2\prs{\FF}$, with isomorphism given by
+\begin{align*}
+x_{\alpha} &\mapsto \pmat{0 & 1 \\ 0 & 0} \\
+y_{\alpha} &\mapsto \pmat{0 & 0 \\ 1 & 0} \\
+h_{\alpha} &\to \pmat{1 & 0 \\ 0 & -1} \text{.} 
+\end{align*}
+\item We already saw that $\hat{h}_{\alpha} = \frac{2 h_{\alpha}}{K\prs{\alpha, \alpha}}$ and $h_{-\alpha} = -h_{\alpha}$ implies $\hat{h}_{-\alpha} = -\hat{h}_{\alpha}$. $h_{\alpha}$ is defined by $K\prs{h,h_{\alpha}} = \alpha\prs{h}$.
+\end{enumerate}
+\end{proof}
+
+\section{Rationality properties of the root system}
+
+Assume throughout $L$ is a semi-simple Lie algebra of an algebraically closed field $\FF$ of characteristic zero.
+
+\begin{proposition}
+Let $\alpha,\beta \in \Phi$. Then \[K\prs{\alpha,\beta} = q_{\alpha,\beta} K\prs{\alpha,\alpha}\]
+where $q_{\alpha,\beta} \in \QQ$.
+\end{proposition}
+
+\begin{proof}
+Consider the vector space\footnote{there are finitely many roots, hence there is much redundancy in the sum} \[L_{\alpha,\beta} = \sum_{k \in \ZZ} L_{\beta + k\alpha} \subseteq L \text{.}\]
+Now take $x_{\alpha} \in L_{\alpha}$ and $y_{\alpha} \in L_{-\alpha}$, and take $\hat{h}_{\alpha} = \brs{x_{\alpha}, y_{\alpha}}$ which we know generates a three-dimensional sub-algebra, $S_{\alpha} \leq L$, which is isomorphic to $\ss\ll_2\prs{\FF}$.
+$L_{\alpha,\beta}$ is invariant under the action of $S_a$ by the adjoint, as shown in the following paragraph.
+
+\[\forall w \in S_{\alpha} \colon \ad_L\prs{w}L_{\alpha,\beta} \subseteq L_{\alpha,\beta}\text{.}\]
+Indeed, for all $z \in L_{\gamma}$, \[\ad_L\prs{z}L_{\beta + k\alpha} \subseteq L_{\beta + k\alpha + \gamma}\text{.}\]
+Hence, $\ad_L x_{\alpha}$ and $\ad_L y_{\alpha}$ leave $L_{\alpha,\beta}$ invariant, and so does $\ad_L \hat{h}_{\alpha}$, since $L_{\alpha,\beta}$ is a sum of eigenspaces.
+
+Now, $\ad_L\prs{S_{\alpha}}$ acts on $L_{\alpha,\beta}$, and $\hat{h}_{\alpha} = \brs{x_{\alpha},y_{\beta}}$ is a commutator!
+Henceforward, $\ad_L\prs{h_{\alpha}}$ must have trace zero, when restricted to $L_{\alpha,\beta}$.\footnote{which is invariant also under $\ad_L x_{\alpha}$ and $\ad_L y_{\alpha}$}
+So, we compute using the diagonalisation of $\ad_L\prs{h_{\alpha}}$ in $L_{\alpha,\beta}$.
+\begin{align*}
+\tr \ad_L\prs{h_{\alpha}} &= 0 \\&=
+\sum_{k \in \ZZ} \prs{\beta + k\alpha}\prs{h_{\alpha}} \dim L_{\beta + k\alpha} \\&= \sum_{k \in \ZZ} \prs{\beta\prs{h_{\alpha}} + k\alpha\prs{h_{\alpha}}} d_k
+\end{align*}
+where we denote $d_k \ceq \dim L_{\beta + k\alpha}$.
+We get by substituting $\beta\prs{h_{\alpha}} = K\prs{\beta, \alpha}$ and $\alpha\prs{h_{\alpha}} = K\prs{\alpha,\alpha}$ the following.
+\[\prs{-\sum_{k\in \ZZ} d_k} K\prs{\beta,\alpha} = \sum_{k \in \ZZ} kd_k K\prs{\alpha,\alpha}\]
+Then
+\[K\prs{\beta,\alpha} = \frac{-\sum_{k\in\ZZ} k d_k}{\sum_{k \in \ZZ} d_k} K\prs{\alpha,\alpha} = q_{\alpha,\beta} K\prs{\alpha,\alpha}\]
+where
+$\sum_{k \in \ZZ} d_k \geq 1$
+since $d_k \geq 0$ and $d_0 > 0$. We get $q_{\alpha,\beta} \in \QQ$.
+\end{proof}
+\begin{proposition}
+$K\prs{\alpha,\alpha}$ is a positive rational number, and $K\prs{\beta,\alpha}$ is $K\prs{\beta,\alpha}$ is rational for all $\alpha,\beta\in\Phi$.
+\end{proposition}
+\begin{proof}
+Let us compute directly from the definition of the Killing form, and the diagonalisation of $L$ with respect to $H$.
+\begin{align*}
+K\prs{\alpha,\beta} &= K\prs{h_{\alpha}, h_{\beta}} \\&= \tr\prs{\ad_L\prs{h_{\alpha}}, \ad_L\prs{h_{\beta}}} \\&=
+\sum_{\lambda \in \Phi} \lambda\prs{h_{\alpha}} \lambda\prs{h_{\beta}} \dim L_{\lambda} \text{.}
+\end{align*}
+Now,
+\begin{align*}
+K\prs{\alpha,\alpha} &= \sum_{\lambda \in \Phi} \lambda\prs{h_{\alpha}}^2 \dim L_{\lambda} \\&= \sum_{\beta \in \Phi} \beta\prs{h_{\alpha}}^2 \dim L_{\beta} \\&= \sum_{\beta \in \Phi} K\prs{\beta,\alpha}^2 \dim L_{\beta} \\ &\stackrel{\text{by previous proposition}}{=} \sum_{\beta \in \Phi} q_{\alpha,\beta}^2 K\prs{\alpha,\alpha}^2 \dim L_{\beta} \text{.}
+\end{align*}
+Isolating $K\prs{\alpha,\alpha}$ from this equation one gets
+\[K\prs{\alpha,\alpha} = \frac{1}{\sum_{\beta \in \Phi} q_{\alpha,\beta}^2 \dim L_{\beta}} \in \QQ_{>0}\]
+as required.\footnote{Then $K\prs{\beta,\alpha}$ is also rational, by the previous proposition.}
+\end{proof}
+\begin{corollary}
+$\prs{K\prs{\alpha,\beta}}_{\alpha,\beta \in \Phi}$ is a rational matrix, with positive diagonal terms.
+\end{corollary}
+
+\begin{proposition}
+\begin{enumerate}
+\item $\dim L_{\alpha} = 1$ for all $\alpha \in \Phi$.
+\item No multiple of $\alpha$ by an integer is also a root, except for $-\alpha$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Choose $y \in L_{-\alpha}$ and consider the space \[M_{\alpha} = \FF y_{\alpha} + \FF h_{\alpha} + \sum_{k\geq 1} L_{k\alpha}\text{.}\]
+We claim that $M_{\alpha}$ is a linear sub-space invariant under $S_{\alpha} = \mrm{span}\set{x_{\alpha}, y_{\alpha}, h_{\alpha}} \cong \ss\ll_2\prs{\FF}$.\\
+We saw $\brs{L_{\alpha},L_{-\alpha}} = 1$ is spanned by $h_{\alpha}$ and is one-dimensional. We get a few properties using this.
+\begin{enumerate}[label=(\roman*)]
+\item \[\ad_L h_{\alpha} \colon M_{\alpha} \to M_{\alpha}\]
+\item $\ad_L x_{\alpha} \colon M_{\alpha} \to M_{\alpha}$
+since
+\begin{align*}
+\brs{x_{\alpha}, y_{\alpha}} &= c h_{\alpha} \in \FF h_{\alpha} \\
+\brs{x_{\alpha}, h} &= -\alpha\prs{h} \cdot x_{\alpha} \in L_{\alpha} \\
+\brs{x_{\alpha}, x_{k\alpha}} \in L_{\prs{k+1}\alpha}
+\end{align*}
+\item Finally, $\ad_L y_{\alpha} \colon M_{\alpha} \to M_{\alpha}$, and
+\begin{align*}
+\brs{y_{\alpha}, y_{\alpha}} &= 0 \\
+\brs{y_{\alpha}, x_{\alpha}} = c\cdot h_{\alpha}
+\end{align*}
+so
+\begin{align*}
+\brs{y_{\alpha}, x_{k\alpha}} &= \ad_L\prs{y_{\alpha}}\prs{x_{k\alpha}} \in L_{\prs{k-1}\alpha}\text{.}
+\end{align*}
+\end{enumerate}
+From these, $M_{\alpha}$ is $ad_L\prs{S_{\alpha}}$-invariant. Once again $ch_{\alpha} = \brs{x_{\alpha}, y_{\alpha}}$ is a commutator, so it has trace $0$ on $M_{\alpha}$.\\
+We obtain the following.
+\begin{align*}
+0 &= \rest{\tr \ad_L\prs{h_{\alpha}}}{M_{\alpha}} \\&=
+-\alpha\prs{h_{\alpha}} + 0 + \sum_{k \geq 1} k\alpha \prs{h_{\alpha}} \dim L_{k\alpha}
+\end{align*}
+Let $b_k = \dim L_{k\alpha}$, we obtain from the above equality
+\[\alpha\prs{h_{\alpha}}\prs{-1 + \sum_{k \geq 1 k b_k}} = 0 \text{.}\]
+But, $\alpha\prs{h_{\alpha}} = K\prs{\alpha,\alpha} \neq 0$ and so $\sum_{k \geq 1} k b_k = 1$.\\
+Then $b_k \geq 0$ for $k \geq 1$, and $b_1 > 0$.
+Then $b_1 = \dim L_{\alpha} = 1$, $\dim L_{k\alpha} = 0$ for $k > 1$.
+From $\Phi = -\Phi$ we get $L_{k\alpha} = 0$ for all $k \neq \pm 1,0$.
+\end{proof}
+
+\begin{definition}
+Let $\alpha,\beta \in \Phi$. Define the \stress{$\alpha$-chain through $\beta$} to be the set of roots of the form \[\beta + k \alpha, \qquad k \in \ZZ\text{.}\]
+\end{definition}
+
+\begin{theorem}
+\begin{enumerate}
+\item The $\alpha$-chain through $\beta$ has the form
+\[\beta + k\alpha, \qquad p \leq k \leq q \text{.}\]
+It is \emph{one} (uninterrupted) interval.
+
+\item
+\[p+q = \frac{-2\beta\prs{h_{\alpha}}}{\alpha\prs{h_{\alpha}}} = \frac{-2 K\prs{\beta,\alpha}}{K\prs{\alpha,\alpha}}\text{.}\]
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Let $r$ and $s$ define a maximal interval on the $\alpha$-chain through $\beta$. I.e.
+\begin{align*}
+\forall r \leq j \leq s \colon \beta + j\alpha \in \Phi \\
+\beta + \prs{s+1} \alpha, \beta + \prs{r-1}\alpha \notin \Phi \text{.}
+\end{align*}
+Let
+\[W_{\alpha,\beta} = \bigoplus_{j = r}^s L_{\beta + j\alpha} \text{.}\]
+This is a non-trivial sub-space.
+Let $x_{\alpha} \in L_{\alpha}, y_{\alpha} \in L_{-\alpha}$ be non-zero and $h_{\alpha} = c\brs{x_{\alpha}, y_{\alpha}}$ with $c \neq 0$.
+Now \[S_{\alpha} = \FF x_{\alpha} + \FF y_{\alpha} + \FF h_{\alpha}\]
+is a Lie sub-algebra (isomorphic to $\ss\ll_2\prs{F}$).\\
+We claim that $W_{\alpha,\beta}$ is invariant under $\ad_L \prs{S_{\alpha}}$. Examine
+\[\ad_L\prs{x_{\alpha}} \colon W_{\alpha,\beta} \to W_{\alpha,\beta} \text{.}\]
+We have
+\begin{align*}
+\ad_L\prs{x_{\alpha}}L_{\gamma} \subseteq L_{\gamma + \alpha} \\
+\ad_L\prs{y_{\alpha}} L_{\gamma} \subseteq L_{\gamma - \alpha}
+\end{align*}
+and so $W_{\alpha,\beta}$ is invariant under $\ad_L x_{\alpha}$ and $\ad_L\prs{y_{\alpha}}$, then under $\ad_L\prs{L_{\alpha}}$.\\
+$\rest{\ad_L\prs{h_{\alpha}}}{W_{\alpha,\beta}}$ is a commutator, hence has trace zero.
+\[\rest{\tr \ad_L\prs{h_{\alpha}}}{W_{\alpha,\beta}} = 0\]
+Hence,
+\begin{align*}
+\sum_{j=r}^s \prs{\beta + j\alpha}\prs{h_{\alpha}} &= \sum_{j=r}^s \beta\prs{h_{\alpha}} + \sum_{j=r}^s j\alpha\prs{h_{\alpha}} = 0 \text{.}
+\end{align*}
+Moving sides, we get the following.
+\begin{align*}
+-\prs{s-r+1}\beta\prs{h_{\alpha}} &= \prs{\sum_{j=r}^s j} \alpha\prs{h_{\alpha}} \\&=
+\prs{r \prs{s-r+1} + \sum_{j=1}^{s-r}} \alpha\prs{h_{\alpha}} \\&=
+\prs{r \prs{s-r+1} + \frac{\prs{s-r}}{2}\prs{s-r+1}} \alpha\prs{h_{\alpha}}
+\end{align*}
+Moving sides we get
+\[-\beta\prs{h_{\alpha}} = \frac{s+r}{2} \alpha\prs{h_{\alpha}} \text{.}\]
+Now $\alpha\prs{h_{\alpha}} \neq 0$ because we've seen $\forall \gamma \in \Phi \colon \dim L_{\gamma} = 1$. Hence \[s+r = \frac{2\beta\prs{h_{\alpha}}}{\alpha\prs{h_{\alpha}}}\text{.}\]
+This is true for all maximal intervals, and clearly this means that there is only one such an interval.\footnote{An interval to the right should have larger $s+r$, and one to the left should have smaller $s+r$.}
+\end{proof}
+\begin{theorem}
+\begin{enumerate}
+\item The only roots $c \alpha \in \Phi$\footnote{$c \in \FF$} which are multiples of $\alpha$ are $0$ and $\pm \alpha$. 
+\item For $\alpha,\beta \in \Phi$, \[L_{\alpha + \beta} = \brs{L_{\alpha},L_{\beta}} \text{.} \]
+\end{enumerate}
+\end{theorem}
+\begin{remark}
+\begin{enumerate}
+\item We already know that no integral multiples of $\alpha$ are roots, except for $\pm \alpha$ and $0$.
+\item We already know that $\brs{L_{\alpha}, L_{\beta}} \subseteq L_{\alpha + \beta}$, and we want to show equality.
+\end{enumerate}
+\end{remark}
+
+\begin{proof}
+\begin{enumerate}
+\item Let us consider the $\alpha$-chain through $\beta$, which is of the form $\beta + j\alpha$ with $p \leq j \leq q$, and where $p+q = \frac{-2 \beta\prs{h_{\alpha}}}{\alpha\prs{h_{\alpha}}}$ as we saw.\\
+Now let $\beta = c\alpha \neq \pm \alpha, 0$. Then,
+\[p+q = \frac{-2K\prs{\beta,\alpha}}{K\prs{\alpha,\alpha}} = \frac{-2K\prs{\alpha,\alpha}}{K\prs{\alpha,\alpha}} = -2c \in \ZZ\text{.}\]
+So, $c = n + \frac{1}{2}$  for some $n \in \ZZ$.\footnote{for we saw $c \notin \ZZ$}
+So, $\prs{n+\frac{1}{2}} \alpha \in \Phi$ then $-\prs{n+\frac{1}{2}}\alpha \in \Phi - -\Phi$.
+But,
+\[-\prs{n+\frac{1}{2}}\alpha = \prs{n+\frac{1}{2}} \alpha - \prs{2n + 1} \alpha = \beta - \prs{2n + 1}\alpha\text{.}\]
+Therefore, $-\prs{n+\frac{1}{2}}\alpha$ is in the $\alpha$-chain through $\beta$. Namely, it is $\beta + k\alpha$ for some $k \in \ZZ$.
+So, the chain has $-\prs{2n+1}$ in it, and also $0$.
+\\
+Denote
+\begin{align*}
+\gamma_1 &= \prs{n+\frac{1}{2}}\alpha \\
+\gamma_2 &= \-\prs{n+\frac{1}{2}} \alpha
+\end{align*}
+both of which are in $\Phi$. Then
+\[\gamma_1 = \gamma_2 + \prs{2n+1}\alpha\]
+and so $\gamma_1$ is in the $\alpha$-chain through $\gamma_2$. That $\alpha$-chain contains $\gamma_2$ and $\gamma_1 = \gamma_2 + \prs{2n + 1}\alpha$, and so the interval of that chain contains $\brs{0,2n+1}$.\footnote{Here we assume $n\geq 0$, but the statement is symmetric.}
+So $1$ is also in the interval, and so \[\gamma_2 + \alpha = \prs{-n + \frac{1}{2}}\alpha + \alpha = \prs{-\prs{n-1} + \frac{1}{2}} \alpha \in \Phi\text{.}\]
+We can continue this way, and finally get that $\frac{1}{\alpha} \in \frac{1}{2}\alpha$.
+Then $\alpha$ is a multiple by $2$ of $\frac{1}{2}\alpha$! this is a contradiction, since no non-trivial integer multiple of a root can be a root.
+We argue similarly for $n < 0$.
+We conclude that no multiple of a root is a root except $0$ and $\pm \alpha$.
+\item
+If $\alpha + \beta \notin \Phi$, then $L_{\alpha + \beta} = 0$.\\
+So, assume towards a contradiction that $\brs{L_{\alpha}, L_{\beta}} \subsetneq L_{\alpha + \beta}$, and $\alpha + \beta$ is a root. Because the dimension of $L_{\alpha + \beta}$ is $1$, this means $\brs{L_{\alpha}, L_{\beta}} = 0$.\\
+Let $p,q$ define the interval which is the $\alpha$-chain through $\beta$. We assume
+$j \in \brs{p,q}$ and $q \geq 1$, since $\beta + \alpha$ is a root by assumption.
+We also assumed $\brs{L_{\alpha}, L_{\beta}} = 0$, namely
+\[\ad_L\prs{x_{\alpha}}\prs{L_{\beta}} = 0 \text{.}\]
+Hence $x_{\alpha} \in L_{\alpha} \setminus \set{0}$.
+So, define
+\[U_{\alpha,\beta} = \bigoplus_{j=p}^0 L_{\beta + j\alpha}\]
+which is invariant under $S_{\alpha}$:\footnote{This is well-defined because $\beta$ is a root and hence $p \leq 0$.}\\
+$\ad_L\prs{x_{\alpha}}$ sends $L_{\beta + j\alpha}$ to $L_{\beta + \prs{j+1}\alpha}$ and $L_{\beta}$ to $0$. $\ad_L\prs{y_{\alpha}}$ sends $L_{\beta + \alpha}$ to $L_{\beta + \prs{j-1}\alpha}$ and $L_{\beta + j\alpha}$ to $0$.\\
+Of course, $U_{\alpha,\beta}$ is invariant under $\brs{x_{\alpha},y_{\alpha}} = ch_{\alpha}$, so it is invariant under $S_{\alpha}$, and let us compute the trace.
+\begin{align*}
+0 &= \rest{\tr \ad_L\prs{h_{\alpha}}}{U_{\alpha,\beta}} \\&=
+\sum_{j=p}^0 \prs{\beta + j\alpha}\prs{h_{\alpha}} \\&= \sum_{j=p}^0 \beta\prs{h_{\alpha}} + \sum_{j=p}^0 j\alpha\prs{h_{\alpha}}
+\end{align*}
+Then
+\[- \prs{\abs{p} + 1}\beta\prs{h_{\alpha}} = -\frac{\abs{p}\prs{\abs{p} + 1}}{2} \alpha\prs{h_{\alpha}}\]
+and then
+\[\frac{-2 \beta\prs{h_{\alpha}}}{\alpha\prs{h_{\alpha}}} = -\abs{p} = p \neq p + q\]
+because $q \geq 1$. This is a contradiction.
+\end{enumerate}
+\end{proof}
 
 \backmatter
 \end{document}

@@ -862,7 +862,7 @@ $N(r) < 0$
 לכן
 $r=0$
 לכן
-$qr = 1$
+$qu = 1$
 ולכן
 $u \in R^{\times}$.
 \end{proof}
@@ -1486,7 +1486,7 @@ $z_1, z_2 \in \ZZ\brs{\omega}$
 שאינם הפיכים, כך שמתקיים
 $p = z_1 z_2$.
 אז
-$p^2 = N\prs{p} = N\prs{z_1} N\prs{n_2}$
+$p^2 = N\prs{p} = N\prs{z_1} N\prs{z_2}$
 לכן
 $N\prs{z_1} = N\prs{z_2} = p$.
 אז אם
@@ -1554,7 +1554,7 @@ $\prs{c,p} = 1$.
 
 \begin{corollary}
 יהי
-$o \in \NN$
+$p \in \NN$
 ראשוני. קיימים
 $x,y\in \ZZ$
 עבורם
@@ -1580,7 +1580,7 @@ $\ZZ$}
 \begin{align*}
 x^2 + y^2 &\equiv 0 \mod{p} \\
 x^2 + 2y^2 &\equiv 0 \mod{p} \\
-x^2 + 3y^12 &\equiv 0 \mod{p} \\
+x^2 + 3y^2 &\equiv 0 \mod{p} \\
 x^2 -xy + y^2 &\equiv 0 \mod{p}
 \end{align*}
 רוצים להסתכל על המשוואות בקונגרואנציה.
@@ -2906,7 +2906,7 @@ $k$
 \begin{remark}
 כדי להוכיח את המשפט מסתכלים על ההומומורפיזם
 \begin{align*}
-\Phi \colon G &\to G
+\Phi \colon G &\to G \\
 \text{.} \phantom{\Phi} \colon x &\to x^k
 \end{align*}
 עשינו דבר דומה עבור
@@ -4748,6 +4748,393 @@ $t=s$.
 
 \end{proof}
 
+%TODO fill in lecture from 3/1/2019 and review lecture before that
+
+\chapter{הדדיות חזקה שלישית}
+
+\begin{proposition}
+יהי
+$p = p + 0\omega$
+ראשוני ב־%
+$\NN$.
+$p$
+ראשוני ב־%
+$D \ceq \ZZ\brs{\omega}$
+אם ורק אם אין שלמים
+$a,b \in \ZZ$
+עבורם
+\[p = a^2 - ab + b^2\]
+אם ורק אם
+$p \equiv 2 \mod{3}$.
+\end{proposition}
+\begin{proposition}
+אם
+$z \in D$
+ראשוני, אז
+$N\prs{z} = p$
+או
+$N\prs{z} = p^2$
+כאשר
+$p \in \NN$
+ראשוני.
+\end{proposition}
+
+\begin{proof}
+נניח
+\[\text{.} N\prs{z} = n \in \NN\]
+מתקיים
+$n > 1$
+כי
+$z$
+אינו הפיך.
+נניח כי
+$n = \prod_{i\in[k]} p_i$
+כאשר
+$p_i$
+ראשוניים.
+אז
+$z \bar{z} = \prod_{i \in[k]} p_i$
+ובפרט
+$z \mid \prod_{i\in[k]} p_i = n$
+ב־%
+$\ZZ\brs{\omega}$.
+הנחנו כי
+$z$
+ראשוני לכן יש
+$i$
+כך ש־%
+$z \mid p_i$.
+אז
+$N\prs{z} \mid N\prs{p_i} = p_i^2$
+לכן
+$N\prs{z} \in \set{p_i, p_i}^2$
+כנדרש.
+\end{proof}
+
+\begin{example}
+$7 = 3^2 - 3\cdot 1 + 1^2$
+ואז
+\[\text{.} 7 = \prs{3 + \omega}\prs{2-\omega}\]
+\end{example}
+
+\begin{proposition}
+יהי
+$z \in D$.
+אם
+$N\prs{z} = p$
+ראשוני, אז
+$z$
+ראשוני ב־%
+$D$.
+\end{proposition}
+\begin{remark}
+מטענה זו, הפירוק במסקנה הינו פירוק לראשוניים.
+\end{remark}
+
+\begin{theorem} \label{Z-omega:properties}
+יהי
+$p \in \NN$
+ראשוני.
+\begin{enumerate}
+\item
+אם
+$p \equiv 2 \mod{3}$
+אז
+$p = p+0\omega$
+ראשוני ב־%
+$D$.
+\item אם
+$p \equiv 1 \mod{3}$,
+קיימים ראשוניים
+$z,\bar{z} \in D$
+שאינם חברים ושעבורם
+$p = z\bar{z}$.
+\item
+עבור
+$p=3$
+מתקיים
+$3 = -\omega^2\prs{1-\omega}^2$
+וגם
+$1-\omega$
+ראשוני ב־%
+$D$.
+\end{enumerate}
+\end{theorem}
+
+\section{שדות שארית}
+\begin{proposition}
+יהי
+$R$
+תחום שלמות ויהי
+$I$
+אידאל מקסימלי ב־%
+$R$.
+אז
+$\quot{R}{I}$
+שדה.
+\end{proposition}
+\begin{proof}
+יהי
+$a \in R \setminus I$,
+ונראה שיש הפיך ל־%
+$a + I$.
+נסתכל על
+$\trs{a,I}$.
+$I$
+מקסימלי לכן
+$\trs{a,I} = R$.
+לכן קיימים
+$r_1,\alpha \in I$
+עבורם
+$r_1 a + \alpha = 1$
+לכן
+$r_1 a \in 1 + I$
+ולכן
+$\prs{r_1 + I}\prs{a + I} = 1 + I$
+כנדרש.
+\end{proof}
+
+\begin{proposition}
+יהי
+$R$
+חוג שבו כל אידאל הינו ראשי.
+אם
+$x \in R$
+אי־פריק, אז
+$\trs{x}$
+אידאל מקסימלי.%
+\flushleft{$\blacksquare$}
+\end{proposition}
+
+\begin{proof}
+נניח שיש אידאל
+$I$
+עבורו
+$\trs{x} \subseteq I$.
+$I$
+ראשי ונכתוב
+$I = \trs{y}$.
+כעת
+$x \in I$
+לכן יש
+$b\in R$
+עבורו
+$x = yb$.
+לכן
+$b$
+הפיך ואז
+$\trs{x} = \trs{y}$
+או ש־%
+$y$
+הפיך ואז
+$\trs{y} = R$.
+לכן
+$\trs{x}$
+מקסימלי.
+\end{proof}
+
+\begin{proposition}
+יהי
+$p \in \NN$
+ראשוני ו־%
+$p \equiv 2\mod{3}$.
+אז
+\[\abs{\quot{D}{pD}} = p^2\]
+וגם
+\[\quot{D}{pD} = \set{a + b\omega}{0 \leq a,b \leq p-1}\]
+\end{proposition}
+\begin{proof}
+יהי
+$z \in \ZZ\brs{\omega}$.
+נכתוב
+$z = c + d\omega$
+וגם
+\begin{align*}
+c &= q_1 p + r_1 \\
+d &= q_2 p + r_2
+\end{align*}
+כאשר
+$0 \leq r_i \leq p-1$.
+אז
+$c+d\omega = p\prs{q_1 + q_2 \omega} + r_1 + r_2 \omega$
+ונקבל במנה את הנדרש.
+\end{proof}
+
+\begin{proposition}
+יהי
+$\pi \in D$
+ראשוני כך שמתקיים
+\[N\prs{\pi} = \pi\bar{\pi} = p \equiv{3}\]
+כאשר
+$p \in \NN$
+ראשוני.
+אז
+\[\abs{\quot{D}{\pi D}} = p\]
+עם איברים
+$0,1,\ldots, p-1$.
+\end{proposition}
+
+\begin{proof}
+יהי
+$z = m+n\omega \in D$
+ונראה שהוא קונגרואנטי מוד
+$\pi$
+ל־%
+$0,1,\ldots, p-1$.\\
+נראה כי
+$z$
+קונגרואנטי למספר שלם, ואחר כך ניקח
+$0 \leq r \leq p-1$
+עם
+$t \equiv r \mod{p}$
+ונקבל
+$\pi \mid p \mid t - r$
+כלומר
+$t \equiv r \mod{\pi}$.
+\\
+נעשה זאת. נכתוב
+$z = m + n\omega$.
+מתקיים
+\[\text{.} \forall c \in \ZZ \colon z \equiv z + c\pi \mod{\pi}\]
+נכתוב
+$\pi = a+b\omega$
+ו־%
+$p \nmid b$
+כי אחרת
+\begin{align*}
+\pi &\mid b \\
+\pi &\mid a \\
+\pi^2 &\mid a \\
+p \mid a
+\end{align*}
+ואז
+$p \mid \pi$
+בסתירה.
+נכתוב
+\[z+c\pi = m+n\omega + c\prs{a + b\omega} = m+ca + \prs{n+cb}\omega\]
+ונבחר
+$c \in \ZZ$
+עבורו
+$n+cb \equiv 0 \mod{p}$
+כלומר
+$bc \equiv -n \mod{p}$.
+במקרה זה נקבל
+\begin{align*}
+p &\mid \prs{z + c\pi - \prs{m+ca}} \\
+z+c\pi &\equiv m +ca \mod{p} \\
+z + c\pi &\equiv m + ca \mod{\pi} \\
+\text{.} z &\equiv m + ca \mod{\pi}
+\end{align*}
+נשאר להראות כי אם
+$0 \leq r_1, r_2 \leq p-1$
+כאשר
+$r_1 \equiv r_2 \mod{\pi}$
+אז
+$r_1 \equiv r_2 \mod{p}$.
+\begin{align*}
+\pi &\mid \prs{r_1 - r_2} \\
+\exists z \in D \colon r_1 - r_2 & \pi z \\
+N\prs{r_1 - r_2} &= N\prs{\pi} N\prs{z} \\
+\prs{r_1 - r_2}^2 =p N\prs{z}
+\end{align*}
+ונקבל ב־%
+$\ZZ$
+כי
+\begin{align*}
+p &\mid \prs{r_1 - r_2}^2 \\
+p &\mid \prs{r_1 - r_2} \\
+r_1 &= r_2
+\end{align*}
+כנדרש.
+\end{proof}
+\begin{corollary}
+אם
+$\pi \in D$
+ראשוני, יש
+$p \in \NN$
+ראשוני עבורו
+$\pi \mid p$.
+\end{corollary}
+
+
+\begin{proof}[משפט
+\ref{Z-omega:properties}]
+\begin{enumerate}
+\item
+לפי משפט אוילר.
+\item אם
+$p \equiv 1 \mod{3}$
+קיימים
+$a,b\in \ZZ$
+עבורם
+$p = a^2 - ab + b^2$
+לכן
+\[p = \prs{a+b\omega}\prs{a-b-b\omega} = \pi \bar{\pi}\]
+עבור
+$\pi = a+b\omega$.
+\item
+השיוויון ברור, וגם
+$1-\omega$
+ראשוני ב־%
+$D$
+כי
+\[\text{,} N\prs{q-\omega} = 1^2 + 1^2 + 1^2 = 3\]
+כנדרש.
+\end{enumerate}
+\end{proof}
+
+אם
+$p \equiv 1 \mod{3}$
+נרצה לפתור
+$x^3 \equiv a \mod{p}$.
+אז
+$\# \prs{\quot{\ZZ}{p\ZZ}}^* = p-1$
+ומתקיים
+$3 \mid \prs{p-1}$
+ואז בדיוק שליש מאיברי
+$\prs{\quot{\ZZ}{p\ZZ}}^*$
+הם חזקה שלישית.
+
+
+אם
+$p \equiv 2 \mod{3}$,
+אז כל
+$a$
+זר ל־%
+$p$
+הינו חזקה שלישית כי
+$\# \prs{\quot{\ZZ}{p\ZZ}}^* = p-1$
+ו־%
+$3 \nmid \prs{p-1}$.
+
+לעומת זאת, ב־%
+$D$,
+אם
+$p \equiv 2 \mod{3}$
+אנו יודעים כי
+$p$
+ראשוני ב־%
+$D$.
+אז
+\[\text{.} \#{\prs{\quot{D}{pD}}^*} = p^2 - 1 = \prs{p+1}\prs{p-1}\]
+כאן
+$3 \mid \prs{p^2 - 1}$.
+אם יש
+$z \in D$
+זר ל־%
+$p$
+נרצה
+$x^3 \equiv z \mod{p}$.
+נכתוב
+$\pi = a+b\omega$
+ו־%
+$N\prs{p} = p \equiv 1 \mod{3}$.
+מתקיים
+\[\# \prs{\quot{D}{pD}}^* = p-1\]
+כאשר
+$3 \mid p-1$
+נקבל
+$x^3 \equiv z \mod{\pi}$.
 \backmatter
 \end{document}
 
