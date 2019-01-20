@@ -2,11 +2,19 @@
 \usepackage{maths}
 \usepackage{stylish}
 
+\usepackage{tkz-graph}
+\GraphInit[vstyle = Shade]
+
 \title{Lecture Notes to a course on Lie Algebras \\ \large{Winter 2018, Technion IIT}}
 \author{Lectures by Amos Nevo \\ \large Typed by Elad Tzorani}
 \date{\today}
 
 \usepackage{lipsum}
+
+\tikzset{EdgeStyle/.style   = {thick,
+                               double          = orange,
+                               double distance = 1pt}}
+
 \begin{document}
 \frontmatter
 \frontpage{lie_symmetry}
@@ -1749,6 +1757,494 @@ and then
 because $q \geq 1$. This is a contradiction.
 \end{enumerate}
 \end{proof}
+
+Now we exploit the rational properties of $\Phi \subseteq H^* = \hom\prs{H,\FF}$. We plan to define a positive definite bilinear form on a vector space over $\QQ$, and then extend to a vector space over $\RR$. Associated to this vector space will be a finite set of points in Euclidean space, the root system, with very special properties.
+
+\begin{proposition}
+Choose $\alpha_1, \ldots, \alpha_{\ell}$ a basis of $H^*$ consisting of roots. Then for every $\beta \in \Phi$
+\[\beta = \sum_{i\in[\ell]} c_i \alpha\]
+where $c_i$ are \emph{rational} numbers.
+\end{proposition}
+\begin{proof}
+We plug the linear equation and obtain.
+\[K\prs{b, \alpha_j} = \sum_{i\in[\ell]} c_i K\prs{\alpha_i, \alpha_j}\]
+Then $\prs{K\prs{\alpha_i, \alpha_j}}_{i,j \in [\ell]}$ is a symmetric matrix of rational number which is \emph{non-singular}.\\
+So, $\set{c_i}_{i \in [\ell]}$ are uniquely determined and rational.
+\end{proof}
+
+\begin{proof}
+Let $E_{\QQ}$ be the $\QQ$ span of $\Phi$.
+\end{proof}
+
+\begin{proof}
+Let $\ell = \dim_{\FF}H$. Then $\dim_{\QQ} E_{\QQ} = \ell$.
+\end{proof}
+\begin{proof}
+First, since $\alpha_1, \ldots, \alpha_{\ell}$ are linearly independent over $\FF$, they are linearly independent over $\QQ$. So, $\dim_{\QQ}E_{\QQ} \geq \ell$. But each $\beta \in \QQ$ is a rational linear combination of $\prs{\alpha_i}_{i \in [\ell]}$, \emph{as we saw}, and so $\dim_{\QQ} E_{\QQ} = \ell$.
+\end{proof}
+
+\begin{remark}
+We already that that $K$ restricted to $E_{\QQ}$ satisfies $K\prs{\alpha, \alpha} > 0$ for all $\alpha \in \Phi$.
+\end{remark}
+
+\begin{proposition}
+$K$ is positive definite on $E_{\QQ}$.
+\end{proposition}
+
+\begin{proof}
+Let $\lambda,\mu \in H^*$. Then
+\[K\prs{\lambda,\mu} = \sum_{\alpha \in \Phi} \alpha \prs{h_{\lambda}} \alpha\prs{h_{\mu}} = K\prs{h_{\lambda}, h_{\mu}} = \tr \prs{\ad_L h_{\lambda} \ad_L \prs{h_{\mu}}} = \sum_{\alpha \in \Phi} K\prs{\alpha, \lambda} K\prs{\alpha, \mu}\]
+because $\dim L_{\alpha} = 1$.
+For $\lambda = \mu = E_{\QQ}$ we have
+\[K\prs{\lambda,\mu} = \sum_{\alpha \in \Phi} K\prs{\alpha, \lambda}^2 > 0\]
+because $K\prs{\alpha,\lambda}$ is a rational number, and $K$ is non-degenerate and $\Phi$ spans $H^*$ and $E_{\QQ}$.
+\end{proof}
+
+\begin{fact}
+The positive definite symmetric form $K$ on the rational vector space $E_{\QQ}$ can be extended to such a form on an Euclidean space over $\RR$, of the same dimension. Formally one can consider $\RR \stackrel[\QQ]{}{\otimes} E_{\QQ}$.
+\[K\prs{\alpha \otimes \lambda, b\otimes \mu} = abK\prs{\lambda,\mu}\] is the form.\\
+Denote $\Phi = 1 \otimes \Phi$ the set of roots.
+\end{fact}
+
+\begin{proposition}
+We now have an $\ell$-dimensional Euclidean space, with a positive definite symmetric form $\prs{,}$, and a finite set $\Phi$ of roots which satisfies the following.
+\begin{enumerate}[label = (\arabic*)]
+\item $\Phi = -\Phi$ and $\Phi$ spans $E$.
+\item $\Phi \cap \RR \alpha = \set{\pm \alpha, 0}$ for all $\alpha \in \Phi$.
+\item If $\alpha,\beta \in \Phi$ then $\frac{2 \prs{\alpha,\beta}}{\alpha,\alpha} \in \ZZ$.
+\item If $\alpha,\beta \in \Phi$ then $\beta - \frac{2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}}\alpha \in \Phi$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Properties one to three are clear. We shall prove (4).
+The $\alpha$-chain through $\beta$ is \[\beta + p\alpha, \ldots, \beta, \ldots, \beta + q\alpha\]
+with $p \leq 0 \leq q$.
+Now we saw that $\frac{-2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} = p+q$.
+So all we say is that $p \leq p +q \leq q$, which is clear because $p \leq 0 \leq q$.
+\end{proof}
+
+\section{Geometry of Euclidean root systems}
+
+Let $E$ be an $\ell$-dimensional Euclidean space, with $\prs{,}$ a symmetric positive-definite form.
+\\
+Given any $\alpha \in E \setminus \set{0}$, we can define the reflection determined by $\alpha$ on $E$. It is an orthogonal linear map of order $2$ and determinant $-1$, defined by
+\[\sigma_{\alpha}\prs{\beta} = \beta - \frac{2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} \alpha \text{.}\]
+Clearly, $\sigma_{\alpha}\prs{\alpha} = \alpha - 2\alpha = -\alpha$, and on $P_{\alpha} = \set{\beta}{\prs{\beta,\alpha} = 0}$. The hyperplane orthogonal to $\alpha$, and we have $\sigma_{\alpha}\prs{\beta} = \beta$.
+So, $\sigma_{\alpha}$ has the matrix $\pmat{-1 & & & & \\ & 1 & & & \\ & & \ddots & & \\ & & & 1 & \\ & & & & 1}$ in a basis of $\RR \alpha$ and $P_{\alpha}$.\\
+We conclude that the reflections $\sigma_{\alpha}$ with $\alpha \in \Phi$ leave $\Phi$ invariant.
+\\
+\begin{definition}
+The group generated by $\prs{\sigma_{\alpha}}_{\alpha \in \Phi}$ in the orthogonal group preserving the form, is called the \stress{Weyl group of the root system}, and is denoted $W\prs{\Phi} = W$.\\
+$W\prs{\Phi}$ is a finite group since each $w \in W$ has a permutation representation on $\Phi$, and this representation is faithful, since $\Phi$ spans $E$. So, $W\prs{\Phi} \hookrightarrow{S\prs{\Phi}}$.
+\end{definition}
+
+\section{Pairs of roots in a root system}
+
+Let $\Phi$ be a root system and let $\alpha,\beta \in \Phi$. We know that \[\prs{\alpha,\beta} = \norm{\alpha}\norm{\beta} \cos\prs{\theta\prs{\alpha,\beta}}\text{.}\]\\
+We know also that \[2\\frac{\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} = 2 \frac{\norm{\beta}}{\norm{\alpha}} \cos\prs{\theta\prs{\alpha,\beta}} \in \ZZ \text{.}\]
+So, consider $\frac{\prs{\alpha,\beta}}{\prs{\alpha,\alpha}}$ and $\frac{\prs{\alpha,\beta}}{\prs{\beta,\beta}}$. We conclude that
+\[4 \frac{\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} \frac{\prs{\alpha,\beta}}{\prs{\beta,\beta}} = 4\cos^2 \theta\prs{\alpha,\beta} \in \ZZ \text{.}\]
+Of course, $\prs{\alpha,\beta}$ and $\prs{\beta,\alpha}$ have the same sign, and are zero together. Hence
+$4 \cos^2\theta$ is a product of two integers of the same sign.
+Of course, $0 \leq 4\cos^2 \theta \leq 4$. Now, $4$ corresponds to $\cos\theta = \pm 1$ so $\theta \in \set{0,\theta}$, then $\alpha = \pm \beta$. Otherwise $4 \cos^2 \theta < 4$. Then $4\cos^2 \theta \in \set{0,1,2,3}$.
+We classify our results in table \ref{root_system_classification_table}.
+
+\begin{figure}[h!]
+\caption{Angles between roots.}
+\label{root_system_classification_table}
+\centering
+\begin{tabular}{c|c|c|c} \label{classification table}
+$\frac{2 \prs{\alpha,\beta}}{\prs{\alpha,\alpha}}$ & $\frac{2\prs{\alpha,\beta}}{\prs{\beta,\beta}}$ & $\theta$ & $\frac{\norm{\beta}^2}{\norm{\alpha}^2}$\\
+\hline
+\hline
+$0$ & $0$ & $\frac{\pi}{2}$ & ? \\
+\hline
+$1$ & $1$ & $\frac{\pi}{3}$ & $1$ \\
+\hline
+$-1$ & $-1$ & $\frac{2\pi}{3}$ & $1$ \\
+\hline
+$1$ & $2$ & $\frac{\pi}{4}$ & $\frac{1}{2}$ \\
+\hline
+$-1$ & $-2$ & $\frac{3\pi}{4}$ & $\frac{1}{2}$ \\
+\hline
+$1$ & $3$ & $\frac{\pi}{6}$ & $\frac{1}{3}$ \\
+\hline
+$-1$ & $-3$ & $\frac{5\pi}{6}$ & $\frac{1}{3}$
+\end{tabular}
+\end{figure}
+
+\begin{proposition}
+Let $\alpha,\beta \in \Phi$ with $\alpha \neq \pm \beta$. If $\prs{\alpha,\beta} > 0$ then $\alpha-\beta$ is a root and if $\prs{\alpha,\beta} < 0$, then $\alpha+\beta$ is a root. So if the angle between $\alpha,\beta$ is a cute, their difference is a root, and if it's obtuse, then their sum is.
+\end{proposition}
+\begin{proof}
+First, the second part follows from the first and taking $-\beta$ while using $\Phi = -\Phi$.
+Now, if $\prs{\alpha,\beta} > 0$, the table shows that at least one of $\frac{2\prs{\alpha,\beta}}{\alpha,\alpha}$ and $\frac{2\prs{\alpha,\beta}}{\prs{\beta,\beta}}$ is equal to $1$.\\
+Then, if $\frac{2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} = 1$, then
+$\sigma_{\alpha}\prs{\beta} = \beta - \frac{2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} \alpha = \beta - \alpha \in \Phi$, because $\Phi$ is invariant under $\sigma_{\alpha}$ with $\alpha \in \Phi$.\\
+Then also $-\prs{\beta - \alpha} = \alpha \in \beta \in \Phi$ and if
+$\frac{2\prs{\alpha,\beta}}{\prs{\beta,\beta}} = 1$ then
+\[\sigma_{\beta}\prs{\alpha} = \alpha - \frac{2\prs{\alpha,\beta}}{\prs{\beta,\beta}}\beta = \alpha - \beta \in \Phi \text{.}\]
+\end{proof}
+
+\section{The action of the reflection $\sigma_{\alpha}$ on the $\alpha$-chain through $\beta$}
+Recall that $\sigma_{\alpha}\prs{\beta} = \beta - \frac{2\prs{\alpha,\beta}}{\prs{\alpha,\alpha}} \alpha$, so clearly $\sigma_{\alpha}\prs{\beta}$ is in the $\alpha$-chain through $\beta$\footnote{The action of $\sigma_{\alpha}$ is by adding multiples of $\alpha$.}
+So, $\sigma_{\alpha}$ must take the $\alpha$-chain through $\beta$ to itself, being an invariant finite subset.
+$\sigma_{\alpha}$ reverses the orientation of the line $\RR\alpha$, and so if the $\alpha$-chain through $\beta$ is the interval $\brs{p,q}$, then $\sigma_{\alpha}$ flips it. So,
+\[\sigma_{\alpha} \prs{p+q\alpha} = \beta + p\alpha = \beta - \frac{2\prs{\beta,\alpha}}{\prs{\alpha,\alpha}} \alpha - q\alpha \text{.}\]
+We get in particular our known fact
+\[\frac{-2\prs{\beta,\alpha}}{\prs{\alpha,\alpha}} = \prs{p+q} \text{.}\]
+
+\begin{definition}
+A basis $\prs{\alpha_i}_{i \in \brs{\ell}}$ of $E$ is called a \stress{basis of the root system} if every root $\beta \in \Phi$ has a representation
+$\beta = \sum_{i \in [\ell]} a_i \alpha_i$ where all $a_i$ are non-negative or all $a_i$ are non-positive.
+\end{definition}
+\begin{theorem}\label{root_system_basis:existence}
+Every root system has a basis.
+\end{theorem}
+
+\begin{definition}
+The roots $\prs{\alpha_i}_{i \in \brs{\ell}}$ in a basis of the root system are called \stress{simple roots}.
+\end{definition}
+
+\begin{definition}
+If $\beta = \sum_{i \in \brs{\ell}} a_i \alpha_i$ and $\forall i \in \brs{\ell} \colon a_i \geq 0$ then $\beta$ is called a \stress{positive root}.\\
+Similarly one defines \stress{negative roots}.
+\end{definition}
+\begin{definition}
+$\Phi^+$ and $\Phi^-$ are the sets of positive and negative roots, respectively.
+\end{definition}
+\begin{remark}
+$\Phi = \Phi^+ \amalg \Phi^-$.
+\end{remark}
+\begin{proposition}
+If $\prs{\alpha_i}_{i\in\brs{\ell}}$ form a basis of the root system, then all the mutual angles satisfy $\prs{\alpha_i, \alpha_j} \leq 0$.
+\end{proposition}
+
+\begin{proof}
+If $\prs{\alpha_i, \alpha_j} > 0$, as we saw $\alpha_i - \alpha_j$ is a root, but has neither all-positive nor all-negative coefficients, in contradiction.
+\end{proof}
+
+To construct a basis of the root systems, consider
+\[\bigcup_{\alpha \in \Phi} P_{\alpha} = \bigcup_{\alpha \in \Phi} \set{\beta}{\prs{\beta,\alpha} = 0} \text{,}\]
+a union of finitely many proper hyperplanes.\\
+Choose $\gamma$ \emph{outside} this set, so $\forall \alpha \in \Phi \colon \prs{\gamma,\alpha} \neq 0$.\\
+Define \[\Phi^+\prs{\gamma} \ceq \set{\alpha \in \Phi}{\prs{\gamma,\alpha} > 0} \text{.}\]
+Clearly $\Phi = \Phi^+\prs{\gamma} \amalg -\Phi^+\prs{\gamma}$.
+
+\begin{definition}
+A root $\alpha \in \Phi^+\prs{\gamma}$ is called \stress{irreducible} if it is \emph{not} a sum of the other roots in $\overline{\Phi^+}\prs{\gamma}$.
+Equivalently, $\alpha$ is reducible if $\alpha = \beta + \beta'$ where $\beta,\beta' \in \Phi^+\prs{\gamma}$.
+\end{definition}
+\begin{theorem}
+The irreducible roots in $\Phi^+\prs{\gamma}$ form a basis of the root system.
+\end{theorem}
+
+\begin{proof}
+\begin{enumerate}[label = \Roman*.]
+\item Every $\alpha \in \Phi^+\prs{\gamma}$ is a sum of irreducible roots in $\Phi^+\prs{\gamma}$ with non-negative coefficients.\\
+We argue by contradiction. Otherwise there's $\alpha \in \Phi^+\prs{\gamma}$ which isn't a sum of irreducible roots with non-negative coefficients. Choose $\alpha$ such that $\prs{\alpha,\gamma} > 0$ is minimal among those.
+$\alpha$ itself cannot be irreducible, so $\alpha$ is reducible and write $\alpha = \beta_1 + \beta_2$ with $\beta_1,\beta_2 \in \Phi^+\prs{\gamma}$.
+However,
+$\prs{\alpha,\gamma} = \prs{\beta_1,\gamma} + \prs{\beta_2, \gamma}$.
+If $\beta_1, \beta_2$ are both non-negative linear combinations of irreducible roots, the same is true for $\alpha$ and we're done.\\
+Assume therefore that at least one of them, WLOG $\beta_1$ is a root, but not a non-negative linear combination of irreducible roots in $\Phi^+\prs{\gamma}$. Then
+\[0 < \prs{\gamma,\beta_1} < \prs{\gamma,\alpha}\]
+in contradiction to the minimality of $\alpha$.
+
+\item If $\alpha, \beta \in \Phi^+\prs{\gamma}$ are different and irreducible, then $\prs{\alpha,\beta} \leq 0$.\\
+Assume otherwise, i.e. that $\prs{\alpha,\beta} > 0$. Then $\alpha - \beta$ and $\beta - \alpha$ are roots, as we saw.
+Hence, one of them is in $\Phi^+\prs{\gamma}$. WLOG $\alpha - \beta \in \Phi^+\prs{\gamma}$. Then $\alpha = \alpha - \beta + \beta$ and so $\alpha$ is reducible, contradicting our assumption.
+
+\item The set of irreducible roots in $\Phi^+\prs{\gamma}$ is linearly independent.\\
+Denote this set $\Delta^+\prs{\gamma}$ and assume towards a contradiction that
+\[\sum_{\alpha \in \Delta^+\prs{\gamma}} r_{\alpha} \alpha = 0 \text{.}\]
+Let
+\begin{align*}
+\Delta_1^+\prs{\gamma} &= \set{\alpha}{r_{\alpha} < 0} \\
+\Delta_2^+\prs{\gamma} &= \set{\alpha}{r_{\alpha} > 0}\text{.}
+\end{align*}
+Changing notations we get
+\[\sum_{\alpha \in \Delta_2^+\prs{\gamma}} t_{\alpha}\alpha - \sum_{\beta \in \Delta_1^+\prs{\gamma}} s_{\beta} \beta = 0\]
+where $t_{\alpha} , s_{\beta} \geq 0$.\\
+Define \[V \ceq \sum_{\alpha \in \Delta_2^+\prs{\gamma}} t_{\alpha} \alpha = \sum_{\beta \in \Delta_1^+\prs{\gamma}} s_{\beta} \beta \text{.}\]
+So,
+\begin{align*}
+0\leq \prs{V,V} &= \prs{\sum_{\alpha \in \Delta_2^+\prs{\gamma}} t_{\alpha}\alpha, \sum_{\beta \in \Delta_1^+\prs{\gamma}} s_{\beta} \beta} =
+\sum_{\substack{}} t_{\alpha} s_{\beta} \prs{\alpha,\beta} \leq 0
+\end{align*}
+where the last inequality is due to $\prs{\alpha, \beta} \leq 0$\footnote{from part II.} and $t_{\alpha}, s_{\beta} \geq 0$.\\
+So, $V = 0$, and so $\prs{\gamma,V} = 0$, in contradiction.\\
+We've shown that every root in $\Phi^+\prs{\gamma}$ is a non-negative linear combination of irreducible roots in $\Phi^+\prs{\gamma}$.\footnote{in part I.}
+This set $\Delta^+\prs{\gamma}$ is also linearly independent and so $\Delta^+\prs{\gamma}$ spans $\Phi = \Phi^+\prs{\gamma} \amalg - \Phi^-\prs{\gamma}$, and is linearly independent, and hence is a basis of $E$. The above shows this is also a basis of the root system.
+\end{enumerate}
+\end{proof}
+
+\begin{definition}
+A root system is called \stress{irreducible} if it cannot be separated to two disjoint non-empty subsets which are mutually orthogonal.
+\end{definition}
+
+\begin{definition}
+If $\Phi$ is an irreducible root system, and $\prs{\alpha_i}_{i \in \brs{\ell}}$ is a basis of the root system, then
+\[C = \prs{\frac{2\prs{\alpha_i, \alpha_j}}{\prs{\alpha_i, \alpha_i}}}_{i,j \in \brs{\ell}}\]
+is called \stress{the Cartan matrix}.
+\end{definition}
+
+\chapter{The classification of simple Lie algebras over an algebraically closed field of characteristic $0$}
+
+Let $L$ be a simple Lie algebra and $H$ be a Cartan sub-algebra, which is a maximal toral sub-algebra. Let $\Phi = \Phi\prs{L,H}$ be the corresponding root system.\\
+Remind ourself a few facts and constructions.\\
+The root system determines the Lie algebra up to isomorphism.\footnote{$\Phi$ contains a full multiplication table for the Lie brackets.}\\
+We defined a basis of the root system $\Phi \subseteq E$\footnote{with $\dim_{\RR} E = \ell$} as a linear basis of $E$ which has the additional property $\Phi = \Phi^+ \amalg \Phi^-$ and that elements of $\Phi^+$ are represented in the basis by non-negative coefficients, and elements in $\Phi^-$ by non-negative ones.\\
+We saw that a root system has a basis, say $\prs{\alpha_i}_{i\in[\ell]}$, and we defined the Cartan matrix associated to it by
+\[C = \prs{\frac{2 \prs{\alpha_i, \alpha_j}}{\prs{\alpha_i, \alpha_i}}}_{i,j \in \brs{\ell}} \text{.}\]
+Three fundamental properties of $C$ are the following.
+\begin{enumerate}[label = \alph*)]
+\item \[\det C \neq 0\]
+since $\prs{\alpha_i}_{i \in \brs{\ell}}$ is a basis.
+\item The off-diagonal entries of $C$ are non-positive, since the angles between vectors are at least $\frac{\pi}{2}$.
+\item The entries of the Cartan matrix are integers.
+\end{enumerate}
+
+\begin{fact}
+The Cartan matrix determines the root system.
+\end{fact}
+
+\section{Coxeter graphs and Dynkin diagrams}
+
+\begin{definition}
+A root system is called \stress{irreducible} if it cannot be represented as a disjoint union of two mutually-orthogonal subsets.
+\end{definition}
+\begin{exercise}
+A decomposition of the root system into a disjoint union of mutually-orthogonal subsets implies that the Lie algebra is not simple.
+\end{exercise}
+
+We assume henceforward that $\Phi$ is irreducible.
+
+\begin{definition}
+The \stress{Coxeter graph associated to a Cartan matrix} is a graph with $\ell$ vertices, and for which the pairs $\alpha_i, \alpha_j$ with $i\neq j$, is connected by $\frac{4 \prs{\alpha_i,\alpha_j} \prs{\alpha_j, \alpha_i}}{\prs{\alpha_i,\alpha_i} \prs{\alpha_j, \alpha_j}}$ edges.
+\end{definition}
+\begin{remark}
+The number of edges between $\alpha_i, \alpha_j$ in the Coxeter graph is $0$, $1$, $2$ or $3$, as we've seen in a table \ref{classification table}.
+That is zero when $\alpha_i \perp \alpha_j$.
+\end{remark}
+
+\begin{remark}
+If all roots have the same length, then the Coxeter graph determines the Cartan matrix.\\
+If $\alpha_i$ and $\alpha_j$ have different length, then the number of edges between them cannot be $1$. Otherwise, $\frac{4 \prs{\alpha_i,\alpha_j} \prs{\alpha_j, \alpha_i}}{\prs{\alpha_i,\alpha_i} \prs{\alpha_j, \alpha_j}} = 1$ and then \[\frac{2\prs{\alpha_i, \alpha_j}}{\prs{\alpha_i, \alpha_i}} = \frac{2\prs{\alpha_j, \alpha_i}}{\prs{\alpha_j, \alpha_j}}\]
+because $1$ is a product of two integers only in one way. We conclude that $\prs{\alpha_i, \alpha_i} = \prs{\alpha_j, \alpha_j}$, a contradiction.
+\end{remark}
+
+\begin{definition}
+The \stress{Dynkin diagram} is the Coxeter graph where if $\alpha_i$ is joint with $\alpha_j$ and they have different length, then we add an arrow from the long root to the short one.
+\end{definition}
+
+\begin{remark}
+The Coxeter graph may have more than one connected component. The roots in the two components are then mutually orthogonal, and then $\Phi$ is reducible, a contradiction to our assumption in this chapter.\\
+We therefore reduce to classifying connected Coxeter graphs.
+\end{remark}
+
+Set $n = \ell$, we list the connected Dynkin diagrams in figure \ref{connected_dynkin_diagrams}. The first four diagrams are families which appear with $n \geq 1,2,3,4$ respectively. The corresponding Lie algebras for these are $\ss\ll\prs{\ell+1, \FF}$, $\ss\oo\prs{2\ell + 1, \FF}$, $\ss\pp\prs{2\ell,\FF}$ and $\ss\oo\prs{2\ell, \FF}$ respectively.
+
+\begin{figure}[h!]
+\centering
+\caption{Connected Dynkin diagrams.}
+\label{connected_dynkin_diagrams}
+\includegraphics[scale=0.1]{sources/connected_dynkin_diagrams}
+\end{figure}
+
+\section{Classification of connected Coxeter graphs}
+\begin{enumerate}
+\item Consider in an inner-product space a set $\set{\eps_i}_{i\in\brs{n}}$ of linearly independent unit vectors, and form the graph where a pair $\eps_i \neq \eps_j$ are connected by $4\prs{\eps_i, \eps_j}^2$ edges such that this is an integer in $\set{0,1,2,3}$, satisfying $\prs{\eps_i, \eps_j} \leq 0$.\\
+Call such a system of vectors \stress{admissible}.
+
+\begin{remark}
+A basis of an irreducible root system gives us an admissible set of vectors.
+\end{remark}
+
+\begin{remark}
+Every subset of an admissible system is admissible.\\
+Graphically, given an admissible system $U$, if $U' \subseteq U$, its graph is the induced sub-graph with vertices in $U'$.
+\end{remark}
+
+\item
+Given an admissible system $U = \set{\eps_i}_{i \in \brs{n}}$, the number of pairs connected by edges is at most $n-1$.
+
+\begin{proof}
+Let $\eps = \sum_{i \in [n]} \eps_i$, then $\eps \neq 0$ because $U$ is linearly independent. Compute
+\begin{align*}
+\prs{\eps,\eps} &= \prs{\sum_{i\in[n]} \eps_i,\sum_{i\in[n]} \eps_i} \\&= n+2\sum_{i<j} \prs{\eps_i, \eps_j} = \star \text{.}
+\end{align*}
+We have $4\prs{\eps_i, \eps_j}^2 \in \set{0,1,2,3}$ and so if $\prs{\eps_i, \eps_j} \neq 0$ then $2\prs{\eps_i,\eps_j} \leq - 1$.\\
+Substituting in $\star$,
+\begin{align*}
+0 < \delta = \prs{\eps,\eps} \\&= n+\sum_{i < j} 2\prs{\eps_i, \eps_j} \\&\leq n - \#\set{i < j}{\text{$\eps_i$ and $\eps_j$ are connected by an edge}}
+\end{align*}
+Therefore \[\#\set{i < j}{\text{$\eps_i$ and $\eps_j$ are connected by an edge}} \leq n - \delta\]
+and so
+\[\#\set{i < j}{\text{$\eps_i$ and $\eps_j$ are connected by an edge}} \leq n-1 \text{,}\]
+as required.
+\end{proof}
+
+\item There are no cycles involving at least $3$ vertices in the graph, because a cycle has $n$ vertices and $n$ edges, and looking at the induced sub-graph gives a contradiction to the previous part.
+
+\item The number of edges incident to a given vertex is at most $3$.
+\begin{proof}
+Let $\eps \in U$ where $U$ is an admissible system. Let $\set{u_i}_{i \in [k]}$ be the distinct vertices to which $\eps$ is connected, in $1$, $2$, or $3$ edges.\\
+These neighbours of $\eps$ cannot be connected, because that would form a (non-degenerate) cycle, contradicting the previous part.
+So, $\prs{u_i}_{i \in \brs{k}}$ is an orthonormal set.\\
+Let $u_0$ be a unit vector orthogonal to $\prs{u_i}_{i \in \brs{k}}$ in the space $V=\mrm{span}\set{\eps, u_1, \ldots, u_k}$.\footnote{Notice that the spanning set is a basis, because elements of $U$ are linearly independent.}\\
+Now, $\eps \notin \mrm{span}\set{u_i}_{i \in [k]}$, due to independence, and so $\eps$ cannot be orthogonal to a unit vector orthogonal to $\mrm{span}\set{u_i}_{i \in [k]}$. I.e. $\prs{\eps, u_0} \neq 0$.
+So, we represent $\eps$ in the orthonormal basis
+\[\eps = \sum_{i = 0}^k \prs{\eps, u_i} u_i \text{.}\]
+Now
+\begin{align*}
+1 &= \prs{\eps, \eps} \\&=
+\sum_{i=0}^k \prs{\eps, u_i}^2 \\&\stackrel{\prs{\eps, u_0} \neq 0}{=}
+\sum_{i \in [k]} \prs{\eps, u_i}^2
+\end{align*}
+and multiplying sides by $4$ we get
+\[4 > \sum_{i \in [k]} 4\prs{\eps, u_i}^2 = \#\set{\text{edges that connect $\eps$ to $\set{u_i}_{i\in[k]}$}} \text{.}\]
+\end{proof}
+
+\item
+By the above, the only connected graph with a triple edge is $G_2$.
+
+\item Suppose that the graph contains a simple chain as a sub-graph.\\
+Let $\eps = \sum_{i \in [k]} \eps_i$ and consider the system $U' = U \setminus \prs{\set{\eps_i}_{i \in [k]} \cup \set{\eps}}$. This is an admissible system, and $\eps$ has the induced inner product with any vertex that was connected to each $\eps_i$.
+
+\begin{proof}
+First, $\eps$ is a unit vector.
+\begin{align*}
+\prs{\eps,\eps} &= \prs{\sum_{i\in[k]} \eps_i,\sum_{i\in[k]} \eps_i} \\&=
+k + \sum_{i<j} 2 \prs{\eps_i, \eps_j} \\&\stackrel{\dagger}{=} k - \prs{k-1} \\&= 1
+\end{align*}
+with $\dagger$ being true because we assume $\prs{\eps_i}_{i\in[k]}$ is a chain which means only $\prs{\eps_j, \eps_{j+1}} \neq 0$ with $4 \prs{\eps_j, \eps_{j+1}}^2 = 1$\footnote{as there's one edge between $\eps_j, \eps_{j+1}$} and $2\prs{\eps_j, \eps_{j+1}} = -1$\footnote{since this expression is negative}.\\
+Clearly, $\eps$ is linearly independent of $U \setminus \set{\eps_i}_{i\in[k]}$.\\
+To show that $U'$ is an admissible system, we have to show that $4\prs{\eps,u}^2 \in \set{0,1,2,3}$ for all $u \in U \setminus \set{\eps_i}_{i\in[k]}$.\\
+Consider $\prs{\eps,u} = \sum_{i \in [k]} \prs{\eps_i, u}$, we claim that at least $k-1$ of these inner products are zero. This is true because otherwise $u$ is connected to at least two elements of the chain, and one gets a (non-degenerate) cycle, contradicting a previous result. So, if $u \perp \eps_i$ for all $i \in [k]$, clearly $u \perp \eps$. If $\exists i \in [k] \colon \prs{u, \eps_i} \neq 0$, then $i$ is determined uniquely and $\prs{\eps, u} = \prs{\eps_i, u}$.
+\end{proof}
+
+\item
+A connected graph cannot contain any of the sub-graphs in figure \ref{impossibe_contianing_chain}.
+
+\begin{figure}[h!]
+\centering
+\caption{Impossible graphs containing a chain.}
+\label{impossibe_contianing_chain}
+\includegraphics[scale=0.6]{sources/chain_contradiction}
+\end{figure}
+
+Otherwise, using the operation in the previous part we'd get the graphs in figure \ref{impossible_graphs}.
+\begin{figure}[h!]
+\centering
+\caption{Impossible graphs.}
+\label{impossible_graphs}
+\includegraphics[scale=0.5]{sources/impossible}
+\end{figure}
+\begin{center}
+\end{center}
+
+respectively, each with a vertex connected to more than $3$ other vertices.
+
+\item
+All connected graph are of the following forms.
+\begin{figure}[h!]
+\centering
+\caption{Possible graphs.}
+\label{possible_graphs}
+\includegraphics[scale=0.5]{sources/possible}
+\end{figure}
+\begin{center}
+\end{center}
+
+$G_2$ is the only connected with with a triple edge. See fig. \ref{possible_graphs}.
+\begin{proof}
+\begin{enumerate}[label = \Roman*)]
+\item A double edge can appear only once. Otherwise we get the forbidden graph (i).
+\item A tripod cannot appear together with a double edge, since this will give forbidden graph (ii).
+\item A tripod can appear only once, since otherwise we get forbidden graph (iii).
+\end{enumerate}
+\end{proof}
+
+\item Consider the graph $\tilde{B}\prs{p,q}$, in fig. \ref{possible_graphs}.
+\\
+Consider $\eps = \sum_{i \in [p]} i \eps _i$ and $\zeta = \sum_{j\in[q]} j \zeta_j$. Then
+\begin{align*}
+\prs{\eps, \eps} &= \sum_{i \in [p]} i^2 - \sum_{i\in[p-1]} i\prs{i+1}
+\end{align*}
+since $2 \prs{\eps_i, \eps_{i+1}} = -1$ and $\prs{\eps_i, \eps_j} = 0$ for $\abs{i-j} \geq 2$.\\
+This yields $\prs{\eps,\eps} = \frac{p\prs{p+1}}{2}$, and similarly $\prs{\zeta, \zeta} = \frac{q\prs{q+1}}{2}$.\\
+In the two chains, only $\eps,_p$ and $\zeta_q$ are connected, so
+\begin{align*}
+\prs{\eps, \zeta} &= 
+\prs{\sum_{i \in [p]} i \eps_i, \sum_{j \in [q]} j \zeta_j} \\&=
+\prs{p \eps_p, q\zeta_q} \\&=
+pq \prs{\eps_p, \zeta_q}
+\end{align*}
+and so
+\[\prs{\eps,\zeta}^2 = \frac{p^2 q^2}{4} 4\prs{\eps_p, \zeta_q}^2 = p^2 q^2\]
+since $\eps_p,\zeta_q$ are connected by $2$ edges.\\
+$\eps$ and $\zeta$ are linearly independent, and by Cauchy-Schwartz
+\[\prs{\eps,\zeta}^2 < \prs{\eps,\eps} \prs{\zeta,\zeta} \text{.}\]
+So,
+\[\frac{p^2 q^2}{2} < \frac{p\prs{p+1}}{2} \frac{q\prs{q+1}}{2} \text{.}\]
+Hence
+\[pq < \frac{\prs{p+1}\prs{q+1}}{2} = \frac{1}{2}\prs{pq + p+q+1} \text{.}\]
+Then
+\[\frac{1}{2} pq - \frac{1}{2} p - \frac{1}{2} q < \frac{1}{2}\]
+and then
+\[\prs{p-1}\prs{q-1} < 2 \text{.}\]
+Either $p=q=2$, in which case we get $F_4$, or $q=1$ and $p$ is arbitrary, in which case we get $B_{\ell}$.
+
+\item
+We show that in case (iv) we have \emph{only} $D_{\ell}$, $E_6$, $E_7$, or $E_8$.\footnote{We assume $r,q,p \geq 2$, because otherwise there is no tripod.}
+\begin{proof}
+Define the following vectors.
+\begin{align*}
+\eps &= \sum_{i \in [p-1]} i \eps_i \\
+\eta &= \sum_{j \in [q-1]} j \eta_j \\
+\zeta &= \sum_{k \in [r-1]} k \zeta_k
+\end{align*}
+$\set{\eps,\eta,\zeta,\psi}$ are linearly independent.\\
+Let $\tau$ be a unit vector orthogonal to $\set{\eps,\eta,\zeta}$ in the space $\mrm{span}\set{\eps,\eta,\zeta,\psi}$. So, $\prs{\psi,\tau} \neq 0$.\\
+$\set{\eps,\eta,\zeta,\tau}$ is an orthogonal basis of this space, because clearly $\set{\eps,\eta,\zeta}$ is orthogonal.\\
+Write
+\[\psi = \frac{\prs{\psi,\eps}}{\prs{\eps,\eps}^{\frac{1}{2}}}\eps + \frac{\prs{\psi,\eta}}{\prs{\eta,\eta}^{\frac{1}{2}}}\eta + \frac{\prs{\psi,\zeta}}{\prs{\zeta,\zeta}^{\frac{1}{2}}} \zeta + \prs{\psi,\tau} \tau \text{.}\]
+Now $\prs{\psi,\psi} = 1$ because $\psi$ is in the system.\\
+So,
+\[\frac{\prs{\psi,\eps}}{\prs{\eps,\eps}^{\frac{1}{2}}}\eps + \frac{\prs{\psi,\eta}}{\prs{\eta,\eta}^{\frac{1}{2}}}\eta + \frac{\prs{\psi,\zeta}}{\prs{\zeta,\zeta}^{\frac{1}{2}}} \zeta < 1 \text{.}\]
+As before,
+\begin{align*}
+\prs{\eps,\eps} &= \frac{p\prs{p-1}}{2} \\
+\prs{\eta,\eta} &= \frac{q\prs{q-1}}{2} \\
+\prs{\zeta,\zeta} &= \frac{r\prs{r-1}}{2} \text{.}
+\end{align*}
+We now compute.
+\begin{align*}
+4\prs{\psi,\eps} &= 4\prs{\psi, \sum_{i \in [p-1} i \eps_i}^2 \\&=
+4\prs{\psi, \prs{p-1} \eps_{p-1}}^2 \\&=
+\prs{p-1}^2 4\prs{\psi, \eps_{p-1}}^2 \\&=
+\prs{p-1}^2
+\end{align*}
+so,
+\[\frac{\prs{\psi,\eps}^2}{\prs{\eps,\eps}} = \frac{\frac{\prs{p-1}^2}{4}}{\frac{p\prs{p-1}}{2}} = \frac{1}{2} \frac{p-1}{p} = \frac{1}{2} \prs{1 - \frac{1}{p}} \text{.}\]
+Similarly for the other two, so we conclude that
+\[\frac{1}{2} \prs{1 - \frac{1}{p}} + \frac{1}{2} \prs{1 - \frac{1}{q}} + \frac{1}{2} \prs{1-\frac{1}{r}} < 1\text{.}\]
+Multiplying by $2$,
+\[3 - \prs{\frac{1}{p} + \frac{1}{q} + \frac{1}{r}} < 2\]
+and so
+\[\frac{1}{p} + \frac{1}{q} + \frac{1}{r} > 1 \text{.}\]
+\begin{exercise}
+The solutions to the above equation are
+\begin{align*}
+D_n &= \prs{p,2,2} \\
+E_6 &= \prs{3,3,2} \\
+E_7 &= \prs{4,3,2} \\
+E_8 &= \prs{5,3,2} \text{.}
+\end{align*}
+\end{exercise}
+\end{proof}
+\end{enumerate}
 
 \backmatter
 \end{document}

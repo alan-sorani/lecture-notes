@@ -23,3 +23,9 @@
 \contentsline {chapter}{\numberline {7}Toral subalgebras}{29}{chapter.7}
 \contentsline {section}{\numberline {7.1}Orthogonality of root systems}{31}{section.7.1}
 \contentsline {section}{\numberline {7.2}Rationality properties of the root system}{34}{section.7.2}
+\contentsline {section}{\numberline {7.3}Geometry of Euclidean root systems}{39}{section.7.3}
+\contentsline {section}{\numberline {7.4}Pairs of roots in a root system}{39}{section.7.4}
+\contentsline {section}{\numberline {7.5}The action of the reflection $\sigma _{\alpha }$ on the $\alpha $-chain through $\beta $}{40}{section.7.5}
+\contentsline {chapter}{\numberline {8}The classification of simple Lie algebras over an algebraically closed field of characteristic $0$}{43}{chapter.8}
+\contentsline {section}{\numberline {8.1}Coxeter graphs and Dynkin diagrams}{43}{section.8.1}
+\contentsline {section}{\numberline {8.2}Classification of connected Coxeter graphs}{44}{section.8.2}
