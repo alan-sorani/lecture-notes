@@ -1,0 +1,31 @@
+\contentsline {chapter}{Preface}{iii}{chapter*.3}
+\contentsline {section}{Technicalities}{iii}{section*.4}
+\contentsline {section}{Course Literature}{iii}{section*.5}
+\contentsline {part}{I\hspace {1em}Lie Algebras}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Preliminaries}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Basic definitions}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Structure constants}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Linear representations}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Sub-algebras and ideals}{6}{section.1.4}
+\contentsline {chapter}{\numberline {2}Structure of Lie algebras}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Nilpotent Lie algebras}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Flags}{12}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Solvable Lie algebras}{13}{section.2.2}
+\contentsline {chapter}{\numberline {3}Jordan-Chevalley decomposition}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Chinese remainder theorem}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Decomposition of vector spaces}{17}{section.3.2}
+\contentsline {chapter}{\numberline {4}Cartan's criterion for semi-simplicity}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Preliminary results}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cartan's criterion}{22}{section.4.2}
+\contentsline {chapter}{\numberline {5}Killing form}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Some properties of the Killing form}{23}{section.5.1}
+\contentsline {chapter}{\numberline {6}Derivations of simple algebras}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}Toral subalgebras}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}Orthogonality of root systems}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}Rationality properties of the root system}{34}{section.7.2}
+\contentsline {section}{\numberline {7.3}Geometry of Euclidean root systems}{39}{section.7.3}
+\contentsline {section}{\numberline {7.4}Pairs of roots in a root system}{39}{section.7.4}
+\contentsline {section}{\numberline {7.5}The action of the reflection $\sigma _{\alpha }$ on the $\alpha $-chain through $\beta $}{40}{section.7.5}
+\contentsline {chapter}{\numberline {8}The classification of simple Lie algebras over an algebraically closed field of characteristic $0$}{43}{chapter.8}
+\contentsline {section}{\numberline {8.1}Coxeter graphs and Dynkin diagrams}{43}{section.8.1}
+\contentsline {section}{\numberline {8.2}Classification of connected Coxeter graphs}{44}{section.8.2}
